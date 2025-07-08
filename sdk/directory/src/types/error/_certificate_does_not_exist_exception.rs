@@ -2,6 +2,8 @@
 
 /// <p>The certificate is not present in the system for describe or deregister activities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateDoesNotExistException {
     /// <p>The descriptive message for the exception.</p>

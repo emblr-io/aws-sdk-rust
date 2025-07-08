@@ -2,6 +2,8 @@
 
 /// <p>Contains the results of the <code>GetSnapshotLimits</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSnapshotLimitsOutput {
     /// <p>A <code>SnapshotLimits</code> object that contains the manual snapshot limits for the specified directory.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The value for a given type of <code>UpdateSettings</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateValue {
     /// <p>The OS update related settings.</p>

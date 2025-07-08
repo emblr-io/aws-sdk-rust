@@ -2,6 +2,8 @@
 
 /// <p>Describes a conditional forwarder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeConditionalForwardersInput {
     /// <p>The directory ID for which to get the list of associated conditional forwarders.</p>

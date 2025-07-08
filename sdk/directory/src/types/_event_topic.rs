@@ -2,6 +2,8 @@
 
 /// <p>Information about Amazon SNS topic and Directory Service directory associations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventTopic {
     /// <p>The Directory ID of an Directory Service directory that will publish status messages to an Amazon SNS topic.</p>

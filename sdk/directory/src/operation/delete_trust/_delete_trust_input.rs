@@ -2,6 +2,8 @@
 
 /// <p>Deletes the local side of an existing trust relationship between the Managed Microsoft AD directory and the external domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteTrustInput {
     /// <p>The Trust ID of the trust relationship to be deleted.</p>

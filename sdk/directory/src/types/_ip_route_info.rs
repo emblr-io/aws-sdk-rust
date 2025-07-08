@@ -2,6 +2,8 @@
 
 /// <p>Information about one or more IP address blocks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpRouteInfo {
     /// <p>Identifier (ID) of the directory associated with the IP addresses.</p>

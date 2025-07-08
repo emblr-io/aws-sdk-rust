@@ -2,6 +2,8 @@
 
 /// <p>Initiates the verification of an existing trust relationship between an Managed Microsoft AD directory and an external domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifyTrustInput {
     /// <p>The unique Trust ID of the trust relationship to verify.</p>

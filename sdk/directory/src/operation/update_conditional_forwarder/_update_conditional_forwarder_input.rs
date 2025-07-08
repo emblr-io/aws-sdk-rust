@@ -2,6 +2,8 @@
 
 /// <p>Updates a conditional forwarder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateConditionalForwarderInput {
     /// <p>The directory ID of the Amazon Web Services directory for which to update the conditional forwarder.</p>

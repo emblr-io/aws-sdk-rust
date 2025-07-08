@@ -2,6 +2,8 @@
 
 /// <p>The maximum allowed number of IP addresses was exceeded. The default limit is 100 IP address blocks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpRouteLimitExceededException {
     /// <p>The descriptive message for the exception.</p>

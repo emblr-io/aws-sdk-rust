@@ -2,6 +2,8 @@
 
 /// <p>Details about the shared directory in the directory owner account for which the share request in the directory consumer account has been accepted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SharedDirectory {
     /// <p>Identifier of the directory owner account, which contains the directory that has been shared to the consumer account.</p>

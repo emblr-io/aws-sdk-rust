@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>DeleteSnapshot</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteSnapshotInput {
     /// <p>The identifier of the directory snapshot to be deleted.</p>

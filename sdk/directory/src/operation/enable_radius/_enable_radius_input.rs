@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>EnableRadius</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnableRadiusInput {
     /// <p>The identifier of the directory for which to enable MFA.</p>

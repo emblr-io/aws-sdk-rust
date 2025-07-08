@@ -2,6 +2,8 @@
 
 /// <p>The result of a CreateTrust request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTrustOutput {
     /// <p>A unique identifier for the trust relationship that was created.</p>
