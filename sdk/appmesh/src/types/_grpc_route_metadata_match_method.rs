@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the match method. Specify one of the match values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum GrpcRouteMetadataMatchMethod {
     /// <p>The value sent by the client must match the specified value exactly.</p>

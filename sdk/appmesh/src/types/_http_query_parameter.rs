@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the query parameter in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpQueryParameter {
     /// <p>A name for the query parameter that will be matched on.</p>

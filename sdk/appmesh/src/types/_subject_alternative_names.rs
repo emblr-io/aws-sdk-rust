@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the subject alternative names secured by the certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubjectAlternativeNames {
     /// <p>An object that represents the criteria for determining a SANs match.</p>

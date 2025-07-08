@@ -2,6 +2,8 @@
 
 /// <p>An object representing the beginning characters of the route to rewrite.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpGatewayRoutePrefixRewrite {
     /// <p>The default prefix used to replace the incoming route prefix when rewritten.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a route specification. Specify one route type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteSpec {
     /// <p>The priority for the route. Routes are matched based on the specified value, where 0 is the highest priority.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the backends that a virtual node is expected to send outbound traffic to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Backend {
     /// <p>Specifies a virtual service to use as a backend.</p>

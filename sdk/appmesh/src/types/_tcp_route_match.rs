@@ -2,6 +2,8 @@
 
 /// <p>An object representing the TCP route to match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TcpRouteMatch {
     /// <p>The port number to match on.</p>

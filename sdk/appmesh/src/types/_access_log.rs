@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the access logging information for a virtual node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AccessLog {
     /// <p>The file object to send virtual node access logs to.</p>

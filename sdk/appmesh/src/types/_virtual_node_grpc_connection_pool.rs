@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a type of connection pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualNodeGrpcConnectionPool {
     /// <p>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster.</p>

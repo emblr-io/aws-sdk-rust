@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a Transport Layer Security (TLS) validation context trust for an Certificate Manager certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualGatewayTlsValidationContextAcmTrust {
     /// <p>One or more ACM Amazon Resource Name (ARN)s.</p>

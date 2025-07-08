@@ -2,6 +2,8 @@
 
 /// <p>An object that represents an HTTP or HTTP/2 route type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpRoute {
     /// <p>An object that represents the criteria for determining a request match.</p>

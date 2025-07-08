@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a TCP route type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TcpRoute {
     /// <p>The action to take if a match is determined.</p>

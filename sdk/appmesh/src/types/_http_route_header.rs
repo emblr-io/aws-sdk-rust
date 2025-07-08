@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the HTTP header in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpRouteHeader {
     /// <p>A name for the HTTP header in the client request that will be matched on.</p>
