@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required for ISO9564 PIN format 1 tranlation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TranslationPinDataIsoFormat1 {}
 impl TranslationPinDataIsoFormat1 {

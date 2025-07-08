@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required to generate or verify Dynamic Card Verification Value (dCVV).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DynamicCardVerificationValue {
     /// <p>A number that identifies and differentiates payment cards with the same Primary Account Number (PAN).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Parameters to derive a session key for Authorization Response Cryptogram (ARQC) verification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SessionKeyDerivation {
     /// <p>Parameters to derive session key for an Amex payment card for ARQC verification.</p>

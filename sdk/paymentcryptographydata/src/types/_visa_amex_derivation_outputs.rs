@@ -2,6 +2,8 @@
 
 /// <p>The attributes values used for Amex and Visa derivation methods.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisaAmexDerivationOutputs {
     /// <p>The <code>keyArn</code> of the issuer master key for cryptogram (IMK-AC) used by the operation.</p>

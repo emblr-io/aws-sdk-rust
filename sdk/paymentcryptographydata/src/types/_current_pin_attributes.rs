@@ -2,6 +2,8 @@
 
 /// <p>The parameter values of the current PIN to be changed on the EMV chip card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CurrentPinAttributes {
     /// <p>The <code>keyArn</code> of the current PIN PEK.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required to generate or verify dCVC (Dynamic Card Verification Code).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DiscoverDynamicCardVerificationCode {
     /// <p>The expiry date of a payment card.</p>
