@@ -2,6 +2,8 @@
 
 /// <p>Information about a health event created in a monitor in Amazon CloudWatch Internet Monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthEvent {
     /// <p>The Amazon Resource Name (ARN) of the event.</p>

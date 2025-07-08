@@ -2,6 +2,8 @@
 
 /// <p>The impacted location, such as a city, that Amazon Web Services clients access application resources from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientLocation {
     /// <p>The name of the internet service provider (ISP) or network (ASN).</p>
