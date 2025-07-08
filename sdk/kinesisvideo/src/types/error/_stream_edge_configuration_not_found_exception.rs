@@ -2,6 +2,8 @@
 
 /// <p>The Exception rendered when the Amazon Kinesis Video Stream can't find a stream's edge configuration that you specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamEdgeConfigurationNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

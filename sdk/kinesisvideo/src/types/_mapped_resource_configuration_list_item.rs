@@ -2,6 +2,8 @@
 
 /// <p>A structure that encapsulates, or contains, the media storage configuration properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MappedResourceConfigurationListItem {
     /// <p>The type of the associated resource for the kinesis video stream.</p>
