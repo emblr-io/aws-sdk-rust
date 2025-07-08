@@ -3,6 +3,8 @@
 /// <p>Represents the output of <code>GetEvaluation</code> operation.</p>
 /// <p>The content consists of the detailed metadata and data file information and the current status of the <code>Evaluation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Evaluation {
     /// <p>The ID that is assigned to the <code>Evaluation</code> at creation.</p>

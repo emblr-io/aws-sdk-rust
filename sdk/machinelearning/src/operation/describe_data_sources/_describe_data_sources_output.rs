@@ -2,6 +2,8 @@
 
 /// <p>Represents the query results from a <code>DescribeDataSources</code> operation. The content is essentially a list of <code>DataSource</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDataSourcesOutput {
     /// <p>A list of <code>DataSource</code> that meet the search criteria.</p>

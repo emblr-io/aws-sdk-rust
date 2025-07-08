@@ -2,6 +2,8 @@
 
 /// <p>Describes the database details required to connect to an Amazon Redshift database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftDatabase {
     /// <p>The name of a database hosted on an Amazon Redshift cluster.</p>
