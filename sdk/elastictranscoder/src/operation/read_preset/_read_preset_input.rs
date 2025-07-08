@@ -2,6 +2,8 @@
 
 /// <p>The <code>ReadPresetRequest</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReadPresetInput {
     /// <p>The identifier of the preset for which you want to get detailed information.</p>

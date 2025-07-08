@@ -2,6 +2,8 @@
 
 /// <p>Options associated with your audio codec.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioCodecOptions {
     /// <p>You can only choose an audio profile when you specify AAC for the value of Audio:Codec.</p>

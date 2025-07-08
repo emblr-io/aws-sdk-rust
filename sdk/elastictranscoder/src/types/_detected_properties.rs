@@ -2,6 +2,8 @@
 
 /// <p>The detected properties of the input file. Elastic Transcoder identifies these values from the input file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectedProperties {
     /// <p>The detected width of the input file, in pixels.</p>
