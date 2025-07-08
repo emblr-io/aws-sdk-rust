@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about a control mapping, including the control ARN, mapping type, and mapping details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlMapping {
     /// <p>The Amazon Resource Name (ARN) that identifies the control in the mapping.</p>

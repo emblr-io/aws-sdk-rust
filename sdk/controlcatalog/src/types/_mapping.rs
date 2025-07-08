@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the details of a mapping relationship, which can be either to a framework or to a common control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Mapping {
     /// <p>The common control mapping details when the mapping type relates to a common control.</p>

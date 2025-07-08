@@ -2,6 +2,8 @@
 
 /// <p>A summary of metadata for a common control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommonControlSummary {
     /// <p>The Amazon Resource Name (ARN) that identifies the common control.</p>

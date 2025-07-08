@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains details about a common control mapping. In particular, it returns the Amazon Resource Name (ARN) of the common control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommonControlMappingDetails {
     /// <p>The Amazon Resource Name (ARN) that identifies the common control in the mapping.</p>

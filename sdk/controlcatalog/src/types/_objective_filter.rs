@@ -2,6 +2,8 @@
 
 /// <p>An optional filter that narrows the list of objectives to a specific domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectiveFilter {
     /// <p>The domain that's used as filter criteria.</p>

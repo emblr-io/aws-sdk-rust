@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains details about a framework mapping, including the framework name and specific item within the framework that the control maps to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrameworkMappingDetails {
     /// <p>The name of the compliance framework that the control maps to.</p>

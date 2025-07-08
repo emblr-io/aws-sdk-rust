@@ -2,6 +2,8 @@
 
 /// <p>An optional filter that narrows the results to a specific objective.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommonControlFilter {
     /// <p>The objective that's used as filter criteria.</p>
