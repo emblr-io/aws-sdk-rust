@@ -2,6 +2,8 @@
 
 /// <p>Describes IAM Identity Center options for an OpenSearch Serverless security configuration in the form of a key-value map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamIdentityCenterConfigOptions {
     /// <p>The ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless.</p>

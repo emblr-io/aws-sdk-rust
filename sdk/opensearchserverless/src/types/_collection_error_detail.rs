@@ -2,6 +2,8 @@
 
 /// <p>Error information for an OpenSearch Serverless request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollectionErrorDetail {
     /// <p>If the request contains collection IDs, the response includes the IDs provided in the request.</p>

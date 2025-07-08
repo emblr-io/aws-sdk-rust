@@ -2,6 +2,8 @@
 
 /// <p>Statistics for an OpenSearch Serverless access policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessPolicyStats {
     /// <p>The number of data access policies in the current account.</p>

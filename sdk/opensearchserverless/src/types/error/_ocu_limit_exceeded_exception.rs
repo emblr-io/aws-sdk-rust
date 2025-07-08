@@ -2,6 +2,8 @@
 
 /// <p>Thrown when the collection you're attempting to create results in a number of search or indexing OCUs that exceeds the account limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OcuLimitExceededException {
     /// Description of the error.
