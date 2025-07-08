@@ -2,6 +2,8 @@
 
 /// <p>Details about the latest launch of an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchDetails {
     /// <p>The latest time that this application was launched successfully.</p>

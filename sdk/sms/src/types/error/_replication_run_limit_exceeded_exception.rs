@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded the number of on-demand replication runs you can request in a 24-hour period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationRunLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

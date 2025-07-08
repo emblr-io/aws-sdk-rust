@@ -2,6 +2,8 @@
 
 /// <p>Contains the location of validation output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SsmOutput {
     /// <p>Location of an Amazon S3 object.</p>

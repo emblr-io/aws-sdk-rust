@@ -2,6 +2,8 @@
 
 /// <p>Details of the current stage of a replication run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationRunStageDetails {
     /// <p>The current stage of a replication run.</p>
