@@ -2,6 +2,8 @@
 
 /// <p>The description of an instance. Currently, Amazon EC2 instances are the only supported instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Instance {
     /// <p>The ID of the AMI used to launch the instance.</p>
