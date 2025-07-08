@@ -2,6 +2,8 @@
 
 /// <p>Statistics about the Identity Resolution Job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobStats {
     /// <p>The number of profiles reviewed.</p>

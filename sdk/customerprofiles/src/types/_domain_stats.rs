@@ -2,6 +2,8 @@
 
 /// <p>Usage-specific statistics about the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainStats {
     /// <p>The total number of profiles currently in the domain.</p>

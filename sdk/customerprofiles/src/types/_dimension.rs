@@ -2,6 +2,8 @@
 
 /// <p>Object that holds what profile and calculated attributes to segment on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum Dimension {
     /// <p>Object that holds the calculated attributes to segment on.</p>

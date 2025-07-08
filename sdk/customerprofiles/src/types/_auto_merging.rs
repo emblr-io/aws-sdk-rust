@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for how to perform the auto-merging of profiles.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMerging {
     /// <p>The flag that enables the auto-merging of duplicate profiles.</p>

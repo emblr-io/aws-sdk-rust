@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration used when importing incremental records from the source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncrementalPullConfig {
     /// <p>A field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source.</p>

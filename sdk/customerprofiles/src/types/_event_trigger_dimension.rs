@@ -2,6 +2,8 @@
 
 /// <p>A specific event dimension to be assessed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventTriggerDimension {
     /// <p>A list of object attributes to be evaluated.</p>

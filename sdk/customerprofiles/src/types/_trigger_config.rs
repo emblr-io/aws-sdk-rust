@@ -2,6 +2,8 @@
 
 /// <p>The trigger settings that determine how and when Amazon AppFlow runs the specified flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TriggerConfig {
     /// <p>Specifies the type of flow trigger. It can be OnDemand, Scheduled, or Event.</p>

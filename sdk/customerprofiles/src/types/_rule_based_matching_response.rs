@@ -2,6 +2,8 @@
 
 /// <p>The response of the Rule-based matching request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleBasedMatchingResponse {
     /// <p>The flag that enables the rule-based matching process of duplicate profiles.</p>

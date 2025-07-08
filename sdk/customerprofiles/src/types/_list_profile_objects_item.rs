@@ -2,6 +2,8 @@
 
 /// <p>A ProfileObject in a list of ProfileObjects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListProfileObjectsItem {
     /// <p>Specifies the kind of object being added to a profile, such as "Salesforce-Account."</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object that defines how to filter the incoming objects for the calculated attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterAttributeDimension {
     /// <p>The action to filter with.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Error object describing why a specific profile and calculated attribute failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetCalculatedAttributeForProfileError {
     /// <p>Status code for why a specific profile and calculated attribute failed.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object to hold the dimensions of a profile's fields to segment on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileDimension {
     /// <p>The action to segment on.</p>
