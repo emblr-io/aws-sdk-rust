@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about your account details review.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReviewDetails {
     /// <p>The status of the latest review of your account. The status can be one of the following:</p>

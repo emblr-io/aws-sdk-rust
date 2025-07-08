@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about the per-day and per-second sending limits for your Amazon SES account in the current Amazon Web Services Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendQuota {
     /// <p>The maximum number of emails that you can send in the current Amazon Web Services Region over a 24-hour period. A value of -1 signifies an unlimited quota. (This value is also referred to as your <i>sending quota</i>.)</p>

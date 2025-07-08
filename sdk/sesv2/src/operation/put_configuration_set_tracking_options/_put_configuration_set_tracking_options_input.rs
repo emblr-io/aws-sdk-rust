@@ -2,6 +2,8 @@
 
 /// <p>A request to add a custom domain for tracking open and click events to a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutConfigurationSetTrackingOptionsInput {
     /// <p>The name of the configuration set.</p>

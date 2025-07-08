@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the entire content of the email, including the message headers, body content, and attachments. For a simple email message, you specify the subject and provide both text and HTML versions of the message body. You can also add attachments to simple and templated messages. For a raw message, you provide a complete MIME-formatted message, which can include custom headers and attachments.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailContent {
     /// <p>The simple email message. The message consists of a subject, message body and attachments list.</p>

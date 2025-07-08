@@ -2,6 +2,8 @@
 
 /// <p>Information about the suppressed email address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSuppressedDestinationOutput {
     /// <p>An object containing information about the suppressed email address.</p>

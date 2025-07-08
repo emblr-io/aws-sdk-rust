@@ -2,6 +2,8 @@
 
 /// <p>A request to obtain a list of email destinations that are on the suppression list for your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSuppressedDestinationsInput {
     /// <p>The factors that caused the email address to be added to .</p>

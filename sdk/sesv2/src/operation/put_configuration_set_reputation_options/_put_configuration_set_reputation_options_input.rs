@@ -2,6 +2,8 @@
 
 /// <p>A request to enable or disable tracking of reputation metrics for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutConfigurationSetReputationOptionsInput {
     /// <p>The name of the configuration set.</p>

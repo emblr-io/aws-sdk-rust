@@ -2,6 +2,8 @@
 
 /// <p>&gt;Represents a request to create a preview of the MIME content of an email when provided with a template and a set of replacement data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestRenderEmailTemplateInput {
     /// <p>The name of the template.</p>

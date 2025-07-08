@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the action of suppression list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuppressionListDestination {
     /// <p>The type of action to perform on the address. The following are possible values:</p>

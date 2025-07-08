@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to list the email templates present in your Amazon SES account in the current Amazon Web Services Region. For more information, see the <a href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-personalized-email-api.html">Amazon SES Developer Guide</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEmailTemplatesInput {
     /// <p>A token returned from a previous call to <code>ListEmailTemplates</code> to indicate the position in the list of email templates.</p>

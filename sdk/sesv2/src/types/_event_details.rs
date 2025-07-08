@@ -2,6 +2,8 @@
 
 /// <p>Contains a <code>Bounce</code> object if the event type is <code>BOUNCE</code>. Contains a <code>Complaint</code> object if the event type is <code>COMPLAINT</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDetails {
     /// <p>Information about a <code>Bounce</code> event.</p>

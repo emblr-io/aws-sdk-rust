@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to list the existing recommendations for your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRecommendationsInput {
     /// <p>Filters applied when retrieving recommendations. Can eiter be an individual filter, or combinations of <code>STATUS</code> and <code>IMPACT</code> or <code>STATUS</code> and <code>TYPE</code></p>

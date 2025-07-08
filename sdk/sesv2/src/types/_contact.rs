@@ -2,6 +2,8 @@
 
 /// <p>A contact is the end-user who is receiving the email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Contact {
     /// <p>The contact's email address.</p>

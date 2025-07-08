@@ -2,6 +2,8 @@
 
 /// <p>An object that contains route configuration. Includes secondary region name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteDetails {
     /// <p>The name of an AWS-Region to be a secondary region for the multi-region endpoint (global-endpoint).</p>

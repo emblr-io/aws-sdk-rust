@@ -2,6 +2,8 @@
 
 /// <p>A summary that describes the suppressed email address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuppressedDestinationSummary {
     /// <p>The email address that's on the suppression list for your account.</p>

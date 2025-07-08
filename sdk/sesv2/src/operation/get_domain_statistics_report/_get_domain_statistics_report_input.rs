@@ -2,6 +2,8 @@
 
 /// <p>A request to obtain deliverability metrics for a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDomainStatisticsReportInput {
     /// <p>The domain that you want to obtain deliverability metrics for.</p>

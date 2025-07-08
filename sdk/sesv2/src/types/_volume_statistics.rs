@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about the amount of email that was delivered to recipients.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeStatistics {
     /// <p>The total number of emails that arrived in recipients' inboxes.</p>

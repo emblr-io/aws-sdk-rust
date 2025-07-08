@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the VDM settings that apply to emails that you send using the configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VdmOptions {
     /// <p>Specifies additional settings for your VDM configuration as applicable to the Dashboard.</p>

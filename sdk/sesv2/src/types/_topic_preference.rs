@@ -2,6 +2,8 @@
 
 /// <p>The contact's preference for being opted-in to or opted-out of a topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicPreference {
     /// <p>The name of the topic.</p>

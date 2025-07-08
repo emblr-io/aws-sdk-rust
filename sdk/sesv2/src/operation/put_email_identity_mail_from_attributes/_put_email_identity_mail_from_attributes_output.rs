@@ -2,6 +2,8 @@
 
 /// <p>An HTTP 200 response if the request succeeds, or an error message if the request fails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutEmailIdentityMailFromAttributesOutput {
     _request_id: Option<String>,

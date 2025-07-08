@@ -2,6 +2,8 @@
 
 /// <p>A list of dedicated IP pools.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDedicatedIpPoolsOutput {
     /// <p>A list of all of the dedicated IP pools that are associated with your Amazon Web Services account in the current Region.</p>

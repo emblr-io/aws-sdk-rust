@@ -2,6 +2,8 @@
 
 /// <p>Statistics about the execution of an export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportStatistics {
     /// <p>The number of records that were processed to generate the final export file.</p>

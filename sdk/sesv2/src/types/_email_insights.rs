@@ -2,6 +2,8 @@
 
 /// <p>An email's insights contain metadata and delivery information about a specific email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmailInsights {
     /// <p>The recipient of the email.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request to submit new account VDM attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutAccountVdmAttributesInput {
     /// <p>The VDM attributes that you wish to apply to your Amazon SES account.</p>

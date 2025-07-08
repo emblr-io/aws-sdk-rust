@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the destination of the export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportDestination {
     /// <p>The data format of the final export job file, can be one of the following:</p>

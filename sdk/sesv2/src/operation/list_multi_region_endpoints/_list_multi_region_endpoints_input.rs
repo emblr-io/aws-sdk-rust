@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to list all the multi-region endpoints (global-endpoints) whose primary region is the AWS-Region where operation is executed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListMultiRegionEndpointsInput {
     /// <p>A token returned from a previous call to <code>ListMultiRegionEndpoints</code> to indicate the position in the list of multi-region endpoints (global-endpoints).</p>

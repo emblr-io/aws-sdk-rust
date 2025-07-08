@@ -2,6 +2,8 @@
 
 /// <p>A request to obtain more information about dedicated IP pools.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDedicatedIpsInput {
     /// <p>The name of the IP pool that the dedicated IP address is associated with.</p>

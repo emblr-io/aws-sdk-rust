@@ -2,6 +2,8 @@
 
 /// <p>The following elements are returned by the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEmailTemplatesOutput {
     /// <p>An array the contains the name and creation time stamp for each template in your Amazon SES account.</p>

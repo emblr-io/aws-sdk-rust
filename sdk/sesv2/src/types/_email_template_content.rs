@@ -2,6 +2,8 @@
 
 /// <p>The content of the email, composed of a subject line, an HTML part, and a text-only part.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailTemplateContent {
     /// <p>The subject line of the email.</p>
