@@ -4,6 +4,8 @@
 /// <p>Only one object is accepted as a valid input.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ListComponentTypesFilter {
     /// <p>The component type that the component types in the list extend.</p>

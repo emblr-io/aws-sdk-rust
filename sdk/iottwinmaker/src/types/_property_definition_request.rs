@@ -2,6 +2,8 @@
 
 /// <p>An object that sets information about a property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyDefinitionRequest {
     /// <p>An object that contains information about the data type.</p>

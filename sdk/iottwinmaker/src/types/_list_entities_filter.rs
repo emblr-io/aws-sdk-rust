@@ -2,6 +2,8 @@
 
 /// <p>An object that filters items in a list of entities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ListEntitiesFilter {
     /// <p>The ID of the component type in the entities in the list.</p>

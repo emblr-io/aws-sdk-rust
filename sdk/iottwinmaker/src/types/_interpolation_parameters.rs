@@ -2,6 +2,8 @@
 
 /// <p>An object that specifies how to interpolate data in a list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InterpolationParameters {
     /// <p>The interpolation type.</p>

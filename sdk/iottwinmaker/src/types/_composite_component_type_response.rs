@@ -2,6 +2,8 @@
 
 /// <p>An object that returns information about the composite component types of a component type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositeComponentTypeResponse {
     /// <p>This is the <code>componentTypeId</code> that this <code>compositeComponentType</code> refers to.</p>

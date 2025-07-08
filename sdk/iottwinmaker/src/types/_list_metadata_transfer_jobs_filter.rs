@@ -2,6 +2,8 @@
 
 /// <p>The ListMetadataTransferJobs filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ListMetadataTransferJobsFilter {
     /// <p>The filter state.</p>
