@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>ListJobs</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsInput {
     /// <p>The name or full Amazon Resource Name (ARN) of the job queue used to list jobs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies an action that Batch will take after the job has remained at the head of the queue in the specified state for longer than the specified time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobStateTimeLimitAction {
     /// <p>The reason to log for the action being taken.</p>

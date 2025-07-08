@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the details of a job attempt for a job attempt by an Amazon EKS container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksAttemptDetail {
     /// <p>The details for the final status of the containers for this job attempt.</p>

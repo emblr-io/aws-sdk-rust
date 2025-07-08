@@ -2,6 +2,8 @@
 
 /// <p>The details of a task definition that describes the container and volume definitions of an Amazon ECS task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsTaskDetails {
     /// <p>A list of containers that are included in the <code>taskProperties</code> list.</p>

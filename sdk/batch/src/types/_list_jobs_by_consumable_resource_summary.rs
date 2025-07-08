@@ -2,6 +2,8 @@
 
 /// <p>Current information about a consumable resource required by a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsByConsumableResourceSummary {
     /// <p>The Amazon Resource Name (ARN) of the job.</p>

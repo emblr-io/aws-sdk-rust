@@ -2,6 +2,8 @@
 
 /// <p>An object that contains overrides for the Amazon ECS task definition of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsPropertiesOverride {
     /// <p>The overrides for the Amazon ECS task definition of a job.</p><note>

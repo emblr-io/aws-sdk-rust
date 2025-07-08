@@ -2,6 +2,8 @@
 
 /// <p>The repository credentials for private registry authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryCredentials {
     /// <p>The Amazon Resource Name (ARN) of the secret containing the private repository credentials.</p>

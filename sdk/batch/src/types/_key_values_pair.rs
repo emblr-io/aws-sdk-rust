@@ -2,6 +2,8 @@
 
 /// <p>A filter name and value pair that's used to return a more specific list of results from a <code>ListJobs</code> or <code>ListJobsByConsumableResource</code> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyValuesPair {
     /// <p>The name of the filter. Filter names are case sensitive.</p>

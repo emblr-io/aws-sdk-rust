@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the array properties of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArrayPropertiesSummary {
     /// <p>The size of the array job. This parameter is returned for parent array jobs.</p>

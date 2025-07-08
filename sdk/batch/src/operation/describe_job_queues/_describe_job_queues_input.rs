@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DescribeJobQueues</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeJobQueuesInput {
     /// <p>A list of up to 100 queue names or full queue Amazon Resource Name (ARN) entries.</p>
