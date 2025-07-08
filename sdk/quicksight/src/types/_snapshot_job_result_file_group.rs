@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information on the generated snapshot file groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotJobResultFileGroup {
     /// <p>A list of <code>SnapshotFile</code> objects.</p>

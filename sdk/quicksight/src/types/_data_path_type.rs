@@ -2,6 +2,8 @@
 
 /// <p>The type of the data path value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataPathType {
     /// <p>The type of data path value utilized in a pivot table. Choose one of the following options:</p>

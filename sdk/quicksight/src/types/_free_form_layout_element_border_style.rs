@@ -2,6 +2,8 @@
 
 /// <p>The background style configuration of a free-form layout element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FreeFormLayoutElementBorderStyle {
     /// <p>The border visibility of a free-form layout element.</p>

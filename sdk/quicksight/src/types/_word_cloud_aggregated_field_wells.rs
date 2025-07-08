@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field wells of a word cloud.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WordCloudAggregatedFieldWells {
     /// <p>The group by field well of a word cloud. Values are grouped by group by fields.</p>

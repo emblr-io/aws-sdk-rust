@@ -2,6 +2,8 @@
 
 /// <p>The conditional formatting for the text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextConditionalFormat {
     /// <p>The conditional formatting for the text background color.</p>

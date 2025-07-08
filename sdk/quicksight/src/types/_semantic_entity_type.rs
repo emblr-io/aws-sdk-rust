@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a semantic entity type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SemanticEntityType {
     /// <p>The semantic entity type name.</p>

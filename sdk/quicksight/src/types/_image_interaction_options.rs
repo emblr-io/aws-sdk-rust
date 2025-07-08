@@ -2,6 +2,8 @@
 
 /// <p>The general image interactions setup for image publish options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageInteractionOptions {
     /// <p>The menu options for the image.</p>

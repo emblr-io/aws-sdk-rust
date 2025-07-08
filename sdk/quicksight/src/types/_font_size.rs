@@ -2,6 +2,8 @@
 
 /// <p>The option that determines the text display size.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FontSize {
     /// <p>The lexical name for the text size, proportional to its surrounding context.</p>

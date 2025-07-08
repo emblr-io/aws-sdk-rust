@@ -2,6 +2,8 @@
 
 /// <p>The symbol style for a line layer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialLineSymbolStyle {
     /// <p>The color and opacity values for the fill color.</p>

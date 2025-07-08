@@ -2,6 +2,8 @@
 
 /// <p>An optional collection of CloudFormation property configurations that control how the export job is generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleCloudFormationOverridePropertyConfiguration {
     /// <p>An optional list of structures that control how resource IDs are parameterized in the returned CloudFormation template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The option that specifies individual data values for labels.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataPathLabelType {
     /// <p>The field ID of the field that the data label needs to be applied to.</p>

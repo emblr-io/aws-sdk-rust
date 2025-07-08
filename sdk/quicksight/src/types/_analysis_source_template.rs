@@ -2,6 +2,8 @@
 
 /// <p>The source template of an analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisSourceTemplate {
     /// <p>The dataset references of the source template of an analysis.</p>

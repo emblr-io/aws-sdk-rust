@@ -2,6 +2,8 @@
 
 /// <p>A data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSetIdentifierDeclaration {
     /// <p>The identifier of the data set, typically the data set's name.</p>

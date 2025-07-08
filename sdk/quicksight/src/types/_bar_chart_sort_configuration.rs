@@ -2,6 +2,8 @@
 
 /// <p>sort-configuration-description</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BarChartSortConfiguration {
     /// <p>The sort configuration of category fields.</p>

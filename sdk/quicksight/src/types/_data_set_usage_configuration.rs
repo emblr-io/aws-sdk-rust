@@ -2,6 +2,8 @@
 
 /// <p>The usage configuration to apply to child datasets that reference this dataset as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSetUsageConfiguration {
     /// <p>An option that controls whether a child dataset of a direct query can use this dataset as a source.</p>

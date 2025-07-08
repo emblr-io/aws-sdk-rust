@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the search options in a list control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListControlSearchOptions {
     /// <p>The visibility configuration of the search options in a list control.</p>

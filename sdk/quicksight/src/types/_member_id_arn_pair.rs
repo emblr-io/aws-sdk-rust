@@ -2,6 +2,8 @@
 
 /// <p>An object that consists of a member Amazon Resource Name (ARN) and a member ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberIdArnPair {
     /// <p>The ID of the member.</p>

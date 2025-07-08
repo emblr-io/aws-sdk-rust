@@ -2,6 +2,8 @@
 
 /// <p>The tooltip item for the columns that are not part of a field well.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnTooltipItem {
     /// <p>The target column of the tooltip item.</p>

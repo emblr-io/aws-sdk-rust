@@ -2,6 +2,8 @@
 
 /// <p>The optional configuration of totals cells in a <code>PivotTableVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTotalOptions {
     /// <p>The visibility configuration for the total cells.</p>

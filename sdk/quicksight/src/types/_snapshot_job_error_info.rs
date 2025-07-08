@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information on the error that caused the snapshot job to fail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotJobErrorInfo {
     /// <p>The error message.</p>

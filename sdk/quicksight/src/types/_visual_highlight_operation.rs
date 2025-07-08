@@ -2,6 +2,8 @@
 
 /// <p>Defines what initiates a highlight operation on a visual, such as a click or hover.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualHighlightOperation {
     /// <p>Specifies whether a highlight operation is initiated by a click or hover, or whether it's disabled.</p>

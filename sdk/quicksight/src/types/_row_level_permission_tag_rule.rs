@@ -2,6 +2,8 @@
 
 /// <p>A set of rules associated with a tag.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RowLevelPermissionTagRule {
     /// <p>The unique key for a tag.</p>

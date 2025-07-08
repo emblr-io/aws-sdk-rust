@@ -2,6 +2,8 @@
 
 /// <p>A control from a date filter that is used to specify date and time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterDateTimePickerControl {
     /// <p>The ID of the <code>FilterDateTimePickerControl</code>.</p>

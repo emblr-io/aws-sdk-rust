@@ -2,6 +2,8 @@
 
 /// <p>The custom text content (value, font configuration) for the table link content configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableFieldCustomTextContent {
     /// <p>The string value of the custom text content for the table URL link content.</p>

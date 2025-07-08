@@ -2,6 +2,8 @@
 
 /// <p>The label options for a chart axis. You must specify the field that the label is targeted to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AxisLabelOptions {
     /// <p>The font configuration of the axis label.</p>

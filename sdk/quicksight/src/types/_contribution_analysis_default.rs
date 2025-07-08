@@ -2,6 +2,8 @@
 
 /// <p>The contribution analysis visual display for a line, pie, or bar chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContributionAnalysisDefault {
     /// <p>The measure field that is used in the contribution analysis.</p>

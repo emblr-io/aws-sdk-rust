@@ -2,6 +2,8 @@
 
 /// <p>The sheet layout maximization options of a dashbaord.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SheetLayoutElementMaximizationOption {
     /// <p>The status of the sheet layout maximization options of a dashbaord.</p>

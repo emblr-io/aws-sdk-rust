@@ -2,6 +2,8 @@
 
 /// <p>The override parameters for a single analysis that is being imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobAnalysisOverrideParameters {
     /// <p>The ID of the analysis that you ant to apply overrides to.</p>

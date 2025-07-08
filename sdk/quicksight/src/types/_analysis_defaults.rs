@@ -2,6 +2,8 @@
 
 /// <p>The configuration for default analysis settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisDefaults {
     /// <p>The configuration for default new sheet settings.</p>

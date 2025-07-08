@@ -2,6 +2,8 @@
 
 /// <p>The values that are displayed in a control can be configured to only show values that are valid based on what's selected in other controls.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CascadingControlConfiguration {
     /// <p>A list of source controls that determine the values that are used in the current control.</p>

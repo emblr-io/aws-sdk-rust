@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field wells for a geospatial map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialMapAggregatedFieldWells {
     /// <p>The geospatial field wells of a geospatial map. Values are grouped by geospatial fields.</p>

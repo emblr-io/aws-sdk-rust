@@ -2,6 +2,8 @@
 
 /// <p>A control to display a dropdown list with buttons that are used to select a single value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterDropDownControl {
     /// <p>The ID of the <code>FilterDropDownControl</code>.</p>

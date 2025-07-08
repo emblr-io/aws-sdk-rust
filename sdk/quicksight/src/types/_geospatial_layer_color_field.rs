@@ -2,6 +2,8 @@
 
 /// <p>The color field that defines a gradient or categorical style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialLayerColorField {
     /// <p>A list of color dimension fields.</p>

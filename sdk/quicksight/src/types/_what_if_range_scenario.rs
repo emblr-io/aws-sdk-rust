@@ -2,6 +2,8 @@
 
 /// <p>Provides the forecast to meet the target for a particular date range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhatIfRangeScenario {
     /// <p>The start date in the date range that you need the forecast results for.</p>

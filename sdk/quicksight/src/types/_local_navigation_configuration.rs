@@ -2,6 +2,8 @@
 
 /// <p>The navigation configuration for <code>CustomActionNavigationOperation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocalNavigationConfiguration {
     /// <p>The sheet that is targeted for navigation in the same analysis.</p>

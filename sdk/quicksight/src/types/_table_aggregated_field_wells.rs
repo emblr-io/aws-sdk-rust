@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field well for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableAggregatedFieldWells {
     /// <p>The group by field well for a pivot table. Values are grouped by group by fields.</p>

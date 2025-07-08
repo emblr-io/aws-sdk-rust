@@ -2,6 +2,8 @@
 
 /// <p>A control from a filter that is scoped across more than one sheet. This represents your filter control on a sheet</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterCrossSheetControl {
     /// <p>The ID of the <code>FilterCrossSheetControl</code>.</p>

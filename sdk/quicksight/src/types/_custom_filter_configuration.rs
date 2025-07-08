@@ -2,6 +2,8 @@
 
 /// <p>A custom filter that filters based on a single value. This filter can be partially matched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomFilterConfiguration {
     /// <p>The match operator that is used to determine if a filter should be applied.</p>

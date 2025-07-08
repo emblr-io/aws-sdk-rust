@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the placeholder options in a text control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextControlPlaceholderOptions {
     /// <p>The visibility configuration of the placeholder options in a text control.</p>

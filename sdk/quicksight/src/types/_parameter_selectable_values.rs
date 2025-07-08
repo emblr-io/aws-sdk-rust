@@ -2,6 +2,8 @@
 
 /// <p>A list of selectable values that are used in a control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterSelectableValues {
     /// <p>The values that are used in <code>ParameterSelectableValues</code>.</p>

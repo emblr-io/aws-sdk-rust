@@ -2,6 +2,8 @@
 
 /// <p>The definition of the Anchor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Anchor {
     /// <p>The <code>AnchorType</code> for the Anchor.</p>

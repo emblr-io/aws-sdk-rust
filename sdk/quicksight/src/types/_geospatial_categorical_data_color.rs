@@ -2,6 +2,8 @@
 
 /// <p>The categorical data color for a single category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialCategoricalDataColor {
     /// <p>The color and opacity values for the category data color.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The table cell style for a cell in pivot table or table visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableCellStyle {
     /// <p>The visibility of the table cells.</p>

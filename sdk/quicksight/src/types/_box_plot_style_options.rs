@@ -2,6 +2,8 @@
 
 /// <p>The style options of the box plot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BoxPlotStyleOptions {
     /// <p>The fill styles (solid, transparent) of the box plot.</p>

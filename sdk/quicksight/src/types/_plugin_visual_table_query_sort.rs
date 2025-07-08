@@ -2,6 +2,8 @@
 
 /// <p>The table query sorting options for the plugin visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisualTableQuerySort {
     /// <p>Determines how data is sorted in the response.</p>

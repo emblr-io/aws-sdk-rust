@@ -2,6 +2,8 @@
 
 /// <p>The key-value pair used for the row-level security tags feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SessionTag {
     /// <p>The key for the tag.</p>

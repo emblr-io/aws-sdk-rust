@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a calculated field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TopicCalculatedField {
     /// <p>The calculated field name.</p>

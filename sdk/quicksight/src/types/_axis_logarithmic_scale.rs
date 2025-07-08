@@ -2,6 +2,8 @@
 
 /// <p>The logarithmic axis scale setup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AxisLogarithmicScale {
     /// <p>The base setup of a logarithmic axis scale.</p>

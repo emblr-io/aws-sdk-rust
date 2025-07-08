@@ -2,6 +2,8 @@
 
 /// <p>The comparison display configuration of a KPI or gauge chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComparisonConfiguration {
     /// <p>The method of the comparison. Choose from the following options:</p>

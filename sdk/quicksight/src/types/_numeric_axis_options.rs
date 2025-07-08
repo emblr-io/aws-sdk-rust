@@ -2,6 +2,8 @@
 
 /// <p>The options for an axis with a numeric field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumericAxisOptions {
     /// <p>The scale setup of a numeric axis.</p>

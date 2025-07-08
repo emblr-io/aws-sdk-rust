@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the presentation of a KPI visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KpiOptions {
     /// <p>The options that determine the presentation of the progress bar of a KPI visual.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Geospatial column group that denotes a hierarchy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoSpatialColumnGroup {
     /// <p>A display name for the hierarchy.</p>

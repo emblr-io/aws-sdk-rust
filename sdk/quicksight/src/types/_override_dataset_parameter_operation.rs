@@ -2,6 +2,8 @@
 
 /// <p>A transform operation that overrides the dataset parameter values that are defined in another dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverrideDatasetParameterOperation {
     /// <p>The name of the parameter to be overridden with different values.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the number display format configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NumberDisplayFormatConfiguration {
     /// <p>Determines the prefix value of the number format.</p>

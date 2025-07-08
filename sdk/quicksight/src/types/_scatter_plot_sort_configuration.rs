@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration of a scatter plot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScatterPlotSortConfiguration {
     /// <p>The limit configuration of the visual display for an axis.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The display options of a control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DropDownControlDisplayOptions {
     /// <p>The configuration of the <code>Select all</code> options in a dropdown control.</p>

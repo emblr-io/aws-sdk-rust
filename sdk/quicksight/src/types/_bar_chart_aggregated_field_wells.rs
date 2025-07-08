@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field wells of a bar chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BarChartAggregatedFieldWells {
     /// <p>The category (y-axis) field well of a bar chart.</p>

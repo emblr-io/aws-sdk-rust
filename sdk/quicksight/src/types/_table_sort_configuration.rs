@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration for a <code>TableVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableSortConfiguration {
     /// <p>The field sort options for rows in the table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the presentation of histogram bins.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HistogramBinOptions {
     /// <p>The options that determine the selected bin type.</p>

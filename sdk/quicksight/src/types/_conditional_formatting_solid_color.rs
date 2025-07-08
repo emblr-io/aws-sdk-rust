@@ -2,6 +2,8 @@
 
 /// <p>Formatting configuration for solid color.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConditionalFormattingSolidColor {
     /// <p>The expression that determines the formatting configuration for solid color.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A transform operation that projects columns. Operations that come after a projection can only refer to projected columns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectOperation {
     /// <p>Projected columns.</p>

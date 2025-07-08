@@ -2,6 +2,8 @@
 
 /// <p>The color configuration for individual groups within a waterfall visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaterfallChartGroupColorConfiguration {
     /// <p>Defines the color for the positive bars of a waterfall chart.</p>

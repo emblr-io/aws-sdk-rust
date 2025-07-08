@@ -2,6 +2,8 @@
 
 /// <p>The forecast properties setup of a forecast in the line chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeBasedForecastProperties {
     /// <p>The periods forward setup of a forecast computation.</p>

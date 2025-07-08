@@ -2,6 +2,8 @@
 
 /// <p>The sort by field for the field sort options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableSortBy {
     /// <p>The field sort (field id, direction) for the pivot table sort by options.</p>

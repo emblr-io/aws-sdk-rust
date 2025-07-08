@@ -2,6 +2,8 @@
 
 /// <p>A control to display info icons for filters and parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SheetControlInfoIconLabelOptions {
     /// <p>The visibility configuration of info icon label options.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The generative BI authoring settings of an embedded Amazon QuickSight console.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerativeAuthoringConfigurations {
     /// <p>The generative BI authoring settings of an embedded Amazon QuickSight console.</p>

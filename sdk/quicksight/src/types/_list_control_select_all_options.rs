@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the <code>Select all</code> options in a list control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListControlSelectAllOptions {
     /// <p>The visibility configuration of the <code>Select all</code> options in a list control.</p>

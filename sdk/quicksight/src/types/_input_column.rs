@@ -2,6 +2,8 @@
 
 /// <p>Metadata for a column that is used as the input of a transform operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputColumn {
     /// <p>The name of this column in the underlying data source.</p>

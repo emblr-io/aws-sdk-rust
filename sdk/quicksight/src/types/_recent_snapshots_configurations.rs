@@ -2,6 +2,8 @@
 
 /// <p>The recent snapshots configuration for an embedded Amazon QuickSight dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecentSnapshotsConfigurations {
     /// <p>The recent snapshots configuration for an embedded Amazon QuickSight dashboard.</p>

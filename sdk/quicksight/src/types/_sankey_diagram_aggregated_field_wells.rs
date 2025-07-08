@@ -2,6 +2,8 @@
 
 /// <p>The field well configuration of a sankey diagram.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SankeyDiagramAggregatedFieldWells {
     /// <p>The source field wells of a sankey diagram.</p>

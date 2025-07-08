@@ -2,6 +2,8 @@
 
 /// <p>Determines if hidden fields are included in an exported dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportHiddenFieldsOption {
     /// <p>The status of the export hidden fields options of a dashbaord.</p>

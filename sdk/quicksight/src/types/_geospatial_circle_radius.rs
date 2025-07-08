@@ -2,6 +2,8 @@
 
 /// <p>The geospatial radius for a circle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialCircleRadius {
     /// <p>The positive value for the radius of a circle.</p>

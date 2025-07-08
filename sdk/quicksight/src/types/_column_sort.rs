@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration for a column that is not used in a field well.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnSort {
     /// <p>A column of a data set.</p>

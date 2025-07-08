@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about the users that the dashboard snapshot is generated for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotUserConfiguration {
     /// <p>An array of records that describe the anonymous users that the dashboard snapshot is generated for.</p>

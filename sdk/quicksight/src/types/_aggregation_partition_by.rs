@@ -2,6 +2,8 @@
 
 /// <p>The definition of an <code>AggregationPartitionBy</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationPartitionBy {
     /// <p>The field Name for an <code>AggregationPartitionBy</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A dataset parameter that is mapped to an analysis parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MappedDataSetParameter {
     /// <p>A unique name that identifies a dataset within the analysis or dashboard.</p>

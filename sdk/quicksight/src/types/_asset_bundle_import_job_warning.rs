@@ -2,6 +2,8 @@
 
 /// <p>Describes a warning that occurred during an Asset Bundle import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobWarning {
     /// <p>The ARN of the resource that the warning occurred for.</p>

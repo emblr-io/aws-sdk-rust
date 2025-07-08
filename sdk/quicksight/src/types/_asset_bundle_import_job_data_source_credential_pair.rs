@@ -2,6 +2,8 @@
 
 /// <p>A username and password credential pair to use to import a data source resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssetBundleImportJobDataSourceCredentialPair {
     /// <p>The username for the data source connection.</p>

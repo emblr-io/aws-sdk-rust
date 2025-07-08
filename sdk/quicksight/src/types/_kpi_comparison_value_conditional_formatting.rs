@@ -2,6 +2,8 @@
 
 /// <p>The conditional formatting for the comparison value of a KPI visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KpiComparisonValueConditionalFormatting {
     /// <p>The conditional formatting of the comparison value's text color.</p>

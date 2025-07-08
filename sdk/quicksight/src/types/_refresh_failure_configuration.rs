@@ -2,6 +2,8 @@
 
 /// <p>The failure configuration of a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshFailureConfiguration {
     /// <p>The email alert configuration for a dataset refresh failure.</p>

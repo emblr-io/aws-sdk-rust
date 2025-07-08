@@ -2,6 +2,8 @@
 
 /// <p>The field sort options in a chart configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldSortOptions {
     /// <p>The sort configuration for a field in a field well.</p>

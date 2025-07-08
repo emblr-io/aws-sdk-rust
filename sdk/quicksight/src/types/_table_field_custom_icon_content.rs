@@ -2,6 +2,8 @@
 
 /// <p>The custom icon content for the table link content configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableFieldCustomIconContent {
     /// <p>The icon set type (link) of the custom icon content for table URL link content.</p>

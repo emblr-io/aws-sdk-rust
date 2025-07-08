@@ -2,6 +2,8 @@
 
 /// <p>Formatting configuration for <code>DateTime</code> fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateTimeFormatConfiguration {
     /// <p>Determines the <code>DateTime</code> format.</p>

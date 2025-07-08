@@ -2,6 +2,8 @@
 
 /// <p>An aggregation function that aggregates the total values of a measure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TotalAggregationFunction {
     /// <p>A built in aggregation function for total values.</p>

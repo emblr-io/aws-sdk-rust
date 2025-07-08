@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a negative format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NegativeFormat {
     /// <p>The prefix for a negative format.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The color configuration of a <code>GaugeChartVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GaugeChartColorConfiguration {
     /// <p>The foreground color configuration of a <code>GaugeChartVisual</code>.</p>

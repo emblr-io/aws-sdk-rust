@@ -2,6 +2,8 @@
 
 /// <p>The conditional formatting of a table row.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableRowConditionalFormatting {
     /// <p>The conditional formatting color (solid, gradient) of the background for a table row.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a data aggregation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataAggregation {
     /// <p>The level of time precision that is used to aggregate <code>DateTime</code> values.</p>

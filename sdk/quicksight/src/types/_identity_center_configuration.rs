@@ -2,6 +2,8 @@
 
 /// <p>The parameters for an IAM Identity Center configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityCenterConfiguration {
     /// <p>A Boolean option that controls whether Trusted Identity Propagation should be used.</p>

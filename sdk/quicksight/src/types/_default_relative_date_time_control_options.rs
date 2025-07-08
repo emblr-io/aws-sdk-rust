@@ -2,6 +2,8 @@
 
 /// <p>The default options that correspond to the <code>RelativeDateTime</code> filter control type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultRelativeDateTimeControlOptions {
     /// <p>The display options of a control.</p>

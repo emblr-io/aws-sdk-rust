@@ -2,6 +2,8 @@
 
 /// <p>The QA result that is made from generated answer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GeneratedAnswerResult {
     /// <p>The question text.</p>
