@@ -2,6 +2,8 @@
 
 /// <p>Represents the payload of an Engagement context. The structure of this payload varies based on the context type specified in the EngagementContextDetails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EngagementContextPayload {
     /// <p>Contains detailed information about a customer project when the context type is "CustomerProject". This field is present only when the Type in EngagementContextDetails is set to "CustomerProject".</p>

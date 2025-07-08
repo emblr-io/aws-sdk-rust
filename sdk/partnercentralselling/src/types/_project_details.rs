@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the project associated with the Engagement Invitation, including the business problem and expected outcomes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ProjectDetails {
     /// <p>Describes the business problem that the project aims to solve. This information is crucial for understanding the project’s goals and objectives.</p>

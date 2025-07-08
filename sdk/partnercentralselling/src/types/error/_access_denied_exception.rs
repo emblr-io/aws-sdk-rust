@@ -3,6 +3,8 @@
 /// <p>This error occurs when you don't have permission to perform the requested action.</p>
 /// <p>You don’t have access to this action or resource. Review IAM policies or contact your AWS administrator for assistance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     #[allow(missing_docs)] // documentation missing in model

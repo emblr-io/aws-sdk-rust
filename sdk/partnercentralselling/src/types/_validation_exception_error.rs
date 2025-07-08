@@ -25,6 +25,8 @@
 /// <p>Fix: Verify that the value is unique and doesn't duplicate an existing value in the system.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationExceptionError {
     /// <p>Specifies the field name with the invalid value.</p>

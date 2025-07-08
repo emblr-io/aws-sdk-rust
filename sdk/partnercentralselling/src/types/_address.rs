@@ -2,6 +2,8 @@
 
 /// <p>Specifies the end <code>Customer</code>'s address details associated with the <code>Opportunity</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Address {
     /// <p>Specifies the end <code>Customer</code>'s city associated with the <code>Opportunity</code>.</p>

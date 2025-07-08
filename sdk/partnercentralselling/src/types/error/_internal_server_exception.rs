@@ -3,6 +3,8 @@
 /// <p>This error occurs when the specified resource can’t be found or doesn't exist. Resource ID and type might be incorrect.</p>
 /// <p>Suggested action: This is usually a transient error. Retry after the provided retry delay or a short interval. If the problem persists, contact AWS support.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerException {
     #[allow(missing_docs)] // documentation missing in model

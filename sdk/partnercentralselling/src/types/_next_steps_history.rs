@@ -2,6 +2,8 @@
 
 /// <p>Read-only; shows the last 50 values and change dates for the <code>NextSteps</code> field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NextStepsHistory {
     /// <p>Indicates the step's execution details.</p>

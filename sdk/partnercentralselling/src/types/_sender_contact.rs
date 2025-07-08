@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the details of the sender-provided contact person for the <code>EngagementInvitation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SenderContact {
     /// <p>The sender-provided contact's email address associated with the <code>EngagementInvitation</code>.</p>
