@@ -2,6 +2,8 @@
 
 /// <p>This object contains the log events and metadata for a Live Tail session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LiveTailSessionUpdate {
     /// <p>This object contains the session metadata for a Live Tail session.</p>

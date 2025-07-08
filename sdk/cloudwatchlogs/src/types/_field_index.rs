@@ -2,6 +2,8 @@
 
 /// <p>This structure describes one log event field that is used as an index in at least one index policy in this account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldIndex {
     /// <p>If this field index appears in an index policy that applies only to a single log group, the ARN of that log group is displayed here.</p>

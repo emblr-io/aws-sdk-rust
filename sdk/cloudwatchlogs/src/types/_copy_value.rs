@@ -3,6 +3,8 @@
 /// <p>This processor copies values within a log event. You can also use this processor to add metadata to log events by copying the values of the following metadata keys into the log events: <code>@logGroupName</code>, <code>@logGroupStream</code>, <code>@accountId</code>, <code>@regionName</code>.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-copyValue"> copyValue</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CopyValue {
     /// <p>An array of <code>CopyValueEntry</code> objects, where each object contains the information about one field value to copy.</p>
