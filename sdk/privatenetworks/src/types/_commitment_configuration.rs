@@ -3,6 +3,8 @@
 /// <p>Determines the duration and renewal status of the commitment period for a radio unit.</p>
 /// <p>For pricing, see <a href="http://aws.amazon.com/private5g/pricing">Amazon Web Services Private 5G Pricing</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommitmentConfiguration {
     /// <p>The duration of the commitment period for the radio unit. You can choose a 60-day, 1-year, or 3-year period.</p>

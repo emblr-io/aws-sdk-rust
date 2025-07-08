@@ -2,6 +2,8 @@
 
 /// <p>Information about tracking a shipment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingInformation {
     /// <p>The tracking number of the shipment.</p>
