@@ -2,6 +2,8 @@
 
 /// <p>Describes supported operating systems in OpsWorks Stacks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperatingSystem {
     /// <p>The name of the operating system, such as <code>Amazon Linux 2</code>.</p>

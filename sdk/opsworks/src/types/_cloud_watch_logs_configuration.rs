@@ -2,6 +2,8 @@
 
 /// <p>Describes the Amazon CloudWatch Logs configuration for a layer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsConfiguration {
     /// <p>Whether CloudWatch Logs is enabled for a layer.</p>

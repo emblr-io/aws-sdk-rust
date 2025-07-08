@@ -2,6 +2,8 @@
 
 /// <p>Describes an Elastic Load Balancing instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticLoadBalancer {
     /// <p>The Elastic Load Balancing instance name.</p>

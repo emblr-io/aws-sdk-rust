@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>CreateDeployment</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDeploymentOutput {
     /// <p>The deployment ID, which can be used with other requests to identify the deployment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an app's SSL configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SslConfiguration {
     /// <p>The contents of the certificate's domain.crt file.</p>

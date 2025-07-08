@@ -11,6 +11,8 @@
 /// <p>The following example specifies that the instance should be online for four hours, from UTC 1200 - 1600. It will be off for the remainder of the day.</p>
 /// <p><code> { "12":"on", "13":"on", "14":"on", "15":"on" } </code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WeeklyAutoScalingSchedule {
     /// <p>The schedule for Monday.</p>

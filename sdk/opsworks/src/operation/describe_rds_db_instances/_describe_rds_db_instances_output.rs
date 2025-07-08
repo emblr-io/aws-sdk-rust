@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeRdsDbInstances</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeRdsDbInstancesOutput {
     /// <p>An a array of <code>RdsDbInstance</code> objects that describe the instances.</p>

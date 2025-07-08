@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>ListTags</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsOutput {
     /// <p>A set of key-value pairs that contain tag keys and tag values that are attached to a stack or layer.</p>

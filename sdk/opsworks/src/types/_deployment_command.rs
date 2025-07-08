@@ -2,6 +2,8 @@
 
 /// <p>Used to specify a stack or deployment command.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentCommand {
     /// <p>Specifies the operation. You can specify only one command.</p>

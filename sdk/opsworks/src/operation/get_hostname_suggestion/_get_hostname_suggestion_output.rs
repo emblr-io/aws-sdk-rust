@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>GetHostnameSuggestion</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetHostnameSuggestionOutput {
     /// <p>The layer ID.</p>

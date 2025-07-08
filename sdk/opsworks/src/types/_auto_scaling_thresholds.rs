@@ -2,6 +2,8 @@
 
 /// <p>Describes a load-based auto scaling upscaling or downscaling threshold configuration, which specifies when OpsWorks Stacks starts or stops load-based instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingThresholds {
     /// <p>The number of instances to add or remove when the load exceeds a threshold.</p>

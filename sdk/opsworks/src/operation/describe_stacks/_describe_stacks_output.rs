@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeStacks</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeStacksOutput {
     /// <p>An array of <code>Stack</code> objects that describe the stacks.</p>

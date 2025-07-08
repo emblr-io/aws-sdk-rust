@@ -2,6 +2,8 @@
 
 /// <p>Summarizes the number of layers, instances, and apps in a stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSummary {
     /// <p>The stack ID.</p>

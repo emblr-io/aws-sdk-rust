@@ -39,6 +39,8 @@
 /// <p>The preferred time zone for logs streamed to CloudWatch Logs.
 /// Valid values are <code>LOCAL</code> and <code>UTC</code>, for Coordinated Universal Time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeCommands</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeCommandsOutput {
     /// <p>An array of <code>Command</code> objects that describe each of the specified commands.</p>

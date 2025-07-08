@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeApps</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeAppsOutput {
     /// <p>An array of <code>App</code> objects that describe the specified apps.</p>
