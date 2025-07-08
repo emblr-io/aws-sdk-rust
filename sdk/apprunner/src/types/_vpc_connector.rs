@@ -5,6 +5,8 @@
 /// <p>At this time, App Runner supports only one revision per name.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConnector {
     /// <p>The customer-provided VPC connector name.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a custom encryption key that App Runner uses to encrypt copies of the source repository and service logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionConfiguration {
     /// <p>The ARN of the KMS key that's used for encryption.</p>

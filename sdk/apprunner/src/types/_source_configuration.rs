@@ -2,6 +2,8 @@
 
 /// <p>Describes the source deployed to an App Runner service. It can be a code or an image repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceConfiguration {
     /// <p>The description of a source code repository.</p>

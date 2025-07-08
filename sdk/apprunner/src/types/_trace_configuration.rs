@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of the tracing feature within an App Runner observability configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TraceConfiguration {
     /// <p>The implementation provider chosen for tracing App Runner services.</p>

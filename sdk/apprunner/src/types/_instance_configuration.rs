@@ -2,6 +2,8 @@
 
 /// <p>Describes the runtime configuration of an App Runner service instance (scaling unit).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceConfiguration {
     /// <p>The number of CPU units reserved for each instance of your App Runner service.</p>

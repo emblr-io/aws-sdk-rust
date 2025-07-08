@@ -2,6 +2,8 @@
 
 /// <p>Describes the settings for the health check that App Runner performs to monitor the health of a service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheckConfiguration {
     /// <p>The IP protocol that App Runner uses to perform health checks for your service.</p>
