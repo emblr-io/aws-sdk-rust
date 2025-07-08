@@ -2,6 +2,8 @@
 
 /// <p>Details about a flow that contains an incompatible node in a DoWhile loop.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoopIncompatibleNodeTypeFlowValidationDetails {
     /// <p>The <code>Loop</code> container node that contains an incompatible node.</p>

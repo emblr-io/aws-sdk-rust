@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a prompt and whether it is from Prompt management or defined inline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PromptFlowNodeSourceConfiguration {
     /// <p>Contains configurations for a prompt that is defined inline</p>

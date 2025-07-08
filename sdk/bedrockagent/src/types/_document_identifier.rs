@@ -2,6 +2,8 @@
 
 /// <p>Contains information that identifies the document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentIdentifier {
     /// <p>The type of data source connected to the knowledge base that contains the document.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for the service to use for retrieving data to return as the output from the node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RetrievalFlowNodeServiceConfiguration {
     /// <p>Contains configurations for the Amazon S3 location from which to retrieve data to return as the output from the node.</p>

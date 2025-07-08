@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a document to ingest into a knowledge base and metadata to associate with it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KnowledgeBaseDocument {
     /// <p>Contains the metadata to associate with the document.</p>

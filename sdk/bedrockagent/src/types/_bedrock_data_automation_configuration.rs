@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for using Amazon Bedrock Data Automation as the parser for ingesting your data sources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockDataAutomationConfiguration {
     /// <p>Specifies whether to enable parsing of multimodal data, including both text and/or images.</p>

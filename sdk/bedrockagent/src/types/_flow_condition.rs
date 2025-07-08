@@ -2,6 +2,8 @@
 
 /// <p>Defines a condition in the condition node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FlowCondition {
     /// <p>A name for the condition that you can reference.</p>

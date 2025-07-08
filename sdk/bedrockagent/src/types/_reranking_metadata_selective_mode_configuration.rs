@@ -2,6 +2,8 @@
 
 /// <p>Configures the metadata fields to include or exclude during the reranking process when using selective mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum RerankingMetadataSelectiveModeConfiguration {
     /// <p>Specifies the metadata fields to exclude from the reranking process.</p>

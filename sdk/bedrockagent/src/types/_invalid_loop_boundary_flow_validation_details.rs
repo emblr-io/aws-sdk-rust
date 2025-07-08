@@ -2,6 +2,8 @@
 
 /// <p>Details about a flow that contains connections that violate loop boundary rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidLoopBoundaryFlowValidationDetails {
     /// <p>The name of the connection that violates loop boundary rules.</p>

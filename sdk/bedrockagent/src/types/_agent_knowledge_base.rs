@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a knowledge base that is associated with an agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentKnowledgeBase {
     /// <p>The unique identifier of the agent with which the knowledge base is associated.</p>

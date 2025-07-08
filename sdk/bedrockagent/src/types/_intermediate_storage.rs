@@ -2,6 +2,8 @@
 
 /// <p>A location for storing content from data sources temporarily as it is processed by custom components in the ingestion pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntermediateStorage {
     /// <p>An S3 bucket path.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the content to ingest into a knowledge base connected to an Amazon S3 data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Content {
     /// <p>The S3 location of the file containing the content to ingest.</p>

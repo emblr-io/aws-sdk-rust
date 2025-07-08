@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a prompt from Prompt management to use in a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PromptFlowNodeResourceConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the prompt from Prompt management.</p>

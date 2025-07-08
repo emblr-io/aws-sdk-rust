@@ -2,6 +2,8 @@
 
 /// <p>Contains the details for a document that was ingested or deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KnowledgeBaseDocumentDetail {
     /// <p>The identifier of the knowledge base that the document was ingested into or deleted from.</p>

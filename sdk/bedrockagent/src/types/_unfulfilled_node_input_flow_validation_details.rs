@@ -2,6 +2,8 @@
 
 /// <p>Details about an unfulfilled node input with no valid connections.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnfulfilledNodeInputFlowValidationDetails {
     /// <p>The name of the node containing the unfulfilled input.</p>

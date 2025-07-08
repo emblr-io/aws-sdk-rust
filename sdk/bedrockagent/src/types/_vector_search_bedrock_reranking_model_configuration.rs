@@ -2,6 +2,8 @@
 
 /// <p>Configures the Amazon Bedrock model used for reranking retrieved results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VectorSearchBedrockRerankingModelConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the Amazon Bedrock reranker model.</p>

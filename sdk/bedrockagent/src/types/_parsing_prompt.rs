@@ -2,6 +2,8 @@
 
 /// <p>Instructions for interpreting the contents of a document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParsingPrompt {
     /// <p>Instructions for interpreting the contents of a document.</p>

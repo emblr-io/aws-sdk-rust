@@ -2,6 +2,8 @@
 
 /// <p>The performance-related configuration options for the knowledge base retrieval and generation process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceConfiguration {
     /// <p>The latency optimization setting.</p>

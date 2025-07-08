@@ -2,6 +2,8 @@
 
 /// <p>The seed or starting point URL. You should be authorized to crawl the URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SeedUrl {
     /// <p>A seed or starting point URL.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The definition of a filter to filter the data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestionJobFilter {
     /// <p>The name of field or attribute to apply the filter.</p>

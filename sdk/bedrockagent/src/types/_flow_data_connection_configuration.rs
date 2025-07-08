@@ -2,6 +2,8 @@
 
 /// <p>The configuration of a connection originating from a node that isn't a Condition node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowDataConnectionConfiguration {
     /// <p>The name of the output in the source node that the connection begins from.</p>

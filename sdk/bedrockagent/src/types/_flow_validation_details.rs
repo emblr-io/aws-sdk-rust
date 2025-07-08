@@ -2,6 +2,8 @@
 
 /// <p>A union type containing various possible validation issues in the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FlowValidationDetails {
     /// <p>Details about a cyclic connection in the flow.</p>

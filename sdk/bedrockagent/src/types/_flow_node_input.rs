@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for an input in an Amazon Bedrock Flows node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FlowNodeInput {
     /// <p>Specifies a name for the input that you can reference.</p>

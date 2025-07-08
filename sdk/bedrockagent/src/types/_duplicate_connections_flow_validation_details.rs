@@ -2,6 +2,8 @@
 
 /// <p>Details about duplicate connections found between two nodes in the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateConnectionsFlowValidationDetails {
     /// <p>The name of the source node where the duplicate connection starts.</p>
