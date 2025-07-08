@@ -2,6 +2,8 @@
 
 /// <p>Guardrail rules for an Amazon Q Business application. Amazon Q Business supports only one rule at a time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Rule {
     /// <p>Users and groups to be included in a rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the basic authentication credentials used to configure a plugin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BasicAuthConfiguration {
     /// <p>The ARN of the Secrets Manager secret that stores the basic authentication credentials used for plugin configuration..</p>

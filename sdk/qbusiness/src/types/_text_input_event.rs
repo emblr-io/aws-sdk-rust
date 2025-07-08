@@ -2,6 +2,8 @@
 
 /// <p>An input event for a end user message in an Amazon Q Business web experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextInputEvent {
     /// <p>A user message in a text message input event.</p>

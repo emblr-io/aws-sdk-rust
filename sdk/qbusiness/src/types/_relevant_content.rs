@@ -2,6 +2,8 @@
 
 /// <p>Represents a piece of content that is relevant to a search query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelevantContent {
     /// <p>The actual content of the relevant item.</p>

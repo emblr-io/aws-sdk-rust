@@ -2,6 +2,8 @@
 
 /// <p>A user or group in the IAM Identity Center instance connected to the Amazon Q Business application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SubscriptionPrincipal {
     /// <p>The identifier of a group in the IAM Identity Center instance connected to the Amazon Q Business application.</p>

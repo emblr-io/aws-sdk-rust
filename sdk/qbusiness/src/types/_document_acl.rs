@@ -2,6 +2,8 @@
 
 /// <p>Represents the Access Control List (ACL) for a document, containing both allowlist and denylist conditions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAcl {
     /// <p>The allowlist conditions for the document. Users or groups matching these conditions are granted access to the document.</p>

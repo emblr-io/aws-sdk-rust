@@ -2,6 +2,8 @@
 
 /// <p>Maps a batch delete document request to a specific Amazon Q Business data source connector sync job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceSyncJobMetrics {
     /// <p>The current count of documents added from the data source during the data source sync.</p>

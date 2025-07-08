@@ -2,6 +2,8 @@
 
 /// <p>Container for details about different types of media sources (image, audio, or video).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SourceDetails {
     /// <p>Details specific to audio content within the source.</p>

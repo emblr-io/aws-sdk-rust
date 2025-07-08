@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for video content extraction and processing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VideoExtractionConfiguration {
     /// <p>The status of video extraction (ENABLED or DISABLED) for processing video content from files.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Summary information for an Amazon Q Business plugin action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionSummary {
     /// <p>The identifier of an Amazon Q Business plugin action.</p>

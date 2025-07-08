@@ -2,6 +2,8 @@
 
 /// <p>Enables filtering of responses based on document attributes or metadata fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeFilter {
     /// <p>Performs a logical <code>AND</code> operation on all supplied filters.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a data accessor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataAccessor {
     /// <p>The friendly name of the data accessor.</p>

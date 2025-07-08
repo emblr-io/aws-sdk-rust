@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Amazon Q Business data source connector synchronization job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceSyncJob {
     /// <p>The identifier of a data source synchronization job.</p>
