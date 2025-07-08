@@ -2,6 +2,8 @@
 
 /// <p>The datastore activity that specifies where to store the processed data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatastoreActivity {
     /// <p>The name of the datastore activity.</p>

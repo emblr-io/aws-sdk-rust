@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the data store that is managed by IoT Analytics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceManagedDatastoreS3StorageSummary {}
 impl ServiceManagedDatastoreS3StorageSummary {

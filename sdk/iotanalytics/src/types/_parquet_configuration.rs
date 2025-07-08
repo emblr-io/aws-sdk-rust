@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration information of the Parquet format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParquetConfiguration {
     /// <p>Information needed to define a schema.</p>

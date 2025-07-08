@@ -2,6 +2,8 @@
 
 /// <p>An activity that performs a transformation on a message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineActivity {
     /// <p>Determines the source of the messages to be processed.</p>
