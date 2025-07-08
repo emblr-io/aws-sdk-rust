@@ -2,6 +2,8 @@
 
 /// <p>Filtering options for <i>ListGroups</i> operation. This is only used as input to Operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListGroupsFilters {
     /// <p>Filters only groups with the provided name prefix.</p>
