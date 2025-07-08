@@ -6,6 +6,8 @@
 #[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum TaskParameterValue {
+    /// <p>A range (for example 1-10) or selection of specific (for example 1,3,7,8,10) integers represented as a string.</p>
+    ChunkInt(::std::string::String),
     /// <p>A double precision IEEE-754 floating point number represented as a string.</p>
     Float(::std::string::String),
     /// <p>A signed integer represented as a string.</p>
@@ -25,6 +27,19 @@ pub enum TaskParameterValue {
     Unknown,
 }
 impl TaskParameterValue {
+    /// Tries to convert the enum instance into [`ChunkInt`](crate::types::TaskParameterValue::ChunkInt), extracting the inner [`String`](::std::string::String).
+    /// Returns `Err(&Self)` if it can't be converted.
+    pub fn as_chunk_int(&self) -> ::std::result::Result<&::std::string::String, &Self> {
+        if let TaskParameterValue::ChunkInt(val) = &self {
+            ::std::result::Result::Ok(val)
+        } else {
+            ::std::result::Result::Err(self)
+        }
+    }
+    /// Returns true if this is a [`ChunkInt`](crate::types::TaskParameterValue::ChunkInt).
+    pub fn is_chunk_int(&self) -> bool {
+        self.as_chunk_int().is_ok()
+    }
     /// Tries to convert the enum instance into [`Float`](crate::types::TaskParameterValue::Float), extracting the inner [`String`](::std::string::String).
     /// Returns `Err(&Self)` if it can't be converted.
     pub fn as_float(&self) -> ::std::result::Result<&::std::string::String, &Self> {

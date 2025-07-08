@@ -8,6 +8,8 @@
 pub struct SpaceSettingsSummary {
     /// <p>The type of app created within the space.</p>
     pub app_type: ::std::option::Option<crate::types::AppType>,
+    /// <p>A setting that enables or disables remote access for a SageMaker space. When enabled, this allows you to connect to the remote space from your local IDE.</p>
+    pub remote_access: ::std::option::Option<crate::types::FeatureStatus>,
     /// <p>The storage settings for a space.</p>
     pub space_storage_settings: ::std::option::Option<crate::types::SpaceStorageSettings>,
 }
@@ -15,6 +17,10 @@ impl SpaceSettingsSummary {
     /// <p>The type of app created within the space.</p>
     pub fn app_type(&self) -> ::std::option::Option<&crate::types::AppType> {
         self.app_type.as_ref()
+    }
+    /// <p>A setting that enables or disables remote access for a SageMaker space. When enabled, this allows you to connect to the remote space from your local IDE.</p>
+    pub fn remote_access(&self) -> ::std::option::Option<&crate::types::FeatureStatus> {
+        self.remote_access.as_ref()
     }
     /// <p>The storage settings for a space.</p>
     pub fn space_storage_settings(&self) -> ::std::option::Option<&crate::types::SpaceStorageSettings> {
@@ -33,6 +39,7 @@ impl SpaceSettingsSummary {
 #[non_exhaustive]
 pub struct SpaceSettingsSummaryBuilder {
     pub(crate) app_type: ::std::option::Option<crate::types::AppType>,
+    pub(crate) remote_access: ::std::option::Option<crate::types::FeatureStatus>,
     pub(crate) space_storage_settings: ::std::option::Option<crate::types::SpaceStorageSettings>,
 }
 impl SpaceSettingsSummaryBuilder {
@@ -49,6 +56,20 @@ impl SpaceSettingsSummaryBuilder {
     /// <p>The type of app created within the space.</p>
     pub fn get_app_type(&self) -> &::std::option::Option<crate::types::AppType> {
         &self.app_type
+    }
+    /// <p>A setting that enables or disables remote access for a SageMaker space. When enabled, this allows you to connect to the remote space from your local IDE.</p>
+    pub fn remote_access(mut self, input: crate::types::FeatureStatus) -> Self {
+        self.remote_access = ::std::option::Option::Some(input);
+        self
+    }
+    /// <p>A setting that enables or disables remote access for a SageMaker space. When enabled, this allows you to connect to the remote space from your local IDE.</p>
+    pub fn set_remote_access(mut self, input: ::std::option::Option<crate::types::FeatureStatus>) -> Self {
+        self.remote_access = input;
+        self
+    }
+    /// <p>A setting that enables or disables remote access for a SageMaker space. When enabled, this allows you to connect to the remote space from your local IDE.</p>
+    pub fn get_remote_access(&self) -> &::std::option::Option<crate::types::FeatureStatus> {
+        &self.remote_access
     }
     /// <p>The storage settings for a space.</p>
     pub fn space_storage_settings(mut self, input: crate::types::SpaceStorageSettings) -> Self {
@@ -68,6 +89,7 @@ impl SpaceSettingsSummaryBuilder {
     pub fn build(self) -> crate::types::SpaceSettingsSummary {
         crate::types::SpaceSettingsSummary {
             app_type: self.app_type,
+            remote_access: self.remote_access,
             space_storage_settings: self.space_storage_settings,
         }
     }
