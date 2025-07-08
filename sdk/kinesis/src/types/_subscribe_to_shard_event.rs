@@ -2,6 +2,8 @@
 
 /// <p>After you call <code>SubscribeToShard</code>, Kinesis Data Streams sends events of this type over an HTTP/2 connection to your consumer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscribeToShardEvent {
     /// <p></p>

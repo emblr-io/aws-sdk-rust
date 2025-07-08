@@ -2,6 +2,8 @@
 
 /// <p>Represents the output for <code>GetRecords</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetRecordsOutput {
     /// <p>The data records retrieved from the shard.</p>
