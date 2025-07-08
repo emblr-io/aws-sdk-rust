@@ -2,6 +2,8 @@
 
 /// <p>Encloses a receipt handle and an identifier for it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteMessageBatchRequestEntry {
     /// <p>The identifier for this particular receipt handle. This is used to communicate the result.</p><note>

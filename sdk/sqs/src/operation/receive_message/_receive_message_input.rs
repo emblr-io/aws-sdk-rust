@@ -2,6 +2,8 @@
 
 /// <p>Retrieves one or more messages from a specified queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReceiveMessageInput {
     /// <p>The URL of the Amazon SQS queue from which messages are received.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Ensure that the <code>QueueUrl</code> is correct and that the queue has not been deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueueDoesNotExist {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Returns the <code>QueueUrl</code> attribute of the created queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateQueueOutput {
     /// <p>The URL of the created Amazon SQS queue.</p>
