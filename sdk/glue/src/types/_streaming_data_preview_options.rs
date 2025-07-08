@@ -2,6 +2,8 @@
 
 /// <p>Specifies options related to data preview for viewing a sample of your data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingDataPreviewOptions {
     /// <p>The polling time in milliseconds.</p>

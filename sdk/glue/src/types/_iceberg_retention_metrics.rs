@@ -2,6 +2,8 @@
 
 /// <p>Snapshot retention metrics for Iceberg for the optimizer run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergRetentionMetrics {
     /// <p>The number of data files deleted by the retention job run.</p>

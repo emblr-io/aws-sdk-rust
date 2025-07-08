@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Hudi data source stored in Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3HudiSource {
     /// <p>The name of the Hudi source.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that is used to specify a connection to create or update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionInput {
     /// <p>The name of the connection.</p>

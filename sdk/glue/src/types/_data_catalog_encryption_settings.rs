@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration information for maintaining Data Catalog security.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCatalogEncryptionSettings {
     /// <p>Specifies the encryption-at-rest configuration for the Data Catalog.</p>

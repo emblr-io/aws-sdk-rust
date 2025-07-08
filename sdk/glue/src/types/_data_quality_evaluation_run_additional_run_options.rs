@@ -2,6 +2,8 @@
 
 /// <p>Additional run options you can specify for an evaluation run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityEvaluationRunAdditionalRunOptions {
     /// <p>Whether or not to enable CloudWatch metrics.</p>

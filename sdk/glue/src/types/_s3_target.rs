@@ -2,6 +2,8 @@
 
 /// <p>Specifies a data store in Amazon Simple Storage Service (Amazon S3).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Target {
     /// <p>The path to the Amazon S3 target.</p>

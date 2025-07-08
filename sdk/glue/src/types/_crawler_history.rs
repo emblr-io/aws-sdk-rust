@@ -2,6 +2,8 @@
 
 /// <p>Contains the information for a run of a crawler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrawlerHistory {
     /// <p>A UUID identifier for each crawl.</p>

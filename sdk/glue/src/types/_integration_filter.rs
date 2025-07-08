@@ -2,6 +2,8 @@
 
 /// <p>A filter that can be used when invoking a <code>DescribeIntegrations</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationFilter {
     /// <p>The name of the filter.</p>

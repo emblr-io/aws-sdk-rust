@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about an asynchronous change to a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatusDetails {
     /// <p>A <code>Table</code> object representing the requested changes.</p>

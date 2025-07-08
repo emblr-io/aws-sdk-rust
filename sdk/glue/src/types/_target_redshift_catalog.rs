@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes a target catalog for resource linking.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetRedshiftCatalog {
     /// <p>The Amazon Resource Name (ARN) of the catalog resource.</p>

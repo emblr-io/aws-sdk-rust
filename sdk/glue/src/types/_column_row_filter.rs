@@ -2,6 +2,8 @@
 
 /// <p>A filter that uses both column-level and row-level filtering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnRowFilter {
     /// <p>A string containing the name of the column.</p>

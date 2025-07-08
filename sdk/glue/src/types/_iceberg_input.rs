@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines an Apache Iceberg metadata table to create in the catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergInput {
     /// <p>A required metadata operation. Can only be set to <code>CREATE</code>.</p>

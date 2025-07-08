@@ -2,6 +2,8 @@
 
 /// <p>Represents a custom null value such as a zeros or other value being used as a null placeholder unique to the dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NullValueField {
     /// <p>The value of the null placeholder.</p>

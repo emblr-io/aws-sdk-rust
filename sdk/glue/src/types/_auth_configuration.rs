@@ -2,6 +2,8 @@
 
 /// <p>The authentication configuration for a connection returned by the <code>DescribeConnectionType</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthConfiguration {
     /// <p>The type of authentication for a connection.</p>

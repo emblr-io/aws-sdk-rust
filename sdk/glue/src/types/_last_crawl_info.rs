@@ -2,6 +2,8 @@
 
 /// <p>Status and error information about the most recent crawl.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastCrawlInfo {
     /// <p>Status of the last crawl.</p>

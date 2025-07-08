@@ -2,6 +2,8 @@
 
 /// <p>Specifies a user-defined schema when a schema cannot be determined by Glue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueSchema {
     /// <p>Specifies the column definitions that make up a Glue schema.</p>

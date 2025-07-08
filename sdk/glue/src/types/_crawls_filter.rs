@@ -2,6 +2,8 @@
 
 /// <p>A list of fields, comparators and value that you can use to filter the crawler runs for a specified crawler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrawlsFilter {
     /// <p>A key used to filter the crawler runs for a specified crawler. Valid values for each of the field names are:</p>

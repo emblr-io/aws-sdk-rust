@@ -2,6 +2,8 @@
 
 /// <p>Defines the partitioning specification for an Iceberg table, determining how table data will be organized and partitioned for optimal query performance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergPartitionSpec {
     /// <p>The list of partition fields that define how the table data should be partitioned, including source fields and their transformations.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A partition that contains unfiltered metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnfilteredPartition {
     /// <p>The partition object.</p>

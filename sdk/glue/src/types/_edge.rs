@@ -2,6 +2,8 @@
 
 /// <p>An edge represents a directed connection between two Glue components that are part of the workflow the edge belongs to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Edge {
     /// <p>The unique of the node within the workflow where the edge starts.</p>

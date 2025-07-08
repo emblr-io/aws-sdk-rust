@@ -2,6 +2,8 @@
 
 /// <p>Specifies an Amazon Redshift target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmazonRedshiftTarget {
     /// <p>The name of the Amazon Redshift target.</p>

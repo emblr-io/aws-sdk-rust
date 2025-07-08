@@ -2,6 +2,8 @@
 
 /// <p>Defines the sort order specification for an Iceberg table, determining how data should be ordered within partitions to optimize query performance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergSortOrder {
     /// <p>The unique identifier for this sort order specification within the Iceberg table's metadata.</p>

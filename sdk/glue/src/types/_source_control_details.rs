@@ -2,6 +2,8 @@
 
 /// <p>The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceControlDetails {
     /// <p>The provider for the remote repository.</p>

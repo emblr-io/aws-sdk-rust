@@ -2,6 +2,8 @@
 
 /// <p>The criteria that are used to filter the task runs for the machine learning transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskRunFilterCriteria {
     /// <p>The type of task run.</p>

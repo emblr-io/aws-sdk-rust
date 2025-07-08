@@ -2,6 +2,8 @@
 
 /// <p>A descriptor for a partition index in a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartitionIndexDescriptor {
     /// <p>The name of the partition index.</p>

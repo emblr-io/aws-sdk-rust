@@ -2,6 +2,8 @@
 
 /// <p>Specifies additional connection options for the Amazon S3 data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3SourceAdditionalOptions {
     /// <p>Sets the upper limit for the target size of the dataset in bytes that will be processed.</p>

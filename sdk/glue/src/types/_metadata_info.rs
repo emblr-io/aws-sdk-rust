@@ -2,6 +2,8 @@
 
 /// <p>A structure containing metadata information for a schema version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataInfo {
     /// <p>The metadata key’s corresponding value.</p>

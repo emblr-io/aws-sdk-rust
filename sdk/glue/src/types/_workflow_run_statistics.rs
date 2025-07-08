@@ -2,6 +2,8 @@
 
 /// <p>Workflow run statistics provides statistics about the workflow run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowRunStatistics {
     /// <p>Total number of Actions in the workflow run.</p>

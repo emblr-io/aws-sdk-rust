@@ -2,6 +2,8 @@
 
 /// <p>The machine learning transform is not ready to run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MlTransformNotReadyException {
     /// <p>A message describing the problem.</p>

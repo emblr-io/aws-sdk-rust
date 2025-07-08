@@ -2,6 +2,8 @@
 
 /// <p>Contains details on one of the errors in the error list returned by the <code>BatchGetTableOptimizer</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetTableOptimizerError {
     /// <p>An <code>ErrorDetail</code> object containing code and message details about the error.</p>

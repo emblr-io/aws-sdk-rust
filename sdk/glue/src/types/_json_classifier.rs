@@ -2,6 +2,8 @@
 
 /// <p>A classifier for <code>JSON</code> content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonClassifier {
     /// <p>The name of the classifier.</p>

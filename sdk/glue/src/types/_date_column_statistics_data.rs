@@ -2,6 +2,8 @@
 
 /// <p>Defines column statistics supported for timestamp data columns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateColumnStatisticsData {
     /// <p>The lowest value in the column.</p>

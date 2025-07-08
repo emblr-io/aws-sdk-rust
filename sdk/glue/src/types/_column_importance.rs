@@ -3,6 +3,8 @@
 /// <p>A structure containing the column name and column importance score for a column.</p>
 /// <p>Column importance helps you understand how columns contribute to your model, by identifying which columns in your records are more important than others.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnImportance {
     /// <p>The name of a column.</p>

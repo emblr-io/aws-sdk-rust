@@ -3,6 +3,8 @@
 /// <p>Metrics for the optimizer run.</p>
 /// <p>This structure is deprecated. See the individual metric members for compaction, retention, and orphan file deletion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RunMetrics {
     /// <p>The number of bytes removed by the compaction job run.</p>

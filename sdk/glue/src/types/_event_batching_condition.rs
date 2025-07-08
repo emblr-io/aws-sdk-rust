@@ -2,6 +2,8 @@
 
 /// <p>Batch condition that must be met (specified number of events received or batch time window expired) before EventBridge event trigger fires.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventBatchingCondition {
     /// <p>Number of events that must be received from Amazon EventBridge before EventBridge event trigger fires.</p>

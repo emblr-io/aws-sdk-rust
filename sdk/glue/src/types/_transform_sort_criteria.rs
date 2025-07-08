@@ -2,6 +2,8 @@
 
 /// <p>The sorting criteria that are associated with the machine learning transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformSortCriteria {
     /// <p>The column to be used in the sorting criteria that are associated with the machine learning transform.</p>

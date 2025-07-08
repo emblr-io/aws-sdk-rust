@@ -2,6 +2,8 @@
 
 /// <p>A structure containing migration status information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CatalogImportStatus {
     /// <p><code>True</code> if the migration has completed, or <code>False</code> otherwise.</p>

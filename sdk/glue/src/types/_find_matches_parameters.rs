@@ -2,6 +2,8 @@
 
 /// <p>The parameters to configure the find matches transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindMatchesParameters {
     /// <p>The name of a column that uniquely identifies rows in the source table. Used to help identify matching records.</p>

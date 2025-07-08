@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the dialect of the view, and the query that defines the view.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViewRepresentation {
     /// <p>The dialect of the query engine.</p>

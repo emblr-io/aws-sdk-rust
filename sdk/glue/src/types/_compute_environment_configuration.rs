@@ -2,6 +2,8 @@
 
 /// <p>An object containing configuration for a compute environment (such as Spark, Python or Athena) returned by the <code>DescribeConnectionType</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeEnvironmentConfiguration {
     /// <p>A name for the compute environment configuration.</p>

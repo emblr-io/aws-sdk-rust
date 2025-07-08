@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains compaction metrics for the optimizer run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompactionMetrics {
     /// <p>A structure containing the Iceberg compaction metrics for the optimizer run.</p>

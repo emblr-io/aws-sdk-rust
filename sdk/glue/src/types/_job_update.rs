@@ -2,6 +2,8 @@
 
 /// <p>Specifies information used to update an existing job definition. The previous job definition is completely overwritten by this information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct JobUpdate {
     /// <p>A mode that describes how a job was created. Valid values are:</p>

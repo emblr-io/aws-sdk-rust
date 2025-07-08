@@ -2,6 +2,8 @@
 
 /// <p>The structure used to create and update a partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartitionInput {
     /// <p>The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input.</p>

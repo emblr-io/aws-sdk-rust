@@ -2,6 +2,8 @@
 
 /// <p>For supplying basic auth credentials when not providing a <code>SecretArn</code> value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BasicAuthenticationCredentials {
     /// <p>The username to connect to the data source.</p>

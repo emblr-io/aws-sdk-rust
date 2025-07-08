@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration properties for a Find Matches task run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindMatchesTaskRunProperties {
     /// <p>The job ID for the Find Matches task run.</p>

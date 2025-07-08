@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a statistic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StatisticSummary {
     /// <p>The Statistic ID.</p>

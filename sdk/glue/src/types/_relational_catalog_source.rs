@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Relational database data source in the Glue Data Catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelationalCatalogSource {
     /// <p>The name of the data source.</p>

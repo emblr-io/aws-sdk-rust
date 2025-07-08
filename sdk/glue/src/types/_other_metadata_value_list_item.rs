@@ -2,6 +2,8 @@
 
 /// <p>A structure containing other metadata for a schema version belonging to the same metadata key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtherMetadataValueListItem {
     /// <p>The metadata key’s corresponding value for the other metadata belonging to the same metadata key.</p>

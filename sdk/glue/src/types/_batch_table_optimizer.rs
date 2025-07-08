@@ -2,6 +2,8 @@
 
 /// <p>Contains details for one of the table optimizers returned by the <code>BatchGetTableOptimizer</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchTableOptimizer {
     /// <p>The Catalog ID of the table.</p>

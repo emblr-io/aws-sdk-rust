@@ -3,6 +3,8 @@
 /// <p>An object that describes the VPC configuration for a table optimizer.</p>
 /// <p>This configuration is necessary to perform optimization on tables that are in a customer VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TableOptimizerVpcConfiguration {
     /// <p>The name of the Glue connection used for the VPC for the table optimizer.</p>

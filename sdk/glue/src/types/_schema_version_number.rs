@@ -2,6 +2,8 @@
 
 /// <p>A structure containing the schema version information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaVersionNumber {
     /// <p>The latest version available for the schema.</p>

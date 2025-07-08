@@ -2,6 +2,8 @@
 
 /// <p>Specifies how Amazon Simple Storage Service (Amazon S3) data should be encrypted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Encryption {
     /// <p>The encryption mode to use for Amazon S3 data.</p>

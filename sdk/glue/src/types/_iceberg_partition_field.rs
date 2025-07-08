@@ -2,6 +2,8 @@
 
 /// <p>Defines a single partition field within an Iceberg partition specification, including the source field, transformation function, partition name, and unique identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergPartitionField {
     /// <p>The identifier of the source field from the table schema that this partition field is based on.</p>

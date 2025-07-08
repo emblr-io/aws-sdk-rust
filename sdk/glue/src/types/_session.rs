@@ -2,6 +2,8 @@
 
 /// <p>The period in which a remote Spark runtime environment is running.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Session {
     /// <p>The ID of the session.</p>

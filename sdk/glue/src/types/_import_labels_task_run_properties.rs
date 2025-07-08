@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration properties for an importing labels task run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportLabelsTaskRunProperties {
     /// <p>The Amazon Simple Storage Service (Amazon S3) path from where you will import the labels.</p>
