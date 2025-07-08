@@ -2,6 +2,8 @@
 
 /// <p>The maximum size of the specified lexicon would be exceeded by this operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LexiconSizeExceededException {
     #[allow(missing_docs)] // documentation missing in model
