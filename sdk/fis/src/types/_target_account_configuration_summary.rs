@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of a target account configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetAccountConfigurationSummary {
     /// <p>The Amazon Resource Name (ARN) of an IAM role for the target account.</p>

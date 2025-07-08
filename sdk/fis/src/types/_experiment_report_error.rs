@@ -2,6 +2,8 @@
 
 /// <p>Describes the error when experiment report generation has failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentReportError {
     /// <p>The error code for the failed experiment report generation.</p>

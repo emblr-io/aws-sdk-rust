@@ -2,6 +2,8 @@
 
 /// <p>Specifies the CloudWatch dashboard for the experiment report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportConfigurationCloudWatchDashboardInput {
     /// <p>The Amazon Resource Name (ARN) of the CloudWatch dashboard to include in the experiment report.</p>

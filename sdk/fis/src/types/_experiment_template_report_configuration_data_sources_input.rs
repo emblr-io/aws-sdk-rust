@@ -2,6 +2,8 @@
 
 /// <p>Specifies the data sources for the experiment report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateReportConfigurationDataSourcesInput {
     /// <p>The CloudWatch dashboards to include as data sources in the experiment report.</p>

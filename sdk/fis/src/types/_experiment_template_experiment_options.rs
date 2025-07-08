@@ -2,6 +2,8 @@
 
 /// <p>Describes the experiment options for an experiment template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateExperimentOptions {
     /// <p>The account targeting setting for an experiment template.</p>

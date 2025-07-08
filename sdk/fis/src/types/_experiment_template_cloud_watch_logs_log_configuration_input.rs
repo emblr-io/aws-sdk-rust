@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for experiment logging to Amazon CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateCloudWatchLogsLogConfigurationInput {
     /// <p>The Amazon Resource Name (ARN) of the destination Amazon CloudWatch Logs log group.</p>

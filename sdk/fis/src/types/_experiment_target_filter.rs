@@ -2,6 +2,8 @@
 
 /// <p>Describes a filter used for the target resources in an experiment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTargetFilter {
     /// <p>The attribute path for the filter.</p>

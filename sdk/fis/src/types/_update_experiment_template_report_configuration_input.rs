@@ -2,6 +2,8 @@
 
 /// <p>Specifies the input for the experiment report configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateExperimentTemplateReportConfigurationInput {
     /// <p>Describes the output destinations of the experiment report.</p>
