@@ -2,6 +2,8 @@
 
 /// <p>Contains the count of tasks in a task list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CountPendingActivityTasksOutput {
     /// <p>The number of tasks in the task list.</p>

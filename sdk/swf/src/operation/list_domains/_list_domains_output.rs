@@ -2,6 +2,8 @@
 
 /// <p>Contains a paginated collection of DomainInfo structures.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDomainsOutput {
     /// <p>A list of DomainInfo structures.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the <code>DecisionTaskScheduled</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecisionTaskScheduledEventAttributes {
     /// <p>The name of the task list in which the decision task was scheduled.</p>

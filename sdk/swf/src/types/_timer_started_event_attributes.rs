@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>TimerStarted</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimerStartedEventAttributes {
     /// <p>The unique ID of the timer that was started.</p>

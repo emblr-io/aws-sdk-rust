@@ -2,6 +2,8 @@
 
 /// <p>Contains a paginated list of information about workflow executions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListOpenWorkflowExecutionsOutput {
     /// <p>The list of workflow information structures.</p>

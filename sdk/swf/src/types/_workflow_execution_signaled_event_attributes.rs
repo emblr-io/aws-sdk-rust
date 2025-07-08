@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>WorkflowExecutionSignaled</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowExecutionSignaledEventAttributes {
     /// <p>The name of the signal received. The decider can use the signal name and inputs to determine how to the process the signal.</p>

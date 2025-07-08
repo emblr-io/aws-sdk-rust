@@ -2,6 +2,8 @@
 
 /// <p>Returned when the specified domain has been deprecated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainDeprecatedFault {
     /// <p>A description that may help with diagnosing the cause of the fault.</p>

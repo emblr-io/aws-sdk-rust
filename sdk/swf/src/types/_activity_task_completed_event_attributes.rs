@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>ActivityTaskCompleted</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityTaskCompletedEventAttributes {
     /// <p>The results of the activity task.</p>
