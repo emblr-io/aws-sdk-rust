@@ -2,6 +2,8 @@
 
 /// <p>Specifies if the service network should be enabled for sharing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SharingConfig {
     /// <p>Specifies if the service network is enabled for sharing.</p>
