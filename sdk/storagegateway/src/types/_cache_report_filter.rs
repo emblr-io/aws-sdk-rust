@@ -2,6 +2,8 @@
 
 /// <p>A list of filter parameters and associated values that determine which files are included or excluded from a cache report created by a <code>StartCacheReport</code> request. Multiple instances of the same filter parameter are combined with an OR operation, while different parameters are combined with an AND operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheReportFilter {
     /// <p>The parameter name for a filter that determines which files are included or excluded from a cache report.</p>

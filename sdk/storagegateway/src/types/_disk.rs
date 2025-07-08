@@ -2,6 +2,8 @@
 
 /// <p>Represents a gateway's local disk.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Disk {
     /// <p>The unique device ID or other distinguishing data that identifies a local disk.</p>

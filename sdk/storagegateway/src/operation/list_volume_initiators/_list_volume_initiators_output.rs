@@ -2,6 +2,8 @@
 
 /// <p>ListVolumeInitiatorsOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVolumeInitiatorsOutput {
     /// <p>The host names and port numbers of all iSCSI initiators that are connected to the gateway.</p>

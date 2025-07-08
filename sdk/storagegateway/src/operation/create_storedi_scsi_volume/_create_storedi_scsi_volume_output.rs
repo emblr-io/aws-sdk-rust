@@ -2,6 +2,8 @@
 
 /// <p>A JSON object containing the following fields:</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateStorediScsiVolumeOutput {
     /// <p>The Amazon Resource Name (ARN) of the configured volume.</p>

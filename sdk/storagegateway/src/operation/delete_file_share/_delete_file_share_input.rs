@@ -2,6 +2,8 @@
 
 /// <p>DeleteFileShareInput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteFileShareInput {
     /// <p>The Amazon Resource Name (ARN) of the file share to be deleted.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the object returned by <code>DescribeFileSystemAssociations</code> that describes a created file system association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSystemAssociationInfo {
     /// <p>The Amazon Resource Name (ARN) of the file system association.</p>

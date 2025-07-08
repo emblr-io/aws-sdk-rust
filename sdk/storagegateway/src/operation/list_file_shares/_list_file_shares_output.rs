@@ -2,6 +2,8 @@
 
 /// <p>ListFileShareOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListFileSharesOutput {
     /// <p>If the request includes <code>Marker</code>, the response returns that value in this field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Lists iSCSI information about a volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeiScsiAttributes {
     /// <p>The Amazon Resource Name (ARN) of the volume target.</p>

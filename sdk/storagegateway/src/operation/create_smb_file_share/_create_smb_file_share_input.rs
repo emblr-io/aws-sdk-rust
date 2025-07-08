@@ -2,6 +2,8 @@
 
 /// <p>CreateSMBFileShareInput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSmbFileShareInput {
     /// <p>A unique string value that you supply that is used by S3 File Gateway to ensure idempotent file share creation.</p>
