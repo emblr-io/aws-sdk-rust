@@ -2,6 +2,8 @@
 
 /// <p>The metadata for a feature. For example, the metadata might indicate that a feature is turned on or off on a specific DB instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FeatureMetadata {
     /// <p>The status of the feature on the DB instance. Possible values include the following:</p>

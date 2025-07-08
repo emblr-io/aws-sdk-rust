@@ -2,6 +2,8 @@
 
 /// <p>Information about dimensions within a dimension group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionGroupDetail {
     /// <p>The name of the dimension group.</p>
