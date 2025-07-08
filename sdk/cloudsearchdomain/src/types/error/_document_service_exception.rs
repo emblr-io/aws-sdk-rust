@@ -2,6 +2,8 @@
 
 /// <p>Information about any problems encountered while processing an upload request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentServiceException {
     /// <p>The return status of a document upload request, <code>error</code> or <code>success</code>.</p>

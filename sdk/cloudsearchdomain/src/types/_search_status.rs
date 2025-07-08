@@ -2,6 +2,8 @@
 
 /// <p>Contains the resource id (<code>rid</code>) and the time it took to process the request (<code>timems</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchStatus {
     /// <p>How long it took to process the request, in milliseconds.</p>

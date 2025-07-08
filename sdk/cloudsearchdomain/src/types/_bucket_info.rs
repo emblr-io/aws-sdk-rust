@@ -2,6 +2,8 @@
 
 /// <p>A container for the calculated facet values and counts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketInfo {
     /// <p>A list of the calculated facet values and counts.</p>
