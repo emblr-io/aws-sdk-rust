@@ -2,6 +2,8 @@
 
 /// <p>High-level information about a rule group, returned by <code>ListRuleGroups</code>. You can use the information provided in the metadata to retrieve and manage a rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupMetadata {
     /// <p>The descriptive name of the rule group. You can't change the name of a rule group after you create it.</p>

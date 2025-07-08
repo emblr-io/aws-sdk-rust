@@ -11,6 +11,8 @@
 /// </ul>
 /// <p>Summaries are available for rule groups you manage and for active threat defense Amazon Web Services managed rule groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleSummary {
     /// <p>The unique identifier (Signature ID) of the Suricata rule.</p>

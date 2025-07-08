@@ -4,6 +4,8 @@
 /// <p>If a server certificate that's associated with your <code>TLSInspectionConfiguration</code> is revoked, deleted, or expired it can result in client-side TLS errors.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerCertificateConfiguration {
     /// <p>The list of server certificates to use for inbound SSL/TLS inspection.</p>

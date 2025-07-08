@@ -3,6 +3,8 @@
 /// <p>A complex type containing summaries of security protections provided by a rule group.</p>
 /// <p>Network Firewall extracts this information from selected fields in the rule group's Suricata rules, based on your <code>SummaryConfiguration</code> settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Summary {
     /// <p>An array of <code>RuleSummary</code> objects containing individual rule details that had been configured by the rulegroup's SummaryConfiguration.</p>

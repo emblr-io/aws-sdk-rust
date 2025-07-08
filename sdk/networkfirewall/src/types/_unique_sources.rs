@@ -2,6 +2,8 @@
 
 /// <p>A unique source IP address that connected to a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UniqueSources {
     /// <p>The number of unique source IP addresses that connected to a domain.</p>

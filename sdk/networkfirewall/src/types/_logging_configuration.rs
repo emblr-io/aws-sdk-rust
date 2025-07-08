@@ -2,6 +2,8 @@
 
 /// <p>Defines how Network Firewall performs logging for a <code>Firewall</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoggingConfiguration {
     /// <p>Defines the logging destinations for the logs for a firewall. Network Firewall generates logs for stateful rule groups.</p>

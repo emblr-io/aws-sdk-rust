@@ -3,6 +3,8 @@
 /// <p>Defines where Network Firewall sends logs for the firewall for one log type. This is used in <code>LoggingConfiguration</code>. You can send each type of log to an Amazon S3 bucket, a CloudWatch log group, or a Firehose delivery stream.</p>
 /// <p>Network Firewall generates logs for stateful rule groups. You can save alert, flow, and TLS log types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogDestinationConfig {
     /// <p>The type of log to record. You can record the following types of logs from your Network Firewall stateful engine.</p>

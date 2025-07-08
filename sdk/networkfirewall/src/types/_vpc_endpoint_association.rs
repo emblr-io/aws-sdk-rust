@@ -14,6 +14,8 @@
 /// <p>You can use Resource Access Manager to share a <code>Firewall</code> that you own with other accounts, which gives them the ability to use the firewall to create VPC endpoint associations. For information about sharing a firewall, see <code>PutResourcePolicy</code> in this guide and see <a href="https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html">Sharing Network Firewall resources</a> in the <i>Network Firewall Developer Guide</i>.</p>
 /// <p>The status of the VPC endpoint association, which indicates whether it's ready to filter network traffic, is provided in the corresponding <code>VpcEndpointAssociationStatus</code>. You can retrieve both the association and its status by calling <code>DescribeVpcEndpointAssociation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointAssociation {
     /// <p>The unique identifier of the VPC endpoint association.</p>

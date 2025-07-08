@@ -2,6 +2,8 @@
 
 /// <p>Amazon Web Services doesn't currently have enough available capacity to fulfill your request. Try your request later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientCapacityException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Settings that are available for use in the rules in the <code>RuleGroup</code> where this is defined. See <code>CreateRuleGroup</code> or <code>UpdateRuleGroup</code> for usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleVariables {
     /// <p>A list of IP addresses and address ranges, in CIDR notation.</p>
