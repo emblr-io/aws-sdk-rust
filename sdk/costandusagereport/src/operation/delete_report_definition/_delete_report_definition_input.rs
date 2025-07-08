@@ -2,6 +2,8 @@
 
 /// <p>Deletes the specified report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteReportDefinitionInput {
     /// <p>The name of the report that you want to delete. The name must be unique, is case sensitive, and can't include spaces.</p>

@@ -2,6 +2,8 @@
 
 /// <p>If the action is successful, the service sends back an HTTP 200 response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeReportDefinitionsOutput {
     /// <p>An Amazon Web Services Cost and Usage Report list owned by the account.</p>

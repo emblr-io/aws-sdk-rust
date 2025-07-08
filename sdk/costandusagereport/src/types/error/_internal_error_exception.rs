@@ -2,6 +2,8 @@
 
 /// <p>An error on the server occurred during the processing of your request. Try again later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalErrorException {
     /// <p>A message to show the detail of the exception.</p>
