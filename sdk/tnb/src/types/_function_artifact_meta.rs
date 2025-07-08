@@ -3,6 +3,8 @@
 /// <p>Metadata for function package artifacts.</p>
 /// <p>Artifacts are the contents of the package descriptor file and the state of the package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionArtifactMeta {
     /// <p>Lists of function package overrides.</p>

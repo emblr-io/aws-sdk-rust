@@ -2,6 +2,8 @@
 
 /// <p>Metadata related to the configuration properties used during instantiation of the network instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstantiateMetadata {
     /// <p>The network service descriptor used for instantiating the network instance.</p>

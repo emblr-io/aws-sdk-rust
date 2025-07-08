@@ -2,6 +2,8 @@
 
 /// <p>Metadata related to the configuration properties used during update of a network instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateNsMetadata {
     /// <p>The network service descriptor used for updating the network instance.</p>

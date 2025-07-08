@@ -3,6 +3,8 @@
 /// <p>Information about the network function.</p>
 /// <p>A network function instance is a function in a function package .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSolVnfInfo {
     /// <p>State of the network function instance.</p>

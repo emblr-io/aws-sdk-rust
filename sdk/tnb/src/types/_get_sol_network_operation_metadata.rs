@@ -3,6 +3,8 @@
 /// <p>Metadata related to a network operation occurrence.</p>
 /// <p>A network operation is any operation that is done to your network, such as network instance instantiation or termination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSolNetworkOperationMetadata {
     /// <p>Metadata related to the network operation occurrence for network instance updates. This is populated only if the lcmOperationType is <code>UPDATE</code> and the updateType is <code>UPDATE_NS</code>.</p>

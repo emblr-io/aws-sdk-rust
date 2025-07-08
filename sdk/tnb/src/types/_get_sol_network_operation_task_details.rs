@@ -3,6 +3,8 @@
 /// <p>Gets the details of a network operation.</p>
 /// <p>A network operation is any operation that is done to your network, such as network instance instantiation or termination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSolNetworkOperationTaskDetails {
     /// <p>Task name.</p>

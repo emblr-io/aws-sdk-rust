@@ -2,6 +2,8 @@
 
 /// <p>Information parameters and/or the configurable properties for a network descriptor used for update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateSolNetworkServiceData {
     /// <p>ID of the network service descriptor.</p>
