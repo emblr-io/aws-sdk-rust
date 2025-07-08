@@ -2,6 +2,8 @@
 
 /// <p>Information about the persistent storage for a Dev Environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PersistentStorage {
     /// <p>The size of the persistent storage in gigabytes (specifically GiB).</p><note>

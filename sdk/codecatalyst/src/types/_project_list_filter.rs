@@ -2,6 +2,8 @@
 
 /// <p>nformation about the filter used to narrow the results returned in a list of projects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectListFilter {
     /// <p>A key that can be used to sort results.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the commands that will be run on a Dev Environment when an SSH session begins.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecuteCommandSessionConfiguration {
     /// <p>The command used at the beginning of the SSH session to a Dev Environment.</p>

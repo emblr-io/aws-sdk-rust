@@ -2,6 +2,8 @@
 
 /// <p>Information about a workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowSummary {
     /// <p>The system-generated unique ID of a workflow.</p>

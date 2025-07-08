@@ -2,6 +2,8 @@
 
 /// <p>Information about a user whose activity is recorded in an event for a space.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserIdentity {
     /// <p>The role assigned to the user in a Amazon CodeCatalyst space or project when the event occurred.</p>
