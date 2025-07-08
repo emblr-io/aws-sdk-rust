@@ -2,6 +2,8 @@
 
 /// <p>A list of account-takeover actions for each level of risk that Amazon Cognito might assess with threat protection features.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountTakeoverActionsType {
     /// <p>The action that you assign to a low-risk assessment by threat protection.</p>

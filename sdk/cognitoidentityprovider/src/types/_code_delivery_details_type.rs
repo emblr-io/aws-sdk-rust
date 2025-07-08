@@ -2,6 +2,8 @@
 
 /// <p>The delivery details for an email or SMS message that Amazon Cognito sent for authentication or verification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeDeliveryDetailsType {
     /// <p>The email address or phone number destination where Amazon Cognito sent the code.</p>

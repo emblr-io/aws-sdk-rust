@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when Amazon Cognito isn't allowed to use your email identity. HTTP status code: 400.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidEmailRoleAccessPolicyException {
     /// <p>The message returned when you have an unverified email address or the identity policy isn't set on an email address that Amazon Cognito can access.</p>

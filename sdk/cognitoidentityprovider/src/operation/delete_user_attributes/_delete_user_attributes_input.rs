@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to delete user attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DeleteUserAttributesInput {
     /// <p>An array of strings representing the user attribute names you want to delete.</p>

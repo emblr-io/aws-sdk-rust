@@ -2,6 +2,8 @@
 
 /// <p>The settings for administrator creation of users in a user pool. Contains settings for allowing user sign-up, customizing invitation messages to new users, and the amount of time before temporary passwords expire.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminCreateUserConfigType {
     /// <p>The setting for allowing self-service sign-up. When <code>true</code>, only administrators can create new user profiles. When <code>false</code>, users can register themselves and create a new user profile with the <code>SignUp</code> operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Confirm a user's registration as a user pool administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminConfirmSignUpInput {
     /// <p>The ID of the user pool where you want to confirm a user's sign-up request.</p>

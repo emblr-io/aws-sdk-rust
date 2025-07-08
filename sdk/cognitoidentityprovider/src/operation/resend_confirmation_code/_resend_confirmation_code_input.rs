@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to resend the confirmation code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ResendConfirmationCodeInput {
     /// <p>The ID of the user pool app client where the user signed up.</p>

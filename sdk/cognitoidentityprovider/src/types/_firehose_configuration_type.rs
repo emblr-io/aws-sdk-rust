@@ -2,6 +2,8 @@
 
 /// <p>Configuration for the Amazon Data Firehose stream destination of user activity log export with threat protection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirehoseConfigurationType {
     /// <p>The ARN of an Amazon Data Firehose stream that's the destination for threat protection log export.</p>

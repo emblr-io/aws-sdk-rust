@@ -2,6 +2,8 @@
 
 /// <p>A container for information about the user pool domain associated with the hosted UI and OAuth endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainDescriptionType {
     /// <p>The ID of the user pool that the domain is attached to.</p>

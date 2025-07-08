@@ -2,6 +2,8 @@
 
 /// <p>The request to respond to the authentication challenge, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminRespondToAuthChallengeInput {
     /// <p>The ID of the user pool where you want to respond to an authentication challenge.</p>

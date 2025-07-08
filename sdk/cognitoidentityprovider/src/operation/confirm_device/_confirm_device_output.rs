@@ -2,6 +2,8 @@
 
 /// <p>The confirm-device response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfirmDeviceOutput {
     /// <p>When <code>true</code>, your user must confirm that they want to remember the device. Prompt the user for an answer.</p>

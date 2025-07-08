@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to create a user pool client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateUserPoolClientInput {
     /// <p>The ID of the user pool where you want to create an app client.</p>

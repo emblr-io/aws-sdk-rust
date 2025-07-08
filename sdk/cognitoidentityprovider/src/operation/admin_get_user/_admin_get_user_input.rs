@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to get the specified user as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminGetUserInput {
     /// <p>The ID of the user pool where you want to get information about the user.</p>

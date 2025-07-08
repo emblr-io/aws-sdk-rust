@@ -2,6 +2,8 @@
 
 /// <p>The configuration of user event logs to an external Amazon Web Services service like Amazon Data Firehose, Amazon S3, or Amazon CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogConfigurationType {
     /// <p>The <code>errorlevel</code> selection of logs that a user pool sends for detailed activity logging. To send <code>userNotification</code> activity with <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/exporting-quotas-and-usage.html">information about message delivery</a>, choose <code>ERROR</code> with <code>CloudWatchLogsConfiguration</code>. To send <code>userAuthEvents</code> activity with user logs from threat protection with the Plus feature plan, choose <code>INFO</code> with one of <code>CloudWatchLogsConfiguration</code>, <code>FirehoseConfiguration</code>, or <code>S3Configuration</code>.</p>

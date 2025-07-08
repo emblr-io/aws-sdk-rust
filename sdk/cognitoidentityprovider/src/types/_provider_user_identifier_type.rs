@@ -2,6 +2,8 @@
 
 /// <p>The characteristics of a source or destination user for linking a federated user profile to a local user profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProviderUserIdentifierType {
     /// <p>The name of the provider, such as Facebook, Google, or Login with Amazon.</p>

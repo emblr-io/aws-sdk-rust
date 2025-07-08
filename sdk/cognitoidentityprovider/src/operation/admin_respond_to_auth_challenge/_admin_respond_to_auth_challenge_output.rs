@@ -2,6 +2,8 @@
 
 /// <p>Responds to the authentication challenge, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminRespondToAuthChallengeOutput {
     /// <p>The name of the next challenge that you must respond to.</p>

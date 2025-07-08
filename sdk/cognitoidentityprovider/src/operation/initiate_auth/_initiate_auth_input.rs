@@ -2,6 +2,8 @@
 
 /// <p>Initiates the authentication request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InitiateAuthInput {
     /// <p>The authentication flow that you want to initiate. Each <code>AuthFlow</code> has linked <code>AuthParameters</code> that you must submit. The following are some example flows.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to register a user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SignUpInput {
     /// <p>The ID of the app client where the user wants to sign up.</p>

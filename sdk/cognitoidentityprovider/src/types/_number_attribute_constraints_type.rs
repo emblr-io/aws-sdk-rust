@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum values of an attribute that is of the number type, for example <code>custom:age</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberAttributeConstraintsType {
     /// <p>The minimum value of an attribute that is of the number data type.</p>

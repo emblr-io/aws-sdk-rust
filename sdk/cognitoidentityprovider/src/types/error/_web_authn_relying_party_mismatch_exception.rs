@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the given passkey credential is associated with a different relying party ID than the user pool relying party ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAuthnRelyingPartyMismatchException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The risk evaluation by adaptive authentication, as displayed in an <code>AdminListUserAuthEvents</code> response. Contains evaluations of compromised-credentials detection and assessed risk level and action taken by adaptive authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventRiskType {
     /// <p>The action taken by adaptive authentication. If <code>NoRisk</code>, your user pool took no action. If <code>AccountTakeover</code>, your user pool applied the adaptive authentication automated response that you configured. If <code>Block</code>, your user pool prevented the attempt.</p>

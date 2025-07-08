@@ -3,6 +3,8 @@
 /// <p>A recovery option for a user. The <code>AccountRecoverySettingType</code> data type is an array of this object. Each <code>RecoveryOptionType</code> has a priority property that determines whether it is a primary or secondary option.</p>
 /// <p>For example, if <code>verified_email</code> has a priority of <code>1</code> and <code>verified_phone_number</code> has a priority of <code>2</code>, your user pool sends account-recovery messages to a verified email address but falls back to an SMS message if the user has a verified phone number. The <code>admin_only</code> option prevents self-service account recovery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryOptionType {
     /// <p>Your priority preference for using the specified attribute in account recovery. The highest priority is <code>1</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A container representing the response from the server from the request to verify user attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifyUserAttributeOutput {
     _request_id: Option<String>,

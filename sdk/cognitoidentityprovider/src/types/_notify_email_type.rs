@@ -2,6 +2,8 @@
 
 /// <p>The template for email messages that threat protection sends to a user when your threat protection automated response has a <i>Notify</i> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotifyEmailType {
     /// <p>The subject of the threat protection email notification.</p>

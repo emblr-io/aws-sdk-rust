@@ -2,6 +2,8 @@
 
 /// <p>A list of user pool policies. Contains the policy that sets password-complexity requirements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserPoolPolicyType {
     /// <p>The password policy settings for a user pool, including complexity, history, and length requirements.</p>

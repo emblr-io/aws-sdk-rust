@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to list the user pool clients.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListUserPoolClientsInput {
     /// <p>The ID of the user pool where you want to list user pool clients.</p>

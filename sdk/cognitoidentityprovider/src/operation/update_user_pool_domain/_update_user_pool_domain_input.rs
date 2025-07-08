@@ -2,6 +2,8 @@
 
 /// <p>The UpdateUserPoolDomain request input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateUserPoolDomainInput {
     /// <p>The name of the domain that you want to update. For custom domains, this is the fully-qualified domain name, for example <code>auth.example.com</code>. For prefix domains, this is the prefix alone, such as <code>myprefix</code>.</p>

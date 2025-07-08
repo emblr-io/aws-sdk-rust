@@ -2,6 +2,8 @@
 
 /// <p>One custom scope associated with a user pool resource server. This data type is a member of <code>ResourceServerScopeType</code>. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.html"> Scopes, M2M, and API authorization with resource servers</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceServerScopeType {
     /// <p>The name of the scope. Amazon Cognito renders custom scopes in the format <code>resourceServerIdentifier/ScopeName</code>. For example, if this parameter is <code>exampleScope</code> in the resource server with the identifier <code>exampleResourceServer</code>, you request and receive the scope <code>exampleResourceServer/exampleScope</code>.</p>

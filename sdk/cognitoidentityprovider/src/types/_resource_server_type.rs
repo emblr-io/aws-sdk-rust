@@ -2,6 +2,8 @@
 
 /// <p>The details of a resource server configuration and associated custom scopes in a user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceServerType {
     /// <p>The ID of the user pool that contains the resource server configuration.</p>

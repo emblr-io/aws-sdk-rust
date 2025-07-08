@@ -2,6 +2,8 @@
 
 /// <p>The response from the server that results from a user's request to retrieve a forgotten password.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfirmForgotPasswordOutput {
     _request_id: Option<String>,

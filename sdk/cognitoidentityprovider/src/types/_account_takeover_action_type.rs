@@ -2,6 +2,8 @@
 
 /// <p>The automated response to a risk level for adaptive authentication in full-function, or <code>ENFORCED</code>, mode. You can assign an action to each risk level that threat protection evaluates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountTakeoverActionType {
     /// <p>Determines whether Amazon Cognito sends a user a notification message when your user pools assesses a user's session at the associated risk level.</p>

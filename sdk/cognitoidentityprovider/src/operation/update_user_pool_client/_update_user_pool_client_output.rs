@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server to the request to update the user pool client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateUserPoolClientOutput {
     /// <p>The updated details of your app client.</p>

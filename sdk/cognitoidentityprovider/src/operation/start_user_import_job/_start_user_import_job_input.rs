@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to start the user import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartUserImportJobInput {
     /// <p>The ID of the user pool that you want to start importing users into.</p>

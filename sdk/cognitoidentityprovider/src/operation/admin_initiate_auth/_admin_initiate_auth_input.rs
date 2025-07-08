@@ -2,6 +2,8 @@
 
 /// <p>Initiates the authorization request, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminInitiateAuthInput {
     /// <p>The ID of the user pool where the user wants to sign in.</p>

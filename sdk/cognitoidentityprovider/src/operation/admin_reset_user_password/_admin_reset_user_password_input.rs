@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to reset a user's password as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminResetUserPasswordInput {
     /// <p>The ID of the user pool where you want to reset the user's password.</p>

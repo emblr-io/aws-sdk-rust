@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the provider is already supported by the user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateProviderException {
     #[allow(missing_docs)] // documentation missing in model

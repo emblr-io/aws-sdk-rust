@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to update the user pool client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateUserPoolClientInput {
     /// <p>The ID of the user pool where you want to update the app client.</p>

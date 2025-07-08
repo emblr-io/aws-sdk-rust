@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown if a code has expired.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpiredCodeException {
     /// <p>The message returned when the expired code exception is thrown.</p>

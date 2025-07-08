@@ -2,6 +2,8 @@
 
 /// <p>Contextual user data used for evaluating the risk of an authentication event by user pool threat protection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContextDataType {
     /// <p>The source IP address of your user's device.</p>

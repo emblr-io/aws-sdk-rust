@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when Amazon Cognito encounters an internal error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalErrorException {
     /// <p>The message returned when Amazon Cognito throws an internal error exception.</p>

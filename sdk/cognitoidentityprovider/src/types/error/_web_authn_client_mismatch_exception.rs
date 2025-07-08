@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the access token is for a different client than the one in the original <code>StartWebAuthnRegistration</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAuthnClientMismatchException {
     #[allow(missing_docs)] // documentation missing in model

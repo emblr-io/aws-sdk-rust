@@ -2,6 +2,8 @@
 
 /// <p>The request to update the device status, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminUpdateDeviceStatusInput {
     /// <p>The ID of the user pool where you want to change a user's device status.</p>

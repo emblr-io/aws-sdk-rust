@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when you're trying to modify a user pool while a user import job is in progress for that pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserImportInProgressException {
     /// <p>The message returned when the user pool has an import job running.</p>

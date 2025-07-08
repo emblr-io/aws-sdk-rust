@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to get the header information of the CSV file for the user import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetCsvHeaderInput {
     /// <p>The ID of the user pool that you want to import users into.</p>
