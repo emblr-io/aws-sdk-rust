@@ -2,6 +2,8 @@
 
 /// <p>The image layer already exists in the associated repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayerAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

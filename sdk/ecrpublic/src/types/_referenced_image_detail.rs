@@ -2,6 +2,8 @@
 
 /// <p>An object that describes the image tag details that are returned by a <code>DescribeImageTags</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReferencedImageDetail {
     /// <p>The <code>sha256</code> digest of the image manifest.</p>
