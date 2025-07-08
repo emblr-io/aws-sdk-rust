@@ -2,6 +2,8 @@
 
 /// <p>Describes properties used to specify configurations related to a source API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceApiAssociationConfig {
     /// <p>The property that indicates which merging option is enabled in the source API association.</p>

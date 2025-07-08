@@ -2,6 +2,8 @@
 
 /// <p>The caching configuration for a resolver that has caching activated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CachingConfig {
     /// <p>The TTL in seconds for a resolver that has caching activated.</p>

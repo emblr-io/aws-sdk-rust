@@ -2,6 +2,8 @@
 
 /// <p>The pipeline configuration for a resolver of kind <code>PIPELINE</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineConfig {
     /// <p>A list of <code>Function</code> objects.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Relational Database Service (Amazon RDS) HTTP endpoint configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsHttpEndpointConfig {
     /// <p>Amazon Web Services Region for Amazon RDS HTTP endpoint.</p>

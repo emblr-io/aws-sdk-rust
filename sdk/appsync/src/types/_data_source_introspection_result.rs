@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>DataSourceIntrospectionResult</code>. This is the populated result of a <code>GetDataSourceIntrospection</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceIntrospectionResult {
     /// <p>The array of <code>DataSourceIntrospectionModel</code> objects.</p>

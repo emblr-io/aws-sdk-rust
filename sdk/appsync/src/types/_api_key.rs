@@ -31,6 +31,8 @@
 /// <p>Deletion is stored in DynamoDB as seconds. The key is deleted after deletion time.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiKey {
     /// <p>The API key ID.</p>
