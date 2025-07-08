@@ -2,6 +2,8 @@
 
 /// <p>A list of in-progress multipart uploads for a vault.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UploadListElement {
     /// <p>The ID of a multipart upload.</p>
