@@ -2,6 +2,8 @@
 
 /// <p>Contains I/O usage metrics for a command that was invoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IoUsage {
     /// <p>The number of read I/O requests that the command made.</p>

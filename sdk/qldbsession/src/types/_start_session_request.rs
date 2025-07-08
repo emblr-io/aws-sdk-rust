@@ -2,6 +2,8 @@
 
 /// <p>Specifies a request to start a new session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartSessionRequest {
     /// <p>The name of the ledger to start a new session against.</p>
