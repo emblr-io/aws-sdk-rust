@@ -2,6 +2,8 @@
 
 /// <p>This is a structure that contains the status of Amazon Web Services service access, and whether you have a valid service-linked role to enable multi-account search for your organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrgConfiguration {
     /// <p>This value displays whether your Amazon Web Services service access is <code>ENABLED</code> or <code>DISABLED</code>.</p>

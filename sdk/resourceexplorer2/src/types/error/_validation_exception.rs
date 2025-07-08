@@ -2,6 +2,8 @@
 
 /// <p>You provided an invalid value for one of the operation's parameters. Check the syntax for the operation, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes a request field with a validation error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationExceptionField {
     /// <p>The name of the request field that had a validation error.</p>

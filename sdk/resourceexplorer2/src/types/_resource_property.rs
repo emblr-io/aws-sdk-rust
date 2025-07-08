@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes a property of a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceProperty {
     /// <p>The name of this property of the resource.</p>
