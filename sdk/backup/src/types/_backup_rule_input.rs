@@ -2,6 +2,8 @@
 
 /// <p>Specifies a scheduled task used to back up a selection of resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BackupRuleInput {
     /// <p>A display name for a backup rule. Must contain 1 to 50 alphanumeric or '-_.' characters.</p>

@@ -3,6 +3,8 @@
 /// <p>Includes information about tags you define to assign tagged resources to a backup plan.</p>
 /// <p>Include the prefix <code>aws:ResourceTag</code> in your tags. For example, <code>"aws:ResourceTag/TagKey1": "Value1"</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionParameter {
     /// <p>The key in a key-value pair. For example, in the tag <code>Department: Accounting</code>, <code>Department</code> is the key.</p>

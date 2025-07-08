@@ -2,6 +2,8 @@
 
 /// <p>Contains information from your report job about your report destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportDestination {
     /// <p>The unique name of the Amazon S3 bucket that receives your reports.</p>

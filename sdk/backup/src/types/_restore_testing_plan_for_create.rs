@@ -2,6 +2,8 @@
 
 /// <p>This contains metadata about a restore testing plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreTestingPlanForCreate {
     /// <p><code>RecoveryPointSelection</code> has five parameters (three required and two optional). The values you specify determine which recovery point is included in the restore test. You must indicate with <code>Algorithm</code> if you want the latest recovery point within your <code>SelectionWindowDays</code> or if you want a random recovery point, and you must indicate through <code>IncludeVaults</code> from which vaults the recovery points can be chosen.</p>

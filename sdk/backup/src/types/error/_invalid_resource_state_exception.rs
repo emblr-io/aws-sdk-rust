@@ -2,6 +2,8 @@
 
 /// <p>Backup is already performing an action on this recovery point. It can't perform the action you requested until the first action finishes. Try again later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidResourceStateException {
     #[allow(missing_docs)] // documentation missing in model

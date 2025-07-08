@@ -2,6 +2,8 @@
 
 /// <p>This specifies criteria to assign a set of resources, such as resource types or backup vaults.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryPointSelection {
     /// <p>These are the names of the vaults in which the selected recovery points are contained.</p>

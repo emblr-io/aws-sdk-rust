@@ -2,6 +2,8 @@
 
 /// <p>Contains detailed information about all of the controls of a framework. Each framework must contain at least one control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrameworkControl {
     /// <p>The name of a control. This name is between 1 and 256 characters.</p>

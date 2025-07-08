@@ -7,6 +7,8 @@
 /// <p><code>SelectionWindowDays</code> (<i>optional</i>) Value must be an integer (in days) from 1 to 365. If not included, the value defaults to <code>30</code>.</p>
 /// <p><code>ExcludeVaults</code> (<i>optional</i>). You can choose to input one or more specific backup vault ARNs to exclude those vaults' contents from restore eligibility. Or, you can include a list of selectors. If this parameter and its value are not included, it defaults to empty list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreTestingRecoveryPointSelection {
     /// <p>Acceptable values include "LATEST_WITHIN_WINDOW" or "RANDOM_WITHIN_WINDOW"</p>

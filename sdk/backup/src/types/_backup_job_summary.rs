@@ -3,6 +3,8 @@
 /// <p>This is a summary of jobs created or running within the most recent 30 days.</p>
 /// <p>The returned summary may contain the following: Region, Account, State, RestourceType, MessageCategory, StartTime, EndTime, and Count of included jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupJobSummary {
     /// <p>The Amazon Web Services Regions within the job summary.</p>

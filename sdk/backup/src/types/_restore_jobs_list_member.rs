@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata about a restore job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreJobsListMember {
     /// <p>The account ID that owns the restore job.</p>
