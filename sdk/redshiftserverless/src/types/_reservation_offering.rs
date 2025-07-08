@@ -2,6 +2,8 @@
 
 /// <p>The class of offering for the reservation. The offering class determines the payment schedule for the reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservationOffering {
     /// <p>The offering identifier.</p>

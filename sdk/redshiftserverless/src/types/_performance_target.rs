@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the price performance target settings for the workgroup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceTarget {
     /// <p>Whether the price performance target is enabled for the workgroup.</p>

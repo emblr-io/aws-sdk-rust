@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the custom domain name association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Association {
     /// <p>The custom domain name’s certificate Amazon resource name (ARN).</p>
