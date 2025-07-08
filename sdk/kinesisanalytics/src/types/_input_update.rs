@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to a specific input configuration (identified by the <code>InputId</code> of an application).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputUpdate {
     /// <p>Input ID of the application input to be updated.</p>

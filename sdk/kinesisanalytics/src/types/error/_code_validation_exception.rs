@@ -2,6 +2,8 @@
 
 /// <p>User-provided application code (query) is invalid. This can be a simple syntax error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeValidationException {
     /// <p>Test</p>
