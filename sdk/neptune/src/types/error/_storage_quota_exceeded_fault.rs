@@ -2,6 +2,8 @@
 
 /// <p>Request would result in user exceeding the allowed amount of storage available across all DB instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageQuotaExceededFault {
     /// <p>A message describing the details of the problem.</p>

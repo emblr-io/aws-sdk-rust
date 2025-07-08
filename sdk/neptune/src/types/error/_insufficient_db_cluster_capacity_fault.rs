@@ -2,6 +2,8 @@
 
 /// <p>The DB cluster does not have enough capacity for the current operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientDbClusterCapacityFault {
     /// <p>A message describing the details of the problem.</p>

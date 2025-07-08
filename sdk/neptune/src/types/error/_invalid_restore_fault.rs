@@ -2,6 +2,8 @@
 
 /// <p>Cannot restore from vpc backup to non-vpc DB instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRestoreFault {
     /// <p>A message describing the details of the problem.</p>

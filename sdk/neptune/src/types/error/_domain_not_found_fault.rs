@@ -2,6 +2,8 @@
 
 /// <p><i>Domain</i> does not refer to an existing Active Directory Domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainNotFoundFault {
     /// <p>A message describing the details of the problem.</p>

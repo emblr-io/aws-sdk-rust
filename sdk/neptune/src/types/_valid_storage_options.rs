@@ -2,6 +2,8 @@
 
 /// <p>Not applicable. In Neptune the storage type is managed at the DB Cluster level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidStorageOptions {
     /// <p>Not applicable. In Neptune the storage type is managed at the DB Cluster level.</p>
