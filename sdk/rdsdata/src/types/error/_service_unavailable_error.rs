@@ -2,6 +2,8 @@
 
 /// <p>The service specified by the <code>resourceArn</code> parameter isn't available.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUnavailableError {
     #[allow(missing_docs)] // documentation missing in model
