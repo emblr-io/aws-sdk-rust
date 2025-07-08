@@ -2,6 +2,8 @@
 
 /// <p>Includes the error code and error message for events that could not be ingested by CloudTrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResultErrorEntry {
     /// <p>The original event ID from the source event that could not be ingested by CloudTrail.</p>

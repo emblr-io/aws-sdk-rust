@@ -2,6 +2,8 @@
 
 /// <p>The caller's account ID must be the same as the channel owner's account ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelInsufficientPermission {
     #[allow(missing_docs)] // documentation missing in model
