@@ -3,6 +3,8 @@
 /// <p>Specifies that WAF should allow the request and optionally defines additional custom handling for the request.</p>
 /// <p>This is used in the context of other settings, for example to specify values for <code>RuleAction</code> and web ACL <code>DefaultAction</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AllowAction {
     /// <p>Defines custom handling for the web request.</p>

@@ -3,6 +3,8 @@
 /// <p>The name of the field in the request payload that contains your customer's email.</p>
 /// <p>This data type is used in the <code>RequestInspectionACFP</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailField {
     /// <p>The name of the email field.</p>

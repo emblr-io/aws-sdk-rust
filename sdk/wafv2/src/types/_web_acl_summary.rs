@@ -2,6 +2,8 @@
 
 /// <p>High-level information about a <code>WebACL</code>, returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage a <code>WebACL</code>, and the ARN, that you provide to operations like <code>AssociateWebACL</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAclSummary {
     /// <p>The name of the web ACL. You cannot change the name of a web ACL after you create it.</p>

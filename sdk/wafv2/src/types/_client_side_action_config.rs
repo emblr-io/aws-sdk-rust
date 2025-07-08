@@ -2,6 +2,8 @@
 
 /// <p>This is part of the configuration for the managed rules <code>AWSManagedRulesAntiDDoSRuleSet</code> in <code>ManagedRuleGroupConfig</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientSideActionConfig {
     /// <p>Configuration for the use of the <code>AWSManagedRulesAntiDDoSRuleSet</code> rules <code>ChallengeAllDuringEvent</code> and <code>ChallengeDDoSRequests</code>.</p><note>

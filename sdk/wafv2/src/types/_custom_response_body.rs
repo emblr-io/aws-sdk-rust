@@ -2,6 +2,8 @@
 
 /// <p>The response body to use in a custom response to a web request. This is referenced by key from <code>CustomResponse</code> <code>CustomResponseBodyKey</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomResponseBody {
     /// <p>The type of content in the payload that you are defining in the <code>Content</code> string.</p>

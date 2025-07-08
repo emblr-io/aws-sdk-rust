@@ -6,6 +6,8 @@
 /// <p>This configuration is used for <code>GeoMatchStatement</code>, <code>AsnMatchStatement</code>, and <code>RateBasedStatement</code>. For <code>IPSetReferenceStatement</code>, use <code>IPSetForwardedIPConfig</code> instead.</p>
 /// <p>WAF only evaluates the first IP address found in the specified HTTP header.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForwardedIpConfig {
     /// <p>The name of the HTTP header to use for the IP address. For example, to use the X-Forwarded-For (XFF) header, set this to <code>X-Forwarded-For</code>.</p><note>

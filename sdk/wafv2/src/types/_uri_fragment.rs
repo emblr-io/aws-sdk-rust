@@ -4,6 +4,8 @@
 /// <p>This is used to indicate the web request component to inspect, in the <code>FieldToMatch</code> specification.</p>
 /// <p>Example JSON: <code>"UriFragment": { "MatchPattern": { "All": {} }, "MatchScope": "KEY", "OversizeHandling": "MATCH" }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UriFragment {
     /// <p>What WAF should do if it fails to completely parse the JSON body. The options are the following:</p>

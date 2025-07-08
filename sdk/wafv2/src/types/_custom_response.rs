@@ -3,6 +3,8 @@
 /// <p>A custom response to send to the client. You can define a custom response for rule actions and default web ACL actions that are set to <code>BlockAction</code>.</p>
 /// <p>For information about customizing web requests and responses, see <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html">Customizing web requests and responses in WAF</a> in the <i>WAF Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomResponse {
     /// <p>The HTTP status code to return to the client.</p>

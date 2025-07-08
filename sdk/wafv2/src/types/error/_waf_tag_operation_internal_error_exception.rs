@@ -2,6 +2,8 @@
 
 /// <p>WAF couldn’t perform your tagging operation because of an internal error. Retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafTagOperationInternalErrorException {
     #[allow(missing_docs)] // documentation missing in model

@@ -4,6 +4,8 @@
 /// <p>This uses only labels that have been added to the request by rules that are evaluated before this rate-based rule in the web ACL.</p>
 /// <p>For information about label namespaces and names, see <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-label-requirements.html">Label syntax and naming requirements</a> in the <i>WAF Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RateLimitLabelNamespace {
     /// <p>The namespace to use for aggregation.</p>

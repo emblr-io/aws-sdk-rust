@@ -4,6 +4,8 @@
 /// <p>You must specify exactly one setting: either <code>All</code>, <code>IncludedCookies</code>, or <code>ExcludedCookies</code>.</p>
 /// <p>Example JSON: <code>"MatchPattern": { "IncludedCookies": \[ "session-id-time", "session-id" \] }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CookieMatchPattern {
     /// <p>Inspect all cookies.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A single logging filter, used in <code>LoggingFilter</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>How to handle logs that satisfy the filter's conditions and requirement.</p>

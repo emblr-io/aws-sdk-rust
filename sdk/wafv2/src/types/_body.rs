@@ -3,6 +3,8 @@
 /// <p>Inspect the body of the web request. The body immediately follows the request headers.</p>
 /// <p>This is used to indicate the web request component to inspect, in the <code>FieldToMatch</code> specification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Body {
     /// <p>What WAF should do if the body is larger than WAF can inspect.</p>

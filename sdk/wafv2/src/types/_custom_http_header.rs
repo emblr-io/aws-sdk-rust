@@ -2,6 +2,8 @@
 
 /// <p>A custom header for custom request and response handling. This is used in <code>CustomResponse</code> and <code>CustomRequestHandling</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomHttpHeader {
     /// <p>The name of the custom header.</p>

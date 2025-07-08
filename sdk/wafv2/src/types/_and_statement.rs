@@ -2,6 +2,8 @@
 
 /// <p>A logical rule statement used to combine other rule statements with AND logic. You provide more than one <code>Statement</code> within the <code>AndStatement</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AndStatement {
     /// <p>The statements to combine with AND logic. You can use any statements that can be nested.</p>

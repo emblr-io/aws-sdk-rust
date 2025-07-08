@@ -4,6 +4,8 @@
 /// <p>You must specify exactly one setting: either <code>All</code>, <code>IncludedHeaders</code>, or <code>ExcludedHeaders</code>.</p>
 /// <p>Example JSON: <code>"MatchPattern": { "ExcludedHeaders": \[ "KeyToExclude1", "KeyToExclude2" \] }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HeaderMatchPattern {
     /// <p>Inspect all headers.</p>

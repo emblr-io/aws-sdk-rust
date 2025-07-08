@@ -2,6 +2,8 @@
 
 /// <p>A rule group defines a collection of rules to inspect and control web requests that you can use in a <code>WebACL</code>. When you create a rule group, you define an immutable capacity limit. If you update a rule group, you must stay within the capacity. This allows others to reuse the rule group with confidence in its capacity requirements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroup {
     /// <p>The name of the rule group. You cannot change the name of a rule group after you create it.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A single label container. This is used as an element of a label array in multiple contexts, for example, in <code>RuleLabels</code> inside a <code>Rule</code> and in <code>Labels</code> inside a <code>SampledHTTPRequest</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Label {
     /// <p>The label string.</p>

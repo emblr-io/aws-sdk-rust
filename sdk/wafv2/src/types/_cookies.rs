@@ -4,6 +4,8 @@
 /// <p>This is used to indicate the web request component to inspect, in the <code>FieldToMatch</code> specification.</p>
 /// <p>Example JSON: <code>"Cookies": { "MatchPattern": { "All": {} }, "MatchScope": "KEY", "OversizeHandling": "MATCH" }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Cookies {
     /// <p>The filter to use to identify the subset of cookies to inspect in a web request.</p>

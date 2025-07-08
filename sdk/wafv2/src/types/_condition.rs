@@ -2,6 +2,8 @@
 
 /// <p>A single match condition for a <code>Filter</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Condition {
     /// <p>A single action condition. This is the action setting that a log record must contain in order to meet the condition.</p>

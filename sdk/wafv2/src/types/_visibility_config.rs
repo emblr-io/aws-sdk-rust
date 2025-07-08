@@ -2,6 +2,8 @@
 
 /// <p>Defines and enables Amazon CloudWatch metrics and web request sample collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisibilityConfig {
     /// <p>Indicates whether WAF should store a sampling of the web requests that match the rules. You can view the sampled requests through the WAF console.</p>
