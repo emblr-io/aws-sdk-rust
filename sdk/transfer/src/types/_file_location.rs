@@ -2,6 +2,8 @@
 
 /// <p>Specifies the Amazon S3 or EFS file details to be used in the step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileLocation {
     /// <p>Specifies the S3 details for the file being used, such as bucket, ETag, and so forth.</p>

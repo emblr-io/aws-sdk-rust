@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the customization fields for the web app. You can provide a title, logo, and icon to customize the appearance of your web app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DescribedWebAppCustomization {
     /// <p>Returns the Amazon Resource Name (ARN) for the web app.</p>

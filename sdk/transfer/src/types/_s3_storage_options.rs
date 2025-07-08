@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 storage options that are configured for your server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3StorageOptions {
     /// <p>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default.</p>

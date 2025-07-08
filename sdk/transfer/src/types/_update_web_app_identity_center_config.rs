@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes the values to use for the IAM Identity Center settings when you update a web app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateWebAppIdentityCenterConfig {
     /// <p>The IAM role used to access IAM Identity Center.</p>

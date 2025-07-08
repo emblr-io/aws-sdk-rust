@@ -2,6 +2,8 @@
 
 /// <p><code>UpdateUserResponse</code> returns the user name and identifier for the request to update a user's properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateUserOutput {
     /// <p>A system-assigned unique identifier for a Transfer Family server instance that the account is assigned to.</p>

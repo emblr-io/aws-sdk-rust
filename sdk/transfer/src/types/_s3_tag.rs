@@ -2,6 +2,8 @@
 
 /// <p>Specifies the key-value pair that are assigned to a file during the execution of a Tagging step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Tag {
     /// <p>The name assigned to the tag that you create.</p>
