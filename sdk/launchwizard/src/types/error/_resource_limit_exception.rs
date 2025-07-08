@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded an Launch Wizard resource limit. For example, you might have too many deployments in progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLimitException {
     #[allow(missing_docs)] // documentation missing in model
