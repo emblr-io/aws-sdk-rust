@@ -2,6 +2,8 @@
 
 /// <p>Provides details on phone number rule overrides for a protect configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectConfigurationRuleSetNumberOverride {
     /// <p>The destination phone number in E.164 format.</p>

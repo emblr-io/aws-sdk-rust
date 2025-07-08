@@ -2,6 +2,8 @@
 
 /// <p>The information for keywords that meet a specified criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeywordFilter {
     /// <p>The name of the attribute to filter on.</p>

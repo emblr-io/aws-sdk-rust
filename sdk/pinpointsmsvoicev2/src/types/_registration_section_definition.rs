@@ -2,6 +2,8 @@
 
 /// <p>Provides information on the specified section definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationSectionDefinition {
     /// <p>The path to the section of the registration.</p>
