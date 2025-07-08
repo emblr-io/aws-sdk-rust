@@ -2,6 +2,8 @@
 
 /// <p>A container for information about VPC endpoints that were created to other services</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceVpcEndpoint {
     /// <p>The name of the service for which a VPC endpoint was created.</p>

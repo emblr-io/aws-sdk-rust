@@ -2,6 +2,8 @@
 
 /// <p>Information about a pipeline's current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineStatusReason {
     /// <p>A description of why a pipeline has a certain status.</p>

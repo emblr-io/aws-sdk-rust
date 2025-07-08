@@ -2,6 +2,8 @@
 
 /// <p>Options for attaching a VPC to pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcAttachmentOptions {
     /// <p>Whether a VPC is attached to the pipeline.</p>
