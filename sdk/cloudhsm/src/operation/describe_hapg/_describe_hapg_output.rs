@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of the <code>DescribeHapg</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeHapgOutput {
     /// <p>The ARN of the high-availability partition group.</p>

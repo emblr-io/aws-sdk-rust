@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>CreateHsm</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateHsmInput {
     /// <p>The identifier of the subnet in your VPC in which to place the HSM.</p>

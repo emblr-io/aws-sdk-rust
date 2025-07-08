@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of the <code>ListHsms</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListHsmsOutput {
     /// <p>The list of ARNs that identify the HSMs.</p>

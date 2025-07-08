@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>DeleteHapg</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteHapgInput {
     /// <p>The ARN of the high-availability partition group to delete.</p>
