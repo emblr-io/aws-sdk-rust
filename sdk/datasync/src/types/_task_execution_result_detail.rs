@@ -2,6 +2,8 @@
 
 /// <p>Provides detailed information about the result of your DataSync task execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskExecutionResultDetail {
     /// <p>The time in milliseconds that your task execution was in the <code>PREPARING</code> step. For more information, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/run-task.html#understand-task-execution-statuses">Task execution statuses</a>.</p>

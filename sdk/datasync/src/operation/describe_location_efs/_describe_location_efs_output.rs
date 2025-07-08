@@ -2,6 +2,8 @@
 
 /// <p>DescribeLocationEfsResponse</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLocationEfsOutput {
     /// <p>The ARN of the Amazon EFS file system location.</p>

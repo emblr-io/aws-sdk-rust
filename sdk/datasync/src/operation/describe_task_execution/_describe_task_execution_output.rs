@@ -2,6 +2,8 @@
 
 /// <p>DescribeTaskExecutionResponse</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeTaskExecutionOutput {
     /// <p>The ARN of the task execution that you wanted information about. <code>TaskExecutionArn</code> is hierarchical and includes <code>TaskArn</code> for the task that was executed.</p>

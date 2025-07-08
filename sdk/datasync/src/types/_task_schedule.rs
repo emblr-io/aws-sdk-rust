@@ -2,6 +2,8 @@
 
 /// <p>Configures your DataSync task to run on a <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-scheduling.html">schedule</a> (at a minimum interval of 1 hour).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskSchedule {
     /// <p>Specifies your task schedule by using a cron or rate expression.</p>

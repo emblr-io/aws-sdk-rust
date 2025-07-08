@@ -2,6 +2,8 @@
 
 /// <p>Specifies how your DataSync agent connects to Amazon Web Services using a <a href="https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html#choose-service-endpoint-vpc">virtual private cloud (VPC) service endpoint</a>. An agent that uses a VPC endpoint isn't accessible over the public internet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateLinkConfig {
     /// <p>Specifies the ID of the VPC endpoint that your agent connects to.</p>

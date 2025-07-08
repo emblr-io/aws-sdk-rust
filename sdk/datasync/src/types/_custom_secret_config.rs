@@ -4,6 +4,8 @@
 /// <p>You can use either <code>CmkSecretConfig</code> or <code>CustomSecretConfig</code> to provide credentials for a <code>CreateLocation</code> request. Do not provide both parameters for the same request.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomSecretConfig {
     /// <p>Specifies the ARN for an Secrets Manager secret.</p>

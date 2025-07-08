@@ -2,6 +2,8 @@
 
 /// <p>ListTasksResponse</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTasksOutput {
     /// <p>A list of all the tasks that are returned.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a single entry in a list of DataSync task executions that's returned with the <a href="https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTaskExecutions.html">ListTaskExecutions</a> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskExecutionListEntry {
     /// <p>The Amazon Resource Name (ARN) of a task execution.</p>

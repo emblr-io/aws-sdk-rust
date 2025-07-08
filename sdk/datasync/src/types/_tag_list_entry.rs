@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair representing a single tag that's been applied to an Amazon Web Services resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagListEntry {
     /// <p>The key for an Amazon Web Services resource tag.</p>

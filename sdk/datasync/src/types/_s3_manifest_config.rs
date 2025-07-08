@@ -2,6 +2,8 @@
 
 /// <p>Specifies the S3 bucket where you're hosting the manifest that you want DataSync to use. For more information and configuration examples, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/transferring-with-manifest.html">Specifying what DataSync transfers by using a manifest</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ManifestConfig {
     /// <p>Specifies the Amazon S3 object key of your manifest. This can include a prefix (for example, <code>prefix/my-manifest.csv</code>).</p>
