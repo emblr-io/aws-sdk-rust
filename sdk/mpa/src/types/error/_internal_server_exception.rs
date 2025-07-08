@@ -2,6 +2,8 @@
 
 /// <p>The service encountered an internal error. Try your request again. If the problem persists, contact Amazon Web Services Support.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerException {
     /// <p>Message for the <code>InternalServerException</code> error.</p>

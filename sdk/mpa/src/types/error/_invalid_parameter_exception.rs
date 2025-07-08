@@ -2,6 +2,8 @@
 
 /// <p>The request contains an invalid parameter value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidParameterException {
     /// <p>Message for the <code>InvalidParameterException</code> error.</p>
