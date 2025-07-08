@@ -110,9 +110,3 @@ features = ["derive"]
 [dev-dependencies.tokio]
 version = "1.23.1"
 features = ["macros", "rt", "rt-multi-thread", "fs", "io-util"]
-[target."cfg(aws_sdk_unstable)".dependencies.serde]
-version = "1.0.210"
-features = ["derive"]
-[lints.rust.unexpected_cfgs]
-level = "warn"
-check-cfg = ["cfg(aws_sdk_unstable)"]

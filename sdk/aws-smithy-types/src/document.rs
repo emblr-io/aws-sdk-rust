@@ -7,10 +7,7 @@ use crate::Number;
 use std::borrow::Cow;
 use std::collections::HashMap;
 
-#[cfg(any(
-    all(aws_sdk_unstable, feature = "serde-deserialize"),
-    all(aws_sdk_unstable, feature = "serde-serialize")
-))]
+#[cfg(any(feature = "serde-deserialize", feature = "serde-serialize"))]
 use serde;
 
 /* ANCHOR: document */
@@ -22,19 +19,10 @@ use serde;
 /// modeled using rigid types, or data that has a schema that evolves outside of the purview of a model.
 /// The serialization format of a document is an implementation detail of a protocol.
 #[derive(Clone, Debug, PartialEq)]
+#[cfg_attr(feature = "serde-serialize", derive(serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(serde::Deserialize))]
 #[cfg_attr(
-    all(aws_sdk_unstable, feature = "serde-serialize"),
-    derive(serde::Serialize)
-)]
-#[cfg_attr(
-    all(aws_sdk_unstable, feature = "serde-deserialize"),
-    derive(serde::Deserialize)
-)]
-#[cfg_attr(
-    any(
-        all(aws_sdk_unstable, feature = "serde-deserialize"),
-        all(aws_sdk_unstable, feature = "serde-serialize")
-    ),
+    any(feature = "serde-deserialize", feature = "serde-serialize"),
     serde(untagged)
 )]
 pub enum Document {
@@ -235,11 +223,7 @@ impl From<Number> for Document {
 mod test {
     /// checks if a) serialization of json suceeds and b) it is compatible with serde_json
     #[test]
-    #[cfg(all(
-        aws_sdk_unstable,
-        feature = "serde-serialize",
-        feature = "serde-deserialize"
-    ))]
+    #[cfg(all(feature = "serde-serialize", feature = "serde-deserialize"))]
     fn serialize_json() {
         use crate::Document;
         use crate::Number;
