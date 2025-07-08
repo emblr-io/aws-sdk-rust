@@ -2,6 +2,8 @@
 
 /// <p>Summary of an AccountRecommendationLifecycle for an Organization Recommendation</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AccountRecommendationLifecycleSummary {
     /// <p>The AWS account ID</p>

@@ -2,6 +2,8 @@
 
 /// <p>Cost optimizing aggregates for a Recommendation</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationCostOptimizingAggregates {
     /// <p>The estimated monthly savings</p>
