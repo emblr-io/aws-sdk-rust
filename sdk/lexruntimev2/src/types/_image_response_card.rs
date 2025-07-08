@@ -3,6 +3,8 @@
 /// <p>A card that is shown to the user by a messaging platform. You define the contents of the card, the card is displayed by the platform.</p>
 /// <p>When you use a response card, the response from the user is constrained to the text associated with a button on the card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageResponseCard {
     /// <p>The title to display on the response card. The format of the title is determined by the platform displaying the response card.</p>

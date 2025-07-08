@@ -2,6 +2,8 @@
 
 /// <p>The event sent from your client application to Amazon Lex V2 with text input from the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TextInputEvent {
     /// <p>The text from the user. Amazon Lex V2 processes this as a complete statement.</p>
