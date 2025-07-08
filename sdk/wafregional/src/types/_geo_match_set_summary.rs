@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Contains the identifier and the name of the <code>GeoMatchSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoMatchSetSummary {
     /// <p>The <code>GeoMatchSetId</code> for an <code>GeoMatchSet</code>. You can use <code>GeoMatchSetId</code> in a <code>GetGeoMatchSet</code> request to get detailed information about an <code>GeoMatchSet</code>.</p>

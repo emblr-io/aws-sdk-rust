@@ -22,6 +22,8 @@
 /// <p>Your request references an ARN that is malformed, or corresponds to a resource with which a web ACL cannot be associated.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafInvalidParameterException {
     #[allow(missing_docs)] // documentation missing in model

@@ -6,6 +6,8 @@
 /// </note>
 /// <p>In an <code>UpdateRegexMatchSet</code> request, <code>RegexMatchSetUpdate</code> specifies whether to insert or delete a <code>RegexMatchTuple</code> and includes the settings for the <code>RegexMatchTuple</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexMatchSetUpdate {
     /// <p>Specifies whether to insert or delete a <code>RegexMatchTuple</code>.</p>

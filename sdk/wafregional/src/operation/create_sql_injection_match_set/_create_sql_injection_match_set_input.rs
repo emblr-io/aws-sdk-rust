@@ -2,6 +2,8 @@
 
 /// <p>A request to create a <code>SqlInjectionMatchSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSqlInjectionMatchSetInput {
     /// <p>A friendly name or description for the <code>SqlInjectionMatchSet</code> that you're creating. You can't change <code>Name</code> after you create the <code>SqlInjectionMatchSet</code>.</p>

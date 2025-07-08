@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Specifies the part of a web request that you want to inspect the size of and indicates whether you want to add the specification to a <code>SizeConstraintSet</code> or delete it from a <code>SizeConstraintSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SizeConstraintSetUpdate {
     /// <p>Specify <code>INSERT</code> to add a <code>SizeConstraintSetUpdate</code> to a <code>SizeConstraintSet</code>. Use <code>DELETE</code> to remove a <code>SizeConstraintSetUpdate</code> from a <code>SizeConstraintSet</code>.</p>

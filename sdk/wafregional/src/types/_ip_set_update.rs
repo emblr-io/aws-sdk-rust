@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Specifies the type of update to perform to an <code>IPSet</code> with <code>UpdateIPSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpSetUpdate {
     /// <p>Specifies whether to insert or delete an IP address with <code>UpdateIPSet</code>.</p>

@@ -6,6 +6,8 @@
 /// </note>
 /// <p>The bytes (typically a string that corresponds with ASCII characters) that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ByteMatchTuple {
     /// <p>The part of a web request that you want AWS WAF to search, such as a specified header or a query string. For more information, see <code>FieldToMatch</code>.</p>

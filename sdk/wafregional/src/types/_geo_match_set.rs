@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Contains one or more countries that AWS WAF will search for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoMatchSet {
     /// <p>The <code>GeoMatchSetId</code> for an <code>GeoMatchSet</code>. You use <code>GeoMatchSetId</code> to get information about a <code>GeoMatchSet</code> (see <code>GeoMatchSet</code>), update a <code>GeoMatchSet</code> (see <code>UpdateGeoMatchSet</code>), insert a <code>GeoMatchSet</code> into a <code>Rule</code> or delete one from a <code>Rule</code> (see <code>UpdateRule</code>), and delete a <code>GeoMatchSet</code> from AWS WAF (see <code>DeleteGeoMatchSet</code>).</p>
