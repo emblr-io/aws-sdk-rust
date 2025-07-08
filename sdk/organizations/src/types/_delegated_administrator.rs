@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the delegated administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DelegatedAdministrator {
     /// <p>The unique identifier (ID) of the delegated administrator's account.</p>

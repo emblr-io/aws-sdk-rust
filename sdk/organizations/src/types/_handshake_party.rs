@@ -2,6 +2,8 @@
 
 /// <p>Identifies a participant in a handshake.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HandshakeParty {
     /// <p>The unique identifier (ID) for the party.</p>

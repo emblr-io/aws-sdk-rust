@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an Amazon Web Services account that is a member of an organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Account {
     /// <p>The unique identifier (ID) of the account.</p>

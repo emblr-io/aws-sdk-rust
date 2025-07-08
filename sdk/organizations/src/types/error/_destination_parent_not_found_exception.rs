@@ -2,6 +2,8 @@
 
 /// <p>We can't find the destination container (a root or OU) with the <code>ParentId</code> that you specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationParentNotFoundException {
     #[allow(missing_docs)] // documentation missing in model
