@@ -2,6 +2,8 @@
 
 /// <p>If this job failed, this element indicates why the job failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobFailure {
     /// <p>The failure code, if any, for the specified job.</p>

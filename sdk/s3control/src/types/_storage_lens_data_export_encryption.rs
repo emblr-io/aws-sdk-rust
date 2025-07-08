@@ -2,6 +2,8 @@
 
 /// <p>A container for the encryption of the S3 Storage Lens metrics exports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageLensDataExportEncryption {
     /// <p></p>

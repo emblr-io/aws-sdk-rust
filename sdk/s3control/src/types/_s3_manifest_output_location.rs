@@ -2,6 +2,8 @@
 
 /// <p>Location details for where the generated manifest should be written.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ManifestOutputLocation {
     /// <p>The Account ID that owns the bucket the generated manifest is written to.</p>

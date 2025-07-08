@@ -2,6 +2,8 @@
 
 /// <p>Whether S3 Object Lock legal hold will be applied to objects in an S3 Batch Operations job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ObjectLockLegalHold {
     /// <p>The Object Lock legal hold status to be applied to all objects in the Batch Operations job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A logical operator that allows multiple filter conditions to be joined for more complex comparisons of Storage Lens group data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageLensGroupAndOperator {
     /// <p>Contains a list of prefixes. At least one prefix must be specified. Up to 10 prefixes are allowed.</p>

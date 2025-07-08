@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration and status information for a single job retrieved as part of a job list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobListDescriptor {
     /// <p>The ID for the specified job.</p>

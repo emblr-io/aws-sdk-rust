@@ -2,6 +2,8 @@
 
 /// <p>A filter condition that specifies the object size range of included objects in bytes. Only integers are supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MatchObjectSize {
     /// <p>Specifies the minimum object size in Bytes. The value must be a positive number, greater than 0 and less than 5 TB.</p>

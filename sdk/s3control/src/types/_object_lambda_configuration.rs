@@ -2,6 +2,8 @@
 
 /// <p>A configuration used when creating an Object Lambda Access Point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectLambdaConfiguration {
     /// <p>Standard access point associated with the Object Lambda Access Point.</p>

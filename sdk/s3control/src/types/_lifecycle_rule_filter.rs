@@ -2,6 +2,8 @@
 
 /// <p>The container for the filter of the lifecycle rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleRuleFilter {
     /// <p>Prefix identifying one or more objects to which the rule applies.</p><important>

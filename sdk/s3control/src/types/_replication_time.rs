@@ -4,6 +4,8 @@
 /// <p>This is not supported by Amazon S3 on Outposts buckets.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationTime {
     /// <p>Specifies whether S3 Replication Time Control (S3 RTC) is enabled.</p>

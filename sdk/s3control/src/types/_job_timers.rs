@@ -2,6 +2,8 @@
 
 /// <p>Provides timing details for the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobTimers {
     /// <p>Indicates the elapsed time in seconds the job has been in the Active job state.</p>

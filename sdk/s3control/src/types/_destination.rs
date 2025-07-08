@@ -2,6 +2,8 @@
 
 /// <p>Specifies information about the replication destination bucket and its settings for an S3 on Outposts replication configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Destination {
     /// <p>The destination bucket owner's account ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A container for the prefix-level storage metrics for S3 Storage Lens.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrefixLevelStorageMetrics {
     /// <p>A container for whether prefix-level storage metrics are enabled.</p>

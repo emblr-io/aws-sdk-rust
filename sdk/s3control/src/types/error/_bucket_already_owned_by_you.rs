@@ -2,6 +2,8 @@
 
 /// <p>The Outposts bucket you tried to create already exists, and you own it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketAlreadyOwnedByYou {
     #[allow(missing_docs)] // documentation missing in model
