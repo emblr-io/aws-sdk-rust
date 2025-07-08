@@ -2,6 +2,8 @@
 
 /// <p>The specified repository creation template can't be found. Verify the registry ID and prefix and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

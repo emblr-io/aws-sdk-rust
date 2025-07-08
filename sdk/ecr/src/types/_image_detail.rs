@@ -2,6 +2,8 @@
 
 /// <p>An object that describes an image returned by a <code>DescribeImages</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageDetail {
     /// <p>The Amazon Web Services account ID associated with the registry to which this image belongs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The encryption configuration to associate with the repository creation template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionConfigurationForRepositoryCreationTemplate {
     /// <p>The encryption type to use.</p>

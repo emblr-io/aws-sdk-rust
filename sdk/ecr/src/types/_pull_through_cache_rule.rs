@@ -2,6 +2,8 @@
 
 /// <p>The details of a pull through cache rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullThroughCacheRule {
     /// <p>The Amazon ECR repository prefix associated with the pull through cache rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object representing an Amazon ECR image layer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Layer {
     /// <p>The <code>sha256</code> digest of the image layer.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The upload could not be found, or the specified upload ID is not valid for this repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UploadNotFoundException {
     /// <p>The error message associated with the exception.</p>

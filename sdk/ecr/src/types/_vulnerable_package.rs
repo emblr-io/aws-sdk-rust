@@ -2,6 +2,8 @@
 
 /// <p>Information on the vulnerable package identified by a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VulnerablePackage {
     /// <p>The architecture of the vulnerable package.</p>

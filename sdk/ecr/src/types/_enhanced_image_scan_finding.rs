@@ -2,6 +2,8 @@
 
 /// <p>The details of an enhanced image scan. This is returned when enhanced scanning is enabled for your private registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnhancedImageScanFinding {
     /// <p>The Amazon Web Services account ID associated with the image.</p>
