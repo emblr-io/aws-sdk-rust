@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration settings for the horizontal layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HorizontalLayoutConfiguration {
     /// <p>Sets the automatic ordering of the video tiles.</p>

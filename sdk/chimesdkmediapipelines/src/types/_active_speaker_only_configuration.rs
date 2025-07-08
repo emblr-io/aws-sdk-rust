@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration for an <code>ActiveSpeakerOnly</code> video tile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveSpeakerOnlyConfiguration {
     /// <p>The position of the <code>ActiveSpeakerOnly</code> video tile.</p>

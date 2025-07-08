@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the settings for a keyword match task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeywordMatchConfiguration {
     /// <p>The name of the keyword match rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the type of grid layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GridViewConfiguration {
     /// <p>Defines the layout of the video tiles when content sharing is enabled.</p>

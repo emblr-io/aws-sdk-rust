@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the runtime settings for recording a Kinesis video stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisVideoStreamRecordingSourceRuntimeConfiguration {
     /// <p>The stream or streams to be recorded.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Structure that contains the settings for media stream sources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MediaStreamSource {
     /// <p>The type of media stream source.</p>

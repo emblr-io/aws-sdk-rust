@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration settings for a sentiment analysis task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SentimentConfiguration {
     /// <p>The name of the rule in the sentiment configuration.</p>

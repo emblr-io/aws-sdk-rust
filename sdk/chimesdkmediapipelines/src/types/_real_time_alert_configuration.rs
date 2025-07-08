@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration settings for real-time alerts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeAlertConfiguration {
     /// <p>Turns off real-time alerts.</p>

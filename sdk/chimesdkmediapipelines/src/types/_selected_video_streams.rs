@@ -2,6 +2,8 @@
 
 /// <p>The video streams for a specified media pipeline. The total number of video streams can't exceed 25.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SelectedVideoStreams {
     /// <p>The attendee IDs of the streams selected for a media pipeline.</p>

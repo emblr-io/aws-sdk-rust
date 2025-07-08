@@ -2,6 +2,8 @@
 
 /// <p>Defines a streaming channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamChannelDefinition {
     /// <p>The number of channels in a streaming channel.</p>

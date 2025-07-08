@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration settings for an AWS Lambda function's data sink.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LambdaFunctionSinkConfiguration {
     /// <p>The ARN of the sink.</p>

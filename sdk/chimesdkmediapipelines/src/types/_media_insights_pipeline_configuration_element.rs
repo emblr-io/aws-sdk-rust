@@ -2,6 +2,8 @@
 
 /// <p>An element in a media insights pipeline configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaInsightsPipelineConfigurationElement {
     /// <p>The element type.</p>

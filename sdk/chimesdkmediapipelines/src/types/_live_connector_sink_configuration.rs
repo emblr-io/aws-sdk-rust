@@ -2,6 +2,8 @@
 
 /// <p>The media pipeline's sink configuration settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LiveConnectorSinkConfiguration {
     /// <p>The sink configuration's sink type.</p>
