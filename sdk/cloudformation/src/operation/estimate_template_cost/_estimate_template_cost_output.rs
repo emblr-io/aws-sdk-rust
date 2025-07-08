@@ -2,6 +2,8 @@
 
 /// <p>The output for a <code>EstimateTemplateCost</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EstimateTemplateCostOutput {
     /// <p>An Amazon Web Services Simple Monthly Calculator URL with a query string that describes the resources required to run the template.</p>

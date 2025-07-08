@@ -2,6 +2,8 @@
 
 /// <p>The output for the <code>DescribeAccountLimits</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeAccountLimitsOutput {
     /// <p>An account limit structure that contain a list of CloudFormation account limits and their values.</p>

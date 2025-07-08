@@ -2,6 +2,8 @@
 
 /// <p>The <code>Export</code> structure describes the exported output values for a stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Export {
     /// <p>The stack that contains the exported output name and value.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies <code>RESOURCE</code> type target details for activated Hooks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeSetHookResourceTargetDetails {
     /// <p>The resource's logical ID, which is defined in the stack's template.</p>

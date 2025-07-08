@@ -2,6 +2,8 @@
 
 /// <p>Specifies the resource, the hook, and the hook version to be invoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeSetHook {
     /// <p>Specifies the points in provisioning logic where a hook is invoked.</p>

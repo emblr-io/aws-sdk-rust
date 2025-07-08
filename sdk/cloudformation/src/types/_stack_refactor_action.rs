@@ -2,6 +2,8 @@
 
 /// <p>Describes the stack and the action that CloudFormation will perform on it if you execute the stack refactor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackRefactorAction {
     /// <p>The action that CloudFormation takes on the stack.</p>

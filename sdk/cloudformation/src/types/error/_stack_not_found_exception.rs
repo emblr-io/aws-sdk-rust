@@ -2,6 +2,8 @@
 
 /// <p>The specified stack ARN doesn't exist or stack doesn't exist corresponding to the ARN in input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

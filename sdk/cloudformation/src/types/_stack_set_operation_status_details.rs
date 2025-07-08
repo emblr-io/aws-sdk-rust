@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the StackSet operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSetOperationStatusDetails {
     /// <p>The number of stack instances for which the StackSet operation failed.</p>

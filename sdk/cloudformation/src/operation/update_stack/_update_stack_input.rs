@@ -2,6 +2,8 @@
 
 /// <p>The input for an <code>UpdateStack</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateStackInput {
     /// <p>The name or unique stack ID of the stack to update.</p>

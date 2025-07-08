@@ -2,6 +2,8 @@
 
 /// <p>A specific property that is impacted by a warning.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WarningProperty {
     /// <p>The path of the property. For example, if this is for the <code>S3Bucket</code> member of the <code>Code</code> property, the property path would be <code>Code/S3Bucket</code>.</p>

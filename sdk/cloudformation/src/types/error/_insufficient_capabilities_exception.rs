@@ -2,6 +2,8 @@
 
 /// <p>The template contains resources with capabilities that weren't specified in the Capabilities parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientCapabilitiesException {
     #[allow(missing_docs)] // documentation missing in model

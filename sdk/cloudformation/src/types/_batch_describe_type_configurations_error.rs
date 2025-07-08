@@ -2,6 +2,8 @@
 
 /// <p>Detailed information concerning an error generated during the setting of configuration data for a CloudFormation extension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDescribeTypeConfigurationsError {
     /// <p>The error code.</p>

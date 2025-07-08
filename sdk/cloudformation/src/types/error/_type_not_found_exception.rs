@@ -2,6 +2,8 @@
 
 /// <p>The specified extension doesn't exist in the CloudFormation registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypeNotFoundException {
     /// <p>A message with details about the error that occurred.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The location of the resource in a stack template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLocation {
     /// <p>The name associated with the stack.</p>

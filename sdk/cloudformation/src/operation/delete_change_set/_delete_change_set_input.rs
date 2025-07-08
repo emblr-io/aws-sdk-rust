@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>DeleteChangeSet</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteChangeSetInput {
     /// <p>The name or Amazon Resource Name (ARN) of the change set that you want to delete.</p>

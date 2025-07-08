@@ -2,6 +2,8 @@
 
 /// <p>Another operation has been performed on this stack set since the specified operation was performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StaleRequestException {
     #[allow(missing_docs)] // documentation missing in model

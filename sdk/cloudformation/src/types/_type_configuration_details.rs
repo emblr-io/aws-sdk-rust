@@ -3,6 +3,8 @@
 /// <p>Detailed information concerning the specification of a CloudFormation extension in a given account and Region.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry-set-configuration.html">Edit configuration data for extensions in your account</a> in the <i>CloudFormation User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypeConfigurationDetails {
     /// <p>The Amazon Resource Name (ARN) for the configuration data, in this account and Region.</p>

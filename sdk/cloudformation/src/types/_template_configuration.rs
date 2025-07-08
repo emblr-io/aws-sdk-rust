@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of a generated template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateConfiguration {
     /// <p>The <code>DeletionPolicy</code> assigned to resources in the generated template. Supported values are:</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structures that contain summary information about the specified operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSetOperationSummary {
     /// <p>The unique ID of the stack set operation.</p>
