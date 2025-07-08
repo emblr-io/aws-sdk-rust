@@ -2,6 +2,8 @@
 
 /// <p>The state of your Amazon EC2 scan mode configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2ScanModeState {
     /// <p>The scan method that is applied to the instance.</p>

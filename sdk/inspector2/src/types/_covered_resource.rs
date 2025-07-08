@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about a resource covered by Amazon Inspector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoveredResource {
     /// <p>The type of the covered resource.</p>

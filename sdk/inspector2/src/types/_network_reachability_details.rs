@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of a network reachability finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkReachabilityDetails {
     /// <p>An object that contains details about the open port range associated with a finding.</p>

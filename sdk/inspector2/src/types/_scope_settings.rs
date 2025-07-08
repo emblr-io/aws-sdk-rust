@@ -2,6 +2,8 @@
 
 /// <p>Defines the scope of repositories to be included in code security scans.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScopeSettings {
     /// <p>The scope of projects to be selected for scanning within the integrated repositories. Setting the value to <code>ALL</code> applies the scope settings to all existing and future projects imported into Amazon Inspector.</p>

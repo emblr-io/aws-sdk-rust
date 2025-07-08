@@ -2,6 +2,8 @@
 
 /// <p>A list of CIS scans filter criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCisScansFilterCriteria {
     /// <p>The list of scan name filters.</p>

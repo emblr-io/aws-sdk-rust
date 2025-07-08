@@ -2,6 +2,8 @@
 
 /// <p>Contains the continuous integration scan configuration settings applied to a specific project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectContinuousIntegrationScanConfiguration {
     /// <p>The repository event that triggers continuous integration scans for the project.</p>

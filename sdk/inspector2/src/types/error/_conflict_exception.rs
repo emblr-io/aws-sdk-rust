@@ -2,6 +2,8 @@
 
 /// <p>A conflict occurred. This exception occurs when the same resource is being modified by concurrent requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictException {
     #[allow(missing_docs)] // documentation missing in model

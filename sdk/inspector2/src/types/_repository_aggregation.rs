@@ -2,6 +2,8 @@
 
 /// <p>The details that define an aggregation based on repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryAggregation {
     /// <p>The names of repositories to aggregate findings on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information on the network path associated with a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkPath {
     /// <p>The details on the steps in the network path.</p>

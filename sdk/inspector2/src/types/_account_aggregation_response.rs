@@ -2,6 +2,8 @@
 
 /// <p>An aggregation of findings by Amazon Web Services account ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountAggregationResponse {
     /// <p>The Amazon Web Services account ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for continuous integration scans that run automatically when code changes are made.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousIntegrationScanConfiguration {
     /// <p>The repository events that trigger continuous integration scans, such as pull requests or commits.</p>

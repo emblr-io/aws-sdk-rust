@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the metadata for an Amazon ECR resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceScanMetadata {
     /// <p>An object that contains details about the repository an Amazon ECR image resides in.</p>

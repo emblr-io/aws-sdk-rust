@@ -2,6 +2,8 @@
 
 /// <p>The start CIS session message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartCisSessionMessage {
     /// <p>The unique token that identifies the CIS session.</p>

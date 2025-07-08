@@ -2,6 +2,8 @@
 
 /// <p>Contains details required to create an integration with a self-managed GitLab instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateGitLabSelfManagedIntegrationDetail {
     /// <p>The URL of the self-managed GitLab instance.</p>

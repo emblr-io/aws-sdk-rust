@@ -2,6 +2,8 @@
 
 /// <p>The resource filter criteria for a Software bill of materials (SBOM) report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceFilterCriteria {
     /// <p>The account IDs used as resource filter criteria.</p>

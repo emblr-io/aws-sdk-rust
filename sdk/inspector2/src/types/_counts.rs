@@ -2,6 +2,8 @@
 
 /// <p>a structure that contains information on the count of resources within a group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Counts {
     /// <p>The number of resources.</p>

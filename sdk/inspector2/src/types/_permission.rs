@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the permissions an account has within Amazon Inspector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Permission {
     /// <p>The services that the permissions allow an account to perform the given operations for.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Metadata about tasks where an image was in use.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsMetadataDetails {
     /// <p>The details group information for a task in a cluster.</p>

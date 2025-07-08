@@ -2,6 +2,8 @@
 
 /// <p>An Amazon Web Services account within your environment that Amazon Inspector has been enabled for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Account {
     /// <p>The ID of the Amazon Web Services account.</p>

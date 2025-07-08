@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an aggregation request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AggregationRequest {
     /// <p>An object that contains details about an aggregation request based on Amazon Web Services account IDs.</p>

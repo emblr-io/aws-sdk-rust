@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the details of a package filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageFilter {
     /// <p>An object that contains details on the name of the package to filter on.</p>

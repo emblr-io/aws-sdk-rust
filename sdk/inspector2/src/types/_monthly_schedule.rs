@@ -2,6 +2,8 @@
 
 /// <p>A monthly schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonthlySchedule {
     /// <p>The monthly schedule's start time.</p>

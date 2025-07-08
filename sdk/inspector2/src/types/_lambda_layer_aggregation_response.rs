@@ -2,6 +2,8 @@
 
 /// <p>A response that contains the results of an Amazon Web Services Lambda function layer finding aggregation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaLayerAggregationResponse {
     /// <p>The names of the Amazon Web Services Lambda functions associated with the layers.</p>

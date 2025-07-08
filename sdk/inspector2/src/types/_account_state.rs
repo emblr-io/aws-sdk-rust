@@ -2,6 +2,8 @@
 
 /// <p>An object with details the status of an Amazon Web Services account within your Amazon Inspector environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountState {
     /// <p>The Amazon Web Services account ID.</p>
