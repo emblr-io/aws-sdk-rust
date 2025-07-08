@@ -2,6 +2,8 @@
 
 /// <p>Fields for audit event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditEventField {
     /// <p>Unique identifier of field in an Audit History entry.</p>

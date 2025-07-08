@@ -2,6 +2,8 @@
 
 /// <p>Object to store union of Field values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AuditEventFieldValueUnion {
     /// <p>Can be either null, or have a Boolean value type. Only one value can be provided.</p>

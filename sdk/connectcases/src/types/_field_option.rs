@@ -2,6 +2,8 @@
 
 /// <p>Object for field Options information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldOption {
     /// <p><code>FieldOptionName</code> has max length 100 and disallows trailing spaces.</p>

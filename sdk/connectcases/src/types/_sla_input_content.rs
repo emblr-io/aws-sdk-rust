@@ -2,6 +2,8 @@
 
 /// <p>Represents the content of an SLA.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SlaInputContent {
     /// <p>Represents an input SLA configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a content of an Amazon Connect file object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileContent {
     /// <p>The Amazon Resource Name (ARN) of a File in Amazon Connect.</p>

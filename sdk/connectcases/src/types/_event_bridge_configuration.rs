@@ -2,6 +2,8 @@
 
 /// <p>Configuration to enable EventBridge case event delivery and determine what data is delivered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventBridgeConfiguration {
     /// <p>Indicates whether the to broadcast case event data to the customer.</p>

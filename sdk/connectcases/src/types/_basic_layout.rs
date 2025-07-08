@@ -2,6 +2,8 @@
 
 /// <p>Content specific to <code>BasicLayout</code> type. It configures fields in the top panel and More Info tab of agent application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BasicLayout {
     /// <p>This represents sections in a panel of the page layout.</p>

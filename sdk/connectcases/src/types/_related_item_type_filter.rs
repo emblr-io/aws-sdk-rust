@@ -2,6 +2,8 @@
 
 /// <p>The list of types of related items and their parameters to use for filtering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RelatedItemTypeFilter {
     /// <p>A filter for related items of type <code>Comment</code>.</p>
