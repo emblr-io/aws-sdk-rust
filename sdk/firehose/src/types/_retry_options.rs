@@ -2,6 +2,8 @@
 
 /// <p>The retry behavior in case Firehose is unable to deliver data to a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryOptions {
     /// <p>The period of time during which Firehose retries to deliver data to the specified destination.</p>

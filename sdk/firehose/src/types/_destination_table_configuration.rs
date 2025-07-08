@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of a destination in Apache Iceberg Tables.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationTableConfiguration {
     /// <p>Specifies the name of the Apache Iceberg Table.</p>

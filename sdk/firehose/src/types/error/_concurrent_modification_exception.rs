@@ -2,6 +2,8 @@
 
 /// <p>Another modification has already happened. Fetch <code>VersionId</code> again and use it to update the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentModificationException {
     /// <p>A message that provides information about the error.</p>

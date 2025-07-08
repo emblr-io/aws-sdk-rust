@@ -2,6 +2,8 @@
 
 /// <p>Details about the Amazon MSK cluster used as the source for a Firehose stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MskSourceDescription {
     /// <p>The ARN of the Amazon MSK cluster.</p>

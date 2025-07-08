@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the Amazon MSK cluster to be used as the source for a delivery stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MskSourceConfiguration {
     /// <p>The ARN of the Amazon MSK cluster.</p>
