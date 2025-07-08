@@ -2,6 +2,8 @@
 
 /// <p>Tax registration document information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaxRegistrationDocument {
     /// <p>The Amazon S3 location where your tax registration document is stored.</p>

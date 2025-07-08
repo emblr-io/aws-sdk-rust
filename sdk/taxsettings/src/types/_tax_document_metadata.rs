@@ -2,6 +2,8 @@
 
 /// <p>The metadata for your tax document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaxDocumentMetadata {
     /// <p>The tax document access token, which contains information that the Tax Settings API uses to locate the tax document.</p><note>

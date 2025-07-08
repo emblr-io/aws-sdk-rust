@@ -2,6 +2,8 @@
 
 /// <p>The jurisdiction details of the TRN information of the customers. This doesn't contain full legal address, and contains only country code and state/region/province.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Jurisdiction {
     /// <p>The state, region, or province associated with the country of the jurisdiction, if applicable.</p>

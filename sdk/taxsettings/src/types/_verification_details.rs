@@ -2,6 +2,8 @@
 
 /// <p>Required information to verify your TRN.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerificationDetails {
     /// <p>Date of birth to verify your submitted TRN. Use the <code>YYYY-MM-DD</code> format.</p>

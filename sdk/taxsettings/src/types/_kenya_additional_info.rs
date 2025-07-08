@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in Kenya.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KenyaAdditionalInfo {
     /// <p>The legal person or physical person assigned to this TRN in Kenya.</p>
