@@ -2,6 +2,8 @@
 
 /// <p>The details that Incident Manager uses when trying to engage the contact channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactChannelAddress {
     /// <p>The format is dependent on the type of the contact channel. The following are the expected formats:</p>

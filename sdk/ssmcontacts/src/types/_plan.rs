@@ -2,6 +2,8 @@
 
 /// <p>Information about the stages and on-call rotation teams associated with an escalation plan or engagement plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Plan {
     /// <p>A list of stages that the escalation plan or engagement plan uses to engage contacts and contact methods.</p>

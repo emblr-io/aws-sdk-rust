@@ -2,6 +2,8 @@
 
 /// <p>Information about when an on-call shift begins and ends.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageTime {
     /// <p>Information about when the on-call rotation shift begins.</p>

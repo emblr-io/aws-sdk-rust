@@ -2,6 +2,8 @@
 
 /// <p>A personal contact or escalation plan that Incident Manager engages during an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Contact {
     /// <p>The Amazon Resource Name (ARN) of the contact or escalation plan.</p>

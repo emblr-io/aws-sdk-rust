@@ -2,6 +2,8 @@
 
 /// <p>Information about rotations that recur weekly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WeeklySetting {
     /// <p>The day of the week when weekly recurring on-call shift rotations begins.</p>
