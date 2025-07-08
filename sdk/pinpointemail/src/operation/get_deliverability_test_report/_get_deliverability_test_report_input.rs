@@ -2,6 +2,8 @@
 
 /// <p>A request to retrieve the results of a predictive inbox placement test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDeliverabilityTestReportInput {
     /// <p>A unique string that identifies the predictive inbox placement test.</p>

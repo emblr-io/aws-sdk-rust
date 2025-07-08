@@ -2,6 +2,8 @@
 
 /// <p>A request to enable or disable DKIM signing of email that you send from an email identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutEmailIdentityDkimAttributesInput {
     /// <p>The email identity that you want to change the DKIM settings for.</p>

@@ -3,6 +3,8 @@
 /// <p>Contains information about a dedicated IP address that is associated with your Amazon Pinpoint account.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DedicatedIp {
     /// <p>An IP address that is reserved for use by your Amazon Pinpoint account.</p>

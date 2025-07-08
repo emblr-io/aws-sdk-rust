@@ -2,6 +2,8 @@
 
 /// <p>A request to send an email message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendEmailInput {
     /// <p>The email address that you want to use as the "From" address for the email. The address that you specify has to be verified.</p>
