@@ -2,6 +2,8 @@
 
 /// <p>Defines the list of text agreements proposed to the acceptors. An example is the end user license agreement (EULA).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LegalTerm {
     /// <p>Category of the term being updated.</p>

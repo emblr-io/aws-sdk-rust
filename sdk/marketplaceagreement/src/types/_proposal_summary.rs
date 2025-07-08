@@ -2,6 +2,8 @@
 
 /// <p>A summary of the proposal received from the proposer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProposalSummary {
     /// <p>The list of resources involved in the agreement.</p>

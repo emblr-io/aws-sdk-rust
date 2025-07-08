@@ -2,6 +2,8 @@
 
 /// <p>Defines a prepaid payment model that allows buyers to configure the entitlements they want to purchase and the duration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurableUpfrontPricingTermConfiguration {
     /// <p>Defines the length of time for which the particular pricing/dimension is being purchased by the acceptor.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details of the party proposing the agreement terms,. This is commonly the seller for <code>PurchaseAgreement</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Proposer {
     /// <p>The AWS account ID of the proposer.</p>
