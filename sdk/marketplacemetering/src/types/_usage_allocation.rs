@@ -3,6 +3,8 @@
 /// <p>Usage allocations allow you to split usage into buckets by tags.</p>
 /// <p>Each <code>UsageAllocation</code> indicates the usage quantity for a specific set of tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageAllocation {
     /// <p>The total quantity allocated to this bucket of usage.</p>
