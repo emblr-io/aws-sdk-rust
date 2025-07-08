@@ -2,6 +2,8 @@
 
 /// <p>The Locale data structure represents a geographical region or location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Locale {
     /// <p>The country of the locale. Must be a valid ISO 3166 country code. For example, the code US refers to the United States of America.</p>
