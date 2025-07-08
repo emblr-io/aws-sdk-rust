@@ -2,6 +2,8 @@
 
 /// <p>The status, start time, and end time of a backtest, as well as a failure reason if applicable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestWindowSummary {
     /// <p>The time at which the test began.</p>

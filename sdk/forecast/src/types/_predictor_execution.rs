@@ -2,6 +2,8 @@
 
 /// <p>The algorithm used to perform a backtest and the status of those tests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictorExecution {
     /// <p>The ARN of the algorithm used to test the predictor.</p>

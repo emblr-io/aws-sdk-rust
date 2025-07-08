@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the predictor backtest export job properties used in the <code>ListPredictorBacktestExportJobs</code> operation. To get a complete set of properties, call the <code>DescribePredictorBacktestExportJob</code> operation, and provide the listed <code>PredictorBacktestExportJobArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictorBacktestExportJobSummary {
     /// <p>The Amazon Resource Name (ARN) of the predictor backtest export job.</p>

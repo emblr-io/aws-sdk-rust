@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the predictor properties that are used in the <code>ListPredictors</code> operation. To get the complete set of properties, call the <code>DescribePredictor</code> operation, and provide the listed <code>PredictorArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictorSummary {
     /// <p>The ARN of the predictor.</p>

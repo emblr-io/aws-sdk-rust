@@ -2,6 +2,8 @@
 
 /// <p>Provides metrics that are used to evaluate the performance of a predictor. This object is part of the <code>WindowSummary</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Metrics {
     /// <p>The root-mean-square error (RMSE).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the monitor properties used in the <code>ListMonitors</code> operation. To get a complete set of properties, call the <code>DescribeMonitor</code> operation, and provide the listed <code>MonitorArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitorSummary {
     /// <p>The Amazon Resource Name (ARN) of the monitor resource.</p>

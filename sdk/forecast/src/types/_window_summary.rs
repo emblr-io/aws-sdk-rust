@@ -3,6 +3,8 @@
 /// <p>The metrics for a time range within the evaluation portion of a dataset. This object is part of the <code>EvaluationResult</code> object.</p>
 /// <p>The <code>TestWindowStart</code> and <code>TestWindowEnd</code> parameters are determined by the <code>BackTestWindowOffset</code> parameter of the <code>EvaluationParameters</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WindowSummary {
     /// <p>The timestamp that defines the start of the window.</p>

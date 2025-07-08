@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the forecast properties used in the <code>ListForecasts</code> operation. To get the complete set of properties, call the <code>DescribeForecast</code> operation, and provide the <code>ForecastArn</code> that is listed in the summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForecastSummary {
     /// <p>The ARN of the forecast.</p>

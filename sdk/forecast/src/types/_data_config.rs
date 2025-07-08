@@ -2,6 +2,8 @@
 
 /// <p>The data configuration for your dataset group and any additional datasets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataConfig {
     /// <p>The ARN of the dataset group used to train the predictor.</p>
