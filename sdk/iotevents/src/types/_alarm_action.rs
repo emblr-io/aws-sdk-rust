@@ -2,6 +2,8 @@
 
 /// <p>Specifies one of the following actions to receive notifications when the alarm state changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmAction {
     /// <p>Information required to publish the Amazon SNS message.</p>

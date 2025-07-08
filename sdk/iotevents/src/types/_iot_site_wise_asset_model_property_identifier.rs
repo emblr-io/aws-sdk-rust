@@ -2,6 +2,8 @@
 
 /// <p>The asset model property identifer of the input routed from AWS IoT SiteWise.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotSiteWiseAssetModelPropertyIdentifier {
     /// <p>The ID of the AWS IoT SiteWise asset model.</p>
