@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines which attributes in the IdP assertion are to be used to define information about the users authenticated by the IdP to use the workspace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssertionAttributes {
     /// <p>The name of the attribute within the SAML assertion to use as the user full "friendly" names for SAML users.</p>
