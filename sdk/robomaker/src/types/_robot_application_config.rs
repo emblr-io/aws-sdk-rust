@@ -2,6 +2,8 @@
 
 /// <p>Application configuration information for a robot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RobotApplicationConfig {
     /// <p>The application information for the robot application.</p>
