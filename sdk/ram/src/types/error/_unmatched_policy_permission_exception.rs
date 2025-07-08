@@ -2,6 +2,8 @@
 
 /// <p>There isn't an existing managed permission defined in RAM that has the same IAM permissions as the resource-based policy attached to the resource. You should first run <code>PromotePermissionCreatedFromPolicy</code> to create that managed permission.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnmatchedPolicyPermissionException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because the specified value for <code>MaxResults</code> isn't valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidMaxResultsException {
     #[allow(missing_docs)] // documentation missing in model

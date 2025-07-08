@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents the background work that RAM performs when you invoke the <code>ReplacePermissionAssociations</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplacePermissionAssociationsWork {
     /// <p>The unique identifier for the background task associated with one <code>ReplacePermissionAssociations</code> request.</p>
