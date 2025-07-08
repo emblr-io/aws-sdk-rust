@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon Relational Database Service (RDS) configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsSourceConfig {
     /// <p>A string identifying the database instance.</p>

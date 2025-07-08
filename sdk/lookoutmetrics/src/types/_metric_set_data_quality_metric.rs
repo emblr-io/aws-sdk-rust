@@ -2,6 +2,8 @@
 
 /// <p>An array of <code>DataQualityMetric</code> objects that describes one or more data quality metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricSetDataQualityMetric {
     /// <p>The Amazon Resource Name (ARN) of the data quality metric array.</p>

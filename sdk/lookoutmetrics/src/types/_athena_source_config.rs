@@ -2,6 +2,8 @@
 
 /// <p>Details about an Amazon Athena datasource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AthenaSourceConfig {
     /// <p>An IAM role that gives Amazon Lookout for Metrics permission to access the data.</p>
