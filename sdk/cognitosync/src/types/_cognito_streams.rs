@@ -2,6 +2,8 @@
 
 /// Configuration options for configure Cognito streams.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CognitoStreams {
     /// The name of the Cognito stream to receive updates. This stream must be in the developers account and in the same region as the identity pool.

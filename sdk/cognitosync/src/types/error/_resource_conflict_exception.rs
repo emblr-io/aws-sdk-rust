@@ -2,6 +2,8 @@
 
 /// Thrown if an update can't be applied because the resource was changed by another call and this would result in a conflict.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConflictException {
     /// The message returned by a ResourceConflictException.

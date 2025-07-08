@@ -2,6 +2,8 @@
 
 /// Response to a successful DescribeIdentityPoolUsage request.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeIdentityPoolUsageOutput {
     /// Information about the usage of the identity pool.
