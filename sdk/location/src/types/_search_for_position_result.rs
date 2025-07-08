@@ -2,6 +2,8 @@
 
 /// <p>Contains a search result from a position search query that is run on a place index resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchForPositionResult {
     /// <p>Details about the search result, such as its address and position.</p>

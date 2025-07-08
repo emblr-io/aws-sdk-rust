@@ -2,6 +2,8 @@
 
 /// <p>A summary of the calculated route matrix.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CalculateRouteMatrixSummary {
     /// <p>The data provider of traffic and road network data used to calculate the routes. Indicates one of the available providers:</p>
