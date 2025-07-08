@@ -2,6 +2,8 @@
 
 /// <p>The instance currently has 1 active serial console session. Only 1 session is supported at a time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SerialConsoleSessionLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model
