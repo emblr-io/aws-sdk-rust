@@ -2,6 +2,8 @@
 
 /// <p>Describes a rule for an IP access control group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpRuleItem {
     /// <p>The IP address range, in CIDR notation.</p>

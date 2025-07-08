@@ -2,6 +2,8 @@
 
 /// <p>You either haven't provided a <code>TargetAccountId</code> or are using the same value for <code>TargetAccountId</code> and <code>SourceAccountId</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Describes the user volume for a WorkSpace bundle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserStorage {
     /// <p>The size of the user volume.</p>

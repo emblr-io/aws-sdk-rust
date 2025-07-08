@@ -2,6 +2,8 @@
 
 /// <p>Describes the properties of the certificate-based authentication you want to use with your WorkSpaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateBasedAuthProperties {
     /// <p>The status of the certificate-based authentication properties.</p>

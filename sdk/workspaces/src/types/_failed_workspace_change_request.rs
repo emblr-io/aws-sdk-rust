@@ -2,6 +2,8 @@
 
 /// <p>Describes a WorkSpace that could not be rebooted. (<code>RebootWorkspaces</code>), rebuilt (<code>RebuildWorkspaces</code>), restored (<code>RestoreWorkspace</code>), terminated (<code>TerminateWorkspaces</code>), started (<code>StartWorkspaces</code>), or stopped (<code>StopWorkspaces</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedWorkspaceChangeRequest {
     /// <p>The identifier of the WorkSpace.</p>

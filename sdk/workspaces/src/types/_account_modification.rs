@@ -2,6 +2,8 @@
 
 /// <p>Describes a modification to the configuration of Bring Your Own License (BYOL) for the specified account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountModification {
     /// <p>The state of the modification to the configuration of BYOL.</p>
