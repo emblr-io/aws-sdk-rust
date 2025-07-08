@@ -2,6 +2,8 @@
 
 /// <p>The details for the guardrails contextual grounding filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailContextualGroundingFilter {
     /// <p>The filter type details for the guardrails contextual grounding filter.</p>

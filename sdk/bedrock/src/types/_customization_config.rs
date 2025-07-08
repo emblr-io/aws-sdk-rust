@@ -2,6 +2,8 @@
 
 /// <p>A model customization configuration</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CustomizationConfig {
     /// <p>The Distillation configuration for the custom model.</p>

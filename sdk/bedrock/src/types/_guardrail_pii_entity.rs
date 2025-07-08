@@ -2,6 +2,8 @@
 
 /// <p>The PII entity configured for the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailPiiEntity {
     /// <p>The type of PII entity. For example, Social Security Number.</p>

@@ -4,6 +4,8 @@
 /// <p>For automated model evaluation jobs, only a single model is supported.</p>
 /// <p>For human-based model evaluation jobs, your annotator can compare the responses for up to two different models.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationInferenceConfig {
     /// <p>Specifies the inference models.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A summary of a model used for a model evaluation job where you provide your own inference response data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationPrecomputedInferenceSource {
     /// <p>A label that identifies a model used in a model evaluation job where you provide your own inference response data.</p>

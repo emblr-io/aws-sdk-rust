@@ -2,6 +2,8 @@
 
 /// <p>Details about the location of the input to the batch inference job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ModelInvocationJobInputDataConfig {
     /// <p>Contains the configuration of the S3 location of the input data.</p>

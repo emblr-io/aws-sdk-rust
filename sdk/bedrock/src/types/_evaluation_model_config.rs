@@ -2,6 +2,8 @@
 
 /// <p>Defines the models used in the model evaluation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationModelConfig {
     /// <p>Defines the Amazon Bedrock model or inference profile and inference parameters you want used.</p>

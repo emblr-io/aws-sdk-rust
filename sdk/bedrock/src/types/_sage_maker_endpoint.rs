@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for a Amazon SageMaker endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SageMakerEndpoint {
     /// <p>The number of Amazon EC2 compute instances to deploy for initial endpoint creation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of either an automated or human-based evaluation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationConfig {
     /// <p>Contains the configuration details of an automated evaluation job that computes metrics.</p>

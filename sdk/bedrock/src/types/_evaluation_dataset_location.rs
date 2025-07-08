@@ -2,6 +2,8 @@
 
 /// <p>The location in Amazon S3 where your prompt dataset is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationDatasetLocation {
     /// <p>The S3 URI of the S3 bucket specified in the job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the filters to use on the metadata attributes/fields in the knowledge base data sources before returning results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum RetrievalFilter {
     /// <p>Knowledge base data sources are returned if their metadata attributes fulfill all the filter conditions inside this list.</p>

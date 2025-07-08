@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 data source of the model to import.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DataSource {
     /// <p>The URI of the Amazon S3 data source.</p>

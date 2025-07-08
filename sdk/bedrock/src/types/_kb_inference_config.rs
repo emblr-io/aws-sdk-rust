@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration details of the inference for knowledge base retrieval and response generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KbInferenceConfig {
     /// <p>Contains configuration details for text generation using a language model via the <code>RetrieveAndGenerate</code> function.</p>
