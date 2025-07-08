@@ -2,6 +2,8 @@
 
 /// <p>The results of the SQL statement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum QueryRecords {
     /// <p>The results of the SQL statement in CSV format.</p>
