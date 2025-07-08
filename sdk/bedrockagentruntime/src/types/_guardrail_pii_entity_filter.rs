@@ -2,6 +2,8 @@
 
 /// <p>The Guardrail filter to identify and remove personally identifiable information (PII).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailPiiEntityFilter {
     /// <p>The type of PII the Guardrail filter has identified and removed.</p>

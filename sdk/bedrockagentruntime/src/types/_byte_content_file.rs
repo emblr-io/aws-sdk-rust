@@ -2,6 +2,8 @@
 
 /// <p>The property contains the file to chat with, along with its attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ByteContentFile {
     /// <p>The MIME type of data contained in the file used for chat.</p>

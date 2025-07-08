@@ -2,6 +2,8 @@
 
 /// <p>Details about the source of an input image in the result from a function in the action group invocation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ImageInputSource {
     /// <p>The raw image bytes for the image. If you use an Amazon Web Services SDK, you don't need to encode the image bytes in base64.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about the pre-processing step, in which the agent contextualizes and categorizes user inputs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum PreProcessingTrace {
     /// <p>The input for the pre-processing step.</p>

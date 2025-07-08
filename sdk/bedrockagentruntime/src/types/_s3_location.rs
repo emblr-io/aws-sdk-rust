@@ -2,6 +2,8 @@
 
 /// <p>Information about the Amazon S3 bucket where the image is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Location {
     /// <p>The path to the Amazon S3 bucket where the image is stored.</p>

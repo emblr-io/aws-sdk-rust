@@ -2,6 +2,8 @@
 
 /// <p>The output of the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum FlowResponseStream {
     /// <p>Contains information about why the flow completed.</p>

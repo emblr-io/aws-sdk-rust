@@ -2,6 +2,8 @@
 
 /// <p>The event in the custom orchestration sequence. Events are the responses which the custom orchestration Lambda function sends as response to the agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomOrchestrationTraceEvent {
     /// <p>The text that prompted the event at this step.</p>

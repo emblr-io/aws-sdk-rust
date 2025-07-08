@@ -2,6 +2,8 @@
 
 /// <p>The assessment details for words defined in the Guardrail filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailWordPolicyAssessment {
     /// <p>The custom word details for words defined in the Guardrail filter.</p>

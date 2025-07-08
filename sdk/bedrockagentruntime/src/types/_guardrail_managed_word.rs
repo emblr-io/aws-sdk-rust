@@ -2,6 +2,8 @@
 
 /// <p>The managed word details for the filter in the Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailManagedWord {
     /// <p>The match details for the managed word filter in the Guardrail.</p>

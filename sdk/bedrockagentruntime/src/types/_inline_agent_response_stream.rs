@@ -2,6 +2,8 @@
 
 /// <p>The response from invoking the agent and associated citations and trace information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum InlineAgentResponseStream {
     /// <p>Contains a part of an agent response and citations for it.</p>

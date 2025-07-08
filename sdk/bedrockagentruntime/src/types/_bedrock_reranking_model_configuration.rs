@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a reranker model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockRerankingModelConfiguration {
     /// <p>The ARN of the reranker model.</p>

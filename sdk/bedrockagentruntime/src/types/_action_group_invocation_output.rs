@@ -2,6 +2,8 @@
 
 /// <p>Contains the JSON-formatted string returned by the API invoked by the action group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ActionGroupInvocationOutput {
     /// <p>The JSON-formatted string returned by the API invoked by the action group.</p>

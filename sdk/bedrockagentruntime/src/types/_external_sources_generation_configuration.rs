@@ -2,6 +2,8 @@
 
 /// <p>Contains the generation configuration of the external source wrapper object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalSourcesGenerationConfiguration {
     /// <p>Contain the textPromptTemplate string for the external source wrapper object.</p>

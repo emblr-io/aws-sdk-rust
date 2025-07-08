@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the knowledge base to look up and the query to be made.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KnowledgeBaseLookupInput {
     /// <p>The query made to the knowledge base.</p>

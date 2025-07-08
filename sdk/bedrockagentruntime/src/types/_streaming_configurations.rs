@@ -2,6 +2,8 @@
 
 /// <p>Configurations for streaming.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingConfigurations {
     /// <p>Specifies whether to enable streaming for the final response. This is set to <code>false</code> by default.</p>

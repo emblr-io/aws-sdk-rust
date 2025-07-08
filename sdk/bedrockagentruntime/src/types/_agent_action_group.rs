@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the inline agent's action group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentActionGroup {
     /// <p>The name of the action group.</p>

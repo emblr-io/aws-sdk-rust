@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the response to the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FinalResponse {
     /// <p>The text in the response to the user.</p>

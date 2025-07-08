@@ -2,6 +2,8 @@
 
 /// <p>An event in which the prompt was analyzed in preparation for optimization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AnalyzePromptEvent {
     /// <p>A message describing the analysis of the prompt.</p>

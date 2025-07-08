@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the results from looking up the knowledge base.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KnowledgeBaseLookupOutput {
     /// <p>Contains metadata about the sources cited for the generated response.</p>

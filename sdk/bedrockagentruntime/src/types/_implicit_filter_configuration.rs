@@ -2,6 +2,8 @@
 
 /// <p>Settings for implicit filtering, where a model generates a metadata filter based on the prompt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImplicitFilterConfiguration {
     /// <p>Metadata that can be used in a filter.</p>

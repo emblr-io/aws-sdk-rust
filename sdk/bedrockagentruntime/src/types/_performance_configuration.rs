@@ -2,6 +2,8 @@
 
 /// <p>Performance settings for a model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceConfiguration {
     /// <p>To use a latency-optimized version of the model, set to <code>optimized</code>.</p>

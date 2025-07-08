@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a query to submit to the reranker model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RerankQuery {
     /// <p>The type of the query.</p>

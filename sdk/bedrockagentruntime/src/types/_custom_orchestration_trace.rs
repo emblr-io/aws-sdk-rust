@@ -2,6 +2,8 @@
 
 /// <p>The trace behavior for the custom orchestration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomOrchestrationTrace {
     /// <p>The unique identifier of the trace.</p>

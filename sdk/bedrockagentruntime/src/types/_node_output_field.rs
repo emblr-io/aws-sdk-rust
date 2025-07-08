@@ -4,6 +4,8 @@
 /// <p>Flow executions is in preview release for Amazon Bedrock and is subject to change.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NodeOutputField {
     /// <p>The name of the output field as defined in the node's output schema.</p>

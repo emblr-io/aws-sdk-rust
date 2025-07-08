@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the content in an output from prompt flow invocation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FlowOutputContent {
     /// <p>The content in the output.</p>
