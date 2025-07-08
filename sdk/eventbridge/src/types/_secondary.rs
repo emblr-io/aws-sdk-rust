@@ -2,6 +2,8 @@
 
 /// <p>The secondary Region that processes events when failover is triggered or replication is enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Secondary {
     /// <p>Defines the secondary Region.</p>

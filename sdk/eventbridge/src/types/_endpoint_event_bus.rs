@@ -2,6 +2,8 @@
 
 /// <p>The event buses the endpoint is associated with.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointEventBus {
     /// <p>The ARN of the event bus the endpoint is associated with.</p>

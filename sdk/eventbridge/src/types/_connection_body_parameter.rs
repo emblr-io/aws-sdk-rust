@@ -2,6 +2,8 @@
 
 /// <p>Additional parameter included in the body. You can include up to 100 additional body parameters per request. An event payload cannot exceed 64 KB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConnectionBodyParameter {
     /// <p>The key for the parameter.</p>

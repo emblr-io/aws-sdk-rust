@@ -3,6 +3,8 @@
 /// <p>If the connection uses a private OAuth endpoint, the parameters for EventBridge to use when authenticating against the endpoint.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-connection-auth.html">Authorization methods for connections</a> in the <i> <i>Amazon EventBridge User Guide</i> </i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeConnectionConnectivityParameters {
     /// <p>The parameters for EventBridge to use when invoking the resource endpoint.</p>

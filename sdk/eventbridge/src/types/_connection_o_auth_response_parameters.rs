@@ -2,6 +2,8 @@
 
 /// <p>The response parameters when OAuth is specified as the authorization type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionOAuthResponseParameters {
     /// <p>Details about the client parameters returned when OAuth is specified as the authorization type.</p>

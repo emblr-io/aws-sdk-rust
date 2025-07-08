@@ -2,6 +2,8 @@
 
 /// <p>The parameters for EventBridge to use when invoking the resource endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeConnectionResourceParameters {
     /// <p>The Amazon Resource Name (ARN) of the resource configuration for the private API.</p>

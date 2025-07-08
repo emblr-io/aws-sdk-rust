@@ -3,6 +3,8 @@
 /// <p>The authorization parameters for the connection.</p>
 /// <p>You must include only authorization parameters for the <code>AuthorizationType</code> you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateConnectionAuthRequestParameters {
     /// <p>The Basic authorization parameters to use for the connection.</p>

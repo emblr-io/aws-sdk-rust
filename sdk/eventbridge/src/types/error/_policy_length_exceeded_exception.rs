@@ -2,6 +2,8 @@
 
 /// <p>The event bus policy is too long. For more information, see the limits.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyLengthExceededException {
     #[allow(missing_docs)] // documentation missing in model
