@@ -2,6 +2,8 @@
 
 /// <p>Information about the resources that would be included in the actual runbook execution, if it were to be run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetPreview {
     /// <p>The number of resources of a certain type included in an execution preview.</p>

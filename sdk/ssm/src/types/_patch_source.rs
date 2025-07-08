@@ -2,6 +2,8 @@
 
 /// <p>Information about the patches to use to update the managed nodes, including target operating systems and source repository. Applies to Linux managed nodes only.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PatchSource {
     /// <p>The name specified to identify the patch source.</p>

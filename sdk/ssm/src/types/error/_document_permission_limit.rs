@@ -4,6 +4,8 @@
 /// <p>By default, you can share a private document with a maximum of 1,000 accounts and publicly share up to five documents.</p>
 /// <p>If you need to increase the quota for privately or publicly shared Systems Manager documents, contact Amazon Web Services Support.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentPermissionLimit {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>An OpsMetadata object already exists for the selected resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpsMetadataAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

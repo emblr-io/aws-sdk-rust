@@ -3,6 +3,8 @@
 /// <p>Describes a filter for a specific list of managed nodes. You can filter node information by using tags. You specify tags by using a key-value mapping.</p>
 /// <p>Use this operation instead of the <code>DescribeInstanceInformationRequest$InstanceInformationFilterList</code> method. The <code>InstanceInformationFilterList</code> method is a legacy method and doesn't support tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceInformationFilter {
     /// <p>The name of the filter.</p>

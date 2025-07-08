@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the Change Manager change template used in the change request was rejected or is still in a pending state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationDefinitionNotApprovedException {
     #[allow(missing_docs)] // documentation missing in model

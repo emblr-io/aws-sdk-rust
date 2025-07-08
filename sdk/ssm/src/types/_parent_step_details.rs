@@ -2,6 +2,8 @@
 
 /// <p>A detailed status of the parent step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParentStepDetails {
     /// <p>The unique ID of a step execution.</p>

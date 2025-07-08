@@ -2,6 +2,8 @@
 
 /// <p>An SSM document required by the current document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentRequires {
     /// <p>The name of the required SSM document. The name can be an Amazon Resource Name (ARN).</p>

@@ -2,6 +2,8 @@
 
 /// <p>There are concurrent updates for a resource that supports one update at a time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyUpdates {
     #[allow(missing_docs)] // documentation missing in model

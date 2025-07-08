@@ -2,6 +2,8 @@
 
 /// <p>Describes plugin details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandPlugin {
     /// <p>The name of the plugin. Must be one of the following: <code>aws:updateAgent</code>, <code>aws:domainjoin</code>, <code>aws:applications</code>, <code>aws:runPowerShellScript</code>, <code>aws:psmodule</code>, <code>aws:cloudWatch</code>, <code>aws:runShellScript</code>, or <code>aws:updateSSMAgent</code>.</p>

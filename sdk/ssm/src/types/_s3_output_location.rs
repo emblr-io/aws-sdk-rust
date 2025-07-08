@@ -2,6 +2,8 @@
 
 /// <p>An S3 bucket where you want to store the results of this request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3OutputLocation {
     /// <p>The Amazon Web Services Region of the S3 bucket.</p>

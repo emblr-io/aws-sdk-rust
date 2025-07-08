@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Web Services Systems Manager document (SSM document).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentDescription {
     /// <p>The SHA1 hash of the document, which you can use for verification.</p>

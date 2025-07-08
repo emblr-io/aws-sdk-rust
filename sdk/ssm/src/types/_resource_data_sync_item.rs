@@ -2,6 +2,8 @@
 
 /// <p>Information about a resource data sync configuration, including its current status and last successful sync.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceDataSyncItem {
     /// <p>The name of the resource data sync.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified aggregator isn't valid for the group type. Verify that the aggregator you provided is supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidAggregatorException {
     #[allow(missing_docs)] // documentation missing in model

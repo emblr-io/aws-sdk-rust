@@ -2,6 +2,8 @@
 
 /// <p>The request doesn't meet the regular expression requirement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidAllowedPatternException {
     /// <p>The request doesn't meet the regular expression requirement.</p>

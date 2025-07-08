@@ -2,6 +2,8 @@
 
 /// <p>The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Credentials {
     /// <p>The access key ID that identifies the temporary security credentials.</p>

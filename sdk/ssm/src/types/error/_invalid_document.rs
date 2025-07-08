@@ -2,6 +2,8 @@
 
 /// <p>The specified SSM document doesn't exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDocument {
     /// <p>The SSM document doesn't exist or the document isn't available to the user. This exception can be issued by various API operations.</p>

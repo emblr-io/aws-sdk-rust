@@ -65,6 +65,8 @@
 /// <p>For example, if you created a key called region and are using the Amazon Web Services CLI to call the <code>list-documents</code> command:</p>
 /// <p><code>aws ssm list-documents --filters Key=tag:region,Values=east,west Key=Owner,Values=Self</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentKeyValuesFilter {
     /// <p>The name of the filter key.</p>

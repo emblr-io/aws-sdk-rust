@@ -2,6 +2,8 @@
 
 /// <p>The OpsItem data type to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpsResultAttribute {
     /// <p>Name of the data type. Valid value: <code>AWS:OpsItem</code>, <code>AWS:EC2InstanceInformation</code>, <code>AWS:OpsItemTrendline</code>, or <code>AWS:ComplianceSummary</code>.</p>

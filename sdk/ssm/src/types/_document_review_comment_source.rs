@@ -2,6 +2,8 @@
 
 /// <p>Information about comments added to a document review request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentReviewCommentSource {
     /// <p>The type of information added to a review request. Currently, only the value <code>Comment</code> is supported.</p>

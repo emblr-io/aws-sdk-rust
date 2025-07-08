@@ -2,6 +2,8 @@
 
 /// <p>Describes the association of a Amazon Web Services Systems Manager document (SSM document) and a managed node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateAssociationBatchRequestEntry {
     /// <p>The name of the SSM document that contains the configuration information for the managed node. You can specify Command or Automation runbooks.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The query result body of the GetServiceSetting API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetServiceSettingOutput {
     /// <p>The query result of the current service setting.</p>

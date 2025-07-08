@@ -2,6 +2,8 @@
 
 /// <p>You have reached the maximum number versions allowed for an association. Each association has a limit of 1,000 versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationVersionLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

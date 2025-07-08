@@ -2,6 +2,8 @@
 
 /// <p>Summary information about related-item resources for an OpsItem.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpsItemRelatedItemSummary {
     /// <p>The OpsItem ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The size limit of a document is 64 KB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaxDocumentSizeExceeded {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The S3 bucket doesn't exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidOutputFolder {
     #[allow(missing_docs)] // documentation missing in model

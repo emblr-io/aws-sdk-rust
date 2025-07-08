@@ -2,6 +2,8 @@
 
 /// <p>This operation is not supported for the current account. You must first enable the Systems Manager integrated experience in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedOperationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The command ID and managed node ID you specified didn't match any invocations. Verify the command ID and the managed node ID and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvocationDoesNotExist {
     #[allow(missing_docs)] // documentation missing in model

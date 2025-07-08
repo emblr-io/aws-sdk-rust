@@ -2,6 +2,8 @@
 
 /// <p>The request body of the GetServiceSetting API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetServiceSettingInput {
     /// <p>The ID of the service setting to get. The setting ID can be one of the following.</p>
