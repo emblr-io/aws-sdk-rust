@@ -2,6 +2,8 @@
 
 /// <p>Contains the information about an error resulting from a <code>BatchGetPolicy</code> API call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetPolicyErrorItem {
     /// <p>The error code that was returned.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An authorization request that you include in a <code>BatchIsAuthorizedWithToken</code> API request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchIsAuthorizedWithTokenInputItem {
     /// <p>Specifies the requested action to be authorized. For example, <code>PhotoFlash::ReadPhoto</code>.</p>

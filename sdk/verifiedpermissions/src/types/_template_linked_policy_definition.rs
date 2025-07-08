@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a policy created by instantiating a policy template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateLinkedPolicyDefinition {
     /// <p>The unique identifier of the policy template used to create this policy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An authorization request that you include in a <code>BatchIsAuthorized</code> API request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchIsAuthorizedInputItem {
     /// <p>Specifies the principal for which the authorization decision is to be made.</p>

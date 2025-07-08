@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an update to a static policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateStaticPolicyDefinition {
     /// <p>Specifies the description to be added to or replaced on the static policy.</p>

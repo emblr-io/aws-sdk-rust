@@ -3,6 +3,8 @@
 /// <p>A structure that describes a policy definition. It must always have either an <code>static</code> or a <code>templateLinked</code> element.</p>
 /// <p>This data type is used as a response parameter for the <a href="https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_GetPolicy.html">GetPolicy</a> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PolicyDefinitionDetail {
     /// <p>Information about a static policy that wasn't created with a policy template.</p>
