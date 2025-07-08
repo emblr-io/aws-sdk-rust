@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of cost-related information for a bill estimate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillEstimateCostSummary {
     /// <p>The total difference in cost between the estimated and historical costs.</p>

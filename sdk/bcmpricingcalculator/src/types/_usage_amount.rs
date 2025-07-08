@@ -2,6 +2,8 @@
 
 /// <p>Represents a usage amount for a specific time period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageAmount {
     /// <p>The start hour of the usage period.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a usage quantity for a workload estimate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadEstimateUsageQuantity {
     /// <p>The unit of measurement for the usage quantity.</p>

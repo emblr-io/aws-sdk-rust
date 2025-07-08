@@ -2,6 +2,8 @@
 
 /// <p>Represents the result of a usage quantity calculation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageQuantityResult {
     /// <p>The numeric value of the usage quantity result.</p>

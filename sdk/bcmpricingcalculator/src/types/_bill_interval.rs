@@ -2,6 +2,8 @@
 
 /// <p>Represents a time interval for a bill or estimate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillInterval {
     /// <p>The start date and time of the interval.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a commitment modification item in a bill scenario.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillScenarioCommitmentModificationItem {
     /// <p>The unique identifier of the commitment modification.</p>

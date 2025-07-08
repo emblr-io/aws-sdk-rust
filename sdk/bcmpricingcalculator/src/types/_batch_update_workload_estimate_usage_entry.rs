@@ -2,6 +2,8 @@
 
 /// <p>Represents an entry in a batch operation to update workload estimate usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdateWorkloadEstimateUsageEntry {
     /// <p>The unique identifier of the usage estimate to update.</p>

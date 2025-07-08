@@ -2,6 +2,8 @@
 
 /// <p>Represents an error that occurred during a batch create operation for bill scenario commitment modifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateBillScenarioCommitmentModificationError {
     /// <p>The key of the entry that caused the error.</p>

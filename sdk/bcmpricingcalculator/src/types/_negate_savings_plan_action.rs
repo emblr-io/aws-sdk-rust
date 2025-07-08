@@ -3,6 +3,8 @@
 /// <p>Represents an action to remove a Savings Plan from a bill scenario.</p>
 /// <p>This is the ID of an existing Savings Plan in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NegateSavingsPlanAction {
     /// <p>The ID of the Savings Plan to remove.</p>

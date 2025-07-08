@@ -2,6 +2,8 @@
 
 /// Mixin for common fields returned by CRUD APIs
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateWorkloadEstimateOutput {
     /// <p>The unique identifier for the created workload estimate.</p>
