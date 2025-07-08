@@ -2,6 +2,8 @@
 
 /// <p>The capacity reservation status for each Availability Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZonalCapacityReservationState {
     /// <p>The state of the capacity reservation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The minimum capacity for a load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MinimumLoadBalancerCapacity {
     /// <p>The number of capacity units.</p>

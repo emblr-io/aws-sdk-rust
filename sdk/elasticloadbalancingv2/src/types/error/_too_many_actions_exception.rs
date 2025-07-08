@@ -2,6 +2,8 @@
 
 /// <p>You've reached the limit on the number of actions per rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyActionsException {
     #[allow(missing_docs)] // documentation missing in model
