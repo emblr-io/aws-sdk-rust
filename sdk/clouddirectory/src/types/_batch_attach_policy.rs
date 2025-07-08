@@ -2,6 +2,8 @@
 
 /// <p>Attaches a policy object to a regular object inside a <code>BatchRead</code> operation.&nbsp;For more information, see <code>AttachPolicy</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAttachPolicy {
     /// <p>The reference that is associated with the policy object.</p>

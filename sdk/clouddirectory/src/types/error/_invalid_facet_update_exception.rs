@@ -2,6 +2,8 @@
 
 /// <p>An attempt to modify a <code>Facet</code> resulted in an invalid schema exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidFacetUpdateException {
     #[allow(missing_docs)] // documentation missing in model

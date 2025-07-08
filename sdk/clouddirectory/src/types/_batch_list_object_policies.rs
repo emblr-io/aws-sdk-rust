@@ -2,6 +2,8 @@
 
 /// <p>Returns policies attached to an object in pagination fashion inside a <code>BatchRead</code> operation. For more information, see <code>ListObjectPolicies</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListObjectPolicies {
     /// <p>The reference that identifies the object whose attributes will be listed.</p>

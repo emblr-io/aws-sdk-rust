@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the object is not attached to the index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectAlreadyDetachedException {
     #[allow(missing_docs)] // documentation missing in model

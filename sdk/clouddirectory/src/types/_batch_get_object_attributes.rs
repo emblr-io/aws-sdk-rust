@@ -2,6 +2,8 @@
 
 /// <p>Retrieves attributes within a facet that are associated with an object inside an <code>BatchRead</code> operation. For more information, see <code>GetObjectAttributes</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetObjectAttributes {
     /// <p>Reference that identifies the object whose attributes will be retrieved.</p>

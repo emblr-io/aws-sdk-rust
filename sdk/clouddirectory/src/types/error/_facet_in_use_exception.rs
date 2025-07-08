@@ -2,6 +2,8 @@
 
 /// <p>Occurs when deleting a facet that contains an attribute that is a target to an attribute reference in a different facet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FacetInUseException {
     #[allow(missing_docs)] // documentation missing in model

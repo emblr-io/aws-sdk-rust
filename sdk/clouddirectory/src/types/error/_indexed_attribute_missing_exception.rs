@@ -2,6 +2,8 @@
 
 /// <p>An object has been attempted to be attached to an object that does not have the appropriate attribute value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndexedAttributeMissingException {
     #[allow(missing_docs)] // documentation missing in model

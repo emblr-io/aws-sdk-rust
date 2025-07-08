@@ -2,6 +2,8 @@
 
 /// <p>An attribute that is associated with the <code>Facet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FacetAttribute {
     /// <p>The name of the facet attribute.</p>

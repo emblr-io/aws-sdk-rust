@@ -2,6 +2,8 @@
 
 /// <p>An empty result that represents success.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchRemoveFacetFromObjectResponse {}
 impl BatchRemoveFacetFromObjectResponse {

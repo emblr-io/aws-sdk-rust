@@ -2,6 +2,8 @@
 
 /// <p>Detaches a typed link from a specified source and target object inside a <code>BatchRead</code> operation. For more information, see <code>DetachTypedLink</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDetachTypedLink {
     /// <p>Used to accept a typed link specifier as input.</p>
