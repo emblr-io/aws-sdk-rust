@@ -2,6 +2,8 @@
 
 /// <p>Specifies the invoice summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvoiceSummariesSelector {
     /// <p>The query identifier type (<code>INVOICE_ID</code> or <code>ACCOUNT_ID</code>).</p>

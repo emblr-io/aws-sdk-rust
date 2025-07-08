@@ -2,6 +2,8 @@
 
 /// <p>Details about how the total amount was calculated and categorized.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmountBreakdown {
     /// <p>The total of a set of the breakdown.</p>
