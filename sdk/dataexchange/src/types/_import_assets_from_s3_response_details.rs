@@ -2,6 +2,8 @@
 
 /// <p>Details from an import from Amazon S3 response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportAssetsFromS3ResponseDetails {
     /// <p>Is a list of Amazon S3 bucket and object key pairs.</p>

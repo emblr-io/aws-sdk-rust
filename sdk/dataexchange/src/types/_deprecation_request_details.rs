@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to a deprecation type notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeprecationRequestDetails {
     /// <p>A datetime in the future when the data set will be deprecated.</p>

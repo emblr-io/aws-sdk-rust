@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to a data update type notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataUpdateRequestDetails {
     /// <p>A datetime in the past when the data was updated. This typically means that the underlying resource supporting the data set was updated.</p>

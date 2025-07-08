@@ -2,6 +2,8 @@
 
 /// <p>Details of the operation to create an Amazon S3 data access from an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateS3DataAccessFromS3BucketRequestDetails {
     /// <p>Details about the S3 data access source asset.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The API Gateway API that is the asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiGatewayApiAsset {
     /// <p>The API description of the API asset.</p>

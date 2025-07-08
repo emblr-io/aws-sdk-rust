@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to the affected scope in this S3 Data Access data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DataAccessDetails {
     /// <p>A list of the key prefixes affected by this notification. This can have up to 50 entries.</p>

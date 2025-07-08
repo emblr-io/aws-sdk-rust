@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to this schema change type notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaChangeRequestDetails {
     /// <p>List of schema changes happening in the scope of this notification. This can have up to 100 entries.</p>

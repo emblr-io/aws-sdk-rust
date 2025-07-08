@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to this notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationDetails {
     /// <p>Extra details specific to a data update type notification.</p>

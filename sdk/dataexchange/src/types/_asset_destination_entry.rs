@@ -2,6 +2,8 @@
 
 /// <p>The destination for the asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetDestinationEntry {
     /// <p>The unique identifier for the asset.</p>

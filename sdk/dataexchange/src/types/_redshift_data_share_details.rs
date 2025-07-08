@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to the affected scope in this Redshift data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftDataShareDetails {
     /// <p>The ARN of the underlying Redshift data share that is being affected by this notification.</p>
