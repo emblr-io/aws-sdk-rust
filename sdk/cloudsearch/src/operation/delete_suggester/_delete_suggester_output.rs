@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>DeleteSuggester</code> request. Contains the status of the deleted suggester.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteSuggesterOutput {
     /// <p>The status of the suggester being deleted.</p>

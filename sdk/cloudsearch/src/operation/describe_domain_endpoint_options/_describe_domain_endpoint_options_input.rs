@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DescribeDomainEndpointOptions</code></code> operation. Specify the name of the domain you want to describe. To show the active configuration and exclude any pending changes, set the Deployed option to <code>true</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainEndpointOptionsInput {
     /// <p>A string that represents the name of a domain.</p>

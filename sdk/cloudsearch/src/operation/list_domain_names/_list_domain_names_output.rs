@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>ListDomainNames</code> request. Contains a list of the domains owned by an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDomainNamesOutput {
     /// <p>The names of the search domains owned by an account.</p>

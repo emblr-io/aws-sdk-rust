@@ -2,6 +2,8 @@
 
 /// <p>The configuration and status of the domain's endpoint options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainEndpointOptionsStatus {
     /// <p>The domain endpoint options configured for the domain.</p>

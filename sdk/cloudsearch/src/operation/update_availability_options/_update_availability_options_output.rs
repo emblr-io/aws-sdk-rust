@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>UpdateAvailabilityOptions</code> request. Contains the status of the domain's availability options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateAvailabilityOptionsOutput {
     /// <p>The newly-configured availability options. Indicates whether Multi-AZ is enabled for the domain.</p>
