@@ -2,6 +2,8 @@
 
 /// <p>A rule in the Point in Time (PIT) policy representing when to take snapshots and how long to retain them for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PitPolicyRule {
     /// <p>The ID of the rule.</p>

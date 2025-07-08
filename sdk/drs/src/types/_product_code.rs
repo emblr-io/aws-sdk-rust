@@ -2,6 +2,8 @@
 
 /// <p>Properties of a product code associated with a volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductCode {
     /// <p>Id of a product code associated with a volume.</p>

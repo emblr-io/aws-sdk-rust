@@ -2,6 +2,8 @@
 
 /// <p>Hints used to uniquely identify a machine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentificationHints {
     /// <p>Fully Qualified Domain Name identification hint.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object representing the Source Server to recover.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartRecoveryRequestSourceServer {
     /// <p>The ID of the Source Server you want to recover.</p>

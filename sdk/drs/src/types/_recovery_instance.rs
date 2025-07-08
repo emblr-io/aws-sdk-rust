@@ -2,6 +2,8 @@
 
 /// <p>A Recovery Instance is a replica of a Source Server running on EC2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RecoveryInstance {
     /// <p>The EC2 instance ID of the Recovery Instance.</p>

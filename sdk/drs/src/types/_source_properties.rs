@@ -2,6 +2,8 @@
 
 /// <p>Properties of the Source Server machine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceProperties {
     /// <p>The date and time the Source Properties were last updated on.</p>

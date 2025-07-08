@@ -2,6 +2,8 @@
 
 /// <p>A snapshot of a Source Server used during recovery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoverySnapshot {
     /// <p>The ID of the Recovery Snapshot.</p>

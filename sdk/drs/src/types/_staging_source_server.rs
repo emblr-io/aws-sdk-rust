@@ -2,6 +2,8 @@
 
 /// <p>Source server in staging account that extended source server connected to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StagingSourceServer {
     /// <p>Hostname of staging source server.</p>
