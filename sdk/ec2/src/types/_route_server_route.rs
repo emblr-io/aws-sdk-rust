@@ -2,6 +2,8 @@
 
 /// <p>Describes a route in the route server's routing database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteServerRoute {
     /// <p>The ID of the route server endpoint that received this route.</p>

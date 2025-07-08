@@ -2,6 +2,8 @@
 
 /// <p>Describes the credit option for CPU usage of a burstable performance instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceCreditSpecificationRequest {
     /// <p>The ID of the instance.</p>

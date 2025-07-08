@@ -2,6 +2,8 @@
 
 /// <p>The tags for a Spot Fleet resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotFleetTagSpecification {
     /// <p>The type of resource. Currently, the only resource type that is supported is <code>instance</code>. To tag the Spot Fleet request on creation, use the <code>TagSpecifications</code> parameter in <code> <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotFleetRequestConfigData.html">SpotFleetRequestConfigData</a> </code>.</p>

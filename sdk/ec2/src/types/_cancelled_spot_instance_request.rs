@@ -2,6 +2,8 @@
 
 /// <p>Describes a request to cancel a Spot Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelledSpotInstanceRequest {
     /// <p>The ID of the Spot Instance request.</p>

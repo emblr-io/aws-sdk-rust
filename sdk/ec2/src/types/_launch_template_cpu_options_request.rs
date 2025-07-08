@@ -2,6 +2,8 @@
 
 /// <p>The CPU options for the instance. Both the core count and threads per core must be specified in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateCpuOptionsRequest {
     /// <p>The number of CPU cores for the instance.</p>

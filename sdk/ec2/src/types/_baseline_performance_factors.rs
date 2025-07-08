@@ -3,6 +3,8 @@
 /// <p>The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application.</p>
 /// <p>Currently, this parameter only supports CPU performance as a baseline performance factor. For example, specifying <code>c6i</code> would use the CPU performance of the <code>c6i</code> family as the baseline reference.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BaselinePerformanceFactors {
     /// <p>The CPU performance to consider, using an instance family as the baseline reference.</p>

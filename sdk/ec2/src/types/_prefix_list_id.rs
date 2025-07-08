@@ -2,6 +2,8 @@
 
 /// <p>Describes a prefix list ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrefixListId {
     /// <p>A description for the security group rule that references this prefix list ID.</p>

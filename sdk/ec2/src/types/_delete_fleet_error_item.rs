@@ -2,6 +2,8 @@
 
 /// <p>Describes an EC2 Fleet that was not successfully deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteFleetErrorItem {
     /// <p>The error.</p>

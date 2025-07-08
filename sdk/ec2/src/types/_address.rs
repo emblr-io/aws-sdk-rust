@@ -2,6 +2,8 @@
 
 /// <p>Describes an Elastic IP address, or a carrier IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Address {
     /// <p>The ID representing the allocation of the address.</p>

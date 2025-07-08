@@ -2,6 +2,8 @@
 
 /// <p>Describes the default credit option for CPU usage of a burstable performance instance family.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceFamilyCreditSpecification {
     /// <p>The instance family.</p>

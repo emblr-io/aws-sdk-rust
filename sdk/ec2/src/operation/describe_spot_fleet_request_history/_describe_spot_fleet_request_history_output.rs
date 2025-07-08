@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeSpotFleetRequestHistory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSpotFleetRequestHistoryOutput {
     /// <p>Information about the events in the history of the Spot Fleet request.</p>

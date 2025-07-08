@@ -2,6 +2,8 @@
 
 /// <p>Describes the rule options for a stateful rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupRuleOptionsPair {
     /// <p>The ARN of the rule group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the format and location for the export task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportToS3Task {
     /// <p>The container format used to combine disk images with metadata (such as OVF). If absent, only the disk image is exported.</p>

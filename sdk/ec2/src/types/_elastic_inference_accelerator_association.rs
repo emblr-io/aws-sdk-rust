@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Describes the association between an instance and an elastic inference accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticInferenceAcceleratorAssociation {
     /// <p>The Amazon Resource Name (ARN) of the elastic inference accelerator.</p>

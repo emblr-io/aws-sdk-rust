@@ -2,6 +2,8 @@
 
 /// <p>Describes an association between a route table and a subnet or gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteTableAssociation {
     /// <p>Indicates whether this is the main route table.</p>

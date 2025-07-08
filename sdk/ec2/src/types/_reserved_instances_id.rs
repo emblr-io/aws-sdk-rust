@@ -2,6 +2,8 @@
 
 /// <p>Describes the ID of a Reserved Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedInstancesId {
     /// <p>The ID of the Reserved Instance.</p>

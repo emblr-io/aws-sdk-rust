@@ -2,6 +2,8 @@
 
 /// <p>Details about the Dedicated Host Reservation offering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostOffering {
     /// <p>The currency of the offering.</p>

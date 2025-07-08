@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Diffie-Hellman group number for the VPN tunnel for phase 2 IKE negotiations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Phase2DhGroupNumbersRequestListValue {
     /// <p>The Diffie-Hellmann group number.</p>

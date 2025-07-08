@@ -2,6 +2,8 @@
 
 /// <p>Information about the IPv4 delegated prefixes assigned to a network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ipv4PrefixSpecificationResponse {
     /// <p>The IPv4 delegated prefixes assigned to the network interface.</p>

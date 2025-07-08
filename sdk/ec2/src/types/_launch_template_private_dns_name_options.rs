@@ -2,6 +2,8 @@
 
 /// <p>Describes the options for instance hostnames.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplatePrivateDnsNameOptions {
     /// <p>The type of hostname to assign to an instance.</p>

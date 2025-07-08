@@ -2,6 +2,8 @@
 
 /// <p>Describes the market (purchasing) option for the instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceMarketOptionsRequest {
     /// <p>The market type.</p>

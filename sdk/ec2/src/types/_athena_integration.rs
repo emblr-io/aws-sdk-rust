@@ -2,6 +2,8 @@
 
 /// <p>Describes integration options for Amazon Athena.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AthenaIntegration {
     /// <p>The location in Amazon S3 to store the generated CloudFormation template.</p>

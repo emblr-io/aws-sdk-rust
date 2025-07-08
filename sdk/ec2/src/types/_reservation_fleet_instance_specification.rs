@@ -2,6 +2,8 @@
 
 /// <p>Information about an instance type to use in a Capacity Reservation Fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservationFleetInstanceSpecification {
     /// <p>The instance type for which the Capacity Reservation Fleet reserves capacity.</p>

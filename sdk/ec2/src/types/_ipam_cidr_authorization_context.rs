@@ -2,6 +2,8 @@
 
 /// <p>A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpamCidrAuthorizationContext {
     /// <p>The plain-text authorization message for the prefix and account.</p>

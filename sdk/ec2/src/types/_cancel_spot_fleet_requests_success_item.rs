@@ -2,6 +2,8 @@
 
 /// <p>Describes a Spot Fleet request that was successfully canceled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelSpotFleetRequestsSuccessItem {
     /// <p>The current state of the Spot Fleet request.</p>

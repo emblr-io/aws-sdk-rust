@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for DescribeSpotInstanceRequests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSpotInstanceRequestsInput {
     /// <p>The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.</p>

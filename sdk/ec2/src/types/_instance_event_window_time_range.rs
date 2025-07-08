@@ -2,6 +2,8 @@
 
 /// <p>The start day and time and the end day and time of the time range, in UTC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceEventWindowTimeRange {
     /// <p>The day on which the time range begins.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The credit option for CPU usage of a T instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreditSpecificationRequest {
     /// <p>The credit option for CPU usage of a T instance.</p>

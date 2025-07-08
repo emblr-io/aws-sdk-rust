@@ -2,6 +2,8 @@
 
 /// <p>Describes a launch template and overrides.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetLaunchTemplateConfig {
     /// <p>The launch template.</p>

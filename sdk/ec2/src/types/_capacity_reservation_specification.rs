@@ -4,6 +4,8 @@
 /// <p>Use the <code>CapacityReservationPreference</code> parameter to configure the instance to run as an On-Demand Instance, to run in any <code>open</code> Capacity Reservation that has matching attributes, or to run only in a Capacity Reservation or Capacity Reservation group. Use the <code>CapacityReservationTarget</code> parameter to explicitly target a specific Capacity Reservation or a Capacity Reservation group.</p>
 /// <p>You can only specify <code>CapacityReservationPreference</code> and <code>CapacityReservationTarget</code> if the <code>CapacityReservationPreference</code> is <code>capacity-reservations-only</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationSpecification {
     /// <p>Indicates the instance's Capacity Reservation preferences. Possible preferences include:</p>

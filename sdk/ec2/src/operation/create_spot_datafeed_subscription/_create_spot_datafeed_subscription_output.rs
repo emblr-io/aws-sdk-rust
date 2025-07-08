@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of CreateSpotDatafeedSubscription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSpotDatafeedSubscriptionOutput {
     /// <p>The Spot Instance data feed subscription.</p>

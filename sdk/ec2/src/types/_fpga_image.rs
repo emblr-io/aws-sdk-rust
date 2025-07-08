@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon FPGA image (AFI).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FpgaImage {
     /// <p>The FPGA image identifier (AFI ID).</p>

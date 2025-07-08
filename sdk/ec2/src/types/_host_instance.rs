@@ -2,6 +2,8 @@
 
 /// <p>Describes an instance running on a Dedicated Host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostInstance {
     /// <p>The ID of instance that is running on the Dedicated Host.</p>

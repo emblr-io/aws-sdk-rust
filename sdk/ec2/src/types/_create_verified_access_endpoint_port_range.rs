@@ -2,6 +2,8 @@
 
 /// <p>Describes the port range for a Verified Access endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVerifiedAccessEndpointPortRange {
     /// <p>The start of the port range.</p>

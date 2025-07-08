@@ -2,6 +2,8 @@
 
 /// <p>Information about a System Integrity Protection (SIP) modification task or volume ownership delegation task for an Amazon EC2 Mac instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MacModificationTask {
     /// <p>The ID of the Amazon EC2 Mac instance.</p>

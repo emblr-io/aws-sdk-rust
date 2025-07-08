@@ -2,6 +2,8 @@
 
 /// <p>Describes an IPv4 address range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpRange {
     /// <p>A description for the security group rule that references this IPv4 address range.</p>

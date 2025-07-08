@@ -2,6 +2,8 @@
 
 /// <p>A security group that can be used by interfaces in the VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityGroupForVpc {
     /// <p>The security group's description.</p>

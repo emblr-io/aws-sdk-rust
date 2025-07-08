@@ -2,6 +2,8 @@
 
 /// <p>Information about an AMI that is currently in the Recycle Bin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageRecycleBinInfo {
     /// <p>The ID of the AMI.</p>

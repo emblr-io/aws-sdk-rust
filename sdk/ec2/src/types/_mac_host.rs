@@ -2,6 +2,8 @@
 
 /// <p>Information about the EC2 Mac Dedicated Host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MacHost {
     /// <p>The EC2 Mac Dedicated Host ID.</p>

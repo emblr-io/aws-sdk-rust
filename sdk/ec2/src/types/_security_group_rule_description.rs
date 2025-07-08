@@ -3,6 +3,8 @@
 /// <p>Describes the description of a security group rule.</p>
 /// <p>You can use this when you want to update the security group rule description for either an inbound or outbound rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityGroupRuleDescription {
     /// <p>The ID of the security group rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a Capacity Reservation Fleet that could not be cancelled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedCapacityReservationFleetCancellationResult {
     /// <p>The ID of the Capacity Reservation Fleet that could not be cancelled.</p>

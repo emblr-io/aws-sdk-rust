@@ -2,6 +2,8 @@
 
 /// <p>Describes modifications to the list of create volume permissions for a volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVolumePermissionModifications {
     /// <p>Adds the specified Amazon Web Services account ID or group to the list.</p>

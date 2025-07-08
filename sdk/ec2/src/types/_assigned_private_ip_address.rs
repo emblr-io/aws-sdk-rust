@@ -2,6 +2,8 @@
 
 /// <p>Describes the private IP addresses assigned to a network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssignedPrivateIpAddress {
     /// <p>The private IP address assigned to the network interface.</p>

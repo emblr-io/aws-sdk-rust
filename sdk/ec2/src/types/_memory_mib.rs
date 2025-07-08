@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum amount of memory, in MiB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemoryMiB {
     /// <p>The minimum amount of memory, in MiB. If this parameter is not specified, there is no minimum limit.</p>

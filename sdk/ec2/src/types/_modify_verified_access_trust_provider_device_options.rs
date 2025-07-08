@@ -2,6 +2,8 @@
 
 /// <p>Modifies the configuration of the specified device-based Amazon Web Services Verified Access trust provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyVerifiedAccessTrustProviderDeviceOptions {
     /// <p>The URL Amazon Web Services Verified Access will use to verify the authenticity of the device tokens.</p>

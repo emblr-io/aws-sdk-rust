@@ -2,6 +2,8 @@
 
 /// <p>Describes a message about an Availability Zone, Local Zone, or Wavelength Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZoneMessage {
     /// <p>The message about the Availability Zone, Local Zone, or Wavelength Zone.</p>

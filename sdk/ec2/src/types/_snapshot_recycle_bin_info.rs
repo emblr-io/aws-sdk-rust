@@ -2,6 +2,8 @@
 
 /// <p>Information about a snapshot that is currently in the Recycle Bin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotRecycleBinInfo {
     /// <p>The ID of the snapshot.</p>

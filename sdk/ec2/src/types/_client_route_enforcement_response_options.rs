@@ -2,6 +2,8 @@
 
 /// <p>The current status of Client Route Enforcement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientRouteEnforcementResponseOptions {
     /// <p>Status of the client route enforcement feature, indicating whether Client Route Enforcement is <code>true</code> (enabled) or <code>false</code> (disabled).</p>

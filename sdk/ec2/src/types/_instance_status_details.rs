@@ -2,6 +2,8 @@
 
 /// <p>Describes the instance status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceStatusDetails {
     /// <p>The time when a status check failed. For an instance that was launched and impaired, this is the time when the instance was launched.</p>

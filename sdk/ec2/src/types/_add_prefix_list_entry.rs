@@ -2,6 +2,8 @@
 
 /// <p>An entry for a prefix list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddPrefixListEntry {
     /// <p>The CIDR block.</p>

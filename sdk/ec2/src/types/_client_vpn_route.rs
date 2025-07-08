@@ -2,6 +2,8 @@
 
 /// <p>Information about a Client VPN endpoint route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientVpnRoute {
     /// <p>The ID of the Client VPN endpoint with which the route is associated.</p>

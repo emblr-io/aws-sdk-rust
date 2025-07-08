@@ -2,6 +2,8 @@
 
 /// <p>Describes a VPC peering connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcPeeringConnection {
     /// <p>Information about the accepter VPC. CIDR block information is only returned when describing an active VPC peering connection.</p>

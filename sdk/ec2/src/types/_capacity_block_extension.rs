@@ -2,6 +2,8 @@
 
 /// <p>Describes a Capacity Block extension. With an extension, you can extend the duration of time for an existing Capacity Block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityBlockExtension {
     /// <p>The reservation ID of the Capacity Block extension.</p>

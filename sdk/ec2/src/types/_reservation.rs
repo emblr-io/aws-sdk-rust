@@ -2,6 +2,8 @@
 
 /// <p>Describes a launch request for one or more instances, and includes owner, requester, and security group information that applies to all instances in the launch request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Reservation {
     /// <p>The ID of the reservation.</p>

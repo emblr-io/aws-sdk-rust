@@ -2,6 +2,8 @@
 
 /// <p>Describes a value for a resource attribute that is a Boolean value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeBooleanValue {
     /// <p>The attribute value. The valid values are <code>true</code> or <code>false</code>.</p>

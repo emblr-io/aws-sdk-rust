@@ -2,6 +2,8 @@
 
 /// <p>Identifies the launch template that the AMI uses for Windows fast launch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FastLaunchLaunchTemplateSpecificationResponse {
     /// <p>The ID of the launch template that the AMI uses for Windows fast launch.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an egress-only internet gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EgressOnlyInternetGateway {
     /// <p>Information about the attachment of the egress-only internet gateway.</p>

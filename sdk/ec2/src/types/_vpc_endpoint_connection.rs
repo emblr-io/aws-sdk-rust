@@ -2,6 +2,8 @@
 
 /// <p>Describes a VPC endpoint connection to a service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointConnection {
     /// <p>The ID of the service to which the endpoint is connected.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The BGP configuration information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayAttachmentBgpConfiguration {
     /// <p>The transit gateway Autonomous System Number (ASN).</p>

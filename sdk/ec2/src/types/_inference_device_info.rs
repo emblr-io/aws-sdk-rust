@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Describes the Inference accelerators for the instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceDeviceInfo {
     /// <p>The number of Inference accelerators for the instance type.</p>

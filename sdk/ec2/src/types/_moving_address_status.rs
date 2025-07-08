@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Describes the status of a moving Elastic IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MovingAddressStatus {
     /// <p>The status of the Elastic IP address that's being moved or restored.</p>

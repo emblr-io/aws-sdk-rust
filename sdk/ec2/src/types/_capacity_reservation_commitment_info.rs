@@ -2,6 +2,8 @@
 
 /// <p>Information about your commitment for a future-dated Capacity Reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationCommitmentInfo {
     /// <p>The instance capacity that you committed to when you requested the future-dated Capacity Reservation.</p>

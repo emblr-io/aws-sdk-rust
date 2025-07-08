@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for CreateReservedInstancesListing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateReservedInstancesListingInput {
     /// <p>The ID of the active Standard Reserved Instance.</p>

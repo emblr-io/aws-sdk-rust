@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum number of vCPUs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VCpuCountRange {
     /// <p>The minimum number of vCPUs. If the value is <code>0</code>, there is no minimum limit.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an error that occurred when disabling fast snapshot restores.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisableFastSnapshotRestoreStateErrorItem {
     /// <p>The Availability Zone.</p>

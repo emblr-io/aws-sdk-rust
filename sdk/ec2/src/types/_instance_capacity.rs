@@ -2,6 +2,8 @@
 
 /// <p>Information about the number of instances that can be launched onto the Dedicated Host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceCapacity {
     /// <p>The number of instances that can be launched onto the Dedicated Host based on the host's available capacity.</p>

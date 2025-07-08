@@ -2,6 +2,8 @@
 
 /// <p>Describes the launch specification for an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LaunchSpecification {
     /// <p>The base64-encoded user data that instances use when starting up. User data is limited to 16 KB.</p>

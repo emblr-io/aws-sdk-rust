@@ -2,6 +2,8 @@
 
 /// <p>Describes the state of a Client VPN endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientVpnEndpointStatus {
     /// <p>The state of the Client VPN endpoint. Possible states include:</p>

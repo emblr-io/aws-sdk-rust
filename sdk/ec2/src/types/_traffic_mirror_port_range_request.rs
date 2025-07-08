@@ -2,6 +2,8 @@
 
 /// <p>Information about the Traffic Mirror filter rule port range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficMirrorPortRangeRequest {
     /// <p>The first port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.</p>

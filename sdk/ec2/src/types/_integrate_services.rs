@@ -2,6 +2,8 @@
 
 /// <p>Describes service integrations with VPC Flow logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrateServices {
     /// <p>Information about the integration with Amazon Athena.</p>

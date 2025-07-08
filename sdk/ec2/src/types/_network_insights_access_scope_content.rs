@@ -2,6 +2,8 @@
 
 /// <p>Describes the Network Access Scope content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInsightsAccessScopeContent {
     /// <p>The ID of the Network Access Scope.</p>

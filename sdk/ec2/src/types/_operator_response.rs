@@ -2,6 +2,8 @@
 
 /// <p>Describes whether the resource is managed by a service provider and, if so, describes the service provider that manages it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperatorResponse {
     /// <p>If <code>true</code>, the resource is managed by a service provider.</p>

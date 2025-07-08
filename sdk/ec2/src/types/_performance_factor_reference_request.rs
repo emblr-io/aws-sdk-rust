@@ -4,6 +4,8 @@
 /// <p>Currently, only one instance family can be specified in the list.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceFactorReferenceRequest {
     /// <p>The instance family to use as a baseline reference.</p><note>

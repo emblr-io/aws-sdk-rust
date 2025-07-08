@@ -2,6 +2,8 @@
 
 /// <p>The list of instance types with the specified instance attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceTypeInfoFromInstanceRequirements {
     /// <p>The matching instance type.</p>

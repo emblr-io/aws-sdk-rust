@@ -2,6 +2,8 @@
 
 /// <p>The last error that occurred for a VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastError {
     /// <p>The error message for the VPC endpoint error.</p>

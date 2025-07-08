@@ -2,6 +2,8 @@
 
 /// <p>Describes an IPv6 CIDR block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ipv6CidrBlock {
     /// <p>The IPv6 CIDR block.</p>

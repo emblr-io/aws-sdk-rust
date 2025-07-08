@@ -2,6 +2,8 @@
 
 /// <p>Describes an error that occurred when enabling fast snapshot restores.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnableFastSnapshotRestoreStateError {
     /// <p>The error code.</p>

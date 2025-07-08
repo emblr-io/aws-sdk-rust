@@ -2,6 +2,8 @@
 
 /// <p>Describes a network interface attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInterfaceAttachment {
     /// <p>The timestamp indicating when the attachment initiated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a value for a resource attribute that is a String.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeValue {
     /// <p>The attribute value. The value is case-sensitive.</p>

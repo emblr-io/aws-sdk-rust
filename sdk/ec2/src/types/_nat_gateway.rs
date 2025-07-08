@@ -2,6 +2,8 @@
 
 /// <p>Describes a NAT gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NatGateway {
     /// <p>The date and time the NAT gateway was created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the instances to which the volume is attached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeStatusAttachmentStatus {
     /// <p>The maximum IOPS supported by the attached instance.</p>

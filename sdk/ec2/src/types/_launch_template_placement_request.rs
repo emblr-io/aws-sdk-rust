@@ -2,6 +2,8 @@
 
 /// <p>Describes the placement of an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplatePlacementRequest {
     /// <p>The Availability Zone for the instance.</p>

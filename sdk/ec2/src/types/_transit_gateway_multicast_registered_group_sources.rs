@@ -2,6 +2,8 @@
 
 /// <p>Describes the members registered with the transit gateway multicast group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayMulticastRegisteredGroupSources {
     /// <p>The ID of the transit gateway multicast domain.</p>
