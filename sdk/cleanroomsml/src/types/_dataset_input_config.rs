@@ -2,6 +2,8 @@
 
 /// <p>Defines the Glue data source and schema mapping information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetInputConfig {
     /// <p>The schema information for the training data.</p>

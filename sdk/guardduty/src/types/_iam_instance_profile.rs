@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the EC2 instance profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamInstanceProfile {
     /// <p>The profile ARN of the EC2 instance.</p>

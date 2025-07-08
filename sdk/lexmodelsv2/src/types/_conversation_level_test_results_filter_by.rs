@@ -2,6 +2,8 @@
 
 /// <p>The selection to filter the test set results data at the conversation level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelTestResultsFilterBy {
     /// <p>The selection of matched or mismatched end-to-end status to filter test set results data at the conversation level.</p>

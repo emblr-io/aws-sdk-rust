@@ -2,6 +2,8 @@
 
 /// <p>Contains information on a recommendation filter, including its ARN, status, and filter expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Filter {
     /// <p>The name of the filter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a repository sync attempt for a repository with a sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositorySyncAttempt {
     /// <p>The start time of a specific sync attempt.</p>

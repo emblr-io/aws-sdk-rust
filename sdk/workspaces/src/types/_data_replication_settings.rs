@@ -2,6 +2,8 @@
 
 /// <p>Describes the data replication settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataReplicationSettings {
     /// <p>Indicates whether data replication is enabled, and if enabled, the type of data replication.</p>

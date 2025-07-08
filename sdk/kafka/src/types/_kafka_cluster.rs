@@ -2,6 +2,8 @@
 
 /// <p>Information about Kafka Cluster to be used as source / target for replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KafkaCluster {
     /// <p>Details of an Amazon MSK Cluster.</p>

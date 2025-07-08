@@ -2,6 +2,8 @@
 
 /// <p>The request is not well formed. For example, a value is invalid or a required field is missing. Check the field values, and then try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadRequestException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Object that holds the results for membership.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileQueryResult {
     /// <p>The profile id the result belongs to.</p>

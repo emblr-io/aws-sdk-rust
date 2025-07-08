@@ -2,6 +2,8 @@
 
 /// <p>Determines the row alternate color options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RowAlternateColorOptions {
     /// <p>Determines the widget status.</p>

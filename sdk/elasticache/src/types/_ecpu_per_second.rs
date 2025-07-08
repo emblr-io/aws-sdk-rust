@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the number of ElastiCache Processing Units (ECPU) the cache can consume per second.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcpuPerSecond {
     /// <p>The configuration for the maximum number of ECPUs the cache can consume per second.</p>

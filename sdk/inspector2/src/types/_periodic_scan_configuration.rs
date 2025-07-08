@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for periodic scans that run on a scheduled basis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PeriodicScanConfiguration {
     /// <p>The frequency at which periodic scans are performed (such as weekly or monthly).</p>

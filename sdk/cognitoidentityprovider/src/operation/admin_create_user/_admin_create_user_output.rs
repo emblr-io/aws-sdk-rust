@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server to the request to create the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminCreateUserOutput {
     /// <p>The new user's profile details.</p>

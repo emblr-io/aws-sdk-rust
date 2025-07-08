@@ -2,6 +2,8 @@
 
 /// <p>Authentication configuration information for an Amazon Q Business plugin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PluginAuthConfiguration {
     /// <p>Information about the basic authentication credentials used to configure a plugin.</p>

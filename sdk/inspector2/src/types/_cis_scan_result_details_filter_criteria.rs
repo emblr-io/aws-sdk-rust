@@ -2,6 +2,8 @@
 
 /// <p>The CIS scan result details filter criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CisScanResultDetailsFilterCriteria {
     /// <p>The criteria's finding status filters.</p>

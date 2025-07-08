@@ -2,6 +2,8 @@
 
 /// <p>Identifying information about a document attachment, including the file name and a key-value pair that identifies the location of an attachment to a document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentsSource {
     /// <p>The key of a key-value pair that identifies the location of an attachment to a document.</p>

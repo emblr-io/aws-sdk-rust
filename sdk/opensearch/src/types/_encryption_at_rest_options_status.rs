@@ -2,6 +2,8 @@
 
 /// <p>Status of the encryption at rest options for the specified OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionAtRestOptionsStatus {
     /// <p>Encryption at rest options for the specified domain.</p>

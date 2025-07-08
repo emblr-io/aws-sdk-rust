@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a filter used to select items for a topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicFilter {
     /// <p>A description of the filter used to select items for a topic.</p>

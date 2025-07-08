@@ -2,6 +2,8 @@
 
 /// <p>Output from an AddInstanceGroups call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddInstanceGroupsOutput {
     /// <p>The job flow ID in which the instance groups are added.</p>

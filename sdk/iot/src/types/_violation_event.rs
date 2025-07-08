@@ -2,6 +2,8 @@
 
 /// <p>Information about a Device Defender security profile behavior violation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViolationEvent {
     /// <p>The ID of the violation event.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a policy for duration-based session stickiness.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LbCookieStickinessPolicy {
     /// <p>The name of the policy. This name must be unique within the set of policies for this load balancer.</p>

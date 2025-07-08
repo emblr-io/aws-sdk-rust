@@ -2,6 +2,8 @@
 
 /// <p>Information about a reference metric used to evaluate Performance Insights.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceInsightsReferenceMetric {
     /// <p>A query to be processed on the metric.</p>

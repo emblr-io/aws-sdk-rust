@@ -2,6 +2,8 @@
 
 /// <p>The details of the external (Amazon Sagemaker) model evaluated for generating predictions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EvaluatedExternalModel {
     /// <p>The endpoint of the external (Amazon Sagemaker) model.</p>

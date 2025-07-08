@@ -2,6 +2,8 @@
 
 /// <p>The status of the ACL update</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcLsUpdateStatus {
     /// <p>A list of ACLs pending to be applied.</p>

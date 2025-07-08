@@ -2,6 +2,8 @@
 
 /// <p>Represents an error encountered when deleting a node from a SageMaker HyperPod cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteClusterNodesError {
     /// <p>The error code associated with the error encountered when deleting a node.</p>

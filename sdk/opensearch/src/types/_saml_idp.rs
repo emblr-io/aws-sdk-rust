@@ -2,6 +2,8 @@
 
 /// <p>The SAML identity povider information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamlIdp {
     /// <p>The metadata of the SAML application, in XML format.</p>

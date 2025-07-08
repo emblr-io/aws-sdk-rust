@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a resource identified by a Trusted Advisor check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustedAdvisorResourceDetail {
     /// <p>The status code for the resource identified in the Trusted Advisor check.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the data source of the import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportDataSource {
     /// <p>An Amazon S3 URL in the format s3://<i><bucket_name></bucket_name></i>/<i><object>.

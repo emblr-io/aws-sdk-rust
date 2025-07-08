@@ -2,6 +2,8 @@
 
 /// <p>Defines the typed links structure and its attributes. To create a typed link facet, use the <code>CreateTypedLinkFacet</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypedLinkFacet {
     /// <p>The unique name of the typed link facet.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configures automatic maintenance settings for WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceMaintenanceOptionsRequest {
     /// <p>Enables or disables automatic instance recovery.</p>

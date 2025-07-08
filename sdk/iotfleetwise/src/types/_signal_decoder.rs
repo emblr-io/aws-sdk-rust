@@ -2,6 +2,8 @@
 
 /// <p>Information about a signal decoder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SignalDecoder {
     /// <p>The fully qualified name of a signal decoder as defined in a vehicle model.</p>

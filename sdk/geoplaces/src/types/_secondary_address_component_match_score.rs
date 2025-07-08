@@ -2,6 +2,8 @@
 
 /// <p>Match score for a secondary address component in the result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecondaryAddressComponentMatchScore {
     /// <p>Match score for the secondary address number.</p>

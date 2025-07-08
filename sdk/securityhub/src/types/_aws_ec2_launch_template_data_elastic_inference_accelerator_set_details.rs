@@ -2,6 +2,8 @@
 
 /// <p>Provides details for an Amazon Elastic Inference accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetails {
     /// <p>The number of Elastic Inference accelerators to attach to the instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the installation status of a route in a route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteServerRouteInstallationDetail {
     /// <p>The ID of the route table where the route is being installed.</p>

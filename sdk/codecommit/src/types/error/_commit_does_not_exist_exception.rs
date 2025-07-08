@@ -2,6 +2,8 @@
 
 /// <p>The specified commit does not exist or no commit was specified, and the specified repository has no default branch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommitDoesNotExistException {
     /// <p>Any message associated with the exception.</p>

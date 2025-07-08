@@ -2,6 +2,8 @@
 
 /// <p>Contains information about how a source JSON data file should be analyzed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonFormatDescriptor {
     /// <p>The level of compression of the source CSV file.</p>

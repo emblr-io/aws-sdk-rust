@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the S3 bucket for either an import or export job. This includes assigning permissions for access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Configuration {
     /// <p>The S3Uri is the user specified S3 location of the FHIR data to be imported into AWS HealthLake.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information of a test device. A thing ARN, certificate ARN or device role ARN is required.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceUnderTest {
     /// <p>Lists device's thing ARN.</p>

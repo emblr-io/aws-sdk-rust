@@ -2,6 +2,8 @@
 
 /// <p>Configuration parameters for where in an S3 bucket to place the harvested content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DestinationConfig {
     /// <p>The name of an S3 bucket within which harvested content will be exported.</p>

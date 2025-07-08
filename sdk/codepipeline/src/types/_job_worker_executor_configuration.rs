@@ -2,6 +2,8 @@
 
 /// <p>Details about the polling configuration for the <code>JobWorker</code> action engine, or executor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobWorkerExecutorConfiguration {
     /// <p>The accounts in which the job worker is configured and might poll for jobs as part of the action execution.</p>

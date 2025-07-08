@@ -2,6 +2,8 @@
 
 /// <p>Specifies a data target that writes to Amazon S3 in Apache Parquet columnar storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3GlueParquetTarget {
     /// <p>The name of the data target.</p>

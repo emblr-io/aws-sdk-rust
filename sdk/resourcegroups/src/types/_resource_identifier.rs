@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the ARN of a resource and its resource type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceIdentifier {
     /// <p>The Amazon resource name (ARN) of a resource.</p>

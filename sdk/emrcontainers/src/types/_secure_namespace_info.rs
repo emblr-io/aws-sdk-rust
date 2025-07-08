@@ -2,6 +2,8 @@
 
 /// <p>Namespace inputs for the system job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecureNamespaceInfo {
     /// <p>The ID of the Amazon EKS cluster where Amazon EMR on EKS jobs run.</p>

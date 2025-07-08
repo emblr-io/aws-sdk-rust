@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribePermissions</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribePermissionsOutput {
     /// <p>An array of <code>Permission</code> objects that describe the stack permissions.</p>

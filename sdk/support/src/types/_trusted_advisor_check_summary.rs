@@ -2,6 +2,8 @@
 
 /// <p>A summary of a Trusted Advisor check result, including the alert status, last refresh, and number of resources examined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustedAdvisorCheckSummary {
     /// <p>The unique identifier for the Trusted Advisor check.</p>

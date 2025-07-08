@@ -2,6 +2,8 @@
 
 /// <p>The status of a parameter in a cluster parameter group for an Amazon Redshift cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterClusterParameterStatus {
     /// <p>The name of the parameter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about when the canary was created and modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryTimeline {
     /// <p>The date and time the canary was created.</p>

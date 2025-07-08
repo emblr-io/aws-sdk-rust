@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of GuardDuty usage. If a UsageStatisticType is provided the result for other types will be null.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageStatistics {
     /// <p>The usage statistic sum organized by account ID.</p>

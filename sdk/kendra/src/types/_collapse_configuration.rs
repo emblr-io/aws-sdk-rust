@@ -2,6 +2,8 @@
 
 /// <p>Specifies how to group results by document attribute value, and how to display them collapsed/expanded under a designated primary document for each group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollapseConfiguration {
     /// <p>The document attribute used to group search results. You can use any attribute that has the <code>Sortable</code> flag set to true. You can also sort by any of the following built-in attributes:"_category","_created_at", "_last_updated_at", "_version", "_view_count".</p>

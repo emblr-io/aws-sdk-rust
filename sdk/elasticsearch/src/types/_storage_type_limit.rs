@@ -2,6 +2,8 @@
 
 /// <p>Limits that are applicable for given storage type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageTypeLimit {
     /// <p>Name of storage limits that are applicable for given storage type. If <code> <code>StorageType</code> </code> is ebs, following storage options are applicable</p>

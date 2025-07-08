@@ -2,6 +2,8 @@
 
 /// <p>Execution result information, such as the external execution ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleExecutionResult {
     /// <p>The external ID for the rule execution.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Returns the destination region and retention period that are configured for cross-region snapshot copy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSnapshotCopyStatus {
     /// <p>The destination region that snapshots are automatically copied to when cross-region snapshot copy is enabled.</p>

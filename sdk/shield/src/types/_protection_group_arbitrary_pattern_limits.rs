@@ -2,6 +2,8 @@
 
 /// <p>Limits settings on protection groups with arbitrary pattern type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectionGroupArbitraryPatternLimits {
     /// <p>The maximum number of resources you can specify for a single arbitrary pattern in a protection group.</p>

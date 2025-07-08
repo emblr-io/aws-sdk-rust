@@ -2,6 +2,8 @@
 
 /// <p>The task configuration settings for the Kinesis video stream source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisVideoStreamSourceTaskConfiguration {
     /// <p>The ARN of the stream.</p>

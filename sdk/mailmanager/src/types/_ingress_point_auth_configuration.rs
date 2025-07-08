@@ -2,6 +2,8 @@
 
 /// <p>The authentication configuration for the ingress endpoint resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressPointAuthConfiguration {
     /// <p>The ingress endpoint password configuration for the ingress endpoint resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The slots used for the slot resolution in the conversation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelSlotResolutionResultItem {
     /// <p>The intents used in the slots list for the slot resolution details.</p>

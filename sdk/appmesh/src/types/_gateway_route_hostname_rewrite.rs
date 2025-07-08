@@ -2,6 +2,8 @@
 
 /// <p>An object representing the gateway route host name to rewrite.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GatewayRouteHostnameRewrite {
     /// <p>The default target host name to write to.</p>

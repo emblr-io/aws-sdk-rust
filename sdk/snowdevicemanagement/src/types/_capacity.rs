@@ -2,6 +2,8 @@
 
 /// <p>The physical capacity of the Amazon Web Services Snow Family device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Capacity {
     /// <p>The name of the type of capacity, such as memory.</p>

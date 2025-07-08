@@ -2,6 +2,8 @@
 
 /// <p>Summary of a review template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReviewTemplatePillarReviewSummary {
     /// <p>The ID used to identify a pillar, for example, <code>security</code>.</p>

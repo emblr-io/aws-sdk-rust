@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required for PIN data verification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PinVerificationAttributes {
     /// <p>Parameters that are required to generate or verify Ibm3624 PIN.</p>

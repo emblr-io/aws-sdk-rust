@@ -2,6 +2,8 @@
 
 /// Information about a resource.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Resource {
     /// The resource ID, used to refer to a resource in the Lambda function configuration. Max length is 128 characters with pattern ''\[a-zA-Z0-9:_-\]+''. This must be unique within a Greengrass group.

@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of an <code>UpdateLoggingConfiguration</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateLoggingConfigurationOutput {
     /// <p>A structure that contains the current status of the logging configuration.</p>

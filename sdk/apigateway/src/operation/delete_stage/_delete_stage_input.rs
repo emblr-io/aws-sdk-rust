@@ -2,6 +2,8 @@
 
 /// <p>Requests API Gateway to delete a Stage resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteStageInput {
     /// <p>The string identifier of the associated RestApi.</p>

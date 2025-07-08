@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DescribeInboundCrossClusterSearchConnections</code></code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeInboundCrossClusterSearchConnectionsInput {
     /// <p>A list of filters used to match properties for inbound cross-cluster search connection. Available <code><code>Filter</code></code> names for this operation are:</p>

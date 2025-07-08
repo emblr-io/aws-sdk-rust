@@ -2,6 +2,8 @@
 
 /// <p>Describes the Traffic Mirror port range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficMirrorPortRange {
     /// <p>The start of the Traffic Mirror port range. This applies to the TCP and UDP protocols.</p>

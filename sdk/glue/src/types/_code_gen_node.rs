@@ -2,6 +2,8 @@
 
 /// <p>Represents a node in a directed acyclic graph (DAG)</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeGenNode {
     /// <p>A node identifier that is unique within the node's graph.</p>

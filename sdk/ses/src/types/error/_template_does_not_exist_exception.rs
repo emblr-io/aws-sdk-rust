@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the Template object you specified does not exist in your Amazon SES account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateDoesNotExistException {
     #[allow(missing_docs)] // documentation missing in model

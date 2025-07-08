@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server from the request to get the specified user as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminGetUserOutput {
     /// <p>The username of the user that you requested.</p>

@@ -4,6 +4,8 @@
 /// <p>Flow executions is in preview release for Amazon Bedrock and is subject to change.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowExecutionError {
     /// <p>The name of the node in the flow where the error occurred (if applicable).</p>

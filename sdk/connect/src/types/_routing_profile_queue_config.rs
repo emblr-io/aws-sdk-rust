@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the queue and channel for which priority and delay can be set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutingProfileQueueConfig {
     /// <p>Contains information about a queue resource.</p>

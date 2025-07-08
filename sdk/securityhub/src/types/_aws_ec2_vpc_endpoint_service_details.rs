@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the service configuration for a VPC endpoint service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2VpcEndpointServiceDetails {
     /// <p>Whether requests from other Amazon Web Services accounts to create an endpoint to the service must first be accepted.</p>

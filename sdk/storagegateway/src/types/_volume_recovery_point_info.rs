@@ -2,6 +2,8 @@
 
 /// <p>Describes a storage volume recovery point object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeRecoveryPointInfo {
     /// <p>The Amazon Resource Name (ARN) of the volume target.</p>

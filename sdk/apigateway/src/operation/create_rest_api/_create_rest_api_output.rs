@@ -2,6 +2,8 @@
 
 /// <p>Represents a REST API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRestApiOutput {
     /// <p>The API's identifier. This identifier is unique across all of your APIs in API Gateway.</p>

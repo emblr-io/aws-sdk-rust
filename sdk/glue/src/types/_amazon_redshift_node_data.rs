@@ -2,6 +2,8 @@
 
 /// <p>Specifies an Amazon Redshift node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmazonRedshiftNodeData {
     /// <p>The access type for the Redshift connection. Can be a direct connection or catalog connections.</p>

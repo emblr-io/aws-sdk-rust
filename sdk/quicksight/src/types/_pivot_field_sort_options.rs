@@ -2,6 +2,8 @@
 
 /// <p>The field sort options for a pivot table sort configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotFieldSortOptions {
     /// <p>The field ID for the field sort options.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to create an open and click tracking option object in a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateConfigurationSetTrackingOptionsInput {
     /// <p>The name of the configuration set that the tracking options should be associated with.</p>

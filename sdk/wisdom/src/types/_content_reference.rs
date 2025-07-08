@@ -2,6 +2,8 @@
 
 /// <p>Reference information about the content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContentReference {
     /// <p>The Amazon Resource Name (ARN) of the knowledge base.</p>

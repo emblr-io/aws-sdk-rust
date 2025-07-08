@@ -2,6 +2,8 @@
 
 /// <p>The retry policy to use for a job run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryPolicy {
     /// <p>Maximum number of attempts for the job run. This parameter is only applicable for <code>BATCH</code> mode.</p>

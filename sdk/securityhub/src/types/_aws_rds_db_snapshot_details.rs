@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Amazon RDS DB cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbSnapshotDetails {
     /// <p>The name or ARN of the DB snapshot that is used to restore the DB instance.</p>

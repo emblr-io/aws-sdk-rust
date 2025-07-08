@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a snapshot retention optimizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetentionConfiguration {
     /// <p>The configuration for an Iceberg snapshot retention optimizer.</p>

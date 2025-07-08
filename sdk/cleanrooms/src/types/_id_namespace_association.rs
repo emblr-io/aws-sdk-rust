@@ -2,6 +2,8 @@
 
 /// <p>Provides information to create the ID namespace association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdNamespaceAssociation {
     /// <p>The unique identifier for this ID namespace association.</p>

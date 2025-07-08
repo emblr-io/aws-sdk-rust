@@ -2,6 +2,8 @@
 
 /// <p>The sorting criteria that are used to sort the list of task runs for the machine learning transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskRunSortCriteria {
     /// <p>The column to be used to sort the list of task runs for the machine learning transform.</p>

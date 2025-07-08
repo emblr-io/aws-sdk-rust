@@ -2,6 +2,8 @@
 
 /// <p>Information about an instance in the DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbClusterMember {
     /// <p>Whether the cluster member is the primary instance for the DB cluster.</p>

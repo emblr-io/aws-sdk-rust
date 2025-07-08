@@ -2,6 +2,8 @@
 
 /// <p>Describes a schedule that is available for your Scheduled Instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledInstanceAvailability {
     /// <p>The Availability Zone.</p>

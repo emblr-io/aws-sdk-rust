@@ -2,6 +2,8 @@
 
 /// <p>Returns information about errors in a BatchAssociateApprovalRuleTemplateWithRepositories operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAssociateApprovalRuleTemplateWithRepositoriesError {
     /// <p>The name of the repository where the association was not made.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Registers a new event topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisterEventTopicInput {
     /// <p>The Directory ID that will publish status messages to the Amazon SNS topic.</p>

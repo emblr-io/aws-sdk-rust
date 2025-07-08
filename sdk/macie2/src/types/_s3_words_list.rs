@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an S3 object that lists specific text to ignore.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3WordsList {
     /// <p>The full name of the S3 bucket that contains the object.</p>

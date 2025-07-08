@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element to <code>DescribeDBLogFiles</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDbLogFilesDetails {
     /// <p>The name of the log file for the specified DB instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration for connecting a messaging stream to Amazon Kinesis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingConfiguration {
     /// <p>The data type of the configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure displays the results of one feature evaluation assignment to one user session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationResult {
     /// <p>The name or ARN of the project that contains the feature being evaluated.</p>

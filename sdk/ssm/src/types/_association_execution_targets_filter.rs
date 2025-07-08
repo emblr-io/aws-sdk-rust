@@ -2,6 +2,8 @@
 
 /// <p>Filters for the association execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationExecutionTargetsFilter {
     /// <p>The key value used in the request.</p>

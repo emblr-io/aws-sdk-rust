@@ -2,6 +2,8 @@
 
 /// <p>Describes a channel namespace associated with an <code>Api</code>. The <code>ChannelNamespace</code> contains the definitions for code handlers for the <code>Api</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelNamespace {
     /// <p>The <code>Api</code> ID.</p>

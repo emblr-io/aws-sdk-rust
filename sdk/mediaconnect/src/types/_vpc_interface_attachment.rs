@@ -2,6 +2,8 @@
 
 /// <p>The settings for attaching a VPC interface to an resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcInterfaceAttachment {
     /// <p>The name of the VPC interface to use for this resource.</p>

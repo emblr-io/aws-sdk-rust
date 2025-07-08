@@ -4,6 +4,8 @@
 /// <p>This field is only supported by Anthropic Claude 3 models.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpecificToolChoice {
     /// <p>The name of the tool that the model must request.</p>

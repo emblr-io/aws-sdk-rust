@@ -2,6 +2,8 @@
 
 /// <p>The configuration that defines the default value of a <code>String</code> parameter when a value has not been set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StringValueWhenUnsetConfiguration {
     /// <p>The built-in options for default values. The value can be one of the following:</p>

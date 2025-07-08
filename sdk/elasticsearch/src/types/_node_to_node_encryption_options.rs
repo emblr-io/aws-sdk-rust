@@ -2,6 +2,8 @@
 
 /// <p>Specifies the node-to-node encryption options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeToNodeEncryptionOptions {
     /// <p>Specify true to enable node-to-node encryption.</p>

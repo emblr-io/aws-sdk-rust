@@ -2,6 +2,8 @@
 
 /// <p>The returned Route leg geometry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RouteLegGeometry {
     /// <p>An ordered list of positions used to plot a route on a map.</p><note>

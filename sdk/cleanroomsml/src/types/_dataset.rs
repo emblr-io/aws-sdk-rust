@@ -2,6 +2,8 @@
 
 /// <p>Defines where the training dataset is located, what type of data it contains, and how to access the data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Dataset {
     /// <p>What type of information is found in the dataset.</p>

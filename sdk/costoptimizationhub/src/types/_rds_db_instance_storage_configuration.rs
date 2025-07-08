@@ -2,6 +2,8 @@
 
 /// <p>The Amazon RDS DB instance storage configuration used for recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsDbInstanceStorageConfiguration {
     /// <p>The storage type to associate with the DB instance.</p>

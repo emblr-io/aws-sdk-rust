@@ -2,6 +2,8 @@
 
 /// <p>The lifecycle policy action that was identified for the impacted resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExecutionResourceAction {
     /// <p>The name of the resource that was identified for a lifecycle policy action.</p>

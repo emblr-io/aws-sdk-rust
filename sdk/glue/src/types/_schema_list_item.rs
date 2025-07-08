@@ -2,6 +2,8 @@
 
 /// <p>An object that contains minimal details for a schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaListItem {
     /// <p>the name of the registry where the schema resides.</p>

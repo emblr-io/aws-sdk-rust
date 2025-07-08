@@ -2,6 +2,8 @@
 
 /// <p>The amount charged after taxes, in the preferred currency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvoiceCurrencyAmount {
     /// <p>The invoice currency amount.</p>

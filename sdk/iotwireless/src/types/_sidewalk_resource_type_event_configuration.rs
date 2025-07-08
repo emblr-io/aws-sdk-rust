@@ -2,6 +2,8 @@
 
 /// <p>Sidewalk resource type event configuration object for enabling or disabling topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SidewalkResourceTypeEventConfiguration {
     /// <p>Denotes whether the wireless device join event topic is enabled or disabled.</p>

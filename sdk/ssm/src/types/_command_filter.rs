@@ -4,6 +4,8 @@
 /// <p>A managed node ID can't be specified when a command status is <code>Pending</code> because the command hasn't run on the node yet.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandFilter {
     /// <p>The name of the filter.</p><note>

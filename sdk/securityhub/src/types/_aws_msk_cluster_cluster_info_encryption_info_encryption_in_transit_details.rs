@@ -2,6 +2,8 @@
 
 /// <p>The settings for encrypting data in transit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsMskClusterClusterInfoEncryptionInfoEncryptionInTransitDetails {
     /// <p>When set to <code>true</code>, it indicates that data communication among the broker nodes of the cluster is encrypted. When set to <code>false</code>, the communication happens in plain text. The default value is <code>true</code>.</p>

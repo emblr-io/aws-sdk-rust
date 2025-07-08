@@ -2,6 +2,8 @@
 
 /// <p>Specifies the segment identifier and version of a segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentReference {
     /// <p>The unique identifier for the segment.</p>

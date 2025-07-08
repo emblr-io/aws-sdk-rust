@@ -2,6 +2,8 @@
 
 /// <p>Gets the device response, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminGetDeviceOutput {
     /// <p>Details of the requested device. Includes device information, last-accessed and created dates, and the device key.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The filters applied to data store query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatastoreFilter {
     /// <p>Allows the user to filter data store results by name.</p>

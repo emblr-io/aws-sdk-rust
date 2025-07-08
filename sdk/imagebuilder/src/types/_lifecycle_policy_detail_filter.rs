@@ -2,6 +2,8 @@
 
 /// <p>Defines filters that the lifecycle policy uses to determine impacted resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyDetailFilter {
     /// <p>Filter resources based on either <code>age</code> or <code>count</code>.</p>

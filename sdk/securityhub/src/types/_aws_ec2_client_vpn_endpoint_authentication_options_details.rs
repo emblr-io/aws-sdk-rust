@@ -2,6 +2,8 @@
 
 /// <p>Information about the authentication method used by the Client VPN endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2ClientVpnEndpointAuthenticationOptionsDetails {
     /// <p>The authentication type used.</p>

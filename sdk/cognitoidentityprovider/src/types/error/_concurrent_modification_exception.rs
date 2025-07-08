@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown if two or more modifications are happening concurrently.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentModificationException {
     /// <p>The message provided when the concurrent exception is thrown.</p>

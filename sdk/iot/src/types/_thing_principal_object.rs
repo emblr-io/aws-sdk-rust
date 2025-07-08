@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the principal and the type of relation it has with the thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThingPrincipalObject {
     /// <p>The principal of the thing principal object.</p>

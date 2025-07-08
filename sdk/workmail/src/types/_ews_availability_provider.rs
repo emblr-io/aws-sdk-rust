@@ -2,6 +2,8 @@
 
 /// <p>Describes an EWS based availability provider. This is only used as input to the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EwsAvailabilityProvider {
     /// <p>The endpoint of the remote EWS server.</p>

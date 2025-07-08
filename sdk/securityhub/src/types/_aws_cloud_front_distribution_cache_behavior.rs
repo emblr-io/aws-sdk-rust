@@ -2,6 +2,8 @@
 
 /// <p>Information about a cache behavior for the distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionCacheBehavior {
     /// <p>The protocol that viewers can use to access the files in an origin. You can specify the following options:</p>

@@ -2,6 +2,8 @@
 
 /// <p>The collapse state options for the pivot table field options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableFieldCollapseStateOption {
     /// <p>A tagged-union object that sets the collapse state.</p>

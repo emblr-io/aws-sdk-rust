@@ -2,6 +2,8 @@
 
 /// <p>The error preventing deletion of the annotation store version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VersionDeleteError {
     /// <p>The name given to an annotation store version.</p>

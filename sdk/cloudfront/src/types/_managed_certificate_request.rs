@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the request for the Amazon CloudFront managed ACM certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedCertificateRequest {
     /// <p>Specify how the HTTP validation token will be served when requesting the CloudFront managed ACM certificate.</p>

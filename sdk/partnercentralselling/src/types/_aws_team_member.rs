@@ -2,6 +2,8 @@
 
 /// <p>Represents an Amazon Web Services team member for the engagement. This structure includes details such as name, email, and business title.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AwsTeamMember {
     /// <p>Provides the Amazon Web Services team member's email address.</p>

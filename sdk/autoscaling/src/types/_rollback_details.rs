@@ -2,6 +2,8 @@
 
 /// <p>Details about an instance refresh rollback.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RollbackDetails {
     /// <p>The reason for this instance refresh rollback (for example, whether a manual or automatic rollback was initiated).</p>

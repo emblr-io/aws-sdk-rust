@@ -2,6 +2,8 @@
 
 /// <p>Information about an event that is related to a recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationRelatedEvent {
     /// <p>The name of the event. This corresponds to the <code>Name</code> field in an <code>Event</code> object.</p>

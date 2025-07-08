@@ -2,6 +2,8 @@
 
 /// <p>A list of <code>ApplicationAttribute</code>s that contains information about the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationConfig {
     /// <p>Contains the attribute name and a list of values for that attribute.</p>

@@ -3,6 +3,8 @@
 /// <p>Information about one mention of an entity. The mention information includes the location of the mention in the text and the sentiment of the mention.</p>
 /// <p>For more information about targeted sentiment, see <a href="https://docs.aws.amazon.com/comprehend/latest/dg/how-targeted-sentiment.html">Targeted sentiment</a> in the <i>Amazon Comprehend Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetedSentimentMention {
     /// <p>Model confidence that the entity is relevant. Value range is zero to one, where one is highest confidence.</p>

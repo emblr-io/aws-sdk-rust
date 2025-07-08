@@ -2,6 +2,8 @@
 
 /// <p>The location to write error reports for records rejected, asynchronously, during magnetic store writes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MagneticStoreRejectedDataLocation {
     /// <p>Configuration of an S3 location to write error reports for records rejected, asynchronously, during magnetic store writes.</p>

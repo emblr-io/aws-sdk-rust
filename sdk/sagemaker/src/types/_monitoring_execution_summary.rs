@@ -2,6 +2,8 @@
 
 /// <p>Summary of information about the last monitoring job to run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringExecutionSummary {
     /// <p>The name of the monitoring schedule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines a pricing model where customers are charged a fixed recurring price at the end of each billing period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecurringPaymentTerm {
     /// <p>Type of the term being updated.</p>

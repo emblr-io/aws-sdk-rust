@@ -3,6 +3,8 @@
 /// <p>A <code>UsageRecord</code> indicates a quantity of usage for a given product, customer, dimension and time.</p>
 /// <p>Multiple requests with the same <code>UsageRecords</code> as input will be de-duplicated to prevent double charges.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageRecord {
     /// <p>Timestamp, in UTC, for which the usage is being reported.</p>

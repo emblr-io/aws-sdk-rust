@@ -2,6 +2,8 @@
 
 /// <p>Part of the X12 message structure. These are the functional group headers for the X12 EDI object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct X12FunctionalGroupHeaders {
     /// <p>A value representing the code used to identify the party transmitting a message, at position GS-02.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A reference to a substring of a literal string in a JSON document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Substring {
     /// <p>The start index of the substring, starting from 0.</p>

@@ -2,6 +2,8 @@
 
 /// <p>One or more policies assigned to a parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterInlinePolicy {
     /// <p>The JSON text of the policy.</p>

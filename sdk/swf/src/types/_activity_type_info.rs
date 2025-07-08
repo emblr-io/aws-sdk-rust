@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about an activity type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityTypeInfo {
     /// <p>The <code>ActivityType</code> type structure representing the activity type.</p>

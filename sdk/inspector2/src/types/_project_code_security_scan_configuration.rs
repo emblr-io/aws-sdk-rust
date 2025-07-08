@@ -2,6 +2,8 @@
 
 /// <p>Contains the scan configuration settings applied to a specific project in a code repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectCodeSecurityScanConfiguration {
     /// <p>The periodic scan configurations applied to the project.</p>

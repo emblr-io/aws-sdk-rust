@@ -2,6 +2,8 @@
 
 /// <p>The security group that the resource with the public IP address is in.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpamPublicAddressSecurityGroup {
     /// <p>The security group's name.</p>

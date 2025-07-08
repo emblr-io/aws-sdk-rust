@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the time and date that Evidently completed the analysis of the experiment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentSchedule {
     /// <p>The time and date that Evidently completed the analysis of the experiment.</p>

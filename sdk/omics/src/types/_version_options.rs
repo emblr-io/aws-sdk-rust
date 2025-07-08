@@ -2,6 +2,8 @@
 
 /// <p>The options for an annotation store version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum VersionOptions {
     /// <p>File settings for a version of a TSV store.</p>

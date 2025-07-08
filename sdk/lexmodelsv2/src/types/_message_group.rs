@@ -2,6 +2,8 @@
 
 /// <p>Provides one or more messages that Amazon Lex should send to the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageGroup {
     /// <p>The primary message that Amazon Lex should send to the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for defining the setup of any node type within the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeConfig {
     /// <p>A boolean value indicating whether a specific node type is active or inactive.</p>

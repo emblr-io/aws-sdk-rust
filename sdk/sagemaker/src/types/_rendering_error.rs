@@ -2,6 +2,8 @@
 
 /// <p>A description of an error that occurred while rendering the template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenderingError {
     /// <p>A unique identifier for a specific class of errors.</p>

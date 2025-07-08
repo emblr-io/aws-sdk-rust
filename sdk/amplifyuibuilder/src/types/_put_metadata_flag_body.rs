@@ -2,6 +2,8 @@
 
 /// <p>Stores the metadata information about a feature on a form.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutMetadataFlagBody {
     /// <p>The new information to store.</p>

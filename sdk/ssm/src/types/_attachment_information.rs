@@ -2,6 +2,8 @@
 
 /// <p>An attribute of an attachment, such as the attachment name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentInformation {
     /// <p>The name of the attachment.</p>

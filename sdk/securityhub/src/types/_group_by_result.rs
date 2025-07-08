@@ -2,6 +2,8 @@
 
 /// <p>Represents finding statistics grouped by <code>GroupedByField</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupByResult {
     /// <p>The attribute by which filtered security findings should be grouped.</p>

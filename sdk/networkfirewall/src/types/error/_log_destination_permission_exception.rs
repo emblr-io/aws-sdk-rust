@@ -2,6 +2,8 @@
 
 /// <p>Unable to send logs to a configured logging destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogDestinationPermissionException {
     #[allow(missing_docs)] // documentation missing in model

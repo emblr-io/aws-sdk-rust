@@ -2,6 +2,8 @@
 
 /// <p>History of the last 10 upgrades and upgrade eligibility checks for an Amazon OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpgradeHistory {
     /// <p>A string that describes the upgrade.</p>

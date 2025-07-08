@@ -2,6 +2,8 @@
 
 /// <p>The source of the trial.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrialSource {
     /// <p>The Amazon Resource Name (ARN) of the source.</p>

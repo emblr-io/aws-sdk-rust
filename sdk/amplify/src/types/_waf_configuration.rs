@@ -2,6 +2,8 @@
 
 /// <p>Describes the Firewall configuration for a hosted Amplify application. Firewall support enables you to protect your web applications with a direct integration with WAF. For more information about using WAF protections for an Amplify application, see <a href="https://docs.aws.amazon.com/amplify/latest/userguide/WAF-integration.html">Firewall support for hosted sites</a> in the <i>Amplify User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafConfiguration {
     /// <p>The Amazon Resource Name (ARN) for the web ACL associated with an Amplify app.</p>

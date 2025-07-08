@@ -2,6 +2,8 @@
 
 /// <p>A collection of attributes that's used to create a delegation for an assessment in Audit Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateDelegationRequest {
     /// <p>A comment that's related to the delegation request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The inventory data for installed Migration Evaluator collectors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerMeCollectorInfo {
     /// <p>The number of active Migration Evaluator collectors.</p>

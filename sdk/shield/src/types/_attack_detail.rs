@@ -2,6 +2,8 @@
 
 /// <p>The details of a DDoS attack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttackDetail {
     /// <p>The unique identifier (ID) of the attack.</p>

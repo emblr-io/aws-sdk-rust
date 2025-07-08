@@ -2,6 +2,8 @@
 
 /// <p>Specifies the actions performed and the next state entered when a <code>condition</code> evaluates to TRUE.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitionEvent {
     /// <p>The name of the transition event.</p>

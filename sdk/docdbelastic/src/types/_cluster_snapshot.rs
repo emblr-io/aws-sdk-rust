@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a specific elastic cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSnapshot {
     /// <p>The Amazon EC2 subnet IDs for the elastic cluster.</p>

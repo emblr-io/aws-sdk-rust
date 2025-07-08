@@ -2,6 +2,8 @@
 
 /// <p>Information about an Cloud9 development environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Environment {
     /// <p>The ID of the environment.</p>

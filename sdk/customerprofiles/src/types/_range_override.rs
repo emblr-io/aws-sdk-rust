@@ -2,6 +2,8 @@
 
 /// <p>Overrides the original range on a calculated attribute definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RangeOverride {
     /// <p>The start time of when to include objects.</p>

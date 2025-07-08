@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the event destination does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDestinationDoesNotExistException {
     /// <p>Indicates that the configuration set does not exist.</p>

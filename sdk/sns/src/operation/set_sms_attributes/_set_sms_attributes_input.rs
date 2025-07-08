@@ -2,6 +2,8 @@
 
 /// <p>The input for the SetSMSAttributes action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetSmsAttributesInput {
     /// <p>The default settings for sending SMS messages from your Amazon Web Services account. You can set values for the following attribute names:</p>

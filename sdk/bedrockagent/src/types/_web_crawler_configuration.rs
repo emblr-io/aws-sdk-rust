@@ -2,6 +2,8 @@
 
 /// <p>The configuration of web URLs that you want to crawl. You should be authorized to crawl the URLs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct WebCrawlerConfiguration {
     /// <p>The configuration of crawl limits for the web URLs.</p>

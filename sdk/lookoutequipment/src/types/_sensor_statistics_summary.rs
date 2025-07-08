@@ -2,6 +2,8 @@
 
 /// <p>Summary of ingestion statistics like whether data exists, number of missing values, number of invalid values and so on related to the particular sensor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SensorStatisticsSummary {
     /// <p>Name of the component to which the particular sensor belongs for which the statistics belong to.</p>

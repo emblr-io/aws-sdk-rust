@@ -2,6 +2,8 @@
 
 /// <p>Provide a sample of what the output of the transformation should look like.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversionTarget {
     /// <p>Currently, only X12 format is supported.</p>

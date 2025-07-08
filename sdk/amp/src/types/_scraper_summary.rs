@@ -2,6 +2,8 @@
 
 /// <p>The <code>ScraperSummary</code> structure contains a summary of the details about one scraper in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScraperSummary {
     /// <p>(Optional) A name associated with the scraper.</p>

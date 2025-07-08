@@ -2,6 +2,8 @@
 
 /// <p>Defines a custom prompt template for orchestrating the retrieval and generation process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KnowledgeBasePromptTemplate {
     /// <p>The text of the prompt template.</p>

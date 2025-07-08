@@ -2,6 +2,8 @@
 
 /// <p>Defines when a custom action button should be attached to a notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomActionAttachment {
     /// <p>The type of notification that the custom action should be attached to.</p>

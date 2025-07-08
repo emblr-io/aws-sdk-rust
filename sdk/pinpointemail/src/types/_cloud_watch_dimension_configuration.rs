@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the dimension configuration to use when you send Amazon Pinpoint email events to Amazon CloudWatch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchDimensionConfiguration {
     /// <p>The name of an Amazon CloudWatch dimension associated with an email sending metric. The name has to meet the following criteria:</p>

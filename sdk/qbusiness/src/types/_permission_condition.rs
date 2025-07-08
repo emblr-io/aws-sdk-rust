@@ -2,6 +2,8 @@
 
 /// <p>Defines a condition that restricts when a permission is effective. Conditions allow you to control access based on specific attributes of the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionCondition {
     /// <p>The operator to use for the condition evaluation. This determines how the condition values are compared.</p>

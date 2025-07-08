@@ -2,6 +2,8 @@
 
 /// <p>An operation that applies to the requested group. This operation might add, replace, or remove an attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeOperation {
     /// <p>A string representation of the path to a given attribute or sub-attribute. Supports JMESPath.</p>

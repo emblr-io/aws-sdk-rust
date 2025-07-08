@@ -2,6 +2,8 @@
 
 /// <p>A listing of an association with a channel configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationListing {
     /// <p>The Amazon Resource Name (ARN) of the resource (for example, a custom action).</p>

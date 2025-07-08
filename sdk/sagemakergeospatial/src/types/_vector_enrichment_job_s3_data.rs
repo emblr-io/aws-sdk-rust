@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 data for the Vector Enrichment job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VectorEnrichmentJobS3Data {
     /// <p>The URL to the Amazon S3 data for the Vector Enrichment job.</p>

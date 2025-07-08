@@ -2,6 +2,8 @@
 
 /// <p>The cluster marker that is a part of the cluster marker configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterMarker {
     /// <p>The simple cluster marker of the cluster marker.</p>

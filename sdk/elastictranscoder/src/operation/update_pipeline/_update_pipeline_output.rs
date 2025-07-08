@@ -2,6 +2,8 @@
 
 /// <p>When you update a pipeline, Elastic Transcoder returns the values that you specified in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipelineOutput {
     /// <p>The pipeline updated by this <code>UpdatePipelineResponse</code> call.</p>

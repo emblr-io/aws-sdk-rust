@@ -2,6 +2,8 @@
 
 /// <p>An object representing an Amazon ECR image failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageFailure {
     /// <p>The image ID associated with the failure.</p>

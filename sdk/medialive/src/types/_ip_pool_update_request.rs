@@ -2,6 +2,8 @@
 
 /// Used in UpdateNetworkRequest.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpPoolUpdateRequest {
     /// A CIDR block of IP addresses to reserve for MediaLive Anywhere.

@@ -18,6 +18,8 @@
 /// <p>For DeleteConformancePack, a conformance pack creation, update, and deletion is in progress. Try your request again later.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceInUseException {
     /// <p>Error executing the command</p>

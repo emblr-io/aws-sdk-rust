@@ -2,6 +2,8 @@
 
 /// <p>This contains information such as distance and duration from one waypoint to the next waypoint in the sequence.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaypointOptimizationConnection {
     /// <p>Distance of the step.</p>

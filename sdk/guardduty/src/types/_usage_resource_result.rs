@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the sum of usage based on an Amazon Web Services resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageResourceResult {
     /// <p>The Amazon Web Services resource that generated usage.</p>

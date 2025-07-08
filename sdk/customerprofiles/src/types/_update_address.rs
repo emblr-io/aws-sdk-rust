@@ -2,6 +2,8 @@
 
 /// <p>Updates associated with the address properties of a customer profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateAddress {
     /// <p>The first line of a customer address.</p>

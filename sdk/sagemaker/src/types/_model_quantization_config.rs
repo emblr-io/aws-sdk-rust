@@ -2,6 +2,8 @@
 
 /// <p>Settings for the model quantization technique that's applied by a model optimization job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelQuantizationConfig {
     /// <p>The URI of an LMI DLC in Amazon ECR. SageMaker uses this image to run the optimization.</p>

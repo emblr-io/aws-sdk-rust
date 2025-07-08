@@ -2,6 +2,8 @@
 
 /// <p>Details about the timing of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Timing {
     /// <p>The time the job was submitted to Elastic Transcoder, in epoch milliseconds.</p>

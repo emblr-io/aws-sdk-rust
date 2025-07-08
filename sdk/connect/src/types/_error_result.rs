@@ -3,6 +3,8 @@
 /// <p>This API is in preview release for Amazon Connect and is subject to change.</p>
 /// <p>List of errors for dataset association failures.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorResult {
     /// <p>The error code.</p>

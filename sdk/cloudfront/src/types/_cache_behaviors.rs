@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains zero or more <code>CacheBehavior</code> elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheBehaviors {
     /// <p>The number of cache behaviors for this distribution.</p>

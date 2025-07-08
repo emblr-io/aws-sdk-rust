@@ -3,6 +3,8 @@
 /// <p>Information about a campaign.</p>
 /// <p>You can use the API operation to return this information about multiple created campaigns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignSummary {
     /// <p>The Amazon Resource Name (ARN) of a campaign.</p>

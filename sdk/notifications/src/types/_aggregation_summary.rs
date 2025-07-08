@@ -2,6 +2,8 @@
 
 /// <p>Provides additional information about the aggregation key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationSummary {
     /// <p>Indicates the number of events associated with the aggregation key.</p>

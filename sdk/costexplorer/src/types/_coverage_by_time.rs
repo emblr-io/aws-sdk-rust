@@ -2,6 +2,8 @@
 
 /// <p>Reservation coverage for a specified period, in hours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageByTime {
     /// <p>The period that this coverage was used over.</p>

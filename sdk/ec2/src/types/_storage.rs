@@ -2,6 +2,8 @@
 
 /// <p>Describes the storage location for an instance store-backed AMI.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Storage {
     /// <p>An Amazon S3 storage location.</p>

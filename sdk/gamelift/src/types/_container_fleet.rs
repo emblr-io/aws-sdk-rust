@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon GameLift Servers managed container fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerFleet {
     /// <p>A unique identifier for the container fleet to retrieve.</p>

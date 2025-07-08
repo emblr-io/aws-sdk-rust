@@ -2,6 +2,8 @@
 
 /// <p>Specifies whether the workgroup is IAM Identity Center supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityCenterConfiguration {
     /// <p>Specifies whether the workgroup is IAM Identity Center supported.</p>

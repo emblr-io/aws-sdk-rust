@@ -2,6 +2,8 @@
 
 /// <p>The scanning configuration for a private registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistryScanningConfiguration {
     /// <p>The type of scanning configured for the registry.</p>

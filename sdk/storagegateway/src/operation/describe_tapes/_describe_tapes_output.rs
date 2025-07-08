@@ -2,6 +2,8 @@
 
 /// <p>DescribeTapesOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeTapesOutput {
     /// <p>An array of virtual tape descriptions.</p>

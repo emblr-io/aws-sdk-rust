@@ -2,6 +2,8 @@
 
 /// <p>List of additional email addresses for an email contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalEmailRecipients {
     /// <p>List of additional TO email recipients for an email contact.</p>

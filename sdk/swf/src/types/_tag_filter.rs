@@ -2,6 +2,8 @@
 
 /// <p>Used to filter the workflow executions in visibility APIs based on a tag.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagFilter {
     /// <p>Specifies the tag that must be associated with the execution for it to meet the filter criteria.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines an audio channel in a Kinesis video stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelDefinition {
     /// <p>The channel ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the response information from a <code>CreateVPCAssociationAuthorization</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVpcAssociationAuthorizationOutput {
     /// <p>The ID of the hosted zone that you authorized associating a VPC with.</p>

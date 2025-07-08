@@ -2,6 +2,8 @@
 
 /// <p>The configuration object for Config rule evaluation mode. The supported valid values are Detective or Proactive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationModeConfiguration {
     /// <p>The mode of an evaluation. The valid values are Detective or Proactive.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The domain you're trying to change is in use by another user or organization in your account. See the error message for details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MailDomainInUseException {
     #[allow(missing_docs)] // documentation missing in model

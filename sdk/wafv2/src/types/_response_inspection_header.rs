@@ -4,6 +4,8 @@
 /// <p>Response inspection is available only in web ACLs that protect Amazon CloudFront distributions.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponseInspectionHeader {
     /// <p>The name of the header to match against. The name must be an exact match, including case.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object for unique identifier of a field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldIdentifier {
     /// <p>Unique identifier of a field.</p>

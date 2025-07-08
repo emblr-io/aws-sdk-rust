@@ -2,6 +2,8 @@
 
 /// <p>The minimum label of a data path label.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MinimumLabelType {
     /// <p>The visibility of the minimum label.</p>

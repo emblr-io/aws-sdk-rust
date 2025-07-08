@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration details for a Git repository in your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitConfig {
     /// <p>The URL where the Git repository is located.</p>

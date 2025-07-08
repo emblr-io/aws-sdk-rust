@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the forecast export job properties used in the <code>ListForecastExportJobs</code> operation. To get the complete set of properties, call the <code>DescribeForecastExportJob</code> operation, and provide the listed <code>ForecastExportJobArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForecastExportJobSummary {
     /// <p>The Amazon Resource Name (ARN) of the forecast export job.</p>

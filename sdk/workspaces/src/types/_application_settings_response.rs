@@ -2,6 +2,8 @@
 
 /// <p>Describes the persistent application settings for WorkSpaces Pools users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationSettingsResponse {
     /// <p>Specifies whether persistent application settings are enabled for users during their pool sessions.</p>

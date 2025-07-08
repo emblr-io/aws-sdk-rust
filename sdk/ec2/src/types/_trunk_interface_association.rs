@@ -2,6 +2,8 @@
 
 /// <p>Information about an association between a branch network interface with a trunk network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrunkInterfaceAssociation {
     /// <p>The ID of the association.</p>

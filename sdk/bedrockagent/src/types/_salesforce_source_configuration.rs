@@ -2,6 +2,8 @@
 
 /// <p>The endpoint information to connect to your Salesforce data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SalesforceSourceConfiguration {
     /// <p>The Salesforce host URL or instance URL.</p>

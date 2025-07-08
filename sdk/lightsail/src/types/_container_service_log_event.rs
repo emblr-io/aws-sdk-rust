@@ -2,6 +2,8 @@
 
 /// <p>Describes the log events of a container of an Amazon Lightsail container service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerServiceLogEvent {
     /// <p>The timestamp when the container service log event was created.</p>

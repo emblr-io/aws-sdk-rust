@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the configuration and other settings for all the campaigns that are associated with an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignsResponse {
     /// <p>An array of responses, one for each campaign that's associated with the application.</p>

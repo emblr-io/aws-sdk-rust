@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains details about the results of an aggregation type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AggregationResponse {
     /// <p>An object that contains details about an aggregation response based on Amazon Web Services account IDs.</p>

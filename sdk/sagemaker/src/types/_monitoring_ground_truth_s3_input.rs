@@ -2,6 +2,8 @@
 
 /// <p>The ground truth labels for the dataset used for the monitoring job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringGroundTruthS3Input {
     /// <p>The address of the Amazon S3 location of the ground truth labels.</p>

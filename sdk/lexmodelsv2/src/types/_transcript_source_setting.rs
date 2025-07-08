@@ -2,6 +2,8 @@
 
 /// <p>Indicates the setting of the location where the transcript is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TranscriptSourceSetting {
     /// <p>Indicates the setting of the Amazon S3 bucket where the transcript is stored.</p>

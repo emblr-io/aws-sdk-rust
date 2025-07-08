@@ -2,6 +2,8 @@
 
 /// <p>Represents the response of the test invoke request for a custom Authorizer</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestInvokeAuthorizerOutput {
     /// <p>The HTTP status code that the client would have received. Value is 0 if the authorizer succeeded.</p>

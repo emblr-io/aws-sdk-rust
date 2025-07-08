@@ -2,6 +2,8 @@
 
 /// <p>A transform operation that removes tags associated with a column.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UntagColumnOperation {
     /// <p>The column that this operation acts on.</p>

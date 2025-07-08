@@ -2,6 +2,8 @@
 
 /// <p>A resource that represents your subscription to a supported standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StandardsSubscription {
     /// <p>The ARN of the resource that represents your subscription to the standard.</p>

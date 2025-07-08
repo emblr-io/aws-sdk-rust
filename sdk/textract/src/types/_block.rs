@@ -4,6 +4,8 @@
 /// <p>An array of <code>Block</code> objects is returned by both synchronous and asynchronous operations. In synchronous operations, such as <code>DetectDocumentText</code>, the array of <code>Block</code> objects is the entire set of results. In asynchronous operations, such as <code>GetDocumentAnalysis</code>, the array is returned over one or more responses.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/textract/latest/dg/how-it-works.html">How Amazon Textract Works</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Block {
     /// <p>The type of text item that's recognized. In operations for text detection, the following types are returned:</p>

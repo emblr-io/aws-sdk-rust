@@ -2,6 +2,8 @@
 
 /// <p>The generative Q&amp;A settings of an embedded Amazon QuickSight console.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQnAConfigurations {
     /// <p>The generative Q&amp;A settings of an embedded Amazon QuickSight console.</p>

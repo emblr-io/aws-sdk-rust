@@ -2,6 +2,8 @@
 
 /// <p>Information about a block device mapping for an Amazon Elastic Compute Cloud (Amazon EC2) launch template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetails {
     /// <p>The device name.</p>

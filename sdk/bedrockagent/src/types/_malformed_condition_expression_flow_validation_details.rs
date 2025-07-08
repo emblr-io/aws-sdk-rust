@@ -2,6 +2,8 @@
 
 /// <p>Details about a malformed condition expression in a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MalformedConditionExpressionFlowValidationDetails {
     /// <p>The name of the node containing the malformed condition expression.</p>

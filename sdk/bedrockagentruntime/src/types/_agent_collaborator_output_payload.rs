@@ -2,6 +2,8 @@
 
 /// <p>Output from an agent collaborator. The output can be text or an action invocation result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentCollaboratorOutputPayload {
     /// <p>The type of output.</p>

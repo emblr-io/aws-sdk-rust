@@ -2,6 +2,8 @@
 
 /// <p>USE_NEW_CONTENT was specified, but no replacement content has been provided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplacementContentRequiredException {
     /// <p>Any message associated with the exception.</p>

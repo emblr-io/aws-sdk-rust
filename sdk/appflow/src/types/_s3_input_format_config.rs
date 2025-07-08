@@ -2,6 +2,8 @@
 
 /// <p>When you use Amazon S3 as the source, the configuration format that you provide the flow input data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3InputFormatConfig {
     /// <p>The file type that Amazon AppFlow gets from your Amazon S3 bucket.</p>

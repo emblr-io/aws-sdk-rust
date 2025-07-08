@@ -2,6 +2,8 @@
 
 /// <p>Specifies the HTTP context to use for the test authorizer request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpContext {
     /// <p>The header keys and values in an HTTP authorization request.</p>

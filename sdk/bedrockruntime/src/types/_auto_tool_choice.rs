@@ -2,6 +2,8 @@
 
 /// <p>The Model automatically decides if a tool should be called or whether to generate text instead. For example, <code>{"auto" : {}}</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoToolChoice {}
 impl AutoToolChoice {

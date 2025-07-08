@@ -2,6 +2,8 @@
 
 /// <p>Describes the reason why the last image builder state change occurred.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageBuilderStateChangeReason {
     /// <p>The state change reason code.</p>

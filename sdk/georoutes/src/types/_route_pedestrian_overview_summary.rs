@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of a pedestrian route step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePedestrianOverviewSummary {
     /// <p>Distance of the step.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The information that identifies the recipient.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecipientDetail {
     /// <p>The AWS Single Sign-On (AWS SSO) authentication information.</p>

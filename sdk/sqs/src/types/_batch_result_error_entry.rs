@@ -2,6 +2,8 @@
 
 /// <p>Gives a detailed description of the result of an action on each entry in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchResultErrorEntry {
     /// <p>The <code>Id</code> of an entry in a batch request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A map from an <code> <code>ElasticsearchVersion</code> </code> to a list of compatible <code> <code>ElasticsearchVersion</code> </code> s to which the domain can be upgraded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompatibleVersionsMap {
     /// <p>The current version of Elasticsearch on which a domain is.</p>

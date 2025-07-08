@@ -2,6 +2,8 @@
 
 /// <p>The single sign-on details in Amazon DataZone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleSignOn {
     /// <p>The type of single sign-on in Amazon DataZone.</p>

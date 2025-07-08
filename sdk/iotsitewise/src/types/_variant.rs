@@ -2,6 +2,8 @@
 
 /// <p>Contains an asset property value (of a single type only).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Variant {
     /// <p>Asset property data of type string (sequence of characters). The allowed pattern: "^$|\[^\u0000-\u001F\u007F\]+". The max length is 1024.</p>

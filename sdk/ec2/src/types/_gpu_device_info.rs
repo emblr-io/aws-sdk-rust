@@ -2,6 +2,8 @@
 
 /// <p>Describes the GPU accelerators for the instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GpuDeviceInfo {
     /// <p>The name of the GPU accelerator.</p>

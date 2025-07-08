@@ -2,6 +2,8 @@
 
 /// <p>The resize specification for On-Demand and Spot Instances in the fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceFleetResizingSpecifications {
     /// <p>The resize specification for Spot Instances in the instance fleet, which contains the allocation strategy and the resize timeout period.</p>

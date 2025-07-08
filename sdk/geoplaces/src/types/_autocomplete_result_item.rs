@@ -2,6 +2,8 @@
 
 /// <p>A result matching the input query text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AutocompleteResultItem {
     /// <p>The PlaceId of the place associated with this result. This can be used to look up additional details about the result via GetPlace.</p>

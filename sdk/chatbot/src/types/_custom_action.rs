@@ -2,6 +2,8 @@
 
 /// <p>Represents a parameterized command that can be invoked as an alias or as a notification button in the chat client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomAction {
     /// <p>The fully defined Amazon Resource Name (ARN) of the custom action.</p>

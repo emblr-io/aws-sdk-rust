@@ -2,6 +2,8 @@
 
 /// <p>The access point specified doesn't exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidAccessPoint {
     /// <p>An error code indicating that the access point specified doesn't exist.</p>

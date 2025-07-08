@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an audit log processing configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditLogProcessingConfiguration {
     /// <p>The event schema in which the audit logs need to be formatted.</p>

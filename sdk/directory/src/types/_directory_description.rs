@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an Directory Service directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DirectoryDescription {
     /// <p>The directory identifier.</p>

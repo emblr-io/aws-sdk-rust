@@ -2,6 +2,8 @@
 
 /// <p>The authorization for this endpoint can't be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointAuthorizationNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

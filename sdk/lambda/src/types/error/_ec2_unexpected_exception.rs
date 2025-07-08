@@ -2,6 +2,8 @@
 
 /// <p>Lambda received an unexpected Amazon EC2 client exception while setting up for the Lambda function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2UnexpectedException {
     #[allow(missing_docs)] // documentation missing in model

@@ -3,6 +3,8 @@
 /// <p>Describes the backend associated with an Amplify <code>Branch</code>.</p>
 /// <p>This property is available to Amplify Gen 2 apps only. When you deploy an application with Amplify Gen 2, you provision the app's backend infrastructure using Typescript code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Backend {
     /// <p>The Amazon Resource Name (ARN) for the CloudFormation stack.</p>

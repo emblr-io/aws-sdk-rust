@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the CIDR collection change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CidrCollectionChange {
     /// <p>Name of the location that is associated with the CIDR collection.</p>

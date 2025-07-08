@@ -2,6 +2,8 @@
 
 /// <p>Returns tag-sync tasks filtered by the Amazon resource name (ARN) or name of a specified application group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagSyncTasksFilter {
     /// <p>The Amazon resource name (ARN) of the application group.</p>

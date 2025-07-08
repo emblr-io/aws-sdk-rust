@@ -2,6 +2,8 @@
 
 /// <p>Describes a Capacity Reservation Fleet that was successfully cancelled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationFleetCancellationState {
     /// <p>The current state of the Capacity Reservation Fleet.</p>

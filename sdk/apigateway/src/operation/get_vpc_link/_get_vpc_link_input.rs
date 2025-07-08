@@ -2,6 +2,8 @@
 
 /// <p>Gets a specified VPC link under the caller's account in a region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetVpcLinkInput {
     /// <p>The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Value of a segment annotation. Has one of three value types: Number, Boolean, or String.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AnnotationValue {
     /// <p>Value for a Boolean annotation.</p>

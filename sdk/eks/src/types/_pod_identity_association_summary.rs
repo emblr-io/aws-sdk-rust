@@ -13,6 +13,8 @@
 /// <p>The tags on the association: <code>tags</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PodIdentityAssociationSummary {
     /// <p>The name of the cluster that the association is in.</p>

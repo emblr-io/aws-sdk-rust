@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Amazon S3 bucket and path.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ConfigMap {
     /// <p>The Amazon S3 location URI.</p>

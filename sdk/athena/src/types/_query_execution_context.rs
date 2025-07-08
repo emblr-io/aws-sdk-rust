@@ -2,6 +2,8 @@
 
 /// <p>The database and data catalog context in which the query execution occurs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryExecutionContext {
     /// <p>The name of the database used in the query execution. The database must exist in the catalog.</p>

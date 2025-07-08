@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>WorkflowExecutionCancelRequested</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowExecutionCancelRequestedEventAttributes {
     /// <p>The external workflow execution for which the cancellation was requested.</p>

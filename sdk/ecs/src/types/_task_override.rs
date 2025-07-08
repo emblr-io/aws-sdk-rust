@@ -2,6 +2,8 @@
 
 /// <p>The overrides that are associated with a task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskOverride {
     /// <p>One or more container overrides that are sent to a task.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The directory is already in use by another WorkMail organization in the same account and Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryInUseException {
     #[allow(missing_docs)] // documentation missing in model

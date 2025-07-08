@@ -2,6 +2,8 @@
 
 /// <p>Specifies the connection status of an outbound cross-cluster search connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutboundCrossClusterSearchConnectionStatus {
     /// <p>The state code for outbound connection. This can be one of the following:</p>

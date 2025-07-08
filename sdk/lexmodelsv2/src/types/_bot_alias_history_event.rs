@@ -2,6 +2,8 @@
 
 /// <p>Provides a record of an event that affects a bot alias. For example, when the version of a bot that the alias points to changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotAliasHistoryEvent {
     /// <p>The version of the bot that was used in the event.</p>

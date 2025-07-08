@@ -2,6 +2,8 @@
 
 /// <p>Neptune logs are converted to SPARQL quads in the graph using the Resource Description Framework (RDF) <a href="https://www.w3.org/TR/n-quads/">N-QUADS</a> language defined in the W3C RDF 1.1 N-Quads specification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SparqlData {
     /// <p>Holds an <a href="https://www.w3.org/TR/n-quads/">N-QUADS</a> statement expressing the changed quad.</p>

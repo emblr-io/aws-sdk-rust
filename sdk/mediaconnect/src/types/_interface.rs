@@ -2,6 +2,8 @@
 
 /// <p>The VPC interface that is used for the media stream associated with the source or output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Interface {
     /// <p>The name of the VPC interface.</p>

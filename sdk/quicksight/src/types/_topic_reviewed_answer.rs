@@ -2,6 +2,8 @@
 
 /// <p>The deinition for a <code>TopicReviewedAnswer</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicReviewedAnswer {
     /// <p>The Amazon Resource Name (ARN) of the reviewed answer.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the category by which to group the intent stages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsIntentStageGroupBySpecification {
     /// <p>Specifies whether to group the intent stages by their name or the intent to which the session was switched.</p>

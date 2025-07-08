@@ -2,6 +2,8 @@
 
 /// <p>A rule set contains a list of rules that are evaluated in order. Each rule is evaluated sequentially for each email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleSet {
     /// <p>The identifier of the rule set.</p>

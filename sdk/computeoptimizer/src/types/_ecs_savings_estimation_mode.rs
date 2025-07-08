@@ -2,6 +2,8 @@
 
 /// <p>Describes the savings estimation mode used for calculating savings opportunity for Amazon ECS services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsSavingsEstimationMode {
     /// <p>Describes the source for calculating the savings opportunity for Amazon ECS services.</p>

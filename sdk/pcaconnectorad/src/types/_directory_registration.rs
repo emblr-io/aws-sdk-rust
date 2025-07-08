@@ -2,6 +2,8 @@
 
 /// <p>The directory registration represents the authorization of the connector service with a directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryRegistration {
     /// <p>The Amazon Resource Name (ARN) that was returned when you called CreateDirectoryRegistration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies what data to collect and how often or when to collect it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CollectionScheme {
     /// <p>Information about a collection scheme that uses a simple logical expression to recognize what data to collect.</p>

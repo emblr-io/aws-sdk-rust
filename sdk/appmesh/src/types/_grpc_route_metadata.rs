@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the match metadata for the route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrpcRouteMetadata {
     /// <p>The name of the route.</p>

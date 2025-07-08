@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a forecast. Returned as part of the <code>QueryForecast</code> response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Forecast {
     /// <p>The forecast.</p>

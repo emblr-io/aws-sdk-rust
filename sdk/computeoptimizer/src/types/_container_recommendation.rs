@@ -2,6 +2,8 @@
 
 /// <p>The CPU and memory recommendations for a container within the tasks of your Amazon ECS service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerRecommendation {
     /// <p>The name of the container.</p>

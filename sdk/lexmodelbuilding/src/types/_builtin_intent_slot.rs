@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a slot used in a built-in intent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuiltinIntentSlot {
     /// <p>A list of the slots defined for the intent.</p>

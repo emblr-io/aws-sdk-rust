@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines an Oracle data provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OracleDataProviderSettings {
     /// <p>The name of the Oracle server.</p>

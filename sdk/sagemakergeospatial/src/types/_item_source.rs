@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the items in the response for SearchRasterDataCollection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemSource {
     /// <p>A unique Id for the source item.</p>

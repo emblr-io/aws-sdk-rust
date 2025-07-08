@@ -2,6 +2,8 @@
 
 /// <p>Details of the response plan that are used when creating an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponsePlanSummary {
     /// <p>The Amazon Resource Name (ARN) of the response plan.</p>

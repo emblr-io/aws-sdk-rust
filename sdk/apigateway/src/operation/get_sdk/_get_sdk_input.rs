@@ -2,6 +2,8 @@
 
 /// <p>Request a new generated client SDK for a RestApi and Stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSdkInput {
     /// <p>The string identifier of the associated RestApi.</p>

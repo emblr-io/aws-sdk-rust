@@ -2,6 +2,8 @@
 
 /// <p>The structure holding all the information returned by AnalyzeExpense</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpenseDocument {
     /// <p>Denotes which invoice or receipt in the document the information is coming from. First document will be 1, the second 2, and so on.</p>

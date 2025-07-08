@@ -2,6 +2,8 @@
 
 /// <p>The permissions granted or revoked on a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrincipalResourcePermissions {
     /// <p>The Data Lake principal to be granted or revoked permissions.</p>

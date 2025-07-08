@@ -2,6 +2,8 @@
 
 /// <p>The key usage extension defines the purpose (e.g., encipherment, signature) of the key contained in the certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyUsage {
     /// <p>Sets the key usage extension to critical.</p>

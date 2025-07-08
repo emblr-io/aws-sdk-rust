@@ -2,6 +2,8 @@
 
 /// <p>Describes an potential intermediate component of a feasible path.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlternatePathHint {
     /// <p>The ID of the component.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Online Fraud Insights (OFI) model training metric details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OfiTrainingMetricsValue {
     /// <p>The model's performance metrics data points.</p>

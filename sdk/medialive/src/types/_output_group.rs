@@ -2,6 +2,8 @@
 
 /// Output groups for this Live Event. Output groups contain information about where streams should be distributed.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputGroup {
     /// Custom output group name optionally defined by the user.

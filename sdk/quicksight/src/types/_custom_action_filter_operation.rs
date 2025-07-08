@@ -2,6 +2,8 @@
 
 /// <p>The filter operation that filters data included in a visual or in an entire sheet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomActionFilterOperation {
     /// <p>The configuration that chooses the fields to be filtered.</p>

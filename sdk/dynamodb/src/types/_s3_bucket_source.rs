@@ -2,6 +2,8 @@
 
 /// <p>The S3 bucket that is being imported from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3BucketSource {
     /// <p>The account number of the S3 bucket that is being imported from. If the bucket is owned by the requester this is optional.</p>

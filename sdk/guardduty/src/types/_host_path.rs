@@ -2,6 +2,8 @@
 
 /// <p>Represents a pre-existing file or directory on the host machine that the volume maps to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostPath {
     /// <p>Path of the file or directory on the host that the volume maps to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A parent label for a label. A label can have 0, 1, or more parents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Parent {
     /// <p>The name of the parent label.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about the Systems Manager automation document that will be used as a runbook during an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SsmAutomation {
     /// <p>The Amazon Resource Name (ARN) of the role that the automation document will assume when running commands.</p>

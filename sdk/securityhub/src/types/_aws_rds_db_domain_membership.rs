@@ -2,6 +2,8 @@
 
 /// <p>Information about an Active Directory domain membership record associated with the DB instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbDomainMembership {
     /// <p>The identifier of the Active Directory domain.</p>

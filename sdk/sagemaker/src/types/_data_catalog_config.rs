@@ -2,6 +2,8 @@
 
 /// <p>The meta data of the Glue table which serves as data catalog for the <code>OfflineStore</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCatalogConfig {
     /// <p>The name of the Glue table.</p>

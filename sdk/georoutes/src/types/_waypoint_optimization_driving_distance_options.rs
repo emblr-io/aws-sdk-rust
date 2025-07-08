@@ -2,6 +2,8 @@
 
 /// <p>Driving distance related options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaypointOptimizationDrivingDistanceOptions {
     /// <p>DrivingDistance assigns all the waypoints that are within driving distance of each other into a single cluster.</p>

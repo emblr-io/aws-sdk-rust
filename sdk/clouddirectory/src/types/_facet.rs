@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains <code>Name</code>, <code>ARN</code>, <code>Attributes</code>, <code> <code>Rule</code>s</code>, and <code>ObjectTypes</code>. See <a href="https://docs.aws.amazon.com/clouddirectory/latest/developerguide/schemas_whatarefacets.html">Facets</a> for more information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Facet {
     /// <p>The name of the <code>Facet</code>.</p>

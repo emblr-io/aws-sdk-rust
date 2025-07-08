@@ -2,6 +2,8 @@
 
 /// <p>The content and file name of the attachment returned by the <code>DescribeAttachment</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeAttachmentOutput {
     /// <p>This object includes the attachment content and file name.</p>

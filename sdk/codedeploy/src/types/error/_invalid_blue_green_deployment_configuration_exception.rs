@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the blue/green deployment group was provided in an invalid format. For information about deployment configuration format, see <code>CreateDeploymentConfig</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidBlueGreenDeploymentConfigurationException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

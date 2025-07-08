@@ -2,6 +2,8 @@
 
 /// <p>The details of the maintenance configuration for the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationMaintenanceConfigurationDescription {
     /// <p>The start time for the maintenance window.</p>

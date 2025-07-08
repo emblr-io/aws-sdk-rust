@@ -2,6 +2,8 @@
 
 /// <p>The resource is in a state that does not allow you to perform a specified action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidStateException {
     /// <p>Error or informational message that provides more detail if a resource is in a state that is not valid for performing a specified action.</p>

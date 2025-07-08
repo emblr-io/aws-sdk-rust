@@ -2,6 +2,8 @@
 
 /// <p>Defines a recommendation for a CloudWatch alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmRecommendation {
     /// <p>Identifier of the alarm recommendation.</p>

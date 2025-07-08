@@ -4,6 +4,8 @@
 /// <p>The default file format is JSON. You can specify only one format.</p>
 /// <p>You can't change the file format after you create the data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileFormatConfiguration {
     /// <p>Contains the configuration information of the JSON format.</p>

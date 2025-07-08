@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for DeleteVpnConnectionRoute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteVpnConnectionRouteInput {
     /// <p>The CIDR block associated with the local subnet of the customer network.</p>

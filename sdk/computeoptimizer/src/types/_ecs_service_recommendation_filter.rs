@@ -2,6 +2,8 @@
 
 /// <p>Describes a filter that returns a more specific list of Amazon ECS service recommendations. Use this filter with the <code>GetECSServiceRecommendations</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsServiceRecommendationFilter {
     /// <p>The name of the filter.</p>

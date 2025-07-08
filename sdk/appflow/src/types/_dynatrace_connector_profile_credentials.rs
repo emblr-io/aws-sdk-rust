@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required by Dynatrace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynatraceConnectorProfileCredentials {
     /// <p>The API tokens used by Dynatrace API to authenticate various API calls.</p>

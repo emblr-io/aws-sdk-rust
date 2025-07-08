@@ -2,6 +2,8 @@
 
 /// <p>A delimited data format where the column separator can be a comma and the record separator is a newline character.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvConfiguration {
     /// <p>Column separator can be one of comma (','), pipe ('|), semicolon (';'), tab('/t'), or blank space (' ').</p>

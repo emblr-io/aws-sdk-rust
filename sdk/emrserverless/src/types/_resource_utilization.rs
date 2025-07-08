@@ -2,6 +2,8 @@
 
 /// <p>The resource utilization for memory, storage, and vCPU for jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceUtilization {
     /// <p>The aggregated vCPU used per hour from the time the job starts executing until the job is terminated.</p>

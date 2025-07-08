@@ -2,6 +2,8 @@
 
 /// <p>Updates the specified archive rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateArchiveRuleInput {
     /// <p>The name of the analyzer to update the archive rules for.</p>

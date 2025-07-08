@@ -2,6 +2,8 @@
 
 /// <p>Container for parameters representing the state of machine learning features on the specified domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AimlOptionsOutput {
     /// <p>Container for parameters required for natural language query generation on the specified domain.</p>

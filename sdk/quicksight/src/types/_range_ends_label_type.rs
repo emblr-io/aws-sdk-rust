@@ -2,6 +2,8 @@
 
 /// <p>The range ends label type of a data path label.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RangeEndsLabelType {
     /// <p>The visibility of the range ends label.</p>

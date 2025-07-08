@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the routes in the route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteSetDetails {
     /// <p>The ID of the carrier gateway.</p>

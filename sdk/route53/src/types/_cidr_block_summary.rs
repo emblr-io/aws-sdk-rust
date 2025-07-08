@@ -2,6 +2,8 @@
 
 /// <p>A complex type that lists the CIDR blocks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CidrBlockSummary {
     /// <p>Value for the CIDR block.</p>

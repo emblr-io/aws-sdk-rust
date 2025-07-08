@@ -2,6 +2,8 @@
 
 /// <p>Defines a named input source, called a channel, to be used by an algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelSpecification {
     /// <p>The name of the channel.</p>

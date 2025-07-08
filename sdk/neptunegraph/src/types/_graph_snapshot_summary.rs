@@ -2,6 +2,8 @@
 
 /// <p>Details about a graph snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GraphSnapshotSummary {
     /// <p>The unique identifier of the graph snapshot.</p>

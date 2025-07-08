@@ -2,6 +2,8 @@
 
 /// <p>An entity associated with metrics, to allow for finding related telemetry. An entity is typically a resource or service within your system. For example, metrics from an Amazon EC2 instance could be associated with that instance as the entity. Similarly, metrics from a service that you own could be associated with that service as the entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Entity {
     /// <p>The attributes of the entity which identify the specific entity, as a list of key-value pairs. Entities with the same <code>KeyAttributes</code> are considered to be the same entity. For an entity to be valid, the <code>KeyAttributes</code> must exist and be formatted correctly.</p>

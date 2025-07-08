@@ -2,6 +2,8 @@
 
 /// <p>Payload content, such as text and images, for the invocation step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum InvocationStepPayload {
     /// <p>The content for the invocation step.</p>

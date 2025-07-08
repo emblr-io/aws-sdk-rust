@@ -2,6 +2,8 @@
 
 /// <p>Configures the resource instances to use while running the Amazon Braket hybrid job on Amazon Braket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceConfig {
     /// <p>Configures the type resource instances to use while running an Amazon Braket hybrid job.</p>

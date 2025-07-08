@@ -2,6 +2,8 @@
 
 /// <p>Adds Q&amp;A capabilities to a dashboard. If no topic is linked, Dashboard Q&amp;A uses the data values that are rendered on the dashboard. End users can use Dashboard Q&amp;A to ask for different slices of the data that they see on the dashboard. If a topic is linked, Topic Q&amp;A is enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQaEnabledOption {
     /// <p>The status of the Data Q&amp;A option on the dashboard.</p>

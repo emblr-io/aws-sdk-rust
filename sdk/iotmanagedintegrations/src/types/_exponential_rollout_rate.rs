@@ -2,6 +2,8 @@
 
 /// <p>Structure representing exponential rate of rollout for an over-the-air (OTA) task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExponentialRolloutRate {
     /// <p>The base rate per minute for the rollout of an over-the-air (OTA) task.</p>

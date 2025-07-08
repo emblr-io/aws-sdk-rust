@@ -2,6 +2,8 @@
 
 /// <p>The results returned in <code>describe-replications</code> to display the results of the premigration assessment from the replication configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PremigrationAssessmentStatus {
     /// <p>The Amazon Resource Name (ARN) of this assessment run.</p>

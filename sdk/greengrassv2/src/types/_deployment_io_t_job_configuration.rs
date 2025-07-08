@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an IoT job configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentIoTJobConfiguration {
     /// <p>The rollout configuration for the job. This configuration defines the rate at which the job rolls out to the fleet of target devices.</p>

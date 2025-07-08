@@ -2,6 +2,8 @@
 
 /// <p>The beginning and ending sequence numbers for the stream records contained within a shard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SequenceNumberRange {
     /// <p>The first sequence number for the stream records contained within a shard. String contains numeric characters only.</p>

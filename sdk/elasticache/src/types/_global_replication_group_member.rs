@@ -2,6 +2,8 @@
 
 /// <p>A member of a Global datastore. It contains the Replication Group Id, the Amazon region and the role of the replication group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalReplicationGroupMember {
     /// <p>The replication group id of the Global datastore member.</p>

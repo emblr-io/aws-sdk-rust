@@ -2,6 +2,8 @@
 
 /// <p>Information about a failed create simulation job request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedCreateSimulationJobRequest {
     /// <p>The simulation job request.</p>

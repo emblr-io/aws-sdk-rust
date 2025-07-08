@@ -2,6 +2,8 @@
 
 /// <p>Describes a single rule in a network ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntryDescription {
     /// <p>Describes a rule in a network ACL.</p>

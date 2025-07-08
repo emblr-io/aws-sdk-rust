@@ -2,6 +2,8 @@
 
 /// <p>The structure representing a single PropertyFilter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyFilter {
     /// <p>Represents a single property to match with when searching a raster data collection.</p>

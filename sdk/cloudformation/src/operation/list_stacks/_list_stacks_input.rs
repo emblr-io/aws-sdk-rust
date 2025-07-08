@@ -2,6 +2,8 @@
 
 /// <p>The input for <code>ListStacks</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStacksInput {
     /// <p>A string that identifies the next page of stacks that you want to retrieve.</p>

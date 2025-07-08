@@ -2,6 +2,8 @@
 
 /// <p>Information about the network endpoint that you can use to connect to your custom or service app. For more information about SimSpace Weaver apps, see <a href="https://docs.aws.amazon.com/simspaceweaver/latest/userguide/what-is_key-concepts.html#what-is_key-concepts_apps">Key concepts: Apps</a> in the <i>SimSpace Weaver User Guide</i>..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimulationAppEndpointInfo {
     /// <p>The IP address of the app. SimSpace Weaver dynamically assigns this IP address when the app starts.</p>

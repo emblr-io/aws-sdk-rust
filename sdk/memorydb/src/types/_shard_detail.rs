@@ -2,6 +2,8 @@
 
 /// <p>Provides details of a shard in a snapshot</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShardDetail {
     /// <p>The name of the shard</p>

@@ -2,6 +2,8 @@
 
 /// <p>Discovery configuration associated to the workload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadDiscoveryConfig {
     /// <p>Discovery integration status in respect to Trusted Advisor for the workload.</p>

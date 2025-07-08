@@ -49,7 +49,7 @@ impl From<&[u8]> for Blob {
     }
 }
 
-#[cfg(all(aws_sdk_unstable, feature = "serde-serialize"))]
+#[cfg(feature = "serde-serialize")]
 mod serde_serialize {
     use super::*;
     use serde::Serialize;
@@ -68,7 +68,7 @@ mod serde_serialize {
     }
 }
 
-#[cfg(all(aws_sdk_unstable, feature = "serde-deserialize"))]
+#[cfg(feature = "serde-deserialize")]
 mod serde_deserialize {
     use super::*;
     use serde::{de::Visitor, Deserialize};
@@ -140,14 +140,11 @@ mod test {
     }
 }
 
-#[cfg(all(
-    aws_sdk_unstable,
-    feature = "serde-serialize",
-    feature = "serde-deserialize"
-))]
+#[cfg(all(feature = "serde-serialize", feature = "serde-deserialize"))]
 mod test_serde {
     use crate::Blob;
     use serde::{Deserialize, Serialize};
+    #[allow(unused_imports)]
     use std::collections::HashMap;
 
     #[derive(Deserialize, Serialize, Debug, PartialEq)]

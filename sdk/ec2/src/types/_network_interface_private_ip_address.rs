@@ -2,6 +2,8 @@
 
 /// <p>Describes the private IPv4 address of a network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInterfacePrivateIpAddress {
     /// <p>The association information for an Elastic IP address (IPv4) associated with the network interface.</p>

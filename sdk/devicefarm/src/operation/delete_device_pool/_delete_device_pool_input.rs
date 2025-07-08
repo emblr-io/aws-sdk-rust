@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the delete device pool operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDevicePoolInput {
     /// <p>Represents the Amazon Resource Name (ARN) of the Device Farm device pool to delete.</p>

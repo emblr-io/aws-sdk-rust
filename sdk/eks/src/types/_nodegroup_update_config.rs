@@ -2,6 +2,8 @@
 
 /// <p>The node group update configuration. An Amazon EKS managed node group updates by replacing nodes with new nodes of newer AMI versions in parallel. You choose the <i>maximum unavailable</i> and the <i>update strategy</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodegroupUpdateConfig {
     /// <p>The maximum number of nodes unavailable at once during a version update. Nodes are updated in parallel. This value or <code>maxUnavailablePercentage</code> is required to have a value.The maximum number is 100.</p>

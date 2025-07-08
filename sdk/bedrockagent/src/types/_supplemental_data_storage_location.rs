@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a storage location for images extracted from multimodal documents in your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupplementalDataStorageLocation {
     /// <p>Specifies the storage service used for this location.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structure of a user associated with a permission group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UserByPermissionGroup {
     /// <p>The unique identifier for the user.</p>

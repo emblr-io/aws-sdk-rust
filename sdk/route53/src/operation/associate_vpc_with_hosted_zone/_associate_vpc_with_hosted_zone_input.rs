@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the request to associate a VPC with a private hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociateVpcWithHostedZoneInput {
     /// <p>The ID of the private hosted zone that you want to associate an Amazon VPC with.</p>

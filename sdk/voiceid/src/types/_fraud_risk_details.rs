@@ -2,6 +2,8 @@
 
 /// <p>Details regarding various fraud risk analyses performed against the current session state and streamed audio of the speaker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FraudRiskDetails {
     /// <p>The details resulting from 'Known Fraudster Risk' analysis of the speaker.</p>

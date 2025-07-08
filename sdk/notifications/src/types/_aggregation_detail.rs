@@ -2,6 +2,8 @@
 
 /// <p>Provides detailed information about the dimensions used for aggregation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationDetail {
     /// <p>Properties used to summarize aggregated events.</p>

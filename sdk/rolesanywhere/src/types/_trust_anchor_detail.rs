@@ -2,6 +2,8 @@
 
 /// <p>The state of the trust anchor after a read or write operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustAnchorDetail {
     /// <p>The unique identifier of the trust anchor.</p>

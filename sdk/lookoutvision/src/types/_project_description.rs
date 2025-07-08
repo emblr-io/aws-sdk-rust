@@ -2,6 +2,8 @@
 
 /// <p>Describe an Amazon Lookout for Vision project. For more information, see <code>DescribeProject</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectDescription {
     /// <p>The Amazon Resource Name (ARN) of the project.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Displays the properties of the import job, including the ID, Arn, Name, the status of the job, and the progress report of the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportJobProperties {
     /// <p>The AWS-generated id number for the Import job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the authentication mode to use.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthenticationMode {
     /// <p>Specifies the authentication type. Possible options are IAM authentication, password and no password.</p>

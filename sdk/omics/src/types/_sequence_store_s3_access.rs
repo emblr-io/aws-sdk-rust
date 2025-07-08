@@ -2,6 +2,8 @@
 
 /// <p>The S3 access metadata of the sequence store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SequenceStoreS3Access {
     /// <p>The S3 URI of the sequence store.</p>

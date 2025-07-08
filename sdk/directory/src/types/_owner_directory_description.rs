@@ -2,6 +2,8 @@
 
 /// <p>Describes the directory owner account details that have been shared to the directory consumer account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OwnerDirectoryDescription {
     /// <p>Identifier of the Managed Microsoft AD directory in the directory owner account.</p>

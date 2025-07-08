@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are used to automatically set up EBS volumes when an instance is launched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails {
     /// <p>Whether to delete the volume when the instance is terminated.</p>

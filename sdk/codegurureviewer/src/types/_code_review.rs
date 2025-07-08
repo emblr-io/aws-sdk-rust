@@ -2,6 +2,8 @@
 
 /// <p>Information about a code review. A code review belongs to the associated repository that contains the reviewed code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeReview {
     /// <p>The name of the code review.</p>

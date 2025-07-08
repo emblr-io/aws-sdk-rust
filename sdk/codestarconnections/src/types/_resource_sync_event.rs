@@ -2,6 +2,8 @@
 
 /// <p>Information about a resource sync event for the resource associated with a sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSyncEvent {
     /// <p>The event for a resource sync event.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An agent collaborator summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentCollaboratorSummary {
     /// <p>The collaborator's agent ID.</p>

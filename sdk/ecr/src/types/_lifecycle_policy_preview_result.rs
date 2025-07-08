@@ -2,6 +2,8 @@
 
 /// <p>The result of the lifecycle policy preview.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyPreviewResult {
     /// <p>The list of tags associated with this image.</p>

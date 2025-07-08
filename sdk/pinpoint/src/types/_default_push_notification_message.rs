@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default settings and content for a push notification that's sent directly to an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultPushNotificationMessage {
     /// <p>The default action to occur if a recipient taps the push notification. Valid values are:</p>

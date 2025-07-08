@@ -2,6 +2,8 @@
 
 /// <p>The location of the output of your Medical Scribe job. <code>ClinicalDocumentUri</code> holds the Amazon S3 URI for the Clinical Document and <code>TranscriptFileUri</code> holds the Amazon S3 URI for the Transcript.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeOutput {
     /// <p>Holds the Amazon S3 URI for the Transcript.</p>

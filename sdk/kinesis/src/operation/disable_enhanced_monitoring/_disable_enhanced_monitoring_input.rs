@@ -2,6 +2,8 @@
 
 /// <p>Represents the input for <code>DisableEnhancedMonitoring</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisableEnhancedMonitoringInput {
     /// <p>The name of the Kinesis data stream for which to disable enhanced monitoring.</p>

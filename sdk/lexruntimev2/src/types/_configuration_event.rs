@@ -2,6 +2,8 @@
 
 /// <p>The initial event sent from the application to Amazon Lex V2 to configure the conversation, including session and request attributes and the response content type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationEvent {
     /// <p>Request-specific information passed between the client application and Amazon Lex V2.</p>

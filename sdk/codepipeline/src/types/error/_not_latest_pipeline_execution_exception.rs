@@ -2,6 +2,8 @@
 
 /// <p>The stage has failed in a later run of the pipeline and the <code>pipelineExecutionId</code> associated with the request is out of date.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotLatestPipelineExecutionException {
     /// <p>The message provided to the user in the event of an exception.</p>

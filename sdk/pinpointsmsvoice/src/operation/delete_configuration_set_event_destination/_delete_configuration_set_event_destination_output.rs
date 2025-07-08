@@ -2,6 +2,8 @@
 
 /// An empty object that indicates that the event destination was deleted successfully.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConfigurationSetEventDestinationOutput {
     _request_id: Option<String>,

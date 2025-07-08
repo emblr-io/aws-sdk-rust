@@ -2,6 +2,8 @@
 
 /// <p>Details about mismatched input data types in a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MismatchedNodeInputTypeFlowValidationDetails {
     /// <p>The name of the node containing the input with the mismatched data type.</p>

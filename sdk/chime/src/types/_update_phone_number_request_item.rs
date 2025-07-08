@@ -2,6 +2,8 @@
 
 /// <p>The phone number ID, product type, or calling name fields to update, used with the <code>BatchUpdatePhoneNumber</code> and <code>UpdatePhoneNumber</code> actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdatePhoneNumberRequestItem {
     /// <p>The phone number ID to update.</p>

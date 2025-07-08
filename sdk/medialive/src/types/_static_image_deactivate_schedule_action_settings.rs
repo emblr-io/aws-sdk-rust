@@ -2,6 +2,8 @@
 
 /// Settings for the action to deactivate the image in a specific layer.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StaticImageDeactivateScheduleActionSettings {
     /// The time in milliseconds for the image to fade out. Default is 0 (no fade-out).

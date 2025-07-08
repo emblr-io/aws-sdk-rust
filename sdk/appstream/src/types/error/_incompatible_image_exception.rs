@@ -2,6 +2,8 @@
 
 /// <p>The image can't be updated because it's not compatible for updates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncompatibleImageException {
     /// <p>The error message in the exception.</p>

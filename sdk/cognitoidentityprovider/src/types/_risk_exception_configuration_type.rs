@@ -2,6 +2,8 @@
 
 /// <p>Exceptions to the risk evaluation configuration, including always-allow and always-block IP address ranges.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RiskExceptionConfigurationType {
     /// <p>An always-block IP address list. Overrides the risk decision and always blocks authentication requests. This parameter is displayed and set in CIDR notation.</p>

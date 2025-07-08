@@ -2,6 +2,8 @@
 
 /// <p>A request to get information about a specified hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetHostedZoneInput {
     /// <p>The ID of the hosted zone that you want to get information about.</p>

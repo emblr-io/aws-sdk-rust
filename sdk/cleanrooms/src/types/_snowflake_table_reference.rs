@@ -2,6 +2,8 @@
 
 /// <p>A reference to a table within Snowflake.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnowflakeTableReference {
     /// <p>The secret ARN of the Snowflake table reference.</p>

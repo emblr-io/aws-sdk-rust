@@ -4,6 +4,8 @@
 /// <p>The <code>Summary</code> system field accepts 3000 characters while all other fields accept 500 characters.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FieldValueUnion {
     /// <p>Can be either null, or have a Boolean value type. Only one value can be provided.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The distribution of sign in traffic between the instance and its replica(s).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SignInDistribution {
     /// <p>The Amazon Web Services Region of the sign in distribution.</p>

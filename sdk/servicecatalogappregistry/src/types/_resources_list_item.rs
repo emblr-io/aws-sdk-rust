@@ -2,6 +2,8 @@
 
 /// <p>The resource in a list of resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcesListItem {
     /// <p>The Amazon resource name (ARN) of the resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified input parameter has a value that is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidArgumentException {
     /// <p>A message that provides information about the error.</p>

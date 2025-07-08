@@ -2,6 +2,8 @@
 
 /// <p>Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Cpu {
     /// <p>The CPU's frequency.</p>

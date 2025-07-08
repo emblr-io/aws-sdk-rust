@@ -2,6 +2,8 @@
 
 /// <p>Configuration for specifying the position in the topics to start replicating from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationStartingPosition {
     /// <p>The type of replication starting position.</p>

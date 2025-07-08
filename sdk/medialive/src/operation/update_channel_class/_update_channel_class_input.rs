@@ -2,6 +2,8 @@
 
 /// Channel class that the channel should be updated to.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateChannelClassInput {
     /// The channel class that you wish to update this channel to use.

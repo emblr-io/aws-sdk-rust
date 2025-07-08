@@ -2,6 +2,8 @@
 
 /// <p>The vector configuration details for the Bedrock embeddings model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockEmbeddingModelConfiguration {
     /// <p>The dimensions details for the vector configuration used on the Bedrock embeddings model.</p>

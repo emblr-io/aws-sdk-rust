@@ -2,6 +2,8 @@
 
 /// <p>Context enrichment configuration is used to provide additional context to the RAG application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContextEnrichmentConfiguration {
     /// <p>The method used for context enrichment. It must be Amazon Bedrock foundation models.</p>

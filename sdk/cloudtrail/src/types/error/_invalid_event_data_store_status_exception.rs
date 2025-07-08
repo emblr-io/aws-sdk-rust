@@ -2,6 +2,8 @@
 
 /// <p>The event data store is not in a status that supports the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidEventDataStoreStatusException {
     /// <p>Brief description of the exception returned by the request.</p>

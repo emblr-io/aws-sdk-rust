@@ -2,6 +2,8 @@
 
 /// <p>Vehicles associated with the state template will stream telemetry data when there is a change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnChangeStateTemplateUpdateStrategy {}
 impl OnChangeStateTemplateUpdateStrategy {

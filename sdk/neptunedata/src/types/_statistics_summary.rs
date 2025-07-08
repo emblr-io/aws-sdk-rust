@@ -2,6 +2,8 @@
 
 /// <p>Information about the characteristic sets generated in the statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatisticsSummary {
     /// <p>The total number of signatures across all characteristic sets.</p>

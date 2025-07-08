@@ -2,6 +2,8 @@
 
 /// <p>A tag is a label consisting of a user-defined key and value. The form for tags is {"Key", "Value"}</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>The key portion of a tag. Tag keys are case sensitive.</p>

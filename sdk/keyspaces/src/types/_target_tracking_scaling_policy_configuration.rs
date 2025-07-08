@@ -2,6 +2,8 @@
 
 /// <p>The auto scaling policy that scales a table based on the ratio of consumed to provisioned capacity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetTrackingScalingPolicyConfiguration {
     /// <p>Specifies if <code>scale-in</code> is enabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the Amazon S3 bucket for the disk image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserBucketDetails {
     /// <p>The Amazon S3 bucket from which the disk image was created.</p>

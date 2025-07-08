@@ -2,6 +2,8 @@
 
 /// <p>The configuration applied to an organization's folders by its retention policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FolderConfiguration {
     /// <p>The folder name.</p>

@@ -2,9 +2,12 @@
 
 /// <p>Container for the parameters to the <code>UploadDocuments</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct UploadDocumentsInput {
     /// <p>A batch of documents formatted in JSON or HTML.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub documents: ::aws_smithy_types::byte_stream::ByteStream,
     /// <p>The format of the batch you are uploading. Amazon CloudSearch supports two document batch formats:</p>
     /// <ul>

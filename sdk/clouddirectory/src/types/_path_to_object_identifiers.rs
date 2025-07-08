@@ -2,6 +2,8 @@
 
 /// <p>Returns the path to the <code>ObjectIdentifiers</code> that is associated with the directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PathToObjectIdentifiers {
     /// <p>The path that is used to identify the object starting from directory root.</p>

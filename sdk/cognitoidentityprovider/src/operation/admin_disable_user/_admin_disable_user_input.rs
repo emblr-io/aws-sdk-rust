@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to disable the user as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminDisableUserInput {
     /// <p>The ID of the user pool where you want to disable the user.</p>

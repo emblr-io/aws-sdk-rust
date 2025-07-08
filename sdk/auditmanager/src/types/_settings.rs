@@ -2,6 +2,8 @@
 
 /// <p>The settings object that holds all supported Audit Manager settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Settings {
     /// <p>Specifies whether Organizations is enabled.</p>

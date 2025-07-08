@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Backup backup vault. In Backup, a backup vault is a container that stores and organizes your backups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsBackupBackupVaultDetails {
     /// <p>An Amazon Resource Name (ARN) that uniquely identifies a backup vault.</p>

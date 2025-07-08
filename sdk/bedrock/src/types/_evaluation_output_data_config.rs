@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 location where the results of your evaluation job are saved.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationOutputDataConfig {
     /// <p>The Amazon S3 URI where the results of the evaluation job are saved.</p>

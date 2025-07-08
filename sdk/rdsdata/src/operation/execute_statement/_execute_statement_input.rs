@@ -2,6 +2,8 @@
 
 /// <p>The request parameters represent the input of a request to run a SQL statement against a database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecuteStatementInput {
     /// <p>The Amazon Resource Name (ARN) of the Aurora Serverless DB cluster.</p>

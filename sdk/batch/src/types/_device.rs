@@ -4,6 +4,8 @@
 /// <p>This object isn't applicable to jobs that are running on Fargate resources and shouldn't be provided.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Device {
     /// <p>The path for the device on the host container instance.</p>

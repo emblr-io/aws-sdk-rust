@@ -2,6 +2,8 @@
 
 /// <p>Contains the category by which the utterance analytics were grouped and the values for that category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsUtteranceGroupByKey {
     /// <p>The category by which the utterance analytics were grouped.</p>

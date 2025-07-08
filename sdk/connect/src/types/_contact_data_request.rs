@@ -2,6 +2,8 @@
 
 /// <p>Request object with information to create a contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactDataRequest {
     /// <p>Endpoint associated with the Amazon Connect instance from which outbound contact will be initiated for the campaign.</p>

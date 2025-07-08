@@ -2,6 +2,8 @@
 
 /// <p>The structure representing input for resampling operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResamplingConfigInput {
     /// <p>The structure representing output resolution (in target georeferenced units) of the result of resampling operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes logging options for an Amazon Web Services Verified Access instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifiedAccessInstanceLoggingConfiguration {
     /// <p>The ID of the Amazon Web Services Verified Access instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A summary of the validation results for a specific software bill of materials (SBOM) attached to a software package version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SbomValidationResultSummary {
     /// <p>The name of the SBOM file.</p>

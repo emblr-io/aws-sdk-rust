@@ -3,6 +3,8 @@
 /// <p>Represents the output of an <code>UpdateBatchPrediction</code> operation.</p>
 /// <p>You can see the updated content by using the <code>GetBatchPrediction</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBatchPredictionOutput {
     /// <p>The ID assigned to the <code>BatchPrediction</code> during creation. This value should be identical to the value of the <code>BatchPredictionId</code> in the request.</p>

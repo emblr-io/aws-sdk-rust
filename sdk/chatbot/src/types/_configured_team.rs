@@ -2,6 +2,8 @@
 
 /// <p>A Microsoft Teams team that is authorized with AWS Chatbot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTeam {
     /// <p>The ID of the Microsoft Teams tenant.</p>

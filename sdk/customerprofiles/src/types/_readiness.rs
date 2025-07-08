@@ -2,6 +2,8 @@
 
 /// <p>Information indicating if the Calculated Attribute is ready for use by confirming all historical data has been processed and reflected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Readiness {
     /// <p>Approximately how far the Calculated Attribute creation is from completion.</p>

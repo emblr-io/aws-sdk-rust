@@ -2,6 +2,8 @@
 
 /// <p>The rendering rules of a sheet that uses a free-form layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SheetElementRenderingRule {
     /// <p>The expression of the rendering rules of a sheet.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The compute node group configuration for a queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeNodeGroupConfiguration {
     /// <p>The compute node group ID for the compute node group configuration.</p>

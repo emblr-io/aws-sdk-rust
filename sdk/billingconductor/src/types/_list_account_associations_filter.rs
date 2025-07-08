@@ -5,6 +5,8 @@
 /// <p><code>UNMONITORED</code>: linked accounts that are not associated to billing groups.</p>
 /// <p><code>Billing Group Arn</code>: linked accounts that are associated to the provided Billing Group Arn.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAccountAssociationsFilter {
     /// <p><code>MONITORED</code>: linked accounts that are associated to billing groups.</p>

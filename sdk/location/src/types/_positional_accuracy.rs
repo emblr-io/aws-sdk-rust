@@ -2,6 +2,8 @@
 
 /// <p>Defines the level of certainty of the position.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PositionalAccuracy {
     /// <p>Estimated maximum distance, in meters, between the measured position and the true position of a device, along the Earth's surface.</p>

@@ -3,6 +3,8 @@
 /// <p>Contains a list of available options for a DB instance.</p>
 /// <p>This data type is used as a response element in the <code>DescribeOrderableDBInstanceOptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrderableDbInstanceOption {
     /// <p>The engine type of a DB instance.</p>

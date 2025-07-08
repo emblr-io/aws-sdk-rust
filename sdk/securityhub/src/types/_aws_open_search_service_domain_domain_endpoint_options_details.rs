@@ -2,6 +2,8 @@
 
 /// <p>Information about additional options for the domain endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsOpenSearchServiceDomainDomainEndpointOptionsDetails {
     /// <p>The ARN for the security certificate. The certificate is managed in ACM.</p>

@@ -39,6 +39,8 @@
 ///
 /// <p>Specifies the time format in the GS05 element (time) of the functional group header. The following formats use 24-hour clock time:</p> <ul> <li> <p> <code>HHMM</code> - Hours and minutes</p> </li> <li> <p> <code>HHMMSS</code> - Hours, minutes, and seconds</p> </li> <li> <p> <code>HHMMSSDD</code> - Hours, minutes, seconds, and decimal seconds</p> </li> </ul> <p>Where:</p> <ul> <li> <p> <code>HH</code> - Hours (00-23)</p> </li> <li> <p> <code>MM</code> - Minutes (00-59)</p> </li> <li> <p> <code>SS</code> - Seconds (00-59)</p> </li> <li> <p> <code>DD</code> - Hundredths of seconds (00-99)</p> </li> </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

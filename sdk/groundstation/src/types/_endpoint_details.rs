@@ -2,6 +2,8 @@
 
 /// <p>Information about the endpoint details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointDetails {
     /// <p>Endpoint security details including a list of subnets, a list of security groups and a role to connect streams to instances.</p>

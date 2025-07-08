@@ -2,6 +2,8 @@
 
 /// <p>The request was denied due to request throttling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ThrottlingException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The position is not valid. Make sure that the line number exists in the version of the file you want to comment on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidFilePositionException {
     /// <p>Any message associated with the exception.</p>

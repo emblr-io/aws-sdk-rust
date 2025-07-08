@@ -2,6 +2,8 @@
 
 /// <p>Describes the location of the channel data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformDataSource {
     /// <p>The S3 location of the data source that is associated with a channel.</p>

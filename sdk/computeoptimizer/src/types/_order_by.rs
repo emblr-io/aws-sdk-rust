@@ -2,6 +2,8 @@
 
 /// <p>Describes how the recommendations are ordered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrderBy {
     /// <p>The dimension values to sort the recommendations.</p>

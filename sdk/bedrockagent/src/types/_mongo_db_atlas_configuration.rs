@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the storage configuration of the knowledge base in MongoDB Atlas.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MongoDbAtlasConfiguration {
     /// <p>The endpoint URL of your MongoDB Atlas cluster for your knowledge base.</p>

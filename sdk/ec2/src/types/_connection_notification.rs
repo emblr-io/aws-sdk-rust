@@ -2,6 +2,8 @@
 
 /// <p>Describes a connection notification for a VPC endpoint or VPC endpoint service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionNotification {
     /// <p>The ID of the notification.</p>

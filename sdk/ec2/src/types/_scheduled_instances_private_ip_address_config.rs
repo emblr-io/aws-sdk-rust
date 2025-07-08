@@ -2,6 +2,8 @@
 
 /// <p>Describes a private IPv4 address for a Scheduled Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledInstancesPrivateIpAddressConfig {
     /// <p>Indicates whether this is a primary IPv4 address. Otherwise, this is a secondary IPv4 address.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Update the flow source of the bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBridgeFlowSourceRequest {
     /// <p>The Amazon Resource Name (ARN) that identifies the MediaConnect resource from which to delete tags.</p>

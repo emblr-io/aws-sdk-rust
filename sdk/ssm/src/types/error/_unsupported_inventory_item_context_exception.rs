@@ -2,6 +2,8 @@
 
 /// <p>The <code>Context</code> attribute that you specified for the <code>InventoryItem</code> isn't allowed for this inventory type. You can only use the <code>Context</code> attribute with inventory types like <code>AWS:ComplianceItem</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedInventoryItemContextException {
     #[allow(missing_docs)] // documentation missing in model

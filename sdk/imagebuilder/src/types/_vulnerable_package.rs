@@ -2,6 +2,8 @@
 
 /// <p>Information about a vulnerable package that Amazon Inspector identifies in a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VulnerablePackage {
     /// <p>The name of the vulnerable package.</p>

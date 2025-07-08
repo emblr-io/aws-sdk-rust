@@ -2,6 +2,8 @@
 
 /// <p>A logical rule statement used to negate the results of another rule statement. You provide one <code>Statement</code> within the <code>NotStatement</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotStatement {
     /// <p>The statement to negate. You can use any statement that can be nested.</p>

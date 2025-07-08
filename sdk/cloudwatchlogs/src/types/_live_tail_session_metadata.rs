@@ -2,6 +2,8 @@
 
 /// <p>This object contains the metadata for one <code>LiveTailSessionUpdate</code> structure. It indicates whether that update includes only a sample of 500 log events out of a larger number of ingested log events, or if it contains all of the matching log events ingested during that second of time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LiveTailSessionMetadata {
     /// <p>If this is <code>true</code>, then more than 500 log events matched the request for this update, and the <code>sessionResults</code> includes a sample of 500 of those events.</p>

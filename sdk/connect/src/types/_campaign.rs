@@ -2,6 +2,8 @@
 
 /// <p>Information associated with a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Campaign {
     /// <p>A unique identifier for a campaign.</p>

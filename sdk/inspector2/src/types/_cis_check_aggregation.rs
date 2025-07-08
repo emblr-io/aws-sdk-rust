@@ -2,6 +2,8 @@
 
 /// <p>A CIS check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CisCheckAggregation {
     /// <p>The scan ARN for the CIS check scan ARN.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The cost allocation tag structure. This includes detailed metadata for the <code>CostAllocationTag</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostAllocationTag {
     /// <p>The key for the cost allocation tag.</p>

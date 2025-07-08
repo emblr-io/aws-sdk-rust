@@ -2,6 +2,8 @@
 
 /// <p>The requested service is not available. For details see the accompanying error message. Retry after the specified time period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

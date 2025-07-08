@@ -2,6 +2,8 @@
 
 /// <p>Defines the values for a task parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MaintenanceWindowTaskParameterValueExpression {
     /// <p>This field contains an array of 0 or more strings, each 1 to 255 characters in length.</p>

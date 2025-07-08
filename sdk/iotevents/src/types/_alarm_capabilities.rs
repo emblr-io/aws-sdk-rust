@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration information of alarm state changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmCapabilities {
     /// <p>Specifies the default alarm state. The configuration applies to all alarms that were created based on this alarm model.</p>

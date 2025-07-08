@@ -3,6 +3,8 @@
 /// <p>An object that identifies an item.</p>
 /// <p>The and APIs return a list of <code>PredictedItem</code>s.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PredictedItem {
     /// <p>The recommended item ID.</p>

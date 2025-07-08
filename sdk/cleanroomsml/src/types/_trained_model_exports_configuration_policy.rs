@@ -2,6 +2,8 @@
 
 /// <p>Information about how the trained model exports are configured.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainedModelExportsConfigurationPolicy {
     /// <p>The maximum size of the data that can be exported.</p>

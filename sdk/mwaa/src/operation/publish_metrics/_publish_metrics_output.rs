@@ -2,6 +2,8 @@
 #[allow(missing_docs)] // documentation missing in model
 #[deprecated(note = "This type is for internal use and not meant for public use. Data set for this type will be ignored.")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublishMetricsOutput {
     _request_id: Option<String>,

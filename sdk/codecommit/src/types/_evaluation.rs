@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the approval rules applied to a pull request and whether conditions have been met.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Evaluation {
     /// <p>Whether the state of the pull request is approved.</p>

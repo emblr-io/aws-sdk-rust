@@ -2,6 +2,8 @@
 
 /// <p>Properties of an inferred CSV format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectedCsvFormatDescriptor {
     /// <p>The format's file compression.</p>

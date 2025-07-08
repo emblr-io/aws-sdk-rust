@@ -2,6 +2,8 @@
 
 /// <p>Attributes of the data specified by the customer. Use these to describe the data to be labeled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HumanLoopDataAttributes {
     /// <p>Declares that your content is free of personally identifiable information or adult content.</p>

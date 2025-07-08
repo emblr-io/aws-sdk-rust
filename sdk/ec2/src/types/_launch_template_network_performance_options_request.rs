@@ -2,6 +2,8 @@
 
 /// <p>When you configure network performance options in your launch template, your instance is geared for performance improvements based on the workload that it runs as soon as it's available.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateNetworkPerformanceOptionsRequest {
     /// <p>Specify the bandwidth weighting option to boost the associated type of baseline bandwidth, as follows:</p>

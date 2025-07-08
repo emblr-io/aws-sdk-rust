@@ -2,6 +2,8 @@
 
 /// <p>The time when a journey will not send messages. QuietTime should be configured first and SendingSchedule should be set to true.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClosedDays {
     /// <p>Rules for the Email channel.</p>

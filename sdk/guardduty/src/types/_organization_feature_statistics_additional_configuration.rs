@@ -2,6 +2,8 @@
 
 /// <p>Information about the coverage statistic for the additional configuration of the feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationFeatureStatisticsAdditionalConfiguration {
     /// <p>Name of the additional configuration within a feature.</p>

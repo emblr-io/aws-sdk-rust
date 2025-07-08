@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration information for the input data for the inference, including timestamp format and delimiter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceInputNameConfiguration {
     /// <p>The format of the timestamp, whether Epoch time, or standard, with or without hyphens (-).</p>

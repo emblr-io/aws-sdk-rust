@@ -4,6 +4,8 @@
 /// <p>This is only used in the context of the <code>ResponseAction</code> setting.</p>
 /// <p>JSON specification: <code>"Block": {}</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockAction {}
 impl BlockAction {

@@ -2,6 +2,8 @@
 
 /// <p>The information for a change request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeBatch {
     /// <p><i>Optional:</i> Any comments you want to include about a change batch request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration of summary metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SummaryMetricConfiguration {
     /// <p>The status of the configuration of summary metrics.</p>

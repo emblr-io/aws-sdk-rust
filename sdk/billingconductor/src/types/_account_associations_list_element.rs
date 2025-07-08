@@ -2,6 +2,8 @@
 
 /// <p>A representation of a linked account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AccountAssociationsListElement {
     /// <p>The associating array of account IDs.</p>

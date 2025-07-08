@@ -2,6 +2,8 @@
 
 /// <p>A summary of information about a provisioning template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisioningTemplateSummary {
     /// <p>The ARN of the provisioning template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request was received and recognized by the server, but the server rejected that particular method for the requested resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLockedException {
     /// <p>The error message the exception carries.</p>

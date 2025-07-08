@@ -2,6 +2,8 @@
 
 /// <p>The input shape for defining a plugin card in an Amazon Q App.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QPluginCardInput {
     /// <p>The title or label of the plugin card.</p>

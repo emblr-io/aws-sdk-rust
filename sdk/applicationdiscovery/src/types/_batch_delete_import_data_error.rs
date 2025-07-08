@@ -2,6 +2,8 @@
 
 /// <p>Error messages returned for each import task that you deleted as a response for this command.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteImportDataError {
     /// <p>The unique import ID associated with the error that occurred.</p>

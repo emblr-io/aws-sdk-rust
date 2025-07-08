@@ -2,6 +2,8 @@
 
 /// <p>You already have a snapshot with the given name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Specifies criteria for including or excluding endpoints from a segment based on how recently an endpoint was active.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecencyDimension {
     /// <p>The duration to use when determining whether an endpoint is active or inactive.</p>

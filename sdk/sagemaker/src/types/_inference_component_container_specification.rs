@@ -2,6 +2,8 @@
 
 /// <p>Defines a container that provides the runtime environment for a model that you deploy with an inference component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceComponentContainerSpecification {
     /// <p>The Amazon Elastic Container Registry (Amazon ECR) path where the Docker image for the model is stored.</p>

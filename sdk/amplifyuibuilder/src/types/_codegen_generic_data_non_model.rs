@@ -2,6 +2,8 @@
 
 /// <p>Describes a non-model in a generic data schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodegenGenericDataNonModel {
     /// <p>The fields in a generic data schema non model.</p>

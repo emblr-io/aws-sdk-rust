@@ -2,6 +2,8 @@
 
 /// <p>The result structure for the create backend environment request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBackendEnvironmentOutput {
     /// <p>Describes the backend environment for an Amplify app.</p>

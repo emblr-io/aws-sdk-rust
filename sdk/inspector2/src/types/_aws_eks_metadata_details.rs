@@ -2,6 +2,8 @@
 
 /// <p>The metadata for an Amazon EKS pod where an Amazon ECR image is in use.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEksMetadataDetails {
     /// <p>The namespace for an Amazon EKS cluster.</p>

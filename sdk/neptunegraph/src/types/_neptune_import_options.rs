@@ -2,6 +2,8 @@
 
 /// <p>Options for how to import Neptune data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NeptuneImportOptions {
     /// <p>The path to an S3 bucket from which to import data.</p>

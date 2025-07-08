@@ -2,6 +2,8 @@
 
 /// <p>Encloses a receipt handle and an entry ID for each message in <code> <code>ChangeMessageVisibilityBatch</code>.</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeMessageVisibilityBatchRequestEntry {
     /// <p>An identifier for this particular receipt handle used to communicate the result.</p><note>

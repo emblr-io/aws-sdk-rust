@@ -2,6 +2,8 @@
 
 /// <p>Contains details about how to handle harmful content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailContentPolicyConfig {
     /// <p>Contains the type of the content filter and how strongly it should apply to prompts and model responses.</p>

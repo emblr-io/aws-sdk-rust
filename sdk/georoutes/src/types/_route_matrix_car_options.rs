@@ -2,6 +2,8 @@
 
 /// <p>Travel mode options when the provided travel mode is <code>Car</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteMatrixCarOptions {
     /// <p>The vehicle License Plate.</p>

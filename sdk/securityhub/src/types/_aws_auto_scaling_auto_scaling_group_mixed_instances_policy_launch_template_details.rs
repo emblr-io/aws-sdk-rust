@@ -2,6 +2,8 @@
 
 /// <p>Describes a launch template and overrides for a mixed instances policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails {
     /// <p>The launch template to use for a mixed instances policy.</p>

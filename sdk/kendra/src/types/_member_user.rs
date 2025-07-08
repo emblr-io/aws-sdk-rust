@@ -2,6 +2,8 @@
 
 /// <p>The users that belong to a group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberUser {
     /// <p>The identifier of the user you want to map to a group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A value that Amazon Lex V2 uses to fulfill an intent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Slot {
     /// <p>The current value of the slot.</p>

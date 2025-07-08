@@ -2,6 +2,8 @@
 
 /// <p>The list of detected instances of sensitive data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomDataIdentifiersDetections {
     /// <p>The total number of occurrences of sensitive data that were detected.</p>

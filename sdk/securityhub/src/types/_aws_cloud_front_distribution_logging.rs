@@ -2,6 +2,8 @@
 
 /// <p>A complex type that controls whether access logs are written for the CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionLogging {
     /// <p>The S3 bucket to store the access logs in.</p>

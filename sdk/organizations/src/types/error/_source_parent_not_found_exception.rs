@@ -2,6 +2,8 @@
 
 /// <p>We can't find a source root or OU with the <code>ParentId</code> that you specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceParentNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

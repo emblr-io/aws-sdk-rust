@@ -2,6 +2,8 @@
 
 /// <p>Maintenance configuration settings for the SageMaker Partner AI App.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartnerAppMaintenanceConfig {
     /// <p>The day and time of the week in Coordinated Universal Time (UTC) 24-hour standard time that weekly maintenance updates are scheduled. This value must take the following format: <code>3-letter-day:24-h-hour:minute</code>. For example: <code>TUE:03:30</code>.</p>

@@ -2,6 +2,8 @@
 
 /// These settings relate to your QuickTime MOV output container.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MovSettings {
     /// When enabled, include 'clap' atom if appropriate for the video output settings.

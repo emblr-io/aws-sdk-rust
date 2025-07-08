@@ -2,6 +2,8 @@
 
 /// <p>An Amazon CloudFront VPC origin configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcOriginConfig {
     /// <p>The VPC origin ID.</p>

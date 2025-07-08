@@ -2,6 +2,8 @@
 
 /// <p>The structure that lists each document processed in an AnalyzeID operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityDocument {
     /// <p>Denotes the placement of a document in the IdentityDocument list. The first document is marked 1, the second 2 and so on.</p>

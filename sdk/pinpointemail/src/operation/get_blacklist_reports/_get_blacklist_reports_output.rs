@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about blacklist events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetBlacklistReportsOutput {
     /// <p>An object that contains information about a blacklist that one of your dedicated IP addresses appears on.</p>

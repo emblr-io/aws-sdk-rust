@@ -2,6 +2,8 @@
 
 /// <p>Formatting options for a VCF file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VcfOptions {
     /// <p>The file's ignore qual field setting.</p>

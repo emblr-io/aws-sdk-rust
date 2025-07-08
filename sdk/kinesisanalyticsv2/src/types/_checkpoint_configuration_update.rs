@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to the checkpointing parameters for a Managed Service for Apache Flink application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CheckpointConfigurationUpdate {
     /// <p>Describes updates to whether the application uses the default checkpointing behavior of Managed Service for Apache Flink. You must set this property to <code>CUSTOM</code> in order to set the <code>CheckpointingEnabled</code>, <code>CheckpointInterval</code>, or <code>MinPauseBetweenCheckpoints</code> parameters.</p><note>

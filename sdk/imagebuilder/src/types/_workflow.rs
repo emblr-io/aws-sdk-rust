@@ -2,6 +2,8 @@
 
 /// <p>Defines a process that Image Builder uses to build and test images during the image creation process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Workflow {
     /// <p>The Amazon Resource Name (ARN) of the workflow resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the action that the bot executes at runtime when the conversation reaches this step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DialogAction {
     /// <p>The action that the bot should execute.</p>

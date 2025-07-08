@@ -2,6 +2,8 @@
 
 /// <p>The dataset options used in dataset source and target configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowDatasetOptions {
     /// <p>The target dataset's data load type. This only affects how source S3 files are selected in the S3-to-dataset flow.</p>

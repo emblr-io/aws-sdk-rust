@@ -2,6 +2,8 @@
 
 /// <p>A structure describing the configuration and details of a storage optimizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageOptimizer {
     /// <p>The specific type of storage optimizer. The supported value is <code>compaction</code>.</p>

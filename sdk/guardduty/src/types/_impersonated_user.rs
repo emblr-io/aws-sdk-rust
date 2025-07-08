@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the impersonated user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImpersonatedUser {
     /// <p>Information about the <code>username</code> that was being impersonated.</p>

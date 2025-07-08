@@ -2,6 +2,8 @@
 
 /// <p>The commit cannot be created because no file mode has been specified. A file mode is required to update mode permissions for a file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileModeRequiredException {
     /// <p>Any message associated with the exception.</p>

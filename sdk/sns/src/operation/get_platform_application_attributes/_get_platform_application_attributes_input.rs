@@ -2,6 +2,8 @@
 
 /// <p>Input for <code>GetPlatformApplicationAttributes</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetPlatformApplicationAttributesInput {
     /// <p><code>PlatformApplicationArn</code> for GetPlatformApplicationAttributesInput.</p>

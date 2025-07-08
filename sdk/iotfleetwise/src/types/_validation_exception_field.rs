@@ -2,6 +2,8 @@
 
 /// <p>A validation error due to mismatch between the expected data type, length, or pattern of the parameter and the input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationExceptionField {
     /// <p>The name of the parameter field with the validation error.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Overrides of the TOSCA node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ToscaOverride {
     /// <p>Name of the TOSCA override.</p>

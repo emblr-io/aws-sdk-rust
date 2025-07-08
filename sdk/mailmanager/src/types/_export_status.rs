@@ -2,6 +2,8 @@
 
 /// <p>The current status of an archive export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportStatus {
     /// <p>The timestamp of when the export job was submitted.</p>

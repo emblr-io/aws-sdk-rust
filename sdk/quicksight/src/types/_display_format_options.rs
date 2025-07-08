@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents additional options for display formatting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisplayFormatOptions {
     /// <p>A Boolean value that indicates whether to use blank cell format.</p>

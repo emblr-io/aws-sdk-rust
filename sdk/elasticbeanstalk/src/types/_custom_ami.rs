@@ -2,6 +2,8 @@
 
 /// <p>A custom AMI available to platforms.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomAmi {
     /// <p>The type of virtualization used to create the custom AMI.</p>

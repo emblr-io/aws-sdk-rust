@@ -6,6 +6,8 @@
 /// </important>
 /// <p>Container for the owner's display name and ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Owner {
     /// <p>Container for the display name of the owner. This value is only supported in the following Amazon Web Services Regions:</p>

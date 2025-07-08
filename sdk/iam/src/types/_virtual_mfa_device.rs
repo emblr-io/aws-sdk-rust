@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a virtual MFA device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct VirtualMfaDevice {
     /// <p>The serial number associated with <code>VirtualMFADevice</code>.</p>

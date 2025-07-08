@@ -2,6 +2,8 @@
 
 /// <p>Describes telemetry for a VPN tunnel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VgwTelemetry {
     /// <p>The number of accepted routes.</p>

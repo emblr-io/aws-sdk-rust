@@ -2,6 +2,8 @@
 
 /// <p>The input structure for Reverse Geocoding operation type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReverseGeocodingConfig {
     /// <p>The field name for the data that describes y-axis coordinate, eg. latitude of a point.</p>

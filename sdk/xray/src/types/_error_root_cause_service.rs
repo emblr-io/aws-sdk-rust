@@ -2,6 +2,8 @@
 
 /// <p>A collection of fields identifying the services in a trace summary error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorRootCauseService {
     /// <p>The service name.</p>

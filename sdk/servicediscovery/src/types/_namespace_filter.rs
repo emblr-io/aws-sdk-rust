@@ -2,6 +2,8 @@
 
 /// <p>A complex type that identifies the namespaces that you want to list. You can choose to list public or private namespaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NamespaceFilter {
     /// <p>Specify the namespaces that you want to get using one of the following.</p>

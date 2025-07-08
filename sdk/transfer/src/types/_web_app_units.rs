@@ -2,6 +2,8 @@
 
 /// <p>Contains an integer value that represents the value for number of concurrent connections or the user sessions on your web app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum WebAppUnits {
     /// <p>An integer that represents the number of units for your desired number of concurrent connections, or the number of user sessions on your web app at the same time.</p>

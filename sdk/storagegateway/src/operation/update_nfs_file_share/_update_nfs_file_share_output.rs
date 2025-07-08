@@ -2,6 +2,8 @@
 
 /// <p>UpdateNFSFileShareOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateNfsFileShareOutput {
     /// <p>The Amazon Resource Name (ARN) of the updated file share.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the values of the specified field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationFieldValueInformation {
     /// <p>The path to the registration form field. You can use <code>DescribeRegistrationFieldDefinitions</code> for a list of <b>FieldPaths</b>.</p>

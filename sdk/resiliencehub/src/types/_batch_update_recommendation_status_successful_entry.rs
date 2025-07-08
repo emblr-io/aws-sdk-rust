@@ -2,6 +2,8 @@
 
 /// <p>List of operational recommendations that were successfully included or excluded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdateRecommendationStatusSuccessfulEntry {
     /// <p>An identifier for an entry in this batch that is used to communicate the result.</p><note>

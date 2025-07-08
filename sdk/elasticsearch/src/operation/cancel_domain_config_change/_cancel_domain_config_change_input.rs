@@ -2,6 +2,8 @@
 
 /// <p>Container for parameters of the <code>CancelDomainConfigChange</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelDomainConfigChangeInput {
     /// <p>Name of the OpenSearch Service domain configuration request to cancel.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The TRN information you provide when you add a new TRN, or update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TaxRegistrationEntry {
     /// <p>Your tax registration unique identifier.</p>

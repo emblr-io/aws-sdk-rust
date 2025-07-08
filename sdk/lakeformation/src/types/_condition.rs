@@ -2,6 +2,8 @@
 
 /// <p>A Lake Formation condition, which applies to permissions and opt-ins that contain an expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Condition {
     /// <p>An expression written based on the Cedar Policy Language used to match the principal attributes.</p>

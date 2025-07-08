@@ -2,6 +2,8 @@
 
 /// <p>Provides replication details for objects stored in the Amazon Security Lake data lake.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeReplicationConfiguration {
     /// <p>Specifies one or more centralized rollup Regions. The Amazon Web Services Region specified in the <code>region</code> parameter of the <a href="https://docs.aws.amazon.com/security-lake/latest/APIReference/API_CreateDataLake.html"> <code>CreateDataLake</code> </a> or <a href="https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html"> <code>UpdateDataLake</code> </a> operations contributes data to the rollup Region or Regions specified in this parameter.</p>

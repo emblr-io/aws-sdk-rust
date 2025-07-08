@@ -2,6 +2,8 @@
 
 /// <p>Specifies the domain unit(s) whose projects can use this asset type while creating asset or asset revisions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UseAssetTypePolicyGrantDetail {
     /// <p>The ID of the domain unit.</p>

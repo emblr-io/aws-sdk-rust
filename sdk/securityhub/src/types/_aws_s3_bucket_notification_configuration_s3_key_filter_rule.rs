@@ -2,6 +2,8 @@
 
 /// <p>Details for a filter rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketNotificationConfigurationS3KeyFilterRule {
     /// <p>Indicates whether the filter is based on the prefix or suffix of the Amazon S3 key.</p>

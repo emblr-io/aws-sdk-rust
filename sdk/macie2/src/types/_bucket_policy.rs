@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the permissions settings of the bucket policy for an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketPolicy {
     /// <p>Specifies whether the bucket policy allows the general public to have read access to the bucket.</p>

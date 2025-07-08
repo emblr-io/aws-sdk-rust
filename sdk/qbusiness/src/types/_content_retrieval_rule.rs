@@ -2,6 +2,8 @@
 
 /// <p>Rules for retrieving content from data sources connected to a Amazon Q Business application for a specific topic control configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContentRetrievalRule {
     /// <p>Specifies data sources in a Amazon Q Business application to use for content generation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it attempted an operation which is not enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisabledOperationException {
     /// <p>A machine-parsable string error or warning code.</p>

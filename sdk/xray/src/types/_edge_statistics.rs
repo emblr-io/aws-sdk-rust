@@ -2,6 +2,8 @@
 
 /// <p>Response statistics for an edge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdgeStatistics {
     /// <p>The number of requests that completed with a 2xx Success status code.</p>

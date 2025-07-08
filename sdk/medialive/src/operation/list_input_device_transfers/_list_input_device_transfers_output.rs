@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for ListInputDeviceTransfersResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListInputDeviceTransfersOutput {
     /// The list of devices that you are transferring or are being transferred to you.

@@ -2,6 +2,8 @@
 
 /// <p>Object for updating the FPorts information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateFPorts {
     /// <p>Positioning FPorts for the ClockSync, Stream, and GNSS functions.</p>

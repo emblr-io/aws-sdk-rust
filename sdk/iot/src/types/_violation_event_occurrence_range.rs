@@ -2,6 +2,8 @@
 
 /// <p>Specifies the time period of which violation events occurred between.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViolationEventOccurrenceRange {
     /// <p>The start date and time of a time period in which violation events occurred.</p>

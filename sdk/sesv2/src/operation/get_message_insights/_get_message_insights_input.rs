@@ -2,6 +2,8 @@
 
 /// <p>A request to return information about a message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetMessageInsightsInput {
     /// <p>A <code>MessageId</code> is a unique identifier for a message, and is returned when sending emails through Amazon SES.</p>

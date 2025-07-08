@@ -2,6 +2,8 @@
 
 /// <p>A subset of information about the engine version for a specific application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineVersionsSummary {
     /// <p>The type of target platform for the application.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A target to which an alert is sent when a security profile behavior is violated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityProfileTarget {
     /// <p>The ARN of the security profile.</p>

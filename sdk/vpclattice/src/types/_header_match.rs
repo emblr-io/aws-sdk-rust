@@ -2,6 +2,8 @@
 
 /// <p>Describes the constraints for a header match. Matches incoming requests with rule based on request header value before applying rule action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HeaderMatch {
     /// <p>The name of the header.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains additional details about the state's execution, including its input and output data processing flow, and HTTP request information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InspectionDataRequest {
     /// <p>The protocol used to make the HTTP request.</p>

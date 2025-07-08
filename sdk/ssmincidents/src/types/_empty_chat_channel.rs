@@ -2,6 +2,8 @@
 
 /// <p>Used to remove the chat channel from an incident record or response plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmptyChatChannel {}
 impl EmptyChatChannel {

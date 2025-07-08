@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the relevance score of content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScoreAttributes {
     /// <p>The confidence level of the relevance score.</p>

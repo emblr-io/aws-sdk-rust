@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because the specified tag key is a reserved word and can't be used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagPolicyViolationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of PutScalingPolicy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutScalingPolicyOutput {
     /// <p>The Amazon Resource Name (ARN) of the policy.</p>

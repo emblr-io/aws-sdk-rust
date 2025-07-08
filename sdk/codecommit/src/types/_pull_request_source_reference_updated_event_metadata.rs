@@ -2,6 +2,8 @@
 
 /// <p>Information about an update to the source branch of a pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullRequestSourceReferenceUpdatedEventMetadata {
     /// <p>The name of the repository where the pull request was updated.</p>

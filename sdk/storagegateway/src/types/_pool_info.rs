@@ -2,6 +2,8 @@
 
 /// <p>Describes a custom tape pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PoolInfo {
     /// <p>The Amazon Resource Name (ARN) of the custom tape pool. Use the <code>ListTapePools</code> operation to return a list of custom tape pools for your account and Amazon Web Services Region.</p>

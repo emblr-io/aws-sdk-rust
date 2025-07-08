@@ -2,6 +2,8 @@
 
 /// <p>A rule group that Firewall Manager tried to associate with a VPC has the same priority as a rule group that's already associated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsRuleGroupPriorityConflictViolation {
     /// <p>Information about the VPC ID.</p>

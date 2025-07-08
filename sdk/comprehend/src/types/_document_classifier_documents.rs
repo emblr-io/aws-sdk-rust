@@ -2,6 +2,8 @@
 
 /// <p>The location of the training documents. This parameter is required in a request to create a semi-structured document classification model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentClassifierDocuments {
     /// <p>The S3 URI location of the training documents specified in the S3Uri CSV file.</p>

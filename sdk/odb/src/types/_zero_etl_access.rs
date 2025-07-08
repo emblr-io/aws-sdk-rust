@@ -2,6 +2,8 @@
 
 /// <p>The configuration for Zero-ETL access from the ODB network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZeroEtlAccess {
     /// <p>The status of the Zero-ETL access.</p>

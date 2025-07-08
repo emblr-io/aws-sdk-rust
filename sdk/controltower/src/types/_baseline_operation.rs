@@ -2,6 +2,8 @@
 
 /// <p>An object of shape <code>BaselineOperation</code>, returning details about the specified <code>Baseline</code> operation ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BaselineOperation {
     /// <p>The identifier of the specified operation.</p>

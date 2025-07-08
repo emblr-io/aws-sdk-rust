@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>RemoveSourceIdentifierFromSubscription</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoveSourceIdentifierFromSubscriptionInput {
     /// <p>The name of the Amazon DocumentDB event notification subscription that you want to remove a source identifier from.</p>

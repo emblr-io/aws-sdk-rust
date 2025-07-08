@@ -2,6 +2,8 @@
 
 /// <p>The rule type, which is made up of the combined values for category, owner, provider, and version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleType {
     /// <p>Represents information about a rule type.</p>

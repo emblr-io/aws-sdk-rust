@@ -3,6 +3,8 @@
 /// <p>An object that identifies an action.</p>
 /// <p>The API returns a list of <code>PredictedAction</code>s.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictedAction {
     /// <p>The ID of the recommended action.</p>

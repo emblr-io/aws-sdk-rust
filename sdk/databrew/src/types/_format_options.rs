@@ -2,6 +2,8 @@
 
 /// <p>Represents a set of options that define the structure of either comma-separated value (CSV), Excel, or JSON input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormatOptions {
     /// <p>Options that define how JSON input is to be interpreted by DataBrew.</p>

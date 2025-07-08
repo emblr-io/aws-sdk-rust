@@ -2,6 +2,8 @@
 #[allow(missing_docs)] // documentation missing in model
 #[deprecated]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct InvokeAsyncInput {
     /// <p>The name or ARN of the Lambda function.</p>
@@ -17,6 +19,7 @@ pub struct InvokeAsyncInput {
     /// <p>The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.</p>
     pub function_name: ::std::option::Option<::std::string::String>,
     /// <p>The JSON that you want to provide to your Lambda function as input.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub invoke_args: ::aws_smithy_types::byte_stream::ByteStream,
 }
 impl InvokeAsyncInput {

@@ -2,6 +2,8 @@
 
 /// <p>Represents a Security Hub administrator account designated by an organization management account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminAccount {
     /// <p>The Amazon Web Services account identifier of the Security Hub administrator account.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains tracing information of the SiteWise Assistant's reasoning and data access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Trace {
     /// <p>The cited text from the data source.</p>

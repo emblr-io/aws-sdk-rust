@@ -2,6 +2,8 @@
 
 /// <p>Contains information about how permissions are configured for the S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionConfiguration {
     /// <p>Contains information about the bucket level permissions for the S3 bucket.</p>

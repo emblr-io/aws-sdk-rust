@@ -2,6 +2,8 @@
 
 /// <p>The summary of a worker configuration revision.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkerConfigurationRevisionSummary {
     /// <p>The time that a worker configuration revision was created.</p>

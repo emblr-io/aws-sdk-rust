@@ -2,6 +2,8 @@
 
 /// <p>A list of environment parameters suggested by the Amazon SageMaker Inference Recommender.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentParameter {
     /// <p>The environment key suggested by the Amazon SageMaker Inference Recommender.</p>

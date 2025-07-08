@@ -2,6 +2,8 @@
 
 /// <p>Describes the data feed for a Spot Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotDatafeedSubscription {
     /// <p>The name of the Amazon S3 bucket where the Spot Instance data feed is located.</p>

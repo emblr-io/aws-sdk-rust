@@ -6,6 +6,8 @@
 /// <p>An object that provides information about a solution. A solution includes the custom recipe, customized parameters, and trained models (Solution Versions) that Amazon Personalize uses to generate recommendations.</p>
 /// <p>After you create a solution, you can’t change its configuration. If you need to make changes, you can <a href="https://docs.aws.amazon.com/personalize/latest/dg/cloning-solution.html">clone the solution</a> with the Amazon Personalize console or create a new one.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Solution {
     /// <p>The name of the solution.</p>

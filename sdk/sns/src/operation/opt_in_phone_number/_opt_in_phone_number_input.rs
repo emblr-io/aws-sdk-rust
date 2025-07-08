@@ -2,6 +2,8 @@
 
 /// <p>Input for the OptInPhoneNumber action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OptInPhoneNumberInput {
     /// <p>The phone number to opt in. Use E.164 format.</p>

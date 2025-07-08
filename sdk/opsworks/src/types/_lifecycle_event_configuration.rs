@@ -2,6 +2,8 @@
 
 /// <p>Specifies the lifecycle event configuration</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleEventConfiguration {
     /// <p>A <code>ShutdownEventConfiguration</code> object that specifies the Shutdown event configuration.</p>

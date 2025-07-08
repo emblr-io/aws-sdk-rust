@@ -2,6 +2,8 @@
 
 /// <p>Information about logging for the S3 bucket</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketLoggingConfiguration {
     /// <p>The name of the S3 bucket where log files for the S3 bucket are stored.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Short for uniform resource locator. A URL is used as a unique identifier to locate a resource on the internet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Url {
     /// <p>The name or word that's used as a hyperlink to the URL.</p>

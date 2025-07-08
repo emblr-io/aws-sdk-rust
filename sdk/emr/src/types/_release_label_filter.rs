@@ -2,6 +2,8 @@
 
 /// <p>The release label filters by application or version prefix.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReleaseLabelFilter {
     /// <p>Optional release label version prefix filter. For example, <code>emr-5</code>.</p>

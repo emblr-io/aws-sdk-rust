@@ -3,6 +3,8 @@
 /// <p>This structure defines one label set used to enforce active time series limits for the workspace, and defines the limit for that label set.</p>
 /// <p>A label set is a unique combination of label-value pairs. Use them to control time series limits and to monitor usage by specific label groups. Example label sets might be <code>team:finance</code> or <code>env:prod</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitsPerLabelSet {
     /// <p>This structure contains the information about the limits that apply to time series that match this label set.</p>

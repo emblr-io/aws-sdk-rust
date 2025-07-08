@@ -2,6 +2,8 @@
 
 /// Probe results for your media file.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProbeResult {
     /// The container of your media file. This information helps you understand the overall structure and details of your media, including format, duration, and track layout.

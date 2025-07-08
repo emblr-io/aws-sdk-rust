@@ -2,6 +2,8 @@
 
 /// <p>Information about the installed EKS add-on (GuardDuty security agent).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddonDetails {
     /// <p>Version of the installed EKS add-on.</p>

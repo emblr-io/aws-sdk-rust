@@ -2,6 +2,8 @@
 
 /// <p>Specifies the MQTT context to use for the test authorizer request</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MqttContext {
     /// <p>The value of the <code>username</code> key in an MQTT authorization request.</p>

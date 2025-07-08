@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a source file's formatting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileFormatDescriptor {
     /// <p>Contains information about how a source CSV data file should be analyzed.</p>

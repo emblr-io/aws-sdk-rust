@@ -2,6 +2,8 @@
 
 /// <p>Actions defined in the Glue Studio data preparation recipe node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecipeAction {
     /// <p>The operation of the recipe action.</p>

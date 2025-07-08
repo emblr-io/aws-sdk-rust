@@ -2,6 +2,8 @@
 
 /// <p>The configured table association analysis rule applied to a configured table with the list analysis rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTableAssociationAnalysisRuleList {
     /// <p>The list of collaboration members who are allowed to receive results of queries run with this configured table.</p>

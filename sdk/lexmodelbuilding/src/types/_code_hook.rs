@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Lambda function that verifies requests to a bot or fulfills the user's request to a bot..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeHook {
     /// <p>The Amazon Resource Name (ARN) of the Lambda function.</p>

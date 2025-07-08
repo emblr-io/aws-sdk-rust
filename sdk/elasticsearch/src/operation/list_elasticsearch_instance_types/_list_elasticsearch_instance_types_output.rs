@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters returned by <code> <code>ListElasticsearchInstanceTypes</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListElasticsearchInstanceTypesOutput {
     /// <p>List of instance types supported by Amazon Elasticsearch service for given <code> <code>ElasticsearchVersion</code> </code></p>

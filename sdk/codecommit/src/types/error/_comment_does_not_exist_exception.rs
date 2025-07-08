@@ -2,6 +2,8 @@
 
 /// <p>No comment exists with the provided ID. Verify that you have used the correct ID, and then try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommentDoesNotExistException {
     /// <p>Any message associated with the exception.</p>

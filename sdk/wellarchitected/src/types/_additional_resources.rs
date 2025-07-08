@@ -3,6 +3,8 @@
 /// <p>The choice level additional resources for a custom lens.</p>
 /// <p>This field does not apply to Amazon Web Services official lenses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalResources {
     /// <p>Type of additional resource for a custom lens.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A pair that contains metric values at the respective timestamp.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestampMetricValuePair {
     /// <p>A <code>Timestamp</code> that specifies the time the event occurred.</p>

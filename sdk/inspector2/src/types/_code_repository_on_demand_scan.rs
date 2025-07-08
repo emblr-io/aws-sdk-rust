@@ -2,6 +2,8 @@
 
 /// <p>Contains information about on-demand scans performed on a code repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeRepositoryOnDemandScan {
     /// <p>The ID of the last commit that was scanned during an on-demand scan.</p>

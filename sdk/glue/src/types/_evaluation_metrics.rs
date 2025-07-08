@@ -2,6 +2,8 @@
 
 /// <p>Evaluation metrics provide an estimate of the quality of your machine learning transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationMetrics {
     /// <p>The type of machine learning transform.</p>

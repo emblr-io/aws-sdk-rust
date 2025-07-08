@@ -2,6 +2,8 @@
 
 /// <p>Entity that comprises information on sensors that have sensor data completely missing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissingCompleteSensorData {
     /// <p>Indicates the number of sensors that have data missing completely.</p>

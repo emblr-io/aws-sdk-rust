@@ -2,6 +2,8 @@
 
 /// <p>Assigns a value to a named Pipeline parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Parameter {
     /// <p>The name of the parameter to assign a value to. This parameter name must match a named parameter in the pipeline definition.</p>

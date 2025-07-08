@@ -2,6 +2,8 @@
 
 /// <p>Contains details for an image resource that was identified for a lifecycle action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExecutionResourcesImpactedSummary {
     /// <p>Indicates whether an image resource that was identified for a lifecycle action has associated resources that are also impacted.</p>

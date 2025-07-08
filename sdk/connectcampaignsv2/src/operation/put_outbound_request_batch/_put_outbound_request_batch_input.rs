@@ -2,6 +2,8 @@
 
 /// The request for PutOutboundRequestBatch API.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutOutboundRequestBatchInput {
     /// Identifier representing a Campaign

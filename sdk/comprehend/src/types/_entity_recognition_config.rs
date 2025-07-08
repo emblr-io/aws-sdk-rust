@@ -2,6 +2,8 @@
 
 /// <p>Configuration required for an entity recognition model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityRecognitionConfig {
     /// <p>Up to 25 entity types that the model is trained to recognize.</p>

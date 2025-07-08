@@ -2,6 +2,8 @@
 
 /// <p>Contains the elements that set the ACL permissions for an object per grantee.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessControlPolicy {
     /// <p>A list of grants.</p>

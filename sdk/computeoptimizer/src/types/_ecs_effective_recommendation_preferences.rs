@@ -2,6 +2,8 @@
 
 /// <p>Describes the effective recommendation preferences for Amazon ECS services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsEffectiveRecommendationPreferences {
     /// <p>Describes the savings estimation mode preference applied for calculating savings opportunity for Amazon ECS services.</p>

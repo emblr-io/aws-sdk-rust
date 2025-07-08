@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of a bill estimate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillEstimateSummary {
     /// <p>The unique identifier of the bill estimate.</p>

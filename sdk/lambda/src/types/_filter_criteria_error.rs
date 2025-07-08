@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about an error related to filter criteria encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterCriteriaError {
     /// <p>The KMS exception that resulted from filter criteria encryption or decryption.</p>

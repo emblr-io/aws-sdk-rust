@@ -2,6 +2,8 @@
 
 /// <p>Defines the traffic pattern.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Phase {
     /// <p>Specifies how many concurrent users to start with. The value should be between 1 and 3.</p>

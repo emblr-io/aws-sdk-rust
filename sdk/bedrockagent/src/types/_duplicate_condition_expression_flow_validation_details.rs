@@ -2,6 +2,8 @@
 
 /// <p>Details about duplicate condition expressions found in a condition node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DuplicateConditionExpressionFlowValidationDetails {
     /// <p>The name of the node containing the duplicate condition expressions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Creates a CloudFormation step output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCloudFormationStepOutput {
     /// <p>The stack ID of the CloudFormation step output.</p>

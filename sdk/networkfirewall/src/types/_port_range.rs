@@ -2,6 +2,8 @@
 
 /// <p>A single port range specification. This is used for source and destination port ranges in the stateless rule <code>MatchAttributes</code>, <code>SourcePorts</code>, and <code>DestinationPorts</code> settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PortRange {
     /// <p>The lower limit of the port range. This must be less than or equal to the <code>ToPort</code> specification.</p>

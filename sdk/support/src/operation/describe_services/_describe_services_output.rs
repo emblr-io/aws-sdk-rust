@@ -2,6 +2,8 @@
 
 /// <p>The list of Amazon Web Services services returned by the <code>DescribeServices</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeServicesOutput {
     /// <p>A JSON-formatted list of Amazon Web Services services.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the email sent when an app user forgets their password.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmailSettings {
     /// <p>The contents of the email message.</p>

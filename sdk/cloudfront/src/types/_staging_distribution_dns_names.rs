@@ -2,6 +2,8 @@
 
 /// <p>The CloudFront domain name of the staging distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StagingDistributionDnsNames {
     /// <p>The number of CloudFront domain names in your staging distribution.</p>

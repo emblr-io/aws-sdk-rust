@@ -2,6 +2,8 @@
 
 /// <p>Specifies an XML classifier for <code>CreateClassifier</code> to create.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateXmlClassifierRequest {
     /// <p>An identifier of the data format that the classifier matches.</p>

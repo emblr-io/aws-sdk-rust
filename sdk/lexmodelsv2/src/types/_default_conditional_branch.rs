@@ -2,6 +2,8 @@
 
 /// <p>A set of actions that Amazon Lex should run if none of the other conditions are met.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultConditionalBranch {
     /// <p>The next step in the conversation.</p>

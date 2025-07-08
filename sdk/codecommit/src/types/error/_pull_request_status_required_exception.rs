@@ -2,6 +2,8 @@
 
 /// <p>A pull request status is required, but none was provided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullRequestStatusRequiredException {
     /// <p>Any message associated with the exception.</p>

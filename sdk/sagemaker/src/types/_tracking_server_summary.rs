@@ -2,6 +2,8 @@
 
 /// <p>The summary of the tracking server to list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingServerSummary {
     /// <p>The ARN of a listed tracking server.</p>

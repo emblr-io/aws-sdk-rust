@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Rabbit MQ broker as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipeSourceRabbitMqBrokerParameters {
     /// <p>The credentials needed to access the resource.</p>

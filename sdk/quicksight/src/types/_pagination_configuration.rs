@@ -2,6 +2,8 @@
 
 /// <p>The pagination configuration for a table visual or boxplot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PaginationConfiguration {
     /// <p>Indicates how many items render in one page.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Returns of list of resources that doesn't have idle recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdleRecommendationError {
     /// <p>The ID of the error.</p>

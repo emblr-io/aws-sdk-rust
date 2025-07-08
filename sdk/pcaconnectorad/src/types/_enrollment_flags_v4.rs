@@ -2,6 +2,8 @@
 
 /// <p>Template configurations for v4 template schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnrollmentFlagsV4 {
     /// <p>Include symmetric algorithms allowed by the subject.</p>

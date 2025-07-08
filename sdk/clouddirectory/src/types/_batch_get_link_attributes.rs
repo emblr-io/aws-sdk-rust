@@ -2,6 +2,8 @@
 
 /// <p>Retrieves attributes that are associated with a typed link inside a <code>BatchRead</code> operation. For more information, see <code>GetLinkAttributes</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetLinkAttributes {
     /// <p>Allows a typed link specifier to be accepted as input.</p>

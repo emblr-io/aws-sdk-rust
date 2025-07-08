@@ -2,6 +2,8 @@
 
 /// <p>The description of the Time to Live (TTL) status on the specified table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeToLiveDescription {
     /// <p>The TTL status for the table.</p>

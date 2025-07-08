@@ -2,6 +2,8 @@
 
 /// <p>A stateless rule group that is used by the firewall policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallPolicyStatelessRuleGroupReferencesDetails {
     /// <p>The order in which to run the stateless rule group.</p>

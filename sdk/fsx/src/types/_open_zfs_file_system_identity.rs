@@ -2,6 +2,8 @@
 
 /// <p>Specifies the file system user identity that will be used for authorizing all file access requests that are made using the S3 access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenZfsFileSystemIdentity {
     /// <p>Specifies the FSx for OpenZFS user identity type, accepts only <code>POSIX</code>.</p>

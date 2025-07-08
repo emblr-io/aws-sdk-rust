@@ -2,6 +2,8 @@
 
 /// <p>The network field that contains a list of network metrics that are associated with the current instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkResourceUtilization {
     /// <p>The network inbound throughput utilization measured in Bytes per second (Bps).</p>

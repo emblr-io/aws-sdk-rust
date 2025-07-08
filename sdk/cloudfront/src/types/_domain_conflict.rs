@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the domain conflict. Use this information to determine the affected domain, the related resource, and the affected Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainConflict {
     /// <p>The domain used to find existing conflicts for domain configurations.</p>

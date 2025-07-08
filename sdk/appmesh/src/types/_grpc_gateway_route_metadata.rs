@@ -2,6 +2,8 @@
 
 /// <p>An object representing the metadata of the gateway route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrpcGatewayRouteMetadata {
     /// <p>A name for the gateway route metadata.</p>

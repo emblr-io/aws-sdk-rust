@@ -2,6 +2,8 @@
 
 /// <p>Options that specify the subnets and security groups for an OpenSearch Ingestion VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcOptions {
     /// <p>A list of subnet IDs associated with the VPC endpoint.</p>

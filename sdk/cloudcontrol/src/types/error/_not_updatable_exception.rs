@@ -2,6 +2,8 @@
 
 /// <p>One or more properties included in this resource operation are defined as create-only, and therefore can't be updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotUpdatableException {
     #[allow(missing_docs)] // documentation missing in model

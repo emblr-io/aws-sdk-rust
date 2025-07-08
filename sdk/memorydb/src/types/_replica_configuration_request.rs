@@ -2,6 +2,8 @@
 
 /// <p>A request to configure the number of replicas in a shard</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicaConfigurationRequest {
     /// <p>The number of replicas to scale up or down to</p>

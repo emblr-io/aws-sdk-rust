@@ -2,6 +2,8 @@
 
 /// <p>Authorization-related configuration inputs for the security configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationConfiguration {
     /// <p>Lake Formation related configuration inputs for the security configuration.</p>

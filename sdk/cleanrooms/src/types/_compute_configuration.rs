@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the compute resources for an analysis with the Spark analytics engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ComputeConfiguration {
     /// <p>The worker configuration for the compute environment.</p>

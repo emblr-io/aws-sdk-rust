@@ -2,6 +2,8 @@
 
 /// <p>The formatting configuration for the icon.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionalFormattingIcon {
     /// <p>Formatting configuration for icon set.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Attaches a typed link to a specified source and target object inside a <code>BatchRead</code> operation. For more information, see <code>AttachTypedLink</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAttachTypedLink {
     /// <p>Identifies the source object that the typed link will attach to.</p>

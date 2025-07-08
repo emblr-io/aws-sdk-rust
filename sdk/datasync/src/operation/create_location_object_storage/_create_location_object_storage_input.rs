@@ -2,6 +2,8 @@
 
 /// <p>CreateLocationObjectStorageRequest</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateLocationObjectStorageInput {
     /// <p>Specifies the domain name or IP version 4 (IPv4) address of the object storage server that your DataSync agent connects to.</p>

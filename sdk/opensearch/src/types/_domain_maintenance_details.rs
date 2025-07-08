@@ -2,6 +2,8 @@
 
 /// <p>Container for the domain maintenance details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainMaintenanceDetails {
     /// <p>The ID of the requested action.</p>

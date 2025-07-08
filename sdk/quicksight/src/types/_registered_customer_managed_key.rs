@@ -8,6 +8,8 @@
 /// <p><code>DefaultKey</code> - Indicates whether the current key is set as the default key for encryption and decryption use.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisteredCustomerManagedKey {
     /// <p>The ARN of the KMS key that is registered to a Amazon QuickSight account for encryption and decryption use.</p>

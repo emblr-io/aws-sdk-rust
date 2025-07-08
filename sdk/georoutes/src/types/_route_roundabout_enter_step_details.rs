@@ -2,6 +2,8 @@
 
 /// <p>Details about the roundabout leg.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteRoundaboutEnterStepDetails {
     /// <p>Name of the intersection, if applicable to the step.</p>

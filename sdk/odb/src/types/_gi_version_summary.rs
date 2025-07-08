@@ -2,6 +2,8 @@
 
 /// <p>Information about a specific version of Oracle Grid Infrastructure (GI) software that can be installed on a VM cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GiVersionSummary {
     /// <p>The GI software version.</p>

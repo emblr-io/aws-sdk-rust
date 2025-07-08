@@ -2,6 +2,8 @@
 
 /// <p>Configures the properties of a chart's axes that are used by small multiples panels.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmallMultiplesAxisProperties {
     /// <p>Determines whether scale of the axes are shared or independent. The default value is <code>SHARED</code>.</p>

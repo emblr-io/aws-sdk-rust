@@ -2,6 +2,8 @@
 
 /// <p>Information about a schema extension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaExtensionInfo {
     /// <p>The identifier of the directory to which the schema extension is applied.</p>

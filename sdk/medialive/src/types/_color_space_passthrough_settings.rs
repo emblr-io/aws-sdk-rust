@@ -2,6 +2,8 @@
 
 /// Passthrough applies no color space conversion to the output
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColorSpacePassthroughSettings {}
 impl ColorSpacePassthroughSettings {

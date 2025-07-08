@@ -2,6 +2,8 @@
 
 /// <p>The aggregated structure to store DICOM study date and study time for search capabilities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DicomStudyDateAndTime {
     /// <p>The DICOM study date provided in <code>yyMMdd</code> format.</p>

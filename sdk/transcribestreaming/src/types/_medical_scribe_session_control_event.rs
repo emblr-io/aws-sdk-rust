@@ -2,6 +2,8 @@
 
 /// <p>Specify the lifecycle of your streaming session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeSessionControlEvent {
     /// <p>The type of <code>MedicalScribeSessionControlEvent</code>.</p>

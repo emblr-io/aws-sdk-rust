@@ -4,6 +4,8 @@
 /// <p>Cloud Map is not available in the eu-south-1 Region.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudMapServiceDiscovery {
     /// <p>The name of the Cloud Map namespace to use.</p>

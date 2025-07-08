@@ -2,6 +2,8 @@
 
 /// <p>Provides the information necessary for a user to access the logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogsConfigurationPolicy {
     /// <p>A list of account IDs that are allowed to access the logs.</p>

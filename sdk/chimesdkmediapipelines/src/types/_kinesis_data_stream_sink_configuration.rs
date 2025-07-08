@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration settings for a Kinesis Data Stream sink.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KinesisDataStreamSinkConfiguration {
     /// <p>The ARN of the sink.</p>

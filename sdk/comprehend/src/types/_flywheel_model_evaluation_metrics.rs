@@ -2,6 +2,8 @@
 
 /// <p>The evaluation metrics associated with the evaluated model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlywheelModelEvaluationMetrics {
     /// <p>The average F1 score from the evaluation metrics.</p>

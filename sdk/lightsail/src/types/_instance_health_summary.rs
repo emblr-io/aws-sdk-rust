@@ -2,6 +2,8 @@
 
 /// <p>Describes information about the health of the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceHealthSummary {
     /// <p>The name of the Lightsail instance for which you are requesting health check data.</p>

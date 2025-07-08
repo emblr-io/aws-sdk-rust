@@ -2,6 +2,8 @@
 
 /// <p>Artifact details for the action execution, such as the artifact location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArtifactDetail {
     /// <p>The artifact object name for the action execution.</p>

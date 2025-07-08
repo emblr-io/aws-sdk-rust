@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a device that Linux processes in a container can access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaDeviceMount {
     /// <p>The mount path for the device in the file system.</p>

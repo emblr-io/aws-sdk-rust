@@ -2,6 +2,8 @@
 
 /// <p>Information about the feedback.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ContentFeedbackData {
     /// <p>Information about the feedback for a generative target type.</p>

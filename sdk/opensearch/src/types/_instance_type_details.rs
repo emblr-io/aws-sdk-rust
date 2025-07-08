@@ -2,6 +2,8 @@
 
 /// <p>Lists all instance types and available features for a given OpenSearch or Elasticsearch version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceTypeDetails {
     /// <p>The instance type.</p>

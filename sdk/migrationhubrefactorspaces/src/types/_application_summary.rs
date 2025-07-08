@@ -2,6 +2,8 @@
 
 /// <p>The list of <code>ApplicationSummary</code> objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ApplicationSummary {
     /// <p>The name of the application.</p>

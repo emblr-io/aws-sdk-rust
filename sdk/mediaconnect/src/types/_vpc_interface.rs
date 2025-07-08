@@ -2,6 +2,8 @@
 
 /// <p>The settings for a VPC source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcInterface {
     /// <p>Immutable and has to be a unique against other VpcInterfaces in this Flow.</p>

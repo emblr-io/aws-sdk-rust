@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field well of a scatter plot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScatterPlotCategoricallyAggregatedFieldWells {
     /// <p>The x-axis field well of a scatter plot.</p>

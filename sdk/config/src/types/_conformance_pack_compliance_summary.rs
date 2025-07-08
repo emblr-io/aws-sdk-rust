@@ -2,6 +2,8 @@
 
 /// <p>Summary includes the name and status of the conformance pack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConformancePackComplianceSummary {
     /// <p>The name of the conformance pack name.</p>

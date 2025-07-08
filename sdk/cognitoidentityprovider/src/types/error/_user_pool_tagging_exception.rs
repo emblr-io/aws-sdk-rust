@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a user pool tag can't be set or updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserPoolTaggingException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The container for the metadata for Fail step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailStepMetadata {
     /// <p>A message that you define and then is processed and rendered by the Fail step when the error occurs.</p>

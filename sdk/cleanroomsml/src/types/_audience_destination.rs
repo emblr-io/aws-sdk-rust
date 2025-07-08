@@ -2,6 +2,8 @@
 
 /// <p>Defines the Amazon S3 bucket where the configured audience is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudienceDestination {
     /// <p>The Amazon S3 bucket and path for the configured audience.</p>

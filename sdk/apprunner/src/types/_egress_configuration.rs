@@ -2,6 +2,8 @@
 
 /// <p>Describes configuration settings related to outbound network traffic of an App Runner service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EgressConfiguration {
     /// <p>The type of egress configuration.</p>

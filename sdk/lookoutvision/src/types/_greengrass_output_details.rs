@@ -2,6 +2,8 @@
 
 /// <p>Information about the AWS IoT Greengrass component created by a model packaging job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GreengrassOutputDetails {
     /// <p>The Amazon Resource Name (ARN) of the component.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details if the toll rate can be a pass that supports multiple trips.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteTollPass {
     /// <p>If the pass includes the rate for the return leg of the trip.</p>

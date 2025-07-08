@@ -2,6 +2,8 @@
 
 /// <p>A time range for which the margin summary is effective. The time range can be up to 12 months.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillingPeriodRange {
     /// <p>The inclusive start billing period that defines a billing period range for the margin summary.</p>

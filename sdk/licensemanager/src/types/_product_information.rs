@@ -2,6 +2,8 @@
 
 /// <p>Describes product information for a license configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductInformation {
     /// <p>Resource type. The possible values are <code>SSM_MANAGED</code> | <code>RDS</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request could not be processed because of conflict in the current state of the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictException {
     /// <p>The existing task ARNs which are already associated with the <code>clientToken</code>.</p>

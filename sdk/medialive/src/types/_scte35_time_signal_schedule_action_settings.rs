@@ -2,6 +2,8 @@
 
 /// Settings for a SCTE-35 time_signal.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte35TimeSignalScheduleActionSettings {
     /// The list of SCTE-35 descriptors accompanying the SCTE-35 time_signal.

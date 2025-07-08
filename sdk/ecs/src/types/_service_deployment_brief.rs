@@ -3,6 +3,8 @@
 /// <p>The service deployment properties that are retured when you call <code>ListServiceDeployments</code>.</p>
 /// <p>This provides a high-level overview of the service deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDeploymentBrief {
     /// <p>The ARN of the service deployment.</p>

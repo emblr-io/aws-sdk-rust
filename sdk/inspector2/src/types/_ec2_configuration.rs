@@ -2,6 +2,8 @@
 
 /// <p>Enables agent-based scanning, which scans instances that are not managed by SSM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2Configuration {
     /// <p>The scan method that is applied to the instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Sends an input to an IoT Events detector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotEventsAction {
     /// <p>The name of the IoT Events input.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the numerical and qualitative representations of a finding's severity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Severity {
     /// <p>The qualitative representation of the finding's severity, ranging from Low (least severe) to High (most severe).</p>

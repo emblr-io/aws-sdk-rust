@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the account making the request is not the management account for the organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallerIsNotManagementAccountException {
     #[allow(missing_docs)] // documentation missing in model

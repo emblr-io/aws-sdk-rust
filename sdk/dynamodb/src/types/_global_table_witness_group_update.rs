@@ -9,6 +9,8 @@
 /// </ul>
 /// <p>You can configure one witness per MRSC global table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalTableWitnessGroupUpdate {
     /// <p>Specifies a witness Region to be added to a new MRSC global table. The witness must be added when creating the MRSC global table.</p>

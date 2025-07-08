@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair that adds as a metadata to a resource used by Amazon Translate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>The initial part of a key-value pair that forms a tag associated with a given resource.</p>

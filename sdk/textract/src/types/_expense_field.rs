@@ -2,6 +2,8 @@
 
 /// <p>Breakdown of detected information, seperated into the catagories Type, LabelDetection, and ValueDetection</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpenseField {
     /// <p>The implied label of a detected element. Present alongside LabelDetection for explicit elements.</p>

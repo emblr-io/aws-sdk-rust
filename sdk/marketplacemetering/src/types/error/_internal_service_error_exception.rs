@@ -2,6 +2,8 @@
 
 /// <p>An internal error has occurred. Retry your request. If the problem persists, post a message with details on the Amazon Web Services forums.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServiceErrorException {
     #[allow(missing_docs)] // documentation missing in model

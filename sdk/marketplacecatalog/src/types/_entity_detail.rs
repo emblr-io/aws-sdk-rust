@@ -2,6 +2,8 @@
 
 /// <p>An object that contains metadata and details about the entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityDetail {
     /// <p>The entity type of the entity, in the format of <code>EntityType@Version</code>.</p>

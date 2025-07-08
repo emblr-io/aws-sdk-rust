@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the AddNotificationChannelsRequest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddNotificationChannelsInput {
     /// <p>The name of the profiling group that we are setting up notifications for.</p>

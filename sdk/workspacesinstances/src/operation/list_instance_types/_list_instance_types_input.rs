@@ -2,6 +2,8 @@
 
 /// <p>Defines input parameters for retrieving supported WorkSpaces Instances instance types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListInstanceTypesInput {
     /// <p>Maximum number of instance types to return in a single API call. Enables pagination of instance type results.</p>

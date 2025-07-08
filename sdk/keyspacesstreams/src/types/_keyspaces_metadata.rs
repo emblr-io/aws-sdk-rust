@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata information associated with Amazon Keyspaces cells and rows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyspacesMetadata {
     /// <p>The time at which the associated data will expire, based on the time-to-live (TTL) setting.</p>

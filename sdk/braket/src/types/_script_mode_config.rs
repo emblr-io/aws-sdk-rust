@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Python scripts used for entry and by an Amazon Braket job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScriptModeConfig {
     /// <p>The path to the Python script that serves as the entry point for an Amazon Braket job.</p>

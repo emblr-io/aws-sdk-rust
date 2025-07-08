@@ -2,6 +2,8 @@
 
 /// <p>Egress address of AgentEndpoint with an optional mtu.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionDetails {
     /// <p>A socket address.</p>

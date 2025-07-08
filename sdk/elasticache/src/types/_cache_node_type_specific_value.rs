@@ -2,6 +2,8 @@
 
 /// <p>A value that applies only to a certain cache node type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheNodeTypeSpecificValue {
     /// <p>The cache node type for which this value applies.</p>

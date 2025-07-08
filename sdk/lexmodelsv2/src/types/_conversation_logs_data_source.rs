@@ -2,6 +2,8 @@
 
 /// <p>The data source that uses conversation logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLogsDataSource {
     /// <p>The bot Id from the conversation logs.</p>

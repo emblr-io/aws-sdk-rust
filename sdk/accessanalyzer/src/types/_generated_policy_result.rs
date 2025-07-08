@@ -2,6 +2,8 @@
 
 /// <p>Contains the text for the generated policy and its details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeneratedPolicyResult {
     /// <p>A <code>GeneratedPolicyProperties</code> object that contains properties of the generated policy.</p>

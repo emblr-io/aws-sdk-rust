@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DeleteWorkspace</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteWorkspaceInput {
     /// <p>The ID of the workspace to delete.</p>

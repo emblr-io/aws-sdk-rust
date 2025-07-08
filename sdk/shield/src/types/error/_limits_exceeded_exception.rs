@@ -2,6 +2,8 @@
 
 /// <p>Exception that indicates that the operation would exceed a limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitsExceededException {
     #[allow(missing_docs)] // documentation missing in model

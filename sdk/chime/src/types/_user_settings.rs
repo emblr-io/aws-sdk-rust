@@ -2,6 +2,8 @@
 
 /// <p>Settings associated with an Amazon Chime user, including inbound and outbound calling and text messaging.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserSettings {
     /// <p>The telephony settings associated with the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a device pool compatibility result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DevicePoolCompatibilityResult {
     /// <p>The device (phone or tablet) to return information about.</p>

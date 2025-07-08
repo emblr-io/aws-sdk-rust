@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines the time range that you want to retrieve results from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeRange {
     /// <p>The beginning of the time range to retrieve performance events from.</p>

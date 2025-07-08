@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the code interpreter being invoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeInterpreterInvocationInput {
     /// <p>The code for the code interpreter to use.</p>

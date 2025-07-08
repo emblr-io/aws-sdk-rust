@@ -2,6 +2,8 @@
 
 /// <p>Additional options for the domain endpoint, such as whether to require HTTPS for all traffic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainDomainEndpointOptions {
     /// <p>Whether to require that all traffic to the domain arrive over HTTPS.</p>

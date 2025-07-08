@@ -2,6 +2,8 @@
 
 /// <p>Contains information about your data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatastoreStorageSummary {
     /// <p>Used to store data in an Amazon S3 bucket managed by IoT Analytics.</p>

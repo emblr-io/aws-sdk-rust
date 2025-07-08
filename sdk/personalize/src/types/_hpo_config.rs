@@ -2,6 +2,8 @@
 
 /// <p>Describes the properties for hyperparameter optimization (HPO).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HpoConfig {
     /// <p>The metric to optimize during HPO.</p><note>

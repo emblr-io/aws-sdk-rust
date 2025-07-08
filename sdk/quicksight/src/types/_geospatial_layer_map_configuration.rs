@@ -2,6 +2,8 @@
 
 /// <p>The map definition that defines map state, map style, and geospatial layers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialLayerMapConfiguration {
     /// <p>The options for the legend setup of a visual.</p>

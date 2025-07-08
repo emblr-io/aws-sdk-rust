@@ -2,6 +2,8 @@
 
 /// <p>DescribeNFSFileSharesInput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeNfsFileSharesInput {
     /// <p>An array containing the Amazon Resource Name (ARN) of each file share to be described.</p>

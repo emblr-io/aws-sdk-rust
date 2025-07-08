@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about an entry violation in a network ACL. The violation is against the network ACL specification inside the Firewall Manager network ACL policy. This data object is part of <code>InvalidNetworkAclEntriesViolation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntryViolation {
     /// <p>The Firewall Manager-managed network ACL entry that is involved in the entry violation.</p>

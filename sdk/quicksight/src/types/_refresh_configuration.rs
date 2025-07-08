@@ -2,6 +2,8 @@
 
 /// <p>The refresh configuration of a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshConfiguration {
     /// <p>The incremental refresh for the dataset.</p>

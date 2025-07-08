@@ -3,6 +3,8 @@
 /// <p>Provides summary information about an App Runner observability configuration resource.</p>
 /// <p>This type contains limited information about an observability configuration. It includes only identification information, without configuration details. It's returned by the <code>ListObservabilityConfigurations</code> action. Complete configuration information is returned by the <code>CreateObservabilityConfiguration</code>, <code>DescribeObservabilityConfiguration</code>, and <code>DeleteObservabilityConfiguration</code> actions using the <code>ObservabilityConfiguration</code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObservabilityConfigurationSummary {
     /// <p>The Amazon Resource Name (ARN) of this observability configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Indicates you do not have decrypt permissions with the KMS key entered, or the KMS key was entered incorrectly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidKmsKeyException {
     #[allow(missing_docs)] // documentation missing in model

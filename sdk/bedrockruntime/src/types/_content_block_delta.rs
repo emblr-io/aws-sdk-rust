@@ -2,6 +2,8 @@
 
 /// <p>A block of content in a streaming response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum ContentBlockDelta {
     /// <p>Incremental citation information that is streamed as part of the response generation process.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of the table when the backup was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceTableDetails {
     /// <p>The name of the table for which the backup was created.</p>

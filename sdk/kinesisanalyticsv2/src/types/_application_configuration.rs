@@ -2,6 +2,8 @@
 
 /// <p>Specifies the creation parameters for a Managed Service for Apache Flink application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationConfiguration {
     /// <p>The creation and update parameters for a SQL-based Kinesis Data Analytics application.</p>

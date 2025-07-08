@@ -2,6 +2,8 @@
 
 /// <p>License plate information of the vehicle. Currently, only the last character is used where license plate based controlled access is enforced.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteVehicleLicensePlate {
     /// <p>The last character of the License Plate.</p>

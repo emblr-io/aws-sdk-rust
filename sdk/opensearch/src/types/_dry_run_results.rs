@@ -2,6 +2,8 @@
 
 /// <p>Results of a dry run performed in an update domain request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DryRunResults {
     /// <p>Specifies the way in which OpenSearch Service will apply an update. Possible values are:</p>

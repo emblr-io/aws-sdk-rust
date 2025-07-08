@@ -2,6 +2,8 @@
 
 /// <p>Two-line element set (TLE) ephemeris.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TleEphemeris {
     /// <p>Identifies the S3 object to be used as the ephemeris.</p>

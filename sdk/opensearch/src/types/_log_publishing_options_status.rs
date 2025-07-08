@@ -2,6 +2,8 @@
 
 /// <p>The configured log publishing options for the domain and their current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogPublishingOptionsStatus {
     /// <p>The log publishing options configured for the domain.</p>

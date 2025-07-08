@@ -2,6 +2,8 @@
 
 /// <p>For an application output, describes the AWS Lambda function configured as its destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaOutputDescription {
     /// <p>Amazon Resource Name (ARN) of the destination Lambda function.</p>

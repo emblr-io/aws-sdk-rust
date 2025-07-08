@@ -3,6 +3,8 @@
 /// <p>Provides the configuration information to connect to Amazon WorkDocs as your data source.</p>
 /// <p>Amazon WorkDocs connector is available in Oregon, North Virginia, Sydney, Singapore and Ireland regions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkDocsConfiguration {
     /// <p>The identifier of the directory corresponding to your Amazon WorkDocs site repository.</p>

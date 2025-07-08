@@ -2,6 +2,8 @@
 
 /// <p>Contains aggregated asset property values (for example, average, minimum, and maximum).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregatedValue {
     /// <p>The date the aggregating computations occurred, in Unix epoch time.</p>

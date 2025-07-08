@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the <code>removePermissionResponse</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemovePermissionOutput {
     /// <p>The JSON-formatted resource-based policy on the profiling group after the specified permissions were removed.</p>

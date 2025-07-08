@@ -2,6 +2,8 @@
 
 /// <p>The details of a source and destination path.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PathMappingRule {
     /// <p>The source path format.</p>

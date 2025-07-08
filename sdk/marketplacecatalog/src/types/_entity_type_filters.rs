@@ -2,6 +2,8 @@
 
 /// <p>Object containing all the filter fields per entity type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EntityTypeFilters {
     /// <p>A filter for AMI products.</p>

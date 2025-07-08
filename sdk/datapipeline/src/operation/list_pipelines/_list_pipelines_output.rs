@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of ListPipelines.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListPipelinesOutput {
     /// <p>The pipeline identifiers. If you require additional information about the pipelines, you can use these identifiers to call <code>DescribePipelines</code> and <code>GetPipelineDefinition</code>.</p>

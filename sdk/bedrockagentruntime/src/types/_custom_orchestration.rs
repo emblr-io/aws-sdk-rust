@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the custom orchestration configured for the agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomOrchestration {
     /// <p>The structure of the executor invoking the actions in custom orchestration.</p>

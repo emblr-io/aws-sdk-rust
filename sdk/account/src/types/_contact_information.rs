@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of the primary contact information associated with an Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ContactInformation {
     /// <p>The full name of the primary contact address.</p>

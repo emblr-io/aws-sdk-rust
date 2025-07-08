@@ -2,6 +2,8 @@
 
 /// <p>Information about a single controller area network (CAN) signal and the messages it receives and transmits.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanSignal {
     /// <p>The ID of the message.</p>

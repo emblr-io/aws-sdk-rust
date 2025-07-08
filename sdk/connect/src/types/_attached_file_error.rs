@@ -2,6 +2,8 @@
 
 /// <p>Error describing a failure to retrieve attached file metadata through BatchGetAttachedFileMetadata action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachedFileError {
     /// <p>Status code describing the failure.</p>

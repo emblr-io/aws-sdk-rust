@@ -2,6 +2,8 @@
 
 /// <p>The settings of risk configuration for threat protection with threat protection in a user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RiskConfigurationType {
     /// <p>The ID of the user pool that has the risk configuration applied.</p>

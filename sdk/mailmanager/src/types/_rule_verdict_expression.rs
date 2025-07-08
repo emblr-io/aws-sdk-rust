@@ -2,6 +2,8 @@
 
 /// <p>A verdict expression is evaluated against verdicts of the email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleVerdictExpression {
     /// <p>The verdict to evaluate in a verdict condition expression.</p>

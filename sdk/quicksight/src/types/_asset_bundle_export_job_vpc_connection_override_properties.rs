@@ -2,6 +2,8 @@
 
 /// <p>Controls how a specific <code>VPCConnection</code> resource is parameterized in the outputted CloudFormation template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleExportJobVpcConnectionOverrideProperties {
     /// <p>The ARN of the specific <code>VPCConnection</code> resource whose override properties are configured in this structure.</p>

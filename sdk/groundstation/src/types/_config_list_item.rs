@@ -2,6 +2,8 @@
 
 /// <p>An item in a list of <code>Config</code> objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigListItem {
     /// <p>UUID of a <code>Config</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details for all file system operations using this Amazon EFS access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEfsAccessPointPosixUserDetails {
     /// <p>The POSIX group ID used for all file system operations using this access point.</p>

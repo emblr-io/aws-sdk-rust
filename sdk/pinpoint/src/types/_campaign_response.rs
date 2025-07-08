@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the status, configuration, and other settings for a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignResponse {
     /// <p>An array of responses, one for each treatment that you defined for the campaign, in addition to the default treatment.</p>

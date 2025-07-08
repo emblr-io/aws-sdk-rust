@@ -2,6 +2,8 @@
 
 /// <p>LoRaWAN application configuration, which can be used to perform geolocation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationConfig {
     /// <p>The Fport value.</p>

@@ -2,6 +2,8 @@
 
 /// <p>AWS Systems Manager Document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SsmDocument {
     /// <p>User-friendly name for the AWS Systems Manager Document.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents an AWS account that is associated with API Gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateAccountOutput {
     /// <p>The ARN of an Amazon CloudWatch role for the current Account.</p>

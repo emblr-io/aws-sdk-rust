@@ -2,6 +2,8 @@
 
 /// <p>A complex data type that includes the field patterns to match for field-level encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldPatterns {
     /// <p>The number of field-level encryption field patterns.</p>

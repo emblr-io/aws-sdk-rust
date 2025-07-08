@@ -2,6 +2,8 @@
 
 /// Pair of multicast url and source ip address (optional) that make up a multicast source.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MulticastSource {
     /// This represents the ip address of the device sending the multicast stream.

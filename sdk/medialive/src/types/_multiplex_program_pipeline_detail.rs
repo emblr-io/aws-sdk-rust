@@ -2,6 +2,8 @@
 
 /// The current source for one of the pipelines in the multiplex.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiplexProgramPipelineDetail {
     /// Identifies the channel pipeline that is currently active for the pipeline (identified by PipelineId) in the multiplex.

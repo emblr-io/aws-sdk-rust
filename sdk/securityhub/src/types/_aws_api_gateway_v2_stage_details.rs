@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a version 2 stage for Amazon API Gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiGatewayV2StageDetails {
     /// <p>The identifier of a client certificate for a stage. Supported only for WebSocket API calls.</p>

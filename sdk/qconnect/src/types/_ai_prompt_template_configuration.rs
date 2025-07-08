@@ -2,6 +2,8 @@
 
 /// <p>A typed union that specifies the configuration for a prompt template based on its type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AiPromptTemplateConfiguration {
     /// <p>The configuration for a prompt template that supports full textual prompt configuration using a YAML prompt.</p>

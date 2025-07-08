@@ -2,6 +2,8 @@
 
 /// <p>Information about the status of a read replica.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbStatusInfo {
     /// <p>The type of status. For a read replica, the status type is read replication.</p>

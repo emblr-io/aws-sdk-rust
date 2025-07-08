@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of destination connectors present in the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationFlowConfig {
     /// <p>The type of connector, such as Salesforce, Amplitude, and so on.</p>

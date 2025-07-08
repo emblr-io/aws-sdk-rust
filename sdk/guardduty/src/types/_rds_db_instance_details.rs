@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the resource type <code>RDSDBInstance</code> involved in a GuardDuty finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsDbInstanceDetails {
     /// <p>The identifier associated to the database instance that was involved in the finding.</p>

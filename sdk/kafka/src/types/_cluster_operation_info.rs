@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a cluster operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterOperationInfo {
     /// <p>The ID of the API request that triggered this operation.</p>

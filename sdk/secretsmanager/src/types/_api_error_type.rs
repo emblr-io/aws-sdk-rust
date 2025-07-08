@@ -2,6 +2,8 @@
 
 /// <p>The error Secrets Manager encountered while retrieving an individual secret as part of <code>BatchGetSecretValue</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiErrorType {
     /// <p>The ARN or name of the secret.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details of an Amazon MSK Cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmazonMskCluster {
     /// <p>The Amazon Resource Name (ARN) of an Amazon MSK cluster.</p>

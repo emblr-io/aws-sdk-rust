@@ -2,6 +2,8 @@
 
 /// <p>The contents of a content association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ContentAssociationContents {
     /// <p>The data of the step-by-step guide association.</p>

@@ -4,6 +4,8 @@
 /// <p>This functionality is only supported by directory buckets.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketInfo {
     /// <p>The number of Zone (Availability Zone or Local Zone) that's used for redundancy for the bucket.</p>

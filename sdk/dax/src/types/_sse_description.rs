@@ -2,6 +2,8 @@
 
 /// <p>The description of the server-side encryption status on the specified DAX cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SseDescription {
     /// <p>The current state of server-side encryption:</p>

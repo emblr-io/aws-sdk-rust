@@ -2,6 +2,8 @@
 
 /// <p>Where to send the metrics from a scraper.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Destination {
     /// <p>The Amazon Managed Service for Prometheus workspace to send metrics to.</p>

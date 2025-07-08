@@ -2,6 +2,8 @@
 
 /// <p>Defines how to filter the objects coming in for calculated attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>Define whether to include or exclude objects for Calculated Attributed calculation that fit the filter groups criteria.</p>

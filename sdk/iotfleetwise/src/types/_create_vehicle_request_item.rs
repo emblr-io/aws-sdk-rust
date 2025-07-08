@@ -2,6 +2,8 @@
 
 /// <p>Information about the vehicle to create.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVehicleRequestItem {
     /// <p>The unique ID of the vehicle to create.</p>

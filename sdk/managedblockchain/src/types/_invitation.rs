@@ -3,6 +3,8 @@
 /// <p>An invitation to an Amazon Web Services account to create a member and join the network.</p>
 /// <p>Applies only to Hyperledger Fabric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Invitation {
     /// <p>The unique identifier for the invitation.</p>

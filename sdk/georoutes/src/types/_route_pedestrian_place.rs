@@ -2,6 +2,8 @@
 
 /// <p>Place details corresponding to the arrival or departure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RoutePedestrianPlace {
     /// <p>The name of the place.</p>

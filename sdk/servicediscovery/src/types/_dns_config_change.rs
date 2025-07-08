@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about changes to the Route&nbsp;53 DNS records that Cloud Map creates when you register an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsConfigChange {
     /// <p>An array that contains one <code>DnsRecord</code> object for each Route&nbsp;53 record that you want Cloud Map to create when you register an instance.</p>

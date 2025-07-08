@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the file system and kernels in a SageMaker AI image running as a JupyterLab app. The <code>FileSystemConfig</code> object is not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JupyterLabAppImageConfig {
     /// <p>The Amazon Elastic File System storage configuration for a SageMaker AI image.</p>

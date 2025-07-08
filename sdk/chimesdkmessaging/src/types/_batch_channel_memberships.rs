@@ -2,6 +2,8 @@
 
 /// <p>The membership information, including member ARNs, the channel ARN, and membership types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchChannelMemberships {
     /// <p>The identifier of the member who invited another member.</p>

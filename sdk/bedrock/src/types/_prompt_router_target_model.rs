@@ -2,6 +2,8 @@
 
 /// <p>The target model for a prompt router.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PromptRouterTargetModel {
     /// <p>The target model's ARN.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The source object of the COPY action is not in the active tier and is only stored in Amazon S3 Glacier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectNotInActiveTierError {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a phone number for a quick connect.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhoneNumberQuickConnectConfig {
     /// <p>The phone number in E.164 format.</p>

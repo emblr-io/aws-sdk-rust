@@ -3,6 +3,8 @@
 /// <p>Describes a filter that returns a more specific list of Amazon Elastic Block Store (Amazon EBS) volume recommendations. Use this filter with the <code>GetEBSVolumeRecommendations</code> action.</p>
 /// <p>You can use <code>LambdaFunctionRecommendationFilter</code> with the <code>GetLambdaFunctionRecommendations</code> action, <code>JobFilter</code> with the <code>DescribeRecommendationExportJobs</code> action, and <code>Filter</code> with the <code>GetAutoScalingGroupRecommendations</code> and <code>GetEC2InstanceRecommendations</code> actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsFilter {
     /// <p>The name of the filter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The target of a pivot table field collapse state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableFieldCollapseStateTarget {
     /// <p>The field ID of the pivot table that the collapse state needs to be set to.</p>

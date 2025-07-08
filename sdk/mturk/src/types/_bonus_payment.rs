@@ -2,6 +2,8 @@
 
 /// <p>An object representing a Bonus payment paid to a Worker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BonusPayment {
     /// <p>The ID of the Worker to whom the bonus was paid.</p>

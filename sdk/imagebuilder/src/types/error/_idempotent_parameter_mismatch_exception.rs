@@ -2,6 +2,8 @@
 
 /// <p>You have specified a client token for an operation using parameter values that differ from a previous request that used the same client token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdempotentParameterMismatchException {
     #[allow(missing_docs)] // documentation missing in model

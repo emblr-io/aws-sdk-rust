@@ -96,6 +96,8 @@
 /// <p><code> <code>StartChildWorkflowExecutionDecisionAttributes</code> </code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Decision {
     /// <p>Specifies the type of the decision.</p>

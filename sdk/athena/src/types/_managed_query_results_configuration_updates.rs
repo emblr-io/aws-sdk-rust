@@ -2,6 +2,8 @@
 
 /// <p>Updates the configuration for managed query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedQueryResultsConfigurationUpdates {
     /// <p>If set to true, specifies that Athena manages query results in Athena owned storage.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the conflict resolution configuration for your data model configured in your Amplify project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackendApiConflictResolution {
     /// <p>The strategy for conflict resolution.</p>

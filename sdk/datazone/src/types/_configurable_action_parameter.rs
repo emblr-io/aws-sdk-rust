@@ -2,6 +2,8 @@
 
 /// <p>The details of the parameters for the configurable environment action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurableActionParameter {
     /// <p>The key of the configurable action parameter.</p>

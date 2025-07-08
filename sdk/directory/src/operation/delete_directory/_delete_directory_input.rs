@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>DeleteDirectory</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDirectoryInput {
     /// <p>The identifier of the directory to delete.</p>

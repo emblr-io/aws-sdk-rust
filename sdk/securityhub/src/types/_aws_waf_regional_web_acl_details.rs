@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the web access control list (web ACL). The web ACL contains the rules that identify the requests that you want to allow, block, or count.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRegionalWebAclDetails {
     /// <p>The action to perform if none of the rules contained in the web ACL match.</p>

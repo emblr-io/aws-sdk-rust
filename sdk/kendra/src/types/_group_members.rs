@@ -2,6 +2,8 @@
 
 /// <p>A list of users that belong to a group. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupMembers {
     /// <p>A list of users that belong to a group. This can also include sub groups. For example, the sub groups "Research", "Engineering", and "Sales and Marketing" all belong to the group "Company A".</p>

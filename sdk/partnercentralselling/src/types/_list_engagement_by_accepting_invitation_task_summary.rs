@@ -2,6 +2,8 @@
 
 /// <p>Specifies a subset of fields associated with tasks related to accepting an engagement invitation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEngagementByAcceptingInvitationTaskSummary {
     /// <p>Unique identifier of the task.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents an action to modify commitments in a bill scenario.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum BillScenarioCommitmentModificationAction {
     /// <p>Action to add a Reserved Instance to the scenario.</p>

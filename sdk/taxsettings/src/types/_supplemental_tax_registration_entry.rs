@@ -2,6 +2,8 @@
 
 /// <p>The supplemental TRN information to provide when adding or updating a supplemental TRN.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SupplementalTaxRegistrationEntry {
     /// <p>The supplemental TRN unique identifier.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The properties of the domain unit user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainUnitUserProperties {
     /// <p>The ID of teh domain unit user.</p>

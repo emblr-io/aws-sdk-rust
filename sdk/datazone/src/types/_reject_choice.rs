@@ -2,6 +2,8 @@
 
 /// <p>The details of the automatically generated business metadata that is rejected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RejectChoice {
     /// <p>Specifies the target (for example, a column name) where a prediction can be rejected.</p>

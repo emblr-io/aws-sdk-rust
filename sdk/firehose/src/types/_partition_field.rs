@@ -3,6 +3,8 @@
 /// <p>Represents a single field in a <code>PartitionSpec</code>.</p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartitionField {
     /// <p>The column name to be configured in partition spec.</p>

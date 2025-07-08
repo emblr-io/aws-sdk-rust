@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of the HTTP endpoint to which Kinesis Firehose delivers data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HttpEndpointConfiguration {
     /// <p>The URL of the HTTP endpoint selected as the destination.</p><important>

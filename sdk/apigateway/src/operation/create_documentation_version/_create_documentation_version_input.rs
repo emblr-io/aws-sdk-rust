@@ -2,6 +2,8 @@
 
 /// <p>Creates a new documentation version of a given API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDocumentationVersionInput {
     /// <p>The string identifier of the associated RestApi.</p>

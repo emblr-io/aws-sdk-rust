@@ -3,6 +3,8 @@
 /// <p>The scaling configuration for an Aurora DB cluster in <code>serverless</code> DB engine mode.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html">Using Amazon Aurora Serverless v1</a> in the <i>Amazon Aurora User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalingConfigurationInfo {
     /// <p>The minimum capacity for an Aurora DB cluster in <code>serverless</code> DB engine mode.</p>

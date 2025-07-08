@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the delete operation could not be completed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CannotDeleteException {
     /// <p>Indicates that a resource could not be deleted because no resource with the specified name exists.</p>

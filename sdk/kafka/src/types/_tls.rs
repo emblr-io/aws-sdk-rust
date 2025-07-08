@@ -2,6 +2,8 @@
 
 /// <p>Details for client authentication using TLS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tls {
     /// <p>List of ACM Certificate Authority ARNs.</p>

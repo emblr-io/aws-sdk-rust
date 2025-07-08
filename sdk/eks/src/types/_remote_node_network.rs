@@ -19,6 +19,8 @@
 /// <p>Each host must allow TCP and UDP network connectivity to and from other hosts that are running <code>CoreDNS</code> on UDP port <code>53</code> for service and pod DNS names.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoteNodeNetwork {
     /// <p>A network CIDR that can contain hybrid nodes.</p>

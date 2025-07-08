@@ -2,6 +2,8 @@
 
 /// <p>A request to change information about an ClientCertificate resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateClientCertificateInput {
     /// <p>The identifier of the ClientCertificate resource to be updated.</p>

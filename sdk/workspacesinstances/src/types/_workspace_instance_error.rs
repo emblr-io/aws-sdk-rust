@@ -2,6 +2,8 @@
 
 /// <p>Captures errors specific to WorkSpace Instance operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkspaceInstanceError {
     /// <p>Unique error code for the WorkSpace Instance error.</p>

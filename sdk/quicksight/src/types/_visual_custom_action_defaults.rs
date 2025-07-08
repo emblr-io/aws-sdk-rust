@@ -2,6 +2,8 @@
 
 /// <p>A list of custom actions applied to visuals in an analysis or sheet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualCustomActionDefaults {
     /// <p>A list of highlight operations available for visuals in an analysis or sheet.</p>

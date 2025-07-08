@@ -2,6 +2,8 @@
 
 /// <p>The test set results data at the conversation level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelTestResults {
     /// <p>The item list in the test set results data at the conversation level.</p>

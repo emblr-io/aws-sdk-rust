@@ -2,6 +2,8 @@
 
 /// <p>The write offset value that you specified does not match the current object size.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidWriteOffset {
     #[allow(missing_docs)] // documentation missing in model

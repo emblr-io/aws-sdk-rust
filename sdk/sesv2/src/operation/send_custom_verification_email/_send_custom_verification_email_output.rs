@@ -2,6 +2,8 @@
 
 /// <p>The following element is returned by the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendCustomVerificationEmailOutput {
     /// <p>The unique message identifier returned from the <code>SendCustomVerificationEmail</code> operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes proposed changes to a network function group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProposedNetworkFunctionGroupChange {
     /// <p>The list of proposed changes to the key-value tags associated with the network function group.</p>

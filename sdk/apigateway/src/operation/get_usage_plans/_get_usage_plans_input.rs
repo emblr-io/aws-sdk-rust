@@ -2,6 +2,8 @@
 
 /// <p>The GET request to get all the usage plans of the caller's account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUsagePlansInput {
     /// <p>The current pagination position in the paged result set.</p>

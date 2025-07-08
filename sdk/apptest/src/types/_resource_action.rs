@@ -2,6 +2,8 @@
 
 /// <p>Specifies a resource action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResourceAction {
     /// <p>The CloudFormation action of the resource action.</p>

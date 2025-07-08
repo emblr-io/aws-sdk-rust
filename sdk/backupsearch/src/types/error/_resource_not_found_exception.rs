@@ -3,6 +3,8 @@
 /// <p>The resource was not found for this request.</p>
 /// <p>Confirm the resource information, such as the ARN or type is correct and exists, then retry the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotFoundException {
     /// <p>Request references a resource which does not exist.</p>

@@ -39,7 +39,7 @@
 //! ```toml
 //! [dependencies]
 //! aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-//! aws-sdk-costexplorer = "1.83.0"
+//! aws-sdk-costexplorer = "0.0.0-local"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!

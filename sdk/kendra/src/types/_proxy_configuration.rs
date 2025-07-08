@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for a web proxy to connect to website hosts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProxyConfiguration {
     /// <p>The name of the website host you want to connect to via a web proxy server.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an endpoint and port where client devices can connect to an MQTT broker on a Greengrass core device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectivityInfo {
     /// <p>An ID for the connectivity information.</p>

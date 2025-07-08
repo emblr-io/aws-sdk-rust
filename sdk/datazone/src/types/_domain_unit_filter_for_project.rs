@@ -2,6 +2,8 @@
 
 /// <p>The domain unit filter of the project grant filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainUnitFilterForProject {
     /// <p>The domain unit ID to use in the filter.</p>

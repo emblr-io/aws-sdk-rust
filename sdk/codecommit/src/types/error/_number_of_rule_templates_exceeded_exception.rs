@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of approval rule templates has been exceeded for this Amazon Web Services Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberOfRuleTemplatesExceededException {
     /// <p>Any message associated with the exception.</p>

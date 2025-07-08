@@ -2,6 +2,8 @@
 
 /// <p>In a model evaluation job that uses human workers you must define the name of the metric, and how you want that metric rated <code>ratingMethod</code>, and an optional description of the metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HumanEvaluationCustomMetric {
     /// <p>The name of the metric. Your human evaluators will see this name in the evaluation UI.</p>

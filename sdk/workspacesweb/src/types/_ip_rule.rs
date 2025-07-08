@@ -2,6 +2,8 @@
 
 /// <p>The IP rules of the IP access settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct IpRule {
     /// <p>The IP range of the IP rule.</p>

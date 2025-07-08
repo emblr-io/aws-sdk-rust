@@ -2,6 +2,8 @@
 
 /// Settings information for the .m3u8 container
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct M3u8Settings {
     /// The number of audio frames to insert for each PES packet.

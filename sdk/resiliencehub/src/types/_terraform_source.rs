@@ -2,6 +2,8 @@
 
 /// <p>The Terraform s3 state file you need to import.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TerraformSource {
     /// <p>The URL of the Terraform s3 state file you need to import.</p>

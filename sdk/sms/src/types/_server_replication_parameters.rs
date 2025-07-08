@@ -2,6 +2,8 @@
 
 /// <p>The replication parameters for replicating a server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerReplicationParameters {
     /// <p>The seed time for creating a replication job for the server.</p>

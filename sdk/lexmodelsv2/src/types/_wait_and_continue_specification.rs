@@ -2,6 +2,8 @@
 
 /// <p>Specifies the prompts that Amazon Lex uses while a bot is waiting for customer input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaitAndContinueSpecification {
     /// <p>The response that Amazon Lex sends to indicate that the bot is waiting for the conversation to continue.</p>

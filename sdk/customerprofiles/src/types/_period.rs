@@ -2,6 +2,8 @@
 
 /// <p>Defines a limit and the time period during which it is enforced.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Period {
     /// <p>The unit of time.</p>

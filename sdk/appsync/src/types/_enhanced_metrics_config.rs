@@ -52,6 +52,8 @@
 /// <p>Metrics will be recorded by API ID and operation name. You can set the value to <code>ENABLED</code> or <code>DISABLED</code>.</p></li>
 /// </ol>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnhancedMetricsConfig {
     /// <p>Controls how resolver metrics will be emitted to CloudWatch. Resolver metrics include:</p>

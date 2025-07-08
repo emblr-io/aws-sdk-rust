@@ -2,6 +2,8 @@
 
 /// <p>Information about the deployment status of the instances in the deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentOverview {
     /// <p>The number of instances in the deployment in a pending state.</p>

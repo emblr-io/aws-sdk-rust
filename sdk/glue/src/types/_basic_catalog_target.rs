@@ -2,6 +2,8 @@
 
 /// <p>Specifies a target that uses a Glue Data Catalog table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BasicCatalogTarget {
     /// <p>The name of your data target.</p>

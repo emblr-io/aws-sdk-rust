@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the reasoning why a check for access passed or failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReasonSummary {
     /// <p>A description of the reasoning of a result of checking for access.</p>

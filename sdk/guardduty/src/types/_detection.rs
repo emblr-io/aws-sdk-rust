@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the detected behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Detection {
     /// <p>The details about the anomalous activity that caused GuardDuty to generate the finding.</p>

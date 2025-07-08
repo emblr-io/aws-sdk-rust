@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DeleteNodeResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteNodeOutput {
     /// The ARN of the Node. It is automatically assigned when the Node is created.

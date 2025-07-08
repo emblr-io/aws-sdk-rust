@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the <code>putPermissionResponse</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutPermissionOutput {
     /// <p>The JSON-formatted resource-based policy on the profiling group that includes the added permissions.</p>

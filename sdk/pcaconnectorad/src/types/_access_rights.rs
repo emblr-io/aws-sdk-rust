@@ -2,6 +2,8 @@
 
 /// <p>Allow or deny permissions for an Active Directory group to enroll or autoenroll certificates for a template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessRights {
     /// <p>Allow or deny an Active Directory group from enrolling certificates issued against a template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The HTTP configuration for the source location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpConfiguration {
     /// <p>The base URL for the source location host server. This string must include the protocol, such as <b>https://</b>.</p>

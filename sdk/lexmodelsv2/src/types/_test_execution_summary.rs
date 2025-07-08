@@ -2,6 +2,8 @@
 
 /// <p>Summarizes metadata about the test execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestExecutionSummary {
     /// <p>The unique identifier of the test execution.</p>

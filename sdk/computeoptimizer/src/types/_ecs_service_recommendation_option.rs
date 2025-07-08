@@ -2,6 +2,8 @@
 
 /// <p>Describes the recommendation options for an Amazon ECS service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsServiceRecommendationOption {
     /// <p>The memory size of the Amazon ECS service recommendation option.</p>

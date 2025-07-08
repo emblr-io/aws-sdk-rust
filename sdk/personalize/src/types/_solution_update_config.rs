@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of the solution update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SolutionUpdateConfig {
     /// <p>The automatic training configuration to use when <code>performAutoTraining</code> is true.</p>

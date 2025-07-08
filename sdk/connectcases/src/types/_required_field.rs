@@ -2,6 +2,8 @@
 
 /// <p>List of fields that must have a value provided to create a case.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequiredField {
     /// <p>Unique identifier of a field.</p>

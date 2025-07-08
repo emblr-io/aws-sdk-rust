@@ -2,6 +2,8 @@
 
 /// <p>An object representing the method header to be matched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum GrpcMetadataMatchMethod {
     /// <p>The exact method header to be matched on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes dynamic routing for the transit gateway peering attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayPeeringAttachmentOptions {
     /// <p>Describes whether dynamic routing is enabled or disabled for the transit gateway peering attachment.</p>

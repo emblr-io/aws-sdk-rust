@@ -2,6 +2,8 @@
 
 /// <p>Describes the error that is returned when a user can’t be associated with or disassociated from a stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserStackAssociationError {
     /// <p>Information about the user and associated stack.</p>

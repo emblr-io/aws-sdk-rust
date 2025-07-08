@@ -2,6 +2,8 @@
 
 /// <p>For a multi-location container fleet, describes the progress of a deployment across all fleet locations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationalDeployment {
     /// <p>The status of fleet deployment activity in the location.</p>

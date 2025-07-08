@@ -2,6 +2,8 @@
 
 /// <p>Summary of the details of a moderated channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelModeratedByAppInstanceUserSummary {
     /// <p>Summary of the details of a <code>Channel</code>.</p>

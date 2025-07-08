@@ -2,6 +2,8 @@
 
 /// <p>The comment ID is not in a valid format. Make sure that you have provided the full comment ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidCommentIdException {
     /// <p>Any message associated with the exception.</p>

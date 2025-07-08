@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a generation request made for the bot locale.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerationSummary {
     /// <p>The unique identifier of the generation request.</p>

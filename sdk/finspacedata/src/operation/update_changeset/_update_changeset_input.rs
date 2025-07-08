@@ -2,6 +2,8 @@
 
 /// Request to update an existing changeset.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateChangesetInput {
     /// <p>A token that ensures idempotency. This token expires in 10 minutes.</p>

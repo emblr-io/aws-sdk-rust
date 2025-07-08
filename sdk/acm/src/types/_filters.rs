@@ -2,6 +2,8 @@
 
 /// <p>This structure can be used in the <code>ListCertificates</code> action to filter the output of the certificate list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filters {
     /// <p>Specify one or more <code>ExtendedKeyUsage</code> extension values.</p>

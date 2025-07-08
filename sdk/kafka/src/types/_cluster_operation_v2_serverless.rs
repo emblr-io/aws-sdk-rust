@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a serverless cluster operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterOperationV2Serverless {
     /// <p>Description of the VPC connection for CreateVpcConnection and DeleteVpcConnection operations.</p>

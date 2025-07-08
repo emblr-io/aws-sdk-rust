@@ -2,6 +2,8 @@
 
 /// <p>The configuration settings of the Amazon Kinesis Data Streams destination for an Amazon QLDB journal stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.</p>

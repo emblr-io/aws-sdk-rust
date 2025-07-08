@@ -2,6 +2,8 @@
 
 /// <p>Provides additional mapping information when JSON is the record format on the streaming source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonMappingParameters {
     /// <p>Path to the top-level parent that contains the records.</p>

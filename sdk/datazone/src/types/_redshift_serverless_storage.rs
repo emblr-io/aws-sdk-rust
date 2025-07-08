@@ -2,6 +2,8 @@
 
 /// <p>The details of the Amazon Redshift Serverless workgroup storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftServerlessStorage {
     /// <p>The name of the Amazon Redshift Serverless workgroup.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Structure to capture query statistics such as how many queries are running, accepted or waiting and their details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryEvalStats {
     /// <p>Indicates how long the query waited, in milliseconds.</p>

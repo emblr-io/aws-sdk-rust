@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about the most recent run of a single canary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryLastRun {
     /// <p>The name of the canary.</p>

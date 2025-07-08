@@ -2,6 +2,8 @@
 
 /// <p>You can't create any more zero-ETL or S3 event integrations because the quota has been reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

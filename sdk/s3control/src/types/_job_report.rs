@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration parameters for a job-completion report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobReport {
     /// <p>The Amazon Resource Name (ARN) for the bucket where specified job-completion report will be stored.</p><note>

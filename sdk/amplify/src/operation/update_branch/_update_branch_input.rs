@@ -2,6 +2,8 @@
 
 /// <p>The request structure for the update branch request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateBranchInput {
     /// <p>The unique ID for an Amplify app.</p>

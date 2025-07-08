@@ -2,6 +2,8 @@
 
 /// <p>Describes an instance snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceSnapshotInfo {
     /// <p>The bundle ID from which the source instance was created (<code>micro_x_x</code>).</p>

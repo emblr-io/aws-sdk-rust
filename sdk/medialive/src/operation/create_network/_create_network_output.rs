@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for CreateNetworkResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateNetworkOutput {
     /// The ARN of this Network. It is automatically assigned when the Network is created.

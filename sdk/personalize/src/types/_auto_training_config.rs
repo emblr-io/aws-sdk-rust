@@ -2,6 +2,8 @@
 
 /// <p>The automatic training configuration to use when <code>performAutoTraining</code> is true.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoTrainingConfig {
     /// <p>Specifies how often to automatically train new solution versions. Specify a rate expression in rate(<i>value</i> <i>unit</i>) format. For value, specify a number between 1 and 30. For unit, specify <code>day</code> or <code>days</code>. For example, to automatically create a new solution version every 5 days, specify <code>rate(5 days)</code>. The default is every 7 days.</p>

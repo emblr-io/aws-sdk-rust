@@ -2,6 +2,8 @@
 
 /// <p>This data structure is returned multiple times for each result specified in the Review Policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReviewResultDetail {
     /// <p>A unique identifier of the Review action result.</p>

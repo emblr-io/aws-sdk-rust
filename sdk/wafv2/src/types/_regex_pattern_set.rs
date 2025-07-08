@@ -3,6 +3,8 @@
 /// <p>Contains one or more regular expressions.</p>
 /// <p>WAF assigns an ARN to each <code>RegexPatternSet</code> that you create. To use a set in a rule, you provide the ARN to the <code>Rule</code> statement <code>RegexPatternSetReferenceStatement</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexPatternSet {
     /// <p>The name of the set. You cannot change the name after you create the set.</p>

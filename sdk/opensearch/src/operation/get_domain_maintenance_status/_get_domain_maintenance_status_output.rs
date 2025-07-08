@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>GetDomainMaintenanceStatus</code> request that information about the requested action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDomainMaintenanceStatusOutput {
     /// <p>The status of the maintenance action.</p>

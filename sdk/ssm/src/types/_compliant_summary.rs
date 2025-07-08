@@ -2,6 +2,8 @@
 
 /// <p>A summary of resources that are compliant. The summary is organized according to the resource count for each compliance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompliantSummary {
     /// <p>The total number of resources that are compliant.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines a DocumentDB endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DocDbSettings {
     /// <p>The user name you use to access the DocumentDB source endpoint.</p>

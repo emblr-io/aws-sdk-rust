@@ -2,6 +2,8 @@
 
 /// <p>A policy that defines the number of days to retain backups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupRetentionPolicy {
     /// <p>The type of backup retention policy. For the <code>DAYS</code> type, the value is the number of days to retain backups.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about adapters used when analyzing a document, with each adapter specified using an AdapterId and version</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdaptersConfig {
     /// <p>A list of adapters to be used when analyzing the specified document.</p>

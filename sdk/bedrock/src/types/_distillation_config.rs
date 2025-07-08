@@ -2,6 +2,8 @@
 
 /// <p>Settings for distilling a foundation model into a smaller and more efficient model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistillationConfig {
     /// <p>The teacher model configuration.</p>

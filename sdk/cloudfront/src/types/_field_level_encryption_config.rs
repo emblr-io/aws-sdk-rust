@@ -2,6 +2,8 @@
 
 /// <p>A complex data type that includes the profile configurations specified for field-level encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldLevelEncryptionConfig {
     /// <p>A unique number that ensures the request can't be replayed.</p>

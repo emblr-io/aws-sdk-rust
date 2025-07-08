@@ -2,6 +2,8 @@
 
 /// <p>Information about the Amazon Elastic File System file system that is used for task storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetails {
     /// <p>The authorization configuration details for the Amazon EFS file system.</p>

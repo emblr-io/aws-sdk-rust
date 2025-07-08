@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a monitor in Deadline Cloud.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitorSummary {
     /// <p>The unique identifier for the monitor.</p>

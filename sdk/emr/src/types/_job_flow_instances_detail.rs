@@ -2,6 +2,8 @@
 
 /// <p>Specify the type of Amazon EC2 instances that the cluster (job flow) runs on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobFlowInstancesDetail {
     /// <p>The Amazon EC2 master node instance type.</p>

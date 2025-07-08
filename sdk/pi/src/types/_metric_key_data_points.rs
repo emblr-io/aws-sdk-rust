@@ -2,6 +2,8 @@
 
 /// <p>A time-ordered series of data points, corresponding to a dimension of a Performance Insights metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricKeyDataPoints {
     /// <p>The dimensions to which the data points apply.</p>

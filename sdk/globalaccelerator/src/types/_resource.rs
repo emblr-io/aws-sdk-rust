@@ -2,6 +2,8 @@
 
 /// <p>A resource is one of the following: the ARN for an Amazon Web Services resource that is supported by Global Accelerator to be added as an endpoint, or a CIDR range that specifies a bring your own IP (BYOIP) address pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Resource {
     /// <p>The endpoint ID for the endpoint that is specified as a Amazon Web Services resource.</p>

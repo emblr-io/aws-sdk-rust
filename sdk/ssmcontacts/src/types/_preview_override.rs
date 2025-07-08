@@ -2,6 +2,8 @@
 
 /// <p>Information about contacts and times that an on-call override replaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PreviewOverride {
     /// <p>Information about contacts to add to an on-call rotation override.</p>

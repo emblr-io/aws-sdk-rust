@@ -2,6 +2,8 @@
 
 /// <p>Describes how the parts of the response element matched the input query by returning the sections of the response which matched to input query terms.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutocompleteHighlights {
     /// <p>Indicates where the title field in the result matches the input query.</p>

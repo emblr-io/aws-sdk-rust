@@ -2,6 +2,8 @@
 
 /// <p>The data path that needs to be sorted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataPathValue {
     /// <p>The field ID of the field that needs to be sorted.</p>

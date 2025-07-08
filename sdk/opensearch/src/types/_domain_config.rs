@@ -2,6 +2,8 @@
 
 /// <p>Container for the configuration of an OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainConfig {
     /// <p>The OpenSearch or Elasticsearch version that the domain is running.</p>

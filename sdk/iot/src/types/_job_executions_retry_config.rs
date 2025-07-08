@@ -2,6 +2,8 @@
 
 /// <p>The configuration that determines how many retries are allowed for each failure type for a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobExecutionsRetryConfig {
     /// <p>The list of criteria that determines how many retries are allowed for each failure type for a job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a detector's configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyDetectorConfig {
     /// <p>The frequency at which the detector analyzes its source data.</p>

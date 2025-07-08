@@ -2,6 +2,8 @@
 
 /// <p>All Intersections that are near the provided address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Intersection {
     /// <p>The <code>PlaceId</code> of the place result.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains an Amazon Resource Name (ARN) and parameters that are associated with the rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Rule {
     /// <p>The type of attribute validation rule.</p>

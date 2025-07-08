@@ -3,6 +3,8 @@
 /// <p>The start and end times of an inference experiment.</p>
 /// <p>The maximum duration that you can set for an inference experiment is 30 days.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceExperimentSchedule {
     /// <p>The timestamp at which the inference experiment started or will start.</p>

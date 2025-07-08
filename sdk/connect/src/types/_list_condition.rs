@@ -2,6 +2,8 @@
 
 /// <p>A leaf node condition which can be used to specify a List condition to search users with attributes included in Lists like Proficiencies.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCondition {
     /// <p>The type of target list that will be used to filter the users.</p>

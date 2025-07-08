@@ -2,6 +2,8 @@
 
 /// <p>Describes a work team of a vendor that does the labelling job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscribedWorkteam {
     /// <p>The Amazon Resource Name (ARN) of the vendor that you have subscribed.</p>

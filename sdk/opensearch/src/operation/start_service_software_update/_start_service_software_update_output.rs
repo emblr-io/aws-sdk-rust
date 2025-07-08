@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>StartServiceSoftwareUpdate</code> operation. Contains the status of the update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartServiceSoftwareUpdateOutput {
     /// <p>The current status of the OpenSearch Service software update.</p>

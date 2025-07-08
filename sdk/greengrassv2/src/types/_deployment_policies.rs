@@ -2,6 +2,8 @@
 
 /// <p>Contains information about policies that define how a deployment updates components and handles failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentPolicies {
     /// <p>The failure handling policy for the configuration deployment. This policy defines what to do if the deployment fails.</p>

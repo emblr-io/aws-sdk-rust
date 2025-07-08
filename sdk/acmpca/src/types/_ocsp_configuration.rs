@@ -3,6 +3,8 @@
 /// <p>Contains information to enable and configure Online Certificate Status Protocol (OCSP) for validating certificate revocation status.</p>
 /// <p>When you revoke a certificate, OCSP responses may take up to 60 minutes to reflect the new status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OcspConfiguration {
     /// <p>Flag enabling use of the Online Certificate Status Protocol (OCSP) for validating certificate revocation status.</p>

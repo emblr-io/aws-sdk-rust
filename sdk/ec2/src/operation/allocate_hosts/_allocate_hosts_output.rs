@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of AllocateHosts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AllocateHostsOutput {
     /// <p>The ID of the allocated Dedicated Host. This is used to launch an instance onto a specific host.</p>

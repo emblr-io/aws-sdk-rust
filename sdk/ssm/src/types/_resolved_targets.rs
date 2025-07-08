@@ -2,6 +2,8 @@
 
 /// <p>Information about targets that resolved during the Automation execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResolvedTargets {
     /// <p>A list of parameter values sent to targets that resolved during the Automation execution.</p>

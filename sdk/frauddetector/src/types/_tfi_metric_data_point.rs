@@ -2,6 +2,8 @@
 
 /// <p>The performance metrics data points for Transaction Fraud Insights (TFI) model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TfiMetricDataPoint {
     /// <p>The false positive rate. This is the percentage of total legitimate events that are incorrectly predicted as fraud.</p>

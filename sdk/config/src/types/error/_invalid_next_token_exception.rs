@@ -2,6 +2,8 @@
 
 /// <p>The specified next token is not valid. Specify the <code>nextToken</code> string that was returned in the previous response to get the next page of results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidNextTokenException {
     /// <p>Error executing the command</p>

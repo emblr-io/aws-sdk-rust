@@ -4,6 +4,8 @@
 /// <p>After you enable log publishing, you still have to enable the collection of slow logs using the OpenSearch REST API.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogPublishingOption {
     /// <p>The Amazon Resource Name (ARN) of the CloudWatch Logs group to publish logs to.</p>

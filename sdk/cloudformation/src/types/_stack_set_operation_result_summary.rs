@@ -2,6 +2,8 @@
 
 /// <p>The structure that contains information about a specified operation's results for a given account in a given Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSetOperationResultSummary {
     /// <p>\[Self-managed permissions\] The name of the Amazon Web Services account for this operation result.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for Network Firewall for an Availability Zone that's missing the expected Firewall Manager managed subnet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFirewallMissingSubnetViolation {
     /// <p>The ID of the Network Firewall or VPC resource that's in violation.</p>

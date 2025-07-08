@@ -2,6 +2,8 @@
 
 /// <p>A rule that compares an input property value to a threshold value with a comparison operator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimpleRule {
     /// <p>The value on the left side of the comparison operator. You can specify an AWS IoT Events input attribute as an input property.</p>

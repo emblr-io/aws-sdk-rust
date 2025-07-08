@@ -2,6 +2,8 @@
 
 /// <p>The runtime configuration settings for the Kinesis video stream source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisVideoStreamSourceRuntimeConfiguration {
     /// <p>The streams in the source runtime configuration of a Kinesis video stream.</p>

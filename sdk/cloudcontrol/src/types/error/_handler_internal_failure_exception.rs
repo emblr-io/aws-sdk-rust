@@ -2,6 +2,8 @@
 
 /// <p>The resource handler has returned that an unexpected error occurred within the resource handler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HandlerInternalFailureException {
     #[allow(missing_docs)] // documentation missing in model

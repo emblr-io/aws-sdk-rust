@@ -2,6 +2,8 @@
 
 /// <p>Describes the memory available to the GPU accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GpuDeviceMemoryInfo {
     /// <p>The size of the memory available to the GPU accelerator, in MiB.</p>

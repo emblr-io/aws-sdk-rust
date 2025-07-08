@@ -3,6 +3,8 @@
 /// <p>License Manager cannot allocate a license to a resource because of its state.</p>
 /// <p>For example, you cannot allocate a license to an instance in the process of shutting down.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidResourceStateException {
     #[allow(missing_docs)] // documentation missing in model

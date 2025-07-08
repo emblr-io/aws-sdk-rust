@@ -9,6 +9,8 @@
 /// <p>If you've already done the preceding action, remove functions around them or clauses, such as <code>LIKE</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuerySpatialCoverage {
     /// <p>Provides insights into the spatial coverage of the executed query and the table with the most inefficient spatial pruning.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the reputation settings for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReputationOptions {
     /// <p>Describes whether email sending is enabled or disabled for the configuration set. If the value is <code>true</code>, then Amazon SES sends emails that use the configuration set. If the value is <code>false</code>, Amazon SES does not send emails that use the configuration set. The default value is <code>true</code>. You can change this setting using <code>UpdateConfigurationSetSendingEnabled</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details for container properties that are returned by <code>DescribeJobs</code> for jobs that use Amazon EKS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksContainerDetail {
     /// <p>The name of the container. If the name isn't specified, the default name "<code>Default</code>" is used. Each container in a pod must have a unique name.</p>

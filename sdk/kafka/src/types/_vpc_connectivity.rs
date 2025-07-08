@@ -2,6 +2,8 @@
 
 /// VPC connectivity access control for brokers.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConnectivity {
     /// <p>Includes all client authentication information for VPC connectivity.</p>

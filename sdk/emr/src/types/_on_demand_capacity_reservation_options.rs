@@ -2,6 +2,8 @@
 
 /// <p>Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand capacity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnDemandCapacityReservationOptions {
     /// <p>Indicates whether to use unused Capacity Reservations for fulfilling On-Demand capacity.</p>

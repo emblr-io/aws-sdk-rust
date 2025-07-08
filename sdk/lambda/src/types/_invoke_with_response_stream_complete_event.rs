@@ -2,6 +2,8 @@
 
 /// <p>A response confirming that the event stream is complete.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvokeWithResponseStreamCompleteEvent {
     /// <p>An error code.</p>

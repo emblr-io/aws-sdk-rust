@@ -2,6 +2,8 @@
 
 /// <p>A transition rule that describes when noncurrent objects transition to a specified storage class.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetails {
     /// <p>The number of days that an object is noncurrent before Amazon S3 can perform the associated action.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Global datastore is not available or in primary-only state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidGlobalReplicationGroupStateFault {
     #[allow(missing_docs)] // documentation missing in model

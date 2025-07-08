@@ -2,6 +2,8 @@
 
 /// <p>HTTP URL destination configuration used by the topic rule's HTTP action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpUrlDestinationConfiguration {
     /// <p>The URL IoT uses to confirm ownership of or access to the topic rule destination URL.</p>

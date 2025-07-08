@@ -2,6 +2,8 @@
 
 /// <p>Details of an execution parameter value that is passed to a self-service action when executed on a provisioned product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionParameter {
     /// <p>The name of the execution parameter.</p>

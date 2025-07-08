@@ -2,6 +2,8 @@
 
 /// <p>Contains information about which data sources are enabled for the GuardDuty member account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourcesFreeTrial {
     /// <p>Describes whether any Amazon Web Services CloudTrail management event logs are enabled as data sources.</p>

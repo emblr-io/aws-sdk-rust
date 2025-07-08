@@ -2,6 +2,8 @@
 
 /// <p>Another user submitted a request to create, update, or delete the object at the same time that you did. Retry the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentModification {
     /// <p></p>

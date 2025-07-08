@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for the App Mesh proxy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionProxyConfigurationDetails {
     /// <p>The name of the container that will serve as the App Mesh proxy.</p>

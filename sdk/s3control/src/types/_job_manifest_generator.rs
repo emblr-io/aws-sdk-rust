@@ -2,6 +2,8 @@
 
 /// <p>Configures the type of the job's ManifestGenerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum JobManifestGenerator {
     /// <p>The S3 job ManifestGenerator's configuration details.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Allows filtering on the <code>LastModifiedDate</code> of a ResaleAuthorization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResaleAuthorizationLastModifiedDateFilter {
     /// <p>Allows filtering on the <code>LastModifiedDate</code> of a ResaleAuthorization with date range as input.</p>

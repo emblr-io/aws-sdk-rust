@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a subnet in Amazon EC2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2SubnetDetails {
     /// <p>Whether to assign an IPV6 address to a network interface that is created in this subnet.</p>

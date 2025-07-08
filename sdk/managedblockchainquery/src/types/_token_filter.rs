@@ -4,6 +4,8 @@
 /// <p>You must always specify the network property of this container when using this operation.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TokenFilter {
     /// <p>The blockchain network of the token.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents summary details for the first 100 <code>RUNNABLE</code> jobs in a job queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrontOfQueueJobSummary {
     /// <p>The ARN for a job in a named job queue.</p>

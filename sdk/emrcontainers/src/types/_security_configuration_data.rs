@@ -2,6 +2,8 @@
 
 /// <p>Configurations related to the security configuration for the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityConfigurationData {
     /// <p>Authorization-related configuration input for the security configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Structure representing scheduling maintenance window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleMaintenanceWindow {
     /// <p>Displays the duration of the next maintenance window.</p>

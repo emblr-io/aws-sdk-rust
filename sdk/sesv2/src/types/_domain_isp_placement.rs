@@ -2,6 +2,8 @@
 
 /// <p>An object that contains inbox placement data for email sent from one of your email domains to a specific email provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainIspPlacement {
     /// <p>The name of the email provider that the inbox placement data applies to.</p>

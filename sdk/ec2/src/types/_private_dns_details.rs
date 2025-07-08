@@ -2,6 +2,8 @@
 
 /// <p>Information about the Private DNS name for interface endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateDnsDetails {
     /// <p>The private DNS name assigned to the VPC endpoint service.</p>

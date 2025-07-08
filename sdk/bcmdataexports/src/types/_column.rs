@@ -2,6 +2,8 @@
 
 /// <p>Includes basic information for a data column such as its description, name, and type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Column {
     /// <p>The column name.</p>

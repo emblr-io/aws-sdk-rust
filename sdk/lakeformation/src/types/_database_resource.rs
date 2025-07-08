@@ -2,6 +2,8 @@
 
 /// <p>A structure for the database object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseResource {
     /// <p>The identifier for the Data Catalog. By default, it is the account ID of the caller.</p>

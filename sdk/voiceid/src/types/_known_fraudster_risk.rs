@@ -2,6 +2,8 @@
 
 /// <p>Contains details produced as a result of performing known fraudster risk analysis on a speaker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KnownFraudsterRisk {
     /// <p>The score indicating the likelihood the speaker is a known fraudster.</p>

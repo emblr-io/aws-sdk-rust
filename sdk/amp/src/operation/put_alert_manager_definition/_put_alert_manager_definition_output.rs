@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>PutAlertManagerDefinition</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutAlertManagerDefinitionOutput {
     /// <p>A structure that returns the current status of the alert manager definition.</p>

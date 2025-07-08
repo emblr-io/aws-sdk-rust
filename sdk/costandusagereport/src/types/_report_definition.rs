@@ -2,6 +2,8 @@
 
 /// <p>The definition of Amazon Web Services Cost and Usage Report. You can specify the report name, time unit, report format, compression format, S3 bucket, additional artifacts, and schema elements in the definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportDefinition {
     /// <p>The name of the report that you want to create. The name must be unique, is case sensitive, and can't include spaces.</p>

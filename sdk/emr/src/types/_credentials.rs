@@ -2,6 +2,8 @@
 
 /// <p>The credentials that you can use to connect to cluster endpoints. Credentials consist of a username and a password.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum Credentials {
     /// <p>The username and password that you use to connect to cluster endpoints.</p>

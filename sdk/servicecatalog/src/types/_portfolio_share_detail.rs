@@ -2,6 +2,8 @@
 
 /// <p>Information about the portfolio share.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PortfolioShareDetail {
     /// <p>The identifier of the recipient entity that received the portfolio share. The recipient entity can be one of the following:</p>

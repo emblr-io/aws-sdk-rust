@@ -2,6 +2,8 @@
 
 /// <p>The compression type, file format, and overwrite preference for the data export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3OutputConfigurations {
     /// <p>The output type for the data export.</p>

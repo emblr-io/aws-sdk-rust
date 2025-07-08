@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for transforming the natural language query into SQL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformationConfiguration {
     /// <p>The mode of the transformation.</p>

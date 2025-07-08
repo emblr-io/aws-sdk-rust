@@ -2,6 +2,8 @@
 
 /// <p>Details about a custom plugin file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomPluginFileDescription {
     /// <p>The hex-encoded MD5 checksum of the custom plugin file. You can use it to validate the file.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that contains an <code>Address</code> object's subset of fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AddressSummary {
     /// <p>Specifies the end <code>Customer</code>'s city associated with the <code>Opportunity</code>.</p>

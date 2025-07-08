@@ -2,6 +2,8 @@
 
 /// <p>Options for an OpenID Connect-compatible user-identity trust provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ModifyVerifiedAccessTrustProviderOidcOptions {
     /// <p>The OIDC issuer.</p>

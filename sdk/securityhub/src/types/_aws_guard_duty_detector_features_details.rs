@@ -2,6 +2,8 @@
 
 /// <p>Describes which features are activated for the detector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsGuardDutyDetectorFeaturesDetails {
     /// <p>Indicates the name of the feature that is activated for the detector.</p>

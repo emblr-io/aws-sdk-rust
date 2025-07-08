@@ -2,6 +2,8 @@
 
 /// <p>Retroactively applies an archive rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplyArchiveRuleInput {
     /// <p>The Amazon resource name (ARN) of the analyzer.</p>

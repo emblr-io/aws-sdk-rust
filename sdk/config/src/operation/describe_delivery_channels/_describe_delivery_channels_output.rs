@@ -2,6 +2,8 @@
 
 /// <p>The output for the <code>DescribeDeliveryChannels</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDeliveryChannelsOutput {
     /// <p>A list that contains the descriptions of the specified delivery channel.</p>

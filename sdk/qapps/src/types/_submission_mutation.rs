@@ -2,6 +2,8 @@
 
 /// <p>Represents an action performed on a submission.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubmissionMutation {
     /// <p>The unique identifier of the submission.</p>

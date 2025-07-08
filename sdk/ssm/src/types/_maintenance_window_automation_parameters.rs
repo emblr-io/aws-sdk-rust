@@ -2,6 +2,8 @@
 
 /// <p>The parameters for an <code>AUTOMATION</code> task type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaintenanceWindowAutomationParameters {
     /// <p>The version of an Automation runbook to use during task execution.</p>

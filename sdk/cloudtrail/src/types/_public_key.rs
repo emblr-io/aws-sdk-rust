@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a returned public key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicKey {
     /// <p>The DER encoded public key value in PKCS#1 format.</p>

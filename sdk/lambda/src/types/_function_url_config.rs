@@ -2,6 +2,8 @@
 
 /// <p>Details about a Lambda function URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionUrlConfig {
     /// <p>The HTTP URL endpoint for your function.</p>

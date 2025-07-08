@@ -2,6 +2,8 @@
 
 /// <p>The data types for the task parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum TaskParameterValue {
     /// <p>A double precision IEEE-754 floating point number represented as a string.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You can't remove a management account from an organization. If you want the management account to become a member account in another organization, you must first delete the current organization of the management account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MasterCannotLeaveOrganizationException {
     #[allow(missing_docs)] // documentation missing in model

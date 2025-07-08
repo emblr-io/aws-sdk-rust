@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Amazon SNS topic to which notifications can be published.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSnsTopicDetails {
     /// <p>The ID of an Amazon Web Services managed key for Amazon SNS or a customer managed key.</p>

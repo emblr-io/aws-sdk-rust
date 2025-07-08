@@ -2,6 +2,8 @@
 
 /// <p>The starting position in the data stream from which to start streaming.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartingPosition {
     /// <p>You can set the starting position to one of the following values:</p>

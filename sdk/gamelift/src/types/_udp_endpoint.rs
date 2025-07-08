@@ -2,6 +2,8 @@
 
 /// <p>The domain name and port information for a UDP endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UdpEndpoint {
     /// <p>The domain name of the UDP endpoint.</p>

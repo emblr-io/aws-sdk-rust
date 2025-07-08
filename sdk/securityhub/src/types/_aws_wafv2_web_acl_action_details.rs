@@ -2,6 +2,8 @@
 
 /// <p>Specifies the action that Amazon CloudFront or WAF takes when a web request matches the conditions in the rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2WebAclActionDetails {
     /// <p>Specifies that WAF should allow requests by default.</p>

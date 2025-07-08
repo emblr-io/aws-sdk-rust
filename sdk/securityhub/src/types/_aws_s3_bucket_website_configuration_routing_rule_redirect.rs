@@ -2,6 +2,8 @@
 
 /// <p>The rules to redirect the request if the condition in <code>Condition</code> is met.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketWebsiteConfigurationRoutingRuleRedirect {
     /// <p>The host name to use in the redirect request.</p>

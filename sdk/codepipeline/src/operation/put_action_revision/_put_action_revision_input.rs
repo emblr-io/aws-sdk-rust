@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>PutActionRevision</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutActionRevisionInput {
     /// <p>The name of the pipeline that starts processing the revision to the source.</p>

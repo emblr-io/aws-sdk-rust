@@ -2,6 +2,8 @@
 
 /// <p>A list of failed member ARNs, error codes, and error messages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateChannelMembershipError {
     /// <p>The <code>AppInstanceUserArn</code> of the member that the service couldn't add.</p>

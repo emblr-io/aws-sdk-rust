@@ -2,6 +2,8 @@
 
 /// <p>Specifies the condition under which a signal fetch occurs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConditionBasedSignalFetchConfig {
     /// <p>The condition that must be satisfied to trigger a signal fetch.</p>

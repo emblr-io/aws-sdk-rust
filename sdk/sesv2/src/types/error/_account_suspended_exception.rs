@@ -2,6 +2,8 @@
 
 /// <p>The message can't be sent because the account's ability to send email has been permanently restricted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountSuspendedException {
     #[allow(missing_docs)] // documentation missing in model

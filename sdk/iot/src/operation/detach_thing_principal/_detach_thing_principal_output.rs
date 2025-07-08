@@ -2,6 +2,8 @@
 
 /// <p>The output from the DetachThingPrincipal operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetachThingPrincipalOutput {
     _request_id: Option<String>,

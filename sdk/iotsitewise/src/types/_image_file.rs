@@ -2,6 +2,8 @@
 
 /// <p>Contains an image file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageFile {
     /// <p>The image file contents, represented as a base64-encoded string. The file size must be less than 1 MB.</p>

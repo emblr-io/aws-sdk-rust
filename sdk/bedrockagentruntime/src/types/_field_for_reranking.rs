@@ -2,6 +2,8 @@
 
 /// <p>Contains information for a metadata field to include in or exclude from consideration when reranking.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldForReranking {
     /// <p>The name of a metadata field to include in or exclude from consideration when reranking.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the user or group to be added or removed from the list of create volume permissions for a volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVolumePermission {
     /// <p>The ID of the Amazon Web Services account to be added or removed.</p>

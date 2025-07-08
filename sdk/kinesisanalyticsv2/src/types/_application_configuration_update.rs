@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to an application's configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationConfigurationUpdate {
     /// <p>Describes updates to a SQL-based Kinesis Data Analytics application's configuration.</p>

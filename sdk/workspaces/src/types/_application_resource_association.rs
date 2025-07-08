@@ -2,6 +2,8 @@
 
 /// <p>Describes the association between an application and an application resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationResourceAssociation {
     /// <p>The identifier of the application.</p>

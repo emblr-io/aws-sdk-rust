@@ -2,6 +2,8 @@
 
 /// <p>The IDs for the distribution resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributionResourceId {
     /// <p>The ID of the multi-tenant distribution.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration for an application to automatically stop after a certain amount of time being idle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoStopConfig {
     /// <p>Enables the application to automatically stop after a certain amount of time being idle. Defaults to true.</p>

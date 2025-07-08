@@ -2,6 +2,8 @@
 
 /// <p>The key usage flags represent the purpose (e.g., encipherment, signature) of the key contained in the certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyUsageFlags {
     /// <p>The digitalSignature is asserted when the subject public key is used for verifying digital signatures.</p>

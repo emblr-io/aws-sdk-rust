@@ -2,6 +2,8 @@
 
 /// <p>A public IP Address discovered by IPAM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpamDiscoveredPublicAddress {
     /// <p>The resource discovery ID.</p>

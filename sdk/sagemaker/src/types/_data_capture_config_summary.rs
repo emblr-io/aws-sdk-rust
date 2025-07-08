@@ -2,6 +2,8 @@
 
 /// <p>The currently active data capture configuration used by your Endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCaptureConfigSummary {
     /// <p>Whether data capture is enabled or disabled.</p>

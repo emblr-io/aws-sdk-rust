@@ -2,6 +2,8 @@
 
 /// <p>Contains the tracker resource details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteDevicePositionHistoryError {
     /// <p>The ID of the device for this position.</p>

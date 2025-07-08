@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a table for the query engine to consider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryGenerationTable {
     /// <p>The name of the table for which the other fields in this object apply.</p>

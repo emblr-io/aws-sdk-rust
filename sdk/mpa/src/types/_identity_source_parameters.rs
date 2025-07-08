@@ -2,6 +2,8 @@
 
 /// <p>Contains details for the resource that provides identities to the identity source. For example, an IAM Identity Center instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentitySourceParameters {
     /// <p>IAM Identity Center credentials.</p>

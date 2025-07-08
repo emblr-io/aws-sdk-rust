@@ -2,6 +2,8 @@
 
 /// <p>Describes a virtual private gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpnGateway {
     /// <p>The private Autonomous System Number (ASN) for the Amazon side of a BGP session.</p>

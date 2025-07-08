@@ -2,6 +2,8 @@
 
 /// <p>Contains the details for the Outpost object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Outpost {
     /// <p>Specifies the unique Amazon Resource Name (ARN) for the outpost.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration for a presenter-only video tile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PresenterOnlyConfiguration {
     /// <p>Defines the position of the presenter video tile. Default: <code>TopRight</code>.</p>

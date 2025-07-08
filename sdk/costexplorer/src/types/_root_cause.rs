@@ -2,6 +2,8 @@
 
 /// <p>The combination of Amazon Web Services service, linked account, linked account name, Region, and usage type where a cost anomaly is observed, along with the dollar and percentage amount of the anomaly impact. The linked account name will only be available when the account name can be identified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RootCause {
     /// <p>The Amazon Web Services service name that's associated with the cost anomaly.</p>

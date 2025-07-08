@@ -2,6 +2,8 @@
 
 /// <p>The options and persisted properties for the plugin visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisualOptions {
     /// <p>The persisted properties and their values.</p>

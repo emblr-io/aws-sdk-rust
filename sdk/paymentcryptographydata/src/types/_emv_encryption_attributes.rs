@@ -2,6 +2,8 @@
 
 /// <p>Parameters for plaintext encryption using EMV keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmvEncryptionAttributes {
     /// <p>The EMV derivation mode to use for ICC master key derivation as per EMV version 4.3 book 2.</p>

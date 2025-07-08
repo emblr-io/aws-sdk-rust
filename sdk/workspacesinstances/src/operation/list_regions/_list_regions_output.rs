@@ -2,6 +2,8 @@
 
 /// <p>Contains the list of supported AWS regions for WorkSpaces Instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListRegionsOutput {
     /// <p>Collection of AWS regions supported by WorkSpaces Instances.</p>

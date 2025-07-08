@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>EnableSso</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EnableSsoInput {
     /// <p>The identifier of the directory for which to enable single-sign on.</p>

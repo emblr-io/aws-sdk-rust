@@ -2,6 +2,8 @@
 
 /// <p>Aliases attached to a user id within an Amazon Q Business application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserAlias {
     /// <p>The identifier of the index that the user aliases are associated with.</p>

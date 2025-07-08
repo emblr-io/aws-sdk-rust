@@ -2,6 +2,8 @@
 
 /// <p>There are not enough system resources to create the cluster you requested (or to resize an already-existing cluster).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientClusterCapacityFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Returns the kind of currency detected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpenseCurrency {
     /// <p>Currency code for detected currency. the current supported codes are:</p>

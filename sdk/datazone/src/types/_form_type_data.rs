@@ -2,6 +2,8 @@
 
 /// <p>The details of the metadata form type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FormTypeData {
     /// <p>The identifier of the Amazon DataZone domain in which the form type exists.</p>

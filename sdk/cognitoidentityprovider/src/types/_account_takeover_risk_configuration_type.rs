@@ -2,6 +2,8 @@
 
 /// <p>The settings for automated responses and notification templates for adaptive authentication with threat protection features.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountTakeoverRiskConfigurationType {
     /// <p>The settings for composing and sending an email message when threat protection assesses a risk level with adaptive authentication. When you choose to notify users in <code>AccountTakeoverRiskConfiguration</code>, Amazon Cognito sends an email message using the method and template that you set with this data type.</p>

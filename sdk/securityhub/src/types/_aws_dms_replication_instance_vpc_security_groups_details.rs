@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the virtual private cloud (VPC) security group that’s associated with the replication instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDmsReplicationInstanceVpcSecurityGroupsDetails {
     /// <p>The identifier of the VPC security group that’s associated with the replication instance.</p>

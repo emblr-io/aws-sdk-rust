@@ -2,6 +2,8 @@
 
 /// <p>Container for the <code>WorkflowDetail</code> data type. It is used by actions that trigger a workflow to begin execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowDetails {
     /// <p>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded.</p>

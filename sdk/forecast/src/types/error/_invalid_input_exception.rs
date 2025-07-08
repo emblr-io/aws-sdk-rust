@@ -2,6 +2,8 @@
 
 /// <p>We can't process the request because it includes an invalid value or a value that exceeds the valid range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInputException {
     #[allow(missing_docs)] // documentation missing in model

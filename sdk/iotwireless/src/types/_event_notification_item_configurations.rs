@@ -2,6 +2,8 @@
 
 /// <p>Object of all event configurations and the status of the event topics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventNotificationItemConfigurations {
     /// <p>Device registration state event configuration for an event configuration item.</p>

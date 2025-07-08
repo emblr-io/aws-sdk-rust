@@ -2,6 +2,8 @@
 
 /// <p>This output contains the list of steps returned in reverse order. This means that the last step is the first element in the list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStepsOutput {
     /// <p>The filtered list of steps for the cluster.</p>

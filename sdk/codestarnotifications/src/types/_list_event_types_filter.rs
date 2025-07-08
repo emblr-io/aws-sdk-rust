@@ -2,6 +2,8 @@
 
 /// <p>Information about a filter to apply to the list of returned event types. You can filter by resource type or service name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEventTypesFilter {
     /// <p>The system-generated name of the filter type you want to filter by.</p>

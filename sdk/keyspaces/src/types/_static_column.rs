@@ -2,6 +2,8 @@
 
 /// <p>The static columns of the table. Static columns store values that are shared by all rows in the same partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StaticColumn {
     /// <p>The name of the static column.</p>

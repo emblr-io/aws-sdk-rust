@@ -2,6 +2,8 @@
 
 /// <p>Provides the circle that was used while calculating the route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteMatrixAutoCircle {
     /// <p>The margin provided for the calculation.</p>

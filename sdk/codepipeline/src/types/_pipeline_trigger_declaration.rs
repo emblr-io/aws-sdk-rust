@@ -6,6 +6,8 @@
 /// <p>When a trigger configuration is specified, default change detection for repository and branch commits is disabled.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineTriggerDeclaration {
     /// <p>The source provider for the event, such as connections configured for a repository with Git tags, for the specified trigger configuration.</p>

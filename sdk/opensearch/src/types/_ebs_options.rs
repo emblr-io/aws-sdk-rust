@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters required to enable EBS-based storage for an OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsOptions {
     /// <p>Indicates whether EBS volumes are attached to data nodes in an OpenSearch Service domain.</p>

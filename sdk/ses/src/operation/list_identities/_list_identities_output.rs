@@ -2,6 +2,8 @@
 
 /// <p>A list of all identities that you have attempted to verify under your Amazon Web Services account, regardless of verification status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListIdentitiesOutput {
     /// <p>A list of identities.</p>

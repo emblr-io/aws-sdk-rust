@@ -2,6 +2,8 @@
 
 /// <p>A collection of harvested manifests of different types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HarvestedManifests {
     /// <p>A list of harvested HLS manifests.</p>

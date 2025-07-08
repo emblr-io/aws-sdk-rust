@@ -2,6 +2,8 @@
 
 /// <p>The port numbers that you specified are not valid numbers or are not unique for this accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPortRangeException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The search results of nearby places.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SearchNearbyResultItem {
     /// <p>The <code>PlaceId</code> of the place you wish to receive the information for.</p>

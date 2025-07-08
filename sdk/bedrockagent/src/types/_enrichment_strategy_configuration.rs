@@ -2,6 +2,8 @@
 
 /// <p>The strategy used for performing context enrichment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnrichmentStrategyConfiguration {
     /// <p>The method used for the context enrichment strategy.</p>

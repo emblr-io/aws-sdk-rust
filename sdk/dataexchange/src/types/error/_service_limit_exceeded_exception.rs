@@ -2,6 +2,8 @@
 
 /// <p>The request has exceeded the quotas imposed by the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLimitExceededException {
     /// <p>The name of the limit that was reached.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A list of storage types for an Amazon OpenSearch Service domain that are available for a given intance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageType {
     /// <p>The name of the storage type.</p>

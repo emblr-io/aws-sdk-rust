@@ -2,6 +2,8 @@
 
 /// <p>Contains information that OpenSearch Service derives based on the <code>VPCOptions</code> for the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsOpenSearchServiceDomainVpcOptionsDetails {
     /// <p>The list of security group IDs that are associated with the VPC endpoints for the domain.</p>

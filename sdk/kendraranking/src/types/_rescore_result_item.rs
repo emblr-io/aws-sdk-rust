@@ -2,6 +2,8 @@
 
 /// <p>A result item for a document with a new relevancy score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RescoreResultItem {
     /// <p>The identifier of the document from the search service.</p>

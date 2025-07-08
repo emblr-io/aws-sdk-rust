@@ -2,6 +2,8 @@
 
 /// <p>Contains details for an approval session. For more information, see <a href="https://docs.aws.amazon.com/mpa/latest/userguide/mpa-health.html">Session</a> in the <i>Multi-party approval User Guide</i></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListSessionsResponseSession {
     /// <p>Amazon Resource Name (ARN) for the session.</p>

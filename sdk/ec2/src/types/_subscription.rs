@@ -2,6 +2,8 @@
 
 /// <p>Describes an Infrastructure Performance subscription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Subscription {
     /// <p>The Region or Availability Zone that's the source for the subscription. For example, <code>us-east-1</code>.</p>

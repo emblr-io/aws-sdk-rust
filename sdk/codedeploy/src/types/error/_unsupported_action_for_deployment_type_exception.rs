@@ -2,6 +2,8 @@
 
 /// <p>A call was submitted that is not supported for the specified deployment type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedActionForDeploymentTypeException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

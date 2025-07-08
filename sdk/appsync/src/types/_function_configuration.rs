@@ -2,6 +2,8 @@
 
 /// <p>A function is a reusable entity. You can use multiple functions to compose the resolver logic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionConfiguration {
     /// <p>A unique ID representing the <code>Function</code> object.</p>

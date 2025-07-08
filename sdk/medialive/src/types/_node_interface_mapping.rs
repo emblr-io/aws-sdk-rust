@@ -2,6 +2,8 @@
 
 /// A mapping that's used to pair a logical network interface name on a Node with the physical interface name exposed in the operating system.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeInterfaceMapping {
     /// A uniform logical interface name to address in a MediaLive channel configuration.

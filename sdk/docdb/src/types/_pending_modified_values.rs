@@ -2,6 +2,8 @@
 
 /// <p>One or more modified settings for an instance. These modified settings have been requested, but haven't been applied yet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingModifiedValues {
     /// <p>Contains the new <code>DBInstanceClass</code> for the instance that will be applied or is currently being applied.</p>

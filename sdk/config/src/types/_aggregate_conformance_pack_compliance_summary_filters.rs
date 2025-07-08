@@ -2,6 +2,8 @@
 
 /// <p>Filters the results based on account ID and region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateConformancePackComplianceSummaryFilters {
     /// <p>The 12-digit Amazon Web Services account ID of the source account.</p>

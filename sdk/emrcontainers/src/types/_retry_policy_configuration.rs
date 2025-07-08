@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the retry policy that the job runs on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryPolicyConfiguration {
     /// <p>The maximum number of attempts on the job's driver.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes whether S3 data event logs will be enabled as a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3LogsConfiguration {
     /// <p>The status of S3 data event logs as a data source.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details on recommended instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetInstance {
     /// <p>The expected cost to operate this instance type on a monthly basis.</p>

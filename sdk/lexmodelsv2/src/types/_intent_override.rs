@@ -2,6 +2,8 @@
 
 /// <p>Override settings to configure the intent state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentOverride {
     /// <p>The name of the intent. Only required when you're switching intents.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The operation didn't succeed because an internal error occurred. Try again later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerException {
     #[allow(missing_docs)] // documentation missing in model

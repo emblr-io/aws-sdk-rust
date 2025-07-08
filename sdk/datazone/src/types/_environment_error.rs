@@ -2,6 +2,8 @@
 
 /// <p>The failure reasons for the environment deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentError {
     /// <p>The error code for the failure reason for the environment deployment.</p>

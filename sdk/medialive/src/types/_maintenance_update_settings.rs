@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for MaintenanceUpdateSettings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaintenanceUpdateSettings {
     /// Choose one day of the week for maintenance. The chosen day is used for all future maintenance windows.

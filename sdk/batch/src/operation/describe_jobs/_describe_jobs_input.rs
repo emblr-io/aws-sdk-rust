@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DescribeJobs</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeJobsInput {
     /// <p>A list of up to 100 job IDs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The requested resource does not exist, or access was denied.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotFoundException {
     /// <p>Error or informational message that can contain more detail about problems locating or accessing a resource.</p>

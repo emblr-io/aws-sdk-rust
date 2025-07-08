@@ -2,6 +2,8 @@
 
 /// <p>The usage dimension does not match one of the <code>UsageDimensions</code> associated with products.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidUsageDimensionException {
     #[allow(missing_docs)] // documentation missing in model

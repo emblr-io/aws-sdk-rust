@@ -2,6 +2,8 @@
 
 /// <p>Represents the type data for each field retrieved from the introspection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceIntrospectionModelFieldType {
     /// <p>Specifies the classification of data. For example, this could be set to values like <code>Scalar</code> or <code>NonNull</code> to indicate a fundamental property of the field.</p>

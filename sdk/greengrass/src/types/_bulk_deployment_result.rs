@@ -2,6 +2,8 @@
 
 /// Information about an individual group deployment in a bulk deployment operation.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BulkDeploymentResult {
     /// The time, in ISO format, when the deployment was created.

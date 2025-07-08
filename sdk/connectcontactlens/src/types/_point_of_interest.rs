@@ -2,6 +2,8 @@
 
 /// <p>The section of the contact audio where that category rule was detected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PointOfInterest {
     /// <p>The beginning offset in milliseconds where the category rule was detected.</p>

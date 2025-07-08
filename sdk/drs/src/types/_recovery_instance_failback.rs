@@ -2,6 +2,8 @@
 
 /// <p>An object representing failback related information of the Recovery Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryInstanceFailback {
     /// <p>The ID of the failback client that this Recovery Instance is associated with.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the conditions to evaluate for an activity in a journey, and how to evaluate those conditions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Condition {
     /// <p>The conditions to evaluate for the activity.</p>

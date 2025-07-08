@@ -2,6 +2,8 @@
 
 /// <p>The pull request has already had its approval rules set to override.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverrideAlreadySetException {
     /// <p>Any message associated with the exception.</p>

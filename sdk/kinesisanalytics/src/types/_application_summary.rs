@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Provides application summary information, including the application Amazon Resource Name (ARN), name, and status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationSummary {
     /// <p>Name of the application.</p>

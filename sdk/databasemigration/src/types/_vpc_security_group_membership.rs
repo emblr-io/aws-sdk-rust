@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a security group associated with the virtual private cloud (VPC) hosting your replication and DB instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcSecurityGroupMembership {
     /// <p>The VPC security group ID.</p>

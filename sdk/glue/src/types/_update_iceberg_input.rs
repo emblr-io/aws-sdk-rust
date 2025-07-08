@@ -2,6 +2,8 @@
 
 /// <p>Input parameters specific to updating Apache Iceberg tables in Glue Data Catalog, containing the update operations to be applied to an existing Iceberg table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateIcebergInput {
     /// <p>The specific update operations to be applied to the Iceberg table, containing a list of updates that define the new state of the table including schema, partitions, and properties.</p>

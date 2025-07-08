@@ -2,6 +2,8 @@
 
 /// <p>The specified hosted zone is a public hosted zone, not a private hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostedZoneNotPrivate {
     /// <p></p>

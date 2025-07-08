@@ -2,6 +2,8 @@
 
 /// <p>The location of the file is not valid. Make sure that you include the file name and extension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidFileLocationException {
     /// <p>Any message associated with the exception.</p>

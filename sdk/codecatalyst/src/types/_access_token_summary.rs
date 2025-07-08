@@ -2,6 +2,8 @@
 
 /// <p>Information about a specified personal access token (PAT).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessTokenSummary {
     /// <p>The system-generated ID of the personal access token.</p>

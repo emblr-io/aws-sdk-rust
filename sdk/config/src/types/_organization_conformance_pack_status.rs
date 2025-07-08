@@ -2,6 +2,8 @@
 
 /// <p>Returns the status for an organization conformance pack in an organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationConformancePackStatus {
     /// <p>The name that you assign to organization conformance pack.</p>

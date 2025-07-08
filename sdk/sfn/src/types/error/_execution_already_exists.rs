@@ -4,6 +4,8 @@
 /// <p>Executions with the same <code>name</code> and <code>input</code> are considered idempotent.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionAlreadyExists {
     #[allow(missing_docs)] // documentation missing in model

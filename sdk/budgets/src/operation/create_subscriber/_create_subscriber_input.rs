@@ -2,6 +2,8 @@
 
 /// <p>Request of CreateSubscriber</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSubscriberInput {
     /// <p>The <code>accountId</code> that is associated with the budget that you want to create a subscriber for.</p>

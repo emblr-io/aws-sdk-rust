@@ -2,6 +2,8 @@
 
 /// <p>Information about the server's network for which the assessment was run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInfo {
     /// <p>Information about the name of the interface of the server for which the assessment was run.</p>

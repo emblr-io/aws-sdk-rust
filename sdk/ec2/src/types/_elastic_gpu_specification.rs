@@ -5,6 +5,8 @@
 /// </note>
 /// <p>A specification for an Elastic Graphics accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticGpuSpecification {
     /// <p>The type of Elastic Graphics accelerator.</p>

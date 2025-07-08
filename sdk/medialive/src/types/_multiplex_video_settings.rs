@@ -2,6 +2,8 @@
 
 /// The video configuration for each program in a multiplex.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiplexVideoSettings {
     /// The constant bitrate configuration for the video encode. When this field is defined, StatmuxSettings must be undefined.

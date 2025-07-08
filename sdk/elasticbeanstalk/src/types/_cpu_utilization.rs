@@ -2,6 +2,8 @@
 
 /// <p>CPU utilization metrics for an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CpuUtilization {
     /// <p>Percentage of time that the CPU has spent in the <code>User</code> state over the last 10 seconds.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A collection of resources of the same type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSetOutput {
     /// <p>The Amazon Resource Name (ARN) for the resource set.</p>

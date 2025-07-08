@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters in the request body.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyParameters {
     /// <p>A list of parameters in the request body.</p>

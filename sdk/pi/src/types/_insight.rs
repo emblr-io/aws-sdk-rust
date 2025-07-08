@@ -2,6 +2,8 @@
 
 /// <p>Retrieves the list of performance issues which are identified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Insight {
     /// <p>The unique identifier for the insight. For example, <code>insight-12345678901234567</code>.</p>

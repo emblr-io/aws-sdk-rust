@@ -2,6 +2,8 @@
 
 /// <p>The specified Amazon EC2 security group is already authorized for the specified cache security group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

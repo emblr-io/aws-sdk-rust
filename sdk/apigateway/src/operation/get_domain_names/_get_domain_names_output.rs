@@ -2,6 +2,8 @@
 
 /// <p>Represents a collection of DomainName resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDomainNamesOutput {
     /// <p>The current page of elements from this collection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The metadata that's associated with the delegation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DelegationMetadata {
     /// <p>The unique identifier for the delegation.</p>

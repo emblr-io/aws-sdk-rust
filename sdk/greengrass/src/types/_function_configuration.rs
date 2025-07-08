@@ -2,6 +2,8 @@
 
 /// The configuration of the Lambda function.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionConfiguration {
     /// The expected encoding type of the input payload for the function. The default is ''json''.

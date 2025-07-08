@@ -2,6 +2,8 @@
 
 /// <p>The mitigation applied to a DDoS attack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Mitigation {
     /// <p>The name of the mitigation taken for this attack.</p>

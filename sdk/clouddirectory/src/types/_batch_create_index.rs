@@ -2,6 +2,8 @@
 
 /// <p>Creates an index object inside of a <code>BatchRead</code> operation. For more information, see <code>CreateIndex</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateIndex {
     /// <p>Specifies the attributes that should be indexed on. Currently only a single attribute is supported.</p>

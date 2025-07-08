@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>UpdateDomainEndpointOptions</code></code> operation. Specifies the name of the domain you want to update and the domain endpoint options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDomainEndpointOptionsInput {
     /// <p>A string that represents the name of a domain.</p>

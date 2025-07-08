@@ -2,6 +2,8 @@
 
 /// <p>A meeting created using the Amazon Chime SDK.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Meeting {
     /// <p>The Amazon Web Services Region in which you create the meeting.</p>

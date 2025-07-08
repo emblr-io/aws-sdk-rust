@@ -2,6 +2,8 @@
 
 /// <p>The total of usage for an account ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageTotal {
     /// <p>The account ID of the account that usage data was retrieved for.</p>

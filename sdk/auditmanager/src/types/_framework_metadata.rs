@@ -2,6 +2,8 @@
 
 /// <p>The metadata of a framework, such as the name, ID, or description.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FrameworkMetadata {
     /// <p>The name of the framework.</p>

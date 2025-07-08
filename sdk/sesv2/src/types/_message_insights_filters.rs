@@ -5,6 +5,8 @@
 /// <p>If you specify multiple values for a filter, the values are joined by OR. Filter values are case-sensitive.</p>
 /// <p><code>FromEmailAddress</code>, <code>Destination</code>, and <code>Subject</code> filters support partial match. A partial match is performed by using the <code>*</code> wildcard character placed at the beginning (suffix match), the end (prefix match) or both ends of the string (contains match). In order to match the literal characters <code>*</code> or <code>\</code>, they must be escaped using the <code>\</code> character. If no wildcard character is present, an exact match is performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageInsightsFilters {
     /// <p>The from address used to send the message.</p>

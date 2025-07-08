@@ -2,6 +2,8 @@
 
 /// <p>Used to filter for insights that have the status <code>CLOSED</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListInsightsClosedStatusFilter {
     /// <p>Use to filter for either <code>REACTIVE</code> or <code>PROACTIVE</code> insights.</p>

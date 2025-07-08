@@ -2,6 +2,8 @@
 
 /// <p>The detailed data about the current state of the environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EnvironmentState {
     /// <p>The environment spec that was used to create the environment.</p>

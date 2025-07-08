@@ -2,6 +2,8 @@
 
 /// <p>Contains the value of the metadata attribute. Choose a <code>type</code> and include the field that corresponds to it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MetadataAttributeValue {
     /// <p>The type of the metadata attribute.</p>

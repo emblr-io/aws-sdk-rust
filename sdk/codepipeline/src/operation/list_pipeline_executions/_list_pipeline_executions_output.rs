@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>ListPipelineExecutions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListPipelineExecutionsOutput {
     /// <p>A list of executions in the history of a pipeline.</p>

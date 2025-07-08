@@ -2,6 +2,8 @@
 
 /// <p>An Amazon SageMaker Model Card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ModelCard {
     /// <p>The Amazon Resource Name (ARN) of the model card.</p>

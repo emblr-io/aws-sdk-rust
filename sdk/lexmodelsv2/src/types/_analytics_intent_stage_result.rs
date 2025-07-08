@@ -2,6 +2,8 @@
 
 /// <p>An object containing the results for the intent stage metrics you requested and the bin and/or group they refer to, if applicable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsIntentStageResult {
     /// <p>A list of objects containing the criteria you requested for binning results and the values of the bins.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the request parameter has exceeded the maximum number of concurrent message replays.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplayLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

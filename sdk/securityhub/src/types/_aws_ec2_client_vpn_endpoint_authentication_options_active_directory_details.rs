@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Active Directory that’s used to authenticate an Client VPN endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails {
     /// <p>The ID of the Active Directory used for authentication.</p>

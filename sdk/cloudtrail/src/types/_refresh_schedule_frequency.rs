@@ -3,6 +3,8 @@
 /// <p>Specifies the frequency for a dashboard refresh schedule.</p>
 /// <p>For a custom dashboard, you can schedule a refresh for every 1, 6, 12, or 24 hours, or every day.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshScheduleFrequency {
     /// <p>The unit to use for the refresh.</p>

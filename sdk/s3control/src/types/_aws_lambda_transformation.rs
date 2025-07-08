@@ -2,6 +2,8 @@
 
 /// <p>Lambda function used to transform objects through an Object Lambda Access Point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsLambdaTransformation {
     /// <p>The Amazon Resource Name (ARN) of the Lambda function.</p>

@@ -2,6 +2,8 @@
 
 /// H264 Color Space Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct H264ColorSpaceSettings {
     /// Passthrough applies no color space conversion to the output

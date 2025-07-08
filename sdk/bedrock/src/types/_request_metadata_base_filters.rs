@@ -2,6 +2,8 @@
 
 /// <p>A mapping of a metadata key to a value that it should or should not equal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RequestMetadataBaseFilters {
     /// <p>Include results where the key equals the value.</p>

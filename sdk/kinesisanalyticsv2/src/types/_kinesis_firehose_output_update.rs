@@ -2,6 +2,8 @@
 
 /// <p>For a SQL-based Kinesis Data Analytics application, when updating an output configuration using the <code>UpdateApplication</code> operation, provides information about a Kinesis Data Firehose delivery stream that is configured as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisFirehoseOutputUpdate {
     /// <p>The Amazon Resource Name (ARN) of the delivery stream to write to.</p>

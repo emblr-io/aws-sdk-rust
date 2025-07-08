@@ -2,6 +2,8 @@
 
 /// <p>Describes the time period for a Scheduled Instance to start its first schedule. The time period must span less than one day.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotDateTimeRangeRequest {
     /// <p>The earliest date and time, in UTC, for the Scheduled Instance to start.</p>

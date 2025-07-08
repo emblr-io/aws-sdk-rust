@@ -2,6 +2,8 @@
 
 /// <p>This is a tagged union for all of the types of events an enhanced fan-out consumer can receive over HTTP/2 after a call to <code>SubscribeToShard</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SubscribeToShardEventStream {
     /// <p>After you call <code>SubscribeToShard</code>, Kinesis Data Streams sends events of this type to your consumer. For an example of how to handle these events, see <a href="/streams/latest/dev/building-enhanced-consumers-api.html">Enhanced Fan-Out Using the Kinesis Data Streams API</a>.</p>

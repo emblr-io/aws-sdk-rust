@@ -2,6 +2,8 @@
 
 /// <p>The scan results aggregated by target resource filter criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CisScanResultsAggregatedByTargetResourceFilterCriteria {
     /// <p>The criteria's account ID filters.</p>

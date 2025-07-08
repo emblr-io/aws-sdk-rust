@@ -2,6 +2,8 @@
 
 /// <p>The optional configuration of subtotals cells.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableFieldSubtotalOptions {
     /// <p>The field ID of the subtotal options.</p>

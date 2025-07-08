@@ -3,6 +3,8 @@
 /// <p>Object specifying the ingest configuration set up by the broadcaster, usually in an encoder.</p>
 /// <p><b>Note:</b> Use IngestConfigurations instead of <code>IngestConfiguration</code> (which is deprecated). If multitrack is not enabled, IngestConfiguration and IngestConfigurations contain the same data, namely information about track0 (the sole track). If multitrack is enabled, IngestConfiguration contains data for only the first track (track0) and IngestConfigurations contains data for all tracks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestConfigurations {
     /// <p>Encoder settings for video</p>

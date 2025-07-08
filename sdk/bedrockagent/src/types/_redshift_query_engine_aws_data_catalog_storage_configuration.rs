@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for storage in Glue Data Catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftQueryEngineAwsDataCatalogStorageConfiguration {
     /// <p>A list of names of the tables to use.</p>

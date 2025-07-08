@@ -2,6 +2,8 @@
 
 /// <p>Input parameters for updating open table format tables in GlueData Catalog, serving as a wrapper for format-specific update operations such as Apache Iceberg.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateOpenTableFormatInput {
     /// <p>Apache Iceberg-specific update parameters that define the table modifications to be applied, including schema changes, partition specifications, and table properties.</p>

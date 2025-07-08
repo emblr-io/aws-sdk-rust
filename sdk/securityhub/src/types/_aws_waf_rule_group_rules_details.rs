@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the rules attached to the rule group. These rules identify the web requests that you want to allow, block, or count.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRuleGroupRulesDetails {
     /// <p>Provides information about what action WAF should take on a web request when it matches the criteria defined in the rule.</p>

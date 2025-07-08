@@ -2,6 +2,8 @@
 
 /// <p>The start and end time for data pull from the source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnDemandConfiguration {
     /// <p>The start time for data pull from the source as an Unix/epoch string in milliseconds</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details for the execute command session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Session {
     /// <p>The ID of the execute command session.</p>

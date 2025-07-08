@@ -2,6 +2,8 @@
 
 /// <p>No codec private data was found in at least one of tracks of the video stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissingCodecPrivateDataException {
     #[allow(missing_docs)] // documentation missing in model

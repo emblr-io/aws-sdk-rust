@@ -2,6 +2,8 @@
 
 /// <p>Configuration to control how SageMaker AI captures inference data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCaptureConfig {
     /// <p>Whether data capture should be enabled or disabled (defaults to enabled).</p>

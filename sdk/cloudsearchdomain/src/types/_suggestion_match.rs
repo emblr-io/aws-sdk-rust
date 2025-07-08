@@ -2,6 +2,8 @@
 
 /// <p>An autocomplete suggestion that matches the query string specified in a <code>SuggestRequest</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestionMatch {
     /// <p>The string that matches the query string specified in the <code>SuggestRequest</code>.</p>

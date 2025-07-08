@@ -2,6 +2,8 @@
 
 /// <p>The recommendation for your DB instances, DB clusters, and DB parameter groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbRecommendation {
     /// <p>The unique identifier of the recommendation.</p>

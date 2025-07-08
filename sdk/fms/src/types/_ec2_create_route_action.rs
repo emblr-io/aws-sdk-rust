@@ -2,6 +2,8 @@
 
 /// <p>Information about the CreateRoute action in Amazon EC2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2CreateRouteAction {
     /// <p>A description of CreateRoute action in Amazon EC2.</p>

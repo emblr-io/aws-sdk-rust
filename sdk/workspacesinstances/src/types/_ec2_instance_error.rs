@@ -2,6 +2,8 @@
 
 /// <p>Captures detailed error information for EC2 instance operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2InstanceError {
     /// <p>Unique error code identifying the specific EC2 instance error.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input for the EnableTopicRuleRequest operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnableTopicRuleInput {
     /// <p>The name of the topic rule to enable.</p>

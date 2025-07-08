@@ -2,6 +2,8 @@
 
 /// <p>Metadata for the origination identity that is associated with the registration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationAssociationMetadata {
     /// <p>The Amazon Resource Name (ARN) of the origination identity that is associated with the registration.</p>

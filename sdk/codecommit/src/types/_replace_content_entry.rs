@@ -2,6 +2,8 @@
 
 /// <p>Information about a replacement content entry in the conflict of a merge or pull request operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplaceContentEntry {
     /// <p>The path of the conflicting file.</p>

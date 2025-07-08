@@ -2,6 +2,8 @@
 
 /// <p>Contains specifications for the sample utterance generation feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SampleUtteranceGenerationSpecification {
     /// <p>Specifies whether to enable sample utterance generation or not.</p>

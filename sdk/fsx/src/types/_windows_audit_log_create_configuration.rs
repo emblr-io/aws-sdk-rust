@@ -2,6 +2,8 @@
 
 /// <p>The Windows file access auditing configuration used when creating or updating an Amazon FSx for Windows File Server file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WindowsAuditLogCreateConfiguration {
     /// <p>Sets which attempt type is logged by Amazon FSx for file and folder accesses.</p>

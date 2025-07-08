@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the Amazon Redshift database configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftSourceConfig {
     /// <p>A string identifying the Redshift cluster.</p>

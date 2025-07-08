@@ -2,6 +2,8 @@
 
 /// <p>The current sync status between the source and the aggregator account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregatedSourceStatus {
     /// <p>The source account ID or an organization.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The managed word list that was configured for the guardrail. (This is a list of words that are pre-defined and managed by guardrails only.)</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailManagedWords {
     /// <p>ManagedWords$type The managed word type that was configured for the guardrail. (For now, we only offer profanity word list)</p>

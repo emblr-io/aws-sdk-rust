@@ -2,6 +2,8 @@
 
 /// <p>Provides information about alerts and warnings that Amazon Lex sends during a migration. The alerts include information about how to resolve the issue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MigrationAlert {
     /// <p>The type of alert. There are two kinds of alerts:</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server that describes the remote access session when AWS Device Farm stops the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopRemoteAccessSessionOutput {
     /// <p>A container that represents the metadata from the service about the remote access session you are stopping.</p>

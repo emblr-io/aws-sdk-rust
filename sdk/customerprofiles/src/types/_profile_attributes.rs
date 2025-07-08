@@ -2,6 +2,8 @@
 
 /// <p>The object used to segment on attributes within the customer profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ProfileAttributes {
     /// <p>A field to describe values to segment on within account number.</p>

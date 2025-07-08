@@ -2,6 +2,8 @@
 
 /// <p>The input to the SetVisibleToAllUsers action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetVisibleToAllUsersInput {
     /// <p>The unique identifier of the job flow (cluster).</p>

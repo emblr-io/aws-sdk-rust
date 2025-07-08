@@ -2,6 +2,8 @@
 
 /// <p>Specifies data for one or more attributes that describe the user who's associated with an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointUser {
     /// <p>One or more custom attributes that describe the user by associating a name with an array of values. For example, the value of an attribute named Interests might be: \["Science", "Music", "Travel"\]. You can use these attributes as filter criteria when you create segments. Attribute names are case sensitive.</p>

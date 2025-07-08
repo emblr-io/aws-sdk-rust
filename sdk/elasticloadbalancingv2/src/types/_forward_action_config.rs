@@ -2,6 +2,8 @@
 
 /// <p>Information about a forward action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForwardActionConfig {
     /// <p>The target groups. For Network Load Balancers, you can specify a single target group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A collection of options that configure how each panel displays in a small multiples chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PanelConfiguration {
     /// <p>Configures the title display within each small multiples panel.</p>

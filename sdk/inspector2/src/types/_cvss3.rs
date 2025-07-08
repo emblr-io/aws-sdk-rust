@@ -2,6 +2,8 @@
 
 /// <p>The Common Vulnerability Scoring System (CVSS) version 3 details for the vulnerability.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Cvss3 {
     /// <p>The CVSS v3 base score for the vulnerability.</p>

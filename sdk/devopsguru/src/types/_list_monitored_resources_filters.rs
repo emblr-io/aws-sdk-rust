@@ -2,6 +2,8 @@
 
 /// <p>Filters to determine which monitored resources you want to retrieve. You can filter by resource type or resource permission status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListMonitoredResourcesFilters {
     /// <p>The permission status of a resource.</p>

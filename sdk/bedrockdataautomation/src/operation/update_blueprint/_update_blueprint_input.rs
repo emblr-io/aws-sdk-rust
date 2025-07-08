@@ -2,6 +2,8 @@
 
 /// Update Blueprint Request
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateBlueprintInput {
     /// ARN generated at the server side when a Blueprint is created

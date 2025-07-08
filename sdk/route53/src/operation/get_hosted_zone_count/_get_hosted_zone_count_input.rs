@@ -2,6 +2,8 @@
 
 /// <p>A request to retrieve a count of all the hosted zones that are associated with the current Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetHostedZoneCountInput {}
 impl GetHostedZoneCountInput {

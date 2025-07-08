@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of a successful invocation of the <code>DescribeEngineDefaultParameters</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineDefaults {
     /// <p>Specifies the name of the DB parameter group family that the engine default parameters apply to.</p>

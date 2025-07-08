@@ -2,6 +2,8 @@
 
 /// <p>The storage configuration for the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceStorageConfig {
     /// <p>The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.</p>

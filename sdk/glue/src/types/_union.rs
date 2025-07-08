@@ -2,6 +2,8 @@
 
 /// <p>Specifies a transform that combines the rows from two or more datasets into a single result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Union {
     /// <p>The name of the transform node.</p>

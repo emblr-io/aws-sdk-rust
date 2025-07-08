@@ -2,6 +2,8 @@
 
 /// <p>At least one delegate must be associated to the resource to disable automatic replies from the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BookingOptions {
     /// <p>The resource's ability to automatically reply to requests. If disabled, delegates must be associated to the resource.</p>

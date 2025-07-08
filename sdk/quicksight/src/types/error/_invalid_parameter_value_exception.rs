@@ -2,6 +2,8 @@
 
 /// <p>One or more parameters has a value that isn't valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidParameterValueException {
     #[allow(missing_docs)] // documentation missing in model

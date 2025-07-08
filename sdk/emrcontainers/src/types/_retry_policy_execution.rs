@@ -2,6 +2,8 @@
 
 /// <p>The current status of the retry policy executed on the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryPolicyExecution {
     /// <p>The current number of attempts made on the driver of the job.</p>

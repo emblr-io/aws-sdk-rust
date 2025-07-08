@@ -2,6 +2,8 @@
 
 /// <p>Describes a load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancer {
     /// <p>The name of the load balancer (<code>my-load-balancer</code>).</p>

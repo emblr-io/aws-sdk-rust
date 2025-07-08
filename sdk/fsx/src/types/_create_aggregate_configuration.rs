@@ -2,6 +2,8 @@
 
 /// <p>Used to specify the configuration options for an FSx for ONTAP volume's storage aggregate or aggregates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateAggregateConfiguration {
     /// <p>Used to specify the names of aggregates on which the volume will be created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The long condition contains a <code>Value</code> and can optionally contain an <code>Operator</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LongCondition {
     /// <p>The value of an item included in one of the search item filters.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Which audit checks are enabled and disabled for this account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditCheckConfiguration {
     /// <p>True if this audit check is enabled for this account.</p>

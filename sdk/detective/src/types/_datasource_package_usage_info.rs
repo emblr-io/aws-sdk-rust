@@ -2,6 +2,8 @@
 
 /// <p>Information on the usage of a data source package in the behavior graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasourcePackageUsageInfo {
     /// <p>Total volume of data in bytes per day ingested for a given data source package.</p>

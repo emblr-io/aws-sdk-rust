@@ -2,6 +2,8 @@
 
 /// <p>Information about the hours of operation override config: day, start time, and end time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoursOfOperationOverrideConfig {
     /// <p>The day that the hours of operation override applies to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An anomalous metric in an anomaly group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyGroupTimeSeries {
     /// <p>The ID of the anomaly group.</p>

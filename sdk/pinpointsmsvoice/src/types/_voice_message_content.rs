@@ -2,6 +2,8 @@
 
 /// An object that contains a voice message and information about the recipient that you want to send it to.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceMessageContent {
     /// An object that defines a message that contains text formatted using Amazon Pinpoint Voice Instructions markup.

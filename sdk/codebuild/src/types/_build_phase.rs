@@ -2,6 +2,8 @@
 
 /// <p>Information about a stage for a build.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuildPhase {
     /// <p>The name of the build phase. Valid values include:</p>

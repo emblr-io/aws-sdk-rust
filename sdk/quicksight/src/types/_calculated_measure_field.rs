@@ -2,6 +2,8 @@
 
 /// <p>The table calculation measure field for pivot tables.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CalculatedMeasureField {
     /// <p>The custom field ID.</p>

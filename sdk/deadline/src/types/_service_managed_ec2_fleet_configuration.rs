@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for a service managed Amazon EC2 fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceManagedEc2FleetConfiguration {
     /// <p>The Amazon EC2 instance capabilities.</p>

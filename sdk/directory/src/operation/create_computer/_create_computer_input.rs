@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>CreateComputer</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateComputerInput {
     /// <p>The identifier of the directory in which to create the computer account.</p>

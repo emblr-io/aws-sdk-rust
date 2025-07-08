@@ -2,6 +2,8 @@
 
 /// <p>Threshold to be used for the isoline calculation. Up to 5 thresholds per provided type can be requested.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IsolineThresholds {
     /// <p>Distance to be used for the isoline calculation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the domain names on an SSL/TLS certificate that you will use to validate domain ownership.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancerTlsCertificateDomainValidationOption {
     /// <p>The fully qualified domain name in the certificate request.</p>

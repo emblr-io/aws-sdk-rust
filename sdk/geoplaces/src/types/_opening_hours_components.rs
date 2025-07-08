@@ -2,6 +2,8 @@
 
 /// <p>Components of the opening hours object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OpeningHoursComponents {
     /// <p>String which represents the opening hours, such as <code>"T070000"</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the returned users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserSearchSummary {
     /// <p>The Amazon Resource Name (ARN) of the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a webhook that connects repository events to an Amplify app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Webhook {
     /// <p>The Amazon Resource Name (ARN) for the webhook.</p>

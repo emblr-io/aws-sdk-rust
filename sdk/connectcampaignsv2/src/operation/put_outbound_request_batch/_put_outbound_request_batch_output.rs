@@ -2,6 +2,8 @@
 
 /// The response for PutOutboundRequestBatch API.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutOutboundRequestBatchOutput {
     /// A list of successful requests identified by the unique client token.

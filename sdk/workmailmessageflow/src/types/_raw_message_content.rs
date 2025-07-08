@@ -20,6 +20,8 @@
 /// <p>Certain unique headers can only appear once. Check the returned error message for more information.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RawMessageContent {
     /// <p>The S3 reference of an email message.</p>

@@ -4,6 +4,8 @@
 /// <p>You cannot apply both event selectors and advanced event selectors to a trail.</p>
 /// <p>For information about configurable advanced event selector fields, see <a href="https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html">AdvancedEventSelector</a> in the <i>CloudTrail API Reference</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdvancedEventSelector {
     /// <p>An optional, descriptive name for an advanced event selector, such as "Log data events for only two S3 buckets".</p>

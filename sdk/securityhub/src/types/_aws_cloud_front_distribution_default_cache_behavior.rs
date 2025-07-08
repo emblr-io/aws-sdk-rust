@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the default cache configuration for the CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionDefaultCacheBehavior {
     /// <p>The protocol that viewers can use to access the files in an origin. You can specify the following options:</p>

@@ -2,6 +2,8 @@
 
 /// Description of the source and destination queues between which the job has moved, along with the timestamp of the move
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueueTransition {
     /// The queue that the job was on after the transition.

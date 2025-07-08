@@ -2,6 +2,8 @@
 
 /// <p>Information about the overall participant interactions at the contact level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChatContactMetrics {
     /// <p>A boolean flag indicating whether multiparty chat or supervisor barge were enabled on this contact.</p>

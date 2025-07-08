@@ -2,6 +2,8 @@
 
 /// <p>Describes the price for a Reserved Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PriceSchedule {
     /// <p>The current price schedule, as determined by the term remaining for the Reserved Instance in the listing.</p>

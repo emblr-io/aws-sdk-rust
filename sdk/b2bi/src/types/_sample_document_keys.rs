@@ -2,6 +2,8 @@
 
 /// <p>An array of the Amazon S3 keys used to identify the location for your sample documents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SampleDocumentKeys {
     /// <p>An array of keys for your input sample documents.</p>

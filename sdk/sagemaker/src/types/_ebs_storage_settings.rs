@@ -2,6 +2,8 @@
 
 /// <p>A collection of EBS storage settings that apply to both private and shared spaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsStorageSettings {
     /// <p>The size of an EBS storage volume for a space.</p>

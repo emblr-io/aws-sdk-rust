@@ -2,6 +2,8 @@
 
 /// <p>Information about the configuration of a Dev Environment session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DevEnvironmentSessionConfiguration {
     /// <p>The type of the session.</p>

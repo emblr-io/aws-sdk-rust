@@ -2,6 +2,8 @@
 
 /// <p>The VPC object you use to create or update a workforce.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkforceVpcConfigRequest {
     /// <p>The ID of the VPC that the workforce uses for communication.</p>

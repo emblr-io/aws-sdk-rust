@@ -2,6 +2,8 @@
 
 /// <p>Specifies configurations for one or more training jobs that SageMaker runs to test the algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlgorithmValidationSpecification {
     /// <p>The IAM roles that SageMaker uses to run the training jobs.</p>

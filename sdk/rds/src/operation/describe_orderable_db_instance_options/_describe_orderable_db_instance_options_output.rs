@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of a successful invocation of the <code>DescribeOrderableDBInstanceOptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeOrderableDbInstanceOptionsOutput {
     /// <p>An <code>OrderableDBInstanceOption</code> structure containing information about orderable options for the DB instance.</p>

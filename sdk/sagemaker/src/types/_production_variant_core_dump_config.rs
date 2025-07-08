@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration for a core dump from the model container when the process crashes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantCoreDumpConfig {
     /// <p>The Amazon S3 bucket to send the core dump to.</p>

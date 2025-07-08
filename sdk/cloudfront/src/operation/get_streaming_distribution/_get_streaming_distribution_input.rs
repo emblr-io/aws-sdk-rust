@@ -2,6 +2,8 @@
 
 /// <p>The request to get a streaming distribution's information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetStreamingDistributionInput {
     /// <p>The streaming distribution's ID.</p>

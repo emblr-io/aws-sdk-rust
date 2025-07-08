@@ -2,6 +2,8 @@
 
 /// <p>ICMP protocol: The ICMP type and code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkAclIcmpTypeCode {
     /// <p>ICMP code.</p>

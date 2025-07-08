@@ -2,6 +2,8 @@
 
 /// <p>Contains the Amazon S3 Glacier response to your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsForVaultOutput {
     /// <p>The tags attached to the vault. Each tag is composed of a key and a value.</p>

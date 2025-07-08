@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the default route type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultRouteInput {
     /// <p>If set to <code>ACTIVE</code>, traffic is forwarded to this route’s service after the route is created.</p>

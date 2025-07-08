@@ -4,6 +4,8 @@
 /// <p>You may need to switch to on-demand mode at least once in order to return a <code>BillingModeSummary</code> response.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillingModeSummary {
     /// <p>Controls how you are charged for read and write throughput and how you manage capacity. This setting can be changed later.</p>

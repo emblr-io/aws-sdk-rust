@@ -2,6 +2,8 @@
 
 /// <p>Parameter information of a WrappedKeyBlock for encryption key exchange.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum WrappedKeyMaterial {
     /// <p>The parameter information for deriving a ECDH shared key.</p>

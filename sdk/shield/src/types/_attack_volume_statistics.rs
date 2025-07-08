@@ -2,6 +2,8 @@
 
 /// <p>Statistics objects for the various data types in <code>AttackVolume</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttackVolumeStatistics {
     /// <p>The maximum attack volume observed for the given unit.</p>

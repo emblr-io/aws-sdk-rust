@@ -2,6 +2,8 @@
 
 /// <p>Information about the payload of an event recording Amazon CodeCatalyst activity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventPayload {
     /// <p>The type of content in the event payload.</p>

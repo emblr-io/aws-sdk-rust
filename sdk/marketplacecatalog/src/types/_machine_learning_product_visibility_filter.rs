@@ -2,6 +2,8 @@
 
 /// <p>The filter for machine learning product visibility status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MachineLearningProductVisibilityFilter {
     /// <p>A list of visibility values to filter by. The operation returns machine learning products with visibility status that match the values in this list.</p>

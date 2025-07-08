@@ -2,6 +2,8 @@
 
 /// Details about the input device that is being transferred.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransferringInputDeviceSummary {
     /// The unique ID of the input device.

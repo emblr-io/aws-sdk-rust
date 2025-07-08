@@ -2,6 +2,8 @@
 
 /// <p>Detailed data of the service sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSyncConfig {
     /// <p>The name of the service that the service instance is added to.</p>

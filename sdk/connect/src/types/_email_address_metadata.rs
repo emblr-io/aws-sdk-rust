@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an email address for a contact center.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmailAddressMetadata {
     /// <p>The identifier of the email address.</p>

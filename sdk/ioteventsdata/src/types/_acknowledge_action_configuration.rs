@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration information of an acknowledge action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcknowledgeActionConfiguration {
     /// <p>The note that you can leave when you acknowledge the alarm.</p>

@@ -2,6 +2,8 @@
 
 /// Use these settings to insert a DVB Time and Date Table (TDT) in the transport stream of this output.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DvbTdtSettings {
     /// The number of milliseconds between instances of this table in the output transport stream.

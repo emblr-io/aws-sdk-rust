@@ -6,6 +6,8 @@
 /// </note>
 /// <p>In an <code>UpdateRegexPatternSet</code> request, <code>RegexPatternSetUpdate</code> specifies whether to insert or delete a <code>RegexPatternString</code> and includes the settings for the <code>RegexPatternString</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexPatternSetUpdate {
     /// <p>Specifies whether to insert or delete a <code>RegexPatternString</code>.</p>

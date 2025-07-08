@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the error that caused a finding to fail to be retrieved.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetFindingsError {
     /// <p>The name of the scan that generated the finding.</p>

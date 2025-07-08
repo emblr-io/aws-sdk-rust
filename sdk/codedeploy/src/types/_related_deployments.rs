@@ -2,6 +2,8 @@
 
 /// <p>Information about deployments related to the specified deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelatedDeployments {
     /// <p>The deployment ID of the root deployment that triggered this deployment.</p>

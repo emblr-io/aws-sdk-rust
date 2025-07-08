@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the service discovery information for a service mesh.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MeshServiceDiscovery {
     /// <p>The IP version to use to control traffic within the mesh.</p>

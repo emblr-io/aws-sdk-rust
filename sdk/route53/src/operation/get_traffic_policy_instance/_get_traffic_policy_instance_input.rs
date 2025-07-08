@@ -2,6 +2,8 @@
 
 /// <p>Gets information about a specified traffic policy instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetTrafficPolicyInstanceInput {
     /// <p>The ID of the traffic policy instance that you want to get information about.</p>

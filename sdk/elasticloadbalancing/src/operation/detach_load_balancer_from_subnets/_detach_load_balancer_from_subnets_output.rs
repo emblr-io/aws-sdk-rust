@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DetachLoadBalancerFromSubnets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetachLoadBalancerFromSubnetsOutput {
     /// <p>The IDs of the remaining subnets for the load balancer.</p>

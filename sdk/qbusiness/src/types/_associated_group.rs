@@ -2,6 +2,8 @@
 
 /// <p>Represents a group associated with a given user in the access control system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatedGroup {
     /// <p>The name of the group associated with the user. This is used to identify the group in access control decisions.</p>

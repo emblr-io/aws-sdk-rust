@@ -2,6 +2,8 @@
 
 /// <p>The HLS content protection settings, if any, that you want Elastic Transcoder to apply to your output files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HlsContentProtection {
     /// <p>The content protection method for your output. The only valid value is: <code>aes-128</code>.</p>

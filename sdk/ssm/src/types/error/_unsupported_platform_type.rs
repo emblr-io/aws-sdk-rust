@@ -2,6 +2,8 @@
 
 /// <p>The document doesn't support the platform type of the given managed node IDs. For example, you sent an document for a Windows managed node to a Linux node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedPlatformType {
     #[allow(missing_docs)] // documentation missing in model

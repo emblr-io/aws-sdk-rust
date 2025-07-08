@@ -2,6 +2,8 @@
 
 /// <p>Information about a Sidewalk device that has been added to an import task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportedSidewalkDevice {
     /// <p>The Sidewalk manufacturing serial number (SMSN) of the Sidewalk device.</p>

@@ -3,6 +3,8 @@
 /// <p>The structure used to configure the list of table patterns in source database endpoint for Firehose to read from.</p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseTableList {
     /// <p>The list of table patterns in source database endpoint to be included for Firehose to read from.</p>

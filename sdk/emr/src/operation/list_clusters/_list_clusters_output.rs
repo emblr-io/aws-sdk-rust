@@ -2,6 +2,8 @@
 
 /// <p>This contains a ClusterSummaryList with the cluster details; for example, the cluster IDs, names, and status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListClustersOutput {
     /// <p>The list of clusters for the account based on the given filters.</p>

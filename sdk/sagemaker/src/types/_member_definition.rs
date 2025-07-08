@@ -2,6 +2,8 @@
 
 /// <p>Defines an Amazon Cognito or your own OIDC IdP user group that is part of a work team.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberDefinition {
     /// <p>The Amazon Cognito user group that is part of the work team.</p>

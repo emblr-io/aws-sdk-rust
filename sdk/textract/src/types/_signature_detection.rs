@@ -2,6 +2,8 @@
 
 /// <p>Information regarding a detected signature on a page.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SignatureDetection {
     /// <p>The confidence, from 0 to 100, in the predicted values for a detected signature.</p>

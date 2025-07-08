@@ -2,6 +2,8 @@
 
 /// <p>Describes a resume cluster operation. For example, a scheduled action to run the <code>ResumeCluster</code> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResumeClusterMessage {
     /// <p>The identifier of the cluster to be resumed.</p>

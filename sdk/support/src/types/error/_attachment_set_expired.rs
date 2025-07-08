@@ -2,6 +2,8 @@
 
 /// <p>The expiration time of the attachment set has passed. The set expires 1 hour after it is created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentSetExpired {
     /// <p>The expiration time of the attachment set has passed. The set expires one hour after it is created.</p>

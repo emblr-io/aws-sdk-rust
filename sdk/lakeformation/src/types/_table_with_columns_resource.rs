@@ -3,6 +3,8 @@
 /// <p>A structure for a table with columns object. This object is only used when granting a SELECT permission.</p>
 /// <p>This object must take a value for at least one of <code>ColumnsNames</code>, <code>ColumnsIndexes</code>, or <code>ColumnsWildcard</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableWithColumnsResource {
     /// <p>The identifier for the Data Catalog. By default, it is the account ID of the caller.</p>

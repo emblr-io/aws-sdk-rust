@@ -2,6 +2,8 @@
 
 /// <p>Represents the output for <code>PutRecord</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutRecordOutput {
     /// <p>The shard ID of the shard where the data record was placed.</p>

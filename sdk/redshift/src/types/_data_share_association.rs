@@ -2,6 +2,8 @@
 
 /// <p>The association of a datashare from a producer account with a data consumer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataShareAssociation {
     /// <p>The name of the consumer accounts that have an association with a producer datashare.</p>

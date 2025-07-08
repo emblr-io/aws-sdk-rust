@@ -2,6 +2,8 @@
 
 /// <p>A card representing a component or step in an Amazon Q App's flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Card {
     /// <p>A container for the properties of the file upload card.</p>

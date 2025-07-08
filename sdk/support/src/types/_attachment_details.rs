@@ -2,6 +2,8 @@
 
 /// <p>The file name and ID of an attachment to a case communication. You can use the ID to retrieve the attachment with the <code>DescribeAttachment</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentDetails {
     /// <p>The ID of the attachment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a flow module.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactFlowModule {
     /// <p>The Amazon Resource Name (ARN).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the history of a specific alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmHistoryItem {
     /// <p>The descriptive name for the alarm.</p>

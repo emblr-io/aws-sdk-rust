@@ -2,6 +2,8 @@
 
 /// <p>The specifications of an instance group that you need to define.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterInstanceGroupSpecification {
     /// <p>Specifies the number of instances to add to the instance group of a SageMaker HyperPod cluster.</p>

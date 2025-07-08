@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>CreateDBCluster</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDbClusterInput {
     /// <p>A list of Amazon EC2 Availability Zones that instances in the cluster can be created in.</p>

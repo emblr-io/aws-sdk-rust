@@ -2,6 +2,8 @@
 
 /// <p>The start time or end time for an hours of operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoursOfOperationTimeSlice {
     /// <p>The hours.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration for read only disk cache associated with a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxCacheStorageConfiguration {
     /// <p>The type of cache storage. The valid values are:</p>

@@ -2,6 +2,8 @@
 
 /// <p>The display options for the axis label.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AxisDisplayOptions {
     /// <p>The tick label options of an axis.</p>

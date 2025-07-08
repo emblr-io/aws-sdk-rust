@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the parameters used for a select.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SelectParameters {
     /// <p>Describes the serialization format of the object.</p>

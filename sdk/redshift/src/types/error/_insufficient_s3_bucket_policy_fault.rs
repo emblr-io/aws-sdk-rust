@@ -2,6 +2,8 @@
 
 /// <p>The cluster does not have read bucket or put object permissions on the S3 bucket specified when enabling logging.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientS3BucketPolicyFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Information about how AWS Ground Station should conﬁgure an antenna for downlink demod decode during a contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AntennaDownlinkDemodDecodeConfig {
     /// <p>Information about the spectral <code>Config</code>.</p>

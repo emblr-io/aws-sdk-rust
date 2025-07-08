@@ -2,6 +2,8 @@
 
 /// <p>Contains information about finding statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingStatistics {
     /// <p>Represents a list of map of severity to count statistics for a set of findings.</p>

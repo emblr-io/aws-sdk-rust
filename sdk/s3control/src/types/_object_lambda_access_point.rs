@@ -2,6 +2,8 @@
 
 /// <p>An access point with an attached Lambda function used to access transformed data from an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectLambdaAccessPoint {
     /// <p>The name of the Object Lambda Access Point.</p>

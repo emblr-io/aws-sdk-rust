@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the job data for a partner action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ThirdPartyJobData {
     /// <p>Represents information about an action type.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Metadata for an endpoint step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointStepMetadata {
     /// <p>The Amazon Resource Name (ARN) of the endpoint in the step.</p>

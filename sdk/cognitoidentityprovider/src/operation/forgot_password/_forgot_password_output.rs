@@ -2,6 +2,8 @@
 
 /// <p>The response from Amazon Cognito to a request to reset a password.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForgotPasswordOutput {
     /// <p>Information about the phone number or email address that Amazon Cognito sent the password-recovery code to.</p>

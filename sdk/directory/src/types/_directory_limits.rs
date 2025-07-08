@@ -2,6 +2,8 @@
 
 /// <p>Contains directory limit information for a Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryLimits {
     /// <p>The maximum number of cloud directories allowed in the Region.</p>

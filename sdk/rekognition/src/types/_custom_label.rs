@@ -2,6 +2,8 @@
 
 /// <p>A custom label detected in an image by a call to <code>DetectCustomLabels</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLabel {
     /// <p>The name of the custom label.</p>

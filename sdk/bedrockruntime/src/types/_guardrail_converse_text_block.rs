@@ -2,6 +2,8 @@
 
 /// <p>A text block that contains text that you want to assess with a guardrail. For more information, see <code>GuardrailConverseContentBlock</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailConverseTextBlock {
     /// <p>The text that you want to guard.</p>

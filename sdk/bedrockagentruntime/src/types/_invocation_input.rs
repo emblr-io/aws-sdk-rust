@@ -2,6 +2,8 @@
 
 /// <p>Contains information pertaining to the action group or knowledge base that is being invoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InvocationInput {
     /// <p>The unique identifier of the trace.</p>

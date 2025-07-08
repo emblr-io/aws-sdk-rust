@@ -2,6 +2,8 @@
 
 /// <p>Describes the location of the error in a code sample.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeErrorLocation {
     /// <p>The line number in the code. Defaults to <code>0</code> if unknown.</p>

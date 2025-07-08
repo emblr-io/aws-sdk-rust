@@ -2,6 +2,8 @@
 
 /// <p>The GlueOAuth2 credentials of a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GlueOAuth2Credentials {
     /// <p>The user managed client application client secret of the connection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Request to create a configuration template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateConfigurationTemplateInput {
     /// <p>The name of the Elastic Beanstalk application to associate with this configuration template.</p>

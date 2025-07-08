@@ -2,6 +2,8 @@
 
 /// <p>Specifies criteria for filtering the results of a request for information about classification jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsFilterCriteria {
     /// <p>An array of objects, one for each condition that determines which jobs to exclude from the results.</p>

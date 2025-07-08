@@ -2,6 +2,8 @@
 
 /// <p>Represents information about a rule configuration property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleConfigurationProperty {
     /// <p>The name of the rule configuration property.</p>

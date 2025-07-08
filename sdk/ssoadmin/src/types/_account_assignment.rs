@@ -4,6 +4,8 @@
 /// <p>The term <i>principal</i> here refers to a user or group that is defined in IAM Identity Center.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountAssignment {
     /// <p>The identifier of the Amazon Web Services account.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The criteria that determine when and how a job abort takes place.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsJobAbortConfig {
     /// <p>The list of criteria that determine when and how to abort the job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>Suggest</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestInput {
     /// <p>Specifies the string for which you want to get suggestions.</p>

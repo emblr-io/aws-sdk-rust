@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the start of an activity during an execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityStartedEventDetails {
     /// <p>The name of the worker that the task is assigned to. These names are provided by the workers when calling <code>GetActivityTask</code>.</p>

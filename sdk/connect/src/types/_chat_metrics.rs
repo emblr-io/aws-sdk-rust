@@ -2,6 +2,8 @@
 
 /// <p>Information about how agent, bot, and customer interact in a chat contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChatMetrics {
     /// <p>Information about the overall participant interactions at the contact level.</p>

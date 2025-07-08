@@ -2,6 +2,8 @@
 
 /// <p>Information about a task defined for a maintenance window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MaintenanceWindowTask {
     /// <p>The ID of the maintenance window where the task is registered.</p>

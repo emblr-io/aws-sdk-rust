@@ -2,6 +2,8 @@
 
 /// <p>Describes an association between a resource attachment and a transit gateway route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayAssociation {
     /// <p>The ID of the transit gateway route table.</p>

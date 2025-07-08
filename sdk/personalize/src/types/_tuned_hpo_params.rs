@@ -2,6 +2,8 @@
 
 /// <p>If hyperparameter optimization (HPO) was performed, contains the hyperparameter values of the best performing model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TunedHpoParams {
     /// <p>A list of the hyperparameter values of the best performing model.</p>

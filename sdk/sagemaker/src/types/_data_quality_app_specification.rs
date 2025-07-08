@@ -2,6 +2,8 @@
 
 /// <p>Information about the container that a data quality monitoring job runs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityAppSpecification {
     /// <p>The container image that the data quality monitoring job runs.</p>

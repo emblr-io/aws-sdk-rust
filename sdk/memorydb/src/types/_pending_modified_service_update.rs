@@ -2,6 +2,8 @@
 
 /// <p>Update action that has yet to be processed for the corresponding apply/stop request</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingModifiedServiceUpdate {
     /// <p>The unique ID of the service update</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Network File System (NFS) configurations for mounting an Amazon FSx for OpenZFS file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenZfsNfsExport {
     /// <p>A list of configuration objects that contain the client and options for mounting the OpenZFS file system.</p>

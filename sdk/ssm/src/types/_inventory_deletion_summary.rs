@@ -2,6 +2,8 @@
 
 /// <p>Information about the delete operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryDeletionSummary {
     /// <p>The total number of items to delete. This count doesn't change during the delete operation.</p>

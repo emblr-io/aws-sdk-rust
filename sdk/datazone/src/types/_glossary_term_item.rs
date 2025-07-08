@@ -2,6 +2,8 @@
 
 /// <p>The details of a business glossary term.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GlossaryTermItem {
     /// <p>The identifier of the Amazon DataZone domain in which the business glossary exists.</p>

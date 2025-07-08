@@ -2,6 +2,8 @@
 
 /// <p>Parameters to derive the confidentiality and integrity keys for a Mastercard payment card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MasterCardAttributes {
     /// <p>The method to use when deriving the master key for the payment card.</p>

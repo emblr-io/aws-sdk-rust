@@ -2,6 +2,8 @@
 
 /// <p>Defines the settings and parameters required for integrating external security tools and services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalIntegrationConfiguration {
     /// <p>The ARN of the connector that establishes the integration.</p>

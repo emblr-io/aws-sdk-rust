@@ -2,6 +2,8 @@
 
 /// <p>The column option of the transposed table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransposedTableOption {
     /// <p>The index of a columns in a transposed table. The index range is 0-9999.</p>

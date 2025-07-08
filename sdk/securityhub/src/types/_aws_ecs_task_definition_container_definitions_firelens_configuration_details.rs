@@ -2,6 +2,8 @@
 
 /// <p>The FireLens configuration for the container. The configuration specifies and configures a log router for container logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails {
     /// <p>The options to use to configure the log router.</p>

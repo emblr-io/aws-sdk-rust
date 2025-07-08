@@ -3,6 +3,8 @@
 /// <p>Information about the service deployment.</p>
 /// <p>Service deployments provide a comprehensive view of your deployments. For information about service deployments, see <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment.html">View service history using Amazon ECS service deployments</a> in the <i> <i>Amazon Elastic Container Service Developer Guide</i> </i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDeployment {
     /// <p>The ARN of the service deployment.</p>

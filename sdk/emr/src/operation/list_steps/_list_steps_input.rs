@@ -2,6 +2,8 @@
 
 /// <p>This input determines which steps to list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStepsInput {
     /// <p>The identifier of the cluster for which to list the steps.</p>

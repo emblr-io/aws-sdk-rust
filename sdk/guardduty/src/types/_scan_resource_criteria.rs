@@ -2,6 +2,8 @@
 
 /// <p>Contains information about criteria used to filter resources before triggering malware scan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanResourceCriteria {
     /// <p>Represents condition that when matched will allow a malware scan for a certain resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the response of the test invoke request in the HTTP method.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestInvokeMethodOutput {
     /// <p>The HTTP status code.</p>

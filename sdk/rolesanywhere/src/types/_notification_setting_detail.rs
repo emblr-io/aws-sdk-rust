@@ -3,6 +3,8 @@
 /// <p>The state of a notification setting.</p>
 /// <p>A notification setting includes information such as event name, threshold, status of the notification setting, and the channel to notify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationSettingDetail {
     /// <p>Indicates whether the notification setting is enabled.</p>

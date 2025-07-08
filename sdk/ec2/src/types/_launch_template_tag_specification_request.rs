@@ -2,6 +2,8 @@
 
 /// <p>The tags specification for the resources that are created during instance launch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateTagSpecificationRequest {
     /// <p>The type of resource to tag.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the Amazon Web Services Region and KMS key to add to the replication set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddRegionAction {
     /// <p>The Amazon Web Services Region name to add to the replication set.</p>

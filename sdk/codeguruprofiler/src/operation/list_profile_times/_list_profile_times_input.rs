@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the listProfileTimesRequest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListProfileTimesInput {
     /// <p>The name of the profiling group.</p>

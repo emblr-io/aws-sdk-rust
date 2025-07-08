@@ -4,6 +4,8 @@
 /// <p>FSx File Gateway does not support this feature.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BandwidthRateLimitInterval {
     /// <p>The hour of the day to start the bandwidth rate limit interval.</p>

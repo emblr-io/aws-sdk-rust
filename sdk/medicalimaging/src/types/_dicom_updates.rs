@@ -2,6 +2,8 @@
 
 /// <p>The object containing <code>removableAttributes</code> and <code>updatableAttributes</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DicomUpdates {
     /// <p>The DICOM tags to be removed from <code>ImageSetMetadata</code>.</p>

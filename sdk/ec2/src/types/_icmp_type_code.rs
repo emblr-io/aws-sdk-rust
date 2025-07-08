@@ -2,6 +2,8 @@
 
 /// <p>Describes the ICMP type and code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcmpTypeCode {
     /// <p>The ICMP code. A value of -1 means all codes for the specified ICMP type.</p>

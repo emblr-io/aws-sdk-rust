@@ -2,6 +2,8 @@
 
 /// <p>Describes checkpointing parameters for a Managed Service for Apache Flink application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CheckpointConfigurationDescription {
     /// <p>Describes whether the application uses the default checkpointing behavior in Managed Service for Apache Flink.</p><note>

@@ -2,6 +2,8 @@
 
 /// <p>The container of the Outposts bucket lifecycle expiration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExpiration {
     /// <p>Indicates at what date the object is to be deleted. Should be in GMT ISO 8601 format.</p>

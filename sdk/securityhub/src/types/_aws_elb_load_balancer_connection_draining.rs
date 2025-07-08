@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the connection draining configuration for the load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElbLoadBalancerConnectionDraining {
     /// <p>Indicates whether connection draining is enabled for the load balancer.</p>

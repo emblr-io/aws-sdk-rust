@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the TrackingOptions object you specified does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingOptionsDoesNotExistException {
     /// <p>Indicates that a TrackingOptions object does not exist in the specified configuration set.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The set of Amazon Web Services Region that your Incident Manager data will be replicated to and the KMS key used to encrypt the data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationSet {
     /// <p>The Amazon Resource Name (ARN) of the replication set.</p>

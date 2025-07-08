@@ -2,6 +2,8 @@
 
 /// <p>Contains details on the time range used to filter findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateFilter {
     /// <p>A timestamp representing the start of the time period filtered on.</p>

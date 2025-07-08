@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>CancelJob</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelJobInput {
     /// <p>The Batch job ID of the job to cancel.</p>

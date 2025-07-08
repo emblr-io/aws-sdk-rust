@@ -2,6 +2,8 @@
 
 /// <p>This structure includes the custom parameter to be used when the target is an SQS FIFO queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqsParameters {
     /// <p>The FIFO message group ID to use as the target.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The side border options for a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableSideBorderOptions {
     /// <p>The table border options of the inner vertical border.</p>

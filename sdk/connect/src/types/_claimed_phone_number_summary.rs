@@ -2,6 +2,8 @@
 
 /// <p>Information about a phone number that has been claimed to your Amazon Connect instance or traffic distribution group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClaimedPhoneNumberSummary {
     /// <p>A unique identifier for the phone number.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration that App Runner uses to build and run an App Runner service from a source code repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeConfiguration {
     /// <p>The source of the App Runner configuration. Values are interpreted as follows:</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains DICOMUpdates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MetadataUpdates {
     /// <p>The object containing <code>removableAttributes</code> and <code>updatableAttributes</code>.</p>

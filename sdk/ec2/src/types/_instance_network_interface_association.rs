@@ -2,6 +2,8 @@
 
 /// <p>Describes association information for an Elastic IP address (IPv4).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceNetworkInterfaceAssociation {
     /// <p>The carrier IP address associated with the network interface.</p>

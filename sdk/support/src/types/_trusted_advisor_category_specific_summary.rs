@@ -2,6 +2,8 @@
 
 /// <p>The container for summary information that relates to the category of the Trusted Advisor check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustedAdvisorCategorySpecificSummary {
     /// <p>The summary information about cost savings for a Trusted Advisor check that is in the Cost Optimizing category.</p>

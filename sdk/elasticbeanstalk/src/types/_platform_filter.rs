@@ -3,6 +3,8 @@
 /// <p>Describes criteria to restrict the results when listing platform versions.</p>
 /// <p>The filter is evaluated as follows: <code>Type Operator Values\[1\]</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlatformFilter {
     /// <p>The platform version attribute to which the filter values are applied.</p>

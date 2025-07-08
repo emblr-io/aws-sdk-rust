@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration information for the output results from the inference, including output S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceS3OutputConfiguration {
     /// <p>The bucket containing the output results from the inference</p>

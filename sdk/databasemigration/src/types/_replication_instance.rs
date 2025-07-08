@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines a replication instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationInstance {
     /// <p>The replication instance identifier is a required parameter. This parameter is stored as a lowercase string.</p>

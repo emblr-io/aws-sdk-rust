@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because you tried to create, update, or delete an object by using an invalid account identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafInvalidAccountException {
     #[allow(missing_docs)] // documentation missing in model

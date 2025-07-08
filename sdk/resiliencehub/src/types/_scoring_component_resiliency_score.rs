@@ -2,6 +2,8 @@
 
 /// <p>Resiliency score of each scoring component. For more information about scoring component, see <a href="https://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html">Calculating resiliency score</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScoringComponentResiliencyScore {
     /// <p>Resiliency score points given for the scoring component. The score is always less than or equal to the <code>possibleScore</code>.</p>

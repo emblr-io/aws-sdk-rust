@@ -2,6 +2,8 @@
 
 /// <p>A metadata object that's associated with an assessment in Audit Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentMetadataItem {
     /// <p>The name of the assessment.</p>

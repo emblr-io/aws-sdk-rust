@@ -2,6 +2,8 @@
 
 /// <p>A custom file system in Amazon FSx for Lustre.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FSxLustreFileSystem {
     /// <p>Amazon FSx for Lustre file system ID.</p>

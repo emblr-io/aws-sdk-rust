@@ -2,6 +2,8 @@
 
 /// <p>A collection of Amazon Q feature configurations in an embedded Amazon QuickSight console.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmazonQInQuickSightConsoleConfigurations {
     /// <p>Adds generative Q&amp;A capabilitiees to an embedded Amazon QuickSight console.</p>

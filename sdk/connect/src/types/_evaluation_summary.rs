@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a contact evaluation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationSummary {
     /// <p>A unique identifier for the contact evaluation.</p>

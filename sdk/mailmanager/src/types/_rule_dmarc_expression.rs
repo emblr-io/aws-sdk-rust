@@ -2,6 +2,8 @@
 
 /// <p>A DMARC policy expression. The condition matches if the given DMARC policy matches that of the incoming email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleDmarcExpression {
     /// <p>The operator to apply to the DMARC policy of the incoming email.</p>

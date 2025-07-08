@@ -2,6 +2,8 @@
 
 /// <p>Provides details in the event of a failed flow, including the error type and the related error message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorInfo {
     /// <p>Specifies the error message that appears if a flow fails.</p>

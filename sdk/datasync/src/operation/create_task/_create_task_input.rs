@@ -2,6 +2,8 @@
 
 /// <p>CreateTaskRequest</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTaskInput {
     /// <p>Specifies the ARN of your transfer's source location.</p>

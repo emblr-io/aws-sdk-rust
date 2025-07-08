@@ -2,6 +2,8 @@
 
 /// <p>Returns a paginated list of all the incoming <code>TypedLinkSpecifier</code> information for an object inside a <code>BatchRead</code> operation. For more information, see <code>ListIncomingTypedLinks</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListIncomingTypedLinks {
     /// <p>The reference that identifies the object whose attributes will be listed.</p>

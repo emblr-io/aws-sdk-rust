@@ -2,6 +2,8 @@
 
 /// <p>A file to be added, updated, or deleted as part of a commit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileMetadata {
     /// <p>The full path to the file to be added or updated, including the name of the file.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of On-Demand Instances in an EC2 Fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnDemandOptions {
     /// <p>The strategy that determines the order of the launch template overrides to use in fulfilling On-Demand capacity.</p>

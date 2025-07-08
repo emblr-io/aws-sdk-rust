@@ -2,6 +2,8 @@
 
 /// <p>The input to the ListCertificatesByCA operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCertificatesByCaInput {
     /// <p>The ID of the CA certificate. This operation will list all registered device certificate that were signed by this CA certificate.</p>

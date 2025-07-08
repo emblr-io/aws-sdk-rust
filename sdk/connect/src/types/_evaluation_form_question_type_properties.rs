@@ -2,6 +2,8 @@
 
 /// <p>Information about properties for a question in an evaluation form. The question type properties must be either for a numeric question or a single select question.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationFormQuestionTypeProperties {
     /// <p>The properties of the numeric question.</p>

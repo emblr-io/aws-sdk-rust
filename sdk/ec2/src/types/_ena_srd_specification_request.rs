@@ -2,6 +2,8 @@
 
 /// <p>Launch instances with ENA Express settings configured from your launch template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnaSrdSpecificationRequest {
     /// <p>Specifies whether ENA Express is enabled for the network interface when you launch an instance.</p>

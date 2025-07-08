@@ -2,6 +2,8 @@
 
 /// <p>A <code>GroupSearchFilter</code> object that you want to apply to your search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupSearchFilter {
     /// <p>The comparison operator that you want to use as a filter, for example <code>"Operator": "StartsWith"</code>. Currently, the only supported operator is <code>StartsWith</code>.</p>

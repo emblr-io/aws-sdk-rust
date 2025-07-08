@@ -2,6 +2,8 @@
 
 /// <p>Summary information on an access control configuration that you created for your documents in an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessControlConfigurationSummary {
     /// <p>The identifier of the access control configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The theme configuration. This configuration contains all of the display properties for a theme.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThemeConfiguration {
     /// <p>Color properties that apply to chart data colors.</p>

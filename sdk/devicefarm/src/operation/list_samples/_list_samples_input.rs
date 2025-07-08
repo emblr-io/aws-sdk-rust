@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the list samples operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSamplesInput {
     /// <p>The Amazon Resource Name (ARN) of the job used to list samples.</p>

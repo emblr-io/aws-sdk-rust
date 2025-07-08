@@ -3,6 +3,8 @@
 /// <p>Describes the status of an attempt from Amazon AppFlow to register a resource.</p>
 /// <p>When you run a flow that you've configured to use a metadata catalog, Amazon AppFlow registers a metadata table and data partitions with that catalog. This operation provides the status of that registration attempt. The operation also indicates how many related resources Amazon AppFlow created or updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationOutput {
     /// <p>Explains the status of the registration attempt from Amazon AppFlow. If the attempt fails, the message explains why.</p>

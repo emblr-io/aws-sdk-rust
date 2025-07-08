@@ -2,6 +2,8 @@
 
 /// <p>The additional attributes of <code>RecommendedAction</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContextAttribute {
     /// <p>The key of <code>ContextAttribute</code>.</p>

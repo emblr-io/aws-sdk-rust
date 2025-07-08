@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the list of matching rules to run in an ID mapping workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingRuleBasedProperties {
     /// <p>The rules that can be used for ID mapping.</p>

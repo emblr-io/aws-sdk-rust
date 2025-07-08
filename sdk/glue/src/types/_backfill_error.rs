@@ -15,6 +15,8 @@
 /// <p>InternalError: Any error which does not belong to other error codes.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackfillError {
     /// <p>The error code for an error that occurred when registering partition indexes for an existing table.</p>

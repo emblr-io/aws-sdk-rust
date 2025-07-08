@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the resources that a finding applies to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcesAffected {
     /// <p>The details of the S3 bucket that the finding applies to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The supplied password doesn't match the minimum security constraints, such as length or use of special characters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPasswordException {
     #[allow(missing_docs)] // documentation missing in model

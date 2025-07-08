@@ -2,6 +2,8 @@
 
 /// <p>The PII entity to configure for the AI Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailPiiEntityConfig {
     /// <p>Configure AI Guardrail type when the PII entity is detected.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information includes the Amazon Web Services account ID where the current document is shared and the version shared with that account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountSharingInfo {
     /// <p>The Amazon Web Services account ID where the current document is shared.</p>

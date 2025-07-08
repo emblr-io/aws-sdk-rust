@@ -2,6 +2,8 @@
 
 /// <p>The resulting item from the suggested query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SuggestResultItem {
     /// <p>The display title that should be used when presenting this option to the end user.</p>

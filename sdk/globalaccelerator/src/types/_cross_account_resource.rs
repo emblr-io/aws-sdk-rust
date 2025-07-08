@@ -3,6 +3,8 @@
 /// <p>An endpoint (Amazon Web Services resource) or an IP address range, in CIDR format, that is listed in a cross-account attachment. A cross-account resource can be added to an accelerator by specified principals, which are also listed in the attachment.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-account-resources.html"> Working with cross-account attachments and resources in Global Accelerator</a> in the <i> Global Accelerator Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrossAccountResource {
     /// <p>The endpoint ID for the endpoint that is listed in a cross-account attachment and can be added to an accelerator by specified principals.</p>

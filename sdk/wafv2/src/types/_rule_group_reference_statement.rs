@@ -3,6 +3,8 @@
 /// <p>A rule statement used to run the rules that are defined in a <code>RuleGroup</code>. To use this, create a rule group with your rules, then provide the ARN of the rule group in this statement.</p>
 /// <p>You cannot nest a <code>RuleGroupReferenceStatement</code>, for example for use inside a <code>NotStatement</code> or <code>OrStatement</code>. You cannot use a rule group reference statement inside another rule group. You can only reference a rule group as a top-level statement within a rule that you define in a web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupReferenceStatement {
     /// <p>The Amazon Resource Name (ARN) of the entity.</p>

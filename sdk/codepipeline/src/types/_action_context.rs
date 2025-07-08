@@ -2,6 +2,8 @@
 
 /// <p>Represents the context of an action in the stage of a pipeline to a job worker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionContext {
     /// <p>The name of the action in the context of a job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the registered Amazon Timestream resources or errors, if any.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestreamRegistrationResponse {
     /// <p>The name of the Timestream database.</p>

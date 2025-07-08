@@ -2,6 +2,8 @@
 
 /// <p>Information about a reactive insight. This object is returned by <code>DescribeInsight</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReactiveOrganizationInsightSummary {
     /// <p>The ID of the insight summary.</p>

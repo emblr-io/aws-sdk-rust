@@ -2,6 +2,8 @@
 
 /// <p>Provides details of the current status of the invoked remediation action for that resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemediationExecutionStatus {
     /// <p>The details that identify a resource within Config, including the resource type and resource ID.</p>

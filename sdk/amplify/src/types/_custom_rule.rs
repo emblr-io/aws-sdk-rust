@@ -2,6 +2,8 @@
 
 /// <p>Describes a custom rewrite or redirect rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomRule {
     /// <p>The source pattern for a URL rewrite or redirect rule.</p>

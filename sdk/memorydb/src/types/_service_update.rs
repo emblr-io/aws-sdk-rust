@@ -2,6 +2,8 @@
 
 /// <p>An update that you can apply to your MemoryDB clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUpdate {
     /// <p>The name of the cluster to which the service update applies</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents an amount of money in United States dollars.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Usd {
     /// <p>The whole number of dollars in the amount.</p>

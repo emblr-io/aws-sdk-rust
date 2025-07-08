@@ -2,6 +2,8 @@
 
 /// <p>Container for elements related to a part.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Part {
     /// <p>Part number identifying the part. This is a positive integer between 1 and 10,000.</p>

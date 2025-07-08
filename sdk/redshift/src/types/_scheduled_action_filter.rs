@@ -2,6 +2,8 @@
 
 /// <p>A set of elements to filter the returned scheduled actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledActionFilter {
     /// <p>The type of element to filter.</p>

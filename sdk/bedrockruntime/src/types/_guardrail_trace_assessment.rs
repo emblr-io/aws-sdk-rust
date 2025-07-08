@@ -2,6 +2,8 @@
 
 /// <p>A Top level guardrail trace object. For more information, see <code>ConverseTrace</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailTraceAssessment {
     /// <p>The output from the model.</p>

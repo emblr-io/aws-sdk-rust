@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for the metadata to use in reranking.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataConfigurationForReranking {
     /// <p>Specifies whether to consider all metadata when reranking, or only the metadata that you select. If you specify <code>SELECTIVE</code>, include the <code>selectiveModeConfiguration</code> field.</p>

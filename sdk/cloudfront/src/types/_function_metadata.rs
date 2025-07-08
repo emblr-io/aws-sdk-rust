@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata about a CloudFront function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionMetadata {
     /// <p>The Amazon Resource Name (ARN) of the function. The ARN uniquely identifies the function.</p>

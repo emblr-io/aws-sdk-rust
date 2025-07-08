@@ -2,6 +2,8 @@
 
 /// <p>Returns a structure that contains the identity provider details for your web app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DescribedWebAppIdentityProviderDetails {
     /// <p>Returns a structure for your identity provider details. This structure contains the instance ARN and role being used for the web app.</p>

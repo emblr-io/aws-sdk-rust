@@ -3,6 +3,8 @@
 /// <p>Represents a chunk of audio sent from the client application to Amazon Lex V2. The audio is all or part of an utterance from the user.</p>
 /// <p>Amazon Lex V2 accumulates audio chunks until it recognizes a natural pause in speech before processing the input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioInputEvent {
     /// <p>An encoded stream of audio.</p>

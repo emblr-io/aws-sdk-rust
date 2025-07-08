@@ -2,6 +2,8 @@
 
 /// <p>An exception thrown when a dependent service such as Facebook or Twitter is not responding</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalServiceException {
     /// <p>The message returned by an ExternalServiceException</p>

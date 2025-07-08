@@ -2,6 +2,8 @@
 
 /// <p>An object representing the Source Network recovery Lifecycle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryLifeCycle {
     /// <p>The date and time the last Source Network recovery was initiated.</p>

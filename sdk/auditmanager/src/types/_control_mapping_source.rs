@@ -2,6 +2,8 @@
 
 /// <p>The data source that determines where Audit Manager collects evidence from for the control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ControlMappingSource {
     /// <p>The unique identifier for the source.</p>

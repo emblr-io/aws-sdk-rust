@@ -2,6 +2,8 @@
 
 /// <p>A typed union that specifies the configuration based on the type of AI Agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AiAgentConfiguration {
     /// <p>The configuration for AI Agents of type <code>ANSWER_RECOMMENDATION</code>.</p>

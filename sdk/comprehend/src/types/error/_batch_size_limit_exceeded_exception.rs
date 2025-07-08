@@ -2,6 +2,8 @@
 
 /// <p>The number of documents in the request exceeds the limit of 25. Try your request again with fewer documents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchSizeLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

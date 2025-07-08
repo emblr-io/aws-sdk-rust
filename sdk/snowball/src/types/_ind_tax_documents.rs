@@ -2,6 +2,8 @@
 
 /// <p>The tax documents required in Amazon Web Services Region in India.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndTaxDocuments {
     /// <p>The Goods and Services Tax (GST) documents required in Amazon Web Services Region in India.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Any additional parameters for the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionHttpParameters {
     /// <p>Any additional header parameters for the connection.</p>

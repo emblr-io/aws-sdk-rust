@@ -2,6 +2,8 @@
 
 /// <p>A structure of additional Inference Specification. Additional Inference Specification specifies details about inference jobs that can be run with models based on this model package</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalInferenceSpecificationDefinition {
     /// <p>A unique name to identify the additional inference specification. The name must be unique within the list of your additional inference specifications for a particular model package.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the message template attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MessageTemplateAttachment {
     /// <p>The presentation information for the attachment file.</p>

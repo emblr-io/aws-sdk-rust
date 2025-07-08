@@ -2,6 +2,8 @@
 
 /// <p>The metadata for a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ClusterMetadata {
     /// <p>The details for an Amazon ECS cluster in the cluster metadata.</p>

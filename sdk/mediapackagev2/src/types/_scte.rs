@@ -2,6 +2,8 @@
 
 /// <p>The SCTE configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte {
     /// <p>The SCTE-35 message types that you want to be treated as ad markers in the output.</p>

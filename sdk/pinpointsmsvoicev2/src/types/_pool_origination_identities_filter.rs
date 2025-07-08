@@ -2,6 +2,8 @@
 
 /// <p>Information about origination identities associated with a pool that meets a specified criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PoolOriginationIdentitiesFilter {
     /// <p>The name of the attribute to filter on.</p>

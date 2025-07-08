@@ -2,6 +2,8 @@
 
 /// <p>Describes a subnet CIDR reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubnetCidrReservation {
     /// <p>The ID of the subnet CIDR reservation.</p>

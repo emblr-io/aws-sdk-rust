@@ -2,6 +2,8 @@
 
 /// <p>Information about endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityDetails {
     /// <p>A list of subnets where AWS Ground Station places elastic network interfaces to send streams to your instances.</p>

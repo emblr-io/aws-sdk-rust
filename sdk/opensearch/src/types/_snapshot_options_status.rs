@@ -2,6 +2,8 @@
 
 /// <p>Container for information about a daily automated snapshot for an OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotOptionsStatus {
     /// <p>The daily snapshot options specified for the domain.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A pillar difference return object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PillarDifference {
     /// <p>The ID used to identify a pillar, for example, <code>security</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the headline message component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageComponentsSummary {
     /// <p>A sentence long summary. For example, titles or an email subject line.</p>

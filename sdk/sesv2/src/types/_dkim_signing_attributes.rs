@@ -2,6 +2,8 @@
 
 /// <p>An object that contains configuration for Bring Your Own DKIM (BYODKIM), or, for Easy DKIM</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DkimSigningAttributes {
     /// <p>\[Bring Your Own DKIM\] A string that's used to identify a public key in the DNS configuration for a domain.</p>

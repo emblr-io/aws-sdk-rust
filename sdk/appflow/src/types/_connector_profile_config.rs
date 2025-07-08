@@ -2,6 +2,8 @@
 
 /// <p>Defines the connector-specific configuration and credentials for the connector profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorProfileConfig {
     /// <p>The connector-specific properties of the profile configuration.</p>

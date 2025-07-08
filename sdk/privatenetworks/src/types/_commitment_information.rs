@@ -2,6 +2,8 @@
 
 /// <p>Shows the duration, the date and time that the contract started and ends, and the renewal status of the commitment period for the radio unit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommitmentInformation {
     /// <p>The duration and renewal status of the commitment period for the radio unit.</p>

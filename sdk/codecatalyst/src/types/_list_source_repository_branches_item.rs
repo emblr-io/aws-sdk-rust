@@ -2,6 +2,8 @@
 
 /// <p>Information about a branch of a source repository returned in a list of branches.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSourceRepositoryBranchesItem {
     /// <p>The Git reference name of the branch.</p>

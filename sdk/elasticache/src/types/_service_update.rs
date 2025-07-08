@@ -2,6 +2,8 @@
 
 /// <p>An update that you can apply to your Valkey or Redis OSS clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUpdate {
     /// <p>The unique ID of the service update</p>

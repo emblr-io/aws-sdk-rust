@@ -2,6 +2,8 @@
 
 /// <p>A <code>RenewDomain</code> request includes the number of years that you want to renew for and the current expiration year.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenewDomainInput {
     /// <p>The name of the domain that you want to renew.</p>

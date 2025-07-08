@@ -2,6 +2,8 @@
 
 /// <p>The specified image digest does not match the digest that Amazon ECR calculated for the image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageDigestDoesNotMatchException {
     #[allow(missing_docs)] // documentation missing in model

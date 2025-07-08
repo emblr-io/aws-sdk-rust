@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the way an organization is configured in Security Hub.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationConfiguration {
     /// <p>Indicates whether the organization uses local or central configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details of the content filter used in the Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailContentFilter {
     /// <p>The type of content detected in the filter by the Guardrail.</p>

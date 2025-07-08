@@ -2,6 +2,8 @@
 
 /// <p>A VPC security groups that the DB instance belongs to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbInstanceVpcSecurityGroup {
     /// <p>The name of the VPC security group.</p>

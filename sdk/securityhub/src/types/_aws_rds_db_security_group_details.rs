@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Amazon RDS DB security group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbSecurityGroupDetails {
     /// <p>The ARN for the DB security group.</p>

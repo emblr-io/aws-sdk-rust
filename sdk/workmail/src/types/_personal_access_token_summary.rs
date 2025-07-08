@@ -2,6 +2,8 @@
 
 /// <p>The summary of the Personal Access Token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PersonalAccessTokenSummary {
     /// <p>The ID of the Personal Access Token.</p>

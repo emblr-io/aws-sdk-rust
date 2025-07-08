@@ -2,6 +2,8 @@
 
 /// <p>Describes a usage limit object for a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyUsageLimitOutput {
     /// <p>The identifier of the usage limit.</p>

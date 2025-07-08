@@ -2,6 +2,8 @@
 
 /// <p>The image source (image bytes) of the guardrail image source. Object used in independent api.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum GuardrailImageSource {
     /// <p>The bytes details of the guardrail image source. Object used in independent api.</p>

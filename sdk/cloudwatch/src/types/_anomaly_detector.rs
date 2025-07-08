@@ -3,6 +3,8 @@
 /// <p>An anomaly detection model associated with a particular CloudWatch metric, statistic, or metric math expression. You can use the model to display a band of expected, normal values when the metric is graphed.</p>
 /// <p>If you have enabled unified cross-account observability, and this account is a monitoring account, the metric can be in the same account or a source account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyDetector {
     /// <p>The namespace of the metric associated with the anomaly detection model.</p>

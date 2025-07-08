@@ -2,6 +2,8 @@
 
 /// <p>The container for <code>SnowconeDeviceConfiguration</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceConfiguration {
     /// <p>Returns information about the device configuration for an Snowcone job.</p>

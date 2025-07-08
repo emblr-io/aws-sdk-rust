@@ -2,6 +2,8 @@
 
 /// <p>Describes a zero-ETL integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Integration {
     /// <p>The ARN for the source of the integration.</p>

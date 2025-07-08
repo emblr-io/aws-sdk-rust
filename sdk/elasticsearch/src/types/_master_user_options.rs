@@ -2,6 +2,8 @@
 
 /// <p>Credentials for the master user: username and password, ARN, or both.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MasterUserOptions {
     /// <p>ARN for the master user (if IAM is enabled).</p>

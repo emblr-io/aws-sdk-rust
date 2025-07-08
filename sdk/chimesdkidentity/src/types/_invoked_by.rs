@@ -2,6 +2,8 @@
 
 /// <p>Specifies the type of message that triggers a bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvokedBy {
     /// <p>Sets standard messages as the bot trigger. For standard messages:</p>

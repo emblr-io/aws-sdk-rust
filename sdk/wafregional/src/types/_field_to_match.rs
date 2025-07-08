@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Specifies where in a web request to look for <code>TargetString</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldToMatch {
     /// <p>The part of the web request that you want AWS WAF to search for a specified string. Parts of a request that you can search include the following:</p>

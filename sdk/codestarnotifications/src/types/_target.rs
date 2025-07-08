@@ -2,6 +2,8 @@
 
 /// <p>Information about the Chatbot topics or Chatbot clients associated with a notification rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Target {
     /// <p>The target type. Can be an Chatbot topic or Chatbot client.</p>

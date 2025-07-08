@@ -2,6 +2,8 @@
 
 /// <p>The visualization properties for solid, gradient, and categorical colors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialColor {
     /// <p>The visualization properties for the solid color.</p>

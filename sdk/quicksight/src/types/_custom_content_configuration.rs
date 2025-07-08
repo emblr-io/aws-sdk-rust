@@ -2,6 +2,8 @@
 
 /// <p>The configuration of a <code>CustomContentVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomContentConfiguration {
     /// <p>The input URL that links to the custom content that you want in the custom visual.</p>

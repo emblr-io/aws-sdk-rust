@@ -3,6 +3,8 @@
 /// <p>Describes the specifications of a bundle that can be applied to an Amazon Lightsail bucket.</p>
 /// <p>A bucket bundle specifies the monthly cost, storage space, and data transfer quota for a bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketBundle {
     /// <p>The ID of the bundle.</p>

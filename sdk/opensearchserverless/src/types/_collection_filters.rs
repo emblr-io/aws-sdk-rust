@@ -2,6 +2,8 @@
 
 /// <p>A list of filter keys that you can use for LIST, UPDATE, and DELETE requests to OpenSearch Serverless collections.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollectionFilters {
     /// <p>The name of the collection.</p>

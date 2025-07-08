@@ -2,6 +2,8 @@
 
 /// <p>The structure of an ingress endpoint resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressPoint {
     /// <p>A user friendly name for the ingress endpoint resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The maximum number for a batch delete of snapshots has been reached. The limit is 100.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteRequestSizeExceededFault {
     #[allow(missing_docs)] // documentation missing in model

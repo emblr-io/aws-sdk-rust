@@ -2,6 +2,8 @@
 
 /// <p>The subtype containing details about the Codestar connection <code>Type</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeStarParameters {
     /// <p>The CodeStar ARN, which is the connection between Service Catalog and the external repository.</p>

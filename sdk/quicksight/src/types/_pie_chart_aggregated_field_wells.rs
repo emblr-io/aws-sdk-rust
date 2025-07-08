@@ -2,6 +2,8 @@
 
 /// <p>The field well configuration of a pie chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PieChartAggregatedFieldWells {
     /// <p>The category (group/color) field wells of a pie chart.</p>

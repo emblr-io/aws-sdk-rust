@@ -2,6 +2,8 @@
 
 /// <p>Summary metadata information for a Amazon Q Business plugin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginTypeMetadataSummary {
     /// <p>The type of the plugin.</p>

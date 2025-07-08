@@ -2,6 +2,8 @@
 
 /// <p>Changes to a DB instance that are currently pending.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbPendingModifiedValues {
     /// <p>The new DB instance class for the DB instance.</p>

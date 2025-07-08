@@ -2,6 +2,8 @@
 
 /// <p>The result of a DescribeEventTopic request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEventTopicsOutput {
     /// <p>A list of Amazon SNS topic names that receive status messages from the specified Directory ID.</p>

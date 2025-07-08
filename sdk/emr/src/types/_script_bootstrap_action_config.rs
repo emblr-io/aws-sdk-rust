@@ -2,6 +2,8 @@
 
 /// <p>Configuration of the script to run during a bootstrap action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScriptBootstrapActionConfig {
     /// <p>Location in Amazon S3 of the script to run during a bootstrap action.</p>

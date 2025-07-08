@@ -2,6 +2,8 @@
 
 /// <p>The pull request cannot be merged because one or more approval rules applied to the pull request have conditions that have not been met.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullRequestApprovalRulesNotSatisfiedException {
     /// <p>Any message associated with the exception.</p>

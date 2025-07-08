@@ -2,6 +2,8 @@
 
 /// <p>The IORM settings of the Exadata DB system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExadataIormConfig {
     /// <p>An array of IORM settings for all the database in the Exadata DB system.</p>

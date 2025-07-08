@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the configuration of a Amazon Bedrock knowledge base.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockKnowledgeStoreConfiguration {
     /// <p>The base ARN of the knowledge base used.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The criteria that determine which findings a rule applies to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesFindingFilters {
     /// <p>The Amazon Resource Name (ARN) for a third-party product that generated a finding in Security Hub.</p>

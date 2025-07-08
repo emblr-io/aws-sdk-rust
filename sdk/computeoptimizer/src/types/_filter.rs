@@ -3,6 +3,8 @@
 /// <p>Describes a filter that returns a more specific list of recommendations. Use this filter with the <code>GetAutoScalingGroupRecommendations</code> and <code>GetEC2InstanceRecommendations</code> actions.</p>
 /// <p>You can use <code>EBSFilter</code> with the <code>GetEBSVolumeRecommendations</code> action, <code>LambdaFunctionRecommendationFilter</code> with the <code>GetLambdaFunctionRecommendations</code> action, and <code>JobFilter</code> with the <code>DescribeRecommendationExportJobs</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>The name of the filter.</p>

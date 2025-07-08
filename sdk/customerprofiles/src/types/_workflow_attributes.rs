@@ -2,6 +2,8 @@
 
 /// <p>Structure to hold workflow attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowAttributes {
     /// <p>Workflow attributes specific to <code>APPFLOW_INTEGRATION</code> workflow.</p>

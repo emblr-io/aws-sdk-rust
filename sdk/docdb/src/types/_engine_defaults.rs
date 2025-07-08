@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of a successful invocation of the <code>DescribeEngineDefaultClusterParameters</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineDefaults {
     /// <p>The name of the cluster parameter group family to return the engine parameter information for.</p>

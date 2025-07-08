@@ -2,6 +2,8 @@
 
 /// <p>An asset property timestamp entry containing the following information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetPropertyTimestamp {
     /// <p>A string that contains the time in seconds since epoch. Accepts substitution templates.</p>

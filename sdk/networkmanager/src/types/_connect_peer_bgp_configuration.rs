@@ -2,6 +2,8 @@
 
 /// <p>Describes a core network BGP configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectPeerBgpConfiguration {
     /// <p>The ASN of the Coret Network.</p>

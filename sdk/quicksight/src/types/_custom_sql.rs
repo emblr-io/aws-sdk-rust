@@ -2,6 +2,8 @@
 
 /// <p>A physical table type built from the results of the custom SQL query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomSql {
     /// <p>The Amazon Resource Name (ARN) of the data source.</p>

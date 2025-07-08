@@ -2,6 +2,8 @@
 
 /// <p>A geolocation target that you select to index. Each geolocation target contains a <code>name</code> and <code>order</code> key-value pair that specifies the geolocation target fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoLocationTarget {
     /// <p>The <code>name</code> of the geolocation target field. If the target field is part of a named shadow, you must select the named shadow using the <code>namedShadow</code> filter.</p>

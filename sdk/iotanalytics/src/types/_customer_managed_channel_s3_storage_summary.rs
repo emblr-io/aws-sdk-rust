@@ -2,6 +2,8 @@
 
 /// <p>Used to store channel data in an S3 bucket that you manage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerManagedChannelS3StorageSummary {
     /// <p>The name of the S3 bucket in which channel data is stored.</p>

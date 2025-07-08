@@ -2,6 +2,8 @@
 
 /// <p>Contains the output for DescribeInstanceHealth.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeInstanceHealthOutput {
     /// <p>Information about the health of the instances.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Runtime details and status for the workflow step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowStepMetadata {
     /// <p>A unique identifier for the workflow step, assigned at runtime.</p>

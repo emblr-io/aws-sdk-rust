@@ -2,6 +2,8 @@
 
 /// <p>The criteria used to filter the machine learning transforms.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformFilterCriteria {
     /// <p>A unique transform name that is used to filter the machine learning transforms.</p>

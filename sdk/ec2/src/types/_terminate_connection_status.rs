@@ -2,6 +2,8 @@
 
 /// <p>Information about a terminated Client VPN endpoint client connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TerminateConnectionStatus {
     /// <p>The ID of the client connection.</p>

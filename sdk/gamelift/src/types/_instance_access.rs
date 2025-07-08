@@ -2,6 +2,8 @@
 
 /// <p>Information and credentials that you can use to remotely connect to an instance in an EC2 managed fleet. This data type is returned in response to a call to <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetInstanceAccess">https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetInstanceAccess</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InstanceAccess {
     /// <p>A unique identifier for the fleet containing the instance to be accessed.</p>

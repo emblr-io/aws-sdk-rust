@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in Poland.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolandAdditionalInfo {
     /// <p>The individual tax registration number (NIP). Individual NIP is valid for other taxes excluding VAT purposes.</p>

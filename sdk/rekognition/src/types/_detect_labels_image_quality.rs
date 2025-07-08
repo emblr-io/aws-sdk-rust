@@ -2,6 +2,8 @@
 
 /// <p>The quality of an image provided for label detection, with regard to brightness, sharpness, and contrast.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectLabelsImageQuality {
     /// <p>The brightness of an image provided for label detection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a workflow definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowDefinitionSummary {
     /// <p>The path to the workflow definition file stored in the source repository for the project, including the file name.</p>

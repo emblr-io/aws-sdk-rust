@@ -2,6 +2,8 @@
 
 /// <p>Geometry defined as an encoded corridor - an encoded polyline with a radius that defines the width of the corridor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PolylineCorridor {
     /// <p>An ordered list of positions used to plot a route on a map in a lossy compression format.</p><note>

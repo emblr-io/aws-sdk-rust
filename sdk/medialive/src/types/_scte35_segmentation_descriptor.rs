@@ -2,6 +2,8 @@
 
 /// Corresponds to SCTE-35 segmentation_descriptor.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte35SegmentationDescriptor {
     /// Holds the four SCTE-35 delivery restriction parameters.

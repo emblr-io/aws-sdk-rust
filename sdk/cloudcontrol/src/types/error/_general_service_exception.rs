@@ -2,6 +2,8 @@
 
 /// <p>The resource handler has returned that the downstream service generated an error that doesn't map to any other handler error code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeneralServiceException {
     #[allow(missing_docs)] // documentation missing in model

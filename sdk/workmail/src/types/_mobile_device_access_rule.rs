@@ -2,6 +2,8 @@
 
 /// <p>A rule that controls access to mobile devices for an WorkMail group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MobileDeviceAccessRule {
     /// <p>The ID assigned to a mobile access rule.</p>

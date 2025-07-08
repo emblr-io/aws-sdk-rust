@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of the analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisResult {
     /// <p>The type of the analysis result. Analyses fall into the following types based on the validators used to generate the analysis result:</p>

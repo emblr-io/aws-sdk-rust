@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the methods by which to sort the test set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetSortBy {
     /// <p>Specifies whether to sort the test sets by name or by the time they were last updated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A short summary of a <code>ManagedNotificationEvent</code>. This is only used when listing managed notification events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedNotificationEventSummary {
     /// <p>The schema version of the <code>ManagedNotificationEvent</code>.</p>

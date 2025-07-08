@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about an algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlgorithmSummary {
     /// <p>The name of the algorithm that is described by the summary.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An instance of a threat intelligence detail that constitutes evidence for the finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThreatIntelligenceDetail {
     /// <p>The name of the threat intelligence list that triggered the finding.</p>

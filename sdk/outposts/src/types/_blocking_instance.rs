@@ -2,6 +2,8 @@
 
 /// <p>A running Amazon EC2 instance that can be stopped to free up capacity needed to run the capacity task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockingInstance {
     /// <p>The ID of the blocking instance.</p>

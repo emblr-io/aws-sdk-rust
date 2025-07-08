@@ -2,6 +2,8 @@
 
 /// <p>A directed edge connecting two lineage entities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Edge {
     /// <p>The Amazon Resource Name (ARN) of the source lineage entity of the directed edge.</p>

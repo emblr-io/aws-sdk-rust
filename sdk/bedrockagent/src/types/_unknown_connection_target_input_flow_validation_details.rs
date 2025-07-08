@@ -2,6 +2,8 @@
 
 /// <p>Details about an unknown target input for a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnknownConnectionTargetInputFlowValidationDetails {
     /// <p>The name of the connection with the unknown target input.</p>

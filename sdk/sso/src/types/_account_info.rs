@@ -2,6 +2,8 @@
 
 /// <p>Provides information about your AWS account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountInfo {
     /// <p>The identifier of the AWS account that is assigned to the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for the domain cluster, such as the type and number of instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticsearchClusterConfig {
     /// <p>The instance type for an Elasticsearch cluster. UltraWarm instance types are not supported for data instances.</p>

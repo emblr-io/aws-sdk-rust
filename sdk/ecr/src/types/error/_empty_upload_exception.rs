@@ -2,6 +2,8 @@
 
 /// <p>The specified layer upload does not contain any layer parts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmptyUploadException {
     /// <p>The error message associated with the exception.</p>

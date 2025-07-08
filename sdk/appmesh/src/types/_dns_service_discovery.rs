@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the DNS service discovery information for your virtual node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsServiceDiscovery {
     /// <p>Specifies the DNS service discovery hostname for the virtual node.</p>

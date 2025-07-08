@@ -2,6 +2,8 @@
 
 /// <p>The resource policy object. Currently, you can use policies to share snapshots across Amazon Web Services accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicy {
     /// <p>The Amazon Resource Name (ARN) of the policy.</p>

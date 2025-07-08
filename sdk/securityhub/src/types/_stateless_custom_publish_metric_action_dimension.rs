@@ -2,6 +2,8 @@
 
 /// <p>Defines a CloudWatch dimension value to publish.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatelessCustomPublishMetricActionDimension {
     /// <p>The value to use for the custom metric dimension.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about where human output will be stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowDefinitionOutputConfig {
     /// <p>The Amazon S3 path where the object containing human output will be made available.</p>

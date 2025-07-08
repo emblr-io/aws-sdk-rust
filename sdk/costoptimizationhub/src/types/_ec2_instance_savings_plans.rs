@@ -2,6 +2,8 @@
 
 /// <p>The EC2 instance Savings Plans recommendation details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2InstanceSavingsPlans {
     /// <p>The EC2 instance Savings Plans configuration used for recommendations.</p>

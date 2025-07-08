@@ -2,6 +2,8 @@
 
 /// <p>This account already has five reports defined. To define a new report, you must delete an existing report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportLimitReachedException {
     /// <p>A message to show the detail of the exception.</p>

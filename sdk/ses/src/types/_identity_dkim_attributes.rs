@@ -2,6 +2,8 @@
 
 /// <p>Represents the DKIM attributes of a verified email address or a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityDkimAttributes {
     /// <p>Is true if DKIM signing is enabled for email sent from the identity. It's false otherwise. The default value is true.</p>

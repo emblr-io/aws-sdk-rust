@@ -2,6 +2,8 @@
 
 /// <p>Parameters for plaintext encryption using asymmetric keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AsymmetricEncryptionAttributes {
     /// <p>The padding to be included with the data.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the broker usernames for the specified broker. Doesn't apply to RabbitMQ brokers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAmazonMqBrokerUsersDetails {
     /// <p>The type of change pending for the broker user.</p>

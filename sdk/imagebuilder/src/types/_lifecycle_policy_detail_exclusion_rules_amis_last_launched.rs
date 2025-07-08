@@ -2,6 +2,8 @@
 
 /// <p>Defines criteria to exclude AMIs from lifecycle actions based on the last time they were used to launch an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyDetailExclusionRulesAmisLastLaunched {
     /// <p>The integer number of units for the time period. For example <code>6</code> (months).</p>

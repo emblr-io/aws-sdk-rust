@@ -2,6 +2,8 @@
 
 /// <p>The user name is not valid because it has exceeded the character limit for author names.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NameLengthExceededException {
     /// <p>Any message associated with the exception.</p>

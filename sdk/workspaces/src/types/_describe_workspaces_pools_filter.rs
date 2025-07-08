@@ -2,6 +2,8 @@
 
 /// <p>Describes the filter conditions for WorkSpaces Pools to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeWorkspacesPoolsFilter {
     /// <p>The name of the pool to filter.</p>

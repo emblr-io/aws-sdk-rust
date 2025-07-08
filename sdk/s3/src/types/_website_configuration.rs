@@ -2,6 +2,8 @@
 
 /// <p>Specifies website configuration parameters for an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebsiteConfiguration {
     /// <p>The name of the error document for the website.</p>

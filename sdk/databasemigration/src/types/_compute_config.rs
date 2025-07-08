@@ -2,6 +2,8 @@
 
 /// <p>Configuration parameters for provisioning an DMS Serverless replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeConfig {
     /// <p>The Availability Zone where the DMS Serverless replication using this configuration will run. The default value is a random, system-chosen Availability Zone in the configuration's Amazon Web Services Region, for example, <code>"us-west-2"</code>. You can't set this parameter if the <code>MultiAZ</code> parameter is set to <code>true</code>.</p>

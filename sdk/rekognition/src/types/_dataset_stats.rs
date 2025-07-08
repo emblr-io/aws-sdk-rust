@@ -2,6 +2,8 @@
 
 /// <p>Provides statistics about a dataset. For more information, see <code>DescribeDataset</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetStats {
     /// <p>The total number of images in the dataset that have labels.</p>

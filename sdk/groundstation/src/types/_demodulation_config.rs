@@ -2,6 +2,8 @@
 
 /// <p>Information about the demodulation <code>Config</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DemodulationConfig {
     /// <p>Unvalidated JSON of a demodulation <code>Config</code>.</p>

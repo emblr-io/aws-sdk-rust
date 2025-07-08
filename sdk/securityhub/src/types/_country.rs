@@ -2,6 +2,8 @@
 
 /// <p>Information about a country.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Country {
     /// <p>The 2-letter ISO 3166 country code for the country.</p>

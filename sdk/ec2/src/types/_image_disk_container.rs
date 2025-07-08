@@ -2,6 +2,8 @@
 
 /// <p>Describes the disk container object for an import image task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ImageDiskContainer {
     /// <p>The description of the disk image.</p>

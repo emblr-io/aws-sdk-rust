@@ -2,6 +2,8 @@
 
 /// <p>An criterion statement in an archive rule. Each archive rule may have multiple criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InlineArchiveRule {
     /// <p>The name of the rule.</p>

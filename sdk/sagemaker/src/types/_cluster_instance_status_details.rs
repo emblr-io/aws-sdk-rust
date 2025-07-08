@@ -2,6 +2,8 @@
 
 /// <p>Details of an instance in a SageMaker HyperPod cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterInstanceStatusDetails {
     /// <p>The status of an instance in a SageMaker HyperPod cluster.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes Availability Zones, Local Zones, and Wavelength Zones.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZone {
     /// <p>For Availability Zones, this parameter always has the value of <code>opt-in-not-required</code>.</p>

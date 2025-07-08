@@ -2,6 +2,8 @@
 
 /// <p>A source for an import read set job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportReadSetSourceItem {
     /// <p>The source files' location in Amazon S3.</p>

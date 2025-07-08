@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a variable in the prompt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PromptInputVariable {
     /// <p>The name of the variable.</p>

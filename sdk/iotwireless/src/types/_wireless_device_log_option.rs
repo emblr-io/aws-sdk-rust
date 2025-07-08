@@ -2,6 +2,8 @@
 
 /// <p>The log options for wireless devices and can be used to set log levels for a specific type of wireless device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WirelessDeviceLogOption {
     /// <p>The wireless device type.</p>

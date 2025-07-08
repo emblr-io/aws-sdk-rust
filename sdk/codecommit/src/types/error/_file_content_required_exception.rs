@@ -2,6 +2,8 @@
 
 /// <p>The file cannot be added because it is empty. Empty files cannot be added to the repository with this API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileContentRequiredException {
     /// <p>Any message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides data for a specific usage metric and the corresponding quota for an Amazon Macie account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageByAccount {
     /// <p>The type of currency that the value for the metric (estimatedCost) is reported in.</p>

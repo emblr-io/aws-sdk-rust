@@ -2,6 +2,8 @@
 
 /// <p>A generic address associated with the customer that is not mailing, shipping, or billing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Address {
     /// <p>The first line of a customer address.</p>

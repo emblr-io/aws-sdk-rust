@@ -2,6 +2,8 @@
 
 /// <p>Provides the reason a registration was rejected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationDeniedReasonInformation {
     /// <p>The reason a registration was rejected.</p>

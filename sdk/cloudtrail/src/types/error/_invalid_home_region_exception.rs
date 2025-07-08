@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when an operation is called on a trail from a Region other than the Region in which the trail was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidHomeRegionException {
     /// <p>Brief description of the exception returned by the request.</p>

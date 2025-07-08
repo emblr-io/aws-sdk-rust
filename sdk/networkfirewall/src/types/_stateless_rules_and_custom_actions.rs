@@ -2,6 +2,8 @@
 
 /// <p>Stateless inspection criteria. Each stateless rule group uses exactly one of these data types to define its stateless rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatelessRulesAndCustomActions {
     /// <p>Defines the set of stateless rules for use in a stateless rule group.</p>

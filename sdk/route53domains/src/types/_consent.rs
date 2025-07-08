@@ -2,6 +2,8 @@
 
 /// <p>Customer's consent for the owner change request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Consent {
     /// <p>Maximum amount the customer agreed to accept.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the latest update to an MPA approval team association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LatestMpaApprovalTeamUpdate {
     /// <p>The ARN of the MPA session associated with this update.</p>

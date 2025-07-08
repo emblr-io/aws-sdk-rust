@@ -2,6 +2,8 @@
 
 /// <p>Contains the device position details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DevicePosition {
     /// <p>The device whose position you retrieved.</p>

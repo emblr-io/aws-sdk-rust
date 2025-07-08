@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about a phone number for a contact center.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhoneNumberSummary {
     /// <p>The identifier of the phone number.</p>

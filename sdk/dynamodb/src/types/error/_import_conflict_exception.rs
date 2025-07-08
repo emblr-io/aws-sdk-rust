@@ -2,6 +2,8 @@
 
 /// <p>There was a conflict when importing from the specified S3 source. This can occur when the current import conflicts with a previous import request that had the same client token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportConflictException {
     #[allow(missing_docs)] // documentation missing in model

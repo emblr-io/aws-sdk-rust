@@ -2,6 +2,8 @@
 
 /// <p>A wrapper object holding the Amazon API Gateway proxy configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiGatewayProxyConfig {
     /// <p>The endpoint URL of the API Gateway proxy.</p>

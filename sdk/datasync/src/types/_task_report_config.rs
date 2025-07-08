@@ -3,6 +3,8 @@
 /// <p>Specifies how you want to configure a task report, which provides detailed information about for your DataSync transfer.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html">Task reports</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskReportConfig {
     /// <p>Specifies the Amazon S3 bucket where DataSync uploads your task report. For more information, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html#task-report-access">Task reports</a>.</p>

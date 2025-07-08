@@ -2,6 +2,8 @@
 
 /// <p>The provided SNS topic ARN is invalid. Please provide a valid SNS topic ARN and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidSnsTopicArnException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Details related to why an IPAM pool CIDR failed to be provisioned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpamPoolCidrFailureReason {
     /// <p>An error code related to why an IPAM pool CIDR failed to be provisioned.</p>

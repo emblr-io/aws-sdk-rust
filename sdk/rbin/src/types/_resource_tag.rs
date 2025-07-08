@@ -2,6 +2,8 @@
 
 /// <p>\[Tag-level retention rules only\] Information about the resource tags used to identify resources that are retained by the retention rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceTag {
     /// <p>The tag key.</p>

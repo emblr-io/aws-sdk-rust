@@ -2,6 +2,8 @@
 
 /// <p>The input structure for the data source that represents the storage type of the input data objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum VectorEnrichmentJobDataSourceConfigInput {
     /// <p>The input structure for the Amazon S3 data that represents the Amazon S3 location of the input data objects.</p>

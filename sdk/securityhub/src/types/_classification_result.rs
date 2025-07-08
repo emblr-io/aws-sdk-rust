@@ -2,6 +2,8 @@
 
 /// <p>Details about the sensitive data that was detected on the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClassificationResult {
     /// <p>The type of content that the finding applies to.</p>

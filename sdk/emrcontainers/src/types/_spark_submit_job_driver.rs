@@ -2,6 +2,8 @@
 
 /// <p>The information about job driver for Spark submit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SparkSubmitJobDriver {
     /// <p>The entry point of job application.</p>

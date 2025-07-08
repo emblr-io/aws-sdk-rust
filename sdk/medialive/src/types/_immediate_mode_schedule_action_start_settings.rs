@@ -2,6 +2,8 @@
 
 /// Settings to configure an action so that it occurs as soon as possible.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImmediateModeScheduleActionStartSettings {}
 impl ImmediateModeScheduleActionStartSettings {

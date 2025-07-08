@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in Canada .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanadaAdditionalInfo {
     /// <p>The provincial sales tax ID for your TRN in Canada. This parameter can represent the following:</p>

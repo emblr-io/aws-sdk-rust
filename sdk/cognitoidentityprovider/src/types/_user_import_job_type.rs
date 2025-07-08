@@ -2,6 +2,8 @@
 
 /// <p>A user import job in a user pool. Describes the status of user import with a CSV file. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-using-import-tool.html">Importing users into user pools from a CSV file</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserImportJobType {
     /// <p>The friendly name of the user import job.</p>

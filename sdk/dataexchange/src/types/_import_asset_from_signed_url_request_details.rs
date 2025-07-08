@@ -2,6 +2,8 @@
 
 /// <p>Details of the operation to be performed by the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportAssetFromSignedUrlRequestDetails {
     /// <p>The name of the asset. When importing from Amazon S3, the Amazon S3 object key is used as the asset name.</p>

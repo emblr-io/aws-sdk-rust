@@ -2,6 +2,8 @@
 
 /// <p>Request processing failed because of an unknown error, exception, or internal failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalException {
     /// <p>A description of the error.</p>

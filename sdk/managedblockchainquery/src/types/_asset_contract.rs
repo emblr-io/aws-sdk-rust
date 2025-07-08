@@ -2,6 +2,8 @@
 
 /// <p>This container contains information about an contract.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetContract {
     /// <p>The container for the contract identifier containing its blockchain network and address.</p>

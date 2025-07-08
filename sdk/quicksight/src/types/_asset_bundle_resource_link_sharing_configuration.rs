@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration of a shared link to an Amazon QuickSight dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleResourceLinkSharingConfiguration {
     /// <p>A list of link sharing permissions for the dashboards that you want to apply overrides to.</p>

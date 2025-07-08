@@ -2,6 +2,8 @@
 
 /// <p>Information about a CloudTrail trail, including the trail's name, home Region, and Amazon Resource Name (ARN).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrailInfo {
     /// <p>The ARN of a trail.</p>

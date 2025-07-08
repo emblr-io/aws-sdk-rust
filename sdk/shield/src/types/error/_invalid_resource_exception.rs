@@ -2,6 +2,8 @@
 
 /// <p>Exception that indicates that the resource is invalid. You might not have access to the resource, or the resource might not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidResourceException {
     #[allow(missing_docs)] // documentation missing in model

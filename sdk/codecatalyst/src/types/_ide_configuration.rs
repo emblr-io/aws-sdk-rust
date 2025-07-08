@@ -2,6 +2,8 @@
 
 /// <p>Information about the configuration of an integrated development environment (IDE) for a Dev Environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdeConfiguration {
     /// <p>A link to the IDE runtime image.</p><note>

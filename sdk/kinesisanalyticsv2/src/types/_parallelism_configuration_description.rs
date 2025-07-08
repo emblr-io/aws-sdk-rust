@@ -2,6 +2,8 @@
 
 /// <p>Describes parameters for how a Managed Service for Apache Flink application executes multiple tasks simultaneously.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParallelismConfigurationDescription {
     /// <p>Describes whether the application uses the default parallelism for the Managed Service for Apache Flink service.</p>

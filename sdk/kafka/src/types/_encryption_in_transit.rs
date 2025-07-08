@@ -2,6 +2,8 @@
 
 /// <p>The settings for encrypting data in transit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionInTransit {
     /// <p>Indicates the encryption setting for data in transit between clients and brokers. The following are the possible values.</p>

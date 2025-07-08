@@ -2,6 +2,8 @@
 
 /// <p>Subslot type composition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubSlotTypeComposition {
     /// <p>Name of a constituent sub slot inside a composite slot.</p>

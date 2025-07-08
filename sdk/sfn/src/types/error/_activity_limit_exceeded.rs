@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of activities has been reached. Existing activities must be deleted before a new activity can be created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

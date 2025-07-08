@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an output from prompt flow invoction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FlowOutputEvent {
     /// <p>The name of the flow output node that the output is from.</p>

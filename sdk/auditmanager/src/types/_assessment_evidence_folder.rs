@@ -2,6 +2,8 @@
 
 /// <p>The folder where Audit Manager stores evidence for an assessment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentEvidenceFolder {
     /// <p>The name of the evidence folder.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a server participating in an asynchronous Job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParticipatingServer {
     /// <p>The Source Server ID of a participating server.</p>

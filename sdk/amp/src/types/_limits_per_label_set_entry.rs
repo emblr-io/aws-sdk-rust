@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the information about the limits that apply to time series that match one label set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitsPerLabelSetEntry {
     /// <p>The maximum number of active series that can be ingested that match this label set.</p>

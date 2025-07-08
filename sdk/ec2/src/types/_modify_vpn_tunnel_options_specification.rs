@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Site-to-Site VPN tunnel options to modify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ModifyVpnTunnelOptionsSpecification {
     /// <p>The range of inside IPv4 addresses for the tunnel. Any specified CIDR blocks must be unique across all VPN connections that use the same virtual private gateway.</p>

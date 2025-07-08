@@ -2,6 +2,8 @@
 
 /// <p>A summary of a change set returned in a list of change sets when the <code>ListChangeSets</code> action is called.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeSetSummaryListItem {
     /// <p>The unique identifier for a change set.</p>

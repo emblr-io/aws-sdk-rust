@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Resource Name (ARN) and other details of the Amazon CloudWatch Logs log group that Amazon Route&nbsp;53 is publishing logs to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsLogGroupArnConfigDetails {
     /// <p>The ARN of the CloudWatch Logs log group that Route&nbsp;53 is publishing logs to.</p>

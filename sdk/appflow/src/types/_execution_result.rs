@@ -2,6 +2,8 @@
 
 /// <p>Specifies the end result of the flow run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionResult {
     /// <p>Provides any error message information related to the flow run.</p>

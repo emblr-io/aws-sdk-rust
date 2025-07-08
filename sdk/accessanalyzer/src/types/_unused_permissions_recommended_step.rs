@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the action to take for a policy in an unused permissions finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnusedPermissionsRecommendedStep {
     /// <p>The time at which the existing policy for the unused permissions finding was last updated.</p>

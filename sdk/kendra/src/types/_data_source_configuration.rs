@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for an Amazon Kendra data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceConfiguration {
     /// <p>Provides the configuration information to connect to an Amazon S3 bucket as your data source.</p><note>

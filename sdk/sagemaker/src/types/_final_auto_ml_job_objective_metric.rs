@@ -2,6 +2,8 @@
 
 /// <p>The best candidate result from an AutoML training job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FinalAutoMlJobObjectiveMetric {
     /// <p>The type of metric with the best result.</p>

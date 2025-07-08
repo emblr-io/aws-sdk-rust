@@ -2,6 +2,8 @@
 
 /// <p>Information about the encryption of the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateEncryption {
     /// <p>The type of algorithm that is used for the encryption (such as aes128, aes192, or aes256).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for information about an OpenSearch Ingestion blueprint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineBlueprint {
     /// <p>The name of the blueprint.</p>

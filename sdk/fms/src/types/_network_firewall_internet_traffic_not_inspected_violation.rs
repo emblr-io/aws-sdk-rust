@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for the subnet for which internet traffic that hasn't been inspected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFirewallInternetTrafficNotInspectedViolation {
     /// <p>The subnet ID.</p>

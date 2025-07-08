@@ -4,6 +4,8 @@
 /// <p>You can include up to 50 email addresses in total, distributed across <a href="https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html#API_StartEmailContact_RequestBody">DestinationEmailAddress</a>, <code>ToAddresses</code>, and <code>CcAddresses</code>. This total must include one required <code>DestinationEmailAddress</code>. You can then specify up to 49 addresses allocated across <code>ToAddresses</code> and <code>CcAddresses</code> as needed.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InboundAdditionalRecipients {
     /// <p>The <b>additional</b> recipients information present in to list. You must have 1 required recipient (<code>DestinationEmailAddress</code>). You can then specify up to 49 additional recipients (across <code>ToAddresses</code> and <code>CcAddresses</code>), for a total of 50 recipients.</p>

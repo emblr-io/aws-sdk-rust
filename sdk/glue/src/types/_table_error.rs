@@ -2,6 +2,8 @@
 
 /// <p>An error record for table operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableError {
     /// <p>The name of the table. For Hive compatibility, this must be entirely lowercase.</p>

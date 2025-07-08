@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering based on the last modified date of AMI products.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmiProductLastModifiedDateFilter {
     /// <p>Dates between which the AMI product was last modified.</p>

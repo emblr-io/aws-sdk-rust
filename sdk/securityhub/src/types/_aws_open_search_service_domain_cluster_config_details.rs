@@ -2,6 +2,8 @@
 
 /// <p>Details about the configuration of an OpenSearch cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsOpenSearchServiceDomainClusterConfigDetails {
     /// <p>The number of data nodes to use in the OpenSearch domain.</p>

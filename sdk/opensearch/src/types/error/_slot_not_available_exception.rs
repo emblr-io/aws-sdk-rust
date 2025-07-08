@@ -2,6 +2,8 @@
 
 /// <p>An exception for attempting to schedule a domain action during an unavailable time slot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotNotAvailableException {
     /// <p>Alternate time slots during which OpenSearch Service has available capacity to schedule a domain action.</p>

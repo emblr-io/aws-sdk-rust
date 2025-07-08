@@ -2,6 +2,8 @@
 
 /// <p>Each step type has its own <code>StepDetails</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomStepDetails {
     /// <p>The name of the step, used as an identifier.</p>

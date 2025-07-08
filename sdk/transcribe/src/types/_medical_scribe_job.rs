@@ -3,6 +3,8 @@
 /// <p>Provides detailed information about a Medical Scribe job.</p>
 /// <p>To view the status of the specified Medical Scribe job, check the <code>MedicalScribeJobStatus</code> field. If the status is <code>COMPLETED</code>, the job is finished and you can find the results at the locations specified in <code>MedicalScribeOutput</code>. If the status is <code>FAILED</code>, <code>FailureReason</code> provides details on why your Medical Scribe job failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeJob {
     /// <p>The name of the Medical Scribe job. Job names are case sensitive and must be unique within an Amazon Web Services account.</p>

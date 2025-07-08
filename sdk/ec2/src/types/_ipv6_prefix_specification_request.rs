@@ -2,6 +2,8 @@
 
 /// <p>Describes the IPv6 prefix option for a network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ipv6PrefixSpecificationRequest {
     /// <p>The IPv6 prefix.</p>

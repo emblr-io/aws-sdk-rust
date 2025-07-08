@@ -4,6 +4,8 @@
 /// <p>Amazon ECS tasks hosted on Fargate use the default resource limit values set by the operating system with the exception of the <code>nofile</code> resource limit parameter which Fargate overrides. The <code>nofile</code> resource limit sets a restriction on the number of open files that a container can use. The default <code>nofile</code> soft limit is <code> 65535</code> and the default hard limit is <code>65535</code>.</p>
 /// <p>You can specify the <code>ulimit</code> settings for a container in a task definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ulimit {
     /// <p>The <code>type</code> of the <code>ulimit</code>.</p>

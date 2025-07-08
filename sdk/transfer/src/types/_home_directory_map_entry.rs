@@ -4,6 +4,8 @@
 /// <p>The following is an <code>Entry</code> and <code>Target</code> pair example for <code>chroot</code>.</p>
 /// <p><code>\[ { "Entry": "/", "Target": "/bucket_name/home/mydirectory" } \]</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HomeDirectoryMapEntry {
     /// <p>Represents an entry for <code>HomeDirectoryMappings</code>.</p>

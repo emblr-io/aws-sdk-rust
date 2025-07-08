@@ -2,6 +2,8 @@
 
 /// <p>Ordered list containing different kinds of sections that can be added. A LayoutSections object can only contain one section.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayoutSections {
     /// <p>Ordered list containing different kinds of sections that can be added.</p>

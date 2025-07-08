@@ -2,6 +2,8 @@
 
 /// <p>A union that contains the <code>IdentityCenterConfig</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum WebAppIdentityProviderDetails {
     /// <p>A structure that describes the values to use for the IAM Identity Center settings when you create a web app.</p>

@@ -3,6 +3,8 @@
 /// <p>Represents the total number of matching results and indicates how accurate that count is.</p>
 /// <p>The <code>Value</code> field provides the count, which may be exact or estimated. The <code>Relation</code> field indicates whether it's an exact figure or a lower bound. This helps understand the full scope of search results, especially when dealing with large result sets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TotalHits {
     /// <p>The total number of matching results. This value may be exact or an estimate, depending on the <code>Relation</code> field.</p>

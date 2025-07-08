@@ -2,6 +2,8 @@
 
 /// Settings for burning the output timecode and specified prefix into the output.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimecodeBurnin {
     /// Use Font size to set the font size of any burned-in timecode. Valid values are 10, 16, 32, 48.

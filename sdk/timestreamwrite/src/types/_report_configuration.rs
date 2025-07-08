@@ -2,6 +2,8 @@
 
 /// <p>Report configuration for a batch load task. This contains details about where error reports are stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportConfiguration {
     /// <p>Configuration of an S3 location to write error reports and events for a batch load.</p>

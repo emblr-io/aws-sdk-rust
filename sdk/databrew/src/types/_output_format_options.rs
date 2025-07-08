@@ -2,6 +2,8 @@
 
 /// <p>Represents a set of options that define the structure of comma-separated (CSV) job output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputFormatOptions {
     /// <p>Represents a set of options that define the structure of comma-separated value (CSV) job output.</p>

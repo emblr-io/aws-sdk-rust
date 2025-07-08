@@ -2,6 +2,8 @@
 
 /// <p>Changes the status of a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneyStateRequest {
     /// <p>The status of the journey. Currently, Supported values are ACTIVE, PAUSED, and CANCELLED</p>

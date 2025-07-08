@@ -2,6 +2,8 @@
 
 /// <p>Details about a CloudFormation template provider configuration and associated provisioning information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CfnTemplateProviderDetail {
     /// <p>The unique identifier of the template within the project.</p>

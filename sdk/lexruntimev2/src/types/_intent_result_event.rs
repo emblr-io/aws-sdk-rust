@@ -2,6 +2,8 @@
 
 /// <p>Contains the current state of the conversation between the client application and Amazon Lex V2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentResultEvent {
     /// <p>Indicates whether the input to the operation was text, speech, or from a touch-tone keypad.</p>

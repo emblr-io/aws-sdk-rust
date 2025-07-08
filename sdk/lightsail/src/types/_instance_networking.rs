@@ -2,6 +2,8 @@
 
 /// <p>Describes monthly data transfer rates and port information for an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceNetworking {
     /// <p>The amount of data in GB allocated for monthly data transfers.</p>

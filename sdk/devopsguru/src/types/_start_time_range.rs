@@ -2,6 +2,8 @@
 
 /// <p>A time range used to specify when the behavior of an insight or anomaly started.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartTimeRange {
     /// <p>The start time of the time range.</p>

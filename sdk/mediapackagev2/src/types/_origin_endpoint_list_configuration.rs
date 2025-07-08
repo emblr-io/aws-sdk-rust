@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the origin endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OriginEndpointListConfiguration {
     /// <p>The Amazon Resource Name (ARN) associated with the resource.</p>

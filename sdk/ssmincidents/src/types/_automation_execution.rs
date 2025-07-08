@@ -2,6 +2,8 @@
 
 /// <p>The Systems Manager automation document process to start as the runbook at the beginning of the incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AutomationExecution {
     /// <p>The Amazon Resource Name (ARN) of the automation process.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The container for the completed multipart upload details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompletedMultipartUpload {
     /// <p>Array of CompletedPart data types.</p>

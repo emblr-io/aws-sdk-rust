@@ -2,6 +2,8 @@
 
 /// <p>The collection of computing resources from which an endpoint is created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Workgroup {
     /// <p>The unique identifier of the workgroup.</p>

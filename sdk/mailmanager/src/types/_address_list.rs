@@ -2,6 +2,8 @@
 
 /// <p>An address list contains a list of emails and domains that are used in MailManager Ingress endpoints and Rules for email management.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddressList {
     /// <p>The identifier of the address list.</p>

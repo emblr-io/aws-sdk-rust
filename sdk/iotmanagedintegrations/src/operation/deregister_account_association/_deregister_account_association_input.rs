@@ -2,6 +2,8 @@
 
 /// Request for deregister a managed thing from account association
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeregisterAccountAssociationInput {
     /// <p>The identifier of the managed thing to be deregistered from the account association.</p>

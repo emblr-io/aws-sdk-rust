@@ -2,6 +2,8 @@
 
 /// <p>Describes the buffering to perform before delivering data to the Snowflake destination. If you do not specify any value, Firehose uses the default values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnowflakeBufferingHints {
     /// <p>Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 128.</p>

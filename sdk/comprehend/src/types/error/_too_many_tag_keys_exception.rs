@@ -2,6 +2,8 @@
 
 /// <p>The request contains more tag keys than can be associated with a resource (50 tag keys per resource).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyTagKeysException {
     #[allow(missing_docs)] // documentation missing in model

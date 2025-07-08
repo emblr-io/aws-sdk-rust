@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the <code>XksProxyUriEndpoint</code> is already associated with another external key store in this Amazon Web Services Region. To identify the cause, see the error message that accompanies the exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct XksProxyUriEndpointInUseException {
     #[allow(missing_docs)] // documentation missing in model

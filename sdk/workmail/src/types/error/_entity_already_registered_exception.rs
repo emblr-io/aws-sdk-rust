@@ -2,6 +2,8 @@
 
 /// <p>The user, group, or resource that you're trying to register is already registered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityAlreadyRegisteredException {
     #[allow(missing_docs)] // documentation missing in model

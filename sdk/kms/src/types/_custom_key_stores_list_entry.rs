@@ -2,6 +2,8 @@
 
 /// <p>Contains information about each custom key store in the custom key store list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomKeyStoresListEntry {
     /// <p>A unique identifier for the custom key store.</p>

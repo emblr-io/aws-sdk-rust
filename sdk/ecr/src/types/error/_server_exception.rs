@@ -2,6 +2,8 @@
 
 /// <p>These errors are usually caused by a server-side issue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerException {
     /// <p>The error message associated with the exception.</p>

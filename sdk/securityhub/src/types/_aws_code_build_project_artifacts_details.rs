@@ -2,6 +2,8 @@
 
 /// <p>Information about the build artifacts for the CodeBuild project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCodeBuildProjectArtifactsDetails {
     /// <p>An identifier for the artifact definition.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The data configuration of the reference line.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReferenceLineDataConfiguration {
     /// <p>The static data configuration of the reference line data configuration.</p>

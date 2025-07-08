@@ -2,6 +2,8 @@
 
 /// <p>A <code>TopBottomFilter</code> filters values that are at the top or the bottom.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopBottomFilter {
     /// <p>An identifier that uniquely identifies a filter within a dashboard, analysis, or template.</p>

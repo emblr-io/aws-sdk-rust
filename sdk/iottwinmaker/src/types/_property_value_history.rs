@@ -2,6 +2,8 @@
 
 /// <p>The history of values for a time series property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyValueHistory {
     /// <p>An object that uniquely identifies an entity property.</p>

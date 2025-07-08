@@ -4,6 +4,8 @@
 /// <p>This field is not applicable if you use the <code>AWS-IoT-FleetWise</code> namespace.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandExecutionResult {
     /// <p>An attribute of type String. For example:</p>

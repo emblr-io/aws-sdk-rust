@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a user's access to an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UserAccessResultItem {
     /// <p>The name of the application.</p>

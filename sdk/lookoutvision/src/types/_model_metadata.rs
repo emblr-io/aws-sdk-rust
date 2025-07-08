@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Lookout for Vision model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelMetadata {
     /// <p>The unix timestamp for the date and time that the model was created.</p>

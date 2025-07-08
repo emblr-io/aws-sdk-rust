@@ -2,6 +2,8 @@
 
 /// <p>Information about a VM cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudVmClusterSummary {
     /// <p>The unique identifier of the VM cluster.</p>

@@ -2,6 +2,8 @@
 
 /// A list of schedule actions to create (in a request) or that have been created (in a response).
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchScheduleActionCreateRequest {
     /// A list of schedule actions to create.

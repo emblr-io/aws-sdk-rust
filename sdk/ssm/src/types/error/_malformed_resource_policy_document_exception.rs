@@ -2,6 +2,8 @@
 
 /// <p>The specified policy document is malformed or invalid, or excessive <code>PutResourcePolicy</code> or <code>DeleteResourcePolicy</code> calls have been made.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MalformedResourcePolicyDocumentException {
     #[allow(missing_docs)] // documentation missing in model

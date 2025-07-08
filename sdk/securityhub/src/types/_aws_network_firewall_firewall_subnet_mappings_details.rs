@@ -2,6 +2,8 @@
 
 /// <p>A public subnet that Network Firewall uses for the firewall.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsNetworkFirewallFirewallSubnetMappingsDetails {
     /// <p>The identifier of the subnet</p>

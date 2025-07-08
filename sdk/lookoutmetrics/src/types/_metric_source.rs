@@ -2,6 +2,8 @@
 
 /// <p>Contains information about source data used to generate metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricSource {
     /// <p>Contains information about the configuration of the S3 bucket that contains source files.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The dimension type field with date type columns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateDimensionField {
     /// <p>The custom field ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>DescribeDomains</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainsInput {
     /// <p>Array of OpenSearch Service domain names that you want information about. You must specify at least one domain name.</p>

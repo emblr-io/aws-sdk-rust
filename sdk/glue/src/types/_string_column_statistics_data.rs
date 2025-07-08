@@ -2,6 +2,8 @@
 
 /// <p>Defines column statistics supported for character sequence data values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StringColumnStatisticsData {
     /// <p>The size of the longest string in the column.</p>

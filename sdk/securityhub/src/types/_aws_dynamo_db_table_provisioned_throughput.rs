@@ -2,6 +2,8 @@
 
 /// <p>Information about the provisioned throughput for the table or for a global secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableProvisionedThroughput {
     /// <p>Indicates when the provisioned throughput was last decreased.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the value of a cell in an Amazon Keyspaces table, supporting various data types with type-specific fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum KeyspacesCellValue {
     /// <p>A value of ASCII text type, containing US-ASCII characters.</p>

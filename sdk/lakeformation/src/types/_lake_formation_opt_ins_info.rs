@@ -2,6 +2,8 @@
 
 /// <p>A single principal-resource pair that has Lake Formation permissins enforced.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LakeFormationOptInsInfo {
     /// <p>A structure for the resource.</p>

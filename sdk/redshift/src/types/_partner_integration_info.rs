@@ -2,6 +2,8 @@
 
 /// <p>Describes a partner integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartnerIntegrationInfo {
     /// <p>The name of the database that receives data from a partner.</p>

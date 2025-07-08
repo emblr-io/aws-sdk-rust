@@ -2,6 +2,8 @@
 
 /// <p>An error corresponding to the unsuccessful processing of a single metric data query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricDataError {
     /// <p>The query identifier.</p>

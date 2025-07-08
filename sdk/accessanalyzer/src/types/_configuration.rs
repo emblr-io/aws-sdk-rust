@@ -2,6 +2,8 @@
 
 /// <p>Access control configuration structures for your resource. You specify the configuration as a type-value pair. You can specify only one type of access control configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Configuration {
     /// <p>The access control configuration is for a DynamoDB stream.</p>

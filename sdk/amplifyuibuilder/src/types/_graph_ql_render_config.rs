@@ -2,6 +2,8 @@
 
 /// <p>Describes the GraphQL configuration for an API for a code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GraphQlRenderConfig {
     /// <p>The path to the GraphQL types file, relative to the component output directory.</p>

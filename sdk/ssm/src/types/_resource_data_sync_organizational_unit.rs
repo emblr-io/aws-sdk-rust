@@ -2,6 +2,8 @@
 
 /// <p>The Organizations organizational unit data source for the sync.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceDataSyncOrganizationalUnit {
     /// <p>The Organizations unit ID data source for the sync.</p>

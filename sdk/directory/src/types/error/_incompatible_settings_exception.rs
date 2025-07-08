@@ -2,6 +2,8 @@
 
 /// <p>The specified directory setting is not compatible with other settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncompatibleSettingsException {
     /// <p>The descriptive message for the exception.</p>

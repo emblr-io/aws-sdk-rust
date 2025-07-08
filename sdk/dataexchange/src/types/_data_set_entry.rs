@@ -2,6 +2,8 @@
 
 /// <p>A data set is an AWS resource with one or more revisions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSetEntry {
     /// <p>The ARN for the data set.</p>

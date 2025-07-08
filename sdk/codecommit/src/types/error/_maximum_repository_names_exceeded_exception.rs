@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of allowed repository names was exceeded. Currently, this number is 100.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaximumRepositoryNamesExceededException {
     /// <p>Any message associated with the exception.</p>

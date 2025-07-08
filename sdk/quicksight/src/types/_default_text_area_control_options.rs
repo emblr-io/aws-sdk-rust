@@ -2,6 +2,8 @@
 
 /// <p>The default options that correspond to the <code>TextArea</code> filter control type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultTextAreaControlOptions {
     /// <p>The delimiter that is used to separate the lines in text.</p>

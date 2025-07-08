@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the what-if forecast export properties used in the <code>ListWhatIfForecastExports</code> operation. To get the complete set of properties, call the <code>DescribeWhatIfForecastExport</code> operation, and provide the <code>WhatIfForecastExportArn</code> that is listed in the summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhatIfForecastExportSummary {
     /// <p>The Amazon Resource Name (ARN) of the what-if forecast export.</p>

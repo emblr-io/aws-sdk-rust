@@ -2,6 +2,8 @@
 
 /// <p>A <code>DatasetAction</code> object that specifies how dataset contents are automatically created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetAction {
     /// <p>The name of the dataset action by which dataset contents are automatically created.</p>

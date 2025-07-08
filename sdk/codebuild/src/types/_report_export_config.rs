@@ -2,6 +2,8 @@
 
 /// <p>Information about the location where the run of a report is exported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportExportConfig {
     /// <p>The export configuration type. Valid values are:</p>

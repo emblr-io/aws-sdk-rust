@@ -2,6 +2,8 @@
 
 /// <p>Contains the summary of anti-patterns and their severity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AntipatternSeveritySummary {
     /// <p>Contains the severity of anti-patterns.</p>

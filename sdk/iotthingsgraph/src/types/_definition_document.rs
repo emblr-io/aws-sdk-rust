@@ -2,6 +2,8 @@
 
 /// <p>A document that defines an entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefinitionDocument {
     /// <p>The language used to define the entity. <code>GRAPHQL</code> is the only valid value.</p>

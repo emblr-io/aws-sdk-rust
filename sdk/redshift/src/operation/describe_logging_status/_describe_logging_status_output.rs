@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of logging for a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLoggingStatusOutput {
     /// <p><code>true</code> if logging is on, <code>false</code> if logging is off.</p>

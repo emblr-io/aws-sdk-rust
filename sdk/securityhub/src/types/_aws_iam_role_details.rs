@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an IAM role, including all of the role's policies.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamRoleDetails {
     /// <p>The trust policy that grants permission to assume the role.</p>

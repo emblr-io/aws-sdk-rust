@@ -2,6 +2,8 @@
 
 /// <p>Describes a large-scale assessment (LSA) analysis run by a Fleet Advisor collector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetAdvisorLsaAnalysisResponse {
     /// <p>The ID of an LSA analysis run by a Fleet Advisor collector.</p>

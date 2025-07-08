@@ -2,6 +2,8 @@
 
 /// <p>Describes the backend environment associated with a <code>Branch</code> of a Gen 1 Amplify app. Amplify Gen 1 applications are created using Amplify Studio or the Amplify command line interface (CLI).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackendEnvironment {
     /// <p>The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app.</p>

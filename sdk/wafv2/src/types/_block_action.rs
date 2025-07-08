@@ -3,6 +3,8 @@
 /// <p>Specifies that WAF should block the request and optionally defines additional custom handling for the response to the web request.</p>
 /// <p>This is used in the context of other settings, for example to specify values for <code>RuleAction</code> and web ACL <code>DefaultAction</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockAction {
     /// <p>Defines a custom response for the web request.</p>

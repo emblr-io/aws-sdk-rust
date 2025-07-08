@@ -2,6 +2,8 @@
 
 /// <p>The options for managing connection authorization for new client connections.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2ClientVpnEndpointClientConnectOptionsDetails {
     /// <p>Indicates whether client connect options are enabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a virtual gateway returned by a describe operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualGatewayData {
     /// <p>The name of the service mesh that the virtual gateway resides in.</p>

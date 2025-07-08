@@ -2,6 +2,8 @@
 
 /// An HTTP Live Streaming (HLS) encryption configuration.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HlsEncryption {
     /// A constant initialization vector for encryption (optional). When not specified the initialization vector will be periodically rotated.

@@ -2,6 +2,8 @@
 
 /// <p>The properties defining an input card in an Amazon Q App.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CardInput {
     /// <p>A container for the properties of the file upload input card.</p>

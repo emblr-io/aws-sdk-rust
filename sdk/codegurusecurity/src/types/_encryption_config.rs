@@ -2,6 +2,8 @@
 
 /// <p>Information about the encryption configuration for an account. Required to call <code>UpdateAccountConfiguration</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionConfig {
     /// <p>The KMS key ARN that is used for encryption. If an AWS-managed key is used for encryption, returns empty.</p>

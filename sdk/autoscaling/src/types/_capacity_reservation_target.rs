@@ -2,6 +2,8 @@
 
 /// <p>The target for the Capacity Reservation. Specify Capacity Reservations IDs or Capacity Reservation resource group ARNs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationTarget {
     /// <p>The Capacity Reservation IDs to launch instances into.</p>

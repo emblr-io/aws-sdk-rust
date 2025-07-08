@@ -3,6 +3,8 @@
 /// <p>Config organization conformance pack that you passed in the filter does not exist.</p>
 /// <p>For DeleteOrganizationConformancePack, you tried to delete an organization conformance pack that does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchOrganizationConformancePackException {
     /// <p>Error executing the command</p>

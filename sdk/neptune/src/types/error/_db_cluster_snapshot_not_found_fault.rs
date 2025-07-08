@@ -2,6 +2,8 @@
 
 /// <p><i>DBClusterSnapshotIdentifier</i> does not refer to an existing DB cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterSnapshotNotFoundFault {
     /// <p>A message describing the details of the problem.</p>

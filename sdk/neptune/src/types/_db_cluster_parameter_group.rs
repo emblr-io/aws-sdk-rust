@@ -3,6 +3,8 @@
 /// <p>Contains the details of an Amazon Neptune DB cluster parameter group.</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBClusterParameterGroups</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterParameterGroup {
     /// <p>Provides the name of the DB cluster parameter group.</p>

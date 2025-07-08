@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the Amazon S3 bucket and KMS key used to export findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Destination {
     /// <p>The name of the Amazon S3 bucket to export findings to.</p>

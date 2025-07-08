@@ -2,6 +2,8 @@
 
 /// <p>Brief information about a supported connection type returned by the <code>ListConnectionTypes</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionTypeBrief {
     /// <p>The name of the connection type.</p>

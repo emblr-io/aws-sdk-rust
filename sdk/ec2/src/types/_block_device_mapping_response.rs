@@ -2,6 +2,8 @@
 
 /// <p>Describes a block device mapping, which defines the EBS volumes and instance store volumes to attach to an instance at launch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockDeviceMappingResponse {
     /// <p>The device name (for example, <code>/dev/sdh</code> or <code>xvdh</code>).</p>

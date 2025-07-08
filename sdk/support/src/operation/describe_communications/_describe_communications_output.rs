@@ -2,6 +2,8 @@
 
 /// <p>The communications returned by the <code>DescribeCommunications</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeCommunicationsOutput {
     /// <p>The communications for the case.</p>

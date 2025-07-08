@@ -2,6 +2,8 @@
 
 /// Accelerated transcoding can significantly speed up jobs with long, visually complex content.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccelerationSettings {
     /// Specify the conditions when the service will run your job with accelerated transcoding.

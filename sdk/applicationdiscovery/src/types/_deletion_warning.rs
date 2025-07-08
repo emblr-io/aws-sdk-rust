@@ -2,6 +2,8 @@
 
 /// <p>A configuration ID paired with a warning message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeletionWarning {
     /// <p>The unique identifier of the configuration that produced a warning.</p>

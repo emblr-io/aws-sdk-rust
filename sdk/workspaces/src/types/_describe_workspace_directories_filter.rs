@@ -2,6 +2,8 @@
 
 /// <p>Describes the filter conditions for the WorkSpaces to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeWorkspaceDirectoriesFilter {
     /// <p>The name of the WorkSpaces to filter.</p>

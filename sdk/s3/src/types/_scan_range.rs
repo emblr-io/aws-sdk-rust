@@ -2,6 +2,8 @@
 
 /// <p>Specifies the byte range of the object to get the records from. A record is processed when its first byte is contained by the range. This parameter is optional, but when specified, it must not be empty. See RFC 2616, Section 14.35.1 about how to specify the start and end of the range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanRange {
     /// <p>Specifies the start of the byte range. This parameter is optional. Valid values: non-negative integers. The default value is 0. If only <code>start</code> is supplied, it means scan from that point to the end of the file. For example, <code><scanrange>

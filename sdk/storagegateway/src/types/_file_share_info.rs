@@ -2,6 +2,8 @@
 
 /// <p>Describes a file share. Only supported S3 File Gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileShareInfo {
     /// <p>The type of the file share.</p>

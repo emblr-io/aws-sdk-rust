@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration for Snowflake nodes in Glue Studio.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnowflakeNodeData {
     /// <p>Specifies how retrieved data is specified. Valid values: <code>"table"</code>, <code> "query"</code>.</p>

@@ -43,6 +43,8 @@
 /// want Amazon Pinpoint to use your own email headers, choose <code>emailHeader</code>. If you want
 /// Amazon Pinpoint to use link tags, choose <code>linkTags</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

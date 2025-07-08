@@ -2,6 +2,8 @@
 
 /// <p>Describes VPN connection options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpnConnectionOptionsSpecification {
     /// <p>Indicate whether to enable acceleration for the VPN connection.</p>

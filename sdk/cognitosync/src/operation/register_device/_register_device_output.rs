@@ -2,6 +2,8 @@
 
 /// <p>Response to a RegisterDevice request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisterDeviceOutput {
     /// <p>The unique ID generated for this device by Cognito.</p>

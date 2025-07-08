@@ -2,6 +2,8 @@
 
 /// <p>The criteria that determine when and how a job abort takes place.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbortCriteria {
     /// <p>The type of job execution failures that can initiate a job abort.</p>

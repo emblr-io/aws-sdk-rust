@@ -2,6 +2,8 @@
 
 /// <p>Represents the server response from a request to create a remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRemoteAccessSessionOutput {
     /// <p>A container that describes the remote access session when the request to create a remote access session is sent.</p>

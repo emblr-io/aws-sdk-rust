@@ -2,6 +2,8 @@
 
 /// <p>Output from validating an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppValidationOutput {
     /// <p>Output from using SSM to validate the application.</p>

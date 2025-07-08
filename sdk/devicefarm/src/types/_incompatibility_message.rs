@@ -2,6 +2,8 @@
 
 /// <p>Represents information about incompatibility.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncompatibilityMessage {
     /// <p>A message about the incompatibility.</p>

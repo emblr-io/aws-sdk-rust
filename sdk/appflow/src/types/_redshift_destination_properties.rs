@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Amazon Redshift is being used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftDestinationProperties {
     /// <p>The object specified in the Amazon Redshift flow destination.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes how the parts of the textQuery matched the input query by returning the sections of the response which matched to textQuery terms.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestHighlights {
     /// <p>Indicates the starting and ending index of the title in the text query that match the found title.</p>

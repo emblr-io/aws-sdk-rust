@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Elastic Block Store volume configuration used for recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsVolumeConfiguration {
     /// <p>The disk storage of the Amazon Elastic Block Store volume.</p>

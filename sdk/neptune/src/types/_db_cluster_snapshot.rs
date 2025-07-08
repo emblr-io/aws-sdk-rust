@@ -3,6 +3,8 @@
 /// <p>Contains the details for an Amazon Neptune DB cluster snapshot</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBClusterSnapshots</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterSnapshot {
     /// <p>Provides the list of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.</p>

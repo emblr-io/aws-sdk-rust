@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field well configuration of a <code>RadarChartVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RadarChartAggregatedFieldWells {
     /// <p>The aggregated field well categories of a radar chart.</p>

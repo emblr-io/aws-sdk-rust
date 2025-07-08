@@ -2,6 +2,8 @@
 
 /// <p>Your request contains too many headers in forwarded values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyHeadersInForwardedValues {
     #[allow(missing_docs)] // documentation missing in model

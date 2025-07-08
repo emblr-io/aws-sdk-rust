@@ -2,6 +2,8 @@
 
 /// <p>General flags for v2 template schema that defines if the template is for a machine or a user and if the template can be issued using autoenrollment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeneralFlagsV2 {
     /// <p>Allows certificate issuance using autoenrollment. Set to TRUE to allow autoenrollment.</p>

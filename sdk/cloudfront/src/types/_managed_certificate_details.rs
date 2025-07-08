@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the CloudFront managed ACM certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedCertificateDetails {
     /// <p>The ARN of the CloudFront managed ACM certificate.</p>

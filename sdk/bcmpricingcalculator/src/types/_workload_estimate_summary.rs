@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of a workload estimate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadEstimateSummary {
     /// <p>The unique identifier of the workload estimate.</p>

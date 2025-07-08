@@ -2,6 +2,8 @@
 
 /// <p>The options in use for server side encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifiedAccessSseSpecificationResponse {
     /// <p>Indicates whether customer managed KMS keys are in use for server side encryption.</p>

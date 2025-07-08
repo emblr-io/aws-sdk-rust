@@ -2,6 +2,8 @@
 
 /// <p>The menu options for a visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualMenuOption {
     /// <p>The availaiblity status of a visual's menu options.</p>

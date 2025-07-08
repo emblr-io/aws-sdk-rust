@@ -2,6 +2,8 @@
 
 /// <p>Describes a Fleet Advisor collector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollectorResponse {
     /// <p>The reference ID of the Fleet Advisor collector.</p>

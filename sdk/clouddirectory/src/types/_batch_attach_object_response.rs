@@ -2,6 +2,8 @@
 
 /// <p>Represents the output batch <code>AttachObject</code> response operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAttachObjectResponse {
     /// <p>The <code>ObjectIdentifier</code> of the object that has been attached.</p>

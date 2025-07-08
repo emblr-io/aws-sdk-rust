@@ -2,6 +2,8 @@
 
 /// <p>Returns information about errors in a BatchGetCommits operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetCommitsError {
     /// <p>A commit ID that either could not be found or was not in a valid format.</p>

@@ -3,6 +3,8 @@
 /// <p>Describes a contact method.</p>
 /// <p>A contact method is a way to send you notifications. For more information, see <a href="https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-notifications">Notifications in Amazon Lightsail</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactMethod {
     /// <p>The destination of the contact method, such as an email address or a mobile phone number.</p>

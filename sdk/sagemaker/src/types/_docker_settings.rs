@@ -2,6 +2,8 @@
 
 /// <p>A collection of settings that configure the domain's Docker interaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DockerSettings {
     /// <p>Indicates whether the domain can access Docker.</p>

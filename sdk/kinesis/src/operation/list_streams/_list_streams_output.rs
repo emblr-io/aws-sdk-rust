@@ -2,6 +2,8 @@
 
 /// <p>Represents the output for <code>ListStreams</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStreamsOutput {
     /// <p>The names of the streams that are associated with the Amazon Web Services account making the <code>ListStreams</code> request.</p>

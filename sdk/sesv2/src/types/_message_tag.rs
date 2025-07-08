@@ -2,6 +2,8 @@
 
 /// <p>Contains the name and value of a tag that you apply to an email. You can use message tags when you publish email sending events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageTag {
     /// <p>The name of the message tag. The message tag name has to meet the following criteria:</p>

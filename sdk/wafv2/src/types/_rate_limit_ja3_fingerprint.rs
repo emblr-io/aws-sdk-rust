@@ -2,6 +2,8 @@
 
 /// <p>Use the request's JA3 fingerprint derived from the TLS Client Hello of an incoming request as an aggregate key. If you use a single JA3 fingerprint as your custom key, then each value fully defines an aggregation instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RateLimitJa3Fingerprint {
     /// <p>The match status to assign to the web request if there is insufficient TSL Client Hello information to compute the JA3 fingerprint.</p>

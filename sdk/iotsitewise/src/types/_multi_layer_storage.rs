@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the storage destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiLayerStorage {
     /// <p>Contains information about a customer managed Amazon S3 bucket.</p>

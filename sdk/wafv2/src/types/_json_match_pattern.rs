@@ -2,6 +2,8 @@
 
 /// <p>The patterns to look for in the JSON body. WAF inspects the results of these pattern matches against the rule inspection criteria. This is used with the <code>FieldToMatch</code> option <code>JsonBody</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonMatchPattern {
     /// <p>Match all of the elements. See also <code>MatchScope</code> in <code>JsonBody</code>.</p>

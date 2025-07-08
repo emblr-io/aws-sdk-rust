@@ -2,6 +2,8 @@
 
 /// <p>Contains information about whether the result of a previous query was reused.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResultReuseInformation {
     /// <p>True if a previous query result was reused; false if the result was generated from a new run of the query.</p>

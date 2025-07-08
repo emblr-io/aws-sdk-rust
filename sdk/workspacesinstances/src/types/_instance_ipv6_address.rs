@@ -2,6 +2,8 @@
 
 /// <p>Represents an IPv6 address configuration for a WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InstanceIpv6Address {
     /// <p>Specific IPv6 address assigned to the instance.</p>

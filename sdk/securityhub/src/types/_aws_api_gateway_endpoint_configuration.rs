@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the endpoints for the API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiGatewayEndpointConfiguration {
     /// <p>A list of endpoint types for the REST API.</p>

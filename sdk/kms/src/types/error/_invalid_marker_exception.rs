@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the marker that specifies where pagination should next begin is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidMarkerException {
     #[allow(missing_docs)] // documentation missing in model

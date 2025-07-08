@@ -2,6 +2,8 @@
 
 /// <p>A summary of the progress of the template generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateProgress {
     /// <p>The number of resources that succeeded the template generation.</p>

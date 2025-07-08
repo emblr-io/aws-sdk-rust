@@ -2,6 +2,8 @@
 
 /// <p>Where channel data is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelStorageSummary {
     /// <p>Used to store channel data in an S3 bucket managed by IoT Analytics.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An address that is a member of an address list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SavedAddress {
     /// <p>The email or domain that constitutes the address.</p>

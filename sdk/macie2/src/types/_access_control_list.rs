@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the permissions settings of the bucket-level access control list (ACL) for an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessControlList {
     /// <p>Specifies whether the ACL grants the general public with read access permissions for the bucket.</p>

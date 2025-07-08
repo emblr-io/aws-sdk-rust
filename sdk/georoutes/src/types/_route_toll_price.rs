@@ -2,6 +2,8 @@
 
 /// <p>The toll price.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteTollPrice {
     /// <p>Currency code corresponding to the price. This is the same as Currency specified in the request.</p>

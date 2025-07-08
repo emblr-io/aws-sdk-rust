@@ -2,6 +2,8 @@
 
 /// <p>The performance configuration for a model called with <code>InvokeFlow</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPerformanceConfiguration {
     /// <p>The latency configuration for the model.</p>

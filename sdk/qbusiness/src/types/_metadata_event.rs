@@ -2,6 +2,8 @@
 
 /// <p>A metadata event for a AI-generated text output message in a Amazon Q Business conversation, containing associated metadata generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataEvent {
     /// <p>The identifier of the conversation with which the generated metadata is associated.</p>

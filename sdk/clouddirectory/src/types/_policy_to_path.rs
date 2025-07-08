@@ -2,6 +2,8 @@
 
 /// <p>Used when a regular object exists in a <code>Directory</code> and you want to find all of the policies that are associated with that object and the parent to that object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyToPath {
     /// <p>The path that is referenced from the root.</p>

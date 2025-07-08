@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the level hierarchy to update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchyStructureUpdate {
     /// <p>The update for level one.</p>

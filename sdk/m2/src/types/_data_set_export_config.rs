@@ -2,6 +2,8 @@
 
 /// <p>Identifies one or more data sets you want to import with the <code>CreateDataSetExportTask</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DataSetExportConfig {
     /// <p>The data sets.</p>

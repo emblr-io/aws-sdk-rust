@@ -2,6 +2,8 @@
 
 /// <p>Allow Options related to the route matrix.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteMatrixAllowOptions {
     /// <p>Allow Hot (High Occupancy Toll) lanes while calculating the route.</p>

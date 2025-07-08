@@ -2,6 +2,8 @@
 
 /// <p>The amount of instance usage that a reservation covered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Coverage {
     /// <p>The amount of instance usage that the reservation covered, in hours.</p>

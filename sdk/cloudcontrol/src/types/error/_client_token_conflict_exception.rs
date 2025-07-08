@@ -3,6 +3,8 @@
 /// <p>The specified client token has already been used in another resource request.</p>
 /// <p>It's best practice for client tokens to be unique for each resource operation request. However, client token expire after 36 hours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientTokenConflictException {
     #[allow(missing_docs)] // documentation missing in model

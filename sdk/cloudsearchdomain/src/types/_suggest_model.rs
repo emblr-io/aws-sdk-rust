@@ -2,6 +2,8 @@
 
 /// <p>Container for the suggestion information returned in a <code>SuggestResponse</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestModel {
     /// <p>The query string specified in the suggest request.</p>

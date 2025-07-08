@@ -2,6 +2,8 @@
 
 /// <p>A container for rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RulesConfigurationType {
     /// <p>An array of rules. You can specify up to 25 rules per identity provider.</p>

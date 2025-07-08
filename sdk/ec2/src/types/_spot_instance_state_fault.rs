@@ -2,6 +2,8 @@
 
 /// <p>Describes a Spot Instance state change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotInstanceStateFault {
     /// <p>The reason code for the Spot Instance state change.</p>

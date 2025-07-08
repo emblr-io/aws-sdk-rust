@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about an Amazon Route&nbsp;53 hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRoute53HostedZoneObjectDetails {
     /// <p>The ID that Route&nbsp;53 assigns to the hosted zone when you create it.</p>

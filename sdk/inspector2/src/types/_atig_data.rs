@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Threat Intel Group (ATIG) details for a specific vulnerability.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AtigData {
     /// <p>The date and time this vulnerability was first observed.</p>

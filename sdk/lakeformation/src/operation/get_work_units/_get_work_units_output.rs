@@ -2,6 +2,8 @@
 
 /// <p>A structure for the output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetWorkUnitsOutput {
     /// <p>A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the criteria used to query usage statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageCriteria {
     /// <p>The account IDs to aggregate usage statistics from.</p>

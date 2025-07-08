@@ -2,6 +2,8 @@
 
 /// <p><code>DBSnapshotIdentifier</code> doesn't refer to an existing DB snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSnapshotNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

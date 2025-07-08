@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Delta Lake data source that is registered in the Glue Data Catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CatalogDeltaSource {
     /// <p>The name of the Delta Lake data source.</p>

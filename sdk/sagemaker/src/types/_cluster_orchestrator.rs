@@ -2,6 +2,8 @@
 
 /// <p>The type of orchestrator used for the SageMaker HyperPod cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterOrchestrator {
     /// <p>The Amazon EKS cluster used as the orchestrator for the SageMaker HyperPod cluster.</p>

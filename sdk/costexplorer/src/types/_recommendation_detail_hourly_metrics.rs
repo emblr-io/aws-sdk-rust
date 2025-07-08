@@ -2,6 +2,8 @@
 
 /// <p>Contains the hourly metrics for the given recommendation over the lookback period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationDetailHourlyMetrics {
     /// <p>The period of time that you want the usage and costs for.</p>

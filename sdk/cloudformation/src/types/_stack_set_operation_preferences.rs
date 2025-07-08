@@ -5,6 +5,8 @@
 /// <p><code>StackSetOperationPreferences</code> don't apply to <code>AutoDeployment</code>, even if it's enabled.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSetOperationPreferences {
     /// <p>The concurrency type of deploying StackSets operations in Regions, could be in parallel or one Region at a time.</p>

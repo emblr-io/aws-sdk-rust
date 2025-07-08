@@ -2,6 +2,8 @@
 
 /// <p>Describes the IAM SAML identity providers used for federated authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2ClientVpnEndpointAuthenticationOptionsFederatedAuthenticationDetails {
     /// <p>The Amazon Resource Name (ARN) of the IAM SAML identity provider.</p>

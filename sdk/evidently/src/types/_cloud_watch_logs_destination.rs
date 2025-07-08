@@ -2,6 +2,8 @@
 
 /// <p>A structure containing the CloudWatch Logs log group where the project stores evaluation events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsDestination {
     /// <p>The name of the log group where the project stores evaluation events.</p>

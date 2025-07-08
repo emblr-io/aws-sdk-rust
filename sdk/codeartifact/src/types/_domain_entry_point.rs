@@ -4,6 +4,8 @@
 /// <p>If a package version exists in a repository and is updated, for example if a package of the same version is added with additional assets, the package version's <code>DomainEntryPoint</code> will not change from the original package version's value.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainEntryPoint {
     /// <p>The name of the repository that a package was originally published to.</p>

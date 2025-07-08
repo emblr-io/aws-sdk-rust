@@ -2,6 +2,8 @@
 
 /// <p>The combination of Amazon Web Services Regions and Amazon Web Services accounts targeted by the current Automation execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetLocation {
     /// <p>The Amazon Web Services accounts targeted by the current Automation execution.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Updated DNS properties for the public DNS namespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicDnsPropertiesMutableChange {
     /// <p>Updated fields for the Start of Authority (SOA) record for the hosted zone for the public DNS namespace.</p>

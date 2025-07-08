@@ -2,6 +2,8 @@
 
 /// <p>No IAM ARN was included in the request. You must use an IAM session ARN or user ARN in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamArnRequiredException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Updates to the monitoring configuration for Apache Zeppelin within a Managed Service for Apache Flink Studio notebook.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZeppelinMonitoringConfigurationUpdate {
     /// <p>Updates to the logging level for Apache Zeppelin within a Managed Service for Apache Flink Studio notebook.</p>

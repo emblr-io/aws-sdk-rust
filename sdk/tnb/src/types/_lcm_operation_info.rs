@@ -3,6 +3,8 @@
 /// <p>Lifecycle management operation details on the network instance.</p>
 /// <p>Lifecycle management operations are deploy, update, or delete operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LcmOperationInfo {
     /// <p>The identifier of the network operation.</p>

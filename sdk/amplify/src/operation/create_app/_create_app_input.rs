@@ -2,6 +2,8 @@
 
 /// <p>The request structure used to create apps in Amplify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateAppInput {
     /// <p>The name of the Amplify app.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration details for IAM Identity Center Trusted Token Issuer (TTI) authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataAccessorIdcTrustedTokenIssuerConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the IAM Identity Center Trusted Token Issuer that will be used for authentication.</p>

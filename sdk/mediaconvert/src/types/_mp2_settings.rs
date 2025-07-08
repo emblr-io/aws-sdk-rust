@@ -2,6 +2,8 @@
 
 /// Required when you set Codec to the value MP2.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Mp2Settings {
     /// Specify the average bitrate in bits per second.

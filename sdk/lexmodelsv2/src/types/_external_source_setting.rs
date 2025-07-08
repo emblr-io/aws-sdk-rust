@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the external source of the slot type's definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalSourceSetting {
     /// <p>Settings required for a slot type based on a grammar that you provide.</p>

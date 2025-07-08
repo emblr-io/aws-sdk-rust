@@ -2,6 +2,8 @@
 
 /// <p>A location at which a zero-duration ad marker was detected in a VOD source manifest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdBreakOpportunity {
     /// <p>The offset in milliseconds from the start of the VOD source at which an ad marker was detected.</p>

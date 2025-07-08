@@ -4,6 +4,8 @@
 /// <p>The parameters listed below are not required, but you must use at least one.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OriginationRoute {
     /// <p>The FQDN or IP address to contact for origination traffic.</p>

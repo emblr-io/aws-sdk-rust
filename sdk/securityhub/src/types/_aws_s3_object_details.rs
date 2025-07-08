@@ -2,6 +2,8 @@
 
 /// <p>Details about an Amazon S3 object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3ObjectDetails {
     /// <p>Indicates when the object was last modified.</p>

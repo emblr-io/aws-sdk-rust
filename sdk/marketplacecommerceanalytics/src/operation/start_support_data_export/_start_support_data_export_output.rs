@@ -3,6 +3,8 @@
 /// <i>This target has been deprecated.</i> Container for the result of the StartSupportDataExport operation.
 #[deprecated(note = "This target has been deprecated. As of December 2022 Product Support Connection is no longer supported.")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartSupportDataExportOutput {
     /// <i>This target has been deprecated.</i> A unique identifier representing a specific request to the StartSupportDataExport operation. This identifier can be used to correlate a request with notifications from the SNS topic.

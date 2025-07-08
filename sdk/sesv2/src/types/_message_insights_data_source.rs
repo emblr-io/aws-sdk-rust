@@ -2,6 +2,8 @@
 
 /// <p>An object that contains filters applied when performing the Message Insights export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageInsightsDataSource {
     /// <p>Represents the start date for the export interval as a timestamp. The start date is inclusive.</p>

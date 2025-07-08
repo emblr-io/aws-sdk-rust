@@ -2,6 +2,8 @@
 
 /// <p>Gets the summary returned by <code>ListFileSystemAssociation</code>, which is a summary of a created file system association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSystemAssociationSummary {
     /// <p>The ID of the file system association.</p>

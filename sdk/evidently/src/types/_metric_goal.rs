@@ -2,6 +2,8 @@
 
 /// <p>A structure that tells Evidently whether higher or lower values are desired for a metric that is used in an experiment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricGoal {
     /// <p>A structure that contains details about the metric.</p>

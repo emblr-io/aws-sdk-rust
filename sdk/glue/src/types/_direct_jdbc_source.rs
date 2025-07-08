@@ -2,6 +2,8 @@
 
 /// <p>Specifies the direct JDBC source connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectJdbcSource {
     /// <p>The name of the JDBC source connection.</p>

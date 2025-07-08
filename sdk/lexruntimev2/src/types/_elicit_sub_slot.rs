@@ -2,6 +2,8 @@
 
 /// <p>The specific constituent sub slot of the composite slot to elicit in dialog action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElicitSubSlot {
     /// <p>The name of the slot that should be elicited from the user.</p>

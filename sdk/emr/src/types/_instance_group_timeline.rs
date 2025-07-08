@@ -2,6 +2,8 @@
 
 /// <p>The timeline of the instance group lifecycle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceGroupTimeline {
     /// <p>The creation date and time of the instance group.</p>

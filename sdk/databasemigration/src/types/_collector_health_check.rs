@@ -2,6 +2,8 @@
 
 /// <p>Describes the last Fleet Advisor collector health check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollectorHealthCheck {
     /// <p>The status of the Fleet Advisor collector.</p>

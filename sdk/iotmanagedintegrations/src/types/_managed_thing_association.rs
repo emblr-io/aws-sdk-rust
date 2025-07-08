@@ -2,6 +2,8 @@
 
 /// <p>Structure representing an association between a managed thing and an account association, which connects a device to a third-party account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedThingAssociation {
     /// <p>The identifier of the managed thing in the association.</p>

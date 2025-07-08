@@ -2,6 +2,8 @@
 
 /// <p>Suggestions for refining individual query terms. Suggestions are returned as objects which note the term, suggested replacement, and its index in the query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct QueryRefinement {
     /// <p>The term that will be suggested to the user.</p>

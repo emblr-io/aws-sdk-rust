@@ -2,6 +2,8 @@
 
 /// <p>The request failed because IAM cannot connect to the OpenID Connect identity provider URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenIdIdpCommunicationErrorException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Aggregation for numerical values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumericalAggregationFunction {
     /// <p>Built-in aggregation functions for numerical values.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The output for the <code>DescribeJobFlows</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeJobFlowsOutput {
     /// <p>A list of job flows matching the parameters supplied.</p>

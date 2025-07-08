@@ -3,6 +3,8 @@
 /// <p>The retention period specified is either in the past or is not a valid value.</p>
 /// <p>The value must be either -1 or an integer between 1 and 3,653.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRetentionPeriodFault {
     #[allow(missing_docs)] // documentation missing in model

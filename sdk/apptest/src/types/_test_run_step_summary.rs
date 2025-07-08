@@ -2,6 +2,8 @@
 
 /// <p>Specifies a test run step summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestRunStepSummary {
     /// <p>The step name of the test run step summary.</p>

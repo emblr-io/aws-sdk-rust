@@ -2,6 +2,8 @@
 
 /// <p>The certificate root authority that secures your service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceConnectTlsCertificateAuthority {
     /// <p>The ARN of the Amazon Web Services Private Certificate Authority certificate.</p>

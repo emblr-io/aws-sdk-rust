@@ -2,6 +2,8 @@
 
 /// <p>The SQL query of column selections and row filters from the data table you want.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQuery {
     /// <p>The query statement.</p>

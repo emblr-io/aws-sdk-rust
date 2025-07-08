@@ -2,6 +2,8 @@
 
 /// <p>Defines the parameters and conditions used to evaluate and filter security findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Criteria {
     /// <p>The filtering conditions that align with OCSF standards.</p>

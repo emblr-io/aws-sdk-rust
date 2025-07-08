@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about how this workspace works with SAML.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamlConfiguration {
     /// <p>A structure containing the identity provider (IdP) metadata used to integrate the identity provider with this workspace.</p>

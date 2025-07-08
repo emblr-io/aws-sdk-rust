@@ -2,6 +2,8 @@
 
 /// <p>The request object for creating a new harvest job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateHarvestJobInput {
     /// <p>The name of the channel group containing the channel from which to harvest content.</p>

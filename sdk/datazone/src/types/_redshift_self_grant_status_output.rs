@@ -2,6 +2,8 @@
 
 /// <p>The details for the self granting status for an Amazon Redshift data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftSelfGrantStatusOutput {
     /// <p>The details for the self granting status for an Amazon Redshift data source.</p>

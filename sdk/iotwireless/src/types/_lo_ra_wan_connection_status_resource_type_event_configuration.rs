@@ -2,6 +2,8 @@
 
 /// <p>Object for LoRaWAN connection status resource type event configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoRaWanConnectionStatusResourceTypeEventConfiguration {
     /// <p>Denotes whether the wireless gateway connection status event topic is enabled or disabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an item of Personal Protective Equipment covering a corresponding body part. For more information, see <code>DetectProtectiveEquipment</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoversBodyPart {
     /// <p>The confidence that Amazon Rekognition has in the value of <code>Value</code>.</p>

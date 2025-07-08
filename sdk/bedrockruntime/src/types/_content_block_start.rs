@@ -2,6 +2,8 @@
 
 /// <p>Content block start information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ContentBlockStart {
     /// <p>Information about a tool that the model is requesting to use.</p>

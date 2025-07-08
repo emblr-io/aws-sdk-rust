@@ -2,6 +2,8 @@
 
 /// <p>The custom parameters to be used when the target is an Batch job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchParameters {
     /// <p>The ARN or name of the job definition to use if the event target is an Batch job. This job definition must already exist.</p>

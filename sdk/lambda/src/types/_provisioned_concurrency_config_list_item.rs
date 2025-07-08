@@ -2,6 +2,8 @@
 
 /// <p>Details about the provisioned concurrency configuration for a function alias or version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedConcurrencyConfigListItem {
     /// <p>The Amazon Resource Name (ARN) of the alias or version.</p>

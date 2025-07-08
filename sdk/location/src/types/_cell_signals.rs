@@ -2,6 +2,8 @@
 
 /// <p>The cellular network communication infrastructure that the device uses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CellSignals {
     /// <p>Information about the Long-Term Evolution (LTE) network the device is connected to.</p>

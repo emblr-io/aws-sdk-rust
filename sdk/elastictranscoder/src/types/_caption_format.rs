@@ -2,6 +2,8 @@
 
 /// <p>The file format of the output captions. If you leave this value blank, Elastic Transcoder returns an error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CaptionFormat {
     /// <p>The format you specify determines whether Elastic Transcoder generates an embedded or sidecar caption for this output.</p>

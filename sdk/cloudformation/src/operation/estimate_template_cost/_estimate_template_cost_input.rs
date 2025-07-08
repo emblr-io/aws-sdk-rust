@@ -2,6 +2,8 @@
 
 /// <p>The input for an <code>EstimateTemplateCost</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EstimateTemplateCostInput {
     /// <p>Structure that contains the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes.</p>

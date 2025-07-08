@@ -2,6 +2,8 @@
 
 /// <p>The access configuration information for the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateAccessConfigRequest {
     /// <p>Specifies whether or not the cluster creator IAM principal was set as a cluster admin access entry during cluster creation time. The default value is <code>true</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You started an assessment run, but one of the instances is already participating in another assessment run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentsAlreadyRunningAssessmentException {
     /// <p>Details of the exception error.</p>

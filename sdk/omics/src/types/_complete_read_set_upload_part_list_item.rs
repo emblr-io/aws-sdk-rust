@@ -2,6 +2,8 @@
 
 /// <p>Part of the response to the CompleteReadSetUpload API, including metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompleteReadSetUploadPartListItem {
     /// <p>A number identifying the part in a read set upload.</p>

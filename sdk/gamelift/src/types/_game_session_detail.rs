@@ -2,6 +2,8 @@
 
 /// <p>A game session's properties plus the protection policy currently in force.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GameSessionDetail {
     /// <p>Object that describes a game session.</p>

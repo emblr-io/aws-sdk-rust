@@ -2,6 +2,8 @@
 
 /// <p>Details on a data volume from another container in the same task definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeFrom {
     /// <p>The name of another container within the same task definition to mount volumes from.</p>

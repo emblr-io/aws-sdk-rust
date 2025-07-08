@@ -2,6 +2,8 @@
 
 /// <p>Information about the state of a patch on a particular managed node as it relates to the patch baseline used to patch the node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PatchComplianceData {
     /// <p>The title of the patch.</p>

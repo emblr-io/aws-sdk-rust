@@ -2,6 +2,8 @@
 
 /// <p>Specifies data stores to crawl.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrawlerTargets {
     /// <p>Specifies Amazon Simple Storage Service (Amazon S3) targets.</p>

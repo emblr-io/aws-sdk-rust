@@ -3,6 +3,8 @@
 /// <p>Describes a project policy in the response from <code>ListProjectPolicies</code>.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectPolicy {
     /// <p>The Amazon Resource Name (ARN) of the project to which the project policy is attached.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A parameter declaration for the <code>DateTime</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateTimeParameterDeclaration {
     /// <p>The name of the parameter that is being declared.</p>

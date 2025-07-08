@@ -2,6 +2,8 @@
 
 /// <p>The response object for the Microsoft Windows file system used in the <code>DeleteFileSystem</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteFileSystemWindowsResponse {
     /// <p>The ID of the final backup for this file system.</p>

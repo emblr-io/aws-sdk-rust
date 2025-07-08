@@ -2,6 +2,8 @@
 
 /// <p>The specified extension configuration can't be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypeConfigurationNotFoundException {
     /// <p>A message with details about the error that occurred.</p>

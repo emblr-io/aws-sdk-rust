@@ -2,6 +2,8 @@
 
 /// <p>WAF couldn’t perform the operation because your resource is being used by another resource or it’s associated with another resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafAssociatedItemException {
     #[allow(missing_docs)] // documentation missing in model

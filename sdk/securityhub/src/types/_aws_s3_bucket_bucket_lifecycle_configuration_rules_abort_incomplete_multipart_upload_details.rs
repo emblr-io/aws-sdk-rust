@@ -2,6 +2,8 @@
 
 /// <p>Information about what Amazon S3 does when a multipart upload is incomplete.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails {
     /// <p>The number of days after which Amazon S3 cancels an incomplete multipart upload.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the percentage display format configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PercentageDisplayFormatConfiguration {
     /// <p>Determines the prefix value of the percentage format.</p>

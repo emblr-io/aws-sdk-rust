@@ -2,6 +2,8 @@
 
 /// <p>The current configuration of S3 data event logs as a data source for the organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationS3LogsConfigurationResult {
     /// <p>A value that describes whether S3 data event logs are automatically enabled for new members of the organization.</p>

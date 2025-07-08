@@ -2,6 +2,8 @@
 
 /// <p>The dataset used for training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingData {
     /// <p>A manifest file that contains references to the training images and ground-truth annotations.</p>

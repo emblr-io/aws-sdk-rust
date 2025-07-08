@@ -2,6 +2,8 @@
 
 /// <p>Contains the output from the <code>DescribeOrderableClusterOptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeOrderableClusterOptionsOutput {
     /// <p>An <code>OrderableClusterOption</code> structure containing information about orderable options for the cluster.</p>

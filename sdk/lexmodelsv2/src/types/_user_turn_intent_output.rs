@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the intent that is output for the turn by the test execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserTurnIntentOutput {
     /// <p>The name of the intent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents revision details of an artifact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArtifactRevision {
     /// <p>The name of an artifact. This name might be system-generated, such as "MyApp", or defined by the user when an action is created.</p>

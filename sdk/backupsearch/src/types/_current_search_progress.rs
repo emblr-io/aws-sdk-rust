@@ -2,6 +2,8 @@
 
 /// <p>This contains information results retrieved from a search job that may not have completed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CurrentSearchProgress {
     /// <p>This number is the sum of all backups that have been scanned so far during a search job.</p>

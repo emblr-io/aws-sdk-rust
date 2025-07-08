@@ -2,6 +2,8 @@
 
 /// <p>You can't transfer the certificate because authorization policies are still attached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransferConflictException {
     /// <p>The message for the exception.</p>

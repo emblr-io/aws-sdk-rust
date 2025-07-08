@@ -2,6 +2,8 @@
 
 /// <p>The default instance metadata service (IMDS) settings that were set at the account level in the specified Amazon Web Services  Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceMetadataDefaultsResponse {
     /// <p>Indicates whether IMDSv2 is required.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Amazon Textract isn't able to read the document. For more information on the document limits in Amazon Textract, see <code>limits</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadDocumentException {
     #[allow(missing_docs)] // documentation missing in model

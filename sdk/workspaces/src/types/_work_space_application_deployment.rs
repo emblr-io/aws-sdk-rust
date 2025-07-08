@@ -2,6 +2,8 @@
 
 /// <p>Describes the WorkSpace application deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkSpaceApplicationDeployment {
     /// <p>The associations between the applications and the associated resources.</p>

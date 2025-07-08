@@ -2,6 +2,8 @@
 
 /// <p>Over-the-air (OTA) task retry config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtaTaskExecutionRetryConfig {
     /// <p>The list of retry config criteria.</p>

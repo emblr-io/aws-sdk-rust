@@ -2,6 +2,8 @@
 
 /// <p>The data protection settings resource that can be associated with a web portal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataProtectionSettings {
     /// <p>The ARN of the data protection settings resource.</p>

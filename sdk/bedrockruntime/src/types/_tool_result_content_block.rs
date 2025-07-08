@@ -2,6 +2,8 @@
 
 /// <p>The tool result content block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ToolResultContentBlock {
     /// <p>A tool result that is a document.</p>

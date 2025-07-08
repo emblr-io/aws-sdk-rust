@@ -2,6 +2,8 @@
 
 /// <p>Provides insights into the table with the most sub-optimal spatial range scanned by your query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuerySpatialCoverageMax {
     /// <p>The maximum ratio of spatial coverage.</p>

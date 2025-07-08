@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for an event that causes a campaign to be sent or a journey activity to be performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventFilter {
     /// <p>The dimensions for the event filter to use for the campaign or the journey activity.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified parameter version wasn't found. Verify the parameter name and version, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterVersionNotFound {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The schema details of the dataset. Note that for AWS Supply Chain dataset under <b>asc</b> namespace, it may have internal fields like connection_id that will be auto populated by data ingestion methods.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeDatasetSchema {
     /// <p>The name of the dataset schema.</p>

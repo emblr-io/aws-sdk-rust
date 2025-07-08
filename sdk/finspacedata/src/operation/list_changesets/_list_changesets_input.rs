@@ -2,6 +2,8 @@
 
 /// Request to ListChangesetsRequest. It exposes minimal query filters.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListChangesetsInput {
     /// <p>The unique identifier for the FinSpace Dataset to which the Changeset belongs.</p>

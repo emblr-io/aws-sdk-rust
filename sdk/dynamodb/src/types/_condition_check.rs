@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to perform a check that an item exists or to check the condition of specific attributes of the item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionCheck {
     /// <p>The primary key of the item to be checked. Each element consists of an attribute name and a value for that attribute.</p>

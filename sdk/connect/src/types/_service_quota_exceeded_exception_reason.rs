@@ -2,6 +2,8 @@
 
 /// <p>The reason for the exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ServiceQuotaExceededExceptionReason {
     /// <p>Total file size of all files or total number of files exceeds the service quota</p>

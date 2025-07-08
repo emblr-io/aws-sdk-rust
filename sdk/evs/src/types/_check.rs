@@ -2,6 +2,8 @@
 
 /// <p>A check on the environment to identify environment health and validate VMware VCF licensing compliance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Check {
     /// <p>The check type. Amazon EVS performs the following checks.</p>

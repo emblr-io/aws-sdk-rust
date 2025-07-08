@@ -2,6 +2,8 @@
 
 /// <p>Thrown when a user tries to use a login which is already linked to another account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConflictException {
     /// <p>The message returned by a ResourceConflictException.</p>

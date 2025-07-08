@@ -2,6 +2,8 @@
 
 /// <p>When you update an SQL-based Kinesis Data Analytics application's output configuration using the <code>UpdateApplication</code> operation, provides information about an Amazon Lambda function that is configured as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaOutputUpdate {
     /// <p>The Amazon Resource Name (ARN) of the destination Amazon Lambda function.</p><note>

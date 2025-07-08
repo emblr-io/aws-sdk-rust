@@ -2,6 +2,8 @@
 
 /// <p>Displays a list of the destination segments. Used only when the service insertion action is <code>send-to</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhenSentTo {
     /// <p>The list of destination segments when the service insertion action is <code>send-to</code>.</p>

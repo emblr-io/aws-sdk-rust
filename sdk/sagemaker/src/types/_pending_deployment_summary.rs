@@ -2,6 +2,8 @@
 
 /// <p>The summary of an in-progress deployment when an endpoint is creating or updating with a new endpoint configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingDeploymentSummary {
     /// <p>The name of the endpoint configuration used in the deployment.</p>

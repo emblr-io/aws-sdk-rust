@@ -4,6 +4,8 @@
 /// <p>Due to changes made by the Amazon Alexa service, this data type is no longer available for use. For more information, refer to the <a href="https://developer.amazon.com/en-US/alexa/alexasmartproperties">Alexa Smart Properties</a> page.</p>
 /// </important>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SipMediaApplicationAlexaSkillConfiguration {
     /// <p>The status of the Alexa Skill configuration.</p>

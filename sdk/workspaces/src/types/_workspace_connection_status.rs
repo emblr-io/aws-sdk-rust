@@ -2,6 +2,8 @@
 
 /// <p>Describes the connection status of a WorkSpace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkspaceConnectionStatus {
     /// <p>The identifier of the WorkSpace.</p>

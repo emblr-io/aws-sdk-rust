@@ -2,6 +2,8 @@
 
 /// <p>Information about the version of the policy associated with the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyVersionIdentifier {
     /// <p>The name of the policy.</p>

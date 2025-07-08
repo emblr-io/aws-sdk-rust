@@ -2,6 +2,8 @@
 
 /// <p>Contains additional data that is needed to process a handshake.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HandshakeResource {
     /// <p>The information that is passed to the other party in the handshake. The format of the value string must match the requirements of the specified type.</p>

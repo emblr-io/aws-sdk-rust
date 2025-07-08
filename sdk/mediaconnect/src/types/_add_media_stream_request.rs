@@ -2,6 +2,8 @@
 
 /// <p>The media stream that you want to add to the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddMediaStreamRequest {
     /// <p>The attributes that you want to assign to the new media stream.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an Availability Zone. This is returned only as part of a <code>GetRegions</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZone {
     /// <p>The name of the Availability Zone. The format is <code>us-east-2a</code> (case-sensitive).</p>

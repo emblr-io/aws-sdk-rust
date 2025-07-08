@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a request that failed to change the status of automated sensitive data discovery for an Amazon Macie account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomatedDiscoveryAccountUpdateError {
     /// <p>The Amazon Web Services account ID for the account that the request applied to.</p>

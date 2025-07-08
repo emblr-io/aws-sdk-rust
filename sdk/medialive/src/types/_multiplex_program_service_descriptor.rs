@@ -2,6 +2,8 @@
 
 /// Transport stream service descriptor configuration for the Multiplex program.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiplexProgramServiceDescriptor {
     /// Name of the provider.

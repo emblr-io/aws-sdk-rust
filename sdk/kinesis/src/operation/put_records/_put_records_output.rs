@@ -2,6 +2,8 @@
 
 /// <p><code>PutRecords</code> results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutRecordsOutput {
     /// <p>The number of unsuccessfully processed records in a <code>PutRecords</code> request.</p>

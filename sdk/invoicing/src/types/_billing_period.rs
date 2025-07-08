@@ -2,6 +2,8 @@
 
 /// <p>The billing period for which you want to retrieve invoice-related documents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillingPeriod {
     /// <p>The billing period month.</p>

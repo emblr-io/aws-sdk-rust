@@ -2,6 +2,8 @@
 
 /// <p>Details of how to connect to the Apache Kafka cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KafkaClusterDescription {
     /// <p>The Apache Kafka cluster to which the connector is connected.</p>

@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DeleteReservationRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteReservationInput {
     /// Unique reservation ID, e.g. '1234567'

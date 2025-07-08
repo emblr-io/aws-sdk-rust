@@ -2,6 +2,8 @@
 
 /// <p>Criteria used to return data quality results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityResultFilterCriteria {
     /// <p>Filter results by the specified data source. For example, retrieving all results for an Glue table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the versioning of dataset contents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VersioningConfiguration {
     /// <p>If true, unlimited versions of dataset contents are kept.</p>

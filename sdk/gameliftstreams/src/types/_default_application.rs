@@ -2,6 +2,8 @@
 
 /// <p>Represents the default Amazon GameLift Streams application that a stream group hosts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultApplication {
     /// <p>An ID that uniquely identifies the application resource. Example ID: <code>a-9ZY8X7Wv6</code>.</p>

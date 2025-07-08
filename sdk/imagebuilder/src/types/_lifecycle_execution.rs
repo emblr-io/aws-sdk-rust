@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata from a runtime instance of a lifecycle policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExecution {
     /// <p>Identifies the lifecycle policy runtime instance.</p>

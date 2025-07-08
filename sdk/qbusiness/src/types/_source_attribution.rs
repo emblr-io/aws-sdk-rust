@@ -2,6 +2,8 @@
 
 /// <p>The documents used to generate an Amazon Q Business web experience response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceAttribution {
     /// <p>The title of the document which is the source for the Amazon Q Business generated response.</p>

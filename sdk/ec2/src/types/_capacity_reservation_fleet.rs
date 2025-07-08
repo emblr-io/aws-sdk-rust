@@ -2,6 +2,8 @@
 
 /// <p>Information about a Capacity Reservation Fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationFleet {
     /// <p>The ID of the Capacity Reservation Fleet.</p>

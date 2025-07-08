@@ -2,6 +2,8 @@
 
 /// <p>Defines a parameter that is used to provide configuration details for the component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentParameterDetail {
     /// <p>The name of this input parameter.</p>

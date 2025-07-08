@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>StartElasticsearchServiceSoftwareUpdate</code></code> operation. Specifies the name of the Elasticsearch domain that you wish to schedule a service software update on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartElasticsearchServiceSoftwareUpdateInput {
     /// <p>The name of the domain that you want to update to the latest service software.</p>

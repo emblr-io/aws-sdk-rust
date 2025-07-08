@@ -2,6 +2,8 @@
 
 /// <p>The wrapper of Amazon Web Services account details, such as account ID or email address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AwsAccount {
     /// <p>The identifier for the Amazon Web Services account.</p>

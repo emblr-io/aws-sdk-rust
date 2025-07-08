@@ -2,6 +2,8 @@
 
 /// <p>The request information of license configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportImageLicenseConfigurationRequest {
     /// <p>The ARN of a license configuration.</p>

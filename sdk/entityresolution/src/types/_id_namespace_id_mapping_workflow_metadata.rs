@@ -2,6 +2,8 @@
 
 /// <p>The settings for the ID namespace for the ID mapping workflow job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdNamespaceIdMappingWorkflowMetadata {
     /// <p>The type of ID mapping.</p>

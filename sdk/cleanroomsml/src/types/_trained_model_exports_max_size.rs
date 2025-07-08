@@ -2,6 +2,8 @@
 
 /// <p>The maximum size of the trained model metrics that can be exported. If the trained model metrics dataset is larger than this value, it will not be exported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainedModelExportsMaxSize {
     /// <p>The unit of measurement for the data size.</p>

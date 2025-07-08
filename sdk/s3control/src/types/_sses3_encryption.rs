@@ -2,6 +2,8 @@
 
 /// <p>Configuration for the use of SSE-S3 to encrypt generated manifest objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Sses3Encryption {}
 impl Sses3Encryption {

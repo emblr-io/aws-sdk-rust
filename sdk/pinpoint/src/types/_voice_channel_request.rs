@@ -2,6 +2,8 @@
 
 /// <p>Specifies the status and settings of the voice channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceChannelRequest {
     /// <p>Specifies whether to enable the voice channel for the application.</p>

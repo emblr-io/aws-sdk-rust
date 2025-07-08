@@ -2,6 +2,8 @@
 
 /// <p>Parameters for Amazon Athena.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AthenaParameters {
     /// <p>The workgroup that Amazon Athena uses.</p>

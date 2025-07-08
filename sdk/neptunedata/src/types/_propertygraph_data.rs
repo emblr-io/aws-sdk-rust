@@ -2,6 +2,8 @@
 
 /// <p>A Gremlin or openCypher change record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertygraphData {
     /// <p>The ID of the Gremlin or openCypher element.</p>

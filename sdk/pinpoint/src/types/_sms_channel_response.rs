@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the status and settings of the SMS channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsChannelResponse {
     /// <p>The unique identifier for the application that the SMS channel applies to.</p>

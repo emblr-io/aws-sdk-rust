@@ -2,6 +2,8 @@
 
 /// <p>A mapping of a source event data field to a measure in a Timestream for LiveAnalytics record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiMeasureAttributeMapping {
     /// <p>Dynamic path to the measurement attribute in the source event.</p>

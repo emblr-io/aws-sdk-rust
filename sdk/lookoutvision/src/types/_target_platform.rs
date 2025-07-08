@@ -2,6 +2,8 @@
 
 /// <p>The platform on which a model runs on an AWS IoT Greengrass core device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetPlatform {
     /// <p>The target operating system for the model. Linux is the only operating system that is currently supported.</p>

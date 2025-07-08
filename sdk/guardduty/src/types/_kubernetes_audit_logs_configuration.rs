@@ -2,6 +2,8 @@
 
 /// <p>Describes whether Kubernetes audit logs are enabled as a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KubernetesAuditLogsConfiguration {
     /// <p>The status of Kubernetes audit logs as a data source.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The options for a paper canvas of a section-based layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SectionBasedLayoutPaperCanvasSizeOptions {
     /// <p>The paper size that is used to define canvas dimensions.</p>

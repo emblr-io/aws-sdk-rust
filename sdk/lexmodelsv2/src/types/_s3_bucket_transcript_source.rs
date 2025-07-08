@@ -2,6 +2,8 @@
 
 /// <p>The object representing the Amazon S3 bucket containing the transcript, as well as the associated metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3BucketTranscriptSource {
     /// <p>The name of the bucket containing the transcript and the associated metadata.</p>

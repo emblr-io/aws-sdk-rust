@@ -2,6 +2,8 @@
 
 /// <p>Specifies the properties and attributes of an endpoint that's associated with an event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicEndpoint {
     /// <p>The unique identifier for the recipient, such as a device token, email address, or mobile phone number.</p>

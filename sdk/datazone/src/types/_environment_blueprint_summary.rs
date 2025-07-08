@@ -2,6 +2,8 @@
 
 /// <p>The details of an environment blueprint summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EnvironmentBlueprintSummary {
     /// <p>The identifier of the blueprint.</p>

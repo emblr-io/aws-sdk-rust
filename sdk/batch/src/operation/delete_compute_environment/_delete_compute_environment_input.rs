@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DeleteComputeEnvironment</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteComputeEnvironmentInput {
     /// <p>The name or Amazon Resource Name (ARN) of the compute environment to delete.</p>

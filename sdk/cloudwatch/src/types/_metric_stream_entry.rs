@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the configuration information about one metric stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricStreamEntry {
     /// <p>The ARN of the metric stream.</p>

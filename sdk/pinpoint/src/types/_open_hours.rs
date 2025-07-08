@@ -2,6 +2,8 @@
 
 /// <p>Specifies the times when message are allowed to be sent to endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenHours {
     /// <p>Specifies the schedule settings for the email channel.</p>

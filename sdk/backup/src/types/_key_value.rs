@@ -2,6 +2,8 @@
 
 /// <p>Pair of two related strings. Allowed characters are letters, white space, and numbers that can be represented in UTF-8 and the following characters: <code> + - = . _ : /</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyValue {
     /// <p>The tag key (String). The key can't start with <code>aws:</code>.</p>

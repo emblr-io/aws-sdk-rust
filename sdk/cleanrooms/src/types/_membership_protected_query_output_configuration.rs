@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for protected query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MembershipProtectedQueryOutputConfiguration {
     /// <p>Contains the configuration to write the query results to S3.</p>

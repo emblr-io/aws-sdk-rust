@@ -2,6 +2,8 @@
 
 /// <p>A summary of how the control is implemented, including the Amazon Web Services service that enforces the control and its service-specific identifier. For example, the value of this field could indicate that the control is implemented as an Amazon Web Services Config Rule or an Amazon Web Services Security Hub control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImplementationSummary {
     /// <p>A string that represents the Amazon Web Services service that implements this control. For example, a value of <code>AWS::Config::ConfigRule</code> indicates that the control is implemented by Amazon Web Services Config, and <code>AWS::SecurityHub::SecurityControl</code> indicates implementation by Amazon Web Services Security Hub.</p>

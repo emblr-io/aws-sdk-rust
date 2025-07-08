@@ -2,6 +2,8 @@
 
 /// <p>An exception occurred because an invalid gateway request was issued to the service. For more information, see the error and message fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidGatewayRequestException {
     /// <p>A human-readable message describing the error that occurred.</p>

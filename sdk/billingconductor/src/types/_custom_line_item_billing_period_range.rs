@@ -2,6 +2,8 @@
 
 /// <p>The billing period range in which the custom line item request will be applied.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLineItemBillingPeriodRange {
     /// <p>The inclusive start billing period that defines a billing period range where a custom line is applied.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that can be used to specify Tag conditions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TagFilter {
     /// <p>A list of conditions which would be applied together with an <code>AND</code> condition.</p>

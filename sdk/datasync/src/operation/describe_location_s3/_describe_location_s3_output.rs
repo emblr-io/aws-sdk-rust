@@ -2,6 +2,8 @@
 
 /// <p>DescribeLocationS3Response</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLocationS3Output {
     /// <p>The ARN of the Amazon S3 location.</p>

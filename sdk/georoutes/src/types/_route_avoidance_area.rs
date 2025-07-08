@@ -2,6 +2,8 @@
 
 /// <p>Areas to be avoided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteAvoidanceArea {
     /// <p>Exceptions to the provided avoidance geometry, to be included while calculating the route.</p>

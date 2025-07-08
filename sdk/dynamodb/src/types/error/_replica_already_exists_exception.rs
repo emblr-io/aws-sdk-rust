@@ -2,6 +2,8 @@
 
 /// <p>The specified replica is already part of the global table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicaAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

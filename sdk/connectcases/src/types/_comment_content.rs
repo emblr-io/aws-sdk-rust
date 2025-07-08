@@ -2,6 +2,8 @@
 
 /// <p>Represents the content of a <code>Comment</code> to be returned to agents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommentContent {
     /// <p>Text in the body of a <code>Comment</code> on a case.</p>

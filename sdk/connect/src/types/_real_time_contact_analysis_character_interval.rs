@@ -2,6 +2,8 @@
 
 /// <p>Begin and end offsets for a part of text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisCharacterInterval {
     /// <p>The beginning of the character interval.</p>

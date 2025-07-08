@@ -2,6 +2,8 @@
 
 /// <p>The client is permanently forbidden from making the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForbiddenException {
     #[allow(missing_docs)] // documentation missing in model

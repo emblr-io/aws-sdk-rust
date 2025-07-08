@@ -2,6 +2,8 @@
 
 /// <p>The analysis template artifact metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisTemplateArtifactMetadata {
     /// <p>The hash of the entry point for the analysis template artifact metadata.</p>

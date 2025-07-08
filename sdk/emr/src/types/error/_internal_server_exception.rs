@@ -2,6 +2,8 @@
 
 /// <p>This exception occurs when there is an internal failure in the Amazon EMR service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerException {
     /// <p>The message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the location of a manifest file that Amazon Lookout for Vision uses to to create a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetSource {
     /// <p>Location information for the manifest file.</p>

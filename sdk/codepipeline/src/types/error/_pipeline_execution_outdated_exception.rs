@@ -2,6 +2,8 @@
 
 /// <p>The specified pipeline execution is outdated and cannot be used as a target pipeline execution for rollback.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineExecutionOutdatedException {
     #[allow(missing_docs)] // documentation missing in model

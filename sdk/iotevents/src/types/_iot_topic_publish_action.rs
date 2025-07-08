@@ -2,6 +2,8 @@
 
 /// <p>Information required to publish the MQTT message through the AWS IoT message broker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotTopicPublishAction {
     /// <p>The MQTT topic of the message. You can use a string expression that includes variables (<code>$variable.<variable-name></variable-name></code>) and input values (<code>$input.<input-name>

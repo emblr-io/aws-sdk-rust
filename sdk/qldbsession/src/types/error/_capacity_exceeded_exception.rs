@@ -2,6 +2,8 @@
 
 /// <p>Returned when the request exceeds the processing capacity of the ledger.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityExceededException {
     #[allow(missing_docs)] // documentation missing in model

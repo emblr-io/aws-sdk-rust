@@ -2,6 +2,8 @@
 
 /// <p>An object consists of data and its descriptive metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Object {
     /// <p>The name that you assign to an object. You use the object key to retrieve the object.</p>

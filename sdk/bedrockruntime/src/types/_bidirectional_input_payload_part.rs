@@ -2,6 +2,8 @@
 
 /// <p>Payload content for the bidirectional input. The input is an audio stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BidirectionalInputPayloadPart {
     /// <p>The audio content for the bidirectional input.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A warning about an issue that occurred during asynchronous text analysis (<code>StartDocumentAnalysis</code>) or asynchronous document text detection (<code>StartDocumentTextDetection</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Warning {
     /// <p>The error code for the warning.</p>

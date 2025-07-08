@@ -2,6 +2,8 @@
 
 /// <p>The log delivery configurations being modified</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingLogDeliveryConfiguration {
     /// <p>Refers to <a href="https://redis.io/commands/slowlog">slow-log</a> or engine-log..</p>

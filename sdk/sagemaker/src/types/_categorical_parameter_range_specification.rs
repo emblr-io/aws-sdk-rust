@@ -2,6 +2,8 @@
 
 /// <p>Defines the possible values for a categorical hyperparameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CategoricalParameterRangeSpecification {
     /// <p>The allowed categories for the hyperparameter.</p>

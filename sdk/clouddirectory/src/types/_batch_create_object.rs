@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>CreateObject</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateObject {
     /// <p>A list of <code>FacetArns</code> that will be associated with the object. For more information, see <code>arns</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The key usage property defines the purpose of the private key contained in the certificate. You can specify specific purposes using property flags or all by using property type ALL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum KeyUsageProperty {
     /// <p>You can specify key usage for encryption, key agreement, and signature. You can use property flags or property type but not both.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A SQL string of criteria about events that you want to collect in an event data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Query {
     /// <p>The ID of a query.</p>

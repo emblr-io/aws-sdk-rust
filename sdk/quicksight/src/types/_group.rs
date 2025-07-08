@@ -2,6 +2,8 @@
 
 /// <p>A <i>group</i> in Amazon QuickSight consists of a set of users. You can use groups to make it easier to manage access and security.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Group {
     /// <p>The Amazon Resource Name (ARN) for the group.</p>

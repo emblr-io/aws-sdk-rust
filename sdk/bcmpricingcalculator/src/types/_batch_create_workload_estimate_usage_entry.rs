@@ -2,6 +2,8 @@
 
 /// <p>Represents an entry in a batch operation to create workload estimate usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateWorkloadEstimateUsageEntry {
     /// <p>The Amazon Web Services service code for this usage estimate.</p>

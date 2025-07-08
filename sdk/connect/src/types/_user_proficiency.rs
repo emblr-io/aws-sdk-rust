@@ -2,6 +2,8 @@
 
 /// <p>Information about proficiency of a user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserProficiency {
     /// <p>The name of user's proficiency. You must use name of predefined attribute present in the Amazon Connect instance.</p>

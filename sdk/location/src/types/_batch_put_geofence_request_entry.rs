@@ -2,6 +2,8 @@
 
 /// <p>Contains geofence geometry details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BatchPutGeofenceRequestEntry {
     /// <p>The identifier for the geofence to be stored in a given geofence collection.</p>

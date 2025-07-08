@@ -2,6 +2,8 @@
 
 /// <p>Specifies the sorting parameters for listing Engagements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngagementSort {
     /// <p>The order in which to sort the results.</p>

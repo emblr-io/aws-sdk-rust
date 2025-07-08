@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to create an export job from a data source to a data destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateExportJobInput {
     /// <p>The data source for the export job.</p>

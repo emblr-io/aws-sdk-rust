@@ -2,6 +2,8 @@
 
 /// <p>Information about the state of the load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancerState {
     /// <p>The state code. The initial state of the load balancer is provisioning.</p>

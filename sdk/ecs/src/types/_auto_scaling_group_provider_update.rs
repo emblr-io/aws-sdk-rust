@@ -2,6 +2,8 @@
 
 /// <p>The details of the Auto Scaling group capacity provider to update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingGroupProviderUpdate {
     /// <p>The managed scaling settings for the Auto Scaling group capacity provider.</p>

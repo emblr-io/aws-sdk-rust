@@ -3,6 +3,8 @@
 /// <p>Provides summary information about an App Runner automatic scaling configuration resource.</p>
 /// <p>This type contains limited information about an auto scaling configuration. It includes only identification information, without configuration details. It's returned by the <code>ListAutoScalingConfigurations</code> action. Complete configuration information is returned by the <code>CreateAutoScalingConfiguration</code>, <code>DescribeAutoScalingConfiguration</code>, and <code>DeleteAutoScalingConfiguration</code> actions using the <code>AutoScalingConfiguration</code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingConfigurationSummary {
     /// <p>The Amazon Resource Name (ARN) of this auto scaling configuration.</p>

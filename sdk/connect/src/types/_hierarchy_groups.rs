@@ -2,6 +2,8 @@
 
 /// <p>Information about the agent hierarchy. Hierarchies can be configured with up to five levels.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchyGroups {
     /// <p>The group at level one of the agent hierarchy.</p>

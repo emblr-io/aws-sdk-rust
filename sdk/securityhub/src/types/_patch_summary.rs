@@ -2,6 +2,8 @@
 
 /// <p>Provides an overview of the patch compliance status for an instance against a selected compliance standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PatchSummary {
     /// <p>The identifier of the compliance standard that was used to determine the patch compliance status.</p>

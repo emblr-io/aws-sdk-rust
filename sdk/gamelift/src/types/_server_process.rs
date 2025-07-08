@@ -2,6 +2,8 @@
 
 /// <p>A set of instructions for launching server processes on fleet computes. Server processes run either an executable in a custom game build or a Amazon GameLift Servers Realtime script. Server process configurations are part of a fleet's runtime configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerProcess {
     /// <p>The location of a game build executable or Realtime script. Game builds and Realtime scripts are installed on instances at the root:</p>

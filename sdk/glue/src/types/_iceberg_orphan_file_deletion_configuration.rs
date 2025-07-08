@@ -2,6 +2,8 @@
 
 /// <p>The configuration for an Iceberg orphan file deletion optimizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergOrphanFileDeletionConfiguration {
     /// <p>The number of days that orphan files should be retained before file deletion. If an input is not provided, the default value 3 will be used.</p>

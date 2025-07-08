@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the version (or revision) of an action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionRevision {
     /// <p>The system-generated unique ID that identifies the revision number of the action.</p>

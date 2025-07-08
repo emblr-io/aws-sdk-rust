@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon Web Services Identity and Access Management (IAM) role that is associated with a DB instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstanceRole {
     /// <p>The Amazon Resource Name (ARN) of the IAM role that is associated with the DB instance.</p>

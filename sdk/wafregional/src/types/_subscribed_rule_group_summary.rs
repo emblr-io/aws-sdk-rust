@@ -6,6 +6,8 @@
 /// </note>
 /// <p>A summary of the rule groups you are subscribed to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscribedRuleGroupSummary {
     /// <p>A unique identifier for a <code>RuleGroup</code>.</p>

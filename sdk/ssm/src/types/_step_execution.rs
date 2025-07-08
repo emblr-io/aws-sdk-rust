@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about an the execution state of an Automation step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StepExecution {
     /// <p>The name of this execution step.</p>

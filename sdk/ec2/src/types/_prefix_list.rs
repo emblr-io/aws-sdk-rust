@@ -2,6 +2,8 @@
 
 /// <p>Describes prefixes for Amazon Web Services services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrefixList {
     /// <p>The IP address range of the Amazon Web Services service.</p>

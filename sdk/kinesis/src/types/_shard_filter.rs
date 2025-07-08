@@ -2,6 +2,8 @@
 
 /// <p>The request parameter used to filter out the response of the <code>ListShards</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShardFilter {
     /// <p>The shard type specified in the <code>ShardFilter</code> parameter. This is a required property of the <code>ShardFilter</code> parameter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of a successful invocation of the <code>DescribeDBClusterBacktracks</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDbClusterBacktracksOutput {
     /// <p>A pagination token that can be used in a later <code>DescribeDBClusterBacktracks</code> request.</p>

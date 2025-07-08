@@ -2,6 +2,8 @@
 
 /// <p>Raised when stream records requested by a query cannot be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamRecordsNotFoundException {
     /// <p>A detailed message describing the problem.</p>

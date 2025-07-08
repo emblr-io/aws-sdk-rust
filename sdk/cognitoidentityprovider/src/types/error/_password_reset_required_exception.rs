@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a password reset is required.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PasswordResetRequiredException {
     /// <p>The message returned when a password reset is required.</p>

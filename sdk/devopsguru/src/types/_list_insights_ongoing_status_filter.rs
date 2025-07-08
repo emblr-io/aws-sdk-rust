@@ -2,6 +2,8 @@
 
 /// <p>Used to filter for insights that have the status <code>ONGOING</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListInsightsOngoingStatusFilter {
     /// <p>Use to filter for either <code>REACTIVE</code> or <code>PROACTIVE</code> insights.</p>

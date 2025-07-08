@@ -2,6 +2,8 @@
 
 /// <p>The details of the thumbnail, including thumbnail base64 string, timecode and the time when thumbnail was generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThumbnailDetails {
     /// <p>The ARN of the flow that DescribeFlowSourceThumbnail was performed on.</p>

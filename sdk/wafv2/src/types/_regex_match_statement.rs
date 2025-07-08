@@ -2,6 +2,8 @@
 
 /// <p>A rule statement used to search web request components for a match against a single regular expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexMatchStatement {
     /// <p>The string representing the regular expression.</p>

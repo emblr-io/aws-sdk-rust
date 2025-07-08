@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the body of the message. You can specify a template message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BulkEmailContent {
     /// <p>The template to use for the bulk email message.</p>

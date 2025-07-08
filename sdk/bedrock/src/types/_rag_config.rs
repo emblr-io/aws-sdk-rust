@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration details for retrieval of information and response generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RagConfig {
     /// <p>Contains configuration details for knowledge base retrieval and response generation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The information about the resource group integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceGroup {
     /// <p>The state of the propagation process for the resource group. The states includes:</p>

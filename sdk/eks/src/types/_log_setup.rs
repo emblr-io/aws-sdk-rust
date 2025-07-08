@@ -2,6 +2,8 @@
 
 /// <p>An object representing the enabled or disabled Kubernetes control plane logs for your cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogSetup {
     /// <p>The available cluster control plane log types.</p>

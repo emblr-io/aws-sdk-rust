@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the settings that Amazon EFS uses to create the root directory when a client connects to an access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEfsAccessPointRootDirectoryCreationInfoDetails {
     /// <p>Specifies the POSIX group ID to apply to the root directory.</p>

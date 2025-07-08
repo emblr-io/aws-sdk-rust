@@ -3,6 +3,8 @@
 /// <p>Updates the configuration information for the document fields/attributes that you want to base query suggestions on.</p>
 /// <p>To deactivate using documents fields for query suggestions, set the mode to <code>INACTIVE</code>. You must also set <code>SuggestionTypes</code> as either <code>QUERY</code> or <code>DOCUMENT_ATTRIBUTES</code> and then call <a href="https://docs.aws.amazon.com/kendra/latest/dg/API_GetQuerySuggestions.html">GetQuerySuggestions</a>. If you set to <code>QUERY</code>, then Amazon Kendra uses the query history to base suggestions on. If you set to <code>DOCUMENT_ATTRIBUTES</code>, then Amazon Kendra uses the contents of document fields to base suggestions on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeSuggestionsUpdateConfig {
     /// <p>The list of fields/attributes that you want to set as suggestible for query suggestions.</p>

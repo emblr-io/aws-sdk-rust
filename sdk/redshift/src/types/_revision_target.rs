@@ -2,6 +2,8 @@
 
 /// <p>Describes a <code>RevisionTarget</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RevisionTarget {
     /// <p>A unique string that identifies the version to update the cluster to. You can use this value in <code>ModifyClusterDbRevision</code>.</p>

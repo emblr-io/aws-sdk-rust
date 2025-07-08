@@ -2,6 +2,8 @@
 
 /// <p>Options for a search suggester.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentSuggesterOptions {
     /// <p>The name of the index field you want to use for suggestions.</p>

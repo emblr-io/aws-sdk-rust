@@ -3,6 +3,8 @@
 /// <p>The architecture type, virtualization type, and other attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with those attributes.</p>
 /// <p>If you specify <code>InstanceRequirementsWithMetadataRequest</code>, you can't specify <code>InstanceTypes</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceRequirementsWithMetadataRequest {
     /// <p>The architecture type.</p>

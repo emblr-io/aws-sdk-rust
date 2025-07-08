@@ -2,6 +2,8 @@
 
 /// <p>Information about the batch policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPolicy {
     /// <p>The amount of time, in seconds, to wait for the batch to complete.</p>

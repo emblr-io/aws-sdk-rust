@@ -4,6 +4,8 @@
 /// <p><b>Directory buckets</b> - These session credentials are only supported for the authentication and authorization of Zonal endpoint API operations on directory buckets.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SessionCredentials {
     /// <p>A unique identifier that's associated with a secret access key. The access key ID and the secret access key are used together to sign programmatic Amazon Web Services requests cryptographically.</p>

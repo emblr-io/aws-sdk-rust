@@ -2,6 +2,8 @@
 
 /// <p>A list of categorical hyperparameters to tune.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CategoricalParameterRange {
     /// <p>The name of the categorical hyperparameter to tune.</p>

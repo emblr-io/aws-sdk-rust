@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to get information about the specified remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetRemoteAccessSessionInput {
     /// <p>The Amazon Resource Name (ARN) of the remote access session about which you want to get session information.</p>

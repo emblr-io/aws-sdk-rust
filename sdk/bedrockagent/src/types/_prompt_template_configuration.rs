@@ -2,6 +2,8 @@
 
 /// <p>Contains the message for a prompt. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html">Construct and store reusable prompts with Prompt management in Amazon Bedrock</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum PromptTemplateConfiguration {
     /// <p>Contains configurations to use the prompt in a conversational format.</p>

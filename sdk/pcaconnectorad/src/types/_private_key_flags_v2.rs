@@ -2,6 +2,8 @@
 
 /// <p>Private key flags for v2 templates specify the client compatibility, if the private key can be exported, and if user input is required when using a private key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateKeyFlagsV2 {
     /// <p>Allows the private key to be exported.</p>

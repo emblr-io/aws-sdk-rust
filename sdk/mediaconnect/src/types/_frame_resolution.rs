@@ -2,6 +2,8 @@
 
 /// <p>The frame resolution used by the video stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrameResolution {
     /// <p>The number of pixels in the height of the video frame.</p>

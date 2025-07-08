@@ -2,6 +2,8 @@
 
 /// <p>Describes a block storage disk mapping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DiskMap {
     /// <p>The original disk path exposed to the instance (for example, <code>/dev/sdh</code>).</p>

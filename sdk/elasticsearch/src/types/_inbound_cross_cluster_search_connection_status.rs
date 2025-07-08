@@ -2,6 +2,8 @@
 
 /// <p>Specifies the coonection status of an inbound cross-cluster search connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InboundCrossClusterSearchConnectionStatus {
     /// <p>The state code for inbound connection. This can be one of the following:</p>

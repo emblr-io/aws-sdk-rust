@@ -2,6 +2,8 @@
 
 /// <p>Card data parameters that are required to generate a Card Security Code (CSC2) for an AMEX payment card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AmexCardSecurityCodeVersion1 {
     /// <p>The expiry date of a payment card.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the target of an Amazon ECS deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsTarget {
     /// <p>The unique ID of a deployment.</p>

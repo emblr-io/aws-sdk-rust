@@ -3,6 +3,8 @@
 /// <p>The results of a <code>COMPLETED</code> analysis report generated with <code>StartAnalysisReport</code>.</p>
 /// <p>For an example of traffic analysis report results, see the response syntax of <code>GetAnalysisReportResults</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisTypeReportResult {
     /// <p>The type of traffic captured by the analysis report.</p>

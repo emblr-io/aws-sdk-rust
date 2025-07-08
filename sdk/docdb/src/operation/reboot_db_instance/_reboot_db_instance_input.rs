@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>RebootDBInstance</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RebootDbInstanceInput {
     /// <p>The instance identifier. This parameter is stored as a lowercase string.</p>

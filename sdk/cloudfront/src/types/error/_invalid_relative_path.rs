@@ -2,6 +2,8 @@
 
 /// <p>The relative path is too big, is not URL-encoded, or does not begin with a slash (/).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRelativePath {
     #[allow(missing_docs)] // documentation missing in model

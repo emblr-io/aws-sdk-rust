@@ -2,6 +2,8 @@
 
 /// <p>Configuration of the evaluator model you want to use to evaluate custom metrics in an Amazon Bedrock evaluation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomMetricEvaluatorModelConfig {
     /// <p>Defines the model you want to evaluate custom metrics in an Amazon Bedrock evaluation job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A control to display a list of buttons or boxes. This is used to select either a single value or multiple values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterListControl {
     /// <p>The ID of the <code>FilterListControl</code>.</p>

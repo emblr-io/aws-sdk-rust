@@ -2,6 +2,8 @@
 
 /// <p>One or more filters. Use a filter to return a more specific list of results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterStringFilter {
     /// <p>The name of the filter.</p>

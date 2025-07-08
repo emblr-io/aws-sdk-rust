@@ -2,6 +2,8 @@
 
 /// <p>An object that represents summary details of a container within a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerSummary {
     /// <p>The exit code to return upon completion.</p>

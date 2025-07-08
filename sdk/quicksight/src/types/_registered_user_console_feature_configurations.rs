@@ -2,6 +2,8 @@
 
 /// <p>The feature configurations of an embedded Amazon QuickSight console.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisteredUserConsoleFeatureConfigurations {
     /// <p>The state persistence configurations of an embedded Amazon QuickSight console.</p>

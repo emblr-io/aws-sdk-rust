@@ -2,6 +2,8 @@
 
 /// <p>A <code>DataSourceSummary</code> object that returns a summary of a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceSummary {
     /// <p>The arn of the datasource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a button to use on a response card used to gather slot values from a user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Button {
     /// <p>The text that appears on the button. Use this to tell the user what value is returned when they choose this button.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structure that contains summary information about a stack instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackInstanceSummary {
     /// <p>The name or unique ID of the stack set that the stack instance is associated with.</p>

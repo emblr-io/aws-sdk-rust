@@ -2,6 +2,8 @@
 
 /// <p>Structure representing a capability schema item that defines the functionality and features supported by a managed thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapabilitySchemaItem {
     /// <p>The format of the capability schema, which defines how the schema is structured and interpreted.</p>

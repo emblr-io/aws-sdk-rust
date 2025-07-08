@@ -2,6 +2,8 @@
 
 /// <p>The search scope is all backup properties input into a search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchScope {
     /// <p>The resource types included in a search.</p>

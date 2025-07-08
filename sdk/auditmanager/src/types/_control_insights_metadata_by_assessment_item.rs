@@ -3,6 +3,8 @@
 /// <p>A summary of the latest analytics data for a specific control in a specific active assessment.</p>
 /// <p>Control insights are grouped by control domain, and ranked by the highest total count of non-compliant evidence.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlInsightsMetadataByAssessmentItem {
     /// <p>The name of the assessment control.</p>

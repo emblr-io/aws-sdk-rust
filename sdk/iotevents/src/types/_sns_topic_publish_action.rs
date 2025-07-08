@@ -2,6 +2,8 @@
 
 /// <p>Information required to publish the Amazon SNS message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnsTopicPublishAction {
     /// <p>The ARN of the Amazon SNS target where the message is sent.</p>

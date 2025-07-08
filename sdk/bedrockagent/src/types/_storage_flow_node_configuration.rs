@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a Storage node in a flow. This node stores the input in an Amazon S3 location that you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageFlowNodeConfiguration {
     /// <p>Contains configurations for the service to use for storing the input into the node.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Each query contains the question you want to ask in the Text and the alias you want to associate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Query {
     /// <p>Question that Amazon Textract will apply to the document. An example would be "What is the customer's SSN?"</p>

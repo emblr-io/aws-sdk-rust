@@ -2,6 +2,8 @@
 
 /// <p>The style configuration of the reference line.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReferenceLineStyleConfiguration {
     /// <p>The pattern type of the line style. Choose one of the following options:</p>

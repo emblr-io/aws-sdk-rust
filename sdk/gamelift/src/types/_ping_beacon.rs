@@ -2,6 +2,8 @@
 
 /// <p>Information about a UDP ping beacon that can be used to measure network latency between a player device and an Amazon GameLift Servers hosting location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PingBeacon {
     /// <p>The domain name and port of the UDP ping beacon.</p>

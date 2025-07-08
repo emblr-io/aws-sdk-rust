@@ -2,6 +2,8 @@
 
 /// <p>Information about a data provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProviderDescriptor {
     /// <p>The identifier of the Amazon Web Services Secrets Manager Secret used to store access credentials for the data provider.</p>

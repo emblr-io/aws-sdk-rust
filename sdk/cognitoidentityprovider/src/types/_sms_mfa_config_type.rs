@@ -2,6 +2,8 @@
 
 /// <p>The configuration of multi-factor authentication (MFA) with SMS messages in a user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsMfaConfigType {
     /// <p>The SMS authentication message that will be sent to users with the code they must sign in with. The message must contain the <code>{####}</code> placeholder. Your user pool replaces the placeholder with the MFA code. If this parameter isn't provided, your user pool sends a default message.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies elements that Amazon AppFlow includes in the file and folder names in the flow destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrefixConfig {
     /// <p>Determines the format of the prefix, and whether it applies to the file name, file path, or both.</p>

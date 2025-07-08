@@ -2,6 +2,8 @@
 
 /// <p>Configuration to run a processing job in a specified container image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppSpecification {
     /// <p>The container image to be run by the processing job.</p>

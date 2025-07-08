@@ -2,6 +2,8 @@
 
 /// <p>Object representing the on-premises resource being migrated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DiscoveredResource {
     /// <p>The configurationId in Application Discovery Service that uniquely identifies the on-premise resource.</p>

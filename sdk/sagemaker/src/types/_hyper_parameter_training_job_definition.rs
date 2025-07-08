@@ -2,6 +2,8 @@
 
 /// <p>Defines the training jobs launched by a hyperparameter tuning job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HyperParameterTrainingJobDefinition {
     /// <p>The job definition name.</p>

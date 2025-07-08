@@ -2,6 +2,8 @@
 
 /// <p>Filters results based on timestamp range (in epochs).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateRangeType {
     /// <p>Timestamp range start value (in epochs)</p>

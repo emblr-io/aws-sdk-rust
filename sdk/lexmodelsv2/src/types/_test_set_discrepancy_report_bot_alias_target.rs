@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the bot alias used for the test set discrepancy report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetDiscrepancyReportBotAliasTarget {
     /// <p>The unique identifier for the bot alias.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field wells of a heat map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HeatMapAggregatedFieldWells {
     /// <p>The rows field well of a heat map.</p>

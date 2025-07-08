@@ -2,6 +2,8 @@
 
 /// <p>A tag key and optional list of possible values that you can use to filter results for tagged resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagFilter {
     /// <p>The tag key. This must have a valid string value and can't be empty.</p>

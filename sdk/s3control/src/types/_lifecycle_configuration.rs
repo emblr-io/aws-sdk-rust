@@ -2,6 +2,8 @@
 
 /// <p>The container for the Outposts bucket lifecycle configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleConfiguration {
     /// <p>A lifecycle rule for individual objects in an Outposts bucket.</p>

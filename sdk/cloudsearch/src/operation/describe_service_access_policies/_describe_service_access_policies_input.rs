@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DescribeServiceAccessPolicies</code></code> operation. Specifies the name of the domain you want to describe. To show the active configuration and exclude any pending changes, set the <code>Deployed</code> option to <code>true</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeServiceAccessPoliciesInput {
     /// <p>The name of the domain you want to describe.</p>

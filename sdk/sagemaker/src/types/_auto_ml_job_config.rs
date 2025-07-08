@@ -2,6 +2,8 @@
 
 /// <p>A collection of settings used for an AutoML job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlJobConfig {
     /// <p>How long an AutoML job is allowed to run, or how many candidates a job is allowed to generate.</p>

@@ -2,6 +2,8 @@
 
 /// <p>One or more of the parameters specified for the delete operation isn't valid. Verify all parameters and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDeleteInventoryParametersException {
     #[allow(missing_docs)] // documentation missing in model

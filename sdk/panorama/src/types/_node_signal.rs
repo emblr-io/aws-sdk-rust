@@ -2,6 +2,8 @@
 
 /// <p>A signal to a camera node to start or stop processing video.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeSignal {
     /// <p>The camera node's name, from the application manifest.</p>

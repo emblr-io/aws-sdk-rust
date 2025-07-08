@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about a value for a time series property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyValue {
     /// <p>The timestamp of a value for a time series property.</p>

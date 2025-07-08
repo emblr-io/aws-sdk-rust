@@ -2,6 +2,8 @@
 
 /// <p>An error occurred because the client attempts to remove a resource that is currently in use. Returns HTTP status code 409.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictException {
     /// <p>A description of the error.</p>

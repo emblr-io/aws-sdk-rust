@@ -2,6 +2,8 @@
 
 /// <p>The specified account has reached its limit of Amazon S3 buckets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyBucketsException {
     /// <p>The exception error message.</p>

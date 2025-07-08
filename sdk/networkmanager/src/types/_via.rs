@@ -2,6 +2,8 @@
 
 /// <p>The list of network function groups and edge overrides for the service insertion action. Used for both the <code>send-to</code> and <code>send-via</code> actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Via {
     /// <p>The list of network function groups associated with the service insertion action.</p>

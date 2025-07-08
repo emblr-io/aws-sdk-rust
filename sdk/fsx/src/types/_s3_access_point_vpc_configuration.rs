@@ -2,6 +2,8 @@
 
 /// <p>If included, Amazon S3 restricts access to this access point to requests from the specified virtual private cloud (VPC).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3AccessPointVpcConfiguration {
     /// <p>Specifies the virtual private cloud (VPC) for the S3 access point VPC configuration, if one exists.</p>

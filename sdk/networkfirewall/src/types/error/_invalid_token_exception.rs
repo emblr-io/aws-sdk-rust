@@ -2,6 +2,8 @@
 
 /// <p>The token you provided is stale or isn't valid for the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTokenException {
     #[allow(missing_docs)] // documentation missing in model

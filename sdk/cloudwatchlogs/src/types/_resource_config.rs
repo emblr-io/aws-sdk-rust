@@ -2,6 +2,8 @@
 
 /// <p>This structure contains configuration details about an integration between CloudWatch Logs and another entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResourceConfig {
     /// <p>This structure contains configuration details about an integration between CloudWatch Logs and OpenSearch Service.</p>

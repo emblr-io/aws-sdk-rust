@@ -2,6 +2,8 @@
 
 /// <p>Additional information about the suspicious activity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuntimeContext {
     /// <p>Information about the process that modified the current process. This is available for multiple finding types.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object encompassing information about a schema change to a single, particular field, a notification can have up to 100 of these.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaChangeDetails {
     /// <p>Name of the changing field. This value can be up to 255 characters long.</p>

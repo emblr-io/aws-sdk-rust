@@ -2,6 +2,8 @@
 
 /// <p>The configuration object of the Amazon Chime SDK meeting concatenation for a specified media pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChimeSdkMeetingConcatenationConfiguration {
     /// <p>The configuration for the artifacts in an Amazon Chime SDK meeting concatenation.</p>

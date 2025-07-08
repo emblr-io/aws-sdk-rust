@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration details for a template provider. Only one type of template provider can be specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTemplateProvider {
     /// <p>The CloudFormation template provider configuration for creating infrastructure resources.</p>

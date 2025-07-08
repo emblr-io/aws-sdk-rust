@@ -2,6 +2,8 @@
 
 /// <p>Contains information about discrepancy in a slot information between the test set and the bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetSlotDiscrepancyItem {
     /// <p>The name of the intent associated with the slot in the discrepancy report.</p>

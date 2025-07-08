@@ -2,6 +2,8 @@
 
 /// <p>Results of a <code>CreateStorageLocationResult</code> call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateStorageLocationOutput {
     /// <p>The name of the Amazon S3 bucket created.</p>

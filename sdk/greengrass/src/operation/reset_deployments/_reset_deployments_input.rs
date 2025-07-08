@@ -2,6 +2,8 @@
 
 /// Information needed to reset deployments.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResetDeploymentsInput {
     /// A client token used to correlate requests and responses.

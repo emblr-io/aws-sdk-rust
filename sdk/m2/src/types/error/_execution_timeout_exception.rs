@@ -2,6 +2,8 @@
 
 /// <p>Failed to connect to server, or didn’t receive response within expected time period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionTimeoutException {
     #[allow(missing_docs)] // documentation missing in model

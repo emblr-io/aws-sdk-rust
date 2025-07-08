@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeRaidArrays</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeRaidArraysOutput {
     /// <p>A <code>RaidArrays</code> object that describes the specified RAID arrays.</p>

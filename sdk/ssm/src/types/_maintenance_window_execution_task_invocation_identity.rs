@@ -2,6 +2,8 @@
 
 /// <p>Describes the information about a task invocation for a particular target as part of a task execution performed as part of a maintenance window execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MaintenanceWindowExecutionTaskInvocationIdentity {
     /// <p>The ID of the maintenance window execution that ran the task.</p>

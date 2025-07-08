@@ -2,6 +2,8 @@
 
 /// <p>The <code>InnerFilter</code> defines the subset of data to be used with the <code>NestedFilter</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InnerFilter {
     /// <p>A <code>CategoryInnerFilter</code> filters text values for the <code>NestedFilter</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about the cross-account configuration in the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrossAccountConfiguration {
     /// <p>The ARN of an existing role which will be used to do investigations on your behalf.</p>

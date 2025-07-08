@@ -29,6 +29,8 @@
 /// <p><code>IntentEndState</code> – <code>EQ</code>, <code>CO</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsIntentFilter {
     /// <p>The category by which to filter the intents. The descriptions for each option are as follows:</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>CancelElasticsearchServiceSoftwareUpdate</code></code> operation. Specifies the name of the Elasticsearch domain that you wish to cancel a service software update on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelElasticsearchServiceSoftwareUpdateInput {
     /// <p>The name of the domain that you want to stop the latest service software update on.</p>

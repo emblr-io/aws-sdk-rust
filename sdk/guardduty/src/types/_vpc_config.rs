@@ -2,6 +2,8 @@
 
 /// <p>Amazon Virtual Private Cloud configuration details associated with your Lambda function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConfig {
     /// <p>The identifiers of the subnets that are associated with your Lambda function.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a summary of a Timestream for InfluxDB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterSummary {
     /// <p>Service-generated unique identifier of the DB cluster to retrieve.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that holds information regarding a detected signature on a page.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectedSignature {
     /// <p>The page a detected signature was found on.</p>

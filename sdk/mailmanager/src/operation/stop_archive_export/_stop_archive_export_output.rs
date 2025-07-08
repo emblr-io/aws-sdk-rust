@@ -3,6 +3,8 @@
 /// <p>The response indicating if the request to stop the export job succeeded.</p>
 /// <p>On success, returns an HTTP 200 status code. On failure, returns an error message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopArchiveExportOutput {
     _request_id: Option<String>,

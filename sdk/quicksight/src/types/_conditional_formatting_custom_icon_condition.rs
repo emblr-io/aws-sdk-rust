@@ -2,6 +2,8 @@
 
 /// <p>Determines the custom condition for an icon set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConditionalFormattingCustomIconCondition {
     /// <p>The expression that determines the condition of the icon set.</p>

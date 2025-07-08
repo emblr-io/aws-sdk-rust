@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a stickiness policy that was created using <code>CreateAppCookieStickinessPolicy</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElbAppCookieStickinessPolicy {
     /// <p>The name of the application cookie used for stickiness.</p>

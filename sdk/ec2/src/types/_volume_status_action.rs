@@ -2,6 +2,8 @@
 
 /// <p>Describes a volume status operation code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeStatusAction {
     /// <p>The code identifying the operation, for example, <code>enable-volume-io</code>.</p>

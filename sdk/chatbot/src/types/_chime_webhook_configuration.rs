@@ -2,6 +2,8 @@
 
 /// <p>An AWS Chatbot configuration for Amazon Chime.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ChimeWebhookConfiguration {
     /// <p>A description of the webhook. We recommend using the convention <code>RoomName/WebhookName</code>.</p>

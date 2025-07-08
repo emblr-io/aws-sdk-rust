@@ -2,6 +2,8 @@
 
 /// <p>The request couldn't be completed because it contains signal decoders with one or more validation errors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecoderManifestValidationException {
     /// <p>The request couldn't be completed because of invalid signals in the request.</p>

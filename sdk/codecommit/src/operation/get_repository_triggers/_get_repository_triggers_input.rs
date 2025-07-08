@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a get repository triggers operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetRepositoryTriggersInput {
     /// <p>The name of the repository for which the trigger is configured.</p>

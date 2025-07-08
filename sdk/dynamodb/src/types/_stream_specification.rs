@@ -2,6 +2,8 @@
 
 /// <p>Represents the DynamoDB Streams configuration for a table in DynamoDB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamSpecification {
     /// <p>Indicates whether DynamoDB Streams is enabled (true) or disabled (false) on the table.</p>

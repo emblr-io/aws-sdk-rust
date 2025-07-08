@@ -2,6 +2,8 @@
 
 /// <p>An activity that adds information from the IoT Device Shadow service to a message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceShadowEnrichActivity {
     /// <p>The name of the <code>deviceShadowEnrich</code> activity.</p>

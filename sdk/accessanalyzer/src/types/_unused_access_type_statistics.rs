@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the total number of findings for a type of unused access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnusedAccessTypeStatistics {
     /// <p>The type of unused access.</p>

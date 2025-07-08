@@ -2,6 +2,8 @@
 
 /// <p>Specifies which files, folders, and objects to include or exclude when transferring files from source to destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterRule {
     /// <p>The type of filter rule to apply. DataSync only supports the SIMPLE_PATTERN rule type.</p>

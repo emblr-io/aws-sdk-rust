@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of an environment blueprint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentBlueprintConfigurationItem {
     /// <p>The identifier of the Amazon DataZone domain in which an environment blueprint exists.</p>

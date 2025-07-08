@@ -2,6 +2,8 @@
 
 /// <p>The IP address to evaluate for this condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RuleIpToEvaluate {
     /// <p>The attribute of the email to evaluate.</p>

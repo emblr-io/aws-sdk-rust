@@ -2,6 +2,8 @@
 
 /// <p>Information about an environment variable for a build project or a build.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentVariable {
     /// <p>The name or key of the environment variable.</p>

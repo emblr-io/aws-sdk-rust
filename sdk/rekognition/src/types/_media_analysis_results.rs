@@ -2,6 +2,8 @@
 
 /// <p>Contains the results for a media analysis job created with StartMediaAnalysisJob.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaAnalysisResults {
     /// <p>Provides the S3 bucket name and object name.</p>

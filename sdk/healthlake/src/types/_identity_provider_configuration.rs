@@ -2,6 +2,8 @@
 
 /// <p>The identity provider configuration that you gave when the data store was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityProviderConfiguration {
     /// <p>The authorization strategy that you selected when you created the data store.</p>

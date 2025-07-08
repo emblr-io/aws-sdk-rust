@@ -2,6 +2,8 @@
 
 /// <p>A policy that specifies update behavior for the crawler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectSchemaChangePolicy {
     /// <p>Whether to use the specified update behavior when the crawler finds a changed schema.</p>

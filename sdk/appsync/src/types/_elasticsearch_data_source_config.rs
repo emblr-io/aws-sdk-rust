@@ -3,6 +3,8 @@
 /// <p>Describes an OpenSearch data source configuration.</p>
 /// <p>As of September 2021, Amazon Elasticsearch service is Amazon OpenSearch Service. This configuration is deprecated. For new data sources, use <code>OpenSearchServiceDataSourceConfig</code> to specify an OpenSearch data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticsearchDataSourceConfig {
     /// <p>The endpoint.</p>

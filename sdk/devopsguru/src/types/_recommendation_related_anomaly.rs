@@ -2,6 +2,8 @@
 
 /// <p>Information about an anomaly that is related to a recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationRelatedAnomaly {
     /// <p>An array of objects that represent resources in which DevOps Guru detected anomalous behavior. Each object contains the name and type of the resource.</p>

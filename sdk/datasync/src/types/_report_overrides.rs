@@ -2,6 +2,8 @@
 
 /// <p>The level of detail included in each aspect of your DataSync <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html">task report</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportOverrides {
     /// <p>Specifies the level of reporting for the files, objects, and directories that DataSync attempted to transfer.</p>

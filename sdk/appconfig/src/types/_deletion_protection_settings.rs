@@ -3,6 +3,8 @@
 /// <p>A parameter to configure deletion protection. Deletion protection prevents a user from deleting a configuration profile or an environment if AppConfig has called either <a href="https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html">GetLatestConfiguration</a> or for the configuration profile or from the environment during the specified interval.</p>
 /// <p>The default interval specified by <code>ProtectionPeriodInMinutes</code> is 60. <code>DeletionProtectionCheck</code> skips configuration profiles and environments that were created in the past hour.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeletionProtectionSettings {
     /// <p>A parameter that indicates if deletion protection is enabled or not.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Parameters required to establish ECDH based key exchange.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EcdhDerivationAttributes {
     /// <p>The <code>keyArn</code> of the certificate that signed the client's <code>PublicKeyCertificate</code>.</p>

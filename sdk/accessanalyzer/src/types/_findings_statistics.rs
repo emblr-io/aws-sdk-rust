@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the aggregate statistics for an external or unused access analyzer. Only one parameter can be used in a <code>FindingsStatistics</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FindingsStatistics {
     /// <p>The aggregate statistics for an external access analyzer.</p>

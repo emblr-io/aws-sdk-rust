@@ -2,6 +2,8 @@
 
 /// <p>The default S3 Object Lock retention mode and period that you want to apply to new objects placed in the specified Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketObjectLockConfigurationRuleDefaultRetentionDetails {
     /// <p>The number of days that you want to specify for the default retention period.</p>

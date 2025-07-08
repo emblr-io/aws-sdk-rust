@@ -2,6 +2,8 @@
 
 /// <p>Retrieved information about an application that processed requests, users that made requests, or downstream services, resources, and applications that an application used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetrievedService {
     /// <p>Information about an application that processed requests, users that made requests, or downstream services, resources, and applications that an application used.</p>

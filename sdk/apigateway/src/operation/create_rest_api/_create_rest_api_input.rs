@@ -2,6 +2,8 @@
 
 /// <p>The POST Request to add a new RestApi resource to your collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRestApiInput {
     /// <p>The name of the RestApi.</p>

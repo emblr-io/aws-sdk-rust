@@ -2,6 +2,8 @@
 
 /// <p>The hash algorithms that are available to a code-signing job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HashAlgorithmOptions {
     /// <p>The set of accepted hash algorithms allowed in a code-signing job.</p>

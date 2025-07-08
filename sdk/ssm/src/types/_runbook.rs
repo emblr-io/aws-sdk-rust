@@ -4,6 +4,8 @@
 /// <p>The Automation runbooks specified for the runbook workflow can't run until all required approvals for the change request have been received.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Runbook {
     /// <p>The name of the Automation runbook used in a runbook workflow.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input structure for the JobConfig in an EarthObservationJob.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum JobConfigInput {
     /// <p>An object containing information about the job configuration for BandMath.</p>

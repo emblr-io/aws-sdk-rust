@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for all of a component's properties. Use <code>ComponentProperty</code> to specify the values to render or bind by default.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentProperty {
     /// <p>The value to assign to the component property.</p>

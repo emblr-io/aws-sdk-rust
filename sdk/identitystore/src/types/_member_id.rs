@@ -2,6 +2,8 @@
 
 /// <p>An object containing the identifier of a group member.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MemberId {
     /// <p>An object containing the identifiers of resources that can be members.</p>

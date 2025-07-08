@@ -2,6 +2,8 @@
 
 /// <p>The settings for the source of the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetSourceRequest {
     /// <p>The type of encryption that is used on the content ingested from this source. Allowable encryption types: static-key.</p>

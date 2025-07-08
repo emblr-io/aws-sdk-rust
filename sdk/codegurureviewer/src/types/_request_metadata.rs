@@ -2,6 +2,8 @@
 
 /// <p>Metadata that is associated with a code review. This applies to both pull request and repository analysis code reviews.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestMetadata {
     /// <p>The ID of the request. This is required for a pull request code review.</p>

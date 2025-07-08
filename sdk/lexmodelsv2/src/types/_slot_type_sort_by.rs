@@ -2,6 +2,8 @@
 
 /// <p>Specifies attributes for sorting a list of slot types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotTypeSortBy {
     /// <p>The attribute to use to sort the list of slot types.</p>

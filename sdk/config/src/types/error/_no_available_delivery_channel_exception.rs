@@ -2,6 +2,8 @@
 
 /// <p>There is no delivery channel available to record configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoAvailableDeliveryChannelException {
     /// <p>Error executing the command</p>

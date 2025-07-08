@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the latest device job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LatestDeviceJob {
     /// <p>The target version of the device software.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings on a prompt attempt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PromptAttemptSpecification {
     /// <p>Indicates whether the user can interrupt a speech prompt attempt from the bot.</p>

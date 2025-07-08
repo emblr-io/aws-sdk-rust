@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>ListChangeSets</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListChangeSetsInput {
     /// <p>The name or the Amazon Resource Name (ARN) of the stack for which you want to list change sets.</p>

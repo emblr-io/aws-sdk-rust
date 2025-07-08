@@ -2,6 +2,8 @@
 
 /// <p>The set of patterns that determine the data types redacted in session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InlineRedactionPattern {
     /// <p>The built-in pattern from the list of preconfigured patterns. Either a customPattern or builtInPatternId is required.</p>

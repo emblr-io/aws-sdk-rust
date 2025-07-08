@@ -2,6 +2,8 @@
 
 /// <p>Information about whether DevOps Guru is configured to encrypt server-side data using KMS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsServerSideEncryptionIntegrationConfig {
     /// <p>Describes the specified KMS key.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies an Amazon DocumentDB or MongoDB data store to crawl.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MongoDbTarget {
     /// <p>The name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.</p>

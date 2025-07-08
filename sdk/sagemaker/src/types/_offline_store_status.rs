@@ -2,6 +2,8 @@
 
 /// <p>The status of <code>OfflineStore</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OfflineStoreStatus {
     /// <p>An <code>OfflineStore</code> status.</p>

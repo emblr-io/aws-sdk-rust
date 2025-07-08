@@ -2,6 +2,8 @@
 
 /// <p>The memory size configurations of a container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemorySizeConfiguration {
     /// <p>The amount of memory in the container.</p>

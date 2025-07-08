@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to delete one of your Amazon SES identities (an email address or domain).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteIdentityInput {
     /// <p>The identity to be removed from the list of identities for the Amazon Web Services account.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The summary of a stack refactor operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackRefactorSummary {
     /// <p>The ID associated with the stack refactor created from the <code>CreateStackRefactor</code> action.</p>

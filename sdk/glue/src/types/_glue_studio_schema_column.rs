@@ -2,6 +2,8 @@
 
 /// <p>Specifies a single column in a Glue schema definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueStudioSchemaColumn {
     /// <p>The name of the column in the Glue Studio schema.</p>

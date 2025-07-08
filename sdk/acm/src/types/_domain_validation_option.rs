@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the domain names that you want ACM to use to send you emails that enable you to validate domain ownership.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainValidationOption {
     /// <p>A fully qualified domain name (FQDN) in the certificate request.</p>

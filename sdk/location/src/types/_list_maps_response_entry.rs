@@ -2,6 +2,8 @@
 
 /// <p>Contains details of an existing map resource in your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListMapsResponseEntry {
     /// <p>The name of the associated map resource.</p>

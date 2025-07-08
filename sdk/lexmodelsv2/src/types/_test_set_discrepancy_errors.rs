@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the errors in the test set discrepancy report</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetDiscrepancyErrors {
     /// <p>Contains information about discrepancies found for intents between the test set and the bot.</p>

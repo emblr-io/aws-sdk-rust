@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the schema for an Iceberg table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergSchema {
     /// <p>The schema fields for the table</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about conversation log settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLogsResponse {
     /// <p>The settings for your conversation logs. You can log text, audio, or both.</p>

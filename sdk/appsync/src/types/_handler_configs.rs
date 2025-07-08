@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the <code>OnPublish</code> and <code>OnSubscribe</code> handlers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HandlerConfigs {
     /// <p>The configuration for the <code>OnPublish</code> handler.</p>

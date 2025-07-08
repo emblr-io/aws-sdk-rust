@@ -2,6 +2,8 @@
 
 /// <p>Information about the email attachment files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailAttachment {
     /// <p>A case-sensitive name of the attached file being uploaded.</p>

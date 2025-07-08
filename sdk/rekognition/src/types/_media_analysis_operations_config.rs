@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for a media analysis job. Configuration is operation-specific.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaAnalysisOperationsConfig {
     /// <p>Contains configuration options for a DetectModerationLabels job.</p>

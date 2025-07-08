@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration of the Amazon FSx for OpenZFS volume that you are creating.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateOpenZfsVolumeConfiguration {
     /// <p>The ID of the volume to use as the parent volume of the volume that you are creating.</p>

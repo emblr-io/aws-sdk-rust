@@ -2,6 +2,8 @@
 
 /// <p>A structure representing an open format table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenTableFormatInput {
     /// <p>Specifies an <code>IcebergInput</code> structure that defines an Apache Iceberg metadata table.</p>

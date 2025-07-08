@@ -2,6 +2,8 @@
 
 /// <p>Specifies attributes for sorting a list of bot locales.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotLocaleSortBy {
     /// <p>The bot locale attribute to sort by.</p>

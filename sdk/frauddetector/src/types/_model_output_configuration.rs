@@ -2,6 +2,8 @@
 
 /// <p>Provides the Amazon Sagemaker model output configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelOutputConfiguration {
     /// <p>The format of the model output configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This object contains regions to set up the aggregator and an IAM role to retrieve organization details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationAggregationSource {
     /// <p>ARN of the IAM role used to retrieve Amazon Web Services Organization details associated with the aggregator account.</p>

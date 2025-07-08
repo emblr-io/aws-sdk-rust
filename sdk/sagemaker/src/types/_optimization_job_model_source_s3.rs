@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 location of a source model to optimize with an optimization job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptimizationJobModelSourceS3 {
     /// <p>An Amazon S3 URI that locates a source model to optimize with an optimization job.</p>

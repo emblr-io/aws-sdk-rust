@@ -2,6 +2,8 @@
 
 /// <p>Details about a customer endpoint that was compared in an Inference Recommender job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointInfo {
     /// <p>The name of a customer's endpoint.</p>

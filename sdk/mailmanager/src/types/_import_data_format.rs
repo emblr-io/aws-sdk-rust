@@ -2,6 +2,8 @@
 
 /// <p>The import data format contains the specifications of the input file that would be passed to the address list import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportDataFormat {
     /// <p>The type of file that would be passed as an input for the address list import job.</p>

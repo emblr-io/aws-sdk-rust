@@ -4,6 +4,8 @@
 /// <p>This operation is only supported on the Bitcoin blockchain networks.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListFilteredTransactionEventsSort {
     /// <p>Container on how the results will be sorted by?</p>

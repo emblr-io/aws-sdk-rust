@@ -2,6 +2,8 @@
 
 /// <p>Specifies a field type and keys to protect in stored web request data. This is part of the data protection configuration for a web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldToProtect {
     /// <p>Specifies the web request component type to protect.</p>

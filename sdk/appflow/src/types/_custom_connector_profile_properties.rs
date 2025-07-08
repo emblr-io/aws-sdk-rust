@@ -2,6 +2,8 @@
 
 /// <p>The profile properties required by the custom connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomConnectorProfileProperties {
     /// <p>A map of properties that are required to create a profile for the custom connector.</p>

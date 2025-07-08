@@ -2,6 +2,8 @@
 
 /// <p>Describes the result of a cluster resize operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeResizeOutput {
     /// <p>The node type that the cluster will have after the resize operation is complete.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the name and value of a message header that you add to an email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageHeader {
     /// <p>The name of the message header. The message header name has to meet the following criteria:</p>

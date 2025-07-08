@@ -2,6 +2,8 @@
 
 /// <p>The SharePoint data source location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetrievalResultSharePointLocation {
     /// <p>The SharePoint site URL for the data source location.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request is invalid given the state of the cluster. Check the state of the cluster and the associated operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRequestException {
     /// <p>The Amazon EKS cluster associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a database image, or blueprint. A blueprint describes the major engine version of a database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelationalDatabaseBlueprint {
     /// <p>The ID for the database blueprint.</p>

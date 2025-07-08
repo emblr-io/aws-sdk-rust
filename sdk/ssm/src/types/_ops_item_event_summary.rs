@@ -2,6 +2,8 @@
 
 /// <p>Summary information about an OpsItem event or that associated an OpsItem with a related item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpsItemEventSummary {
     /// <p>The ID of the OpsItem.</p>

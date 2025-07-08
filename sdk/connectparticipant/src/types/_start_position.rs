@@ -2,6 +2,8 @@
 
 /// <p>A filtering option for where to start. For example, if you sent 100 messages, start with message 50.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartPosition {
     /// <p>The ID of the message or event where to start.</p>

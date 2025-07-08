@@ -2,6 +2,8 @@
 
 /// <p>The resource policy that allows Incident Manager to perform actions on resources on your behalf.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicy {
     /// <p>The JSON blob that describes the policy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Metadata related to the configuration properties used during update of a specific network function in a network instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyVnfInfoMetadata {
     /// <p>The network function instance that was updated in the network instance.</p>

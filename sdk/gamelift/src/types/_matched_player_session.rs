@@ -3,6 +3,8 @@
 /// <p>Represents a new player session that is created as a result of a successful FlexMatch match. A successful match automatically creates new player sessions for every player ID in the original matchmaking request.</p>
 /// <p>When players connect to the match's game session, they must include both player ID and player session ID in order to claim their assigned player slot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MatchedPlayerSession {
     /// <p>A unique identifier for a player</p>

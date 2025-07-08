@@ -2,6 +2,8 @@
 
 /// <p>A savings plan that reserves a certain amount of outbound bandwidth usage at a discounted rate each month over a period of time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Offering {
     /// <p>The type of currency that is used for billing. The currencyCode used for all reservations is US dollars.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An app or a set of one or more tests to upload or that have been uploaded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Upload {
     /// <p>The upload's ARN.</p>

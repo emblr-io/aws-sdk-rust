@@ -2,6 +2,8 @@
 
 /// <p>The transport parameters that you want to associate with an outbound media stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationConfiguration {
     /// <p>The IP address where you want MediaConnect to send contents of the media stream.</p>

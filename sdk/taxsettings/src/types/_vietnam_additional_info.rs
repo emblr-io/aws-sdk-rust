@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information to specify for a TRN in Vietnam.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VietnamAdditionalInfo {
     /// <p>The enterprise identification number for tax registration. This field must be provided for successful API operation.</p>

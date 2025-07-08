@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an activity that was performed by a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityResponse {
     /// <p>The unique identifier for the application that the campaign applies to.</p>

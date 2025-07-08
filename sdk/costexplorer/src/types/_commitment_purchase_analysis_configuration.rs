@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the commitment purchase analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommitmentPurchaseAnalysisConfiguration {
     /// <p>The configuration for the Savings Plans purchase analysis.</p>

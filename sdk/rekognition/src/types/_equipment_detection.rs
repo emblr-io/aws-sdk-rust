@@ -2,6 +2,8 @@
 
 /// <p>Information about an item of Personal Protective Equipment (PPE) detected by <code>DetectProtectiveEquipment</code>. For more information, see <code>DetectProtectiveEquipment</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EquipmentDetection {
     /// <p>A bounding box surrounding the item of detected PPE.</p>

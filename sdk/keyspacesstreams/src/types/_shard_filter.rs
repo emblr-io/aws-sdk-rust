@@ -2,6 +2,8 @@
 
 /// <p>A filter used to limit the shards returned by a <code>GetStream</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShardFilter {
     /// <p>The type of shard filter to use, which determines how the shardId parameter is interpreted.</p>

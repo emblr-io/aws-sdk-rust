@@ -2,6 +2,8 @@
 
 /// <p>A summary of the user-based subscription products for a specific user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductUserSummary {
     /// <p>The user name from the identity provider for this product user.</p>

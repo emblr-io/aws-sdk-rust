@@ -2,6 +2,8 @@
 
 /// <p>Structure that contains <code>payloadVersion</code> and <code>targetArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisioningHook {
     /// <p>The payload that was sent to the target function.</p>

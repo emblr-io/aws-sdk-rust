@@ -2,6 +2,8 @@
 
 /// <p>The container that you specified in the request already exists or is being updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerInUseException {
     #[allow(missing_docs)] // documentation missing in model

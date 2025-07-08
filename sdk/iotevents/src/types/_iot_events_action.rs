@@ -2,6 +2,8 @@
 
 /// <p>Sends an AWS IoT Events input, passing in information about the detector model instance and the event that triggered the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotEventsAction {
     /// <p>The name of the AWS IoT Events input where the data is sent.</p>

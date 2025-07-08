@@ -2,6 +2,8 @@
 
 /// <p>A software package that's installed on top of the base image to create a customized image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImagePackage {
     /// <p>The name of the package that's reported to the operating system package manager.</p>

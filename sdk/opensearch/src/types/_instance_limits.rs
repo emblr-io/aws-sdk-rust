@@ -2,6 +2,8 @@
 
 /// <p>Instance-related attributes that are available for a given instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceLimits {
     /// <p>Limits on the number of instances that can be created for a given instance type.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The failure reason, if any, for a create or delete endpoint operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedReason {
     /// <p>The failure code, if any, for a create or delete endpoint operation.</p>

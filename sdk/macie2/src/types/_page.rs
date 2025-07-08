@@ -2,6 +2,8 @@
 
 /// <p>Specifies the location of an occurrence of sensitive data in an Adobe Portable Document Format file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Page {
     /// <p>Reserved for future use.</p>

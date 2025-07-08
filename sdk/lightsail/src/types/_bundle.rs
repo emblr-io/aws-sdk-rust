@@ -2,6 +2,8 @@
 
 /// <p>Describes a bundle, which is a set of specs describing your virtual private server (or <i>instance</i>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Bundle {
     /// <p>The price in US dollars (<code>5.0</code>) of the bundle.</p>

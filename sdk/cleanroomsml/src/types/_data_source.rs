@@ -2,6 +2,8 @@
 
 /// <p>Defines information about the Glue data source that contains the training data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSource {
     /// <p>A GlueDataSource object that defines the catalog ID, database name, and table name for the training data.</p>

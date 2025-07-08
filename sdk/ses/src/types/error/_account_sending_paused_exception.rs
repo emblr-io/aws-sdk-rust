@@ -3,6 +3,8 @@
 /// <p>Indicates that email sending is disabled for your entire Amazon SES account.</p>
 /// <p>You can enable or disable email sending for your Amazon SES account using <code>UpdateAccountSendingEnabled</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountSendingPausedException {
     #[allow(missing_docs)] // documentation missing in model

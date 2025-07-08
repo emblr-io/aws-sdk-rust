@@ -2,6 +2,8 @@
 
 /// <p>An element within a grid layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GridLayoutElement {
     /// <p>A unique identifier for an element within a grid layout.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This contains metadata about a restore testing plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreTestingPlanForUpdate {
     /// <p>Required: <code>Algorithm</code>; <code>RecoveryPointTypes</code>; <code>IncludeVaults</code> (<i>one or more</i>).</p>

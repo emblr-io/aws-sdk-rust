@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the configuration element or attribute that was sanitized in the configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SanitizationWarning {
     /// <p>The name of the configuration attribute that has been sanitized.</p>

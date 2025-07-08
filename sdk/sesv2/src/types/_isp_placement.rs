@@ -2,6 +2,8 @@
 
 /// <p>An object that describes how email sent during the predictive inbox placement test was handled by a certain email provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IspPlacement {
     /// <p>The name of the email provider that the inbox placement data applies to.</p>

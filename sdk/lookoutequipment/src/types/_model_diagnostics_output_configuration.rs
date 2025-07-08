@@ -2,6 +2,8 @@
 
 /// <p>Output configuration information for the pointwise model diagnostics for an Amazon Lookout for Equipment model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelDiagnosticsOutputConfiguration {
     /// <p>The Amazon S3 location for the pointwise model diagnostics.</p>

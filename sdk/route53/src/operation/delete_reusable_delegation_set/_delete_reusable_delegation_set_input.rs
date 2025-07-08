@@ -2,6 +2,8 @@
 
 /// <p>A request to delete a reusable delegation set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteReusableDelegationSetInput {
     /// <p>The ID of the reusable delegation set that you want to delete.</p>

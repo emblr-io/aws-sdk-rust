@@ -2,6 +2,8 @@
 
 /// <p>The request of the Data Quality rule recommendation request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartDataQualityRuleRecommendationRunInput {
     /// <p>The data source (Glue table) associated with this run.</p>

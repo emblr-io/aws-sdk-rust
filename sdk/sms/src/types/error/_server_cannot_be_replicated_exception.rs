@@ -2,6 +2,8 @@
 
 /// <p>The specified server cannot be replicated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerCannotBeReplicatedException {
     #[allow(missing_docs)] // documentation missing in model

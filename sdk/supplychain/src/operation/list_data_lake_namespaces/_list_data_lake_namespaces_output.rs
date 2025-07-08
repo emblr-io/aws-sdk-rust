@@ -2,6 +2,8 @@
 
 /// <p>The response parameters of ListDataLakeNamespaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDataLakeNamespacesOutput {
     /// <p>The list of fetched namespace details. Noted it only contains custom namespaces, pre-defined namespaces are not included.</p>

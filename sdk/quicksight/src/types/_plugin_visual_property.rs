@@ -2,6 +2,8 @@
 
 /// <p>The key value pair of the persisted property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisualProperty {
     /// <p>The name of the plugin visual property.</p>

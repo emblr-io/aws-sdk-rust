@@ -2,6 +2,8 @@
 
 /// <p>A set amount of time that an escalation plan or engagement plan engages the specified contacts or contact methods.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Stage {
     /// <p>The time to wait until beginning the next stage. The duration can only be set to 0 if a target is specified.</p>

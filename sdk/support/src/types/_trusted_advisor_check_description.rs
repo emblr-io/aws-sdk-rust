@@ -2,6 +2,8 @@
 
 /// <p>The description and metadata for a Trusted Advisor check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustedAdvisorCheckDescription {
     /// <p>The unique identifier for the Trusted Advisor check.</p>

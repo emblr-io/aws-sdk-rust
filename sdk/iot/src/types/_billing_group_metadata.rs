@@ -2,6 +2,8 @@
 
 /// <p>Additional information about the billing group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BillingGroupMetadata {
     /// <p>The date the billing group was created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Indicates the direction the eyes are gazing in (independent of the head pose) as determined by its pitch and yaw.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EyeDirection {
     /// <p>Value representing eye direction on the yaw axis.</p>

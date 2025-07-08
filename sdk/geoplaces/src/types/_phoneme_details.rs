@@ -2,6 +2,8 @@
 
 /// <p>The phoneme details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhonemeDetails {
     /// <p>List of <code>PhonemeTranscription</code>. See <code>PhonemeTranscription</code> for fields.</p>

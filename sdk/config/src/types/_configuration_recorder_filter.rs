@@ -2,6 +2,8 @@
 
 /// <p>Filters configuration recorders by recording scope.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationRecorderFilter {
     /// <p>The name of the type of filter. Currently, only <code>recordingScope</code> is supported.</p>

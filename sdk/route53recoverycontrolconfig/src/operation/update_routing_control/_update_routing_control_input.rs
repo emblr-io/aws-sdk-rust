@@ -2,6 +2,8 @@
 
 /// <p>The details of the routing control that you're updating.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRoutingControlInput {
     /// <p>The Amazon Resource Name (ARN) of the routing control.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a core network change event. This can be a change to a segment, attachment, route, etc.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoreNetworkChangeEvent {
     /// <p>Describes the type of change event.</p>

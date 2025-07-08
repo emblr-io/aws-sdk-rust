@@ -2,6 +2,8 @@
 
 /// <p>Provides configuration information for a slot type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotTypeConfiguration {
     /// <p>A regular expression used to validate the value of a slot.</p>

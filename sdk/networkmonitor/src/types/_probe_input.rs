@@ -2,6 +2,8 @@
 
 /// <p>Defines a probe when creating a probe or monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProbeInput {
     /// <p>The ARN of the subnet.</p>

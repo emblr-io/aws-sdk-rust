@@ -2,6 +2,8 @@
 
 /// <p>A set of actions that correspond to Amazon QuickSight permissions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Capabilities {
     /// <p>The ability to export to CSV files from the UI.</p>

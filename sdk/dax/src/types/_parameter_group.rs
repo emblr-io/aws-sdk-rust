@@ -2,6 +2,8 @@
 
 /// <p>A named set of parameters that are applied to all of the nodes in a DAX cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterGroup {
     /// <p>The name of the parameter group.</p>

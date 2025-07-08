@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the action that you can take to respond to the alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerAction {
     /// <p>The name of the action. The action name can be one of the following values:</p>

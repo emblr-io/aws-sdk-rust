@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Amazon S3 is being used as the flow source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3SourceProperties {
     /// <p>The Amazon S3 bucket name where the source files are stored.</p>

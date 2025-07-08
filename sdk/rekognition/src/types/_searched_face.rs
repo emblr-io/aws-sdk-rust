@@ -2,6 +2,8 @@
 
 /// <p>Provides face metadata such as FaceId, BoundingBox, Confidence of the input face used for search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchedFace {
     /// <p>Unique identifier assigned to the face.</p>

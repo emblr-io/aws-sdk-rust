@@ -2,6 +2,8 @@
 
 /// <p>Describes the properties of the access that was specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribedAccess {
     /// <p>The landing directory (folder) for a user when they log in to the server using the client.</p>

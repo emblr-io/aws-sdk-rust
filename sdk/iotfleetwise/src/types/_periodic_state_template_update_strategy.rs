@@ -2,6 +2,8 @@
 
 /// <p>Vehicles associated with the state template will stream telemetry data during a specified time period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PeriodicStateTemplateUpdateStrategy {
     /// <p>The length of time between state template updates.</p>

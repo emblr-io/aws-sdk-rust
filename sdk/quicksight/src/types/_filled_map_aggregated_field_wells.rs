@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field well of the filled map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilledMapAggregatedFieldWells {
     /// <p>The aggregated location field well of the filled map. Values are grouped by location fields.</p>

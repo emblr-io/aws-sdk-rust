@@ -3,6 +3,8 @@
 /// <p>The parameters for using a self-managed Apache Kafka stream as a source.</p>
 /// <p>A <i>self managed</i> cluster refers to any Apache Kafka cluster not hosted by Amazon Web Services. This includes both clusters you manage yourself, as well as those hosted by a third-party provider, such as <a href="https://www.confluent.io/">Confluent Cloud</a>, <a href="https://www.cloudkarafka.com/">CloudKarafka</a>, or <a href="https://redpanda.com/">Redpanda</a>. For more information, see <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-kafka.html">Apache Kafka streams as a source</a> in the <i>Amazon EventBridge User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PipeSourceSelfManagedKafkaParameters {
     /// <p>The name of the topic that the pipe will read from.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a monitor alert.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringAlertSummary {
     /// <p>The name of a monitoring alert.</p>

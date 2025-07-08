@@ -2,6 +2,8 @@
 
 /// <p>The description of the log delivery settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogDeliveryDescription {
     /// <p>The workers can send worker logs to different destination types. This configuration specifies the details of these destinations.</p>

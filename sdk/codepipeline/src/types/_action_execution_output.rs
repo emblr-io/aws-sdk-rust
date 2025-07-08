@@ -2,6 +2,8 @@
 
 /// <p>Output details listed for an action execution, such as the action execution result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecutionOutput {
     /// <p>Details of output artifacts of the action that correspond to the action execution.</p>

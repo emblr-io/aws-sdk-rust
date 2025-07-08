@@ -2,6 +2,8 @@
 
 /// <p>A summary report for the attribute for a Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegionalSummary {
     /// <p>The Amazon Web Services Region.</p>

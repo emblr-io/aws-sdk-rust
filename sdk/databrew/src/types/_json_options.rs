@@ -2,6 +2,8 @@
 
 /// <p>Represents the JSON-specific options that define how input is to be interpreted by Glue DataBrew.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonOptions {
     /// <p>A value that specifies whether JSON input contains embedded new line characters.</p>

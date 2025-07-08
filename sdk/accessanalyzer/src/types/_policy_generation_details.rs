@@ -2,6 +2,8 @@
 
 /// <p>Contains the ARN details about the IAM entity for which the policy is generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyGenerationDetails {
     /// <p>The ARN of the IAM entity (user or role) for which you are generating a policy.</p>

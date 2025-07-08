@@ -2,6 +2,8 @@
 
 /// <p>The specified resource can't be found. Check the information you provided in your last request, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidResourceException {
     #[allow(missing_docs)] // documentation missing in model

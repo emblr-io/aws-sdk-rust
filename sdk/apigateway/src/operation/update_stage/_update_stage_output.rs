@@ -2,6 +2,8 @@
 
 /// <p>Represents a unique identifier for a version of a deployed RestApi that is callable by users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateStageOutput {
     /// <p>The identifier of the Deployment that the stage points to.</p>

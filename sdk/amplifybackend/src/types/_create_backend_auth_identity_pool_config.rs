@@ -2,6 +2,8 @@
 
 /// <p>Describes authorization configurations for the auth resources, configured as a part of your Amplify project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBackendAuthIdentityPoolConfig {
     /// <p>Name of the Amazon Cognito identity pool used for authorization.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about provisioned throughput for EBS storage volumes attached to kafka broker nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedThroughput {
     /// <p>Provisioned throughput is enabled or not.</p>

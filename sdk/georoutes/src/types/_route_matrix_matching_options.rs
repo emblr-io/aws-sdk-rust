@@ -2,6 +2,8 @@
 
 /// <p>Matching options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RouteMatrixMatchingOptions {
     /// <p>Attempts to match the provided position to a road similar to the provided name.</p>

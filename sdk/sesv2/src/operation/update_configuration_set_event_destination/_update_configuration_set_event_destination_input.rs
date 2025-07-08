@@ -2,6 +2,8 @@
 
 /// <p>A request to change the settings for an event destination for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateConfigurationSetEventDestinationInput {
     /// <p>The name of the configuration set that contains the event destination to modify.</p>

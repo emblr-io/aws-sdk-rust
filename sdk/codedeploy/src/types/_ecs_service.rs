@@ -2,6 +2,8 @@
 
 /// <p>Contains the service and cluster names used to identify an Amazon ECS deployment's target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsService {
     /// <p>The name of the target Amazon ECS service.</p>

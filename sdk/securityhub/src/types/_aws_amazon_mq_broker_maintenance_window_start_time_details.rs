@@ -2,6 +2,8 @@
 
 /// <p>The scheduled time period (UTC) during which Amazon MQ begins to apply pending updates or patches to the broker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAmazonMqBrokerMaintenanceWindowStartTimeDetails {
     /// <p>The day of the week on which the maintenance window falls.</p>

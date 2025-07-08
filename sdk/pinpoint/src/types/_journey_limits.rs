@@ -2,6 +2,8 @@
 
 /// <p>Specifies limits on the messages that a journey can send and the number of times participants can enter a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneyLimits {
     /// <p>The maximum number of messages that the journey can send to a single participant during a 24-hour period. The maximum value is 100.</p>

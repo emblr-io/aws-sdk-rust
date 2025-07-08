@@ -2,6 +2,8 @@
 
 /// <p>Add a flow source to an existing bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddBridgeFlowSourceRequest {
     /// <p>The Amazon Resource Number (ARN) of the flow to use as a source of this bridge.</p>

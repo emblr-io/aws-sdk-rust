@@ -2,6 +2,8 @@
 
 /// <p>Entity that comprises information on operating modes in data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultipleOperatingModes {
     /// <p>Indicates whether there is a potential data issue related to having multiple operating modes.</p>

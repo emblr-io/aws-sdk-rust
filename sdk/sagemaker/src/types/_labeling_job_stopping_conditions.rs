@@ -4,6 +4,8 @@
 /// <p>Labeling jobs fail after 30 days with an appropriate client error message.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelingJobStoppingConditions {
     /// <p>The maximum number of objects that can be labeled by human workers.</p>

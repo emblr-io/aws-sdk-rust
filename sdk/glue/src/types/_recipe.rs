@@ -2,6 +2,8 @@
 
 /// <p>A Glue Studio node that uses a Glue DataBrew recipe in Glue jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Recipe {
     /// <p>The name of the Glue Studio node.</p>

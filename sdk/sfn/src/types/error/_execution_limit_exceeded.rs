@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of running executions has been reached. Running executions must end or be stopped before a new execution can be started.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

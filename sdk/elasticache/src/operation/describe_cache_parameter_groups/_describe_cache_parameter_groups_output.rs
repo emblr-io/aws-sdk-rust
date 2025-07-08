@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>DescribeCacheParameterGroups</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeCacheParameterGroupsOutput {
     /// <p>Provides an identifier to allow retrieval of paginated results.</p>

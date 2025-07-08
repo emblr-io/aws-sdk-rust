@@ -2,6 +2,8 @@
 
 /// <p>The directory service doesn't recognize the credentials supplied by WorkMail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryServiceAuthenticationFailedException {
     #[allow(missing_docs)] // documentation missing in model

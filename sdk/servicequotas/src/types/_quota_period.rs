@@ -2,6 +2,8 @@
 
 /// <p>Information about the quota period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuotaPeriod {
     /// <p>The value associated with the reported <code>PeriodUnit</code>.</p>

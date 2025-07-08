@@ -3,6 +3,8 @@
 /// <p>Settings for one clip in a composition. All jobs in a playlist must have the same clip settings.</p>
 #[deprecated]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Clip {
     /// <p>Settings that determine when a clip begins and how long it lasts.</p>

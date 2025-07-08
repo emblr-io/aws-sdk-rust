@@ -2,6 +2,8 @@
 
 /// <p>Contains vulnerability counts for a specific image pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImagePipelineAggregation {
     /// <p>The Amazon Resource Name (ARN) that identifies the image pipeline for this aggregation.</p>

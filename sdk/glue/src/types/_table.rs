@@ -2,6 +2,8 @@
 
 /// <p>Represents a collection of related data organized in columns and rows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Table {
     /// <p>The table name. For Hive compatibility, this must be entirely lowercase.</p>

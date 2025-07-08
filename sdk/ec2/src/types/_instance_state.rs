@@ -2,6 +2,8 @@
 
 /// <p>Describes the current state of an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceState {
     /// <p>The state of the instance as a 16-bit unsigned integer.</p>

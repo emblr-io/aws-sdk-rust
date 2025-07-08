@@ -2,6 +2,8 @@
 
 /// <p>The ID for the provisioned product resources that are part of a resource group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineWorkflowResourceIdentifier {
     /// <p>The unique key-value pair for a tag that identifies provisioned product resources.</p>

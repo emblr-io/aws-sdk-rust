@@ -2,6 +2,8 @@
 
 /// <p>Provides help information on the registration section.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationSectionDisplayHints {
     /// <p>The title of the display hint.</p>

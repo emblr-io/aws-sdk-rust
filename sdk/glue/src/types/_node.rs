@@ -2,6 +2,8 @@
 
 /// <p>A node represents an Glue component (trigger, crawler, or job) on a workflow graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Node {
     /// <p>The type of Glue component represented by the node.</p>

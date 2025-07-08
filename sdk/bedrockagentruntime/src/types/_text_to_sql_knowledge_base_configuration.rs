@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a knowledge base to use in transformation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextToSqlKnowledgeBaseConfiguration {
     /// <p>The ARN of the knowledge base</p>

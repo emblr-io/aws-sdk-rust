@@ -2,6 +2,8 @@
 
 /// <p>The POST request to import API keys from an external source, such as a CSV-formatted file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportApiKeysInput {
     /// <p>The payload of the POST request to import API keys. For the payload format, see API Key File Format.</p>

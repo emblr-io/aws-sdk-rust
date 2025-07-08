@@ -2,6 +2,8 @@
 
 /// <p>The topic specific controls configured for an Amazon Q Business application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicConfiguration {
     /// <p>A name for your topic control configuration.</p>

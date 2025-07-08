@@ -2,6 +2,8 @@
 
 /// <p>One or more actions that Security Hub takes when a finding matches the defined criteria of a rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesAction {
     /// <p>Specifies the type of action that Security Hub takes when a finding matches the defined criteria of a rule.</p>

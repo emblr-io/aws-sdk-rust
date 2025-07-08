@@ -2,6 +2,8 @@
 
 /// <p>The query execution timeline, statistics on input and output rows and bytes, and the different query stages that form the query execution plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryRuntimeStatistics {
     /// <p>Timeline statistics such as query queue time, planning time, execution time, service processing time, and total execution time.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A mapping between an Amazon Web Services resource and a Lambda function. For details, see <code>CreateEventSourceMapping</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteEventSourceMappingOutput {
     /// <p>The identifier of the event source mapping.</p>

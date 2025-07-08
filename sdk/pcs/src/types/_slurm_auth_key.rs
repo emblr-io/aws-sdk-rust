@@ -2,6 +2,8 @@
 
 /// <p>The shared Slurm key for authentication, also known as the <b>cluster secret</b>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlurmAuthKey {
     /// <p>The Amazon Resource Name (ARN) of the the shared Slurm key.</p>

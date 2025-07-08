@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the category rule that was matched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisCategoryDetails {
     /// <p>List of PointOfInterest - objects describing a single match of a rule.</p>

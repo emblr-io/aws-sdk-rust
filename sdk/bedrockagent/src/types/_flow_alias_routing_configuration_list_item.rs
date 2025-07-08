@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a version that the alias maps to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowAliasRoutingConfigurationListItem {
     /// <p>The version that the alias maps to.</p>

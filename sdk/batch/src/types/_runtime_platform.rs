@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the compute environment architecture for Batch jobs on Fargate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuntimePlatform {
     /// <p>The operating system for the compute environment. Valid values are: <code>LINUX</code> (default), <code>WINDOWS_SERVER_2019_CORE</code>, <code>WINDOWS_SERVER_2019_FULL</code>, <code>WINDOWS_SERVER_2022_CORE</code>, and <code>WINDOWS_SERVER_2022_FULL</code>.</p><note>

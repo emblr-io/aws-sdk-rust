@@ -2,6 +2,8 @@
 
 /// <p>A filter object that lets you call <code>ListControlOperations</code> with a specific filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlOperationFilter {
     /// <p>The set of <code>controlIdentifier</code> returned by the filter.</p>

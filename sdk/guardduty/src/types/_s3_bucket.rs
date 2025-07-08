@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon S3 bucket policies and encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Bucket {
     /// <p>The owner ID of the associated S3Amazon S3bucket.</p>

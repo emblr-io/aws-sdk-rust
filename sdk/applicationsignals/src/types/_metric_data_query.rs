@@ -5,6 +5,8 @@
 /// <p>For more information about metric math expressions, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html">CloudWatchUse metric math</a>.</p>
 /// <p>Within each <code>MetricDataQuery</code> object, you must specify either <code>Expression</code> or <code>MetricStat</code> but not both.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricDataQuery {
     /// <p>A short name used to tie this object to the results in the response. This <code>Id</code> must be unique within a <code>MetricDataQueries</code> array. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the metric math expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.</p>

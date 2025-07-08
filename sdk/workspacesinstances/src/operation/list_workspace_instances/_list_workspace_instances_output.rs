@@ -2,6 +2,8 @@
 
 /// <p>Contains the list of WorkSpaces Instances matching the specified criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListWorkspaceInstancesOutput {
     /// <p>Collection of WorkSpaces Instances returned by the query.</p>

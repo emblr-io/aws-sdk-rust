@@ -2,6 +2,8 @@
 
 /// <p>Details about the source content ranking data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RankingData {
     /// <p>The relevance level of the recommendation.</p>

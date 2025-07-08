@@ -2,6 +2,8 @@
 
 /// <p>Notices provide information around factors that may have influenced snapping in a manner atypical to the standard use cases.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoadSnapNotice {
     /// <p>Code corresponding to the issue.</p>

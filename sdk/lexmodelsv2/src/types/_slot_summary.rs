@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a slot, a value that the bot elicits from the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotSummary {
     /// <p>The unique identifier of the slot.</p>

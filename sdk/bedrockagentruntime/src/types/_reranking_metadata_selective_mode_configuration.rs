@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for the metadata fields to include or exclude when considering reranking. If you include the <code>fieldsToExclude</code> field, the reranker ignores all the metadata fields that you specify. If you include the <code>fieldsToInclude</code> field, the reranker uses only the metadata fields that you specify and ignores all others. You can include only one of these fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum RerankingMetadataSelectiveModeConfiguration {
     /// <p>An array of objects, each of which specifies a metadata field to exclude from consideration when reranking.</p>

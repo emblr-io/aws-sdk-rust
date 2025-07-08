@@ -2,6 +2,8 @@
 
 /// <p>The time units that, with <code>IdTokenValidity</code>, <code>AccessTokenValidity</code>, and <code>RefreshTokenValidity</code>, set and display the duration of ID, access, and refresh tokens for an app client. You can assign a separate token validity unit to each type of token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TokenValidityUnitsType {
     /// <p>A time unit for the value that you set in the <code>AccessTokenValidity</code> parameter. The default <code>AccessTokenValidity</code> time unit is <code>hours</code>. <code>AccessTokenValidity</code> duration can range from five minutes to one day.</p>

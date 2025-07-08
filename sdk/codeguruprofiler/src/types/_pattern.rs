@@ -2,6 +2,8 @@
 
 /// <p>A set of rules used to make a recommendation during an analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Pattern {
     /// <p>The universally unique identifier (UUID) of this pattern.</p>

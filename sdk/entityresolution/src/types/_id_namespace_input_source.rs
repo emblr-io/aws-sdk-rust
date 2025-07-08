@@ -2,6 +2,8 @@
 
 /// <p>An object containing <code>InputSourceARN</code> and <code>SchemaName</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdNamespaceInputSource {
     /// <p>An Glue table Amazon Resource Name (ARN) or a matching workflow ARN for the input source table.</p>

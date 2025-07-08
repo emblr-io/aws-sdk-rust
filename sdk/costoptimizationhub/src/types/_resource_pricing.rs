@@ -2,6 +2,8 @@
 
 /// <p>Contains pricing information about the specified resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePricing {
     /// <p>The savings estimate using Amazon Web Services public pricing without incorporating any discounts.</p>

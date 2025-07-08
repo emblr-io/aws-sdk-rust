@@ -2,6 +2,8 @@
 
 /// <p>Contains the filter to apply to requests. You can specify up to 10 filters for a request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>Name of the filter to use.</p><note>

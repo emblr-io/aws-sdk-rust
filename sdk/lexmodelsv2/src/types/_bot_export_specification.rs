@@ -2,6 +2,8 @@
 
 /// <p>Provides the identity of a the bot that was exported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotExportSpecification {
     /// <p>The identifier of the bot assigned by Amazon Lex.</p>

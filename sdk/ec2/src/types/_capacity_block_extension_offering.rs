@@ -2,6 +2,8 @@
 
 /// <p>The recommended Capacity Block extension that fits your search requirements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityBlockExtensionOffering {
     /// <p>The ID of the Capacity Block extension offering.</p>

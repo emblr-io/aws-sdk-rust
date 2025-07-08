@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an update repository description operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRepositoryDescriptionInput {
     /// <p>The name of the repository to set or change the comment or description for.</p>

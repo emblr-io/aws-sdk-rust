@@ -2,6 +2,8 @@
 
 /// <p>Represents whether certain values are recognized as null values for removal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NullCheckBoxList {
     /// <p>Specifies that an empty string is considered as a null value.</p>

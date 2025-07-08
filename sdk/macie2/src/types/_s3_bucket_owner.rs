@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the Amazon Web Services account that owns an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3BucketOwner {
     /// <p>The display name of the account that owns the bucket.</p>

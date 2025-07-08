@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the last failure reason as reported by one Amazon Route 53 health checker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheckObservation {
     /// <p>The region of the Amazon Route 53 health checker that provided the status in <code>StatusReport</code>.</p>

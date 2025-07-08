@@ -2,6 +2,8 @@
 
 /// <p>The API key credentials required for API key authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ApiKeyCredentials {
     /// <p>The API key required for API key authentication.</p>

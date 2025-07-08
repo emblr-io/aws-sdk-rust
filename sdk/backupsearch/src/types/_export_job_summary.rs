@@ -2,6 +2,8 @@
 
 /// <p>This is the summary of an export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportJobSummary {
     /// <p>This is the unique string that identifies a specific export job.</p>

@@ -2,9 +2,12 @@
 
 /// <p>A structure for the output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct GetWorkUnitResultsOutput {
     /// <p>Rows returned from the <code>GetWorkUnitResults</code> operation as a stream of Apache Arrow v1.0 messages.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub result_stream: ::aws_smithy_types::byte_stream::ByteStream,
     _request_id: Option<String>,
 }

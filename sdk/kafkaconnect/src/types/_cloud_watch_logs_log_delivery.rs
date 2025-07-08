@@ -2,6 +2,8 @@
 
 /// <p>The settings for delivering connector logs to Amazon CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsLogDelivery {
     /// <p>Whether log delivery to Amazon CloudWatch Logs is enabled.</p>

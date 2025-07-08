@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration parameters for creating a new WorkSpaces Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateWorkspaceInstanceInput {
     /// <p>Unique token to ensure idempotent instance creation, preventing duplicate workspace launches.</p>

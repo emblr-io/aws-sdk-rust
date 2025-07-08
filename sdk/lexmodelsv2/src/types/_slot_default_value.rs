@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default value to use when a user doesn't provide a value for a slot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotDefaultValue {
     /// <p>The default value to use when a user doesn't provide a value for a slot.</p>

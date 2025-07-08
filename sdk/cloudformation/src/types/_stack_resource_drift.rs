@@ -4,6 +4,8 @@
 /// <p>Resources that don't currently support drift detection can't be checked. For a list of resources that support drift detection, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html">Resource type support for imports and drift detection</a>.</p>
 /// <p>Use <code>DetectStackResourceDrift</code> to detect drift on individual resources, or <code>DetectStackDrift</code> to detect drift on all resources in a given stack that support drift detection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackResourceDrift {
     /// <p>The ID of the stack.</p>

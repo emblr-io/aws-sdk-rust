@@ -2,6 +2,8 @@
 
 /// <p>The status of an updated pointer (PTR) record for an Elastic IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PtrUpdateStatus {
     /// <p>The value for the PTR record update.</p>

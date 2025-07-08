@@ -13,6 +13,8 @@
 /// </ul>
 /// <p>If automatic domain delegation fails, or if you manage the DNS of your domain using a service other than Route&nbsp;53, then you must manually add the Lightsail DNS zone name servers to your domain in order to delegate management of its DNS to Lightsail. For more information, see <a href="https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-how-to-create-dns-entry">Creating a DNS zone to manage your domain’s records in Amazon Lightsail</a> in the <i>Amazon Lightsail Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisteredDomainDelegationInfo {
     /// <p>An object that describes the state of the name server records that are automatically added to the Route&nbsp;53 domain by Lightsail.</p>

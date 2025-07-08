@@ -2,6 +2,8 @@
 
 /// <p>Template post migration custom action filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateActionsRequestFilters {
     /// <p>Action IDs to filter template post migration custom actions by.</p>

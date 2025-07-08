@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a single utterance that was made to your bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceData {
     /// <p>The text that was entered by the user or the text representation of an audio clip.</p>

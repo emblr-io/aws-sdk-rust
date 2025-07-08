@@ -2,6 +2,8 @@
 
 /// <p>Configuration information when authentication mode is FEDERATED.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FederationParameters {
     /// <p>SAML 2.0 Metadata document from identity provider (IdP).</p>

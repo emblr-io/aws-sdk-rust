@@ -2,6 +2,8 @@
 
 /// <p>Records a successful request to stop a specified <code>JobRun</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchStopJobRunSuccessfulSubmission {
     /// <p>The name of the job definition used in the job run that was stopped.</p>

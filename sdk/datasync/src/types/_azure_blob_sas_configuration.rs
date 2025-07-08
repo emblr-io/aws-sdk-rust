@@ -3,6 +3,8 @@
 /// <p>The shared access signature (SAS) configuration that allows DataSync to access your Microsoft Azure Blob Storage.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/creating-azure-blob-location.html#azure-blob-sas-tokens">SAS tokens</a> for accessing your Azure Blob Storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AzureBlobSasConfiguration {
     /// <p>Specifies a SAS token that provides permissions to access your Azure Blob Storage.</p>

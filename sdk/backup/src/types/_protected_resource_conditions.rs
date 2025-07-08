@@ -2,6 +2,8 @@
 
 /// <p>The conditions that you define for resources in your restore testing plan using tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedResourceConditions {
     /// <p>Filters the values of your tagged resources for only those resources that you tagged with the same value. Also called "exact matching."</p>

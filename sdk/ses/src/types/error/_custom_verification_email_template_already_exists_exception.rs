@@ -2,6 +2,8 @@
 
 /// <p>Indicates that a custom verification email template with the name you specified already exists.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomVerificationEmailTemplateAlreadyExistsException {
     /// <p>Indicates that the provided custom verification email template with the specified template name already exists.</p>

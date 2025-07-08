@@ -2,6 +2,8 @@
 
 /// <p>The reference rule that partially matches the <code>ViolationTarget</code> rule and violation reason.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartialMatch {
     /// <p>The reference rule from the primary security group of the Firewall Manager policy.</p>

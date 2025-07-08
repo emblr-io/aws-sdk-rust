@@ -2,6 +2,8 @@
 
 /// <p>The owner of the specified snapshot has not authorized your account to access the snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessToSnapshotDeniedFault {
     #[allow(missing_docs)] // documentation missing in model

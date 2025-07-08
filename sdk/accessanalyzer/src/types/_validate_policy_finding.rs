@@ -2,6 +2,8 @@
 
 /// <p>A finding in a policy. Each finding is an actionable recommendation that can be used to improve the policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidatePolicyFinding {
     /// <p>A localized message that explains the finding and provides guidance on how to address it.</p>

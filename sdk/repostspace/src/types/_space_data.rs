@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains some information about a private re:Post in the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SpaceData {
     /// <p>The unique ID of the private re:Post.</p>

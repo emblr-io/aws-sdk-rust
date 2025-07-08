@@ -2,6 +2,8 @@
 
 /// <p>Information about the call disconnect experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisconnectDetails {
     /// <p>Indicates the potential disconnection issues for a call. This field is not populated if the service does not detect potential issues.</p>

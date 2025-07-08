@@ -4,6 +4,8 @@
 /// <p>You cannot use <code>dedicatedHostId</code> and <code>placementGroupId</code> together in the same <code>HostInfoForCreate</code>object. This results in a <code>ValidationException</code> response.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostInfoForCreate {
     /// <p>The DNS hostname of the host. DNS hostnames for hosts must be unique across Amazon EVS environments and within VCF.</p>

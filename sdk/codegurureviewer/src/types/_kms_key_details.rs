@@ -8,6 +8,8 @@
 /// <p>The ID of the Amazon Web Services KMS key that is associated with a repository association.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsKeyDetails {
     /// <p>The ID of the Amazon Web Services KMS key that is associated with a repository association.</p>

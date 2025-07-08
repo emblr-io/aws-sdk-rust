@@ -2,6 +2,8 @@
 
 /// <p>Details about when an on-call rotation shift begins or ends.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HandOffTime {
     /// <p>The hour when an on-call rotation shift begins or ends.</p>

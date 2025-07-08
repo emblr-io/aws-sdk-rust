@@ -2,6 +2,8 @@
 
 /// <p>Defines a disruption compliance recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationDisruptionCompliance {
     /// <p>The expected compliance status after applying the recommended configuration change.</p>

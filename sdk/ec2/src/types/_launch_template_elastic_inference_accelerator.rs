@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Describes an elastic inference accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateElasticInferenceAccelerator {
     /// <p>The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge.</p>

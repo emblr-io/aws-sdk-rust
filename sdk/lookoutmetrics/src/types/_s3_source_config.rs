@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of the S3 bucket that contains source files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3SourceConfig {
     /// <p>The ARN of an IAM role that has read and write access permissions to the source S3 bucket.</p>

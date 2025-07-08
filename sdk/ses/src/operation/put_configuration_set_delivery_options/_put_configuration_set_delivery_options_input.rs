@@ -2,6 +2,8 @@
 
 /// <p>A request to modify the delivery options for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutConfigurationSetDeliveryOptionsInput {
     /// <p>The name of the configuration set.</p>

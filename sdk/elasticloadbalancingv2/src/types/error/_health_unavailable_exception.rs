@@ -2,6 +2,8 @@
 
 /// <p>The health of the specified targets could not be retrieved due to an internal error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

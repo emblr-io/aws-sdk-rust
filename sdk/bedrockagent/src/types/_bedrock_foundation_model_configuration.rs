@@ -2,6 +2,8 @@
 
 /// <p>Settings for a foundation model used to parse documents for a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockFoundationModelConfiguration {
     /// <p>The ARN of the foundation model to use for parsing.</p>

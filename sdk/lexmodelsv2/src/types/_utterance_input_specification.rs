@@ -2,6 +2,8 @@
 
 /// <p>Contains information about input of an utterance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceInputSpecification {
     /// <p>A text input transcription of the utterance. It is only applicable for test-sets containing text data.</p>

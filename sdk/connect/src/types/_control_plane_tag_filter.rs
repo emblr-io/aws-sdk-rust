@@ -8,6 +8,8 @@
 /// <p>Inner list specifies conditions that need to be applied with <code>AND</code> operator.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlPlaneTagFilter {
     /// <p>A list of conditions which would be applied together with an <code>OR</code> condition.</p>

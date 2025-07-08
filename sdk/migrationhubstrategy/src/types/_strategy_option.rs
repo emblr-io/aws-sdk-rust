@@ -2,6 +2,8 @@
 
 /// <p>Information about all the available strategy options for migrating and modernizing an application component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StrategyOption {
     /// <p>Type of transformation. For example, Rehost, Replatform, and so on.</p>

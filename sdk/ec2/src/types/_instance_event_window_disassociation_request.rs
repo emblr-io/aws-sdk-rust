@@ -2,6 +2,8 @@
 
 /// <p>The targets to disassociate from the specified event window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceEventWindowDisassociationRequest {
     /// <p>The IDs of the instances to disassociate from the event window.</p>

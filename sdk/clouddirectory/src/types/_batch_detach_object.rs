@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>DetachObject</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDetachObject {
     /// <p>Parent reference from which the object with the specified link name is detached.</p>

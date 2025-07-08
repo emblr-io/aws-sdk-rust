@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for an application with no API being used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoApiRenderConfig {}
 impl NoApiRenderConfig {

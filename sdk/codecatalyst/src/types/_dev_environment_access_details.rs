@@ -2,6 +2,8 @@
 
 /// <p>Information about connection details for a Dev Environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DevEnvironmentAccessDetails {
     /// <p>The URL used to send commands to and from the Dev Environment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request structure for the stop job request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopJobInput {
     /// <p>The unique ID for an Amplify app.</p>

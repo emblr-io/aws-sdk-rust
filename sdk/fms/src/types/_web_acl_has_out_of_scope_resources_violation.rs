@@ -2,6 +2,8 @@
 
 /// <p>The violation details for a web ACL that's associated with at least one resource that's out of scope of the Firewall Manager policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAclHasOutOfScopeResourcesViolation {
     /// <p>The Amazon Resource Name (ARN) of the web ACL.</p>

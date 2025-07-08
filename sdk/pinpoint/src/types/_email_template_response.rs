@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the content and settings for a message template that can be used in messages that are sent through the email channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailTemplateResponse {
     /// <p>The Amazon Resource Name (ARN) of the message template.</p>

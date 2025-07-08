@@ -6,6 +6,8 @@
 /// <p><code>2020-04-22T17:57:24Z</code></p>
 /// <p><code>2020-04-22T17:57:24+02:00</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePedestrianDeparture {
     /// <p>The place details.</p>

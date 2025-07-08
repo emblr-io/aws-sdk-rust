@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to delete the specified remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteRemoteAccessSessionInput {
     /// <p>The Amazon Resource Name (ARN) of the session for which you want to delete remote access.</p>

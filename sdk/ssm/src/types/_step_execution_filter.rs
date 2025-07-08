@@ -2,6 +2,8 @@
 
 /// <p>A filter to limit the amount of step execution information returned by the call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StepExecutionFilter {
     /// <p>One or more keys to limit the results.</p>

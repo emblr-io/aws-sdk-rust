@@ -2,6 +2,8 @@
 
 /// <p>Update action that has been processed for the corresponding apply/stop request</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProcessedUpdateAction {
     /// <p>The ID of the replication group</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the success and failure rate of slot resolution in the results of a test execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotResolutionTestResultItem {
     /// <p>The name of the slot.</p>

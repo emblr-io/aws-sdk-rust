@@ -2,6 +2,8 @@
 
 /// <p>The <code>Circle</code> that all results must be in.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FilterCircle {
     /// <p>The center position, in longitude and latitude, of the <code>FilterCircle</code>.</p>

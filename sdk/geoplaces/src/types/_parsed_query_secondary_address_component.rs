@@ -2,6 +2,8 @@
 
 /// <p>Information about a secondary address component parsed from the query text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ParsedQuerySecondaryAddressComponent {
     /// <p>Start index of the parsed secondary address component in the query text.</p>

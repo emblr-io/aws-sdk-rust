@@ -2,6 +2,8 @@
 
 /// <p>A collection of fields identifying the service in a response time warning.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponseTimeRootCauseService {
     /// <p>The service name.</p>

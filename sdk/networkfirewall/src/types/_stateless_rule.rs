@@ -2,6 +2,8 @@
 
 /// <p>A single stateless rule. This is used in <code>StatelessRulesAndCustomActions</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatelessRule {
     /// <p>Defines the stateless 5-tuple packet inspection criteria and the action to take on a packet that matches the criteria.</p>

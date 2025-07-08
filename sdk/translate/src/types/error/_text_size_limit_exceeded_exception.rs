@@ -2,6 +2,8 @@
 
 /// <p>The size of the text you submitted exceeds the size limit. Reduce the size of the text or use a smaller document and then retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextSizeLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

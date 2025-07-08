@@ -2,6 +2,8 @@
 
 /// <p>A document specifying changes to a sampling rule's configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamplingRuleUpdate {
     /// <p>The name of the sampling rule. Specify a rule by either name or ARN, but not both.</p>

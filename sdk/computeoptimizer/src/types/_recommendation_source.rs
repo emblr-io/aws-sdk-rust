@@ -2,6 +2,8 @@
 
 /// <p>Describes the source of a recommendation, such as an Amazon EC2 instance or Auto Scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationSource {
     /// <p>The Amazon Resource Name (ARN) of the recommendation source.</p>

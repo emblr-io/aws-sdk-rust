@@ -2,6 +2,8 @@
 
 /// <p>Information about the health of Amazon Web Services resources in your account that are specified by an Amazon Web Services CloudFormation stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudFormationHealth {
     /// <p>The name of the CloudFormation stack.</p>

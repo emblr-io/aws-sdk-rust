@@ -2,6 +2,8 @@
 
 /// <p>A parameter that is created in a dataset. The parameter can be a string, integer, decimal, or datetime data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetParameter {
     /// <p>A string parameter that is created in the dataset.</p>

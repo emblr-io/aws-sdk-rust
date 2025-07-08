@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the traffic policy that you want to create a new version for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTrafficPolicyVersionInput {
     /// <p>The ID of the traffic policy for which you want to create a new version.</p>

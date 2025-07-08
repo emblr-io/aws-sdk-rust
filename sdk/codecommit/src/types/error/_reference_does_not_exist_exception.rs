@@ -2,6 +2,8 @@
 
 /// <p>The specified reference does not exist. You must provide a full commit ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReferenceDoesNotExistException {
     /// <p>Any message associated with the exception.</p>

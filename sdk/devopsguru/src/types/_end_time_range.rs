@@ -2,6 +2,8 @@
 
 /// <p>A range of time that specifies when anomalous behavior in an anomaly or insight ended.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndTimeRange {
     /// <p>The earliest end time in the time range.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the health check configuration of a target group. Health check configurations aren't used for target groups of type <code>LAMBDA</code> or <code>ALB</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheckConfig {
     /// <p>Indicates whether health checking is enabled.</p>

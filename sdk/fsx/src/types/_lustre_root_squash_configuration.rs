@@ -3,6 +3,8 @@
 /// <p>The configuration for Lustre root squash used to restrict root-level access from clients that try to access your FSx for Lustre file system as root. Use the <code>RootSquash</code> parameter to enable root squash. To learn more about Lustre root squash, see <a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/root-squash.html">Lustre root squash</a>.</p>
 /// <p>You can also use the <code>NoSquashNids</code> parameter to provide an array of clients who are not affected by the root squash setting. These clients will access the file system as root, with unrestricted privileges.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LustreRootSquashConfiguration {
     /// <p>You enable root squash by setting a user ID (UID) and group ID (GID) for the file system in the format <code>UID:GID</code> (for example, <code>365534:65534</code>). The UID and GID values can range from <code>0</code> to <code>4294967294</code>:</p>

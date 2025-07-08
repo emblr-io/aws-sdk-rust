@@ -2,6 +2,8 @@
 
 /// <p>A summary of the agreement, including top-level attributes (for example, the agreement ID, version, proposer, and acceptor).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgreementViewSummary {
     /// <p>The unique identifier of the agreement.</p>

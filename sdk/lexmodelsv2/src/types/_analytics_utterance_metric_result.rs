@@ -2,6 +2,8 @@
 
 /// <p>An object containing the results for the utterance metric you requested.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsUtteranceMetricResult {
     /// <p>The metric that you requested.</p>

@@ -2,6 +2,8 @@
 
 /// Used in DescribeNodeSummary, DescribeNodeResult.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SdiSourceMapping {
     /// A number that uniquely identifies the SDI card on the node hardware.

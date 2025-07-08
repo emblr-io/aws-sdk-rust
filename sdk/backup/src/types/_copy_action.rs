@@ -2,6 +2,8 @@
 
 /// <p>The details of the copy operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CopyAction {
     /// <p>Specifies the time period, in days, before a recovery point transitions to cold storage or is deleted.</p>

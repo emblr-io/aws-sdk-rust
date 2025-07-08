@@ -3,6 +3,8 @@
 /// <p>Contains the details for an Amazon RDS DB security group.</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBSecurityGroups</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSecurityGroup {
     /// <p>Provides the Amazon Web Services ID of the owner of a specific DB security group.</p>

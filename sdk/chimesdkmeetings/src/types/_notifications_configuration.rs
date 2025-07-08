@@ -2,6 +2,8 @@
 
 /// <p>The configuration for resource targets to receive notifications when meeting and attendee events occur.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NotificationsConfiguration {
     /// <p>The ARN of the Amazon Web Services Lambda function in the notifications configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified handshake is already in the requested state. For example, you can't accept a handshake that was already accepted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HandshakeAlreadyInStateException {
     #[allow(missing_docs)] // documentation missing in model

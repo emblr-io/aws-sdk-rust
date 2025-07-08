@@ -2,6 +2,8 @@
 
 /// <p>The response parameters for ListDataIntegrationEvents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDataIntegrationEventsOutput {
     /// <p>The list of data integration events.</p>

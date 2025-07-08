@@ -2,6 +2,8 @@
 
 /// Response to ListChangesetsResponse. This returns a list of dataset changesets that match the query criteria.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListChangesetsOutput {
     /// <p>List of Changesets found.</p>

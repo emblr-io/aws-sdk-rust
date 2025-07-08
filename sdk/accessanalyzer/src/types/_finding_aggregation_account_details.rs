@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the findings for an Amazon Web Services account in an organization unused access analyzer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingAggregationAccountDetails {
     /// <p>The ID of the Amazon Web Services account for which unused access finding details are provided.</p>

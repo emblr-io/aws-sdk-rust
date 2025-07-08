@@ -2,6 +2,8 @@
 
 /// <p>Contains details for the restore.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreSummary {
     /// <p>The Amazon Resource Name (ARN) of the backup from which the table was restored.</p>

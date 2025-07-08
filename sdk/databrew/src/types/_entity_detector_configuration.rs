@@ -2,6 +2,8 @@
 
 /// <p>Configuration of entity detection for a profile job. When undefined, entity detection is disabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityDetectorConfiguration {
     /// <p>Entity types to detect. Can be any of the following:</p>

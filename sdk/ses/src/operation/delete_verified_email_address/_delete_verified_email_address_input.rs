@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to delete an email address from the list of email addresses you have attempted to verify under your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteVerifiedEmailAddressInput {
     /// <p>An email address to be removed from the list of verified addresses.</p>

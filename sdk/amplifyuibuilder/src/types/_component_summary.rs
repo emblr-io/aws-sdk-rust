@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of a component. This is a read-only data type that is returned by <code>ListComponents</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentSummary {
     /// <p>The unique ID of the Amplify app associated with the component.</p>

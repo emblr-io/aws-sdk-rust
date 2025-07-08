@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the outlier detection for a virtual node's listener.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutlierDetection {
     /// <p>Number of consecutive <code>5xx</code> errors required for ejection.</p>

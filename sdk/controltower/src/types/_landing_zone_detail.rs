@@ -2,6 +2,8 @@
 
 /// <p>Information about the landing zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LandingZoneDetail {
     /// <p>The landing zone's current deployed version.</p>

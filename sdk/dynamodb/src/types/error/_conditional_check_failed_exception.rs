@@ -2,6 +2,8 @@
 
 /// <p>A condition specified in the operation failed to be evaluated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionalCheckFailedException {
     /// <p>The conditional request failed.</p>

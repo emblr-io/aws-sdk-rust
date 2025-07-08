@@ -2,6 +2,8 @@
 
 /// <p>Provides information about how Amazon Kendra should use the columns of a database in an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnConfiguration {
     /// <p>The column that provides the document's identifier.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains Amazon S3 locations for storing specific types of AS2 message files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomDirectoriesType {
     /// <p>Specifies a location to store failed AS2 message files.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The source of the assets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetSourceEntry {
     /// <p>The Amazon S3 bucket that's part of the source of the asset.</p>

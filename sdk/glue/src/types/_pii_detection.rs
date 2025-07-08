@@ -2,6 +2,8 @@
 
 /// <p>Specifies a transform that identifies, removes or masks PII data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PiiDetection {
     /// <p>The name of the transform node.</p>

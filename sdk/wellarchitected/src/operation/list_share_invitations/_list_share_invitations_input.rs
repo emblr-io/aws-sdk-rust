@@ -2,6 +2,8 @@
 
 /// <p>Input for List Share Invitations</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListShareInvitationsInput {
     /// <p>An optional string added to the beginning of each workload name returned in the results.</p>

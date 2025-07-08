@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a string schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StringSchemaConfig {
     /// <p>A comment to describe the parameter.</p>

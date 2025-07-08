@@ -2,6 +2,8 @@
 
 /// <p>A representation of an asynchronous request to perform speaker search analysis on a media insights pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpeakerSearchTask {
     /// <p>The speaker search task ID.</p>

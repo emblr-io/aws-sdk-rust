@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded the number of parameters for this Amazon Web Services account. Delete one or more parameters and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

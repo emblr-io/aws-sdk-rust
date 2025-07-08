@@ -2,6 +2,8 @@
 
 /// <p>Specifies how job bookmark data should be encrypted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobBookmarksEncryption {
     /// <p>The encryption mode to use for job bookmarks data.</p>

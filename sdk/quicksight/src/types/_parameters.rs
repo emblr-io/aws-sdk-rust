@@ -2,6 +2,8 @@
 
 /// <p>A list of Amazon QuickSight parameters and the list's override values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Parameters {
     /// <p>The parameters that have a data type of string.</p>

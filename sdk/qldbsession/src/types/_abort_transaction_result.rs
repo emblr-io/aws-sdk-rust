@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of the aborted transaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbortTransactionResult {
     /// <p>Contains server-side performance information for the command.</p>

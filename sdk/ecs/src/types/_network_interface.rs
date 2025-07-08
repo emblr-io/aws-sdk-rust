@@ -2,6 +2,8 @@
 
 /// <p>An object representing the elastic network interface for tasks that use the <code>awsvpc</code> network mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInterface {
     /// <p>The attachment ID for the network interface.</p>

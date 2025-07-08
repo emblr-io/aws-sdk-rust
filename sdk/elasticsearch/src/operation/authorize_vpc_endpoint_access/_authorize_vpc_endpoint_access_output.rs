@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>AuthorizeVpcEndpointAccess</code></code> operation. Contains the account ID and the type of the account being authorized to access the VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizeVpcEndpointAccessOutput {
     /// <p>Information about the account or service that was provided access to the domain.</p>

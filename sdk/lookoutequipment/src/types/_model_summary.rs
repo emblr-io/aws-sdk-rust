@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the specified machine learning model, including dataset and model names and ARNs, as well as status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelSummary {
     /// <p>The name of the machine learning model.</p>

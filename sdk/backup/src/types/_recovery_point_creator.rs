@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the backup plan and rule that Backup used to initiate the recovery point backup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryPointCreator {
     /// <p>Uniquely identifies a backup plan.</p>

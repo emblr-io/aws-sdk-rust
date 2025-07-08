@@ -2,6 +2,8 @@
 
 /// <p>Contains the reasoning that the model used to return the output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ReasoningTextBlock {
     /// <p>The reasoning that the model used to return the output.</p>

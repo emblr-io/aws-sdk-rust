@@ -2,6 +2,8 @@
 
 /// <p>Each entry contains a Storage Lens group that exists in the specified home Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStorageLensGroupEntry {
     /// <p>Contains the name of the Storage Lens group that exists in the specified home Region.</p>

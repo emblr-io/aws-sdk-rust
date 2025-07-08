@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>DeleteHsm</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteHsmInput {
     /// <p>The ARN of the HSM to delete.</p>

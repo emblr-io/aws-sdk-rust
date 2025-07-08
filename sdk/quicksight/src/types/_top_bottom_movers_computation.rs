@@ -2,6 +2,8 @@
 
 /// <p>The top movers and bottom movers computation setup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopBottomMoversComputation {
     /// <p>The ID for a computation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Step Functions state machine as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeTargetStateMachineParameters {
     /// <p>Specify whether to invoke the Step Functions state machine synchronously or asynchronously.</p>

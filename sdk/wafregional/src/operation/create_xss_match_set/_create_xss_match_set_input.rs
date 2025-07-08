@@ -2,6 +2,8 @@
 
 /// <p>A request to create an <code>XssMatchSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateXssMatchSetInput {
     /// <p>A friendly name or description for the <code>XssMatchSet</code> that you're creating. You can't change <code>Name</code> after you create the <code>XssMatchSet</code>.</p>

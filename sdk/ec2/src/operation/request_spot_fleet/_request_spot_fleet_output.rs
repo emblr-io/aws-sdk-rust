@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of RequestSpotFleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestSpotFleetOutput {
     /// <p>The ID of the Spot Fleet request.</p>

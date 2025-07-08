@@ -2,6 +2,8 @@
 
 /// <p>Access to the target resource is no longer available at the origin server. This condition is likely to be permanent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GoneException {
     #[allow(missing_docs)] // documentation missing in model

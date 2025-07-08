@@ -2,6 +2,8 @@
 
 /// <p>An origin cannot contain both an origin access control (OAC) and an origin access identity (OAI).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IllegalOriginAccessConfiguration {
     #[allow(missing_docs)] // documentation missing in model

@@ -3,6 +3,8 @@
 /// <p>A rule statement used to search web request components for matches with regular expressions. To use this, create a <code>RegexPatternSet</code> that specifies the expressions that you want to detect, then use the ARN of that set in this statement. A web request matches the pattern set rule statement if the request component matches any of the patterns in the set. To create a regex pattern set, see <code>CreateRegexPatternSet</code>.</p>
 /// <p>Each regex pattern set rule statement references a regex pattern set. You create and maintain the set independent of your rules. This allows you to use the single set in multiple rules. When you update the referenced set, WAF automatically updates all rules that reference it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexPatternSetReferenceStatement {
     /// <p>The Amazon Resource Name (ARN) of the <code>RegexPatternSet</code> that this statement references.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides configuration parameters for PII entity redaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedactionConfig {
     /// <p>An array of the types of PII entities that Amazon Comprehend detects in the input text for your request.</p>

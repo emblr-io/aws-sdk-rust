@@ -2,6 +2,8 @@
 
 /// <p>The container for determining how the list transaction result will be sorted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTransactionsSort {
     /// <p>Defaults to the value <code>TRANSACTION_TIMESTAMP</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies a transform that removes rows of repeating data from a data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DropDuplicates {
     /// <p>The name of the transform node.</p>

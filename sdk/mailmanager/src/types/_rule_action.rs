@@ -2,6 +2,8 @@
 
 /// <p>The action for a rule to take. Only one of the contained actions can be set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RuleAction {
     /// <p>This action adds a header. This can be used to add arbitrary email headers.</p>

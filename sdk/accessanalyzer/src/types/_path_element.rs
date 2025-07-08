@@ -2,6 +2,8 @@
 
 /// <p>A single element in a path through the JSON representation of a policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PathElement {
     /// <p>Refers to an index in a JSON array.</p>

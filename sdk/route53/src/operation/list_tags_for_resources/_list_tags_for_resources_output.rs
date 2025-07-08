@@ -2,6 +2,8 @@
 
 /// <p>A complex type containing tags for the specified resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsForResourcesOutput {
     /// <p>A list of <code>ResourceTagSet</code>s containing tags associated with the specified resources.</p>

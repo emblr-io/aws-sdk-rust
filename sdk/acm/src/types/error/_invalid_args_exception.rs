@@ -2,6 +2,8 @@
 
 /// <p>One or more of request parameters specified is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidArgsException {
     #[allow(missing_docs)] // documentation missing in model

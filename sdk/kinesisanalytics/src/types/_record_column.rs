@@ -3,6 +3,8 @@
 /// <p>Describes the mapping of each data element in the streaming source to the corresponding column in the in-application stream.</p>
 /// <p>Also used to describe the format of the reference data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordColumn {
     /// <p>Name of the column created in the in-application input stream or reference table.</p>

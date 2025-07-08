@@ -2,6 +2,8 @@
 
 /// <p>Contains a list of criteria that define when and how to cancel a configuration deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IoTJobAbortConfig {
     /// <p>The list of criteria that define when and how to cancel the configuration deployment.</p>

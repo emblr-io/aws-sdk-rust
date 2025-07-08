@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about how this workspace works with IAM Identity Center.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSsoAuthentication {
     /// <p>The ID of the IAM Identity Center-managed application that is created by Amazon Managed Grafana.</p>

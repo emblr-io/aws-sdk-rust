@@ -2,6 +2,8 @@
 
 /// <p>The metadata transfer job AWS IoT TwinMaker source configuration filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IotTwinMakerSourceConfigurationFilter {
     /// <p>Filter by component type.</p>

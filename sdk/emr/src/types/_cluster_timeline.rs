@@ -2,6 +2,8 @@
 
 /// <p>Represents the timeline of the cluster's lifecycle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterTimeline {
     /// <p>The creation date and time of the cluster.</p>

@@ -9,6 +9,8 @@
 /// <p>For Python canaries, the folder structure must be <code>python/<i>myCanaryFilename.py</i> </code> or <code>python/<i>myFolder/myCanaryFilename.py</i> </code> For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_WritingCanary_Python.html#CloudWatch_Synthetics_Canaries_WritingCanary_Python_package">Packaging your Python canary files</a></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryCodeInput {
     /// <p>If your canary script is located in Amazon S3, specify the bucket name here. Do not include <code>s3://</code> as the start of the bucket name.</p>

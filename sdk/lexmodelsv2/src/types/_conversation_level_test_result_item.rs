@@ -2,6 +2,8 @@
 
 /// <p>The test result evaluation item at the conversation level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelTestResultItem {
     /// <p>The conversation Id of the test result evaluation item.</p>

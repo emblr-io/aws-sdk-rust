@@ -2,6 +2,8 @@
 
 /// <p>Configuration information for profiling rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfilerRuleConfiguration {
     /// <p>The name of the rule configuration. It must be unique relative to other rule configuration names.</p>

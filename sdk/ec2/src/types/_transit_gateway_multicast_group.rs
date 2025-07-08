@@ -2,6 +2,8 @@
 
 /// <p>Describes the transit gateway multicast group resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayMulticastGroup {
     /// <p>The IP address assigned to the transit gateway multicast group.</p>

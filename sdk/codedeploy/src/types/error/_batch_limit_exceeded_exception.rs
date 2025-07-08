@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of names or IDs allowed for this request (100) was exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchLimitExceededException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

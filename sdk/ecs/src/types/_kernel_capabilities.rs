@@ -15,6 +15,8 @@
 /// <p>The default is to first drop the capabilities specified in the <code>drop</code> request parameter, and then add the capabilities specified in the <code>add</code> request parameter.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KernelCapabilities {
     /// <p>The Linux capabilities for the container that have been added to the default configuration provided by Docker. This parameter maps to <code>CapAdd</code> in the docker container create command and the <code>--cap-add</code> option to docker run.</p><note>

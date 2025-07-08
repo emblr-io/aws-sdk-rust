@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of the connector being registered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorProvisioningConfig {
     /// <p>Contains information about the configuration of the lambda which is being registered as the connector.</p>

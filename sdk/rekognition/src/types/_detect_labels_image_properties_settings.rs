@@ -2,6 +2,8 @@
 
 /// <p>Settings for the IMAGE_PROPERTIES feature type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectLabelsImagePropertiesSettings {
     /// <p>The maximum number of dominant colors to return when detecting labels in an image. The default value is 10.</p>

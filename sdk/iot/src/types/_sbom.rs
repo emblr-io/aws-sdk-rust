@@ -2,6 +2,8 @@
 
 /// <p>A specific software bill of matrerials associated with a software package version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Sbom {
     /// <p>The S3 location.</p>

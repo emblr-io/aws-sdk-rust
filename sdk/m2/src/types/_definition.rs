@@ -2,6 +2,8 @@
 
 /// <p>The application definition for a particular application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Definition {
     /// <p>The content of the application definition. This is a JSON object that contains the resource configuration/definitions that identify an application.</p>

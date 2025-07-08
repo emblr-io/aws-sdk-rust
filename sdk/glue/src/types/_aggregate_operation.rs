@@ -2,6 +2,8 @@
 
 /// <p>Specifies the set of parameters needed to perform aggregation in the aggregate transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateOperation {
     /// <p>Specifies the column on the data set on which the aggregation function will be applied.</p>

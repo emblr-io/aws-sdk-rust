@@ -2,6 +2,8 @@
 
 /// <p>An object to delete from the governed table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteObjectInput {
     /// <p>The Amazon S3 location of the object to delete.</p>

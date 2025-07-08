@@ -2,6 +2,8 @@
 
 /// <p>Contains the names of the fields to which to map information about the vector store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenSearchServerlessFieldMapping {
     /// <p>The name of the field in which Amazon Bedrock stores the vector embeddings for your data sources.</p>

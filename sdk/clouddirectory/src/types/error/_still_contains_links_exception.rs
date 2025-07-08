@@ -2,6 +2,8 @@
 
 /// <p>The object could not be deleted because links still exist. Remove the links and then try the operation again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StillContainsLinksException {
     #[allow(missing_docs)] // documentation missing in model

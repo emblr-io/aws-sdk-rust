@@ -2,6 +2,8 @@
 
 /// <p>You can't delete a backup while it's being used to restore a file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupRestoring {
     /// <p>A detailed error message.</p>

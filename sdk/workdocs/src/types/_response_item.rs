@@ -2,6 +2,8 @@
 
 /// <p>List of Documents, Folders, Comments, and Document Versions matching the query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ResponseItem {
     /// <p>The type of item being returned.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>PutActionRevision</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutActionRevisionOutput {
     /// <p>Indicates whether the artifact revision was previously used in an execution of the specified pipeline.</p>

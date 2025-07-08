@@ -2,6 +2,8 @@
 
 /// <p>The reference that specifies where the axis label is applied to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AxisLabelReferenceOptions {
     /// <p>The field that the axis label is targeted to.</p>

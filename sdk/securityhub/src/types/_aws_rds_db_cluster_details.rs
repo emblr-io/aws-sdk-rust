@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon RDS DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbClusterDetails {
     /// <p>For all database engines except Aurora, specifies the allocated storage size in gibibytes (GiB).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about which users and endpoints a message was sent to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendUsersMessageResponse {
     /// <p>The unique identifier for the application that was used to send the message.</p>

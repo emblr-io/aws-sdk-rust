@@ -2,6 +2,8 @@
 
 /// <p>Filters the connection definitions that are returned by the <code>GetConnections</code> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetConnectionsFilter {
     /// <p>A criteria string that must match the criteria recorded in the connection definition for that connection definition to be returned.</p>

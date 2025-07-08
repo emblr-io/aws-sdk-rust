@@ -2,6 +2,8 @@
 
 /// <p>A list of message attribute values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageAttributeValue {
     /// <p>The strings in a message attribute value.</p>

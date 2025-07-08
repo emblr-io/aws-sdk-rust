@@ -2,6 +2,8 @@
 
 /// <p>The specified command ID isn't valid. Verify the ID and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidCommandId {
     #[allow(missing_docs)] // documentation missing in model

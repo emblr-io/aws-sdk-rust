@@ -2,6 +2,8 @@
 
 /// <p>You have reached the limit of the number of delivery channels you can create.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaxNumberOfDeliveryChannelsExceededException {
     /// <p>Error executing the command</p>

@@ -2,6 +2,8 @@
 
 /// <p>The value is either a dynamic (resource) value or a static value. You must select either a dynamic value or a static value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemediationParameterValue {
     /// <p>The value is dynamic and changes at run-time.</p>

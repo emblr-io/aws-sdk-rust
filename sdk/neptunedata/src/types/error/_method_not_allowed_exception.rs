@@ -2,6 +2,8 @@
 
 /// <p>Raised when the HTTP method used by a request is not supported by the endpoint being used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MethodNotAllowedException {
     /// <p>A detailed message describing the problem.</p>

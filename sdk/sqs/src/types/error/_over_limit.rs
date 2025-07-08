@@ -2,6 +2,8 @@
 
 /// <p>The specified action violates a limit. For example, <code>ReceiveMessage</code> returns this error if the maximum number of in flight messages is reached and <code>AddPermission</code> returns this error if the maximum number of permissions for the queue is reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverLimit {
     #[allow(missing_docs)] // documentation missing in model

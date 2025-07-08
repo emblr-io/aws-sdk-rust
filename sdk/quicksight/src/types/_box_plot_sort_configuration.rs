@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration of a <code>BoxPlotVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BoxPlotSortConfiguration {
     /// <p>The sort configuration of a group by fields.</p>

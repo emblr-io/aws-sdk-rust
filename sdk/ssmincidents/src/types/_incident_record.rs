@@ -2,6 +2,8 @@
 
 /// <p>The record of the incident that's created when an incident occurs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncidentRecord {
     /// <p>The Amazon Resource Name (ARN) of the incident record.</p>

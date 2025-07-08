@@ -11,6 +11,8 @@
 /// <p>Value for <code>Values</code>: <code>3</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstancePatchStateFilter {
     /// <p>The key for the filter. Supported values include the following:</p>

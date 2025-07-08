@@ -2,6 +2,8 @@
 
 /// <p>The credentials required to access the external Dataview from the S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AwsCredentials {
     /// <p>The unique identifier for the security credentials.</p>

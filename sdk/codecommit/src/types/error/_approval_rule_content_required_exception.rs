@@ -2,6 +2,8 @@
 
 /// <p>The content for the approval rule is empty. You must provide some content for an approval rule. The content cannot be null.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApprovalRuleContentRequiredException {
     /// <p>Any message associated with the exception.</p>

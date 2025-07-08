@@ -2,6 +2,8 @@
 
 /// <p>An AWS Chatbot configuration for Slack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SlackChannelConfiguration {
     /// <p>Name of the Slack workspace.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies a batch of endpoints and events to process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventsBatch {
     /// <p>A set of properties and attributes that are associated with the endpoint.</p>

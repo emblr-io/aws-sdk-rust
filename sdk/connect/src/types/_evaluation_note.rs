@@ -2,6 +2,8 @@
 
 /// <p>Information about notes for a contact evaluation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationNote {
     /// <p>The note for an item (section or question) in a contact evaluation.</p><note>

@@ -2,6 +2,8 @@
 
 /// An object that contains information about an event destination that sends data to Amazon SNS.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnsDestination {
     /// The Amazon Resource Name (ARN) of the Amazon SNS topic that you want to publish events to.

@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when Amazon Cognito encounters an unexpected exception with Lambda.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnexpectedLambdaException {
     /// <p>The message returned when Amazon Cognito returns an unexpected Lambda exception.</p>

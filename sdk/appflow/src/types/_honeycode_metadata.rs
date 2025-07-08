@@ -2,6 +2,8 @@
 
 /// <p>The connector metadata specific to Amazon Honeycode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoneycodeMetadata {
     /// <p>The desired authorization scope for the Amazon Honeycode account.</p>

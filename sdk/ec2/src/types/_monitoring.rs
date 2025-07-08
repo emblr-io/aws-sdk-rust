@@ -2,6 +2,8 @@
 
 /// <p>Describes the monitoring of an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Monitoring {
     /// <p>Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.</p>

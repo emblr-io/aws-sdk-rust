@@ -2,6 +2,8 @@
 
 /// <p>The request could not be completed due to a problem in the configuration or current state of the specified directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

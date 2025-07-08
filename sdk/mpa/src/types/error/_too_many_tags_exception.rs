@@ -2,6 +2,8 @@
 
 /// <p>The request exceeds the maximum number of tags allowed for this resource. Remove some tags, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyTagsException {
     /// <p>Message for the <code>TooManyTagsException</code> error.</p>

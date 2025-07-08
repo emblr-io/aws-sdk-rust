@@ -2,6 +2,8 @@
 
 /// <p>The Git tags specified as filter criteria for whether a Git tag repository event will start the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitTagFilterCriteria {
     /// <p>The list of patterns of Git tags that, when pushed, are to be included as criteria that starts the pipeline.</p>

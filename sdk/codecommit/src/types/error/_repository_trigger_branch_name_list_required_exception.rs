@@ -2,6 +2,8 @@
 
 /// <p>At least one branch name is required, but was not specified in the trigger configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryTriggerBranchNameListRequiredException {
     /// <p>Any message associated with the exception.</p>

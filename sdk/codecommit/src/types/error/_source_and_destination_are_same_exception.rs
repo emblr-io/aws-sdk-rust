@@ -2,6 +2,8 @@
 
 /// <p>The source branch and destination branch for the pull request are the same. You must specify different branches for the source and destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceAndDestinationAreSameException {
     /// <p>Any message associated with the exception.</p>

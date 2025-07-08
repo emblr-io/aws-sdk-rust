@@ -2,6 +2,8 @@
 
 /// <p>Sets the number of <i>concurrent processes</i> that transfer OData records from your SAP instance. A concurrent process is query that retrieves a batch of records as part of a flow run. Amazon AppFlow can run multiple concurrent processes in parallel to transfer data faster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SapoDataParallelismConfig {
     /// <p>The maximum number of processes that Amazon AppFlow runs at the same time when it retrieves your data from your SAP application.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Output data configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityRecognizerOutputDataConfig {
     /// <p>The Amazon S3 prefix for the data lake location of the flywheel statistics.</p>

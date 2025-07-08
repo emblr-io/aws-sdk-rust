@@ -2,6 +2,8 @@
 
 /// <p>Provides information on any <code>TranscriptFilterType</code> categories that matched your transcription output. Matches are identified for each segment upon completion of that segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CategoryEvent {
     /// <p>Lists the categories that were matched in your audio segment.</p>

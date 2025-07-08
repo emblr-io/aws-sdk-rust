@@ -2,6 +2,8 @@
 
 /// <p>Settings that control how the endpoint routes incoming traffic to the instances that the endpoint hosts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantRoutingConfig {
     /// <p>Sets how the endpoint routes incoming traffic:</p>

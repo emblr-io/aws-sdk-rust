@@ -2,6 +2,8 @@
 
 /// <p>A summary of metrics for an account as of a specified date.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricsSummary {
     /// <p>The date from which the metrics summary information was retrieved.</p>

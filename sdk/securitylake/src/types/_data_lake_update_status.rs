@@ -2,6 +2,8 @@
 
 /// <p>The status of the last <code>UpdateDataLake</code> or <code>DeleteDataLake</code> API request. This is set to Completed after the configuration is updated, or removed if deletion of the data lake is successful.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeUpdateStatus {
     /// <p>The unique ID for the last <code>UpdateDataLake</code> or <code>DeleteDataLake</code> API request.</p>

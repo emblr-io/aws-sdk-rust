@@ -2,6 +2,8 @@
 
 /// <p>Schedule of the campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InAppCampaignSchedule {
     /// <p>The scheduled time after which the in-app message should not be shown. Timestamp is in ISO 8601 format.</p>

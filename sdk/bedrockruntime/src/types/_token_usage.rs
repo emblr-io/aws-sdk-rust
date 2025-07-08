@@ -2,6 +2,8 @@
 
 /// <p>The tokens used in a message API inference call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TokenUsage {
     /// <p>The number of tokens sent in the request to the model.</p>

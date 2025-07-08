@@ -2,6 +2,8 @@
 
 /// <p>The state of the user's session with Amazon Lex V2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionState {
     /// <p>The next step that Amazon Lex V2 should take in the conversation with a user.</p>

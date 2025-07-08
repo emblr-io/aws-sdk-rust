@@ -2,6 +2,8 @@
 
 /// <p>Input for ConfirmSubscription action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfirmSubscriptionInput {
     /// <p>The ARN of the topic for which you wish to confirm a subscription.</p>

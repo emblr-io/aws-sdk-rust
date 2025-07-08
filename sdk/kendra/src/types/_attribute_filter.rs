@@ -18,6 +18,8 @@
 /// <p>You cannot filter more than a depth of 2, otherwise you receive a <code>ValidationException</code> exception with the message "AttributeFilter cannot have a depth of more than 2." Also, if you use more than 10 attribute filters in a given list for <code>AndAllFilters</code> or <code>OrAllFilters</code>, you receive a <code>ValidationException</code> with the message "AttributeFilter cannot have a length of more than 10".</p>
 /// <p>For examples of using <code>AttributeFilter</code>, see <a href="https://docs.aws.amazon.com/kendra/latest/dg/filtering.html#search-filtering">Using document attributes to filter search results</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeFilter {
     /// <p>Performs a logical <code>AND</code> operation on all filters that you specify.</p>

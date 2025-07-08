@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeScheduledInstanceAvailability.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeScheduledInstanceAvailabilityOutput {
     /// <p>The token required to retrieve the next set of results. This value is <code>null</code> when there are no more results to return.</p>

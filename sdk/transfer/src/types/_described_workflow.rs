@@ -2,6 +2,8 @@
 
 /// <p>Describes the properties of the specified workflow</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribedWorkflow {
     /// <p>Specifies the unique Amazon Resource Name (ARN) for the workflow.</p>

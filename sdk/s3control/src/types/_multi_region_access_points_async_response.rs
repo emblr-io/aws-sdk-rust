@@ -2,6 +2,8 @@
 
 /// <p>The Multi-Region Access Point details that are returned when querying about an asynchronous request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiRegionAccessPointsAsyncResponse {
     /// <p>A collection of status information for the different Regions that a Multi-Region Access Point supports.</p>

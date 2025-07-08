@@ -2,6 +2,8 @@
 
 /// <p>The action to take on the object attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectAttributeAction {
     /// <p>A type that can be either <code>Update</code> or <code>Delete</code>.</p>

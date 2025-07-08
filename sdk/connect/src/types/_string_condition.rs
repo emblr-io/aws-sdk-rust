@@ -2,6 +2,8 @@
 
 /// <p>A leaf node condition which can be used to specify a string condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StringCondition {
     /// <p>The name of the field in the string condition.</p>

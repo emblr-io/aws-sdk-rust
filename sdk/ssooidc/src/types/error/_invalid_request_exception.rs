@@ -2,6 +2,8 @@
 
 /// <p>Indicates that something is wrong with the input to the request. For example, a required parameter might be missing or out of range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRequestException {
     /// <p>Single error code. For this exception the value will be <code>invalid_request</code>.</p>

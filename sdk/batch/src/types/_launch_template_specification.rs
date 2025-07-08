@@ -5,6 +5,8 @@
 /// <p>This object isn't applicable to jobs that are running on Fargate resources.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateSpecification {
     /// <p>The ID of the launch template.</p>

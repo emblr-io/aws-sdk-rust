@@ -2,6 +2,8 @@
 
 /// <p>The operation to be performed on the provided source fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorOperator {
     /// <p>The operation to be performed on the provided Marketo source fields.</p>

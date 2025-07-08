@@ -2,6 +2,8 @@
 
 /// <p>The response to a <code>GetSqlInjectionMatchSet</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSqlInjectionMatchSetOutput {
     /// <p>Information about the <code>SqlInjectionMatchSet</code> that you specified in the <code>GetSqlInjectionMatchSet</code> request. For more information, see the following topics:</p>

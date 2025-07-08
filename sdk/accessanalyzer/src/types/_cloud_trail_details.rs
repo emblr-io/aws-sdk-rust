@@ -2,6 +2,8 @@
 
 /// <p>Contains information about CloudTrail access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudTrailDetails {
     /// <p>A <code>Trail</code> object that contains settings for a trail.</p>

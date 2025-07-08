@@ -2,6 +2,8 @@
 
 /// <p>The definition of an Amazon Q App generated based on input such as a conversation or problem statement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictAppDefinition {
     /// <p>The title of the generated Q App definition.</p>

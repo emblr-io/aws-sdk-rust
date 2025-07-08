@@ -2,6 +2,8 @@
 
 /// <p>A word to configure for the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailWordConfig {
     /// <p>Text of the word configured for the guardrail to block.</p>

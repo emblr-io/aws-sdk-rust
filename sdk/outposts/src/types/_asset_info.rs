@@ -2,6 +2,8 @@
 
 /// <p>Information about hardware assets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetInfo {
     /// <p>The ID of the asset. An Outpost asset can be a single server within an Outposts rack or an Outposts server configuration.</p>

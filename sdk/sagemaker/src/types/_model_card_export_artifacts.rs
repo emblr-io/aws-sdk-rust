@@ -2,6 +2,8 @@
 
 /// <p>The artifacts of the model card export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelCardExportArtifacts {
     /// <p>The Amazon S3 URI of the exported model artifacts.</p>

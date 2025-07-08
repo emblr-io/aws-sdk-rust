@@ -2,6 +2,8 @@
 
 /// <p>A structure that stores a list of managed policy ARNs that describe the associated Amazon Web Services managed policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachedManagedPolicy {
     /// <p>The name of the Amazon Web Services managed policy.</p>

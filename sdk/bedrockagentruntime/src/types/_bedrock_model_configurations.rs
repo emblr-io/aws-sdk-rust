@@ -2,6 +2,8 @@
 
 /// <p>Settings for a model called with <code>InvokeAgent</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockModelConfigurations {
     /// <p>The performance configuration for the model.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a database bundle. A bundle describes the performance specifications of the database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelationalDatabaseBundle {
     /// <p>The ID for the database bundle.</p>

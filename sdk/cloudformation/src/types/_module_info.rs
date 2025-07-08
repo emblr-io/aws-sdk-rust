@@ -3,6 +3,8 @@
 /// <p>Contains information about the module from which the resource was created, if the resource was created from a module included in the stack template.</p>
 /// <p>For more information about modules, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/modules.html">Create reusable resource configurations that can be included across templates with CloudFormation modules</a> in the <i>CloudFormation User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModuleInfo {
     /// <p>A concatenated list of the module type or types that contains the resource. Module types are listed starting with the inner-most nested module, and separated by <code>/</code>.</p>

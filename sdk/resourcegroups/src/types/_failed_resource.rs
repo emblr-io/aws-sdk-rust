@@ -2,6 +2,8 @@
 
 /// <p>A resource that failed to be added to or removed from a group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedResource {
     /// <p>The Amazon resource name (ARN) of the resource that failed to be added or removed.</p>

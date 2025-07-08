@@ -2,6 +2,8 @@
 
 /// <p>A collection of settings that configure user interaction with the <code>RStudioServerPro</code> app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RStudioServerProAppSettings {
     /// <p>Indicates whether the current user has access to the <code>RStudioServerPro</code> app.</p>

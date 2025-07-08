@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a user exceeds the limit for a requested Amazon Web Services resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitExceededException {
     /// <p>The message returned when Amazon Cognito throws a limit exceeded exception.</p>

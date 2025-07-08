@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>DeleteVpcEndpoint</code></code> operation. Contains the summarized detail of the VPC Endpoint being deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteVpcEndpointOutput {
     /// <p>Information about the deleted endpoint, including its current status (<code>DELETING</code> or <code>DELETE_FAILED</code>).</p>

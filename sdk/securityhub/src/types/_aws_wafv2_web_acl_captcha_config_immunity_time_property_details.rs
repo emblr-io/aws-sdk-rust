@@ -2,6 +2,8 @@
 
 /// <p>Used for CAPTCHA and challenge token settings. Determines how long a CAPTCHA or challenge timestamp remains valid after WAF updates it for a successful CAPTCHA or challenge response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails {
     /// <p>The amount of time, in seconds, that a CAPTCHA or challenge timestamp is considered valid by WAF.</p>

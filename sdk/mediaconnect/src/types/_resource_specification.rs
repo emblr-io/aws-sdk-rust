@@ -2,6 +2,8 @@
 
 /// <p>A definition of what is being billed for, including the type and amount.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSpecification {
     /// <p>The amount of outbound bandwidth that is discounted in the offering.</p>

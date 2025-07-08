@@ -2,6 +2,8 @@
 
 /// <p>The HIT data structure represents a single HIT, including all the information necessary for a Worker to accept and complete the HIT.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Hit {
     /// <p>A unique identifier for the HIT.</p>

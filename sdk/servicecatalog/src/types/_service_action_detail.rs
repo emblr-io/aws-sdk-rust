@@ -2,6 +2,8 @@
 
 /// <p>An object containing detailed information about the self-service action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceActionDetail {
     /// <p>Summary information about the self-service action.</p>

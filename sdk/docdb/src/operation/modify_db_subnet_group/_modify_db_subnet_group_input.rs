@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>ModifyDBSubnetGroup</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyDbSubnetGroupInput {
     /// <p>The name for the subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.</p>

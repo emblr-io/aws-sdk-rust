@@ -2,6 +2,8 @@
 
 /// <p>Can occur if you specify a number of tags for a resource greater than the maximum 50 user tags per resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyTagsException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Describes a route in a transit gateway route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayRouteTableRoute {
     /// <p>The CIDR block used for destination matches.</p>

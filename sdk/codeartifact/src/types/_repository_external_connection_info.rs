@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the external connection of a repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryExternalConnectionInfo {
     /// <p>The name of the external connection associated with a repository.</p>

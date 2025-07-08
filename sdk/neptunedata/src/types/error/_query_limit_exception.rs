@@ -2,6 +2,8 @@
 
 /// <p>Raised when the size of a query exceeds the system limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryLimitException {
     /// <p>A detailed message describing the problem.</p>

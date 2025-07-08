@@ -2,6 +2,8 @@
 
 /// <p>An object with the recommended values for you to specify when creating an autoscaling policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynamicScalingConfiguration {
     /// <p>The recommended minimum capacity to specify for your autoscaling policy.</p>

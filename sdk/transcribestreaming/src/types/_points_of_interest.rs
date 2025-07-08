@@ -2,6 +2,8 @@
 
 /// <p>Contains the timestamps of matched categories.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PointsOfInterest {
     /// <p>Contains the timestamp ranges (start time through end time) of matched categories and rules.</p>

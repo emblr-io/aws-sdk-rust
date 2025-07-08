@@ -2,6 +2,8 @@
 
 /// <p>A resource scan is currently in progress. Only one can be run at a time for an account in a Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceScanInProgressException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>A summary of the information about a CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributionSummary {
     /// <p>The identifier for the distribution. For example: <code>EDFDVBD632BHDS5</code>.</p>

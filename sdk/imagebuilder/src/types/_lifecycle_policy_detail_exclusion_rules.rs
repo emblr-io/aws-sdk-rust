@@ -2,6 +2,8 @@
 
 /// <p>Specifies resources that lifecycle policy actions should not apply to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyDetailExclusionRules {
     /// <p>Contains a list of tags that Image Builder uses to skip lifecycle actions for Image Builder image resources that have them.</p>

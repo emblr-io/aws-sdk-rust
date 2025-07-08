@@ -2,6 +2,8 @@
 
 /// <p>The number of tags per trail, event data store, dashboard, or channel has exceeded the permitted amount. Currently, the limit is 50.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagsLimitExceededException {
     /// <p>Brief description of the exception returned by the request.</p>

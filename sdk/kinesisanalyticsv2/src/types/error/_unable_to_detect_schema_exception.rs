@@ -2,6 +2,8 @@
 
 /// <p>The data format is not valid. Kinesis Data Analytics cannot detect the schema for the given streaming source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnableToDetectSchemaException {
     #[allow(missing_docs)] // documentation missing in model

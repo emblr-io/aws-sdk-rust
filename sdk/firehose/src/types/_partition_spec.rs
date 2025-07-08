@@ -5,6 +5,8 @@
 /// <p><code>"partitionSpec": { "identity": \[ {"sourceName": "column1"}, {"sourceName": "column2"}, {"sourceName": "column3"} \] }</code></p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartitionSpec {
     /// <p>List of identity <a href="https://iceberg.apache.org/spec/#partition-transforms">transforms</a> that performs an identity transformation. The transform takes the source value, and does not modify it. Result type is the source type.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The sub-type count exceeded the limit for the inventory type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubTypeCountLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

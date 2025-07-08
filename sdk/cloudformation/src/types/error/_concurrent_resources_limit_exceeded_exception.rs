@@ -2,6 +2,8 @@
 
 /// <p>No more than 5 generated templates can be in an <code>InProgress</code> or <code>Pending</code> status at one time. This error is also returned if a generated template that is in an <code>InProgress</code> or <code>Pending</code> status is attempted to be updated or deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentResourcesLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

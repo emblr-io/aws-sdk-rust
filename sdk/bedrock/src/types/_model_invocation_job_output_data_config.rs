@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration of the S3 location of the output data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ModelInvocationJobOutputDataConfig {
     /// <p>Contains the configuration of the S3 location of the output data.</p>

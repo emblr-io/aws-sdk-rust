@@ -2,6 +2,8 @@
 
 /// <p>Provides geographic coordinates that indicate where a specified IP address originated from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpGeoLocation {
     /// <p>The latitude coordinate of the location, rounded to four decimal places.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Span computed for the requested SpanAdditionalFeatures.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteVehicleSpan {
     /// <p>Duration of the computed span without traffic congestion.</p>

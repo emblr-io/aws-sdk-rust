@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>ModifyDBClusterParameterGroup</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyDbClusterParameterGroupInput {
     /// <p>The name of the cluster parameter group to modify.</p>

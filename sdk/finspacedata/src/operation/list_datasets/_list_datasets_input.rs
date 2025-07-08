@@ -2,6 +2,8 @@
 
 /// Request for the ListDatasets operation.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDatasetsInput {
     /// <p>A token that indicates where a results page should begin.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The definition of the Q App, specifying the cards and flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppDefinition {
     /// <p>The version of the app definition schema or specification.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Lambda couldn't restore the snapshot within the timeout limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapStartTimeoutException {
     #[allow(missing_docs)] // documentation missing in model

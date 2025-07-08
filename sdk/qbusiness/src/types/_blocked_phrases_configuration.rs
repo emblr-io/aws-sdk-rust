@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the phrases blocked from chat by your chat control configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockedPhrasesConfiguration {
     /// <p>A list of phrases blocked from a Amazon Q Business web experience chat.</p>

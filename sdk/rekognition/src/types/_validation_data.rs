@@ -5,6 +5,8 @@
 /// <p>You get the <code>ValidationData</code> object for the training dataset (<code>TrainingDataResult</code>) and the test dataset (<code>TestingDataResult</code>) by calling <code>DescribeProjectVersions</code>.</p>
 /// <p>The assets array contains a single <code>Asset</code> object. The <code>GroundTruthManifest</code> field of the Asset object contains the S3 bucket location of the validation data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationData {
     /// <p>The assets that comprise the validation data.</p>

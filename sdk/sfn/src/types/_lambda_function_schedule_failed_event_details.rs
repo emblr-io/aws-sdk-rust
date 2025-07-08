@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a failed Lambda function schedule event that occurred during an execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LambdaFunctionScheduleFailedEventDetails {
     /// <p>The error code of the failure.</p>

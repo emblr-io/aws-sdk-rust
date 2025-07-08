@@ -2,6 +2,8 @@
 
 /// <p>The VPC that you specified is not authorized to be associated with the hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcAssociationAuthorizationNotFound {
     /// <p></p>

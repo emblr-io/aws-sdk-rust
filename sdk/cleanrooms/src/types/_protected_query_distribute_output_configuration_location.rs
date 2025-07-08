@@ -2,6 +2,8 @@
 
 /// <p>Specifies where you'll distribute the results of your protected query. You must configure either an S3 destination or a collaboration member destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProtectedQueryDistributeOutputConfigurationLocation {
     /// <p>Contains configuration details for the protected query member output.</p>

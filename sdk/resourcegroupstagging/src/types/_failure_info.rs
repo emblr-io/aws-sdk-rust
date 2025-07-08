@@ -10,6 +10,8 @@
 /// </ul>
 /// <p>For more information on errors that are generated from other Amazon Web Services services, see the documentation for that service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailureInfo {
     /// <p>The HTTP status code of the common error.</p>

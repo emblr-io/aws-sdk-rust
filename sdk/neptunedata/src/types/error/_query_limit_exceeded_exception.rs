@@ -2,6 +2,8 @@
 
 /// <p>Raised when the number of active queries exceeds what the server can process. The query in question can be retried when the system is less busy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryLimitExceededException {
     /// <p>A detailed message describing the problem.</p>

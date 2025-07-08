@@ -2,6 +2,8 @@
 
 /// <p>The result of the exchange and whether it was <code>successful</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceptReservedInstancesExchangeQuoteOutput {
     /// <p>The ID of the successful exchange.</p>

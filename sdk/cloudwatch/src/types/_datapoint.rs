@@ -2,6 +2,8 @@
 
 /// <p>Encapsulates the statistical data that CloudWatch computes from metric data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Datapoint {
     /// <p>The time stamp used for the data point.</p>

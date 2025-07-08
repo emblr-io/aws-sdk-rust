@@ -2,6 +2,8 @@
 
 /// <p>The point style of the geospatial map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialPointStyleOptions {
     /// <p>The selected point styles (point, cluster) of the geospatial map.</p>

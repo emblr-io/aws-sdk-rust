@@ -2,6 +2,8 @@
 
 /// <p>Contains a paginated list of information structures about workflow types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListWorkflowTypesOutput {
     /// <p>The list of workflow type information.</p>

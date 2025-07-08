@@ -2,6 +2,8 @@
 
 /// <p>A control to display a horizontal toggle bar. This is used to change a value by sliding the toggle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterSliderControl {
     /// <p>The ID of the <code>ParameterSliderControl</code>.</p>

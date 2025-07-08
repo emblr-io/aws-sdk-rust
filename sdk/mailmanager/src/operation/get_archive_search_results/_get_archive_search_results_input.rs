@@ -2,6 +2,8 @@
 
 /// <p>The request to retrieve results from a completed archive search job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveSearchResultsInput {
     /// <p>The identifier of the completed search job.</p>

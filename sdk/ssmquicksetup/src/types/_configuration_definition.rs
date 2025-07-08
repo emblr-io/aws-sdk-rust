@@ -2,6 +2,8 @@
 
 /// <p>The definition of a Quick Setup configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationDefinition {
     /// <p>The type of the Quick Setup configuration.</p>

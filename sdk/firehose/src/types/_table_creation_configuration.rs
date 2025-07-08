@@ -3,6 +3,8 @@
 /// <p>The configuration to enable automatic table creation.</p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableCreationConfiguration {
     /// <p>Specify whether you want to enable automatic table creation.</p>

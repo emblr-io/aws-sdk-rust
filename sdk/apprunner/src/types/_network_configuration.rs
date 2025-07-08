@@ -2,6 +2,8 @@
 
 /// <p>Describes configuration settings related to network traffic of an App Runner service. Consists of embedded objects for each configurable network feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkConfiguration {
     /// <p>Network configuration settings for outbound message traffic.</p>

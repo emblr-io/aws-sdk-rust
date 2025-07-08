@@ -2,6 +2,8 @@
 
 /// <p>Your request contains more cookie names in the whitelist than are allowed per cache behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyCookieNamesInWhiteList {
     #[allow(missing_docs)] // documentation missing in model

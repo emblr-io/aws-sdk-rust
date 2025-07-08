@@ -2,6 +2,8 @@
 
 /// <p>An encryption key could not be accessed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionKeyAccessDeniedException {
     /// <p>Any message associated with the exception.</p>

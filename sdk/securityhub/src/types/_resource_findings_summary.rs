@@ -2,6 +2,8 @@
 
 /// <p>A list of summaries for all finding types on a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceFindingsSummary {
     /// <p>The category or classification of the security finding.</p>

@@ -2,6 +2,8 @@
 
 /// <p>User-specified instances that must not be stopped. These instances will not appear in the list of instances that Amazon Web Services recommends to stop in order to free up capacity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstancesToExclude {
     /// <p>List of user-specified instances that must not be stopped.</p>

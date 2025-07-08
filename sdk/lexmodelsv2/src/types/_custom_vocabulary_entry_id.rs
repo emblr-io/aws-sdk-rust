@@ -2,6 +2,8 @@
 
 /// <p>The unique entry identifier for the custom vocabulary items.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomVocabularyEntryId {
     /// <p>The unique item identifier for the custom vocabulary items.</p>

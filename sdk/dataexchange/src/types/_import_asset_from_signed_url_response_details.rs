@@ -2,6 +2,8 @@
 
 /// <p>The details in the response for an import request, including the signed URL and other information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportAssetFromSignedUrlResponseDetails {
     /// <p>The name for the asset associated with this import job.</p>

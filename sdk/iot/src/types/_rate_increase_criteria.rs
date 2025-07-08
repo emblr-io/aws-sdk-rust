@@ -2,6 +2,8 @@
 
 /// <p>Allows you to define a criteria to initiate the increase in rate of rollout for a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RateIncreaseCriteria {
     /// <p>The threshold for number of notified things that will initiate the increase in rate of rollout.</p>

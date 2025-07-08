@@ -2,6 +2,8 @@
 
 /// <p>An attribute returned with a document from a search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalResultAttributeValue {
     /// <p>The text associated with the attribute and information about the highlight to apply to the text.</p>

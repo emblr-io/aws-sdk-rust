@@ -2,6 +2,8 @@
 
 /// <p>An object that contains summary information about a product view and a provisioning artifact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisioningArtifactView {
     /// <p>Summary information about a product view.</p>

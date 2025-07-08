@@ -2,6 +2,8 @@
 
 /// <p>Contains details for the pending updates for an approval team, if applicable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingUpdate {
     /// <p>Version ID for the team.</p>

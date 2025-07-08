@@ -2,6 +2,8 @@
 
 /// <p>Specifies the protection behavior for a field type. This is part of the data protection configuration for a web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProtection {
     /// <p>Specifies the field type and optional keys to apply the protection behavior to.</p>

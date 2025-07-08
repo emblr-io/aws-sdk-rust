@@ -2,6 +2,8 @@
 
 /// <p>Additional properties that are specific to the type of the associated schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingTableSchemaTypeProperties {
     /// <p>Defines which ID namespace associations are used to create the ID mapping table.</p>

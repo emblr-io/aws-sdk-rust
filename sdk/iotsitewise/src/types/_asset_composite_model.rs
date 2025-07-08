@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a composite model in an asset. This object contains the asset's properties that you define in the composite model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetCompositeModel {
     /// <p>The name of the composite model.</p>

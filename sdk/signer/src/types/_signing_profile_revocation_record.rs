@@ -2,6 +2,8 @@
 
 /// <p>Revocation information for a signing profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SigningProfileRevocationRecord {
     /// <p>The time when revocation becomes effective.</p>

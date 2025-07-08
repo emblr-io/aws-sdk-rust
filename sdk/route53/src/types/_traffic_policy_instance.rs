@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains settings for the new traffic policy instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficPolicyInstance {
     /// <p>The ID that Amazon Route 53 assigned to the new traffic policy instance.</p>

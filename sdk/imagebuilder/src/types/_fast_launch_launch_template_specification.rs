@@ -4,6 +4,8 @@
 /// <p>You can specify either the <code>launchTemplateName</code> or the <code>launchTemplateId</code>, but not both.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FastLaunchLaunchTemplateSpecification {
     /// <p>The ID of the launch template to use for faster launching for a Windows AMI.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details of a specific automatic retry on stage failure, including the attempt number and trigger.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryStageMetadata {
     /// <p>The number of attempts for a specific stage with automatic retry on stage failure. One attempt is allowed for automatic stage retry on failure.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a snapshot's storage tier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotTierStatus {
     /// <p>The ID of the snapshot.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The identifier of the data source Amazon Q Business will generate responses from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EligibleDataSource {
     /// <p>The identifier of the index the data source is attached to.</p>

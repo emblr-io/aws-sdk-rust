@@ -2,6 +2,8 @@
 
 /// <p>The source controls that are used in a <code>CascadingControlConfiguration</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CascadingControlSource {
     /// <p>The source sheet control ID of a <code>CascadingControlSource</code>.</p>

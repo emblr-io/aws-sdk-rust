@@ -2,6 +2,8 @@
 
 /// <p>A rule group that's defined for an Firewall Manager WAF policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallManagerRuleGroup {
     /// <p>The name of the rule group. You cannot change the name of a rule group after you create it.</p>

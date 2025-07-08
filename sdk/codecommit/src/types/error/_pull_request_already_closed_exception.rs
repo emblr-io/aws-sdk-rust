@@ -2,6 +2,8 @@
 
 /// <p>The pull request status cannot be updated because it is already closed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullRequestAlreadyClosedException {
     /// <p>Any message associated with the exception.</p>

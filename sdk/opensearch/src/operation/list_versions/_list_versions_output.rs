@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters for response received from the <code>ListVersions</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVersionsOutput {
     /// <p>A list of all versions of OpenSearch and Elasticsearch that Amazon OpenSearch Service supports.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A summary of the import job that includes details of the requested job's configuration and its current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobSummary {
     /// <p>The current status of the import job.</p>

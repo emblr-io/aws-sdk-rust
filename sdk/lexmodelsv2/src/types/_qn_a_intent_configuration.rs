@@ -2,6 +2,8 @@
 
 /// <p>Details about the the configuration of the built-in <code>Amazon.QnAIntent</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QnAIntentConfiguration {
     /// <p>Contains details about the configuration of the data source used for the <code>AMAZON.QnAIntent</code>.</p>

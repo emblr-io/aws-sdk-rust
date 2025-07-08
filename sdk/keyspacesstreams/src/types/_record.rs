@@ -2,6 +2,8 @@
 
 /// <p>Represents a change data capture record for a row in an Amazon Keyspaces table, containing both the new and old states of the row.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Record {
     /// <p>The version of the record format, used to track the evolution of the record structure over time.</p>

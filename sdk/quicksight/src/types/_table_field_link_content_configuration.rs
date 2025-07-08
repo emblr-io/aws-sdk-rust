@@ -2,6 +2,8 @@
 
 /// <p>The URL content (text, icon) for the table link configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableFieldLinkContentConfiguration {
     /// <p>The custom text content (value, font configuration) for the table link content configuration.</p>

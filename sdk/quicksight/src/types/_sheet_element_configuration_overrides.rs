@@ -2,6 +2,8 @@
 
 /// <p>The override configuration of the rendering rules of a sheet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SheetElementConfigurationOverrides {
     /// <p>Determines whether or not the overrides are visible. Choose one of the following options:</p>

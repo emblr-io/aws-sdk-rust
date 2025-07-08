@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>DescribeLimits</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLimitsOutput {
     /// <p>The maximum total read capacity units that your account allows you to provision across all of your tables in this Region.</p>

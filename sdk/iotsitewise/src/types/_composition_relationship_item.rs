@@ -2,6 +2,8 @@
 
 /// <p>Represents a composite model that composed an asset model of type <code>COMPONENT_MODEL</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositionRelationshipItem {
     /// <p>The ID of the component.</p>

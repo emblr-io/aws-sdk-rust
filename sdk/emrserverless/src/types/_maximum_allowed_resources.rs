@@ -2,6 +2,8 @@
 
 /// <p>The maximum allowed cumulative resources for an application. No new resources will be created once the limit is hit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaximumAllowedResources {
     /// <p>The maximum allowed CPU for an application.</p>

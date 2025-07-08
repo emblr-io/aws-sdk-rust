@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for SrtOutputDestinationSettings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SrtOutputDestinationSettings {
     /// Arn used to extract the password from Secrets Manager

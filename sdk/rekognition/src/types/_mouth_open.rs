@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether or not the mouth on the face is open, and the confidence level in the determination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MouthOpen {
     /// <p>Boolean value that indicates whether the mouth on the face is open or not.</p>

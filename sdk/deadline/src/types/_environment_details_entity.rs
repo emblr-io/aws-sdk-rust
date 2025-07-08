@@ -2,6 +2,8 @@
 
 /// <p>The details of a specified environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EnvironmentDetailsEntity {
     /// <p>The job ID.</p>

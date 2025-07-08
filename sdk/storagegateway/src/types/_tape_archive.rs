@@ -2,6 +2,8 @@
 
 /// <p>Represents a virtual tape that is archived in the virtual tape shelf (VTS).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TapeArchive {
     /// <p>The Amazon Resource Name (ARN) of an archived virtual tape.</p>

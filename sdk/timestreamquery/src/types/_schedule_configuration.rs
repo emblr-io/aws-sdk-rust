@@ -2,6 +2,8 @@
 
 /// <p>Configuration of the schedule of the query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleConfiguration {
     /// <p>An expression that denotes when to trigger the scheduled query run. This can be a cron expression or a rate expression.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information that is used to filter message data, to segregate it according to the timeframe in which it arrives.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryFilter {
     /// <p>Used to limit data to that which has arrived since the last execution of the action.</p>

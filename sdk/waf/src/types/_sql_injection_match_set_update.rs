@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Specifies the part of a web request that you want to inspect for snippets of malicious SQL code and indicates whether you want to add the specification to a <code>SqlInjectionMatchSet</code> or delete it from a <code>SqlInjectionMatchSet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqlInjectionMatchSetUpdate {
     /// <p>Specify <code>INSERT</code> to add a <code>SqlInjectionMatchSetUpdate</code> to a <code>SqlInjectionMatchSet</code>. Use <code>DELETE</code> to remove a <code>SqlInjectionMatchSetUpdate</code> from a <code>SqlInjectionMatchSet</code>.</p>

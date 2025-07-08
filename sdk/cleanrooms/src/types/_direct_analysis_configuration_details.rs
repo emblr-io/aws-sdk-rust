@@ -2,6 +2,8 @@
 
 /// <p>The direct analysis configuration details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectAnalysisConfigurationDetails {
     /// <p>The account IDs for the member who received the results of a protected query.</p>

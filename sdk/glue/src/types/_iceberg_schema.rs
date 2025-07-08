@@ -2,6 +2,8 @@
 
 /// <p>Defines the schema structure for an Iceberg table, including field definitions, data types, and schema metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergSchema {
     /// <p>The unique identifier for this schema version within the Iceberg table's schema evolution history.</p>

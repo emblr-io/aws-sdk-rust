@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the data source from which the test set is generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetGenerationDataSource {
     /// <p>Contains information about the bot from which the conversation logs are sourced.</p>

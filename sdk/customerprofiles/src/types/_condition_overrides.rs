@@ -2,6 +2,8 @@
 
 /// <p>An object to override the original condition block of a calculated attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConditionOverrides {
     /// <p>The relative time period over which data is included in the aggregation for this override.</p>

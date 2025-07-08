@@ -2,6 +2,8 @@
 
 /// <p>Provides information on the supported registration type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationTypeDefinition {
     /// <p>The type of registration form. The list of <b>RegistrationTypes</b> can be found using the <code>DescribeRegistrationTypeDefinitions</code> action.</p>

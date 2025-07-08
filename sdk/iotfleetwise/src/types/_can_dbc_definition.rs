@@ -2,6 +2,8 @@
 
 /// <p>Configurations used to create a decoder manifest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanDbcDefinition {
     /// <p>Contains information about a network interface.</p>

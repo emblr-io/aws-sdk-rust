@@ -2,6 +2,8 @@
 
 /// <p>Contains details regarding the supported field type and the operators that can be applied for filtering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldTypeDetails {
     /// <p>The type of field, such as string, integer, date, and so on.</p>

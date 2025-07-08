@@ -2,6 +2,8 @@
 
 /// <p>The action for a session defined by the session action ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssignedSessionAction {
     /// <p>The session action ID for the assigned session.</p>

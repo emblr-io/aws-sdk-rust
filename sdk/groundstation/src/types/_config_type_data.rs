@@ -3,6 +3,8 @@
 /// <p>Object containing the parameters of a <code>Config</code>.</p>
 /// <p>See the subtype definitions for what each type of <code>Config</code> contains.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ConfigTypeData {
     /// <p>Information about how AWS Ground Station should configure an antenna for downlink during a contact.</p>

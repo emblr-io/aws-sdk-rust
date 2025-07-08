@@ -2,6 +2,8 @@
 
 /// <p>Updates the specified HTTP endpoint destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpEndpointDestinationUpdate {
     /// <p>Describes the configuration of the HTTP endpoint destination.</p>

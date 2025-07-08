@@ -2,6 +2,8 @@
 
 /// Container for the parameters to the GenerateDataSet operation.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerateDataSetInput {
     /// <p>The desired data set type.</p>

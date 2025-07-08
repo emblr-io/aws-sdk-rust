@@ -3,6 +3,8 @@
 /// <p>Contains the results of a successful call to the <code>DescribeDBSnapshotAttributes</code> API action.</p>
 /// <p>Manual DB snapshot attributes are used to authorize other Amazon Web Services accounts to copy or restore a manual DB snapshot. For more information, see the <code>ModifyDBSnapshotAttribute</code> API action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSnapshotAttributesResult {
     /// <p>The identifier of the manual DB snapshot that the attributes apply to.</p>

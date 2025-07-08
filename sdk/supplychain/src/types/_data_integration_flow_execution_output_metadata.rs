@@ -2,6 +2,8 @@
 
 /// <p>The output metadata of the flow execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowExecutionOutputMetadata {
     /// <p>The S3 URI under which all diagnostic files (such as deduped records if any) are stored.</p>

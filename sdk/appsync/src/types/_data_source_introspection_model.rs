@@ -2,6 +2,8 @@
 
 /// <p>Contains the introspected data that was retrieved from the data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceIntrospectionModel {
     /// <p>The name of the model. For example, this could be the name of a single table in a database.</p>

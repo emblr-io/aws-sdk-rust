@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the instances that you registered by using a specified service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceSummary {
     /// <p>The ID for an instance that you created by using a specified service.</p>

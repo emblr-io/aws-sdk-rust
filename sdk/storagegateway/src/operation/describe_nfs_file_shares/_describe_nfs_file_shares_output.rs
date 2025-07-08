@@ -2,6 +2,8 @@
 
 /// <p>DescribeNFSFileSharesOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeNfsFileSharesOutput {
     /// <p>An array containing a description for each requested file share.</p>

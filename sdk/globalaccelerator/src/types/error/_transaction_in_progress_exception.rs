@@ -2,6 +2,8 @@
 
 /// <p>There's already a transaction in progress. Another transaction can't be processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransactionInProgressException {
     #[allow(missing_docs)] // documentation missing in model

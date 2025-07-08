@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the user pool configuration is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidUserPoolConfigurationException {
     /// <p>The message returned when the user pool configuration is not valid.</p>

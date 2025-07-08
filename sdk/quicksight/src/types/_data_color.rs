@@ -2,6 +2,8 @@
 
 /// <p>Determines the color that is applied to a particular data value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataColor {
     /// <p>The color that is applied to the data value.</p>

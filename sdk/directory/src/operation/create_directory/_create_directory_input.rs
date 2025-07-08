@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>CreateDirectory</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateDirectoryInput {
     /// <p>The fully qualified name for the directory, such as <code>corp.example.com</code>.</p>

@@ -3,6 +3,8 @@
 /// <p>The length of the <code>Content-Security-Policy</code> header value in the response headers policy exceeds the maximum.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html">Quotas</a> (formerly known as limits) in the <i>Amazon CloudFront Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooLongCspInResponseHeadersPolicy {
     #[allow(missing_docs)] // documentation missing in model

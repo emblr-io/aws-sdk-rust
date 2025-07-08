@@ -2,6 +2,8 @@
 
 /// <p>Result message containing a list of application descriptions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeApplicationsOutput {
     /// <p>This parameter contains a list of <code>ApplicationDescription</code>.</p>

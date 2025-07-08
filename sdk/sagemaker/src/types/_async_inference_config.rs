@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration for how an endpoint performs asynchronous inference.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AsyncInferenceConfig {
     /// <p>Configures the behavior of the client used by SageMaker to interact with the model container during asynchronous inference.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A game session with this custom ID string already exists in this fleet. Resolve this conflict before retrying this request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdempotentParameterMismatchException {
     #[allow(missing_docs)] // documentation missing in model

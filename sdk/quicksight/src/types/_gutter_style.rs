@@ -2,6 +2,8 @@
 
 /// <p>The display options for gutter spacing between tiles on a sheet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GutterStyle {
     /// <p>This Boolean value controls whether to display a gutter space between sheet tiles.</p>

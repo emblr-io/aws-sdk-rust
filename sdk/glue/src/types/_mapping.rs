@@ -2,6 +2,8 @@
 
 /// <p>Specifies the mapping of data property keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Mapping {
     /// <p>After the apply mapping, what the name of the column should be. Can be the same as <code>FromPath</code>.</p>

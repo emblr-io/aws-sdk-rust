@@ -2,6 +2,8 @@
 
 /// <p>The encryption configuration to use when storing the generated manifest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeneratedManifestEncryption {
     /// <p>Specifies the use of SSE-S3 to encrypt generated manifest objects.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object containing source code information that is linked to an application component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceCode {
     /// <p>The type of repository to use for the source code.</p>

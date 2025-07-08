@@ -2,6 +2,8 @@
 
 /// <p>The default options that correspond to the filter control type of a <code>DateTimePicker</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultDateTimePickerControlOptions {
     /// <p>The date time picker type of the <code>DefaultDateTimePickerControlOptions</code>. Choose one of the following options:</p>

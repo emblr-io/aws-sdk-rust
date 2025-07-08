@@ -2,6 +2,8 @@
 
 /// <p>The union type representing the allowed types of operands for a boolean condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RuleBooleanToEvaluate {
     /// <p>The Add On ARN and its returned value to evaluate in a boolean condition expression.</p>

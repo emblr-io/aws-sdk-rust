@@ -2,6 +2,8 @@
 
 /// <p>Information about the <code>DeleteNetworkAclEntries</code> action in Amazon EC2. This is a remediation option in <code>RemediationAction</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteNetworkAclEntriesAction {
     /// <p>Brief description of this remediation action.</p>

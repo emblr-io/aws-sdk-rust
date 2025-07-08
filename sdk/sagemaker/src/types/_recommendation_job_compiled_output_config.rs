@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the output configuration for the compiled model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationJobCompiledOutputConfig {
     /// <p>Identifies the Amazon S3 bucket where you want SageMaker to store the compiled model artifacts.</p>

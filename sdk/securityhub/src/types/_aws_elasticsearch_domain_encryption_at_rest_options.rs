@@ -2,6 +2,8 @@
 
 /// <p>Details about the configuration for encryption at rest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainEncryptionAtRestOptions {
     /// <p>Whether encryption at rest is enabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the Amazon S3 bucket name and location for the grammar that is the source for the slot type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrammarSlotTypeSource {
     /// <p>The name of the Amazon S3 bucket that contains the grammar source.</p>

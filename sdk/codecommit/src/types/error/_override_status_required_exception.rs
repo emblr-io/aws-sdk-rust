@@ -2,6 +2,8 @@
 
 /// <p>An override status is required, but no value was provided. Valid values include OVERRIDE and REVOKE.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverrideStatusRequiredException {
     /// <p>Any message associated with the exception.</p>

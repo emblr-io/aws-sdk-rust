@@ -2,6 +2,8 @@
 
 /// <p>A representation of the new charge details of a custom line item. This should contain only one of <code>Flat</code> or <code>Percentage</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateCustomLineItemChargeDetails {
     /// <p>An <code>UpdateCustomLineItemFlatChargeDetails</code> that describes the new charge details of a flat custom line item.</p>

@@ -9,6 +9,8 @@
 /// </ul>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRule {
     /// <p><b>\[Custom snapshot policies only\]</b> Specifies the destination for snapshots created by the policy. The allowed destinations depend on the location of the targeted resources.</p>

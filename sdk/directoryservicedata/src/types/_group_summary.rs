@@ -2,6 +2,8 @@
 
 /// <p>A structure containing a subset of fields of a group object from a directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupSummary {
     /// <p>The unique security identifier (SID) of the group.</p>

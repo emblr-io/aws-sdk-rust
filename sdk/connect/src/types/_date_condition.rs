@@ -2,6 +2,8 @@
 
 /// <p>An object to specify the hours of operation override date condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateCondition {
     /// <p>An object to specify the hours of operation override date field.</p>

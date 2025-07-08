@@ -2,6 +2,8 @@
 
 /// <p>Information about the target S3 bucket for the resource data sync.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceDataSyncS3Destination {
     /// <p>The name of the S3 bucket where the aggregated data is stored.</p>

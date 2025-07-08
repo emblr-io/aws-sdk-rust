@@ -2,6 +2,8 @@
 
 /// <p>The parameters of sorting the data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestionJobSortBy {
     /// <p>The name of field or attribute to apply sorting of data.</p>

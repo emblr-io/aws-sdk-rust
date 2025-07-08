@@ -2,6 +2,8 @@
 
 /// <p>A workflow graph represents the complete workflow containing all the Glue components present in the workflow and all the directed connections between them.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowGraph {
     /// <p>A list of the the Glue components belong to the workflow represented as nodes.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure defines the metric to be used as the service level indicator, along with the statistics, period, and unit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricStat {
     /// <p>The metric to use as the service level indicator, including the metric name, namespace, and dimensions.</p>

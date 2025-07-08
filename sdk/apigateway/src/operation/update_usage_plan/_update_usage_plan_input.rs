@@ -2,6 +2,8 @@
 
 /// <p>The PATCH request to update a usage plan of a given plan Id.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateUsagePlanInput {
     /// <p>The Id of the to-be-updated usage plan.</p>

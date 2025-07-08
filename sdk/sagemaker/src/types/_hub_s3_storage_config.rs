@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 storage configuration of a hub.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HubS3StorageConfig {
     /// <p>The Amazon S3 bucket prefix for hosting hub content.</p>

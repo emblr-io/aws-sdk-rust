@@ -2,6 +2,8 @@
 
 /// <p>Specifies the serverless update concurrency configuration for an endpoint variant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantServerlessUpdateConfig {
     /// <p>The updated maximum number of concurrent invocations your serverless endpoint can process.</p>

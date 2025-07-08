@@ -2,6 +2,8 @@
 
 /// <p>Settings specific to the Amazon Transcribe Medical engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineTranscribeMedicalSettings {
     /// <p>The language code specified for the Amazon Transcribe Medical engine.</p>

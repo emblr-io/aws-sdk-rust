@@ -2,6 +2,8 @@
 
 /// <p>Represents a successfully created item in a batch operation for bill scenario usage modifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateBillScenarioUsageModificationItem {
     /// <p>The Amazon Web Services service code for this usage modification.</p>

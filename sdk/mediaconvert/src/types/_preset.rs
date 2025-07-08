@@ -2,6 +2,8 @@
 
 /// A preset is a collection of preconfigured media conversion settings that you want MediaConvert to apply to the output during the conversion process.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Preset {
     /// An identifier for this resource that is unique within all of AWS.

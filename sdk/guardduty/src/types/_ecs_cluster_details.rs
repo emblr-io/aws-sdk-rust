@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the details of the ECS Cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsClusterDetails {
     /// <p>The name of the ECS Cluster.</p>

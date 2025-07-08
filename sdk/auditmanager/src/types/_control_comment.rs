@@ -2,6 +2,8 @@
 
 /// <p>A comment that's posted by a user on a control. This includes the author's name, the comment text, and a timestamp.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ControlComment {
     /// <p>The name of the user who authored the comment.</p>

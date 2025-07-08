@@ -2,6 +2,8 @@
 
 /// <p>Information about logs built to an S3 bucket for a build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCodeBuildProjectLogsConfigS3LogsDetails {
     /// <p>Whether to disable encryption of the S3 build log output.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The response parameters of CreateDataLakeNamespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDataLakeNamespaceOutput {
     /// <p>The detail of created namespace.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Filters the resource count based on account ID, region, and resource type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceCountFilters {
     /// <p>The type of the Amazon Web Services resource.</p>

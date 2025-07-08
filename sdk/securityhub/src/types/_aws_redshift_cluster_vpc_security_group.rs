@@ -2,6 +2,8 @@
 
 /// <p>A VPC security group that the cluster belongs to, if the cluster is in a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterVpcSecurityGroup {
     /// <p>The status of the VPC security group.</p>

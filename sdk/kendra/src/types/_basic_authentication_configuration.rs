@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to websites that require basic user authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BasicAuthenticationConfiguration {
     /// <p>The name of the website host you want to connect to using authentication credentials.</p>

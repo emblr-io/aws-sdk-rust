@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for returning the results from the knowledge base vector search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KnowledgeBaseVectorSearchConfiguration {
     /// <p>The number of text chunks to retrieve; the number of results to return.</p>

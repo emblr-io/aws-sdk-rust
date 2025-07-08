@@ -2,6 +2,8 @@
 
 /// <p>Whether or not the command was successfully canceled. There is no guarantee that a request can be canceled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelCommandOutput {
     _request_id: Option<String>,

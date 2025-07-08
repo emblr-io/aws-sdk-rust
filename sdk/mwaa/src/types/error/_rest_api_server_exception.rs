@@ -2,6 +2,8 @@
 
 /// <p>An exception indicating that a server-side error occurred during the Apache Airflow REST API call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RestApiServerException {
     /// <p>The HTTP status code returned by the Apache Airflow REST API call.</p>

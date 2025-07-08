@@ -2,6 +2,8 @@
 
 /// <p>The checksum of the resource that you are trying to change does not match the checksum in the request. Check the resource's checksum and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PreconditionFailedException {
     #[allow(missing_docs)] // documentation missing in model

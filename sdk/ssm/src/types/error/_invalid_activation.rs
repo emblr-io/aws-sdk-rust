@@ -2,6 +2,8 @@
 
 /// <p>The activation isn't valid. The activation might have been deleted, or the ActivationId and the ActivationCode don't match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidActivation {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Provides the bot locale parameters required for exporting a bot locale.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotLocaleExportSpecification {
     /// <p>The identifier of the bot to create the locale for.</p>

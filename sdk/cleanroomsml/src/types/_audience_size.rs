@@ -2,6 +2,8 @@
 
 /// <p>The size of the generated audience. Must match one of the sizes in the configured audience model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudienceSize {
     /// <p>Whether the audience size is defined in absolute terms or as a percentage. You can use the <code>ABSOLUTE</code> <code>AudienceSize</code> to configure out audience sizes using the count of identifiers in the output. You can use the <code>Percentage</code> <code>AudienceSize</code> to configure sizes in the range 1-100 percent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A unique message ID that you receive when Amazon Pinpoint accepts an email for sending.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendEmailOutput {
     /// <p>A unique identifier for the message that is generated when Amazon Pinpoint accepts the message.</p><note>

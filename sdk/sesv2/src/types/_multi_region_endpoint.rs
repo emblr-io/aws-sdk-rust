@@ -2,6 +2,8 @@
 
 /// <p>An object that contains multi-region endpoint (global-endpoint) properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiRegionEndpoint {
     /// <p>The name of the multi-region endpoint (global-endpoint).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about a rule to exclude from a rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafExcludedRule {
     /// <p>The unique identifier for the rule to exclude from the rule group.</p>

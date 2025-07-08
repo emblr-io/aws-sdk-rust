@@ -2,6 +2,8 @@
 
 /// <p>Specifies batch transform jobs that SageMaker runs to validate your model package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPackageValidationSpecification {
     /// <p>The IAM roles to be used for the validation of the model package.</p>

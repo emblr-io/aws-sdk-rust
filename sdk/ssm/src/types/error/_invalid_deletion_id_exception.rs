@@ -2,6 +2,8 @@
 
 /// <p>The ID specified for the delete operation doesn't exist or isn't valid. Verify the ID and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDeletionIdException {
     #[allow(missing_docs)] // documentation missing in model

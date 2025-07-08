@@ -2,6 +2,8 @@
 
 /// <p>This account is already a member of an organization. An account can belong to only one organization at a time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlreadyInOrganizationException {
     #[allow(missing_docs)] // documentation missing in model

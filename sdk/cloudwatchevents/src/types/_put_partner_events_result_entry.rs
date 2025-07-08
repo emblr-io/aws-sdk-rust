@@ -2,6 +2,8 @@
 
 /// <p>Represents an event that a partner tried to generate, but failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutPartnerEventsResultEntry {
     /// <p>The ID of the event.</p>

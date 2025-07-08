@@ -2,6 +2,8 @@
 
 /// <p>Contains the details for an Amazon RDS DB shard group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDbShardGroupOutput {
     /// <p>The Amazon Web Services Region-unique, immutable identifier for the DB shard group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Options that determine the layout and display options of a chart's small multiples.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmallMultiplesOptions {
     /// <p>Sets the maximum number of visible rows to display in the grid of small multiples panels.</p>

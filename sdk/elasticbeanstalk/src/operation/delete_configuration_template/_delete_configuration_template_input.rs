@@ -2,6 +2,8 @@
 
 /// <p>Request to delete a configuration template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConfigurationTemplateInput {
     /// <p>The name of the application to delete the configuration template from.</p>

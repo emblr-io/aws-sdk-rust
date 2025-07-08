@@ -2,6 +2,8 @@
 
 /// <p>Specifies the current source of the resource and the destination of where it will be moved to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceMapping {
     /// <p>The source stack <code>StackName</code> and <code>LogicalResourceId</code> for the resource being refactored.</p>

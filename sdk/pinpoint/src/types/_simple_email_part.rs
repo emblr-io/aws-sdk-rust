@@ -2,6 +2,8 @@
 
 /// <p>Specifies the subject or body of an email message, represented as textual email data and the applicable character set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimpleEmailPart {
     /// <p>The applicable character set for the message content.</p>

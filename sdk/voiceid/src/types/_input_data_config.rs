@@ -2,6 +2,8 @@
 
 /// <p>The configuration containing input file information for a batch job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDataConfig {
     /// <p>The S3 location for the input manifest file that contains the list of individual enrollment or registration job requests.</p>

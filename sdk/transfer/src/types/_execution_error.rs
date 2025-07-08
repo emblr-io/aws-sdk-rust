@@ -2,6 +2,8 @@
 
 /// <p>Specifies the error message and type, for an error that occurs during the execution of the workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionError {
     /// <p>Specifies the error type.</p>

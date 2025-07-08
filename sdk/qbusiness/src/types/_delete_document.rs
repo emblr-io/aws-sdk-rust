@@ -2,6 +2,8 @@
 
 /// <p>A document deleted from an Amazon Q Business data source connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDocument {
     /// <p>The identifier of the deleted document.</p>

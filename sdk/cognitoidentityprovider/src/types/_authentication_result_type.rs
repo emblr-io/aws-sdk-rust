@@ -2,6 +2,8 @@
 
 /// <p>The object that your application receives after authentication. Contains tokens and information for device authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AuthenticationResultType {
     /// <p>Your user's access token.</p>

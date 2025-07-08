@@ -38,6 +38,8 @@
 /// <p>Any customized profile attributes that start with the <code>Attributes</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MatchingRule {
     /// <p>A single rule level of the <code>MatchRules</code>. Configures how the rule-based matching process should match profiles.</p>

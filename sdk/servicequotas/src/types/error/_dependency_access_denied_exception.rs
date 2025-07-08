@@ -2,6 +2,8 @@
 
 /// <p>You can't perform this action because a dependency does not have access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependencyAccessDeniedException {
     #[allow(missing_docs)] // documentation missing in model

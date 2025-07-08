@@ -2,6 +2,8 @@
 
 /// <p>The parameters that comprise the parameter group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Parameters {
     /// <p>All the customer-modifiable InfluxDB v2 parameters in Timestream for InfluxDB.</p>

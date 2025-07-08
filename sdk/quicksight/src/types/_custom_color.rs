@@ -2,6 +2,8 @@
 
 /// <p>Determines the color that's applied to a particular data value in a column.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomColor {
     /// <p>The data value that the color is applied to.</p>

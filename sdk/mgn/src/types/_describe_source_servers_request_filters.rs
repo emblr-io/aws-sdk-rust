@@ -2,6 +2,8 @@
 
 /// <p>Request to filter Source Servers list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSourceServersRequestFilters {
     /// <p>Request to filter Source Servers list by Source Server ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The <code>UpdatePipelineNotificationsRequest</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipelineNotificationsInput {
     /// <p>The identifier of the pipeline for which you want to change notification settings.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a precondition is not met.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PreconditionNotMetException {
     /// <p>The message returned when a precondition is not met.</p>

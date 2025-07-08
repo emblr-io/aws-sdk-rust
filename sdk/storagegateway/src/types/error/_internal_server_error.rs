@@ -2,6 +2,8 @@
 
 /// <p>An internal server error has occurred during the request. For more information, see the error and message fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerError {
     /// <p>A human-readable message describing the error that occurred.</p>

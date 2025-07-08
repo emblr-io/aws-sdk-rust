@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the privacy budget template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivacyBudgetTemplate {
     /// <p>The unique identifier of the privacy budget template.</p>

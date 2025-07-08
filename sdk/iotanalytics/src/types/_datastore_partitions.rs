@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the partition dimensions in a data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatastorePartitions {
     /// <p>A list of partition dimensions in a data store.</p>

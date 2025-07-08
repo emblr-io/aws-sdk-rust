@@ -2,6 +2,8 @@
 
 /// <p>Segment type containing a list of detected issues.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisSegmentIssues {
     /// <p>List of the issues detected.</p>

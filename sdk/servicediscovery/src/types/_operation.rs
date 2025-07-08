@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about a specified operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Operation {
     /// <p>The ID of the operation that you want to get information about.</p>

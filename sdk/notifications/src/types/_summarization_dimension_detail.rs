@@ -2,6 +2,8 @@
 
 /// <p>Provides detailed information about the dimensions used for event summarization and aggregation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SummarizationDimensionDetail {
     /// <p>The name of the SummarizationDimensionDetail.</p>

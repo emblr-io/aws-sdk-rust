@@ -2,6 +2,8 @@
 
 /// <p>Represents a comparison of cost and usage metrics between two time periods.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostAndUsageComparison {
     /// <p>Use <code>Expression</code> to filter in various Cost Explorer APIs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Swaps the CNAMEs of two environments.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SwapEnvironmentCnamEsInput {
     /// <p>The ID of the source environment.</p>

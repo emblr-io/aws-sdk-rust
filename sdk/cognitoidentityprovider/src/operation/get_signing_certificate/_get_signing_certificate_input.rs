@@ -2,6 +2,8 @@
 
 /// <p>Request to get a signing certificate from Amazon Cognito.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSigningCertificateInput {
     /// <p>The ID of the user pool where you want to view the signing certificate.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Used to filter the workflow executions in visibility APIs by their <code>workflowId</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowExecutionFilter {
     /// <p>The workflowId to pass of match the criteria of this filter.</p>

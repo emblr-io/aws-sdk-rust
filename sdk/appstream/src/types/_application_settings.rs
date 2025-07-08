@@ -2,6 +2,8 @@
 
 /// <p>The persistent application settings for users of a stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationSettings {
     /// <p>Enables or disables persistent application settings for users during their streaming sessions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The protected job output configuration output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProtectedJobOutputConfigurationOutput {
     /// <p>The member output configuration for a protected job.</p>

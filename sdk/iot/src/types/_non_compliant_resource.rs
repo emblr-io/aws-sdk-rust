@@ -2,6 +2,8 @@
 
 /// <p>Information about the resource that was noncompliant with the audit check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NonCompliantResource {
     /// <p>The type of the noncompliant resource.</p>

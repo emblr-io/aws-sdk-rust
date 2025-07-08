@@ -2,6 +2,8 @@
 
 /// <p>A list of CloudFront key pair identifiers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyPairIds {
     /// <p>The number of key pair identifiers in the list.</p>

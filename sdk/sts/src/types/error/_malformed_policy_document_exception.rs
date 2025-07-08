@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the policy document was malformed. The error message describes the specific error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MalformedPolicyDocumentException {
     #[allow(missing_docs)] // documentation missing in model

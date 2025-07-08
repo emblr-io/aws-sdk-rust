@@ -2,6 +2,8 @@
 
 /// <p>Provides text and information about where to highlight the query suggestion text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestionTextWithHighlights {
     /// <p>The query suggestion text to display to the user.</p>

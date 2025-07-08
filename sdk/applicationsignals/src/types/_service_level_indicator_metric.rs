@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the information about the metric that is used for a period-based SLO.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLevelIndicatorMetric {
     /// <p>This is a string-to-string map that contains information about the type of object that this SLO is related to. It can include the following fields.</p>

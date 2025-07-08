@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a parent asset and a child asset that are related through an asset hierarchy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetHierarchyInfo {
     /// <p>The ID of the parent asset in this asset relationship.</p>

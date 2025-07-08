@@ -2,6 +2,8 @@
 
 /// <p>A metric that contributes to the consolidated report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConsolidatedReportMetric {
     /// <p>The metric type of a metric in the consolidated report. Currently only WORKLOAD metric types are supported.</p>

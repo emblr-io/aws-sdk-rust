@@ -2,6 +2,8 @@
 
 /// <p>A person detected by a call to <code>DetectProtectiveEquipment</code>. The API returns all persons detected in the input image in an array of <code>ProtectiveEquipmentPerson</code> objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectiveEquipmentPerson {
     /// <p>An array of body parts detected on a person's body (including body parts without PPE).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Encloses the <code>Id</code> of an entry in <code> <code>DeleteMessageBatch</code>.</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteMessageBatchResultEntry {
     /// <p>Represents a successfully deleted message.</p>

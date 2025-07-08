@@ -3,6 +3,8 @@
 /// <p>Indicates that email sending is disabled for the configuration set.</p>
 /// <p>You can enable or disable email sending for a configuration set using <code>UpdateConfigurationSetSendingEnabled</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationSetSendingPausedException {
     /// <p>The name of the configuration set for which email sending is disabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the dimensions that the acceptor has purchased from the overall set of dimensions presented in the rate card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Dimension {
     /// <p>The name of key value of the dimension.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Due to throttling, the request was denied. Slow down the rate of request calls, or request an increase for this quota.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyRequestsException {
     #[allow(missing_docs)] // documentation missing in model

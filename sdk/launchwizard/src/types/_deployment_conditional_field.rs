@@ -2,6 +2,8 @@
 
 /// <p>A field that details a condition of the specifications for a deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentConditionalField {
     /// <p>The name of the deployment condition.</p>

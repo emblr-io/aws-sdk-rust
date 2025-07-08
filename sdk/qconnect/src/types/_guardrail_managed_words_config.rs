@@ -2,6 +2,8 @@
 
 /// <p>The managed word list to configure for the AI Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailManagedWordsConfig {
     /// <p>The managed word type to configure for the AI Guardrail.</p>

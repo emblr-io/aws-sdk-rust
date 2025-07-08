@@ -2,6 +2,8 @@
 
 /// <p>Describes a server in a Fleet Advisor collector inventory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerShortInfoResponse {
     /// <p>The ID of a server in a Fleet Advisor collector inventory.</p>

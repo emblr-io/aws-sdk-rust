@@ -2,6 +2,8 @@
 
 /// <p>Options related to the pedestrian.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePedestrianOptions {
     /// <p>Walking speed in Kilometers per hour.</p>

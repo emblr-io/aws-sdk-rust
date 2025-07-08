@@ -2,6 +2,8 @@
 
 /// <p>The amount of cost or usage that you created the budget for, compared to your actual costs or usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BudgetedAndActualAmounts {
     /// <p>The amount of cost or usage that you created the budget for.</p>

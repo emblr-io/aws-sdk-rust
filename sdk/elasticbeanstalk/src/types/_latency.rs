@@ -2,6 +2,8 @@
 
 /// <p>Represents the average latency for the slowest X percent of requests over the last 10 seconds.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Latency {
     /// <p>The average latency for the slowest 0.1 percent of requests over the last 10 seconds.</p>

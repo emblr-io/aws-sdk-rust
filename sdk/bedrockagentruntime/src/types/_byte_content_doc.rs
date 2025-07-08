@@ -2,6 +2,8 @@
 
 /// <p>This property contains the document to chat with, along with its attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ByteContentDoc {
     /// <p>The file name of the document contained in the wrapper object.</p>

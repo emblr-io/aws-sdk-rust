@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element in the <code>ModifyDBInstance</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingModifiedValues {
     /// <p>Contains the new <code>DBInstanceClass</code> for the DB instance that will be applied or is currently being applied.</p>

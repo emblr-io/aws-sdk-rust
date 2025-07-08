@@ -2,6 +2,8 @@
 
 /// <p>The number of items in the intent classification test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentClassificationTestResultItemCounts {
     /// <p>The total number of results in the intent classification test.</p>

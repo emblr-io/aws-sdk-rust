@@ -2,6 +2,8 @@
 
 /// <p>A <code>NestedFilter</code> filters data with a subset of data that is defined by the nested inner filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NestedFilter {
     /// <p>An identifier that uniquely identifies a filter within a dashboard, analysis, or template.</p>

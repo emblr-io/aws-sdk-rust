@@ -2,6 +2,8 @@
 
 /// <p>Payload content, the speech chunk, for the bidirectional input of the invocation step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum InvokeModelWithBidirectionalStreamInput {
     /// <p>The audio chunk that is used as input for the invocation step.</p>

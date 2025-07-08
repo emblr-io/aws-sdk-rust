@@ -2,6 +2,8 @@
 
 /// <p>A plugin is an Amazon Web Services resource that contains the code that defines your connector logic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Plugin {
     /// <p>Details about a custom plugin.</p>

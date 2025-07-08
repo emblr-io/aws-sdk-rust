@@ -2,6 +2,8 @@
 
 /// <p>Session keys for ABP v1.1</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionKeysAbpV11 {
     /// <p>The FNwkSIntKey value.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Returned in response to a successful <code>LookupDeveloperIdentity</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LookupDeveloperIdentityOutput {
     /// <p>A unique identifier in the format REGION:GUID.</p>

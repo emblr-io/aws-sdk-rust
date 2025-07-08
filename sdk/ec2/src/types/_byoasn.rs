@@ -2,6 +2,8 @@
 
 /// <p>The Autonomous System Number (ASN) and BYOIP CIDR association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Byoasn {
     /// <p>A public 2-byte or 4-byte ASN.</p>

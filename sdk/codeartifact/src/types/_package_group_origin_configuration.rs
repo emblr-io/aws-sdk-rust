@@ -2,6 +2,8 @@
 
 /// <p>The package group origin configuration that determines how package versions can enter repositories.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageGroupOriginConfiguration {
     /// <p>The origin configuration settings that determine how package versions can enter repositories.</p>

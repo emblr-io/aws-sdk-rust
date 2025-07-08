@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of CreateReservedInstancesListing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateReservedInstancesListingOutput {
     /// <p>Information about the Standard Reserved Instance listing.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the data source for the metrics export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricsDataSource {
     /// <p>An object that contains a mapping between a <code>MetricDimensionName</code> and <code>MetricDimensionValue</code> to filter metrics by. Must contain a least 1 dimension but no more than 3 unique ones.</p>

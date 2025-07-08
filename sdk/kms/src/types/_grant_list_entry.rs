@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrantListEntry {
     /// <p>The unique identifier for the KMS key to which the grant applies.</p>

@@ -2,6 +2,8 @@
 
 /// Request for retrieving a data view detail. Grouped / accessible within a dataset by its dataset id.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDataViewInput {
     /// <p>The unique identifier for the Dataview.</p>

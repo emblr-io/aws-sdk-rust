@@ -2,6 +2,8 @@
 
 /// <p>A reason why the schema status is set to its current value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaStatusReason {
     /// <p>The schema status reason code.</p>

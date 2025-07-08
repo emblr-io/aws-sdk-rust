@@ -2,6 +2,8 @@
 
 /// <p>A channel is a named input source that training algorithms can consume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Channel {
     /// <p>The name of the channel.</p>

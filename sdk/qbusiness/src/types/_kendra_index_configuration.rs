@@ -2,6 +2,8 @@
 
 /// <p>Stores an Amazon Kendra index as a retriever.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KendraIndexConfiguration {
     /// <p>The identifier of the Amazon Kendra index.</p>

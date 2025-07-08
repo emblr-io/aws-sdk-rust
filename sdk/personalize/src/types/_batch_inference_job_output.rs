@@ -2,6 +2,8 @@
 
 /// <p>The output configuration parameters of a batch inference job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchInferenceJobOutput {
     /// <p>Information on the Amazon S3 bucket in which the batch inference job's output is stored.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for response returned by <code> <code>GetCompatibleElasticsearchVersions</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetCompatibleElasticsearchVersionsOutput {
     /// <p>A map of compatible Elasticsearch versions returned as part of the <code> <code>GetCompatibleElasticsearchVersions</code> </code> operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because one or more items in the request are being modified by a request in another Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicatedWriteConflictException {
     #[allow(missing_docs)] // documentation missing in model

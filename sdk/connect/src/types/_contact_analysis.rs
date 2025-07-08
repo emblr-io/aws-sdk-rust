@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines search criteria for contacts using analysis outputs from Amazon Connect Contact Lens.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactAnalysis {
     /// <p>Search criteria based on transcript analyzed by Amazon Connect Contact Lens.</p>

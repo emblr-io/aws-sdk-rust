@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required when using SAPOData.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SapoDataConnectorProfileCredentials {
     /// <p>The SAPOData basic authentication credentials.</p>

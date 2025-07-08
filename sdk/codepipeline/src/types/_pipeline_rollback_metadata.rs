@@ -2,6 +2,8 @@
 
 /// <p>The metadata for the stage execution to be rolled back.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineRollbackMetadata {
     /// <p>The pipeline execution ID to which the stage will be rolled back.</p>

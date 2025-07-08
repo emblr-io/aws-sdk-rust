@@ -2,6 +2,8 @@
 
 /// <p>Describes a utilization metric of an Lambda function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionUtilizationMetric {
     /// <p>The name of the utilization metric.</p>

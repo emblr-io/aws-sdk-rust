@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for InputAttachment
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputAttachment {
     /// User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input.

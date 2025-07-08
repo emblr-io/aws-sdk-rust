@@ -3,6 +3,8 @@
 /// <p>For the <code>CreateTrail</code> <code>PutInsightSelectors</code>, <code>UpdateTrail</code>, <code>StartQuery</code>, and <code>StartImport</code> operations, this exception is thrown when the policy on the S3 bucket or KMS key does not have sufficient permissions for the operation.</p>
 /// <p>For all other operations, this exception is thrown when the policy for the KMS key does not have sufficient permissions for the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientEncryptionPolicyException {
     /// <p>Brief description of the exception returned by the request.</p>

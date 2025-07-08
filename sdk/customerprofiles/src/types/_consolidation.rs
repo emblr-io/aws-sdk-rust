@@ -2,6 +2,8 @@
 
 /// <p>The matching criteria to be used during the auto-merging process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Consolidation {
     /// <p>A list of matching criteria.</p>

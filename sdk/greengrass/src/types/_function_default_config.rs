@@ -2,6 +2,8 @@
 
 /// The default configuration that applies to all Lambda functions in the group. Individual Lambda functions can override these settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionDefaultConfig {
     /// Configuration information that specifies how a Lambda function runs.

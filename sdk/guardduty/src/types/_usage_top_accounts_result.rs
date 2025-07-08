@@ -2,6 +2,8 @@
 
 /// <p>Information about the usage statistics, calculated by top accounts by feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageTopAccountsResult {
     /// <p>Features by which you can generate the usage statistics.</p>

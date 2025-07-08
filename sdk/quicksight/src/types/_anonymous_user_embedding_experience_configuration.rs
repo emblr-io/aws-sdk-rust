@@ -2,6 +2,8 @@
 
 /// <p>The type of experience you want to embed. For anonymous users, you can embed Amazon QuickSight dashboards.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnonymousUserEmbeddingExperienceConfiguration {
     /// <p>The type of embedding experience. In this case, Amazon QuickSight dashboards.</p>

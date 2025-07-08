@@ -2,6 +2,8 @@
 
 /// <p>Limits that are related to concurrency and storage. All file and storage sizes are in bytes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountLimit {
     /// <p>The amount of storage space that you can use for all deployment packages and layer archives.</p>

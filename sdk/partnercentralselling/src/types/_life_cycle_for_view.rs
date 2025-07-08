@@ -2,6 +2,8 @@
 
 /// <p>Provides the lifecycle view of an opportunity resource shared through a snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LifeCycleForView {
     /// <p>The projected launch date of the opportunity shared through a snapshot.</p>

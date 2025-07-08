@@ -2,6 +2,8 @@
 
 /// <p>The arc axis range of a <code>GaugeChartVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArcAxisDisplayRange {
     /// <p>The minimum value of the arc axis range.</p>

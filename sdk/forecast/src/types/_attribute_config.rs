@@ -7,6 +7,8 @@
 /// <p><code>"Transformations": {"aggregation": "sum", "middlefill": "zero", "backfill": "zero"}</code></p>
 /// <p><code>}</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeConfig {
     /// <p>The name of the attribute as specified in the schema. Amazon Forecast supports the target field of the target time series and the related time series datasets. For example, for the RETAIL domain, the target is <code>demand</code>.</p>

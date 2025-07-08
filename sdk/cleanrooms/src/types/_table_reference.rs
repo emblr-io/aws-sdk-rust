@@ -2,6 +2,8 @@
 
 /// <p>A pointer to the dataset that underlies this table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TableReference {
     /// <p>If present, a reference to the Athena table referred to by this table reference.</p>

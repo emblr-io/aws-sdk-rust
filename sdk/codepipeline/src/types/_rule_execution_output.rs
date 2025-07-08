@@ -2,6 +2,8 @@
 
 /// <p>Output details listed for a rule execution, such as the rule execution result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleExecutionOutput {
     /// <p>Execution result information listed in the output details for a rule execution.</p>

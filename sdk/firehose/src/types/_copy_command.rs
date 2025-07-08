@@ -2,6 +2,8 @@
 
 /// <p>Describes a <code>COPY</code> command for Amazon Redshift.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CopyCommand {
     /// <p>The name of the target table. The table must already exist in the database.</p>

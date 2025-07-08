@@ -2,6 +2,8 @@
 
 /// <p>Gateway list item object that specifies the frequency and list of gateways for which the downlink message should be sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GatewayListItem {
     /// <p>The ID of the wireless gateways that you want to add to the list of gateways when sending downlink messages.</p>

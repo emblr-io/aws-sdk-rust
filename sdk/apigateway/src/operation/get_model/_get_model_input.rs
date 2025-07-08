@@ -2,6 +2,8 @@
 
 /// <p>Request to list information about a model in an existing RestApi resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetModelInput {
     /// <p>The RestApi identifier under which the Model exists.</p>

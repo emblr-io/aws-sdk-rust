@@ -2,6 +2,8 @@
 
 /// <p>A subset of the possible batch job attributes. Used in the batch job list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchJobExecutionSummary {
     /// <p>The unique identifier of this execution of the batch job.</p>

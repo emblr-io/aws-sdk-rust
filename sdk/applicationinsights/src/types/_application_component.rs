@@ -2,6 +2,8 @@
 
 /// <p>Describes a standalone resource or similarly grouped resources that the application is made up of.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationComponent {
     /// <p>The name of the component.</p>

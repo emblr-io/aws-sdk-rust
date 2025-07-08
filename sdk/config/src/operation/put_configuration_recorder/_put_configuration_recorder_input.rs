@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>PutConfigurationRecorder</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutConfigurationRecorderInput {
     /// <p>An object for the configuration recorder. A configuration recorder records configuration changes for the resource types in scope.</p>

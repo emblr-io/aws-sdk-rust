@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a call analytics job, including information about skipped analytics features.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallAnalyticsJobDetails {
     /// <p>Contains information about any skipped analytics features during the analysis of a call analytics job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about where the text with a citation begins and ends in the generated output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CitationSpan {
     /// <p>Where the text with a citation starts in the generated output.</p>

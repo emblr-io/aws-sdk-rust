@@ -2,6 +2,8 @@
 
 /// <p>Contains the result or output of an action group or knowledge base, or the response to the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Observation {
     /// <p>The unique identifier of the trace.</p>

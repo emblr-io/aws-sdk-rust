@@ -2,6 +2,8 @@
 
 /// <p>Information about the Amazon S3 Glue Data Catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3GlueDataCatalog {
     /// <p>&gt;The Amazon Resource Name (ARN) for the S3 Glue Data Catalog.</p>

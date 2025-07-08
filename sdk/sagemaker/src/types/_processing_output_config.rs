@@ -2,6 +2,8 @@
 
 /// <p>Configuration for uploading output from the processing container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProcessingOutputConfig {
     /// <p>An array of outputs configuring the data to upload from the processing container.</p>

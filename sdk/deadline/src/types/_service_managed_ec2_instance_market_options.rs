@@ -2,6 +2,8 @@
 
 /// <p>The details of the Amazon EC2 instance market options for a service managed fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceManagedEc2InstanceMarketOptions {
     /// <p>The Amazon EC2 instance type.</p>

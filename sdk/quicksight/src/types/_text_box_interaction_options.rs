@@ -2,6 +2,8 @@
 
 /// <p>The general textbox interactions setup for textbox publish options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextBoxInteractionOptions {
     /// <p>The menu options for the textbox.</p>

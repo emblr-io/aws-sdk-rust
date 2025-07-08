@@ -2,6 +2,8 @@
 
 /// <p>Specifies the base segments and dimensions for a segment, and the relationships between these base segments and dimensions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentGroup {
     /// <p>An array that defines the dimensions for the segment.</p>

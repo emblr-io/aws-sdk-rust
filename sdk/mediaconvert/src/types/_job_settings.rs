@@ -2,6 +2,8 @@
 
 /// JobSettings contains all the transcode settings for a job.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobSettings {
     /// When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time.

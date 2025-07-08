@@ -2,6 +2,8 @@
 
 /// <p>A control in Audit Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Control {
     /// <p>The Amazon Resource Name (ARN) of the control.</p>

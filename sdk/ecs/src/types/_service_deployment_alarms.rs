@@ -3,6 +3,8 @@
 /// <p>The CloudWatch alarms used to determine a service deployment failed.</p>
 /// <p>Amazon ECS considers the service deployment as failed when any of the alarms move to the <code>ALARM</code> state. For more information, see <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-failure.html">How CloudWatch alarms detect Amazon ECS deployment failures</a> in the Amazon ECS Developer Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDeploymentAlarms {
     /// <p>The status of the alarms check. Amazon ECS is not using alarms for service deployment failures when the status is <code>DISABLED</code>.</p>

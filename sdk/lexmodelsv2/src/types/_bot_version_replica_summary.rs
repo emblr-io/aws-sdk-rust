@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information for all the version replication statuses applicable for Global resiliency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotVersionReplicaSummary {
     /// <p>The bot version for the summary information for all the version replication statuses.</p>

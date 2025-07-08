@@ -2,6 +2,8 @@
 
 /// <p>Provides details about execution input or output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchEventsExecutionDataDetails {
     /// <p>Indicates whether input or output was included in the response. Always <code>true</code> for API calls.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An item collection is too large. This exception is only returned for tables that have one or more local secondary indexes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemCollectionSizeLimitExceededException {
     /// <p>The total size of an item collection has exceeded the maximum limit of 10 gigabytes.</p>

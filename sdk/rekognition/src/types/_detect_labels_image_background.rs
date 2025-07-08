@@ -2,6 +2,8 @@
 
 /// <p>The background of the image with regard to image quality and dominant colors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectLabelsImageBackground {
     /// <p>The quality of the image background as defined by brightness and sharpness.</p>

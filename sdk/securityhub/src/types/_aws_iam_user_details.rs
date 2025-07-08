@@ -2,6 +2,8 @@
 
 /// <p>Information about an IAM user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamUserDetails {
     /// <p>A list of the managed policies that are attached to the user.</p>

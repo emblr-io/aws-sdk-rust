@@ -2,6 +2,8 @@
 
 /// <p>Describes the current status of an account within an Amazon Web Services Organization, including service-linked roles (SLRs).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountStatus {
     /// <p>The ID of an account within the Amazon Web Services Organization.</p>

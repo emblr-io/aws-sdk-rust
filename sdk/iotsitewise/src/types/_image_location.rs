@@ -2,6 +2,8 @@
 
 /// <p>Contains an image that is uploaded to IoT SiteWise and available at a URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageLocation {
     /// <p>The ID of the image.</p>

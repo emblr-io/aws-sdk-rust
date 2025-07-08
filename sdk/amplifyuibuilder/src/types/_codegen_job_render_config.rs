@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration information for rendering the UI component associated with the code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CodegenJobRenderConfig {
     /// <p>The name of the <code>ReactStartCodegenJobData</code> object.</p>

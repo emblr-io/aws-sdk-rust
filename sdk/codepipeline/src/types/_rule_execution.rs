@@ -2,6 +2,8 @@
 
 /// <p>Represents information about each time a rule is run as part of the pipeline execution for a pipeline configured with conditions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleExecution {
     /// <p>The execution ID for the run of the rule.</p>

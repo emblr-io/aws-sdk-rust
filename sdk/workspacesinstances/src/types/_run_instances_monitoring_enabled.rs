@@ -2,6 +2,8 @@
 
 /// <p>Configures detailed monitoring for WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RunInstancesMonitoringEnabled {
     /// <p>Enables or disables detailed instance monitoring.</p>

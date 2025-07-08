@@ -2,6 +2,8 @@
 
 /// <p>The conditional expression used to evaluate an email for determining if a rule action should be taken.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RuleCondition {
     /// <p>The condition applies to a boolean expression passed in this field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Organizations can't complete your request because of an internal service error. Try again later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceException {
     #[allow(missing_docs)] // documentation missing in model

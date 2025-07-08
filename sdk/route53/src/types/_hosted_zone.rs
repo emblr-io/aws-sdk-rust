@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains general information about the hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostedZone {
     /// <p>The ID that Amazon Route 53 assigned to the hosted zone when you created it.</p>

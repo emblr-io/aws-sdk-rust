@@ -2,6 +2,8 @@
 
 /// <p>Represents a segment of video or other time-delimited data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Fragment {
     /// <p>The unique identifier of the fragment. This value monotonically increases based on the ingestion order.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the recording configuration settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceRecordingConfiguration {
     /// <p>Identifies which track is being recorded.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details that define an aggregation based on operating system package type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageAggregation {
     /// <p>The names of packages to aggregate findings on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the specific inference scheduler, including data delay offset, model name and ARN, status, and so on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceSchedulerSummary {
     /// <p>The name of the machine learning model used for the inference scheduler.</p>

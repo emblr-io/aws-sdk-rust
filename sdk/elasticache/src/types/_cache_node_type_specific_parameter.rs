@@ -2,6 +2,8 @@
 
 /// <p>A parameter that has a different value for each cache node type it is applied to. For example, in a Valkey or Redis OSS cluster, a <code>cache.m1.large</code> cache node type would have a larger <code>maxmemory</code> value than a <code>cache.m1.small</code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheNodeTypeSpecificParameter {
     /// <p>The name of the parameter.</p>

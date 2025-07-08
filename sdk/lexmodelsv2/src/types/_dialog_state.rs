@@ -2,6 +2,8 @@
 
 /// <p>The current state of the conversation with the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DialogState {
     /// <p>Defines the action that the bot executes at runtime when the conversation reaches this step.</p>

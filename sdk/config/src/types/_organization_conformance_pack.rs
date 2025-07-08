@@ -2,6 +2,8 @@
 
 /// <p>An organization conformance pack that has information about conformance packs that Config creates in member accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationConformancePack {
     /// <p>The name you assign to an organization conformance pack.</p>

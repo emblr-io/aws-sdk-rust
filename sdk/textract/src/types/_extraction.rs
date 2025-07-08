@@ -2,6 +2,8 @@
 
 /// <p>Contains information extracted by an analysis operation after using StartLendingAnalysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Extraction {
     /// <p>Holds the structured data returned by AnalyzeDocument for lending documents.</p>

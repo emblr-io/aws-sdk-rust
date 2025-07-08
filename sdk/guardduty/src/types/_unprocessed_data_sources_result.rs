@@ -2,6 +2,8 @@
 
 /// <p>Specifies the names of the data sources that couldn't be enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnprocessedDataSourcesResult {
     /// <p>An object that contains information on the status of all Malware Protection data sources.</p>

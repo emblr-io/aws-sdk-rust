@@ -2,6 +2,8 @@
 
 /// <p>A container to specify the properties of your S3 Storage Lens metrics export, including the destination, schema, and format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageLensDataExport {
     /// <p>A container for the bucket where the S3 Storage Lens metrics export will be located.</p><note>

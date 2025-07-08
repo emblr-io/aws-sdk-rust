@@ -2,6 +2,8 @@
 
 /// <p>The account performing the request has not been initialized.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UninitializedAccountException {
     #[allow(missing_docs)] // documentation missing in model

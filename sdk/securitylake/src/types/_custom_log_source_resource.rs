@@ -2,6 +2,8 @@
 
 /// <p>Amazon Security Lake can collect logs and events from third-party custom sources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLogSourceResource {
     /// <p>The name for a third-party custom source. This must be a Regionally unique value.</p>

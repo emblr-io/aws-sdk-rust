@@ -2,6 +2,8 @@
 
 /// <p>Contains both ReviewResult and ReviewAction elements for a particular HIT.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReviewReport {
     /// <p>A list of ReviewResults objects for each action specified in the Review Policy.</p>

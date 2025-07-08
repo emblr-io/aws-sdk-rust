@@ -2,6 +2,8 @@
 
 /// <p>A query with suggested spell corrections.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpellCorrectedQuery {
     /// <p>The query with the suggested spell corrections.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the failure details about a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailureInfo {
     /// <p>An Amazon S3 pre-signed URL that contains all the failed records and related information.</p>

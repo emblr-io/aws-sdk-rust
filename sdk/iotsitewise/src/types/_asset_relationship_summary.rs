@@ -2,6 +2,8 @@
 
 /// <p>Contains information about assets that are related to one another.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetRelationshipSummary {
     /// <p>The assets that are related through an asset hierarchy.</p>

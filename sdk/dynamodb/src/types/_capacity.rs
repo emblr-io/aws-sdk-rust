@@ -2,6 +2,8 @@
 
 /// <p>Represents the amount of provisioned throughput capacity consumed on a table or an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Capacity {
     /// <p>The total number of read capacity units consumed on a table or an index.</p>

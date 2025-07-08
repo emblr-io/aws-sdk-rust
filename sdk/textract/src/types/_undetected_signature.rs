@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about an undetected signature on a page where it was expected but not found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UndetectedSignature {
     /// <p>The page where a signature was expected but not found.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server that lists user pool clients.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListUserPoolClientsOutput {
     /// <p>An array of app clients and their details. Includes app client ID and name.</p>

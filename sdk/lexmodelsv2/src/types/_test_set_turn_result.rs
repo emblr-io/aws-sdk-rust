@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the results of the analysis of a turn in the test set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetTurnResult {
     /// <p>Contains information about the agent messages in the turn.</p>

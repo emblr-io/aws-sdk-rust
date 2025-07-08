@@ -2,6 +2,8 @@
 
 /// <p>Defines IAM instance profile configuration for WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamInstanceProfileSpecification {
     /// <p>Amazon Resource Name (ARN) of the IAM instance profile.</p>

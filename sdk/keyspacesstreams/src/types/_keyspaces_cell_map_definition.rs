@@ -2,6 +2,8 @@
 
 /// <p>Represents a key-value pair within a map data type in Amazon Keyspaces, including the associated metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyspacesCellMapDefinition {
     /// <p>The key of this map entry in the Amazon Keyspaces cell.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure containing details of a representation to update or create a Lake Formation view.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViewRepresentationInput {
     /// <p>A parameter that specifies the engine type of a specific representation.</p>

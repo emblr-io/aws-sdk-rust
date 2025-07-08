@@ -2,6 +2,8 @@
 
 /// <p>Specifies the schedule settings for a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneySchedule {
     /// <p>The scheduled time, in ISO 8601 format, when the journey ended or will end.</p>

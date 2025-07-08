@@ -2,6 +2,8 @@
 
 /// <p>Describes the resource with which a prefix list is associated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrefixListAssociation {
     /// <p>The ID of the resource.</p>

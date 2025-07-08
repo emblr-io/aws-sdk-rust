@@ -3,6 +3,8 @@
 /// <p>The Amazon S3 bucket that contains the document to be processed. It's used by asynchronous operations.</p>
 /// <p>The input document can be an image file in JPEG or PNG format. It can also be a file in PDF format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentLocation {
     /// <p>The Amazon S3 bucket that contains the input document.</p>

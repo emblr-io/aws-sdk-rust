@@ -2,6 +2,8 @@
 
 /// <p>Details for an Amazon EMR Studio, including ID, Name, VPC, and Description. To fetch additional details such as subnets, IAM roles, security groups, and tags for the Studio, use the <code>DescribeStudio</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StudioSummary {
     /// <p>The ID of the Amazon EMR Studio.</p>

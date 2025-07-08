@@ -2,6 +2,8 @@
 
 /// <p>No profile specified for the field-level encryption query argument.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryArgProfileEmpty {
     #[allow(missing_docs)] // documentation missing in model

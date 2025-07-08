@@ -2,6 +2,8 @@
 
 /// A request to update a program in a multiplex.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateMultiplexProgramInput {
     /// The ID of the multiplex of the program to update.

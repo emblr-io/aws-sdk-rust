@@ -2,6 +2,8 @@
 
 /// <p>A response that includes successful and failed event results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditEventResultEntry {
     /// <p>The original event ID from the source event.</p>

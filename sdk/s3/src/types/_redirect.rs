@@ -2,6 +2,8 @@
 
 /// <p>Specifies how requests are redirected. In the event of an error, you can specify a different error code to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Redirect {
     /// <p>The host name to use in the redirect request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the association between an application and a WorkSpace resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkspaceResourceAssociation {
     /// <p>The identifier of the associated resource.</p>

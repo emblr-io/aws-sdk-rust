@@ -2,6 +2,8 @@
 
 /// <p>A filter that is used to specify which resource types to scan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanFilter {
     /// <p>An array of strings where each string represents an Amazon Web Services resource type you want to scan. Each string defines the resource type using the format <code>AWS::ServiceName::ResourceType</code>, for example, <code>AWS::DynamoDB::Table</code>. For the full list of supported resource types, see the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html">Resource type support</a> table in the <i>CloudFormation User Guide</i>.</p>

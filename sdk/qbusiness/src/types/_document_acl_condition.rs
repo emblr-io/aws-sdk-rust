@@ -2,6 +2,8 @@
 
 /// <p>Represents a condition in the document's ACL, specifying access rules for users and groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAclCondition {
     /// <p>The logical relation between members in the condition, determining how multiple user or group conditions are combined.</p>

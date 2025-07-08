@@ -2,6 +2,8 @@
 
 /// <p>Contains all informational fields associated with a cache report. Includes name, ARN, tags, status, progress, filters, start time, and end time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheReportInfo {
     /// <p>The Amazon Resource Name (ARN) of the cache report you want to describe.</p>

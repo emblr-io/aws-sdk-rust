@@ -2,6 +2,8 @@
 
 /// <p>Information about a test case created using a framework such as NUnit or Cucumber. A test case might be a unit test or a configuration test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestCase {
     /// <p>The ARN of the report to which the test case belongs.</p>

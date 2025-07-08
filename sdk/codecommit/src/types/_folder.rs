@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a folder in a repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Folder {
     /// <p>The full SHA-1 pointer of the tree information for the commit that contains the folder.</p>

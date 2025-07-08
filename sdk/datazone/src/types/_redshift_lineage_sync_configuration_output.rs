@@ -2,6 +2,8 @@
 
 /// <p>The Amaon Redshift lineage sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftLineageSyncConfigurationOutput {
     /// <p>The lineage job ID of the Amaon Redshift lineage sync configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The training metrics details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingMetricsV2 {
     /// <p>The Online Fraud Insights (OFI) model training metric details.</p>

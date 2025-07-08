@@ -2,6 +2,8 @@
 
 /// <p>A list of scopes set up for S3 Access Grants integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum S3AccessGrantsScopeUnion {
     /// <p>The S3 Access Grants scope.</p>

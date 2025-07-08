@@ -2,6 +2,8 @@
 
 /// <p>The instructions associated with a join.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JoinInstruction {
     /// <p>The operand on the left side of a join.</p>

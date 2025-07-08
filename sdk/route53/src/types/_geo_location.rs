@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about a geographic location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoLocation {
     /// <p>The two-letter code for the continent.</p>

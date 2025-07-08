@@ -2,6 +2,8 @@
 
 /// <p>Settings related to idle shutdown of Studio applications in a space.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpaceIdleSettings {
     /// <p>The time that SageMaker waits after the application becomes idle before shutting it down.</p>

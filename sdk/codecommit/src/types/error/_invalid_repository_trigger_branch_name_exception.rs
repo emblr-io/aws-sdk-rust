@@ -2,6 +2,8 @@
 
 /// <p>One or more branch names specified for the trigger is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRepositoryTriggerBranchNameException {
     /// <p>Any message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The source details for the Kendra dataset source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KendraSourceDetail {
     /// <p>The <code>knowledgeBaseArn</code> details for the Kendra dataset source.</p>

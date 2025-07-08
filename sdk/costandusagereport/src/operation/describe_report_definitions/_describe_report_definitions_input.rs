@@ -2,6 +2,8 @@
 
 /// <p>Requests a Amazon Web Services Cost and Usage Report list owned by the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeReportDefinitionsInput {
     /// <p>The maximum number of results that Amazon Web Services returns for the operation.</p>

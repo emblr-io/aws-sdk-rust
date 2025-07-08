@@ -2,6 +2,8 @@
 
 /// <p>Information about the Kubernetes role name and role type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KubernetesRoleDetails {
     /// <p>The kind of role. For this API, the value of <code>kind</code> will be <code>Role</code>.</p>

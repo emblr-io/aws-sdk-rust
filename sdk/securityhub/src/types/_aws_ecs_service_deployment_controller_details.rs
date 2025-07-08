@@ -2,6 +2,8 @@
 
 /// <p>Information about the deployment controller type that the service uses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsServiceDeploymentControllerDetails {
     /// <p>The rolling update (<code>ECS</code>) deployment type replaces the current running version of the container with the latest version.</p>

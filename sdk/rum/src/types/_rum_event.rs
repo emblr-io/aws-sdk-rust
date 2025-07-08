@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the information for one performance event that RUM collects from a user session with your application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RumEvent {
     /// <p>A unique ID for this event.</p>

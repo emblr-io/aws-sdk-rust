@@ -2,6 +2,8 @@
 
 /// <p>Container for the response returned by the <code>CreatePackage</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreatePackageOutput {
     /// <p>Basic information about an OpenSearch Service package.</p>

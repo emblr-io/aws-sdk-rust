@@ -2,6 +2,8 @@
 
 /// <p>Properties of a location, which can include its name, ARN (for custom locations), and ping beacon information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationModel {
     /// <p>The location's name.</p>

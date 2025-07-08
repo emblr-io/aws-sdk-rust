@@ -2,6 +2,8 @@
 
 /// <p>The result for the calculated route of one <code>DeparturePosition</code> <code>DestinationPosition</code> pair.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteMatrixEntry {
     /// <p>The total distance of travel for the route.</p>

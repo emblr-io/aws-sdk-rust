@@ -2,6 +2,8 @@
 
 /// <p>Provides details about sensitive data that was detected on a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataClassificationDetails {
     /// <p>The path to the folder or file that contains the sensitive data.</p>

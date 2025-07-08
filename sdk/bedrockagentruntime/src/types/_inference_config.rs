@@ -2,6 +2,8 @@
 
 /// <p>The configuration for inference settings when generating responses using RetrieveAndGenerate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceConfig {
     /// <p>Configuration settings specific to text generation while generating responses using RetrieveAndGenerate.</p>

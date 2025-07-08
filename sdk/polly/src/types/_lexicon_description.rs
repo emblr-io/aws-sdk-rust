@@ -2,6 +2,8 @@
 
 /// <p>Describes the content of the lexicon.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LexiconDescription {
     /// <p>Name of the lexicon.</p>

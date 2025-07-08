@@ -2,6 +2,8 @@
 
 /// <p>A merge option or stategy is required, and none was provided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MergeOptionRequiredException {
     /// <p>Any message associated with the exception.</p>

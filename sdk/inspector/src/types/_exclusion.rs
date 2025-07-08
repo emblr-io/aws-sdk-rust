@@ -2,6 +2,8 @@
 
 /// <p>Contains information about what was excluded from an assessment run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Exclusion {
     /// <p>The ARN that specifies the exclusion.</p>

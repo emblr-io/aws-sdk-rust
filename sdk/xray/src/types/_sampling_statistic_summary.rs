@@ -2,6 +2,8 @@
 
 /// <p>Aggregated request sampling data for a sampling rule across all services for a 10-second window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamplingStatisticSummary {
     /// <p>The name of the sampling rule.</p>

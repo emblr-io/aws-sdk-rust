@@ -2,6 +2,8 @@
 
 /// <p>Specified DB instance class is not available in the specified Availability Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsufficientDbInstanceCapacityFault {
     /// <p>A message describing the details of the problem.</p>

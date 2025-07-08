@@ -2,6 +2,8 @@
 
 /// <p>The link configuration of a table field URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableFieldLinkConfiguration {
     /// <p>The URL target (new tab, new window, same tab) for the table link configuration.</p>

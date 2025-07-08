@@ -2,6 +2,8 @@
 
 /// <p>Defines instance placement configuration for WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Placement {
     /// <p>Specifies host affinity for dedicated instances.</p>

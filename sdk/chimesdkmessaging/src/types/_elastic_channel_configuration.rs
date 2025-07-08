@@ -2,6 +2,8 @@
 
 /// <p>The attributes required to configure and create an elastic channel. An elastic channel can support a maximum of 1-million members.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticChannelConfiguration {
     /// <p>The maximum number of SubChannels that you want to allow in the elastic channel.</p>

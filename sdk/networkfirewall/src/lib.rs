@@ -66,7 +66,7 @@
 //! ```toml
 //! [dependencies]
 //! aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-//! aws-sdk-networkfirewall = "1.81.0"
+//! aws-sdk-networkfirewall = "0.0.0-local"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!

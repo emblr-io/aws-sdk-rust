@@ -2,6 +2,8 @@
 
 /// <p>The action that starts at the beginning of an incident. The response plan defines the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Action {
     /// <p>The Systems Manager automation document to start as the runbook at the beginning of the incident.</p>

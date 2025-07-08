@@ -4,6 +4,8 @@
 /// <p>Only the native tokens BTC and ETH, and the ERC-20, ERC-721, and ERC 1155 token standards are supported.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TokenIdentifier {
     /// <p>The blockchain network of the token.</p>

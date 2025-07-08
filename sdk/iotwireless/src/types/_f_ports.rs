@@ -2,6 +2,8 @@
 
 /// <p>List of FPort assigned for different LoRaWAN application packages to use</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FPorts {
     /// <p>The Fport value.</p>

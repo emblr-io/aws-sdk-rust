@@ -2,6 +2,8 @@
 
 /// <p>Additional options for the Amazon Kinesis streaming data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisStreamingSourceOptions {
     /// <p>The URL of the Kinesis endpoint.</p>

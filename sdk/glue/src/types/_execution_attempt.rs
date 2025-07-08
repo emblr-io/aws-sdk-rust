@@ -2,6 +2,8 @@
 
 /// <p>A run attempt for a column statistics task run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionAttempt {
     /// <p>The status of the last column statistics task run.</p>

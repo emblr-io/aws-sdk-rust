@@ -2,6 +2,8 @@
 
 /// <p>Contains the range of timestamps for the requested media, and the source of the timestamps.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashFragmentSelector {
     /// <p>The source of the timestamps for the requested media.</p>

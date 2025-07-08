@@ -2,6 +2,8 @@
 
 /// <p>Indicates which speaker is on which channel. The options are <code>CLINICIAN</code> and <code>PATIENT</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeChannelDefinition {
     /// <p>Specify the audio channel you want to define.</p>

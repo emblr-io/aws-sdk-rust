@@ -2,6 +2,8 @@
 
 /// <p>The search input attribute value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum SearchByAttributeValue {
     /// <p>The created at time of the image set provided for search.</p>

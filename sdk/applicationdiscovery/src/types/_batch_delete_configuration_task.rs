@@ -2,6 +2,8 @@
 
 /// <p>A metadata object that represents the deletion task being executed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteConfigurationTask {
     /// <p>The deletion task's unique identifier.</p>

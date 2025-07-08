@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the elastic network interface of the EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NetworkInterface {
     /// <p>A list of IPv6 addresses for the EC2 instance.</p>

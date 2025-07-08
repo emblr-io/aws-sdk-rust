@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the Amazon EventBridge event buses that the endpoint is associated with.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEventsEndpointEventBusesDetails {
     /// <p>The Amazon Resource Name (ARN) of the event bus that the endpoint is associated with.</p>

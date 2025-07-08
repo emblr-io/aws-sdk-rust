@@ -2,6 +2,8 @@
 
 /// <p>The settings for TTML subtitles.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashTtmlConfiguration {
     /// <p>The profile that MediaPackage uses when signaling subtitles in the manifest. <code>IMSC</code> is the default profile. <code>EBU-TT-D</code> produces subtitles that are compliant with the EBU-TT-D TTML profile. MediaPackage passes through subtitle styles to the manifest. For more information about EBU-TT-D subtitles, see <a href="https://tech.ebu.ch/publications/tech3380">EBU-TT-D Subtitling Distribution Format</a>.</p>

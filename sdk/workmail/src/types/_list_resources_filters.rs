@@ -2,6 +2,8 @@
 
 /// <p>Filtering options for <i>ListResources</i> operation. This is only used as input to Operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListResourcesFilters {
     /// <p>Filters only resource that start with the entered name prefix .</p>

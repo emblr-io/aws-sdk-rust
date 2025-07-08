@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the Route&nbsp;53 DNS records that you want Cloud Map to create when you register an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsRecord {
     /// <p>The type of the resource, which indicates the type of value that Route&nbsp;53 returns in response to DNS queries. You can specify values for <code>Type</code> in the following combinations:</p>

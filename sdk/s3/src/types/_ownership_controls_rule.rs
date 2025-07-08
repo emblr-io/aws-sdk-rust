@@ -2,6 +2,8 @@
 
 /// <p>The container element for an ownership control rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OwnershipControlsRule {
     /// <p>The container element for object ownership for a bucket's ownership controls.</p>

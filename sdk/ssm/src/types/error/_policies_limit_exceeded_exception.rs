@@ -2,6 +2,8 @@
 
 /// <p>You specified more than the maximum number of allowed policies for the parameter. The maximum is 10.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PoliciesLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Provides a list of status information for an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstanceStatusInfo {
     /// <p>This value is currently "<code>read replication</code>."</p>

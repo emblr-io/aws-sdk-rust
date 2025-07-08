@@ -2,6 +2,8 @@
 
 /// <p>The user-provided application code (query) is not valid. This can be a simple syntax error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeValidationException {
     #[allow(missing_docs)] // documentation missing in model

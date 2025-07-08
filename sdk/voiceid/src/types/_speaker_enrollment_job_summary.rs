@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of information about a speaker enrollment job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SpeakerEnrollmentJobSummary {
     /// <p>The client-provided name for the speaker enrollment job.</p>

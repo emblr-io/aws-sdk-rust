@@ -2,6 +2,8 @@
 
 /// <p>Represents the sample size and sampling type for DataBrew to use for interactive data analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Sample {
     /// <p>The number of rows in the sample.</p>

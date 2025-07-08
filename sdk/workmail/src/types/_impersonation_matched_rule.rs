@@ -2,6 +2,8 @@
 
 /// <p>The impersonation rule that matched the input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImpersonationMatchedRule {
     /// <p>The ID of the rule that matched the input</p>

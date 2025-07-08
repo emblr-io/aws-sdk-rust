@@ -2,6 +2,8 @@
 
 /// <p>Configuration information for a guardrail that you use with the <code>ConverseStream</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailStreamConfiguration {
     /// <p>The identifier for the guardrail.</p>

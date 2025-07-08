@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded an SageMaker resource limit. For example, you might have too many training jobs created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

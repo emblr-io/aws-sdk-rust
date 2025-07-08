@@ -2,6 +2,8 @@
 
 /// <p>The entity associated with the log events in a <code>PutLogEvents</code> call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Entity {
     /// <p>The attributes of the entity which identify the specific entity, as a list of key-value pairs. Entities with the same <code>keyAttributes</code> are considered to be the same entity.</p>

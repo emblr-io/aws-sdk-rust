@@ -2,6 +2,8 @@
 
 /// <p>Details about a missing required output in a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissingNodeOutputFlowValidationDetails {
     /// <p>The name of the node missing the required output.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the Glue data source that contains the training data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueDataSource {
     /// <p>The Glue table that contains the training data.</p>

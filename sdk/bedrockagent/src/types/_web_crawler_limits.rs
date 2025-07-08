@@ -2,6 +2,8 @@
 
 /// <p>The rate limits for the URLs that you want to crawl. You should be authorized to crawl the URLs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebCrawlerLimits {
     /// <p>The max rate at which pages are crawled, up to 300 per minute per host.</p>

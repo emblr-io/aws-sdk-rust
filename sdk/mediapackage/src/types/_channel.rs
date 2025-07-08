@@ -2,6 +2,8 @@
 
 /// A Channel resource configuration.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Channel {
     /// The Amazon Resource Name (ARN) assigned to the Channel.

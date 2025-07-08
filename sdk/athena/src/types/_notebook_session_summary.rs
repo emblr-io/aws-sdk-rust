@@ -2,6 +2,8 @@
 
 /// <p>Contains the notebook session ID and notebook session creation time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotebookSessionSummary {
     /// <p>The notebook session ID.</p>

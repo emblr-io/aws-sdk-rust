@@ -2,6 +2,8 @@
 
 /// <p>The following data is returned in JSON format by the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendBulkEmailOutput {
     /// <p>One object per intended recipient. Check each response object and retry any messages with a failure status.</p>

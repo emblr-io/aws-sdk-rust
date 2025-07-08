@@ -2,6 +2,8 @@
 
 /// <p>Details on data source packages for members of the behavior graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MembershipDatasources {
     /// <p>The account identifier of the Amazon Web Services account.</p>

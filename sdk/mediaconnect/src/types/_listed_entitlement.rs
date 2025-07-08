@@ -2,6 +2,8 @@
 
 /// <p>An entitlement that has been granted to you from other Amazon Web Services accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListedEntitlement {
     /// <p>Percentage from 0-100 of the data transfer cost to be billed to the subscriber.</p>

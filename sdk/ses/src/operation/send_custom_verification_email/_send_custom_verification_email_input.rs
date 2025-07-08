@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to send a custom verification email to a specified recipient.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendCustomVerificationEmailInput {
     /// <p>The email address to verify.</p>

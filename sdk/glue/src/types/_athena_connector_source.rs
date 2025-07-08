@@ -2,6 +2,8 @@
 
 /// <p>Specifies a connector to an Amazon Athena data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AthenaConnectorSource {
     /// <p>The name of the data source.</p>

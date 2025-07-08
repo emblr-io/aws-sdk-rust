@@ -2,6 +2,8 @@
 
 /// <p>Represents the properties of a local secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocalSecondaryIndex {
     /// <p>The name of the local secondary index. The name must be unique among all other indexes on this table.</p>

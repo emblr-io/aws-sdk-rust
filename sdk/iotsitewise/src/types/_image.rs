@@ -8,6 +8,8 @@
 /// <p>The ID of an existing image. Choose this option to keep an existing image.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Image {
     /// <p>The ID of an existing image. Specify this parameter to keep an existing image.</p>

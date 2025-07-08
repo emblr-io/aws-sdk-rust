@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configurations of the Microsoft Entra.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MicrosoftEntraConfig {
     /// <p>The identifier of the tenant.</p>

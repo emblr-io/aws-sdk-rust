@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a key usage X.509 v3 extension object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateKeyUsage {
     /// <p>The key usage extension name.</p>

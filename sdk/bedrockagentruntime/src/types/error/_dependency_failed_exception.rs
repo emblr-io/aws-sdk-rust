@@ -2,6 +2,8 @@
 
 /// <p>There was an issue with a dependency. Check the resource configurations and retry the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependencyFailedException {
     #[allow(missing_docs)] // documentation missing in model

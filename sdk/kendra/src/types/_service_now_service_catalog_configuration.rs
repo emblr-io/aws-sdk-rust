@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for crawling service catalog items in the ServiceNow site</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceNowServiceCatalogConfiguration {
     /// <p><code>TRUE</code> to index attachments to service catalog items.</p>

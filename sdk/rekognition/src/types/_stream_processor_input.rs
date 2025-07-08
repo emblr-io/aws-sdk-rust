@@ -2,6 +2,8 @@
 
 /// <p>Information about the source streaming video.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamProcessorInput {
     /// <p>The Kinesis video stream input stream for the source streaming video.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Input to the DeleteIdentityPool action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteIdentityPoolInput {
     /// <p>An identity pool ID in the format REGION:GUID.</p>

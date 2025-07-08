@@ -2,6 +2,8 @@
 
 /// <p>The state perssitence configuration of an embedded dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatePersistenceConfigurations {
     /// <p>Determines if a Amazon QuickSight dashboard's state persistence settings are turned on or off.</p>

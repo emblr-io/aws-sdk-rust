@@ -2,6 +2,8 @@
 
 /// <p>When MTurk encounters an issue with notifying the Workers you specified, it returns back this object with failure details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotifyWorkersFailureStatus {
     /// <p>Encoded value for the failure type.</p>

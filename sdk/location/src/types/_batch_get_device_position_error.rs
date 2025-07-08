@@ -2,6 +2,8 @@
 
 /// <p>Contains error details for each device that didn't return a position.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetDevicePositionError {
     /// <p>The ID of the device that didn't return a position.</p>

@@ -2,6 +2,8 @@
 
 /// <p>If you are suppressing an anomaly temporariliy, this structure defines how long the suppression period is to be.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuppressionPeriod {
     /// <p>Specifies the number of seconds, minutes or hours to suppress this anomaly. There is no maximum.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the number of open proactive and reactive insights in an analyzed Amazon Web Services service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceInsightHealth {
     /// <p>The number of open proactive insights in the Amazon Web Services service</p>

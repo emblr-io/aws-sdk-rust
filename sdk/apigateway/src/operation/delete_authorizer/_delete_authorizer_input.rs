@@ -2,6 +2,8 @@
 
 /// <p>Request to delete an existing Authorizer resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteAuthorizerInput {
     /// <p>The string identifier of the associated RestApi.</p>

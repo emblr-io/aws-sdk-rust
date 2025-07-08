@@ -2,6 +2,8 @@
 
 /// <p>Status of the Cognito options for the specified Elasticsearch domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CognitoOptionsStatus {
     /// <p>Specifies the Cognito options for the specified Elasticsearch domain.</p>

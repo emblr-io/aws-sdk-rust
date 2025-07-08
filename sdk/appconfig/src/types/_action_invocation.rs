@@ -2,6 +2,8 @@
 
 /// <p>An extension that was invoked as part of a deployment event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionInvocation {
     /// <p>The name, the ID, or the Amazon Resource Name (ARN) of the extension.</p>

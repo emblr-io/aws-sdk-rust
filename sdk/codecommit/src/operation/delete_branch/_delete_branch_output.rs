@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a delete branch operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteBranchOutput {
     /// <p>Information about the branch deleted by the operation, including the branch name and the commit ID that was the tip of the branch.</p>

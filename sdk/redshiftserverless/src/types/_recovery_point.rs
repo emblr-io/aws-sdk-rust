@@ -2,6 +2,8 @@
 
 /// <p>The automatically created recovery point of a namespace. Recovery points are created every 30 minutes and kept for 24 hours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryPoint {
     /// <p>The unique identifier of the recovery point.</p>

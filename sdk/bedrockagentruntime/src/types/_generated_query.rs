@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a query generated for a natural language query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GeneratedQuery {
     /// <p>The type of transformed query.</p>

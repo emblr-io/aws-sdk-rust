@@ -2,6 +2,8 @@
 
 /// <p>Specifies the logging configuration when writing GraphQL operations and tracing to Amazon CloudWatch for an AppSync GraphQL API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAppSyncGraphQlApiLogConfigDetails {
     /// <p>The Amazon Resource Name (ARN) of the service role that AppSync assumes to publish to CloudWatch Logs in your account.</p>

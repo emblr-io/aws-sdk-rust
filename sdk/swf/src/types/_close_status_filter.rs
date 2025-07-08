@@ -2,6 +2,8 @@
 
 /// <p>Used to filter the closed workflow executions in visibility APIs by their close status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloseStatusFilter {
     /// <p>The close status that must match the close status of an execution for it to meet the criteria of this filter.</p>

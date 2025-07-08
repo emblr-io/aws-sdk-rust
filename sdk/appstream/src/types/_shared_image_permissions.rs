@@ -2,6 +2,8 @@
 
 /// <p>Describes the permissions that are available to the specified AWS account for a shared image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SharedImagePermissions {
     /// <p>The 12-digit identifier of the AWS account with which the image is shared.</p>

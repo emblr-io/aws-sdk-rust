@@ -2,6 +2,8 @@
 
 /// <p>Quantifies the anomaly. The higher score means that it's more anomalous.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyScore {
     /// <p>The maximum score that's observed during the <code>AnomalyDateInterval</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The metadata that's associated with a standard framework or a custom framework.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentFrameworkMetadata {
     /// <p>The Amazon Resource Name (ARN) of the framework.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes address usage for a customer-owned address pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoipAddressUsage {
     /// <p>The allocation ID of the address.</p>

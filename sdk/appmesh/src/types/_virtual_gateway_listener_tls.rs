@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the Transport Layer Security (TLS) properties for a listener.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualGatewayListenerTls {
     /// <p>Specify one of the following modes.</p>

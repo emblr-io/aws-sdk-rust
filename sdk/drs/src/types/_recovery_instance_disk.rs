@@ -2,6 +2,8 @@
 
 /// <p>An object representing a block storage device on the Recovery Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryInstanceDisk {
     /// <p>The internal device name of this disk. This is the name that is visible on the machine itself and not from the EC2 console.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the auto scaling settings of the replica.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicaAutoScalingDescription {
     /// <p>The Region where the replica exists.</p>

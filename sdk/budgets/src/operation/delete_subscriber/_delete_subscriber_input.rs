@@ -2,6 +2,8 @@
 
 /// <p>Request of DeleteSubscriber</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteSubscriberInput {
     /// <p>The <code>accountId</code> that is associated with the budget whose subscriber you want to delete.</p>

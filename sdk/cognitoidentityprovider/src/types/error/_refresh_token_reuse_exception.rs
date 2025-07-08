@@ -2,6 +2,8 @@
 
 /// <p>This exception is throw when your application requests token refresh with a refresh token that has been invalidated by refresh-token rotation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshTokenReuseException {
     #[allow(missing_docs)] // documentation missing in model

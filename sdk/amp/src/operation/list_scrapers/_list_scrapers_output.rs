@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>ListScrapers</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListScrapersOutput {
     /// <p>A list of <code>ScraperSummary</code> structures giving information about scrapers in the account that match the filters provided.</p>

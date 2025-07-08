@@ -4,6 +4,8 @@
 /// <p>To enable your distribution to handle gRPC requests, you must include HTTP/2 as one of the supported <code>HTTP</code> versions and allow <code>HTTP</code> methods, including <code>POST</code>.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-using-grpc.html">Using gRPC with CloudFront distributions</a> in the <i>Amazon CloudFront Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrpcConfig {
     /// <p>Enables your CloudFront distribution to receive gRPC requests and to proxy them directly to your origins.</p>

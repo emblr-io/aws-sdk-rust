@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the security groups associated with the EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityGroup {
     /// <p>The security group ID of the EC2 instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Use filters to return a subset of resources. You can define filters for specific parameters, such as the resource status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>Filter based on the Amazon Resource Number (ARN) of the resource. You can specify up to 10 values.</p>

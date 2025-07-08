@@ -2,6 +2,8 @@
 
 /// <p>Specifies the attributes to add to your attribute-based access control (ABAC) configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceAccessControlAttributeConfiguration {
     /// <p>Lists the attributes that are configured for ABAC in the specified IAM Identity Center instance.</p>

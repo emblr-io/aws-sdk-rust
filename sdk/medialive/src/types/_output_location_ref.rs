@@ -2,6 +2,8 @@
 
 /// Reference to an OutputDestination ID defined in the channel
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputLocationRef {
     /// Placeholder documentation for __string

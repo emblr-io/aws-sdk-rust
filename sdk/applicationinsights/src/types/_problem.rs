@@ -2,6 +2,8 @@
 
 /// <p>Describes a problem that is detected by correlating observations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Problem {
     /// <p>The ID of the problem.</p>

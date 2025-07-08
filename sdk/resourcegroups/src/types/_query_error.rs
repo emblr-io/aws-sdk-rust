@@ -2,6 +2,8 @@
 
 /// <p>A two-part error structure that can occur in <code>ListGroupResources</code> or <code>SearchResources</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryError {
     /// <p>Specifies the error code that was raised.</p>

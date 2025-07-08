@@ -2,6 +2,8 @@
 
 /// <p>Describes the HTTP endpoint selected as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HttpEndpointDescription {
     /// <p>The URL of the HTTP endpoint selected as the destination.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A resource is already in a state that indicates an operation is happening that must complete before a new update can be applied.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentUpdatingException {
     #[allow(missing_docs)] // documentation missing in model

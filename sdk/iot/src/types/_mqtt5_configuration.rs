@@ -2,6 +2,8 @@
 
 /// <p>The configuration to add user-defined properties to enrich MQTT 5 messages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Mqtt5Configuration {
     /// <p>An object that represents the propagating thing attributes and the connection attributes.</p>

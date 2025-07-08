@@ -2,6 +2,8 @@
 
 /// <p>You can use this parameter to set an MFA configuration that uses the SMS delivery medium.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminSetUserSettingsInput {
     /// <p>The ID of the user pool that contains the user whose options you're setting.</p>

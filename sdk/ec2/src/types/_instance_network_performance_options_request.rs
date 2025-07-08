@@ -2,6 +2,8 @@
 
 /// <p>Configure network performance options for your instance that are geared towards performance improvements based on the workload that it runs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceNetworkPerformanceOptionsRequest {
     /// <p>Specify the bandwidth weighting option to boost the associated type of baseline bandwidth, as follows:</p>

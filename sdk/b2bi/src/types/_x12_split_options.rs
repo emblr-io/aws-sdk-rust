@@ -2,6 +2,8 @@
 
 /// <p>Contains options for splitting X12 EDI files into smaller units. This is useful for processing large EDI files more efficiently.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct X12SplitOptions {
     /// <p>Specifies the method used to split X12 EDI files. Valid values include <code>TRANSACTION</code> (split by individual transaction sets), or <code>NONE</code> (no splitting).</p>

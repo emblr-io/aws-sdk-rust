@@ -4,6 +4,8 @@
 /// <p><code>\[DestinationPrefix\]\[SourceAccountId\]/\[SourceRegion\]/\[SourceBucket\]/\[YYYY\]/\[MM\]/\[DD\]/\[YYYY\]-\[MM\]-\[DD\]-\[hh\]-\[mm\]-\[ss\]-\[UniqueString\]</code></p>
 /// <p>PartitionedPrefix defaults to EventTime delivery when server access logs are delivered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartitionedPrefix {
     /// <p>Specifies the partition date source for the partitioned prefix. <code>PartitionDateSource</code> can be <code>EventTime</code> or <code>DeliveryTime</code>.</p>

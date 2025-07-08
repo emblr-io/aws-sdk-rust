@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the content of a document. Choose a <code>dataSourceType</code> and include the field that corresponds to it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentContent {
     /// <p>The type of data source that is connected to the knowledge base to which to ingest this document.</p>

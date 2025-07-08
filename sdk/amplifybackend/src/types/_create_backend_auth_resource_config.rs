@@ -2,6 +2,8 @@
 
 /// <p>Defines the resource configuration when creating an auth resource in your Amplify project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBackendAuthResourceConfig {
     /// <p>Defines whether you want to configure only authentication or both authentication and authorization settings.</p>

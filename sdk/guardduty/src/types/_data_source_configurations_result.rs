@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the status of data sources for the detector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceConfigurationsResult {
     /// <p>An object that contains information on the status of CloudTrail as a data source.</p>

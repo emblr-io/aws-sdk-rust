@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to apply to an existing Amazon Kinesis Analytics application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationUpdate {
     /// <p>Describes application input configuration updates.</p>

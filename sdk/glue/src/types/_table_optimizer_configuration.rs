@@ -2,6 +2,8 @@
 
 /// <p>Contains details on the configuration of a table optimizer. You pass this configuration when creating or updating a table optimizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableOptimizerConfiguration {
     /// <p>A role passed by the caller which gives the service permission to update the resources associated with the optimizer on the caller's behalf.</p>

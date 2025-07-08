@@ -2,6 +2,8 @@
 
 /// <p>The configuration for storing results in Athena owned storage, which includes whether this feature is enabled; whether encryption configuration, if any, is used for encrypting query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedQueryResultsConfiguration {
     /// <p>If set to true, allows you to store query results in Athena owned storage. If set to false, workgroup member stores query results in location specified under <code>ResultConfiguration$OutputLocation</code>. The default is false. A workgroup cannot have the <code>ResultConfiguration$OutputLocation</code> parameter when you set this field to true.</p>

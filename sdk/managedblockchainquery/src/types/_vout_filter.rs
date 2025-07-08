@@ -2,6 +2,8 @@
 
 /// <p>This container specifies filtering attributes related to <code>BITCOIN_VOUT</code> event types</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoutFilter {
     /// <p>Specifies if the transaction output is spent or unspent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An asset in a Amazon QuickSight folder, such as a dashboard, analysis, or dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FolderMember {
     /// <p>The ID of an asset in the folder.</p>

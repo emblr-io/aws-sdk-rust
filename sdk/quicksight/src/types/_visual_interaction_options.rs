@@ -2,6 +2,8 @@
 
 /// <p>The general visual interactions setup for visual publish options</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualInteractionOptions {
     /// <p>The on-visual menu options for a visual.</p>

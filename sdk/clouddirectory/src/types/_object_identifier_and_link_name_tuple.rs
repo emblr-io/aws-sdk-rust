@@ -2,6 +2,8 @@
 
 /// <p>A pair of ObjectIdentifier and LinkName.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectIdentifierAndLinkNameTuple {
     /// <p>The ID that is associated with the object.</p>

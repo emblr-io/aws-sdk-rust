@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the EBS storage volumes attached to Apache Kafka broker nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsStorageInfo {
     /// <p>EBS volume provisioned throughput information.</p>

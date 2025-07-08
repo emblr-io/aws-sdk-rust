@@ -2,6 +2,8 @@
 
 /// <p>The container for time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BlockchainInstant {
     /// <p>The container of the <code>Timestamp</code> of the blockchain instant.</p><note>

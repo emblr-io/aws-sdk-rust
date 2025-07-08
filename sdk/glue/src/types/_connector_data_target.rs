@@ -2,6 +2,8 @@
 
 /// <p>Specifies a target generated with standard connection options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorDataTarget {
     /// <p>The name of this target node.</p>

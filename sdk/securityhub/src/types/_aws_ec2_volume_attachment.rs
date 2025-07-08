@@ -2,6 +2,8 @@
 
 /// <p>An attachment to an Amazon EC2 volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2VolumeAttachment {
     /// <p>The datetime when the attachment initiated.</p>

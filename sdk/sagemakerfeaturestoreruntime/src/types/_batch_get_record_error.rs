@@ -2,6 +2,8 @@
 
 /// <p>The error that has occurred when attempting to retrieve a batch of Records.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetRecordError {
     /// <p>The name of the feature group that the record belongs to.</p>

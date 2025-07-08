@@ -2,6 +2,8 @@
 
 /// <p>A boolean expression to be used in a rule condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleBooleanExpression {
     /// <p>The operand on which to perform a boolean condition operation.</p>

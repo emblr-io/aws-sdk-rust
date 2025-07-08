@@ -2,6 +2,8 @@
 
 /// <p>LoRaWAN public gateway metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoRaWanPublicGatewayMetadata {
     /// <p>The ID of the LoRaWAN public network provider.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The VPC interface that you want to designate where the media stream is coming from or going to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InterfaceRequest {
     /// <p>The name of the VPC interface.</p>

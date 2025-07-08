@@ -2,6 +2,8 @@
 
 /// <p>Input for GetTopicAttributes action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetTopicAttributesInput {
     /// <p>The ARN of the topic whose properties you want to get.</p>

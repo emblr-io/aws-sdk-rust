@@ -2,6 +2,8 @@
 
 /// <p>The structure that stores the capacity configuration details of a scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxScalingGroupConfiguration {
     /// <p>A unique identifier for the kdb scaling group.</p>

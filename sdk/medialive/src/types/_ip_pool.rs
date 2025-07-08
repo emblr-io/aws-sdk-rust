@@ -2,6 +2,8 @@
 
 /// Used in DescribeNetworkResult, DescribeNetworkSummary, UpdateNetworkResult.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpPool {
     /// A CIDR block of IP addresses that are reserved for MediaLive Anywhere.

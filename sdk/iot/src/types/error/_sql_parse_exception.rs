@@ -2,6 +2,8 @@
 
 /// <p>The Rule-SQL expression can't be parsed correctly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqlParseException {
     /// <p>The message for the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines information about the data source used for model inference.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelInferenceDataSource {
     /// <p>The Amazon Resource Name (ARN) of the ML input channel for this model inference data source.</p>

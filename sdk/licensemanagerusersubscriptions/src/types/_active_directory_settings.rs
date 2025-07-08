@@ -2,6 +2,8 @@
 
 /// <p>Contains network access and credential details that are needed for user administration in the Active Directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveDirectorySettings {
     /// <p>The domain name for the Active Directory.</p>

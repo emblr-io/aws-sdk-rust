@@ -2,6 +2,8 @@
 
 /// <p>The result message containing a list of managed actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentManagedActionsOutput {
     /// <p>A list of upcoming and in-progress managed actions.</p>

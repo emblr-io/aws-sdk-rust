@@ -2,6 +2,8 @@
 
 /// <p>The destination where the assets in the revision will be exported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RevisionDestinationEntry {
     /// <p>The Amazon S3 bucket that is the destination for the assets in the revision.</p>

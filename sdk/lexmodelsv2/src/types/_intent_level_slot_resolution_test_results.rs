@@ -2,6 +2,8 @@
 
 /// <p>Indicates the success or failure of slots at the intent level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentLevelSlotResolutionTestResults {
     /// <p>Indicates the items for the slot level resolution for the intents.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the Amazon Kinesis Firehose delivery stream that is configured as the streaming source in the application input configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisFirehoseInputDescription {
     /// <p>Amazon Resource Name (ARN) of the Amazon Kinesis Firehose delivery stream.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Potential issues that are detected based on an artificial intelligence analysis of each turn in the conversation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisIssueDetected {
     /// <p>List of the transcript items (segments) that are associated with a given issue.</p>

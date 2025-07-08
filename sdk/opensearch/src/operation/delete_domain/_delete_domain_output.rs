@@ -2,6 +2,8 @@
 
 /// <p>The results of a <code>DeleteDomain</code> request. Contains the status of the pending deletion, or a "domain not found" error if the domain and all of its resources have been deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDomainOutput {
     /// <p>The status of the domain being deleted.</p>

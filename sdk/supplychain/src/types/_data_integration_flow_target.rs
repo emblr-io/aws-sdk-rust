@@ -2,6 +2,8 @@
 
 /// <p>The DataIntegrationFlow target parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowTarget {
     /// <p>The DataIntegrationFlow target type.</p>

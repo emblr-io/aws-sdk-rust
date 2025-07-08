@@ -2,6 +2,8 @@
 
 /// <p>Information about the changes that would be made if an execution were run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ExecutionPreview {
     /// <p>Information about the changes that would be made if an Automation workflow were run.</p>

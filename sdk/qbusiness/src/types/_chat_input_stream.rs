@@ -2,6 +2,8 @@
 
 /// <p>The streaming input for the <code>Chat</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ChatInputStream {
     /// <p>A request from an end user to perform an Amazon Q Business plugin action.</p>

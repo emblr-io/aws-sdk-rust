@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default settings and content for a message template that can be used in messages that are sent through a push notification channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultPushNotificationTemplate {
     /// <p>The action to occur if a recipient taps a push notification that's based on the message template. Valid values are:</p>

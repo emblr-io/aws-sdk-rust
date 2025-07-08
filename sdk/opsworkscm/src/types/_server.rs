@@ -2,6 +2,8 @@
 
 /// <p>Describes a configuration management server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Server {
     /// <p>Associate a public IP address with a server that you are launching.</p>

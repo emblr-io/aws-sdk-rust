@@ -2,6 +2,8 @@
 
 /// <p>Describes third-party social federation configurations for allowing your app users to sign in using OAuth.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BackendAuthSocialProviderConfig {
     /// <p>Describes the client_id, which can be obtained from the third-party social federation provider.</p>

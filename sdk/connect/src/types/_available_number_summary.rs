@@ -2,6 +2,8 @@
 
 /// <p>Information about available phone numbers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailableNumberSummary {
     /// <p>The phone number. Phone numbers are formatted <code>\[+\] \[country code\] \[subscriber number including area code\]</code>.</p>

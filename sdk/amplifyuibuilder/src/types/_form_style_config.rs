@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration settings for the form's style properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FormStyleConfig {
     /// <p>A reference to a design token to use to bind the form's style properties to an existing theme.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Displays the next seven maintenance window occurrences and their start times.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledJobRollout {
     /// <p>Displays the start times of the next seven maintenance window occurrences.</p>

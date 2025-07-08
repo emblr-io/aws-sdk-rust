@@ -2,6 +2,8 @@
 
 /// <p>Contains the timestamp range (start time through end time) of a matched category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestampRange {
     /// <p>The time, in milliseconds, from the beginning of the audio stream to the start of the category match.</p>

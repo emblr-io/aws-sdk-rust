@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DescribeEngineDefaultParameters</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEngineDefaultParametersInput {
     /// <p>The name of the cache parameter group family.</p>

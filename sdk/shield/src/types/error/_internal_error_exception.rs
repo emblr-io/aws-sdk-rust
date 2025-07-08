@@ -2,6 +2,8 @@
 
 /// <p>Exception that indicates that a problem occurred with the service infrastructure. You can retry the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalErrorException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Indicates that a login attempt was made to the potentially compromised database from a remote IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsLoginAttemptAction {
     /// <p>Contains information about the remote IP address of the connection.</p>

@@ -2,6 +2,8 @@
 
 /// Output settings. There can be multiple outputs within a group.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Output {
     /// The names of the AudioDescriptions used as audio sources for this output.

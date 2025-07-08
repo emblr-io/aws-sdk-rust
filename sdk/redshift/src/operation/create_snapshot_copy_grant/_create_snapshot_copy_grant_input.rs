@@ -2,6 +2,8 @@
 
 /// <p>The result of the <code>CreateSnapshotCopyGrant</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSnapshotCopyGrantInput {
     /// <p>The name of the snapshot copy grant. This name must be unique in the region for the Amazon Web Services account.</p>

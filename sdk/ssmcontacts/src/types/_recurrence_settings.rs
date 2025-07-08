@@ -2,6 +2,8 @@
 
 /// <p>Information about when an on-call rotation is in effect and how long the rotation period lasts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecurrenceSettings {
     /// <p>Information about on-call rotations that recur monthly.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A summary of the request sent by using <code>SearchPlaceIndexForText</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SearchPlaceIndexForTextSummary {
     /// <p>The search text specified in the request.</p>

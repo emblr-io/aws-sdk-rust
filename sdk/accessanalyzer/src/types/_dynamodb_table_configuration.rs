@@ -10,6 +10,8 @@
 /// <p>To propose deletion of an existing DynamoDB table or index policy, you can specify an empty string for the DynamoDB policy.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynamodbTableConfiguration {
     /// <p>The proposed resource policy defining who can access or manage the DynamoDB table.</p>

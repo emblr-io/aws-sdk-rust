@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the <code>putPermissionRequest</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutPermissionInput {
     /// <p>The name of the profiling group to grant access to.</p>

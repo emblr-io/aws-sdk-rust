@@ -2,6 +2,8 @@
 
 /// <p>Configures the deployment model for the third-party firewall.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThirdPartyFirewallPolicy {
     /// <p>Defines the deployment model to use for the third-party firewall policy.</p>

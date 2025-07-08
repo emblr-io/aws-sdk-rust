@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Certificate Manager certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateDetails {
     /// <p>The ARN of the private certificate authority (CA) that will be used to issue the certificate.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The version of an object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectVersion {
     /// <p>The entity tag is an MD5 hash of that version of the object.</p>

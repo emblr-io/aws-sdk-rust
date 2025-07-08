@@ -2,6 +2,8 @@
 
 /// <p>The configuration of spacing (often a margin or padding).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Spacing {
     /// <p>Define the top spacing.</p>

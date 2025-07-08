@@ -2,6 +2,8 @@
 
 /// <p>Settings used when Amazon Lex successfully captures a slot value from a user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotCaptureSetting {
     /// <p>Specifies a list of message groups that Amazon Lex uses to respond the user input.</p>

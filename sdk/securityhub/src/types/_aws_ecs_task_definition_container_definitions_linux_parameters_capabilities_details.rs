@@ -2,6 +2,8 @@
 
 /// <p>The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetails {
     /// <p>The Linux capabilities for the container that are added to the default configuration provided by Docker. Valid values are as follows:</p>

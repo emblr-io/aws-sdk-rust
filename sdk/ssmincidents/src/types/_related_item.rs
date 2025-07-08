@@ -2,6 +2,8 @@
 
 /// <p>Resources that responders use to triage and mitigate the incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelatedItem {
     /// <p>Details about the related item.</p>

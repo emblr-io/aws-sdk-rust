@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for a button UI element that is a part of a form.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormButton {
     /// <p>Specifies whether the button is visible on the form.</p>

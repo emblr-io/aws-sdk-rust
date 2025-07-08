@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the specified customer master key (CMK) isn't enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsDisabledException {
     /// <p>A message that provides information about the error.</p>

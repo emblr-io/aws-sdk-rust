@@ -2,6 +2,8 @@
 
 /// <p>The configuration to use to enable the different types of interactive use cases in an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InteractiveConfiguration {
     /// <p>Enables you to connect an application to Amazon EMR Studio to run interactive workloads in a notebook.</p>

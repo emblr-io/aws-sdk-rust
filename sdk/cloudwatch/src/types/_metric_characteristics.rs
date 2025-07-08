@@ -2,6 +2,8 @@
 
 /// <p>This object includes parameters that you can use to provide information to CloudWatch to help it build more accurate anomaly detection models.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricCharacteristics {
     /// <p>Set this parameter to <code>true</code> if values for this metric consistently include spikes that should not be considered to be anomalies. With this set to <code>true</code>, CloudWatch will expect to see spikes that occurred consistently during the model training period, and won't flag future similar spikes as anomalies.</p>

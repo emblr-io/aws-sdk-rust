@@ -2,6 +2,8 @@
 
 /// <p>Information about an upstream repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpstreamRepositoryInfo {
     /// <p>The name of an upstream repository.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The container for the properties of a transaction event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransactionEvent {
     /// <p>The blockchain network where the transaction occurred.</p>

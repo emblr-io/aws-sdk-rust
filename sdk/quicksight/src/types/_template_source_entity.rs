@@ -2,6 +2,8 @@
 
 /// <p>The source entity of the template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateSourceEntity {
     /// <p>The source analysis, if it is based on an analysis.</p>

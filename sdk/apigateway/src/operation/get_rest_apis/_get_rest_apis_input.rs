@@ -2,6 +2,8 @@
 
 /// <p>The GET request to list existing RestApis defined for your collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetRestApisInput {
     /// <p>The current pagination position in the paged result set.</p>

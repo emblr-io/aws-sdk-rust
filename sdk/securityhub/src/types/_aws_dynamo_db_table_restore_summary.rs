@@ -2,6 +2,8 @@
 
 /// <p>Information about the restore for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableRestoreSummary {
     /// <p>The ARN of the source backup from which the table was restored.</p>

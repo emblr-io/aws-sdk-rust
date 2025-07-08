@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code><code>DeleteOutboundCrossClusterSearchConnection</code></code> operation. Contains details of deleted outbound connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteOutboundCrossClusterSearchConnectionOutput {
     /// <p>Specifies the <code><code>OutboundCrossClusterSearchConnection</code></code> of deleted outbound connection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides quota and aggregated usage data for an Amazon Macie account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageRecord {
     /// <p>The unique identifier for the Amazon Web Services account that the data applies to.</p>

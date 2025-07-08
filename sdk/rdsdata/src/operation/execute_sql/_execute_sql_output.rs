@@ -2,6 +2,8 @@
 
 /// <p>The response elements represent the output of a request to run one or more SQL statements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecuteSqlOutput {
     /// <p>The results of the SQL statement or statements.</p>

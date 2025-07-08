@@ -2,6 +2,8 @@
 
 /// <p>Indicates how well the entire input matches the returned. It is equal to 1 if all input tokens are recognized and matched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddressComponentMatchScores {
     /// <p>The alpha-2 or alpha-3 character code for the country that the results will be present in.</p>

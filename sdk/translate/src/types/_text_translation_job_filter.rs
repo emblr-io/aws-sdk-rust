@@ -2,6 +2,8 @@
 
 /// <p>Provides information for filtering a list of translation jobs. For more information, see <code>ListTextTranslationJobs</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextTranslationJobFilter {
     /// <p>Filters the list of jobs by name.</p>

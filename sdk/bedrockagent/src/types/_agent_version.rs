@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a version of an agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentVersion {
     /// <p>The unique identifier of the agent that the version belongs to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides configuration information for the instances that will perform the compute work.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ComputeConfiguration {
     /// <p>The worker instances that will perform the compute work.</p>

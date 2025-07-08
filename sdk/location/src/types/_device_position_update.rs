@@ -2,6 +2,8 @@
 
 /// <p>Contains the position update details for a device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DevicePositionUpdate {
     /// <p>The device associated to the position update.</p>

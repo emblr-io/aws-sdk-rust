@@ -2,6 +2,8 @@
 
 /// <p>An organization Config rule that has information about Config rules that Config creates in member accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationConfigRule {
     /// <p>The name that you assign to organization Config rule.</p>

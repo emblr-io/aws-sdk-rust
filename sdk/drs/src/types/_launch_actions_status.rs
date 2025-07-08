@@ -2,6 +2,8 @@
 
 /// <p>Launch actions status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchActionsStatus {
     /// <p>Time where the AWS Systems Manager was detected as running on the launched instance.</p>

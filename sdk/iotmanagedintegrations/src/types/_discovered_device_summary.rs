@@ -2,6 +2,8 @@
 
 /// <p>Structure containing summary information about a device discovered during a device discovery job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DiscoveredDeviceSummary {
     /// <p>The third-party device identifier as defined by the connector. This identifier must not contain personal identifiable information (PII).</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configurations that SageMaker uses when updating the AMI versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RollingDeploymentPolicy {
     /// <p>The maximum amount of instances in the cluster that SageMaker can update at a time.</p>

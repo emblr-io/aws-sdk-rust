@@ -2,6 +2,8 @@
 
 /// <p>Studio settings. If these settings are applied on a user level, they take priority over the settings applied on a domain level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StudioWebPortalSettings {
     /// <p>The machine learning tools that are hidden from the Studio left navigation pane.</p>

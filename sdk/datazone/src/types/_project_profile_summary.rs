@@ -2,6 +2,8 @@
 
 /// <p>The summary of a project profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ProjectProfileSummary {
     /// <p>The domain ID of the project profile.</p>

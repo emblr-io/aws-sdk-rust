@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair that represents a parameter for the CloudFormation stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CfnStackCreateParameter {
     /// <p>The name of the CloudFormation parameter.</p>

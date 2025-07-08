@@ -2,6 +2,8 @@
 
 /// <p>Information about an Elasticsearch domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainDetails {
     /// <p>IAM policy document specifying the access policies for the new Elasticsearch domain.</p>
