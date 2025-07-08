@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingSummaryV2 {
     /// <p>The time at which the resource-based policy or IAM entity that generated the finding was analyzed.</p>

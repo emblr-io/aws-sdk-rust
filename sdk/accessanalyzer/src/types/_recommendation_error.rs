@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the reason that the retrieval of a recommendation for a finding failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationError {
     /// <p>The error code for a failed retrieval of a recommendation for a finding.</p>

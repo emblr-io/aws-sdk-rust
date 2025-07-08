@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an external access finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalAccessDetails {
     /// <p>The action in the analyzed policy statement that an external principal has permission to use.</p>

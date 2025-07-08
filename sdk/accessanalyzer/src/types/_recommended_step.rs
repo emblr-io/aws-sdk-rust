@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a recommended step for an unused access analyzer finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RecommendedStep {
     /// <p>A recommended step for an unused permissions finding.</p>

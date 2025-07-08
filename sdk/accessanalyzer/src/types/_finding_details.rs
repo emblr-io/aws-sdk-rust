@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an external access or unused access finding. Only one parameter can be used in a <code>FindingDetails</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FindingDetails {
     /// <p>The details for an external access analyzer finding.</p>

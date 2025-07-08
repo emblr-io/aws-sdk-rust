@@ -2,6 +2,8 @@
 
 /// <p>Provides aggregate statistics about the findings for the specified internal access analyzer. This includes counts of active, archived, and resolved findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalAccessFindingsStatistics {
     /// <p>The total number of active findings for each resource type of the specified internal access analyzer.</p>
