@@ -2,6 +2,8 @@
 
 /// <p>Identifiers for the federated user that is associated with the credentials.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FederatedUser {
     /// <p>The string that identifies the federated user associated with the credentials, similar to the unique ID of an IAM user.</p>

@@ -3,6 +3,8 @@
 /// <p>The identity provider (IdP) reported that authentication failed. This might be because the claim is invalid.</p>
 /// <p>If this error is returned for the <code>AssumeRoleWithWebIdentity</code> operation, it can also mean that the claim has expired or has been explicitly revoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdpRejectedClaimException {
     #[allow(missing_docs)] // documentation missing in model

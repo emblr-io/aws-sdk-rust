@@ -2,6 +2,8 @@
 
 /// <p>A document that contains additional information about the authorization status of a request from an encoded message that is returned in response to an Amazon Web Services request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecodeAuthorizationMessageOutput {
     /// <p>The API returns a response with the decoded message.</p>
