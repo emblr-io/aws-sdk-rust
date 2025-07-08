@@ -2,6 +2,8 @@
 
 /// <p>Contains information relating to dates in a document, including the type of value, and the value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NormalizedValue {
     /// <p>The value of the date, written as Year-Month-DayTHour:Minute:Second.</p>

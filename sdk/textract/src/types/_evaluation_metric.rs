@@ -2,6 +2,8 @@
 
 /// <p>The evaluation metrics (F1 score, Precision, and Recall) for an adapter version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationMetric {
     /// <p>The F1 score for an adapter version.</p>

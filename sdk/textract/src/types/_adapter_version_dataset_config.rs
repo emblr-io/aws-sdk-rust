@@ -2,6 +2,8 @@
 
 /// <p>The dataset configuration options for a given version of an adapter. Can include an Amazon S3 bucket if specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdapterVersionDatasetConfig {
     /// <p>The S3 bucket name and file name that identifies the document.</p>

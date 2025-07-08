@@ -2,6 +2,8 @@
 
 /// <p>A structure that holds information about the different lines found in a document's tables.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LineItemFields {
     /// <p>ExpenseFields used to show information from detected lines on a table.</p>

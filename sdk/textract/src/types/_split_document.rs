@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the pages of a document, defined by logical boundary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SplitDocument {
     /// <p>The index for a given document in a DocumentGroup of a specific Type.</p>
