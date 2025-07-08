@@ -2,6 +2,8 @@
 
 /// <p>The redaction placeholder that will replace the redacted text in session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RedactionPlaceHolder {
     /// <p>The redaction placeholder type that will replace the redacted text in session.</p>

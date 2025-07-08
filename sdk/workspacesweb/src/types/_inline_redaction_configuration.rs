@@ -2,6 +2,8 @@
 
 /// <p>The configuration for in-session inline redaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InlineRedactionConfiguration {
     /// <p>The inline redaction patterns to be enabled for the inline redaction configuration.</p>

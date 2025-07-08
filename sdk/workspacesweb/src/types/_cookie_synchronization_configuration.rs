@@ -2,6 +2,8 @@
 
 /// <p>The configuration that specifies which cookies should be synchronized from the end user's local browser to the remote browser.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CookieSynchronizationConfiguration {
     /// <p>The list of cookie specifications that are allowed to be synchronized to the remote browser.</p>

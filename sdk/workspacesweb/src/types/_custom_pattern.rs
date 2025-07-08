@@ -2,6 +2,8 @@
 
 /// <p>The pattern configuration for redacting custom data types in session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomPattern {
     /// <p>The pattern name for the custom pattern.</p>
