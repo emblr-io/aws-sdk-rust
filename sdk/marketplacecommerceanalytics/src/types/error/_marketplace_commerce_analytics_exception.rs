@@ -2,6 +2,8 @@
 
 /// This exception is thrown when an internal service error occurs.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MarketplaceCommerceAnalyticsException {
     /// This message describes details of the error.
