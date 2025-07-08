@@ -2,6 +2,8 @@
 
 /// <p>An object containing <code>ProviderConfiguration</code> and <code>ProviderServiceArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NamespaceProviderProperties {
     /// <p>The Amazon Resource Name (ARN) of the provider service.</p>

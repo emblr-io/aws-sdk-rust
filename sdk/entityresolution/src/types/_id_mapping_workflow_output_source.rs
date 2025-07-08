@@ -2,6 +2,8 @@
 
 /// <p>The output source for the ID mapping workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingWorkflowOutputSource {
     /// <p>The S3 path to which Entity Resolution will write the output table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The required configuration fields to use with the provider service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProviderEndpointConfiguration {
     /// <p>The identifiers of the provider service, from Data Exchange.</p>
