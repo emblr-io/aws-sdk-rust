@@ -2,6 +2,8 @@
 
 /// <p>Describes the serialization format of the object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputSerialization {
     /// <p>Describes the serialization of a CSV-encoded object.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object Identifier is unique value to identify objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectIdentifier {
     /// <p>Key name of the object.</p><important>

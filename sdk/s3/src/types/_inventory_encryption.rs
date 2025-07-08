@@ -2,6 +2,8 @@
 
 /// <p>Contains the type of server-side encryption used to encrypt the inventory results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryEncryption {
     /// <p>Specifies the use of SSE-S3 to encrypt delivered inventory reports.</p>

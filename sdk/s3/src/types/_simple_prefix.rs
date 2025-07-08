@@ -3,6 +3,8 @@
 /// <p>To use simple format for S3 keys for log objects, set SimplePrefix to an empty object.</p>
 /// <p><code>\[DestinationPrefix\]\[YYYY\]-\[MM\]-\[DD\]-\[hh\]-\[mm\]-\[ss\]-\[UniqueString\]</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimplePrefix {}
 impl SimplePrefix {

@@ -2,6 +2,8 @@
 
 /// <p>The metadata table configuration for a general purpose bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetBucketMetadataTableConfigurationResult {
     /// <p>The metadata table configuration for a general purpose bucket.</p>

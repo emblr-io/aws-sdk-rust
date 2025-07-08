@@ -2,6 +2,8 @@
 
 /// <p>Describes how uncompressed comma-separated values (CSV)-formatted results are formatted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvOutput {
     /// <p>Indicates whether to use quotation marks around output fields.</p>

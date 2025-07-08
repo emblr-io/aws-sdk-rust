@@ -2,6 +2,8 @@
 
 /// <p>A container for specifying the configuration for Amazon EventBridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventBridgeConfiguration {}
 impl EventBridgeConfiguration {

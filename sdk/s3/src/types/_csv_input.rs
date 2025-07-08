@@ -2,6 +2,8 @@
 
 /// <p>Describes how an uncompressed comma-separated values (CSV)-formatted input object is formatted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvInput {
     /// <p>Describes the first line of input. Valid values are:</p>

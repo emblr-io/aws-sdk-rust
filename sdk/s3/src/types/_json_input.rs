@@ -2,6 +2,8 @@
 
 /// <p>Specifies JSON as object's input serialization format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JsonInput {
     /// <p>The type of JSON. Valid values: Document, Lines.</p>

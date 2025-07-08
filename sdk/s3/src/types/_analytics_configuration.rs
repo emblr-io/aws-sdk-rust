@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration and any analyses for the analytics filter of an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsConfiguration {
     /// <p>The ID that identifies the analytics configuration.</p>

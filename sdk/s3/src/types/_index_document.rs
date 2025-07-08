@@ -2,6 +2,8 @@
 
 /// <p>Container for the <code>Suffix</code> element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndexDocument {
     /// <p>A suffix that is appended to a request that is for a directory on the website endpoint. (For example, if the suffix is <code>index.html</code> and you make a request to <code>samplebucket/images/</code>, the data that is returned will be for the object with the key name <code>images/index.html</code>.) The suffix must not be empty and must not include a slash character.</p><important>

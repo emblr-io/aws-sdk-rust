@@ -2,6 +2,8 @@
 
 /// <p>Specifies which Amazon S3 objects to replicate and where to store the replicas.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationRule {
     /// <p>A unique identifier for the rule. The maximum value is 255 characters.</p>

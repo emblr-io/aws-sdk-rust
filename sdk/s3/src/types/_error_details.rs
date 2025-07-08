@@ -2,6 +2,8 @@
 
 /// <p>If the <code>CreateBucketMetadataTableConfiguration</code> request succeeds, but S3 Metadata was unable to create the table, this structure contains the error code and error message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorDetails {
     /// <p>If the <code>CreateBucketMetadataTableConfiguration</code> request succeeds, but S3 Metadata was unable to create the table, this structure contains the error code. The possible error codes and error messages are as follows:</p>
