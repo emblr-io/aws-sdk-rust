@@ -3,6 +3,8 @@
 /// <p>Describes a container deployment configuration of an Amazon Lightsail container service.</p>
 /// <p>A deployment specifies the settings, such as the ports and launch command, of containers that are deployed to your container service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerServiceDeploymentRequest {
     /// <p>An object that describes the configuration for the containers of the deployment.</p>

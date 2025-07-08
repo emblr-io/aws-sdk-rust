@@ -3,6 +3,8 @@
 /// <p>Describes a load balancer SSL/TLS certificate.</p>
 /// <p>TLS is just an updated, more secure version of Secure Socket Layer (SSL).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancerTlsCertificate {
     /// <p>The name of the SSL/TLS certificate (<code>my-certificate</code>).</p>

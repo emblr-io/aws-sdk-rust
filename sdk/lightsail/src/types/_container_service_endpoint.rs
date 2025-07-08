@@ -2,6 +2,8 @@
 
 /// <p>Describes the public endpoint configuration of a deployment of an Amazon Lightsail container service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerServiceEndpoint {
     /// <p>The name of the container entry of the deployment that the endpoint configuration applies to.</p>

@@ -3,6 +3,8 @@
 /// <p>Describes the state of the name server records update made by Amazon Lightsail to an Amazon Route&nbsp;53 registered domain.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/lightsail/latest/userguide/understanding-dns-in-amazon-lightsail">DNS in Amazon Lightsail</a> in the <i>Amazon Lightsail Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NameServersUpdateState {
     /// <p>The status code for the name servers update.</p>

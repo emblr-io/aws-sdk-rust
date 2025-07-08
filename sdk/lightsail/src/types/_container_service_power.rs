@@ -3,6 +3,8 @@
 /// <p>Describes the powers that can be specified for an Amazon Lightsail container service.</p>
 /// <p>The power specifies the amount of RAM, the number of vCPUs, and the base price of the container service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerServicePower {
     /// <p>The ID of the power (<code>nano-1</code>).</p>
