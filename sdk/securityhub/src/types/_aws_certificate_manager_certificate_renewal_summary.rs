@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Certificate Manager managed renewal for an <code>AMAZON_ISSUED</code> certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateRenewalSummary {
     /// <p>Information about the validation of each domain name in the certificate, as it pertains to Certificate Manager managed renewal. Provided only when the certificate type is <code>AMAZON_ISSUED</code>.</p>

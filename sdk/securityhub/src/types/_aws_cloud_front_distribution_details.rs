@@ -2,6 +2,8 @@
 
 /// <p>A CloudFront distribution configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionDetails {
     /// <p>Provides information about the cache configuration for the distribution.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the resize operation for the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterResizeInfo {
     /// <p>Indicates whether the resize operation can be canceled.</p>

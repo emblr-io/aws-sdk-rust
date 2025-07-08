@@ -2,6 +2,8 @@
 
 /// <p>Details for a rule in an WAF web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafWebAclRule {
     /// <p>Specifies the action that CloudFront or WAF takes when a web request matches the conditions in the rule.</p>

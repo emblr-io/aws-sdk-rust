@@ -2,6 +2,8 @@
 
 /// <p>Contains the name and values of a manual Amazon Relational Database Service (RDS) DB cluster snapshot attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbClusterSnapshotDbClusterSnapshotAttribute {
     /// <p>The name of the manual DB cluster snapshot attribute. The attribute named <code>restore</code> refers to the list of Amazon Web Services accounts that have permission to copy or restore the manual DB cluster snapshot.</p>

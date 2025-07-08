@@ -2,6 +2,8 @@
 
 /// <p>Enables filtering of Amazon Web Services resources based on numerical values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcesNumberFilter {
     /// <p>The name of the field.</p>

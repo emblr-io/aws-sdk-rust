@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the health checks that are conducted on the load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElbLoadBalancerHealthCheck {
     /// <p>The number of consecutive health check successes required before the instance is moved to the Healthy state.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Enables filtering of security findings based on numerical field values in OCSF.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OcsfNumberFilter {
     /// <p>The name of the field.</p>

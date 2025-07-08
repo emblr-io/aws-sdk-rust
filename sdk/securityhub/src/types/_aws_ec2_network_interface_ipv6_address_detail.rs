@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an IPV6 address that is associated with the network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2NetworkInterfaceIpV6AddressDetail {
     /// <p>The IPV6 address.</p>

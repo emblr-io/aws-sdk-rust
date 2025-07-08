@@ -2,6 +2,8 @@
 
 /// <p>Provides details for allowing no client authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails {
     /// <p>Indicates whether unauthenticated is allowed or not.</p>

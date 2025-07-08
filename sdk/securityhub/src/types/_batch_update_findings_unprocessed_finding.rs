@@ -2,6 +2,8 @@
 
 /// <p>A finding from a <code>BatchUpdateFindings</code> request that Security Hub was unable to update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdateFindingsUnprocessedFinding {
     /// <p>The identifier of the finding that was not updated.</p>

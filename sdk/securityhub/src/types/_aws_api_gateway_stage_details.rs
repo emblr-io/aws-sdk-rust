@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a version 1 Amazon API Gateway stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiGatewayStageDetails {
     /// <p>The identifier of the deployment that the stage points to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Nests a stack as a resource in a top-level template. Nested stacks are stacks created as resources for another stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFormationStackDetails {
     /// <p>The capabilities allowed in the stack.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Filtering information for the notifications. The filtering is based on Amazon S3 key names.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketNotificationConfigurationFilter {
     /// <p>Details for an Amazon S3 filter.</p>

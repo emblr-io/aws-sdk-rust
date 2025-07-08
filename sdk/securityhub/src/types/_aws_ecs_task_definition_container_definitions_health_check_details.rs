@@ -2,6 +2,8 @@
 
 /// <p>The container health check command and associated configuration parameters for the container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetails {
     /// <p>The command that the container runs to determine whether it is healthy.</p>

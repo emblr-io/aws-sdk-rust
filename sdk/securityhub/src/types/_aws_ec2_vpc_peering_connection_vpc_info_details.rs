@@ -2,6 +2,8 @@
 
 /// <p>Describes a VPC in a VPC peering connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2VpcPeeringConnectionVpcInfoDetails {
     /// <p>The IPv4 CIDR block for the VPC.</p>

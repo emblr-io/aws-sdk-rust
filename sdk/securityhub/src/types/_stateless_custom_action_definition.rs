@@ -2,6 +2,8 @@
 
 /// <p>The definition of a custom action that can be used for stateless packet handling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatelessCustomActionDefinition {
     /// <p>Information about metrics to publish to CloudWatch.</p>

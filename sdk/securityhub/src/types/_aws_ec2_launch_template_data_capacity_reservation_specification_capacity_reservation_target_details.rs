@@ -2,6 +2,8 @@
 
 /// <p>Information about the target Capacity Reservation or Capacity Reservation group in which to run an Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetails {
     /// <p>The ID of the Capacity Reservation in which to run the instance.</p>

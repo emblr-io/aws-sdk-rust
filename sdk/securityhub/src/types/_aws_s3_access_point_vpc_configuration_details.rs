@@ -2,6 +2,8 @@
 
 /// <p>The virtual private cloud (VPC) configuration for an Amazon S3 access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3AccessPointVpcConfigurationDetails {
     /// <p>If this field is specified, this access point will only allow connections from the specified VPC ID.</p>

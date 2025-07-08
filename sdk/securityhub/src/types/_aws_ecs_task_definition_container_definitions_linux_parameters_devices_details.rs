@@ -2,6 +2,8 @@
 
 /// <p>A host device to expose to the container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetails {
     /// <p>The path inside the container at which to expose the host device.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about an EC2 VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2VpcDetails {
     /// <p>Information about the IPv4 CIDR blocks associated with the VPC.</p>

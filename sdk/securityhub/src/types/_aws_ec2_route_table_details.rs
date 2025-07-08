@@ -2,6 +2,8 @@
 
 /// <p>Provides details about a route table for the specified VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2RouteTableDetails {
     /// <p>The associations between a route table and one or more subnets or a gateway.</p>

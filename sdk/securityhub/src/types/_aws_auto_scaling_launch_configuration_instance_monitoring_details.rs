@@ -2,6 +2,8 @@
 
 /// <p>Information about the type of monitoring for instances in the group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAutoScalingLaunchConfigurationInstanceMonitoringDetails {
     /// <p>If set to <code>true</code>, then instances in the group launch with detailed monitoring.</p>

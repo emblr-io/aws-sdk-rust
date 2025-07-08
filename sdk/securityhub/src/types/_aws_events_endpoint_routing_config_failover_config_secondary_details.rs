@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Region that events are routed to when failover is triggered or event replication is enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails {
     /// <p>Defines the secondary Region.</p>

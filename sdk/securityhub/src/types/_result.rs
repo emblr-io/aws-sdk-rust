@@ -2,6 +2,8 @@
 
 /// <p>Details about the account that was not processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Result {
     /// <p>An Amazon Web Services account ID of the account that was not processed.</p>

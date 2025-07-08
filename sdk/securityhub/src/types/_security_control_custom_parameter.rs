@@ -2,6 +2,8 @@
 
 /// <p>A list of security controls and control parameter values that are included in a configuration policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityControlCustomParameter {
     /// <p>The ID of the security control.</p>

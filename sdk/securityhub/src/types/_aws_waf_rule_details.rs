@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a WAF rule. This rule specifies the web requests that you want to allow, block, or count.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRuleDetails {
     /// <p>The name of the metrics for this rule.</p>

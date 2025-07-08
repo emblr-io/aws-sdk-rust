@@ -2,6 +2,8 @@
 
 /// <p>Provides details about a service within an ECS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsServiceDetails {
     /// <p>The capacity provider strategy that the service uses.</p>

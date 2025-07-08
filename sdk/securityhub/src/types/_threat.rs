@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the threat detected in a security finding and the file paths that were affected by the threat.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Threat {
     /// <p>The name of the threat.</p>

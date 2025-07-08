@@ -2,6 +2,8 @@
 
 /// <p>Contains information about settings for canary deployment in the stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiGatewayCanarySettings {
     /// <p>The percentage of traffic that is diverted to a canary deployment.</p>

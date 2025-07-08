@@ -2,6 +2,8 @@
 
 /// <p>Provide details about an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsMskClusterClusterInfoDetails {
     /// <p>Includes encryption-related information, such as the KMS key used for encrypting data at rest and whether you want Amazon MSK to encrypt your data in transit.</p>

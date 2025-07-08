@@ -2,6 +2,8 @@
 
 /// <p>Information about a Docker volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails {
     /// <p>Whether to create the Docker volume automatically if it does not already exist.</p>

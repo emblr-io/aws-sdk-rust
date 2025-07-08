@@ -2,6 +2,8 @@
 
 /// <p>Information about an inline policy that is embedded in the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamUserPolicy {
     /// <p>The name of the policy.</p>

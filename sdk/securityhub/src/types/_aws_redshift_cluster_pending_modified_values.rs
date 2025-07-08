@@ -2,6 +2,8 @@
 
 /// <p>Changes to the Amazon Redshift cluster that are currently pending.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterPendingModifiedValues {
     /// <p>The pending or in-progress change to the automated snapshot retention period.</p>

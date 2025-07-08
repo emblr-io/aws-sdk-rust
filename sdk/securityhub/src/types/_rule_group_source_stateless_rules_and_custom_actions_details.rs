@@ -2,6 +2,8 @@
 
 /// <p>Stateless rules and custom actions for a stateless rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupSourceStatelessRulesAndCustomActionsDetails {
     /// <p>Custom actions for the rule group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The metadata of the Lightweight Directory Access Protocol (LDAP) server used to authenticate and authorize connections to the broker. This is an optional failover server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAmazonMqBrokerLdapServerMetadataDetails {
     /// <p>Specifies the location of the LDAP server, such as Amazon Web Services Directory Service for Microsoft Active Directory.</p>

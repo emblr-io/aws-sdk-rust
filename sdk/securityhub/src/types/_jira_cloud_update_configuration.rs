@@ -2,6 +2,8 @@
 
 /// <p>The parameters used to modify an existing Jira Cloud integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JiraCloudUpdateConfiguration {
     /// <p>The project key for a JiraCloud instance.</p>

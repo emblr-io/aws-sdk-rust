@@ -2,6 +2,8 @@
 
 /// <p>Specifies the authorization configuration for using an Lambda function with your AppSync GraphQL API endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAppSyncGraphQlApiLambdaAuthorizerConfigDetails {
     /// <p>The number of seconds a response should be cached for. The default is 5 minutes (300 seconds).</p>

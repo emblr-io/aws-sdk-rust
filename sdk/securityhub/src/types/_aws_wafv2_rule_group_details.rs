@@ -2,6 +2,8 @@
 
 /// <p>Details about an WAFv2 rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2RuleGroupDetails {
     /// <p>The web ACL capacity units (WCUs) required for this rule group.</p>

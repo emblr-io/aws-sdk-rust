@@ -2,6 +2,8 @@
 
 /// <p>A rule for redirecting requests to the website.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketWebsiteConfigurationRoutingRule {
     /// <p>Provides the condition that must be met in order to apply the routing rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>For private hosted zones, this is a complex type that contains information about an Amazon VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRoute53HostedZoneVpcDetails {
     /// <p>The identifier of an Amazon VPC.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The type of monitoring that’s turned on for an Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2InstanceMonitoringDetails {
     /// <p>Indicates whether detailed monitoring is turned on. Otherwise, basic monitoring is turned on.</p>

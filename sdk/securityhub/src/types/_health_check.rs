@@ -2,6 +2,8 @@
 
 /// <p>Information about the operational status and health of a connectorV2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheck {
     /// <p>The status of the connectorV2.</p>

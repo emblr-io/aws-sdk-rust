@@ -2,6 +2,8 @@
 
 /// <p>Provides the latitude and longitude coordinates of a location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoLocation {
     /// <p>The longitude of the location.</p>

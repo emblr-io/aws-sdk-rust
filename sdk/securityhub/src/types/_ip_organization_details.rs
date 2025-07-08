@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an internet provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpOrganizationDetails {
     /// <p>The Autonomous System Number (ASN) of the internet provider</p>

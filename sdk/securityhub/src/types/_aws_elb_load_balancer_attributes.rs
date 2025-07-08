@@ -2,6 +2,8 @@
 
 /// <p>Contains attributes for the load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElbLoadBalancerAttributes {
     /// <p>Information about the access log configuration for the load balancer.</p>

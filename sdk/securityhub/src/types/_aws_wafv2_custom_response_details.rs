@@ -2,6 +2,8 @@
 
 /// <p>A custom response to send to the client. You can define a custom response for rule actions and default web ACL actions that are set to block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2CustomResponseDetails {
     /// <p>References the response body that you want WAF to return to the web request client. You can define a custom response for a rule action or a default web ACL action that is set to block.</p>

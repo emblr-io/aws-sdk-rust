@@ -2,6 +2,8 @@
 
 /// <p>The log configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainLogPublishingOptionsLogConfig {
     /// <p>The ARN of the CloudWatch Logs group to publish the logs to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The initial configuration settings required to establish an integration between Security Hub and ServiceNow ITSM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServiceNowProviderConfiguration {
     /// <p>The instance name of ServiceNow ITSM.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Identifies which finding to get the finding history for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSecurityFindingIdentifier {
     /// <p>The identifier of the finding that was specified by the finding provider.</p>

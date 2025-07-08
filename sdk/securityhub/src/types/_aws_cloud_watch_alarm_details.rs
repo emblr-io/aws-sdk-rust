@@ -2,6 +2,8 @@
 
 /// <p>Specifies an alarm and associates it with the specified metric or metric math expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudWatchAlarmDetails {
     /// <p>Indicates whether actions should be executed during any changes to the alarm state.</p>

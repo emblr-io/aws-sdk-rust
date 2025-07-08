@@ -2,6 +2,8 @@
 
 /// <p>The list of the findings that cannot be imported. For each finding, the list provides the error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportFindingsError {
     /// <p>The identifier of the finding that could not be updated.</p>

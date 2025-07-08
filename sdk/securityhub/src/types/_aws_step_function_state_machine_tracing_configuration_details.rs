@@ -2,6 +2,8 @@
 
 /// <p>Specifies whether X-Ray tracing is enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsStepFunctionStateMachineTracingConfigurationDetails {
     /// <p>When set to true, X-Ray tracing is enabled.</p>

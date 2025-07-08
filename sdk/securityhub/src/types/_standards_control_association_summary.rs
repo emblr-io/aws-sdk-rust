@@ -2,6 +2,8 @@
 
 /// <p>An array that provides the enablement status and other details for each control that applies to each enabled standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StandardsControlAssociationSummary {
     /// <p>The Amazon Resource Name (ARN) of a standard.</p>

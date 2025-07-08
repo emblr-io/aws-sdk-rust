@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an WAF Regional rule. This rule identifies the web requests that you want to allow, block, or count.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRegionalRuleDetails {
     /// <p>A name for the metrics for the rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the configuration for node-to-node encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetails {
     /// <p>Whether node-to-node encryption is enabled.</p>

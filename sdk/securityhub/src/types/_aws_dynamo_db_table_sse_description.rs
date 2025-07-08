@@ -2,6 +2,8 @@
 
 /// <p>Information about the server-side encryption for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableSseDescription {
     /// <p>If the key is inaccessible, the date and time when DynamoDB detected that the key was inaccessible.</p>

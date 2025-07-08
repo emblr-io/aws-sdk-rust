@@ -2,6 +2,8 @@
 
 /// <p>A comprehensive distribution of security findings by severity level for Amazon Web Services resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSeverityBreakdown {
     /// <p>The number of findings not in any of the severity categories.</p>

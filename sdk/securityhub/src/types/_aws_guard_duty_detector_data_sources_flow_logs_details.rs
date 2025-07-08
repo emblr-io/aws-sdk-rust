@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information on the status of VPC Flow Logs as a data source for the detector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsGuardDutyDetectorDataSourcesFlowLogsDetails {
     /// <p>Describes whether VPC Flow Logs are activated as a data source for the detector.</p>

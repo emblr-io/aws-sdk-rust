@@ -2,6 +2,8 @@
 
 /// <p>Details about an WAFv2 web Access Control List (ACL).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2WebAclDetails {
     /// <p>The name of the web ACL.</p>

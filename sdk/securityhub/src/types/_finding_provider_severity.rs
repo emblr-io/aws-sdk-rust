@@ -15,6 +15,8 @@
 /// <p>The <code>Normalized</code> and <code>Product</code> attributes are included in the <code>FindingProviderSeverity</code> structure to preserve the historical information associated with the finding, even if the top-level <code>Severity</code> object is later modified using the <a href="https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html"> <code>BatchUpdateFindings</code> </a> operation.</p>
 /// <p>If the top-level <code>Finding.Severity</code> object is present, but <code>Finding.FindingProviderFields</code> isn't present, Security Hub creates the <code>FindingProviderFields.Severity</code> object and copies the entire <code>Finding.Severity</code> object into it. This ensures that the original, provider-supplied details are retained within the <code>FindingProviderFields.Severity</code> object, even if the top-level <code>Severity</code> object is overwritten.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingProviderSeverity {
     /// <p>The severity label assigned to the finding by the finding provider.</p>

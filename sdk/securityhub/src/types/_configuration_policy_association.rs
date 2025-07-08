@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the association between an Security Hub configuration and a target account, organizational unit, or the root. An association can exist between a target and a configuration policy, or between a target and self-managed behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationPolicyAssociation {
     /// <p>The target account, organizational unit, or the root.</p>

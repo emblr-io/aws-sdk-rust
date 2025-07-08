@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the compliance for a patch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSsmPatch {
     /// <p>The compliance status details for the patch.</p>

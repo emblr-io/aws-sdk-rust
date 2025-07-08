@@ -18,6 +18,8 @@
 /// <p>For information about how Security Hub handles updates from <code>BatchImportFindings</code> to <code>FindingProviderFields</code> and to the corresponding top-level attributes, see <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/finding-update-batchimportfindings.html#batchimportfindings-findingproviderfields">Using <code>FindingProviderFields</code> </a> in the <i>Security Hub User Guide</i>.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingProviderFields {
     /// <p>A finding's confidence. Confidence is defined as the likelihood that a finding accurately identifies the behavior or issue that it was intended to identify.</p>

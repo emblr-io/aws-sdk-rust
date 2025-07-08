@@ -2,6 +2,8 @@
 
 /// <p>Includes encryption-related information, such as the KMS key used for encrypting data at rest and whether you want MSK to encrypt your data in transit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsMskClusterClusterInfoEncryptionInfoDetails {
     /// <p>The settings for encrypting data in transit.</p>

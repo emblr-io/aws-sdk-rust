@@ -2,6 +2,8 @@
 
 /// <p>The current DynamoDB Streams configuration for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableStreamSpecification {
     /// <p>Indicates whether DynamoDB Streams is enabled on the table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details for an Identity and Access Management (IAM) instance profile, which is a container for an IAM role for your instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataIamInstanceProfileDetails {
     /// <p>The Amazon Resource Name (ARN) of the instance profile.</p>

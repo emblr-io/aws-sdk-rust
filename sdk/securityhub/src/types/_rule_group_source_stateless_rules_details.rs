@@ -2,6 +2,8 @@
 
 /// <p>A stateless rule in the rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupSourceStatelessRulesDetails {
     /// <p>Indicates the order in which to run this rule relative to all of the rules in the stateless rule group.</p>

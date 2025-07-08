@@ -2,6 +2,8 @@
 
 /// <p>The list of findings that were updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdateFindingsV2ProcessedFinding {
     /// <p>The finding identifier of a processed finding.</p>

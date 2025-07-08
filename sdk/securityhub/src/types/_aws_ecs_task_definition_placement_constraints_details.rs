@@ -2,6 +2,8 @@
 
 /// <p>A placement constraint object to use for tasks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionPlacementConstraintsDetails {
     /// <p>A cluster query language expression to apply to the constraint.</p>

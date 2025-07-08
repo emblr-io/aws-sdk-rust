@@ -2,6 +2,8 @@
 
 /// <p>You can configure Amazon Redshift to copy snapshots for a cluster to another Amazon Web Services Region. This parameter provides information about a cross-Region snapshot copy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterClusterSnapshotCopyStatus {
     /// <p>The destination Region that snapshots are automatically copied to when cross-Region snapshot copy is enabled.</p>

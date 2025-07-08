@@ -2,6 +2,8 @@
 
 /// <p>Specifies the credit option for CPU usage of a T2, T3, or T3a Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataCreditSpecificationDetails {
     /// <p>The credit option for CPU usage of a T instance.</p>

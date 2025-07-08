@@ -2,6 +2,8 @@
 
 /// <p>Provides a standard to identify security findings using OCSF.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OcsfFindingIdentifier {
     /// <p>Finding cloud.account.uid, which is a unique identifier in the Amazon Web Services account..</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about an override action for a rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafOverrideAction {
     /// <p><code>COUNT</code> overrides the action specified by the individual rule within a <code>RuleGroup</code> .</p>

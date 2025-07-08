@@ -2,6 +2,8 @@
 
 /// <p>A component of the key schema for the DynamoDB table, a global secondary index, or a local secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableKeySchema {
     /// <p>The name of the key schema attribute.</p>

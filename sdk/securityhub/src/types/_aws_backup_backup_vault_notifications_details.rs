@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the Amazon SNS event notifications for the specified backup vault.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsBackupBackupVaultNotificationsDetails {
     /// <p>An array of events that indicate the status of jobs to back up resources to the backup vault. The following events are supported:</p>

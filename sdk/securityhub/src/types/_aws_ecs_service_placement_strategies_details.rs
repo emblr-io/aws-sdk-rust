@@ -2,6 +2,8 @@
 
 /// <p>A placement strategy that determines how to place the tasks for the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsServicePlacementStrategiesDetails {
     /// <p>The field to apply the placement strategy against.</p>

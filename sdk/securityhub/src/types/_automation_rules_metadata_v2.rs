@@ -2,6 +2,8 @@
 
 /// <p>Includes essential metadata information about automation rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesMetadataV2 {
     /// <p>The ARN of the automation rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an extended key usage X.509 v3 extension object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateExtendedKeyUsage {
     /// <p>The name of an extension value. Indicates the purpose for which the certificate public key can be used.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Optional deployment parameters for the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsServiceDeploymentConfigurationDetails {
     /// <p>Determines whether a service deployment fails if a service cannot reach a steady state.</p>

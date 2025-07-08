@@ -2,6 +2,8 @@
 
 /// <p>An Internet Control Message Protocol (ICMP) type and code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcmpTypeCode {
     /// <p>The ICMP code for which to deny or allow access. To deny or allow all codes, use the value <code>-1</code>.</p>

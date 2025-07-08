@@ -2,6 +2,8 @@
 
 /// <p>Details for a cluster logging configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEksClusterLoggingClusterLoggingDetails {
     /// <p>Whether the logging types that are listed in <code>Types</code> are enabled.</p>

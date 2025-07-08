@@ -2,6 +2,8 @@
 
 /// <p>The details of an Amazon Simple Storage Service (Amazon S3) bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketDetails {
     /// <p>The canonical user ID of the owner of the S3 bucket.</p>

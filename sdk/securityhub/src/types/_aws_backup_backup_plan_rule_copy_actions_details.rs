@@ -2,6 +2,8 @@
 
 /// <p>An array of <code>CopyAction</code> objects, each of which contains details of the copy operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsBackupBackupPlanRuleCopyActionsDetails {
     /// <p>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</p>

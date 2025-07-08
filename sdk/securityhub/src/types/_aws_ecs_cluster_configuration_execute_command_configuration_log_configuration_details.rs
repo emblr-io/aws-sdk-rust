@@ -2,6 +2,8 @@
 
 /// <p>The log configuration for the results of the run command actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails {
     /// <p>Whether to enable encryption on the CloudWatch logs.</p>

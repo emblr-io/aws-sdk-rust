@@ -2,6 +2,8 @@
 
 /// <p>&gt;Linux-specific modifications that are applied to the container, such as Linux kernel capabilities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetails {
     /// <p>The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.</p>

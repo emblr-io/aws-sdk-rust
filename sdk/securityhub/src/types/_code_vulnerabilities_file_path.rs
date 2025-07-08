@@ -2,6 +2,8 @@
 
 /// <p>Provides details about where a code vulnerability is located in your Lambda function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeVulnerabilitiesFilePath {
     /// <p>The line number of the last line of code in which the vulnerability is located.</p>

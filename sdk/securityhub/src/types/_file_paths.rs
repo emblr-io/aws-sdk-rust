@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the file paths that were affected by the threat.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilePaths {
     /// <p>Path to the infected or suspicious file on the resource it was detected on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An IAM role that is associated with the Amazon RDS DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbClusterAssociatedRole {
     /// <p>The ARN of the IAM role.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an Elastic IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2EipDetails {
     /// <p>The identifier of the EC2 instance.</p>

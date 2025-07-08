@@ -2,6 +2,8 @@
 
 /// <p>Updates to the severity information for a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SeverityUpdate {
     /// <p>The normalized severity for the finding. This attribute is to be deprecated in favor of <code>Label</code>.</p>

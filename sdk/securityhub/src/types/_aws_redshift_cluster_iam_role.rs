@@ -2,6 +2,8 @@
 
 /// <p>An IAM role that the cluster can use to access other Amazon Web Services services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterIamRole {
     /// <p>The status of the IAM role's association with the cluster.</p>

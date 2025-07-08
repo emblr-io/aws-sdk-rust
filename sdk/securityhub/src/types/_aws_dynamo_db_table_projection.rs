@@ -2,6 +2,8 @@
 
 /// <p>For global and local secondary indexes, identifies the attributes that are copied from the table into the index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableProjection {
     /// <p>The nonkey attributes that are projected into the index. For each attribute, provide the attribute name.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the authorization configuration for using Amazon Cognito user pools with your AppSync GraphQL API endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAppSyncGraphQlApiUserPoolConfigDetails {
     /// <p>A regular expression for validating the incoming Amazon Cognito user pools app client ID. If this value isn't set, no filtering is applied.</p>

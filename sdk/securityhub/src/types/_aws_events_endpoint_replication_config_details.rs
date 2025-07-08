@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether replication is enabled or disabled for the endpoint. If enabled, the endpoint can replicate all events to a secondary Amazon Web Services Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEventsEndpointReplicationConfigDetails {
     /// <p>The state of event replication.</p>

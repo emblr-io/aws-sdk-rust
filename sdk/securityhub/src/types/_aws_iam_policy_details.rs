@@ -2,6 +2,8 @@
 
 /// <p>Represents an IAM permissions policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamPolicyDetails {
     /// <p>The number of users, groups, and roles that the policy is attached to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Database Migration Service (DMS) replication instance. DMS uses a replication instance to connect to your source data store, read the source data, and format the data for consumption by the target data store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDmsReplicationInstanceDetails {
     /// <p>The amount of storage (in gigabytes) that is allocated for the replication instance.</p>

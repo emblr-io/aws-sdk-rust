@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum number of network interfaces to be attached to an Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetails {
     /// <p>The maximum number of network interfaces.</p>

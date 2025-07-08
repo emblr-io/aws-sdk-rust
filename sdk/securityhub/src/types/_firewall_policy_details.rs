@@ -2,6 +2,8 @@
 
 /// <p>Defines the behavior of the firewall.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallPolicyDetails {
     /// <p>The stateful rule groups that are used in the firewall policy.</p>

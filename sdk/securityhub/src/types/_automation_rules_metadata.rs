@@ -2,6 +2,8 @@
 
 /// <p>Metadata for automation rules in the calling account. The response includes rules with a <code>RuleStatus</code> of <code>ENABLED</code> and <code>DISABLED</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesMetadata {
     /// <p>The Amazon Resource Name (ARN) for the rule.</p>

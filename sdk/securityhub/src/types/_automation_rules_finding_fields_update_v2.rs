@@ -2,6 +2,8 @@
 
 /// <p>Allows you to define the structure for modifying specific fields in security findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesFindingFieldsUpdateV2 {
     /// <p>The severity level to be assigned to findings that match the automation rule criteria.</p>

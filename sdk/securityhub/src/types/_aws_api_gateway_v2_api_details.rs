@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a version 2 API in Amazon API Gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiGatewayV2ApiDetails {
     /// <p>The URI of the API.</p>

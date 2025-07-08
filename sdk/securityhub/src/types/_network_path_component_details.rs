@@ -2,6 +2,8 @@
 
 /// <p>Information about the destination of the next component in the network path.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkPathComponentDetails {
     /// <p>The IP addresses of the destination.</p>

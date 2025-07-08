@@ -3,6 +3,8 @@
 /// <p>Contains information about the signals involved in an Amazon GuardDuty Extended Threat Detection attack sequence. An attack sequence is a type of threat detected by GuardDuty. GuardDuty generates an attack sequence finding when multiple events, or signals, align to a potentially suspicious activity. When GuardDuty and Security Hub are integrated, GuardDuty sends attack sequence findings to Security Hub.</p>
 /// <p>A signal can be an API activity or a finding that GuardDuty uses to detect an attack sequence finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Signal {
     /// <p>The type of the signal used to identify an attack sequence.</p>

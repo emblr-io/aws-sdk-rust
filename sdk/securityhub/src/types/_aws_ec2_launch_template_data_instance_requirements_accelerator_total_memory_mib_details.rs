@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum amount of memory, in MiB, for the accelerators on an Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetails {
     /// <p>The maximum amount of memory, in MiB. If this parameter isn't specified, there's no maximum limit.</p>
