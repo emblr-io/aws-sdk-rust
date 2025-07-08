@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because KMS cannot find a custom key store with the specified key store name or ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomKeyStoreNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

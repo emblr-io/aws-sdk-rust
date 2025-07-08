@@ -3,6 +3,8 @@
 /// <p>KMS was unable to reach the specified <code>XksProxyUriPath</code>. The path must be reachable before you create the external key store or update its settings.</p>
 /// <p>This exception is also thrown when the external key store proxy response to a <code>GetHealthStatus</code> request indicates that all external key manager instances are unavailable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct XksProxyUriUnreachableException {
     #[allow(missing_docs)] // documentation missing in model

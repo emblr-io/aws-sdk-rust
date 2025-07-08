@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the specified KMS key cannot decrypt the data. The <code>KeyId</code> in a <code>Decrypt</code> request and the <code>SourceKeyId</code> in a <code>ReEncrypt</code> request must identify the same KMS key that was used to encrypt the ciphertext.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncorrectKeyException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because a specified parameter is not supported or a specified resource is not valid for this operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedOperationException {
     #[allow(missing_docs)] // documentation missing in model

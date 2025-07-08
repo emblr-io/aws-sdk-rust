@@ -15,6 +15,8 @@
 /// <p>You requested the <code>GenerateRandom</code> operation in an CloudHSM key store that is not connected. This operation is valid only when the CloudHSM key store <code>ConnectionState</code> is <code>CONNECTED</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomKeyStoreInvalidStateException {
     #[allow(missing_docs)] // documentation missing in model

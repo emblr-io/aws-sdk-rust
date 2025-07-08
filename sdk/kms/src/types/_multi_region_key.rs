@@ -2,6 +2,8 @@
 
 /// <p>Describes the primary or replica key in a multi-Region key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiRegionKey {
     /// <p>Displays the key ARN of a primary or replica key of a multi-Region key.</p>

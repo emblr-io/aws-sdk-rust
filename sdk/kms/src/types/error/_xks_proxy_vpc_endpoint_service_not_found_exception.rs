@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because KMS could not find the specified VPC endpoint service. Use <code>DescribeCustomKeyStores</code> to verify the VPC endpoint service name for the external key store. Also, confirm that the <code>Allow principals</code> list for the VPC endpoint service includes the KMS service principal for the Region, such as <code>cks.kms.us-east-1.amazonaws.com</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct XksProxyVpcEndpointServiceNotFoundException {
     #[allow(missing_docs)] // documentation missing in model
