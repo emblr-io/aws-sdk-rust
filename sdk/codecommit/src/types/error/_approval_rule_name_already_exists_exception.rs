@@ -2,6 +2,8 @@
 
 /// <p>An approval rule with that name already exists. Approval rule names must be unique within the scope of a pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApprovalRuleNameAlreadyExistsException {
     /// <p>Any message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Automerge was specified for resolving the conflict, but the replacement type is not valid or content is missing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidReplacementContentException {
     /// <p>Any message associated with the exception.</p>

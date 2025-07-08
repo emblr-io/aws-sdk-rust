@@ -2,6 +2,8 @@
 
 /// <p>The pull request description is not valid. Descriptions cannot be more than 1,000 characters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDescriptionException {
     /// <p>Any message associated with the exception.</p>

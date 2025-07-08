@@ -2,6 +2,8 @@
 
 /// <p>The comment is too large. Comments are limited to 10,240 characters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommentContentSizeLimitExceededException {
     /// <p>Any message associated with the exception.</p>

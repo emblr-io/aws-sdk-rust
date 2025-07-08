@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a list repositories operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRepositoriesOutput {
     /// <p>Lists the repositories called by the list repositories operation.</p>

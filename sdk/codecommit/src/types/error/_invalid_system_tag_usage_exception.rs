@@ -2,6 +2,8 @@
 
 /// <p>The specified tag is not valid. Key names cannot be prefixed with aws:.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidSystemTagUsageException {
     /// <p>Any message associated with the exception.</p>

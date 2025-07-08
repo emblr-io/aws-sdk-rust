@@ -2,6 +2,8 @@
 
 /// <p>The specified folder does not exist. Either the folder name is not correct, or you did not enter the full path to the folder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FolderDoesNotExistException {
     /// <p>Any message associated with the exception.</p>

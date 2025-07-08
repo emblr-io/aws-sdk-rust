@@ -2,6 +2,8 @@
 
 /// <p>Information about a source file that is part of changes made in a commit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceFileSpecifier {
     /// <p>The full path to the file, including the name of the file.</p>

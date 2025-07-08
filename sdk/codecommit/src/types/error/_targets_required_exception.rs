@@ -2,6 +2,8 @@
 
 /// <p>An array of target objects is required. It cannot be empty or null.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetsRequiredException {
     /// <p>Any message associated with the exception.</p>

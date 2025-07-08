@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Resource Name (ARN) of the user or identity is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidReactionUserArnException {
     /// <p>Any message associated with the exception.</p>

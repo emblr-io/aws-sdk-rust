@@ -2,6 +2,8 @@
 
 /// <p>Either the enum is not in a valid format, or the specified file version enum is not valid in respect to the current file version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRelativeFileVersionEnumException {
     /// <p>Any message associated with the exception.</p>
