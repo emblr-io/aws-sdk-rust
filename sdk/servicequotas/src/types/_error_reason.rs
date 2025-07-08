@@ -2,6 +2,8 @@
 
 /// <p>An error that explains why an action did not succeed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorReason {
     /// <p>Service Quotas returns the following error values:</p>
