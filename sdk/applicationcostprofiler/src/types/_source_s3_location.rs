@@ -2,6 +2,8 @@
 
 /// <p>Represents the Amazon Simple Storage Service (Amazon S3) location where usage data is read from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceS3Location {
     /// <p>Name of the bucket.</p>

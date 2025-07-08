@@ -2,6 +2,8 @@
 
 /// <p>The configuration of a report in AWS Application Cost Profiler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportDefinition {
     /// <p>The ID of the report.</p>
