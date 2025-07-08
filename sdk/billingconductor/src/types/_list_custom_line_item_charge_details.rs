@@ -2,6 +2,8 @@
 
 /// <p>A representation of the charge details of a custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCustomLineItemChargeDetails {
     /// <p>A <code>ListCustomLineItemFlatChargeDetails</code> that describes the charge details of a flat custom line item.</p>

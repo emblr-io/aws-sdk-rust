@@ -2,6 +2,8 @@
 
 /// <p>A representation of a custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomLineItemListElement {
     /// <p>The Amazon Resource Names (ARNs) for custom line items.</p>

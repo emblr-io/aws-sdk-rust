@@ -2,6 +2,8 @@
 
 /// <p>A representation of a pricing plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PricingPlanListElement {
     /// <p>The name of a pricing plan.</p>

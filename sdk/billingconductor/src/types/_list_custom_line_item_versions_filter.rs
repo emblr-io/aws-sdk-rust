@@ -2,6 +2,8 @@
 
 /// <p>A filter that specifies the billing period range where the custom line item versions reside.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCustomLineItemVersionsFilter {
     /// <p>The billing period range in which the custom line item version is applied.</p>

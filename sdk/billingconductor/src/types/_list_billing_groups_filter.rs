@@ -2,6 +2,8 @@
 
 /// <p>The filter that specifies the billing groups and pricing plans to retrieve billing group information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListBillingGroupsFilter {
     /// <p>The list of billing group Amazon Resource Names (ARNs) to retrieve information.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The set of tiering configurations for the pricing rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTieringInput {
     /// <p>The possible Amazon Web Services Free Tier configurations.</p>

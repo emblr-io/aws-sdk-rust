@@ -2,6 +2,8 @@
 
 /// <p>A filter that specifies the type of resource associations that should be retrieved for a custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListResourcesAssociatedToCustomLineItemFilter {
     /// <p>The type of relationship between the custom line item and the associated resource.</p>
