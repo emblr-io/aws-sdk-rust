@@ -2,6 +2,8 @@
 
 /// <p>Information about the compatible system versions that can be used with a specific Exadata shape and Grid Infrastructure (GI) version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SystemVersionSummary {
     /// <p>The version of GI software.</p>

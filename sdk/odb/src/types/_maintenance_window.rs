@@ -2,6 +2,8 @@
 
 /// <p>The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaintenanceWindow {
     /// <p>The custom action timeout in minutes for the maintenance window.</p>

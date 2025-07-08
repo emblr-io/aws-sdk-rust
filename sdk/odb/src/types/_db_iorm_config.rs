@@ -2,6 +2,8 @@
 
 /// <p>The IORM configuration settings for the database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbIormConfig {
     /// <p>The database name. For the default DbPlan, the dbName is <code>default</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The managed services configuration for the ODB network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedServices {
     /// <p>The Amazon Resource Name (ARN) of the service network.</p>

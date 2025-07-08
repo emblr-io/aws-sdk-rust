@@ -2,6 +2,8 @@
 
 /// <p>Information about the data collection options enabled for a VM cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCollectionOptions {
     /// <p>Indicates whether diagnostic collection is enabled for the VM cluster.</p>

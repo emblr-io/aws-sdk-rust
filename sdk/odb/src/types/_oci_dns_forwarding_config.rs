@@ -2,6 +2,8 @@
 
 /// <p>DNS configuration to forward DNS resolver endpoints to your OCI Private Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OciDnsForwardingConfig {
     /// <p>Domain name to which DNS resolver forwards to.</p>

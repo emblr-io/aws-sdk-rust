@@ -2,6 +2,8 @@
 
 /// <p>Information about an Autonomous VM cluster resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudAutonomousVmCluster {
     /// <p>The unique identifier of the Autonomous VM cluster.</p>

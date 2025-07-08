@@ -2,6 +2,8 @@
 
 /// <p>The configuration for Amazon S3 access from the ODB network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Access {
     /// <p>The status of the Amazon S3 access.</p>
