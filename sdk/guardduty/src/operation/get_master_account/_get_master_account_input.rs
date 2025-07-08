@@ -2,6 +2,8 @@
 #[allow(missing_docs)] // documentation missing in model
 #[deprecated(note = "This input is deprecated, use GetAdministratorAccountRequest instead")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetMasterAccountInput {
     /// <p>The unique ID of the detector of the GuardDuty member account.</p>

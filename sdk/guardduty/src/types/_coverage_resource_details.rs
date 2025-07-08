@@ -2,6 +2,8 @@
 
 /// <p>Information about the resource for each individual EKS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageResourceDetails {
     /// <p>EKS cluster details involved in the coverage statistics.</p>

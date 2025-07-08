@@ -2,6 +2,8 @@
 
 /// <p>Information about each finding type associated with the <code>groupedByFindingType</code> statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingTypeStatistics {
     /// <p>Name of the finding type.</p>

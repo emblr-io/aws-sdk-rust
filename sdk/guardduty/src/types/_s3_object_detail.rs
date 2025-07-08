@@ -2,6 +2,8 @@
 
 /// <p>Information about the S3 object that was scanned</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ObjectDetail {
     /// <p>Amazon Resource Name (ARN) of the S3 object.</p>

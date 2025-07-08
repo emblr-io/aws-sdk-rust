@@ -2,6 +2,8 @@
 
 /// <p>Details about the Kubernetes workload involved in a Kubernetes finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KubernetesWorkloadDetails {
     /// <p>Kubernetes workload name.</p>

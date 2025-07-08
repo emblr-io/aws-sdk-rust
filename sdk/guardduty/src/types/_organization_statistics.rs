@@ -3,6 +3,8 @@
 /// <p>Information about the coverage statistics of the features for the entire Amazon Web Services organization.</p>
 /// <p>When you create a new Amazon Web Services organization, it might take up to 24 hours to generate the statistics summary for this organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationStatistics {
     /// <p>Total number of accounts in your Amazon Web Services organization.</p>

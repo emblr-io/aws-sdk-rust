@@ -2,6 +2,8 @@
 
 /// <p>Represents list a map of dates with a count of total findings generated on each date.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateStatistics {
     /// <p>The timestamp when the total findings count is observed.</p>

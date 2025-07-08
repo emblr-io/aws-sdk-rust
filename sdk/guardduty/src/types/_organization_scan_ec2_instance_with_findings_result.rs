@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information on the status of scanning EC2 instances with findings for an organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationScanEc2InstanceWithFindingsResult {
     /// <p>Describes the configuration for scanning EBS volumes for an organization.</p>

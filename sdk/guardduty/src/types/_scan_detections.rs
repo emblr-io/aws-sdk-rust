@@ -2,6 +2,8 @@
 
 /// <p>Contains a complete view providing malware scan result details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanDetections {
     /// <p>Total number of scanned files.</p>

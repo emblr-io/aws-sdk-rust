@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the criteria used for sorting findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SortCriteria {
     /// <p>Represents the finding attribute, such as <code>accountId</code>, that sorts the findings.</p>

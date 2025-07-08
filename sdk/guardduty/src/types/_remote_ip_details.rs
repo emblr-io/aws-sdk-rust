@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the remote IP address of the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RemoteIpDetails {
     /// <p>The city information of the remote IP address.</p>

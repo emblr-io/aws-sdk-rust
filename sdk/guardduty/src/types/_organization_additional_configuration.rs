@@ -3,6 +3,8 @@
 /// <p>A list of additional configurations which will be configured for the organization.</p>
 /// <p>Additional configuration applies to only GuardDuty Runtime Monitoring protection plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationAdditionalConfiguration {
     /// <p>The name of the additional configuration that will be configured for the organization. These values are applicable to only Runtime Monitoring protection plan.</p>

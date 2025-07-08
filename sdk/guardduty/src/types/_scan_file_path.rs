@@ -2,6 +2,8 @@
 
 /// <p>Contains details of infected file including name, file path and hash.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanFilePath {
     /// <p>The file path of the infected file.</p>

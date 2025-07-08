@@ -2,6 +2,8 @@
 
 /// <p>Represents a condition that when matched will be added to the response of the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageFilterCriterion {
     /// <p>An enum value representing possible filter fields.</p><note>

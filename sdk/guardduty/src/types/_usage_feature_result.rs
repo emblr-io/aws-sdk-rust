@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the result of the total usage based on the feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageFeatureResult {
     /// <p>The feature that generated the usage cost.</p>

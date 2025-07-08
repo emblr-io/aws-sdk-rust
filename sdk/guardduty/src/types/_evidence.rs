@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the reason that the finding was generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Evidence {
     /// <p>A list of threat intelligence details related to the evidence.</p>

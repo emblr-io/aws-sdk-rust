@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the finding that is generated when abnormal or suspicious activity is detected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Finding {
     /// <p>The ID of the account in which the finding was generated.</p>

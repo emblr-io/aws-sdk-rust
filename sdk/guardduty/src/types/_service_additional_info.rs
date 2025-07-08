@@ -2,6 +2,8 @@
 
 /// <p>Additional information about the generated finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceAdditionalInfo {
     /// <p>This field specifies the value of the additional information.</p>

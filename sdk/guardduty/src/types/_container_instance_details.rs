@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon EC2 instance that is running the Amazon ECS container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerInstanceDetails {
     /// <p>Represents the nodes in the Amazon ECS cluster that has a <code>HEALTHY</code> coverage status.</p>

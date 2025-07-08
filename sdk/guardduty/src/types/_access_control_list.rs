@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the current access control policies for the bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessControlList {
     /// <p>A value that indicates whether public read access for the bucket is enabled through an Access Control List (ACL).</p>

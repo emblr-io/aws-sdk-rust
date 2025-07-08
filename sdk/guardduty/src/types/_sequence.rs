@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the GuardDuty attack sequence finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Sequence {
     /// <p>Unique identifier of the attack sequence.</p>

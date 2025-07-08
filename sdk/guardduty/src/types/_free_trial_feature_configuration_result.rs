@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the free trial period for a feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FreeTrialFeatureConfigurationResult {
     /// <p>The name of the feature for which the free trial is configured.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information on which data sources are enabled for a member account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberDataSourceConfiguration {
     /// <p>The account ID for the member account.</p>
