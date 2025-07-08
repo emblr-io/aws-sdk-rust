@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>UpdateElasticsearchDomain</code></code> operation. Specifies the type and number of instances in the domain cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateElasticsearchDomainConfigInput {
     /// <p>The name of the Elasticsearch domain that you are updating.</p>

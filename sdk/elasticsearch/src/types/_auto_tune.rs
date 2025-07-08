@@ -2,6 +2,8 @@
 
 /// <p>Specifies Auto-Tune type and Auto-Tune action details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoTune {
     /// <p>Specifies Auto-Tune type. Valid value is SCHEDULED_ACTION.</p>

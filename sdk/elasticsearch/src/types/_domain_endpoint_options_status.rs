@@ -2,6 +2,8 @@
 
 /// <p>The configured endpoint options for the domain and their current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainEndpointOptionsStatus {
     /// <p>Options to configure endpoint for the Elasticsearch domain.</p>

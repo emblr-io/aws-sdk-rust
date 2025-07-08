@@ -2,6 +2,8 @@
 
 /// <p>The current options of an Elasticsearch domain service software options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSoftwareOptions {
     /// <p>The current service software version that is present on the domain.</p>

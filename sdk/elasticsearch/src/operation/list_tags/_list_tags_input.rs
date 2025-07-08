@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>ListTags</code></code> operation. Specify the <code>ARN</code> for the Elasticsearch domain to which the tags are attached that you want to view are attached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsInput {
     /// <p>Specify the <code>ARN</code> for the Elasticsearch domain to which the tags are attached that you want to view.</p>

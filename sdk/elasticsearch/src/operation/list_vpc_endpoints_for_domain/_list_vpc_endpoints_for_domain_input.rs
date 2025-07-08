@@ -2,6 +2,8 @@
 
 /// <p>Container for request parameters to the <code><code>ListVpcEndpointsForDomain</code></code> operation. Specifies the domain whose VPC endpoints will be listed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVpcEndpointsForDomainInput {
     /// <p>Name of the ElasticSearch domain whose VPC endpoints are to be listed.</p>

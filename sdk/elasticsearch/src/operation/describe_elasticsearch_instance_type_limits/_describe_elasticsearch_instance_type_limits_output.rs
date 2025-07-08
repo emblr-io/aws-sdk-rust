@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters received from <code> <code>DescribeElasticsearchInstanceTypeLimits</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeElasticsearchInstanceTypeLimitsOutput {
     /// <p>Map of Role of the Instance and Limits that are applicable. Role performed by given Instance in Elasticsearch can be one of the following:</p>

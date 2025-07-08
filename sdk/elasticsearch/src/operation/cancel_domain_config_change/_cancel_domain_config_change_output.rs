@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of the cancelled domain config change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelDomainConfigChangeOutput {
     /// <p>Whether or not the request was a dry run. If <b>True</b>, the changes were not actually cancelled.</p>

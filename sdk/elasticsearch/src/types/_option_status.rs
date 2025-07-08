@@ -2,6 +2,8 @@
 
 /// <p>Provides the current status of the entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptionStatus {
     /// <p>Timestamp which tells the creation date for the entity.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the advanced security configuration: whether advanced security is enabled, whether the internal database option is enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdvancedSecurityOptions {
     /// <p>True if advanced security is enabled.</p>

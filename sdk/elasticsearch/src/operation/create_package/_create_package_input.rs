@@ -2,6 +2,8 @@
 
 /// <p>Container for request parameters to <code> <code>CreatePackage</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreatePackageInput {
     /// <p>Unique identifier for the package.</p>

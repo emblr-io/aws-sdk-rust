@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>ListVpcEndpointsForDomain</code></code> operation. Returns a list containing summarized details of the VPC endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVpcEndpointsForDomainOutput {
     /// <p>Provides list of <code>VpcEndpointSummary</code> summarizing details of the VPC endpoints.</p>

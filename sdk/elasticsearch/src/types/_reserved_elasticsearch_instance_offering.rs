@@ -2,6 +2,8 @@
 
 /// <p>Details of a reserved Elasticsearch instance offering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedElasticsearchInstanceOffering {
     /// <p>The Elasticsearch reserved instance offering identifier.</p>

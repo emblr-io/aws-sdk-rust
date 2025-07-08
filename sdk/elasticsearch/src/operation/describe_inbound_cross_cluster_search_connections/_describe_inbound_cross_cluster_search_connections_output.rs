@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code><code>DescribeInboundCrossClusterSearchConnections</code></code> request. Contains the list of connections matching the filter criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeInboundCrossClusterSearchConnectionsOutput {
     /// <p>Consists of list of <code><code>InboundCrossClusterSearchConnection</code></code> matching the specified filter criteria.</p>

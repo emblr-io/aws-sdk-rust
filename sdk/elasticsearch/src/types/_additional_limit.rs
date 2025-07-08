@@ -2,6 +2,8 @@
 
 /// <p>List of limits that are specific to a given InstanceType and for each of it's <code> <code>InstanceRole</code> </code> .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalLimit {
     /// <p>Name of Additional Limit is specific to a given InstanceType and for each of it's <code> <code>InstanceRole</code> </code> etc. <br><br>

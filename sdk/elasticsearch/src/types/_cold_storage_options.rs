@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for cold storage options such as enabled</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColdStorageOptions {
     /// <p>Enable cold storage option. Accepted values true or false</p>

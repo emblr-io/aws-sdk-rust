@@ -2,6 +2,8 @@
 
 /// <p>An error occurred because user does not have permissions to access the resource. Returns HTTP status code 403.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     /// <p>A description of the error.</p>

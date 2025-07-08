@@ -2,6 +2,8 @@
 
 /// <p>Container for request parameters to <code> <code>GetPackageVersionHistory</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetPackageVersionHistoryInput {
     /// <p>Returns an audit history of versions of the package.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the Encryption At Rest Options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionAtRestOptions {
     /// <p>Specifies the option to enable Encryption At Rest.</p>
