@@ -2,6 +2,8 @@
 
 /// <p>Details about the usage of a resource associated with a license configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LicenseConfigurationUsage {
     /// <p>Amazon Resource Name (ARN) of the resource.</p>

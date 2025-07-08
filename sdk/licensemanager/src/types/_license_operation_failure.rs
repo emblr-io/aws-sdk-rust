@@ -2,6 +2,8 @@
 
 /// <p>Describes the failure of a license operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LicenseOperationFailure {
     /// <p>Amazon Resource Name (ARN) of the resource.</p>

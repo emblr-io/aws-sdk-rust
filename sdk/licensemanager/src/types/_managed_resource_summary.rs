@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a managed resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedResourceSummary {
     /// <p>Type of resource associated with a license.</p>

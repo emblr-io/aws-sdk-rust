@@ -2,6 +2,8 @@
 
 /// <p>There are no entitlements found for this license, or the entitlement maximum count is reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoEntitlementsAllowedException {
     #[allow(missing_docs)] // documentation missing in model

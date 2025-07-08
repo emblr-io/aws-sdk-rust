@@ -2,6 +2,8 @@
 
 /// <p>Describes a time range, in ISO8601-UTC format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatetimeRange {
     /// <p>Start of the time range.</p>

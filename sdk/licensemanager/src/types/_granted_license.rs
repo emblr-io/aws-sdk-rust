@@ -2,6 +2,8 @@
 
 /// <p>Describes a license that is granted to a grantee.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrantedLicense {
     /// <p>Amazon Resource Name (ARN) of the license.</p>

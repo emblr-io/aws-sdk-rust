@@ -2,6 +2,8 @@
 
 /// <p>A dependency required to run the API is missing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedDependencyException {
     #[allow(missing_docs)] // documentation missing in model

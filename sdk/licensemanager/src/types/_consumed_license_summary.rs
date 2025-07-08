@@ -2,6 +2,8 @@
 
 /// <p>Details about license consumption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConsumedLicenseSummary {
     /// <p>Resource type of the resource consuming a license.</p>
