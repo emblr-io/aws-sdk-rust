@@ -2,6 +2,8 @@
 
 /// <p>Describes a scheduled action that could not be created, updated, or deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedScheduledUpdateGroupActionRequest {
     /// <p>The name of the scheduled action.</p>

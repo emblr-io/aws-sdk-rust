@@ -2,6 +2,8 @@
 
 /// <p>Describes the Capacity Reservation preference and targeting options. If you specify <code>open</code> or <code>none</code> for <code>CapacityReservationPreference</code>, do not specify a <code>CapacityReservationTarget</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationSpecification {
     /// <p>The capacity reservation preference. The following options are available:</p>

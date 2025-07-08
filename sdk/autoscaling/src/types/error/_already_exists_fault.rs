@@ -2,6 +2,8 @@
 
 /// <p>You already have an Auto Scaling group or launch configuration with this name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlreadyExistsFault {
     /// <p></p>

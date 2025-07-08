@@ -2,6 +2,8 @@
 
 /// <p>Specifies the minimum and maximum for the <code>TotalLocalStorageGB</code> object when you specify <a href="https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html">InstanceRequirements</a> for an Auto Scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TotalLocalStorageGbRequest {
     /// <p>The storage minimum in GB.</p>
