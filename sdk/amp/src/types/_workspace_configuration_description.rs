@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the description of the workspace configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkspaceConfigurationDescription {
     /// <p>This structure displays the current status of the workspace configuration, and might also contain a reason for that status.</p>

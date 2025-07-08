@@ -2,6 +2,8 @@
 
 /// <p>The source of collected metrics for a scraper.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Source {
     /// <p>The Amazon EKS cluster from which a scraper collects metrics.</p>

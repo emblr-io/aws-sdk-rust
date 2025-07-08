@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DescribeScraper</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeScraperInput {
     /// <p>The ID of the scraper to describe.</p>

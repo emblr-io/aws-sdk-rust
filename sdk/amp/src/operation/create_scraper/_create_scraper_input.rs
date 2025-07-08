@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateScraper</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateScraperInput {
     /// <p>(optional) An alias to associate with the scraper. This is for your use, and does not need to be unique.</p>

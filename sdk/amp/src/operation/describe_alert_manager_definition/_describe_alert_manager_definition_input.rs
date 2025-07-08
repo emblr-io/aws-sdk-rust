@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DescribeAlertManagerDefinition</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeAlertManagerDefinitionInput {
     /// <p>The ID of the workspace to retrieve the alert manager definition from.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an <code>UpdateLoggingConfiguration</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateLoggingConfigurationInput {
     /// <p>The ID of the workspace to update the logging configuration for.</p>

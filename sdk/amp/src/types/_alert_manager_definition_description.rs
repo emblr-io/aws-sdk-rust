@@ -2,6 +2,8 @@
 
 /// <p>The details of an alert manager definition. It is the configuration for the alert manager, including information about receivers for routing alerts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlertManagerDefinitionDescription {
     /// <p>A structure that displays the current status of the alert manager definition..</p>
