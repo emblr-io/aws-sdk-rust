@@ -2,6 +2,8 @@
 
 /// <p>Details of a resource that failed when trying to update it's association to a resource set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedItem {
     /// <p>The univeral resource indicator (URI) of the resource that failed.</p>

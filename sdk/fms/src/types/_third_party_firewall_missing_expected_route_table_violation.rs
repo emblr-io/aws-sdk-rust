@@ -2,6 +2,8 @@
 
 /// <p>The violation details for a third-party firewall that's not associated with an Firewall Manager managed route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThirdPartyFirewallMissingExpectedRouteTableViolation {
     /// <p>The ID of the third-party firewall or VPC resource that's causing the violation.</p>

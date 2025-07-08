@@ -2,6 +2,8 @@
 
 /// <p>Defines the Amazon Web Services Regions that the specified Firewall Manager administrator can manage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegionScope {
     /// <p>The Amazon Web Services Regions that the specified Firewall Manager administrator can perform actions in.</p>

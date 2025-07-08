@@ -3,6 +3,8 @@
 /// <p>Defines a Firewall Manager network ACL policy. This is used in the <code>PolicyOption</code> of a <code>SecurityServicePolicyData</code> for a <code>Policy</code>, when the <code>SecurityServicePolicyData</code> type is set to <code>NETWORK_ACL_COMMON</code>.</p>
 /// <p>For information about network ACLs, see <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html">Control traffic to subnets using network ACLs</a> in the <i>Amazon Virtual Private Cloud User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkAclCommonPolicy {
     /// <p>The definition of the first and last rules for the network ACL policy.</p>

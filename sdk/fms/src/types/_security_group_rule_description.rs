@@ -2,6 +2,8 @@
 
 /// <p>Describes a set of permissions for a security group rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityGroupRuleDescription {
     /// <p>The IPv4 ranges for the security group rule.</p>

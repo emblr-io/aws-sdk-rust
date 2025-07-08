@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for the rule violation in a security group when compared to the primary security group of the Firewall Manager policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsVpcSecurityGroupViolation {
     /// <p>The security group rule that is being evaluated.</p>

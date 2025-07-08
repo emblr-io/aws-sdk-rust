@@ -2,6 +2,8 @@
 
 /// <p>An ordered list of actions you can take to remediate a violation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemediationActionWithOrder {
     /// <p>Information about an action you can take to remediate a violation.</p>

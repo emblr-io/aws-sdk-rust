@@ -2,6 +2,8 @@
 
 /// <p>An Firewall Manager protocols list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtocolsListData {
     /// <p>The ID of the Firewall Manager protocols list.</p>
