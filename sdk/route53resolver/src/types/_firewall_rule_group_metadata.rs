@@ -3,6 +3,8 @@
 /// <p>Minimal high-level information for a firewall rule group. The action <code>ListFirewallRuleGroups</code> returns an array of these objects.</p>
 /// <p>To retrieve full information for a firewall rule group, call <code>GetFirewallRuleGroup</code> and <code>ListFirewallRules</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallRuleGroupMetadata {
     /// <p>The ID of the rule group.</p>

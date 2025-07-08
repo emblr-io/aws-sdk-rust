@@ -3,6 +3,8 @@
 /// <p>Minimal high-level information for a firewall domain list. The action <code>ListFirewallDomainLists</code> returns an array of these objects.</p>
 /// <p>To retrieve full information for a firewall domain list, call <code>GetFirewallDomainList</code> and <code>ListFirewallDomains</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallDomainListMetadata {
     /// <p>The ID of the domain list.</p>
