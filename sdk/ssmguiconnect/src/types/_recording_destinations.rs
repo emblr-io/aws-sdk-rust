@@ -2,6 +2,8 @@
 
 /// <p>Determines where recordings of RDP connections are stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingDestinations {
     /// <p>The S3 bucket where RDP connection recordings are stored.</p>
