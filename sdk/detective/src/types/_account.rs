@@ -2,6 +2,8 @@
 
 /// <p>An Amazon Web Services account that is the administrator account of or a member of a behavior graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Account {
     /// <p>The account identifier of the Amazon Web Services account.</p>

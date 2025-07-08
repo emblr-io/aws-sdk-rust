@@ -2,6 +2,8 @@
 
 /// <p>Behavior graphs that could not be processed in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnprocessedGraph {
     /// <p>The ARN of the organization behavior graph.</p>

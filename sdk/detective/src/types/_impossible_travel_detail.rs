@@ -2,6 +2,8 @@
 
 /// <p>Contains information on unusual and impossible travel in an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImpossibleTravelDetail {
     /// <p>IP address where the resource was first used in the impossible travel.</p>

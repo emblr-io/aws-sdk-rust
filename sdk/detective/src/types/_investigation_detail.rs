@@ -2,6 +2,8 @@
 
 /// <p>Details about the investigation related to a potential security event identified by Detective.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvestigationDetail {
     /// <p>The investigation ID of the investigation report.</p>

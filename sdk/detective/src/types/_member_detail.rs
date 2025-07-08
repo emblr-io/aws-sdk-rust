@@ -2,6 +2,8 @@
 
 /// <p>Details about a member account in a behavior graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MemberDetail {
     /// <p>The Amazon Web Services account identifier for the member account.</p>

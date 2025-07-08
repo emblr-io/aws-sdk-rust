@@ -2,6 +2,8 @@
 
 /// <p>Details on the criteria used to define the filter for investigation results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterCriteria {
     /// <p>Filter the investigation results based on the severity.</p>
