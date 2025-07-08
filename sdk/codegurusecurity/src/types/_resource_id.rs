@@ -2,6 +2,8 @@
 
 /// <p>The identifier for a resource object that contains resources to scan. Specifying a codeArtifactId is required to create a scan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResourceId {
     /// <p>The identifier for the code file uploaded to the resource object. Returned by <code>CreateUploadUrl</code> when you upload resources to be scanned.</p>
