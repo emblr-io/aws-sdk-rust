@@ -2,6 +2,8 @@
 
 /// Information about the connector definition version, which is a container for connectors.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorDefinitionVersion {
     /// A list of references to connectors in this version, with their corresponding configuration settings.
