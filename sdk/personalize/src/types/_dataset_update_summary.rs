@@ -2,6 +2,8 @@
 
 /// <p>Describes an update to a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetUpdateSummary {
     /// <p>The Amazon Resource Name (ARN) of the schema that replaced the previous schema of the dataset.</p>

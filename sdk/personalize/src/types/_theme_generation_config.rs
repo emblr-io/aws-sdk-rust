@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for generating themes with a batch inference job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThemeGenerationConfig {
     /// <p>Fields used to generate descriptive themes for a batch inference job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A string to string map of the configuration details for theme generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldsForThemeGeneration {
     /// <p>The name of the Items dataset column that stores the name of each item in the dataset.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of the recommender.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommenderConfig {
     /// <p>Specifies the exploration configuration hyperparameters, including <code>explorationWeight</code> and <code>explorationItemAgeCutOff</code>, you want to use to configure the amount of item exploration Amazon Personalize uses when recommending items. Provide <code>itemExplorationConfig</code> data only if your recommenders generate personalized recommendations for a user (not popular items or similar items).</p>

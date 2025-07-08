@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the properties of the recommender.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommenderSummary {
     /// <p>The name of the recommender.</p>
