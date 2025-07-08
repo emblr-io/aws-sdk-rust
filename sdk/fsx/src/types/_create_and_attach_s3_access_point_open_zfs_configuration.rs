@@ -2,6 +2,8 @@
 
 /// <p>Specifies the FSx for OpenZFS volume that the S3 access point will be attached to, and the file system user identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateAndAttachS3AccessPointOpenZfsConfiguration {
     /// <p>The ID of the FSx for OpenZFS volume to which you want the S3 access point attached.</p>

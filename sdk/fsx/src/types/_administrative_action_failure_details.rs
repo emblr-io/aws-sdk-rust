@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a failed administrative action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdministrativeActionFailureDetails {
     /// <p>Error message providing details about the failed administrative action.</p>

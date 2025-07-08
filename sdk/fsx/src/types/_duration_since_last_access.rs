@@ -2,6 +2,8 @@
 
 /// <p>Defines the minimum amount of time since last access for a file to be eligible for release. Only files that have been exported to S3 and that were last accessed or modified before this point-in-time are eligible to be released from the Amazon FSx for Lustre file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DurationSinceLastAccess {
     /// <p>The unit of time used by the <code>Value</code> parameter to determine if a file can be released, based on when it was last accessed. <code>DAYS</code> is the only supported value. This is a required parameter.</p>

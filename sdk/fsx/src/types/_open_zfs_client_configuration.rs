@@ -2,6 +2,8 @@
 
 /// <p>Specifies who can mount an OpenZFS file system and the options available while mounting the file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenZfsClientConfiguration {
     /// <p>A value that specifies who can mount the file system. You can provide a wildcard character (<code>*</code>), an IP address (<code>0.0.0.0</code>), or a CIDR address (<code>192.0.2.0/24</code>). By default, Amazon FSx uses the wildcard character when specifying the client.</p>

@@ -2,6 +2,8 @@
 
 /// <p>No Amazon FSx file systems were found based upon supplied parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSystemNotFound {
     /// <p>A detailed error message.</p>

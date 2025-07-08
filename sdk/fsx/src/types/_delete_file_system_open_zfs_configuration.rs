@@ -2,6 +2,8 @@
 
 /// <p>The configuration object for the Amazon FSx for OpenZFS file system used in the <code>DeleteFileSystem</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteFileSystemOpenZfsConfiguration {
     /// <p>By default, Amazon FSx for OpenZFS takes a final backup on your behalf when the <code>DeleteFileSystem</code> operation is invoked. Doing this helps protect you from data loss, and we highly recommend taking the final backup. If you want to skip taking a final backup, set this value to <code>true</code>.</p>

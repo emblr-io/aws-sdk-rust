@@ -3,6 +3,8 @@
 /// <p>Describes a data repository association's automatic export policy. The <code>AutoExportPolicy</code> defines the types of updated objects on the file system that will be automatically exported to the data repository. As you create, modify, or delete files, Amazon FSx for Lustre automatically exports the defined changes asynchronously once your application finishes modifying the file.</p>
 /// <p>The <code>AutoExportPolicy</code> is only supported on Amazon FSx for Lustre file systems with a data repository association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoExportPolicy {
     /// <p>The <code>AutoExportPolicy</code> can have the following event values:</p>

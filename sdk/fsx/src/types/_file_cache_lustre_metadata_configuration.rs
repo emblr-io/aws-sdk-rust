@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a Lustre MDT (Metadata Target) storage volume. The metadata on Amazon File Cache is managed by a Lustre Metadata Server (MDS) while the actual metadata is persisted on an MDT.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileCacheLustreMetadataConfiguration {
     /// <p>The storage capacity of the Lustre MDT (Metadata Target) storage volume in gibibytes (GiB). The only supported value is <code>2400</code> GiB.</p>

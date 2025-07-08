@@ -2,6 +2,8 @@
 
 /// <p>An existing data repository task is currently executing on the file system. Wait until the existing task has completed, then create the new task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataRepositoryTaskExecuting {
     /// <p>A detailed error message.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The FSx for OpenZFS file system user that is used for authorizing all file access requests that are made using the S3 access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenZfsPosixFileSystemUser {
     /// <p>The UID of the file system user.</p>

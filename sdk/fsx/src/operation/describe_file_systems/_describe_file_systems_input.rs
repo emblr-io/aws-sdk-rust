@@ -2,6 +2,8 @@
 
 /// <p>The request object for <code>DescribeFileSystems</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeFileSystemsInput {
     /// <p>IDs of the file systems whose descriptions you want to retrieve (String).</p>

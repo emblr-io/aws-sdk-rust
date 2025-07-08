@@ -2,6 +2,8 @@
 
 /// <p>The resource specified by the Amazon Resource Name (ARN) can't be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotFound {
     /// <p>The resource ARN of the resource that can't be found.</p>

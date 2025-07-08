@@ -3,6 +3,8 @@
 /// <p>The data repository configuration object for Lustre file systems returned in the response of the <code>CreateFileSystem</code> operation.</p>
 /// <p>This data type is not supported on file systems with a data repository association. For file systems with a data repository association, see .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataRepositoryConfiguration {
     /// <p>Describes the state of the file system's S3 durable data repository, if it is configured with an S3 repository. The lifecycle can have the following values:</p>

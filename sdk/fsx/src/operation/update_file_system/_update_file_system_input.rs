@@ -2,6 +2,8 @@
 
 /// <p>The request object for the <code>UpdateFileSystem</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateFileSystemInput {
     /// <p>The ID of the file system that you are updating.</p>

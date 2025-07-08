@@ -3,6 +3,8 @@
 /// <p>The Lustre metadata performance configuration for the creation of an Amazon FSx for Lustre file system using a <code>PERSISTENT_2</code> deployment type. The configuration uses a Metadata IOPS value to set the maximum rate of metadata disk IOPS supported by the file system.</p>
 /// <p>After creation, the file system supports increasing metadata performance. For more information on Metadata IOPS, see <a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/managing-metadata-performance.html#metadata-configuration">Lustre metadata performance configuration</a> in the <i>Amazon FSx for Lustre User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateFileSystemLustreMetadataConfiguration {
     /// <p>(USER_PROVISIONED mode only) Specifies the number of Metadata IOPS to provision for the file system. This parameter sets the maximum rate of metadata disk IOPS supported by the file system.</p>

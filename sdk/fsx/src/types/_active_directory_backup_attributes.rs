@@ -2,6 +2,8 @@
 
 /// <p>The Microsoft Active Directory attributes of the Amazon FSx for Windows File Server file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveDirectoryBackupAttributes {
     /// <p>The fully qualified domain name of the self-managed Active Directory directory.</p>

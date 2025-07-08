@@ -2,6 +2,8 @@
 
 /// <p>A structure providing details of any failures that occurred.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileCacheFailureDetails {
     /// <p>A message describing any failures that occurred.</p>

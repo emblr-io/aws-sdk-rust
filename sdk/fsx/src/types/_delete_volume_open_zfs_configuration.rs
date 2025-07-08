@@ -2,6 +2,8 @@
 
 /// <p>A value that specifies whether to delete all child volumes and snapshots.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteVolumeOpenZfsConfiguration {
     /// <p>To delete the volume's child volumes, snapshots, and clones, use the string <code>DELETE_CHILD_VOLUMES_AND_SNAPSHOTS</code>.</p>

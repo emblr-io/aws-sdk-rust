@@ -2,6 +2,8 @@
 
 /// <p>Used to configure quotas that define how much storage a user or group can use on an FSx for OpenZFS volume. For more information, see <a href="https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/managing-volumes.html#volume-properties">Volume properties</a> in the FSx for OpenZFS User Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenZfsUserOrGroupQuota {
     /// <p>Specifies whether the quota applies to a user or group.</p>
