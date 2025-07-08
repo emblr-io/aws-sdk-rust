@@ -3,6 +3,8 @@
 /// <p>The start and end of the timestamp range for the requested media.</p>
 /// <p>This value should not be present if <code>PlaybackType</code> is <code>LIVE</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HlsTimestampRange {
     /// <p>The start of the timestamp range for the requested media.</p>

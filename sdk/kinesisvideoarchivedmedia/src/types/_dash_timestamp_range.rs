@@ -4,6 +4,8 @@
 /// <p>This value should not be present if <code>PlaybackType</code> is <code>LIVE</code>.</p>
 /// <p>The values in <code>DASHimestampRange</code> are inclusive. Fragments that start exactly at or after the start time are included in the session. Fragments that start before the start time and continue past it are not included in the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashTimestampRange {
     /// <p>The start of the timestamp range for the requested media.</p>
