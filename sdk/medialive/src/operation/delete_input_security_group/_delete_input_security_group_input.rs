@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DeleteInputSecurityGroupRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteInputSecurityGroupInput {
     /// The Input Security Group to delete

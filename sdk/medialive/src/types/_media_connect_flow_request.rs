@@ -2,6 +2,8 @@
 
 /// The settings for a MediaConnect Flow.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaConnectFlowRequest {
     /// The ARN of the MediaConnect Flow that you want to use as a source.

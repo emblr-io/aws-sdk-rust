@@ -2,6 +2,8 @@
 
 /// Multicast-specific input settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MulticastInputSettings {
     /// Optionally, a source ip address to filter by for Source-specific Multicast (SSM)

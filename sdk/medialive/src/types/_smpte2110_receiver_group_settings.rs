@@ -2,6 +2,8 @@
 
 /// Configures the sources for the SMPTE 2110 Receiver Group input.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Smpte2110ReceiverGroupSettings {
     /// Placeholder documentation for __listOfSmpte2110ReceiverGroup

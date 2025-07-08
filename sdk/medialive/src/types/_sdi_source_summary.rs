@@ -2,6 +2,8 @@
 
 /// Used in CreateSdiSourceResponse, DeleteSdiSourceResponse, DescribeSdiSourceResponse, ListSdiSourcesResponse, UpdateSdiSourceResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SdiSourceSummary {
     /// The ARN of this SdiSource. It is automatically assigned when the SdiSource is created.

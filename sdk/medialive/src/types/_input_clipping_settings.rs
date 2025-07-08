@@ -2,6 +2,8 @@
 
 /// Settings to let you create a clip of the file input, in order to set up the input to ingest only a portion of the file.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputClippingSettings {
     /// The source of the timecodes in the source being clipped.

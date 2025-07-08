@@ -2,6 +2,8 @@
 
 /// Parameters required to attach a MediaConnect flow to the device.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDeviceMediaConnectConfigurableSettings {
     /// The ARN of the MediaConnect flow to attach this device to.

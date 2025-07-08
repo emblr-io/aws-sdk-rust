@@ -2,6 +2,8 @@
 
 /// SCTE-35 Descriptor settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte35DescriptorSettings {
     /// SCTE-35 Segmentation Descriptor.

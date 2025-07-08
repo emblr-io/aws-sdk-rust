@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for AcceptInputDeviceTransferRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceptInputDeviceTransferInput {
     /// The unique ID of the input device to accept. For example, hd-123456789abcdef.

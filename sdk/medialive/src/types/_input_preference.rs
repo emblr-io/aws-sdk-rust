@@ -40,6 +40,8 @@
 /// If \"EQUAL_INPUT_PREFERENCE\", then the active input will stay active as long as it is healthy.
 /// If \"PRIMARY_INPUT_PREFERRED\", then always switch back to the primary input when it is healthy.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

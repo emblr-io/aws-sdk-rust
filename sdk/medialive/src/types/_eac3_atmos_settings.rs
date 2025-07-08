@@ -2,6 +2,8 @@
 
 /// Eac3 Atmos Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Eac3AtmosSettings {
     /// Average bitrate in bits/second. Valid bitrates depend on the coding mode.

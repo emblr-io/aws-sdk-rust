@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for UpdateAccountConfigurationResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateAccountConfigurationOutput {
     /// Placeholder documentation for AccountConfiguration

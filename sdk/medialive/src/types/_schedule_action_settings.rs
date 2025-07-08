@@ -2,6 +2,8 @@
 
 /// Holds the settings for a single schedule action.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleActionSettings {
     /// Action to insert ID3 metadata in every segment, in HLS output groups

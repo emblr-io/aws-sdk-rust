@@ -2,6 +2,8 @@
 
 /// Input Channel Level
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputChannelLevel {
     /// Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB.

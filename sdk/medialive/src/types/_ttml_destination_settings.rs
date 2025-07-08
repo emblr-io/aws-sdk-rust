@@ -2,6 +2,8 @@
 
 /// Ttml Destination Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TtmlDestinationSettings {
     /// This field is not currently supported and will not affect the output styling. Leave the default value.

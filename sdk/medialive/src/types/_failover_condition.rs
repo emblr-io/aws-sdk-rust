@@ -2,6 +2,8 @@
 
 /// Failover Condition settings. There can be multiple failover conditions inside AutomaticInputFailoverSettings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailoverCondition {
     /// Failover condition type-specific settings.

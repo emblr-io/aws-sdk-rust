@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for StartInputDeviceMaintenanceWindowRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartInputDeviceMaintenanceWindowInput {
     /// The unique ID of the input device to start a maintenance window for. For example, hd-123456789abcdef.

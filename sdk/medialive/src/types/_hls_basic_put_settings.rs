@@ -2,6 +2,8 @@
 
 /// Hls Basic Put Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HlsBasicPutSettings {
     /// Number of seconds to wait before retrying connection to the CDN if the connection is lost.

@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for ListEventBridgeRuleTemplatesResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEventBridgeRuleTemplatesOutput {
     /// Placeholder documentation for __listOfEventBridgeRuleTemplateSummary

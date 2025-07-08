@@ -2,6 +2,8 @@
 
 /// Network source to transcode. Must be accessible to the Elemental Live node that is running the live event through a network connection.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInputSettings {
     /// Specifies HLS input settings when the uri is for a HLS manifest.

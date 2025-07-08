@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for CreateEventBridgeRuleTemplateGroupResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateEventBridgeRuleTemplateGroupOutput {
     /// An eventbridge rule template group's ARN (Amazon Resource Name)

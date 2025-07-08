@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for OutputDestination
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputDestination {
     /// User-specified id. This is used in an output group or an output.

@@ -2,6 +2,8 @@
 
 /// A request to claim an AWS Elemental device that you have purchased from a third-party vendor.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClaimDeviceInput {
     /// The id of the device you want to claim.

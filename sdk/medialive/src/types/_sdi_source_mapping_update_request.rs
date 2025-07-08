@@ -2,6 +2,8 @@
 
 /// Used in SdiSourceMappingsUpdateRequest. One SDI source mapping. It connects one logical SdiSource to the physical SDI card and port that the physical SDI source uses. You must specify all three parameters in this object.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SdiSourceMappingUpdateRequest {
     /// A number that uniquely identifies the SDI card on the node hardware. For information about how physical cards are identified on your node hardware, see the documentation for your node hardware. The numbering always starts at 1.

@@ -2,6 +2,8 @@
 
 /// Settings to specify if an action follows another.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FollowModeScheduleActionStartSettings {
     /// Identifies whether this action starts relative to the start or relative to the end of the reference action.

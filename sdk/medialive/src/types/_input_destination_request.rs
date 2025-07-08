@@ -2,6 +2,8 @@
 
 /// Endpoint settings for a PUSH type input.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDestinationRequest {
     /// A unique name for the location the RTMP stream is being pushed to.

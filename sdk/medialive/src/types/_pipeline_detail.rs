@@ -2,6 +2,8 @@
 
 /// Runtime details of a pipeline when a channel is running.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineDetail {
     /// The name of the active input attachment currently being ingested by this pipeline.

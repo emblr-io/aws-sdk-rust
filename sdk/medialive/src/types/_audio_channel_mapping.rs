@@ -2,6 +2,8 @@
 
 /// Audio Channel Mapping
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioChannelMapping {
     /// Indices and gain values for each input channel that should be remixed into this output channel.

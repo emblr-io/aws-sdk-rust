@@ -2,6 +2,8 @@
 
 /// Contains the response for ListChannelPlacementGroups
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeChannelPlacementGroupSummary {
     /// The ARN of this ChannelPlacementGroup. It is automatically assigned when the ChannelPlacementGroup is created.

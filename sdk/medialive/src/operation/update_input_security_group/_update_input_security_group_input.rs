@@ -2,6 +2,8 @@
 
 /// The request to update some combination of the Input Security Group name and the IPv4 CIDRs the Input Security Group should allow.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateInputSecurityGroupInput {
     /// The id of the Input Security Group to update.

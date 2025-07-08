@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for ListClustersResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListClustersOutput {
     /// A list of the Clusters that exist in your AWS account.

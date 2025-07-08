@@ -2,6 +2,8 @@
 
 /// Settings for the action to set pause state of a channel.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PauseStateScheduleActionSettings {
     /// Placeholder documentation for __listOfPipelinePauseStateSettings

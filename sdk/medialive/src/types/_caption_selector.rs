@@ -2,6 +2,8 @@
 
 /// Caption Selector
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CaptionSelector {
     /// When specified this field indicates the three letter language code of the caption track to extract from the source.

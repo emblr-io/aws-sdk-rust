@@ -2,6 +2,8 @@
 
 /// An IPv4 CIDR to whitelist.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputWhitelistRuleCidr {
     /// The IPv4 CIDR to whitelist.
