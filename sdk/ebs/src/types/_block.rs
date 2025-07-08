@@ -2,6 +2,8 @@
 
 /// <p>A block of data in an Amazon Elastic Block Store snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Block {
     /// <p>The block index.</p>
