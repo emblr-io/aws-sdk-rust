@@ -7,6 +7,7 @@ description = "Cross-service types for the AWS SDK."
 edition = "2021"
 license = "Apache-2.0"
 repository = "https://github.com/smithy-lang/smithy-rs"
+publish = false
 [package.metadata.docs.rs]
 all-features = true
 targets = ["x86_64-unknown-linux-gnu"]
@@ -44,7 +45,7 @@ version = "1.8.3"
 [dependencies.aws-smithy-runtime-api]
 path = "../aws-smithy-runtime-api"
 features = ["client"]
-version = "1.8.1"
+version = "1.8.2"
 
 [dependencies.hyper-rustls]
 version = "0.24"
@@ -63,7 +64,7 @@ features = ["rt", "macros"]
 [dev-dependencies.aws-smithy-runtime-api]
 path = "../aws-smithy-runtime-api"
 features = ["http-02x"]
-version = "1.8.1"
+version = "1.8.2"
 
 [build-dependencies]
 rustc_version = "0.4.0"
