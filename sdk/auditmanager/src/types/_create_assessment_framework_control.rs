@@ -2,6 +2,8 @@
 
 /// <p>The control entity attributes that uniquely identify an existing control to be added to a framework in Audit Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateAssessmentFrameworkControl {
     /// <p>The unique identifier of the control.</p>

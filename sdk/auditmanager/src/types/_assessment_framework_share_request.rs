@@ -2,6 +2,8 @@
 
 /// <p>Represents a share request for a custom framework in Audit Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentFrameworkShareRequest {
     /// <p>The unique identifier for the share request.</p>

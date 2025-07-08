@@ -2,6 +2,8 @@
 
 /// <p>A <code>controlSet</code> entity that represents a collection of controls in Audit Manager. This doesn't contain the control set ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateAssessmentFrameworkControlSet {
     /// <p>The unique identifier for the control set.</p>

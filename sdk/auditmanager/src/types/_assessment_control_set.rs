@@ -2,6 +2,8 @@
 
 /// <p>Represents a set of controls in an Audit Manager assessment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentControlSet {
     /// <p>The identifier of the control set in the assessment. This is the control set name in a plain string format.</p>

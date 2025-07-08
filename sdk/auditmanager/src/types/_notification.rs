@@ -2,6 +2,8 @@
 
 /// <p>The notification that informs a user of an update in Audit Manager. For example, this includes the notification that's sent when a control set is delegated for review.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Notification {
     /// <p>The unique identifier for the notification.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The location where Audit Manager saves assessment reports for the given assessment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentReportsDestination {
     /// <p>The destination type, such as Amazon S3.</p>

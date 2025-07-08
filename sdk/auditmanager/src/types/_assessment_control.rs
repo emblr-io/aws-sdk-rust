@@ -2,6 +2,8 @@
 
 /// <p>The control entity that represents a standard control or a custom control in an Audit Manager assessment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentControl {
     /// <p>The identifier for the control.</p>
