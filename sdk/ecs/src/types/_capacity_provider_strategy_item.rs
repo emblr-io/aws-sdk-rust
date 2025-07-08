@@ -7,6 +7,8 @@
 /// <p>With <code>FARGATE_SPOT</code>, you can run interruption tolerant tasks at a rate that's discounted compared to the <code>FARGATE</code> price. <code>FARGATE_SPOT</code> runs tasks on spare compute capacity. When Amazon Web Services needs the capacity back, your tasks are interrupted with a two-minute warning. <code>FARGATE_SPOT</code> supports Linux tasks with the X86_64 architecture on platform version 1.3.0 or later. <code>FARGATE_SPOT</code> supports Linux tasks with the ARM64 architecture on platform version 1.4.0 or later.</p>
 /// <p>A capacity provider strategy can contain a maximum of 20 capacity providers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityProviderStrategyItem {
     /// <p>The short name of the capacity provider.</p>

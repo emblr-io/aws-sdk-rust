@@ -2,6 +2,8 @@
 
 /// <p>The details of the execute command configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecuteCommandConfiguration {
     /// <p>Specify an Key Management Service key ID to encrypt the data between the local client and the container.</p>

@@ -20,6 +20,8 @@
 /// <p>The container entry point interperts the <code>VARIABLE</code> values.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentFile {
     /// <p>The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.</p>

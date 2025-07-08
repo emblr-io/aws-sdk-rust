@@ -2,6 +2,8 @@
 
 /// <p>An object representing a change in state for a managed agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedAgentStateChange {
     /// <p>The name of the container that's associated with the managed agent.</p>

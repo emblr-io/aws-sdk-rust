@@ -2,6 +2,8 @@
 
 /// <p>The tag specifications of an Amazon EBS volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsTagSpecification {
     /// <p>The type of volume resource.</p>
