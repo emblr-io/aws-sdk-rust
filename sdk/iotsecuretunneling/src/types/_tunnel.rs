@@ -2,6 +2,8 @@
 
 /// <p>A connection between a source computer and a destination device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tunnel {
     /// <p>A unique alpha-numeric ID that identifies a tunnel.</p>
