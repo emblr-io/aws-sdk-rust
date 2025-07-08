@@ -2,6 +2,8 @@
 
 /// <p>A summary of information about a monitor, includ the ARN, the name, and the status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitorSummary {
     /// <p>The Amazon Resource Name (ARN) of the monitor.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A row for a top contributor for a scope.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadInsightsTopContributorsRow {
     /// <p>The account ID for a specific row of data.</p>
