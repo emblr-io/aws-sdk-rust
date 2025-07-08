@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the specified configuration revision.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationRevision {
     /// <p>Required. The date and time of the configuration revision.</p>

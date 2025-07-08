@@ -2,6 +2,8 @@
 
 /// <p>Action required for a broker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionRequired {
     /// <p>The code you can use to find instructions on the action required to resolve your broker issue.</p>
