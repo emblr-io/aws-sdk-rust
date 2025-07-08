@@ -2,6 +2,8 @@
 
 /// <p>The metadata that you can use to filter and group your results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionValues {
     /// <p>The names of the metadata types that you can use to filter and group your results.</p>

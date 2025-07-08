@@ -2,6 +2,8 @@
 
 /// <p>A representation of a billing view.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BillingViewListElement {
     /// <p>The Amazon Resource Name (ARN) that can be used to uniquely identify the billing view.</p>
