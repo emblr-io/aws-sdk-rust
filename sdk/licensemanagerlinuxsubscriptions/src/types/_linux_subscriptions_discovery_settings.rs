@@ -2,6 +2,8 @@
 
 /// <p>Lists the settings defined for discovering Linux subscriptions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LinuxSubscriptionsDiscoverySettings {
     /// <p>The Regions in which to discover data for Linux subscriptions.</p>
