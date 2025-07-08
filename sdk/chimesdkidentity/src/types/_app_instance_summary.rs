@@ -2,6 +2,8 @@
 
 /// <p>Summary of the data for an <code>AppInstance</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AppInstanceSummary {
     /// <p>The <code>AppInstance</code> ARN.</p>

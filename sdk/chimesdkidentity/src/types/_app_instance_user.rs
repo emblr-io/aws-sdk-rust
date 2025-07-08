@@ -2,6 +2,8 @@
 
 /// <p>The details of an <code>AppInstanceUser</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AppInstanceUser {
     /// <p>The ARN of the <code>AppInstanceUser</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An Amazon Lex V2 chat bot created under an <code>AppInstance</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AppInstanceBot {
     /// <p>The ARN of the AppInstanceBot.</p>
