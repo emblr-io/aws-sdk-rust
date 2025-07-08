@@ -2,6 +2,8 @@
 
 /// <p>The current refresh status of a Trusted Advisor check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshTrustedAdvisorCheckOutput {
     /// <p>The current refresh status for a check, including the amount of time until the check is eligible for refresh.</p>

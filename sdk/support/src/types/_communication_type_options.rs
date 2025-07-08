@@ -10,6 +10,8 @@
 /// <p><b>type</b> - A string value indicating the communication type that the aforementioned rules apply to. At the moment the type value can assume one of 3 values at the moment <code>chat</code>, <code>web</code> and <code>call</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommunicationTypeOptions {
     /// <p>A string value indicating the communication type. At the moment the type value can assume one of 3 values at the moment chat, web and call.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon Web Services service returned by the <code>DescribeServices</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Service {
     /// <p>The code for an Amazon Web Services service returned by the <code>DescribeServices</code> response. The <code>name</code> element contains the corresponding friendly name.</p>

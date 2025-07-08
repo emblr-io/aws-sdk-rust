@@ -2,6 +2,8 @@
 
 /// <p>The summaries of the Trusted Advisor checks returned by the <code>DescribeTrustedAdvisorCheckSummaries</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeTrustedAdvisorCheckSummariesOutput {
     /// <p>The summary information for the requested Trusted Advisor checks.</p>

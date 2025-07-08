@@ -2,6 +2,8 @@
 
 /// <p>The limit for the number of <code>DescribeAttachment</code> requests in a short period of time has been exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeAttachmentLimitExceeded {
     /// <p>The limit for the number of <code>DescribeAttachment</code> requests in a short period of time has been exceeded.</p>

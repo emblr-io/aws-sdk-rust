@@ -2,6 +2,8 @@
 
 /// <p>The statuses of the Trusted Advisor checks returned by the <code>DescribeTrustedAdvisorCheckRefreshStatuses</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeTrustedAdvisorCheckRefreshStatusesOutput {
     /// <p>The refresh status of the specified Trusted Advisor checks.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The requested <code>caseId</code> couldn't be located.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CaseIdNotFound {
     /// <p>The requested <code>CaseId</code> could not be located.</p>

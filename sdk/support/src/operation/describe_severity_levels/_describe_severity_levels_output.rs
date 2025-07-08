@@ -2,6 +2,8 @@
 
 /// <p>The list of severity levels returned by the <code>DescribeSeverityLevels</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSeverityLevelsOutput {
     /// <p>The available severity levels for the support case. Available severity levels are defined by your service level agreement with Amazon Web Services.</p>
