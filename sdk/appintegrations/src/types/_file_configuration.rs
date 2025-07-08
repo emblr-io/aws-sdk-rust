@@ -2,6 +2,8 @@
 
 /// <p>The configuration for what files should be pulled from the source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileConfiguration {
     /// <p>Identifiers for the source folders to pull all files from recursively.</p>
