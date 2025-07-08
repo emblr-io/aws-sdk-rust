@@ -2,6 +2,8 @@
 
 /// <p>A complex type that includes settings for a Route 53 Profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Profile {
     /// <p>ID of the Profile.</p>

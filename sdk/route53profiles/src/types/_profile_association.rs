@@ -2,6 +2,8 @@
 
 /// <p>An association between a Route 53 Profile and a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileAssociation {
     /// <p>ID of the Profile association.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The association between a Route 53 Profile and resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileResourceAssociation {
     /// <p>ID of the Profile resource association.</p>
