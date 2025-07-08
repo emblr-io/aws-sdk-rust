@@ -2,6 +2,8 @@
 
 /// <p>The summary of the step group in the template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateStepGroupSummary {
     /// <p>The ID of the step group.</p>

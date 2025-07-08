@@ -2,6 +2,8 @@
 
 /// <p>The migration workflow template used as the source for the new template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TemplateSource {
     /// <p>The ID of the workflow from the source migration workflow template.</p>
