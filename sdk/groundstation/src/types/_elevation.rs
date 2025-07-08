@@ -2,6 +2,8 @@
 
 /// <p>Elevation angle of the satellite in the sky during a contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Elevation {
     /// <p>Elevation angle value.</p>
