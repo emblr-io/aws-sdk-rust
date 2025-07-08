@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>CreateOutboundConnection</code> request. Contains details about the newly created cross-cluster connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateOutboundConnectionOutput {
     /// <p>Information about the source (local) domain.</p>

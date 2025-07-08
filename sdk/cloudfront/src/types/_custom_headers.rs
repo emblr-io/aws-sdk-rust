@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the list of Custom Headers for each origin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomHeaders {
     /// <p>The number of custom headers, if any, for this distribution.</p>

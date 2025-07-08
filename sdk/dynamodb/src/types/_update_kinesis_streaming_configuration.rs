@@ -2,6 +2,8 @@
 
 /// <p>Enables updating the configuration for Kinesis Streaming.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateKinesisStreamingConfiguration {
     /// <p>Enables updating the precision of Kinesis data stream timestamp.</p>

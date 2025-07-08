@@ -2,6 +2,8 @@
 
 /// <p>For each message in the batch, the response contains a <code> <code>ChangeMessageVisibilityBatchResultEntry</code> </code> tag if the message succeeds or a <code> <code>BatchResultErrorEntry</code> </code> tag if the message fails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeMessageVisibilityBatchOutput {
     /// <p>A list of <code> <code>ChangeMessageVisibilityBatchResultEntry</code> </code> items.</p>

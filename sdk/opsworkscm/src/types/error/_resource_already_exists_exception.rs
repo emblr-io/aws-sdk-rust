@@ -2,6 +2,8 @@
 
 /// <p>The requested resource cannot be created because it already exists.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceAlreadyExistsException {
     /// <p>Error or informational message in response to a CreateServer request that a resource cannot be created because it already exists.</p>

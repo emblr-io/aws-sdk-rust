@@ -4,6 +4,8 @@
 /// <p>Cloud Map is not available in the eu-south-1 Region.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudMapInstanceAttribute {
     /// <p>The name of an Cloud Map service instance attribute key. Any Cloud Map service instance that contains the specified key and value is returned.</p>

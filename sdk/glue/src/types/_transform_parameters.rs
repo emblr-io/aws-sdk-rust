@@ -2,6 +2,8 @@
 
 /// <p>The algorithm-specific parameters that are associated with the machine learning transform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformParameters {
     /// <p>The type of machine learning transform.</p>

@@ -2,6 +2,8 @@
 
 /// <p>List of customer gateway devices that have a sample configuration file available for use. You can also see the list of device types with sample configuration files available under <a href="https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html">Your customer gateway device</a> in the <i>Amazon Web Services Site-to-Site VPN User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpnConnectionDeviceType {
     /// <p>Customer gateway device identifier.</p>

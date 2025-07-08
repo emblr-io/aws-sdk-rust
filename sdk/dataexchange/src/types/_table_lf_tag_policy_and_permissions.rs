@@ -2,6 +2,8 @@
 
 /// <p>The LF-tag policy and permissions that apply to table resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableLfTagPolicyAndPermissions {
     /// <p>A list of LF-tag conditions that apply to table resources.</p>

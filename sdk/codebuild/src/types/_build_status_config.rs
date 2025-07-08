@@ -2,6 +2,8 @@
 
 /// <p>Contains information that defines how the CodeBuild build project reports the build status to the source provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuildStatusConfig {
     /// <p>Specifies the context of the build status CodeBuild sends to the source provider. The usage of this parameter depends on the source provider.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a document that was reranked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RerankResult {
     /// <p>The ranking of the document. The lower a number, the higher the document is ranked.</p>

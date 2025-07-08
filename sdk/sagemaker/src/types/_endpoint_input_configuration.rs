@@ -2,6 +2,8 @@
 
 /// <p>The endpoint configuration for the load test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointInputConfiguration {
     /// <p>The instance types to use for the load test.</p>

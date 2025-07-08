@@ -2,6 +2,8 @@
 
 /// <p>Describes a gateway's network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NetworkInterface {
     /// <p>The Internet Protocol version 4 (IPv4) address of the interface.</p>

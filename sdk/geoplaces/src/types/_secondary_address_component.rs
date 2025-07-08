@@ -2,6 +2,8 @@
 
 /// <p>Components that correspond to secondary identifiers on an address. The only component type supported currently is Unit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SecondaryAddressComponent {
     /// <p>Number that uniquely identifies a secondary address.</p>

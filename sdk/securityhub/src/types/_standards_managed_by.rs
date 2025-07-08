@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the management of a security standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StandardsManagedBy {
     /// <p>An identifier for the company that manages a specific security standard. For existing standards, the value is equal to <code>Amazon Web Services</code>.</p>

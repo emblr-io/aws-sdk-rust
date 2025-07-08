@@ -2,6 +2,8 @@
 
 /// <p>The approval rule cannot be added. The pull request has the maximum number of approval rules associated with it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberOfRulesExceededException {
     /// <p>Any message associated with the exception.</p>

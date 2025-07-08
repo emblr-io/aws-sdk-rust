@@ -2,6 +2,8 @@
 
 /// <p>The retention settings that determine how long to retain conversation messages for an Amazon Chime Enterprise account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationRetentionSettings {
     /// <p>The number of days for which to retain conversation messages.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>RequestCancelExternalWorkflowExecutionFailed</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestCancelExternalWorkflowExecutionFailedEventAttributes {
     /// <p>The <code>workflowId</code> of the external workflow to which the cancel request was to be delivered.</p>

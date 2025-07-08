@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the <code>SortBy</code> and <code>SortOrder</code> attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Sort {
     /// <p>The attribute on which the data is grouped, which can be by <code>StartTime</code> and <code>EndTime</code>. The default value is <code>EndTime</code>.</p>

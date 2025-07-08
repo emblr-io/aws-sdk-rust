@@ -2,6 +2,8 @@
 
 /// <p>A container for what Amazon S3 Storage Lens will exclude.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Exclude {
     /// <p>A container for the S3 Storage Lens bucket excludes.</p>

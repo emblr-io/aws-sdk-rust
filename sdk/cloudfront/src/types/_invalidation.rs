@@ -2,6 +2,8 @@
 
 /// <p>An invalidation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Invalidation {
     /// <p>The identifier for the invalidation request. For example: <code>IDFDVBD632BHDS5</code>.</p>

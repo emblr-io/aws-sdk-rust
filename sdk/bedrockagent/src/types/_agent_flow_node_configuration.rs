@@ -2,6 +2,8 @@
 
 /// <p>Defines an agent node in your flow. You specify the agent to invoke at this point in the flow. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/flows-nodes.html">Node types in a flow</a> in the Amazon Bedrock User Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentFlowNodeConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the alias of the agent to invoke.</p>

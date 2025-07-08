@@ -2,6 +2,8 @@
 
 /// <p>The results extracted for a lending document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LendingDetection {
     /// <p>The text extracted for a detected value in a lending document.</p>

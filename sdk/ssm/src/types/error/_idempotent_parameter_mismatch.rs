@@ -2,6 +2,8 @@
 
 /// <p>Error returned when an idempotent operation is retried and the parameters don't match the original call to the API with the same idempotency token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdempotentParameterMismatch {
     #[allow(missing_docs)] // documentation missing in model

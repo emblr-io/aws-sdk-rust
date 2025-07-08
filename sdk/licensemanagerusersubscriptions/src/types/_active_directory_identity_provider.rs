@@ -2,6 +2,8 @@
 
 /// <p>Details about an Active Directory identity provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveDirectoryIdentityProvider {
     /// <p>The directory ID for an Active Directory identity provider.</p>

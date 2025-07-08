@@ -2,6 +2,8 @@
 
 /// <p>Describes an Availability Zone distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZoneDistribution {
     /// <p>If launches fail in an Availability Zone, the following strategies are available. The default is <code>balanced-best-effort</code>.</p>

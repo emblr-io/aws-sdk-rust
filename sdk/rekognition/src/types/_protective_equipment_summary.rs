@@ -3,6 +3,8 @@
 /// <p>Summary information for required items of personal protective equipment (PPE) detected on persons by a call to <code>DetectProtectiveEquipment</code>. You specify the required type of PPE in the <code>SummarizationAttributes</code> (<code>ProtectiveEquipmentSummarizationAttributes</code>) input parameter. The summary includes which persons were detected wearing the required personal protective equipment (<code>PersonsWithRequiredEquipment</code>), which persons were detected as not wearing the required PPE (<code>PersonsWithoutRequiredEquipment</code>), and the persons in which a determination could not be made (<code>PersonsIndeterminate</code>).</p>
 /// <p>To get a total for each category, use the size of the field array. For example, to find out how many people were detected as wearing the specified PPE, use the size of the <code>PersonsWithRequiredEquipment</code> array. If you want to find out more about a person, such as the location (<code>BoundingBox</code>) of the person on the image, use the person ID in each array element. Each person ID matches the ID field of a <code>ProtectiveEquipmentPerson</code> object returned in the <code>Persons</code> array by <code>DetectProtectiveEquipment</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectiveEquipmentSummary {
     /// <p>An array of IDs for persons who are wearing detected personal protective equipment.</p>

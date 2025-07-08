@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to stop a specific run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopRunInput {
     /// <p>Represents the Amazon Resource Name (ARN) of the Device Farm run to stop.</p>

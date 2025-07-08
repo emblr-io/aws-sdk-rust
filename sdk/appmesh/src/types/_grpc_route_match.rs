@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the criteria for determining a request match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrpcRouteMatch {
     /// <p>The fully qualified domain name for the service to match from the request.</p>

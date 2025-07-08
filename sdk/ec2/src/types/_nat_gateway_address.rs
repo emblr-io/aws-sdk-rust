@@ -2,6 +2,8 @@
 
 /// <p>Describes the IP addresses and network interface associated with a NAT gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NatGatewayAddress {
     /// <p>\[Public NAT gateway only\] The allocation ID of the Elastic IP address that's associated with the NAT gateway.</p>

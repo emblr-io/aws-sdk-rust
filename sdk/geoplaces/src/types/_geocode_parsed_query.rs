@@ -2,6 +2,8 @@
 
 /// <p>Parsed components in the provided QueryText.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeocodeParsedQuery {
     /// <p>The localized display name of this result item based on request parameter <code>language</code>.</p>

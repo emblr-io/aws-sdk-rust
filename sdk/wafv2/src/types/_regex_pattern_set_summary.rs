@@ -2,6 +2,8 @@
 
 /// <p>High-level information about a <code>RegexPatternSet</code>, returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage a <code>RegexPatternSet</code>, and the ARN, that you provide to the <code>RegexPatternSetReferenceStatement</code> to use the pattern set in a <code>Rule</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegexPatternSetSummary {
     /// <p>The name of the data type instance. You cannot change the name after you create the instance.</p>

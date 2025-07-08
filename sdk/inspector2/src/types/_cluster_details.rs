@@ -2,6 +2,8 @@
 
 /// <p>Details about the task or pod in the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterDetails {
     /// <p>The last timestamp when Amazon Inspector recorded the image in use in the task or pod in the cluster.</p>

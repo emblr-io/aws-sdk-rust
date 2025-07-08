@@ -2,6 +2,8 @@
 
 /// <p>The authorized token issuer for the Amazon Redshift IAM Identity Center application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizedTokenIssuer {
     /// <p>The ARN for the authorized token issuer for integrating Amazon Redshift with IDC Identity Center.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The UpdateDomainContactPrivacy request includes the following elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDomainContactPrivacyInput {
     /// <p>The name of the domain that you want to update the privacy setting for.</p>

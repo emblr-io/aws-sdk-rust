@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Contains the identifier and the name or description of the <code>WebACL</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAclSummary {
     /// <p>A unique identifier for a <code>WebACL</code>. You use <code>WebACLId</code> to get information about a <code>WebACL</code> (see <code>GetWebACL</code>), update a <code>WebACL</code> (see <code>UpdateWebACL</code>), and delete a <code>WebACL</code> from AWS WAF (see <code>DeleteWebACL</code>).</p>

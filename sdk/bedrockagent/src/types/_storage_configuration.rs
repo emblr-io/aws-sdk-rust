@@ -2,6 +2,8 @@
 
 /// <p>Contains the storage configuration of the knowledge base.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageConfiguration {
     /// <p>The vector store service in which the knowledge base is stored.</p>

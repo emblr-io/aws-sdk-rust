@@ -2,6 +2,8 @@
 
 /// <p>Details of the network resources in the order.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrderedResourceDefinition {
     /// <p>The type of network resource in the order.</p>

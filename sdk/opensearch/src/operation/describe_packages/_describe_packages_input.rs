@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to the <code>DescribePackage</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribePackagesInput {
     /// <p>Only returns packages that match the <code>DescribePackagesFilterList</code> values.</p>

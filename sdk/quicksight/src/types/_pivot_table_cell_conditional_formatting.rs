@@ -2,6 +2,8 @@
 
 /// <p>The cell conditional formatting option for a pivot table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableCellConditionalFormatting {
     /// <p>The field ID of the cell for conditional formatting.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an WAF Regional rule group. The rule group is a collection of rules for inspecting and controlling web requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRegionalRuleGroupDetails {
     /// <p>A name for the metrics for this rule group.</p>

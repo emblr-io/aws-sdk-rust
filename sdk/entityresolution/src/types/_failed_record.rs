@@ -2,6 +2,8 @@
 
 /// <p>The record that didn't generate a Match ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedRecord {
     /// <p>The input source ARN of the record that didn't generate a Match ID.</p>

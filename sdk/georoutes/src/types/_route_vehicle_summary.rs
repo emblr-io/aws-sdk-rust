@@ -2,6 +2,8 @@
 
 /// <p>Summarized details of the route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteVehicleSummary {
     /// <p>Summarized details for the leg including before travel, travel and after travel steps.</p>

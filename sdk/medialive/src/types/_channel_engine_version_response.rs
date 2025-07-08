@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for ChannelEngineVersionResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelEngineVersionResponse {
     /// The UTC time when the version expires.

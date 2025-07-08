@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon RDS DB cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbClusterSnapshotDetails {
     /// <p>A list of Availability Zones where instances in the DB cluster can be created.</p>

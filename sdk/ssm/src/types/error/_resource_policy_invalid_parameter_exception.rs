@@ -2,6 +2,8 @@
 
 /// <p>One or more parameters specified for the call aren't valid. Verify the parameters and their values and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicyInvalidParameterException {
     #[allow(missing_docs)] // documentation missing in model

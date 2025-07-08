@@ -2,6 +2,8 @@
 
 /// <p>The parameters for a network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateInstanceNetworkInterfaceSpecificationRequest {
     /// <p>Associates a Carrier IP address with eth0 for a new network interface.</p>

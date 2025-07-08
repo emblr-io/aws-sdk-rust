@@ -2,6 +2,8 @@
 
 /// <p>Contains the run command configuration for the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsClusterConfigurationExecuteCommandConfigurationDetails {
     /// <p>The identifier of the KMS key that is used to encrypt the data between the local client and the container.</p>

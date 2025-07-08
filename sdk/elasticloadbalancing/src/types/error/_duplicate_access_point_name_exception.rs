@@ -2,6 +2,8 @@
 
 /// <p>The specified load balancer name already exists for this account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateAccessPointNameException {
     #[allow(missing_docs)] // documentation missing in model

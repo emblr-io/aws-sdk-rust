@@ -2,6 +2,8 @@
 
 /// <p>Specifies the connection endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsDbInstanceEndpoint {
     /// <p>Specifies the DNS address of the DB instance.</p>

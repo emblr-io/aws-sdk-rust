@@ -2,6 +2,8 @@
 
 /// <p>The number of in-progress human reviews you have has exceeded the number allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HumanLoopQuotaExceededException {
     /// <p>The resource type.</p>

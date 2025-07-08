@@ -2,6 +2,8 @@
 
 /// <p>Parameters for Amazon Aurora PostgreSQL-Compatible Edition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuroraPostgreSqlParameters {
     /// <p>The Amazon Aurora PostgreSQL-Compatible host to connect to.</p>

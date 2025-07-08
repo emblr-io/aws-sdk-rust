@@ -2,6 +2,8 @@
 
 /// <p>An object that includes the data type of a security control parameter and its current value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ParameterValue {
     /// <p>A control parameter that is a boolean.</p>

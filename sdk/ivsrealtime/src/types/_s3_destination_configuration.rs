@@ -2,6 +2,8 @@
 
 /// <p>A complex type that describes an S3 location where recorded videos will be stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DestinationConfiguration {
     /// <p>ARN of the <code>StorageConfiguration</code> where recorded videos will be stored.</p>

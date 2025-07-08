@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration for X12 control numbers used in X12 EDI generation. Control numbers are used to uniquely identify interchanges, functional groups, and transaction sets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct X12ControlNumbers {
     /// <p>Specifies the starting interchange control number (ISA13) to use for X12 EDI generation. This number is incremented for each new interchange. For the ISA (interchange) envelope, Amazon Web Services B2B Data Interchange generates an interchange control number that is unique for the ISA05 and ISA06 (sender) &amp; ISA07 and ISA08 (receiver) combination.</p>

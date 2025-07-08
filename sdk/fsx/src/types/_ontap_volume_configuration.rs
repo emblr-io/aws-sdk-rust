@@ -2,6 +2,8 @@
 
 /// <p>The configuration of an Amazon FSx for NetApp ONTAP volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OntapVolumeConfiguration {
     /// <p>Specifies the FlexCache endpoint type of the volume. Valid values are the following:</p>

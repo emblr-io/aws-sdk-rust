@@ -2,6 +2,8 @@
 
 /// <p>A request to change the DKIM attributes for an email identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutEmailIdentityDkimSigningAttributesInput {
     /// <p>The email identity.</p>

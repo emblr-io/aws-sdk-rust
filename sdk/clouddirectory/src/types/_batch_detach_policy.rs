@@ -2,6 +2,8 @@
 
 /// <p>Detaches the specified policy from the specified directory inside a <code>BatchWrite</code> operation. For more information, see <code>DetachPolicy</code> and <code>BatchWriteRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDetachPolicy {
     /// <p>Reference that identifies the policy object.</p>

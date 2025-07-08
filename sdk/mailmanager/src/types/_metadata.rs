@@ -2,6 +2,8 @@
 
 /// <p>The metadata about the email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Metadata {
     /// <p>The timestamp of when the email was received.</p>

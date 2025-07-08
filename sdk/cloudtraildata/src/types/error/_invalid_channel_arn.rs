@@ -2,6 +2,8 @@
 
 /// <p>The specified channel ARN is not a valid channel ARN.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidChannelArn {
     #[allow(missing_docs)] // documentation missing in model

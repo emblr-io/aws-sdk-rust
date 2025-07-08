@@ -2,6 +2,8 @@
 
 /// <p>Maps a particular data source sync job to a particular data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceSyncJobMetricTarget {
     /// <p>The ID of the data source that is running the sync job.</p>

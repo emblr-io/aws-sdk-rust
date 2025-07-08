@@ -2,6 +2,8 @@
 
 /// <p>A list of information about the configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationId {
     /// <p>Required. The unique ID that Amazon MQ generates for the configuration.</p>

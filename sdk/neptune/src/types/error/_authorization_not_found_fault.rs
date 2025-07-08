@@ -3,6 +3,8 @@
 /// <p>Specified CIDRIP or EC2 security group is not authorized for the specified DB security group.</p>
 /// <p>Neptune may not also be authorized via IAM to perform necessary actions on your behalf.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationNotFoundFault {
     /// <p>A message describing the details of the problem.</p>

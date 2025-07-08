@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a security group associated with a network interface. This data type is used as one of the elements of the <code>NetworkInterface</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityGroup {
     /// <p>The name of the security group.</p>

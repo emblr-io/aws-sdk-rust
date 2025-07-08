@@ -2,6 +2,8 @@
 
 /// <p>Details about the export to Amazon S3 response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportAssetsToS3ResponseDetails {
     /// <p>The destination in Amazon S3 where the asset is exported.</p>

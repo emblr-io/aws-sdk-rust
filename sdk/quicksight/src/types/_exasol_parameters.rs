@@ -2,6 +2,8 @@
 
 /// <p>The required parameters for connecting to an Exasol data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExasolParameters {
     /// <p>The hostname or IP address of the Exasol data source.</p>

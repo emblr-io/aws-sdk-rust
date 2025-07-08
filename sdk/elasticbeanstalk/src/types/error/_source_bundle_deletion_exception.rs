@@ -2,6 +2,8 @@
 
 /// <p>Unable to delete the Amazon S3 source bundle associated with the application version. The application version was deleted successfully.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceBundleDeletionException {
     /// <p>The exception error message.</p>

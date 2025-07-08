@@ -2,6 +2,8 @@
 
 /// <p>Specifies the details for the EDI (electronic data interchange) transformation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdiConfiguration {
     /// <p>Specifies whether this is capability is for inbound or outbound transformations.</p>

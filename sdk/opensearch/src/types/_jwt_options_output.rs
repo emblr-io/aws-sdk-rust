@@ -2,6 +2,8 @@
 
 /// <p>Describes the JWT options configured for the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JwtOptionsOutput {
     /// <p>True if JWT use is enabled.</p>

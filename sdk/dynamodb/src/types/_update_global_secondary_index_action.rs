@@ -2,6 +2,8 @@
 
 /// <p>Represents the new provisioned throughput settings to be applied to a global secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateGlobalSecondaryIndexAction {
     /// <p>The name of the global secondary index to be updated.</p>

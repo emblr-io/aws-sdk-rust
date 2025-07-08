@@ -6,6 +6,8 @@
 /// </note>
 /// <p>For more information on how boosting document attributes work in Amazon Q Business, see <a href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/metadata-boosting.html">Boosting using document attributes</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DocumentAttributeBoostingConfiguration {
     /// <p>Provides information on boosting <code>DATE</code> type document attributes.</p>

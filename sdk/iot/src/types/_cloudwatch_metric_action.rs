@@ -2,6 +2,8 @@
 
 /// <p>Describes an action that captures a CloudWatch metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudwatchMetricAction {
     /// <p>The IAM role that allows access to the CloudWatch metric.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specific configuration settings for a Kafka schema registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KafkaSchemaRegistryConfig {
     /// <p>The URI for your schema registry. The correct URI format depends on the type of schema registry you're using.</p>

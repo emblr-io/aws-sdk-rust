@@ -2,6 +2,8 @@
 
 /// <p>The file used to structure and automate Audit Manager assessments for a given compliance standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentFramework {
     /// <p>The unique identifier for the framework.</p>

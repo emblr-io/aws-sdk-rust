@@ -2,6 +2,8 @@
 
 /// <p>Describes an identity provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityProviderSummary {
     /// <p>The <code>IdentityProvider</code> resource contains information about an identity provider.</p>

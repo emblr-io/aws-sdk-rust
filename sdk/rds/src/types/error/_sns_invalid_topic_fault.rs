@@ -2,6 +2,8 @@
 
 /// <p>SNS has responded that there is a problem with the SNS topic specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnsInvalidTopicFault {
     #[allow(missing_docs)] // documentation missing in model

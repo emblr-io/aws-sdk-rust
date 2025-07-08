@@ -2,6 +2,8 @@
 
 /// <p>Represents the response received from the server for a request to delete user attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminDeleteUserAttributesOutput {
     _request_id: Option<String>,

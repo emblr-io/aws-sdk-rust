@@ -2,6 +2,8 @@
 
 /// <p>A specified Amazon S3 bucket, bucket folder, or other object can't be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ResourceNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

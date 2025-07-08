@@ -2,6 +2,8 @@
 
 /// <p>Information about a test report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestReportSummary {
     /// <p>The number of test cases in this <code>TestReportSummary</code>. The total includes truncated test cases.</p>

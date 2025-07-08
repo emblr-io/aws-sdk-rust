@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the current status of a portal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PortalStatus {
     /// <p>The current state of the portal.</p>

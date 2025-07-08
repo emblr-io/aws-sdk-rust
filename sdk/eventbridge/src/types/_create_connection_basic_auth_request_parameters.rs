@@ -2,6 +2,8 @@
 
 /// <p>Contains the Basic authorization parameters to use for the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateConnectionBasicAuthRequestParameters {
     /// <p>The user name to use for Basic authorization.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details that define an aggregation based on Amazon EC2 instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2InstanceAggregation {
     /// <p>The AMI IDs associated with the Amazon EC2 instances to aggregate findings for.</p>

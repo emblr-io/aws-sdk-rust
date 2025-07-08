@@ -3,6 +3,8 @@
 /// <p>Contains the list of entities to be considered during an authorization request. This includes all principals, resources, and actions required to successfully evaluate the request.</p>
 /// <p>This data type is used as a field in the response parameter for the <a href="https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorized.html">IsAuthorized</a> and <a href="https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorizedWithToken.html">IsAuthorizedWithToken</a> operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum EntitiesDefinition {
     /// <p>A Cedar JSON string representation of the entities needed to successfully evaluate an authorization request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the names of the experiment and trial created by a pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineExperimentConfig {
     /// <p>The name of the experiment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A complex type that lets you specify the namespaces that you want to list services for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceFilter {
     /// <p>Specify <code>NAMESPACE_ID</code>.</p>

@@ -2,6 +2,8 @@
 
 /// Settings to specify the ending of rendering motion graphics into the video stream.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MotionGraphicsDeactivateScheduleActionSettings {}
 impl MotionGraphicsDeactivateScheduleActionSettings {

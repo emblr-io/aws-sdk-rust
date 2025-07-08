@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the current status of a <code>VpcEndpointAssociation</code>. You can retrieve this by calling <code>DescribeVpcEndpointAssociation</code> and providing the VPC endpoint association ARN.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointAssociationStatus {
     /// <p>The readiness of the configured firewall endpoint to handle network traffic.</p>

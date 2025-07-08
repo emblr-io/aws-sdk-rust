@@ -2,6 +2,8 @@
 
 /// <p>The details of a user pool identity provider (IdP), including name and type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProviderDescription {
     /// <p>The name of the IdP, for example <code>MySAMLProvider</code>.</p>

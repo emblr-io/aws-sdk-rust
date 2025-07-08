@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information to specify for a TRN in Greece.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GreeceAdditionalInfo {
     /// <p>The code of contracting authority for e-invoicing.</p>

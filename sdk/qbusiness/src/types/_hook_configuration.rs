@@ -6,6 +6,8 @@
 /// <p>You can only invoke one Lambda function. However, this function can invoke other functions it requires.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/amazonq/latest/business-use-dg/custom-document-enrichment.html">Custom document enrichment</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HookConfiguration {
     /// <p>The condition used for when a Lambda function should be invoked.</p>

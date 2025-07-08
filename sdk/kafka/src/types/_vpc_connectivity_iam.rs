@@ -2,6 +2,8 @@
 
 /// <p>Details for IAM access control for VPC connectivity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConnectivityIam {
     /// <p>SASL/IAM authentication is on or off for VPC connectivity.</p>

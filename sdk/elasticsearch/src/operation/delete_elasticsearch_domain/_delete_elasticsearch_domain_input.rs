@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DeleteElasticsearchDomain</code></code> operation. Specifies the name of the Elasticsearch domain that you want to delete.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteElasticsearchDomainInput {
     /// <p>The name of the Elasticsearch domain that you want to permanently delete.</p>

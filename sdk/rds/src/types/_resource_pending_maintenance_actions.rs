@@ -2,6 +2,8 @@
 
 /// <p>Describes the pending maintenance actions for a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePendingMaintenanceActions {
     /// <p>The ARN of the resource that has pending maintenance actions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Lightsail instance that has access to a Lightsail bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceReceivingAccess {
     /// <p>The name of the Lightsail instance.</p>

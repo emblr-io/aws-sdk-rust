@@ -2,6 +2,8 @@
 
 /// <p>Represents a collection of cost drivers and their associated metrics for cost comparison analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostComparisonDriver {
     /// <p>Use <code>Expression</code> to filter in various Cost Explorer APIs.</p>

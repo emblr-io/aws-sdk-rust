@@ -2,6 +2,8 @@
 
 /// <p>Input object for the endpoint</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointInput {
     /// <p>An endpoint in customer's account which has enabled <code>DataCaptureConfig</code> enabled.</p>

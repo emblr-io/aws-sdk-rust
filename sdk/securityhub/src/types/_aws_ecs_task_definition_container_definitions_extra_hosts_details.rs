@@ -2,6 +2,8 @@
 
 /// <p>A hostname and IP address mapping to append to the <b>/etc/hosts</b> file on the container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetails {
     /// <p>The hostname to use in the <b>/etc/hosts</b> entry.</p>

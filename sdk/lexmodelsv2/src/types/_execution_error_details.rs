@@ -2,6 +2,8 @@
 
 /// <p>Details about an error in an execution of a test set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionErrorDetails {
     /// <p>The error code for the error.</p>

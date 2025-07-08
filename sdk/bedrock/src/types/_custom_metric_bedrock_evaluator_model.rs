@@ -2,6 +2,8 @@
 
 /// <p>Defines the model you want to evaluate custom metrics in an Amazon Bedrock evaluation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomMetricBedrockEvaluatorModel {
     /// <p>The Amazon Resource Name (ARN) of the evaluator model for custom metrics. For a list of supported evaluator models, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-judge.html">Evaluate model performance using another LLM as a judge</a> and <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-kb.html">Evaluate the performance of RAG sources using Amazon Bedrock evaluations</a>.</p>

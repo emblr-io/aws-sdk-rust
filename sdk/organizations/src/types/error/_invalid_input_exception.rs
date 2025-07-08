@@ -58,6 +58,8 @@
 /// <p>UNRECOGNIZED_SERVICE_PRINCIPAL: You specified a service principal that isn't recognized.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInputException {
     #[allow(missing_docs)] // documentation missing in model

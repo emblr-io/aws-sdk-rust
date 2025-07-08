@@ -2,6 +2,8 @@
 
 /// <p>Represents the progress of an online resharding operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotMigration {
     /// <p>The percentage of the slot migration that is complete.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A filter for the user data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserDataFilters {
     /// <p>A list of up to 100 queues or ARNs.</p>

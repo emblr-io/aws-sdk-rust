@@ -2,6 +2,8 @@
 
 /// <p>Specifies the Server Message Block (SMB) protocol configuration that DataSync uses to access your Amazon FSx for NetApp ONTAP file system's storage virtual machine (SVM). For more information, see <a href="https://docs.aws.amazon.com/datasync/latest/userguide/create-ontap-location.html#create-ontap-location-access">Providing DataSync access to FSx for ONTAP file systems</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct FsxProtocolSmb {
     /// <p>Specifies the name of the Windows domain that your storage virtual machine (SVM) belongs to.</p>

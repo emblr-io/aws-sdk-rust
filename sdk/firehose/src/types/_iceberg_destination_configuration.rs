@@ -2,6 +2,8 @@
 
 /// <p>Specifies the destination configure settings for Apache Iceberg Table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergDestinationConfiguration {
     /// <p>Provides a list of <code>DestinationTableConfigurations</code> which Firehose uses to deliver data to Apache Iceberg Tables. Firehose will write data with insert if table specific configuration is not provided here.</p>

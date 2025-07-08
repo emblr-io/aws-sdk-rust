@@ -2,6 +2,8 @@
 
 /// <p>Details from an import AWS Lake Formation tag policy job response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportAssetsFromLakeFormationTagPolicyResponseDetails {
     /// <p>The identifier for the AWS Glue Data Catalog.</p>

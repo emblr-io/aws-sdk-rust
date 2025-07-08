@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the URL endpoint type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UrlEndpointConfig {
     /// <p>The HTTP URL endpoint.</p>

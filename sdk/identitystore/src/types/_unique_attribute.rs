@@ -2,6 +2,8 @@
 
 /// <p>An entity attribute that's unique to a specific entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UniqueAttribute {
     /// <p>A string representation of the path to a given attribute or sub-attribute. Supports JMESPath.</p>

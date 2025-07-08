@@ -2,6 +2,8 @@
 
 /// <p>Cannot create the branch with the specified name because the commit conflicts with an existing branch with the same name. Branch names must be unique.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BranchNameExistsException {
     /// <p>Any message associated with the exception.</p>

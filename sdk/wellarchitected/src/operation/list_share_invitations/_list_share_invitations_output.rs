@@ -2,6 +2,8 @@
 
 /// <p>Input for List Share Invitations</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListShareInvitationsOutput {
     /// <p>List of share invitation summaries in a workload.</p>

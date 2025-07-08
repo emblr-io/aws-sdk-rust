@@ -2,6 +2,8 @@
 
 /// <p>Network details about the host where the agent/collector resides.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentNetworkInfo {
     /// <p>The IP address for the host where the agent/collector resides.</p>

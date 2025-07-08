@@ -2,6 +2,8 @@
 
 /// <p>The endpoint information to connect to your SharePoint data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SharePointSourceConfiguration {
     /// <p>The identifier of your Microsoft 365 tenant.</p>

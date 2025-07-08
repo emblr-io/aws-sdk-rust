@@ -2,6 +2,8 @@
 
 /// <p>Describes the memory available to the media accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaDeviceMemoryInfo {
     /// <p>The size of the memory available to each media accelerator, in MiB.</p>

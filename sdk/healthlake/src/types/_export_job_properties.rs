@@ -2,6 +2,8 @@
 
 /// <p>The properties of a FHIR export job, including the ID, ARN, name, and the status of the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportJobProperties {
     /// <p>The AWS generated ID for an export job.</p>

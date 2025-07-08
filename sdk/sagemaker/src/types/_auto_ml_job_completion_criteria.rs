@@ -2,6 +2,8 @@
 
 /// <p>How long a job is allowed to run, or how many candidates a job is allowed to generate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlJobCompletionCriteria {
     /// <p>The maximum number of times a training job is allowed to run.</p>

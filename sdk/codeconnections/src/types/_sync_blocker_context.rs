@@ -2,6 +2,8 @@
 
 /// <p>The context for a specific sync blocker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SyncBlockerContext {
     /// <p>The key provided for a context key-value pair for a specific sync blocker.</p>

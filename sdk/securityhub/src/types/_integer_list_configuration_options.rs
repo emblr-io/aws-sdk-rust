@@ -2,6 +2,8 @@
 
 /// <p>The options for customizing a security control parameter that is a list of integers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegerListConfigurationOptions {
     /// <p>The Security Hub default value for a control parameter that is a list of integers.</p>

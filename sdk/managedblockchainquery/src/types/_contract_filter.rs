@@ -2,6 +2,8 @@
 
 /// <p>The contract or wallet address by which to filter the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContractFilter {
     /// <p>The blockchain network of the contract.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a cell in an Amazon Keyspaces table, containing both the value and metadata about the cell.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyspacesCell {
     /// <p>The value stored in this cell, which can be of various data types supported by Amazon Keyspaces.</p>

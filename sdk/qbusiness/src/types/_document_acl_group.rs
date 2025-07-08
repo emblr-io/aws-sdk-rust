@@ -2,6 +2,8 @@
 
 /// <p>Represents a group in the document's ACL, used to define access permissions for multiple users collectively.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAclGroup {
     /// <p>The name of the group in the document's ACL. This is used to identify the group when applying access rules.</p>

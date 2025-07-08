@@ -2,6 +2,8 @@
 
 /// <p>Represents a filter used within an expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpressionFilter {
     /// <p>The key or attribute to filter on.</p>

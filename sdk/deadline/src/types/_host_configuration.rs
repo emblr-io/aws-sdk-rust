@@ -3,6 +3,8 @@
 /// <p>Provides a script that runs as a worker is starting up that you can use to provide additional configuration for workers in your fleet.</p>
 /// <p>To remove a script from a fleet, use the <a href="https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateFleet.html">UpdateFleet</a> operation with the <code>hostConfiguration</code> <code>scriptBody</code> parameter set to an empty string ("").</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HostConfiguration {
     /// <p>The text of the script that runs as a worker is starting up that you can use to provide additional configuration for workers in your fleet. The script runs after a worker enters the <code>STARTING</code> state and before the worker processes tasks.</p>

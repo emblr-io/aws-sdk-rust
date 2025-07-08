@@ -2,6 +2,8 @@
 
 /// <p>Container for the response returned by <code>UpgradeDomain</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpgradeDomainOutput {
     /// <p>The unique identifier of the domain upgrade.</p>

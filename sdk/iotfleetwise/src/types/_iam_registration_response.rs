@@ -2,6 +2,8 @@
 
 /// <p>Information about registering an Identity and Access Management (IAM) resource so Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to Amazon Timestream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamRegistrationResponse {
     /// <p>The Amazon Resource Name (ARN) of the IAM role to register.</p>

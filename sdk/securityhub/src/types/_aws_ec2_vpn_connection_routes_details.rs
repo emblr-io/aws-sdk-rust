@@ -2,6 +2,8 @@
 
 /// <p>A static routes associated with the VPN connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2VpnConnectionRoutesDetails {
     /// <p>The CIDR block associated with the local subnet of the customer data center.</p>

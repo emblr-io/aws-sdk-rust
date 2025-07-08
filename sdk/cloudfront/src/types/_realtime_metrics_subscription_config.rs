@@ -2,6 +2,8 @@
 
 /// <p>A subscription configuration for additional CloudWatch metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealtimeMetricsSubscriptionConfig {
     /// <p>A flag that indicates whether additional CloudWatch metrics are enabled for a given CloudFront distribution.</p>

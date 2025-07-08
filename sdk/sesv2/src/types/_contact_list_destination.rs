@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the action of a contact list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactListDestination {
     /// <p>The name of the contact list.</p>

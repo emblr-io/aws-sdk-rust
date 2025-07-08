@@ -2,6 +2,8 @@
 
 /// <p>An object with details on why an account failed to enable Amazon Inspector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedAccount {
     /// <p>The Amazon Web Services account ID.</p>

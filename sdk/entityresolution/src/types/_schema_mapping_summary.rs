@@ -2,6 +2,8 @@
 
 /// <p>An object containing <code>SchemaName</code>, <code>SchemaArn</code>, <code>CreatedAt</code>, and<code>UpdatedAt</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaMappingSummary {
     /// <p>The name of the schema.</p>

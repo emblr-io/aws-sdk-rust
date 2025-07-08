@@ -2,6 +2,8 @@
 
 /// <p>A list of change request objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeRequest {
     /// <p>Defines the type of change request. A <code>changeType</code> can have the following values:</p>

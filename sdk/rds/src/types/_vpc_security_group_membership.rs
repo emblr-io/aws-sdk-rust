@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element for queries on VPC security group membership.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcSecurityGroupMembership {
     /// <p>The name of the VPC security group.</p>

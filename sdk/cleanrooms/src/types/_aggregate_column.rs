@@ -2,6 +2,8 @@
 
 /// <p>Column in configured table that can be used in aggregate function in query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateColumn {
     /// <p>Column names in configured table of aggregate columns.</p>

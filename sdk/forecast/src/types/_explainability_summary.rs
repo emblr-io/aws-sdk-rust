@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the Explainability properties used in the <code>ListExplainabilities</code> operation. To get a complete set of properties, call the <code>DescribeExplainability</code> operation, and provide the listed <code>ExplainabilityArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExplainabilitySummary {
     /// <p>The Amazon Resource Name (ARN) of the Explainability.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The content of the quick response stored in different media types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuickResponseContents {
     /// <p>The container quick response content.</p>

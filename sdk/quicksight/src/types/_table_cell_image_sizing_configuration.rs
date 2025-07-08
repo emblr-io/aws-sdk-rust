@@ -2,6 +2,8 @@
 
 /// <p>The sizing options for the table image configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableCellImageSizingConfiguration {
     /// <p>The cell scaling configuration of the sizing options for the table image configuration.</p>

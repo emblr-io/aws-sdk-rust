@@ -2,6 +2,8 @@
 
 /// <p>The visual publish options of a visual in a dashboard</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashboardVisualPublishOptions {
     /// <p>Determines if hidden fields are included in an exported dashboard.</p>

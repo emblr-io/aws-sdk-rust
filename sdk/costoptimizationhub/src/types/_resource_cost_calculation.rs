@@ -2,6 +2,8 @@
 
 /// <p>Cost impact of the resource recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceCostCalculation {
     /// <p>Usage details of the resource recommendation.</p>

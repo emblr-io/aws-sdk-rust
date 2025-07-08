@@ -2,6 +2,8 @@
 
 /// <p>The Shutdown event configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShutdownEventConfiguration {
     /// <p>The time, in seconds, that OpsWorks Stacks waits after triggering a Shutdown event before shutting down an instance.</p>

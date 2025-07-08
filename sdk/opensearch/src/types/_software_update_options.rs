@@ -2,6 +2,8 @@
 
 /// <p>Options for configuring service software updates for a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SoftwareUpdateOptions {
     /// <p>Whether automatic service software updates are enabled for the domain.</p>

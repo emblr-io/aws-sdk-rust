@@ -2,6 +2,8 @@
 
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbortEnvironmentUpdateInput {
     /// <p>This specifies the ID of the environment with the in-progress update that you want to cancel.</p>

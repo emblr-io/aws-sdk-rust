@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a feature you attempted to configure isn't available in your current feature plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FeatureUnavailableInTierException {
     #[allow(missing_docs)] // documentation missing in model

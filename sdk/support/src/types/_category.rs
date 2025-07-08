@@ -2,6 +2,8 @@
 
 /// <p>A JSON-formatted name/value pair that represents the category name and category code of the problem, selected from the <code>DescribeServices</code> response for each Amazon Web Services service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Category {
     /// <p>The category code for the support case.</p>

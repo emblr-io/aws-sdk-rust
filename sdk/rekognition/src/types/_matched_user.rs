@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata for a UserID matched with a given face.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MatchedUser {
     /// <p>A provided ID for the UserID. Unique within the collection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A set of endpoints used by clients to connect to the media service group for an Amazon Chime SDK meeting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaPlacement {
     /// <p>The audio host URL.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This is an object representing the item returned in the results of a search for a specific resource type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResultItem {
     /// <p>These are items returned in the search results of an Amazon EBS search.</p>

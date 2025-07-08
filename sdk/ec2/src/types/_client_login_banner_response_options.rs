@@ -2,6 +2,8 @@
 
 /// <p>Current state of options for customizable text banner that will be displayed on Amazon Web Services provided clients when a VPN session is established.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientLoginBannerResponseOptions {
     /// <p>Current state of text banner feature.</p>

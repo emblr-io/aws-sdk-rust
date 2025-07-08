@@ -2,6 +2,8 @@
 
 /// The response from an UpdateDataset operation
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDatasetOutput {
     /// <p>The unique identifier for updated Dataset.</p>

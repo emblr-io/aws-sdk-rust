@@ -2,6 +2,8 @@
 
 /// <p>The total resources consumed by your hyperparameter tuning job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HyperParameterTuningJobConsumedResources {
     /// <p>The wall clock runtime in seconds used by your hyperparameter tuning job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration options to be applied to the identity pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PushSync {
     /// <p>List of SNS platform application ARNs that could be used by clients.</p>

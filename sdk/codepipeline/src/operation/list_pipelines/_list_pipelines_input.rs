@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>ListPipelines</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListPipelinesInput {
     /// <p>An identifier that was returned from the previous list pipelines call. It can be used to return the next set of pipelines in the list.</p>

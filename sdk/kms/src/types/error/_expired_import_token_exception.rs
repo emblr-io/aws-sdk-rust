@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the specified import token is expired. Use <code>GetParametersForImport</code> to get a new import token and public key, use the new public key to encrypt the key material, and then try the request again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpiredImportTokenException {
     #[allow(missing_docs)] // documentation missing in model

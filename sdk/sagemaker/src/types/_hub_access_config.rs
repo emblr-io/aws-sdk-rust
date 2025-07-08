@@ -3,6 +3,8 @@
 /// <p>The configuration for a private hub model reference that points to a public SageMaker JumpStart model.</p>
 /// <p>For more information about private hubs, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html">Private curated hubs for foundation model access control in JumpStart</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HubAccessConfig {
     /// <p>The ARN of your private model hub content. This should be a <code>ModelReference</code> resource type that points to a SageMaker JumpStart public hub model.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The replication configuration for a registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationConfiguration {
     /// <p>An array of objects representing the replication destinations and repository filters for a replication configuration.</p>

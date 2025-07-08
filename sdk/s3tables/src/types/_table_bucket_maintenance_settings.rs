@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the maintenance settings for the table bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TableBucketMaintenanceSettings {
     /// <p>The unreferenced file removal settings for the table bucket.</p>

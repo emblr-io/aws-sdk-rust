@@ -2,6 +2,8 @@
 
 /// <p>The structure containing the Amazon S3 path to export the Earth Observation job output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportS3DataInput {
     /// <p>The URL to the Amazon S3 data input.</p>

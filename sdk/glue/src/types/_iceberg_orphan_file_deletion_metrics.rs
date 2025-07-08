@@ -2,6 +2,8 @@
 
 /// <p>Orphan file deletion metrics for Iceberg for the optimizer run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergOrphanFileDeletionMetrics {
     /// <p>The number of orphan files deleted by the orphan file deletion job run.</p>

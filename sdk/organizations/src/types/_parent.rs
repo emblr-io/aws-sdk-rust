@@ -2,6 +2,8 @@
 
 /// <p>Contains information about either a root or an organizational unit (OU) that can contain OUs or accounts in an organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Parent {
     /// <p>The unique identifier (ID) of the parent entity.</p>

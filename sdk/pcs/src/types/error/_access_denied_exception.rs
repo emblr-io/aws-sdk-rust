@@ -13,6 +13,8 @@
 /// <p>The EC2 instance isn't present.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     #[allow(missing_docs)] // documentation missing in model

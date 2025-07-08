@@ -2,6 +2,8 @@
 
 /// <p>You can't specify a managed node ID in more than one association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateInstanceId {
     #[allow(missing_docs)] // documentation missing in model

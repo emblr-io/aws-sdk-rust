@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a metadata attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MetadataAttribute {
     /// <p>The key of the metadata attribute.</p>

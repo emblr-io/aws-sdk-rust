@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for the file uploader field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileUploaderFieldConfig {
     /// <p>The access level to assign to the uploaded files in the Amazon S3 bucket where they are stored. The valid values for this property are <code>private</code>, <code>protected</code>, or <code>public</code>. For detailed information about the permissions associated with each access level, see <a href="https://docs.amplify.aws/lib/storage/configureaccess/q/platform/js/">File access levels</a> in the <i>Amplify documentation</i>.</p>

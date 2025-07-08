@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the requested verified destintion phone number.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifiedDestinationNumberInformation {
     /// <p>The Amazon Resource Name (ARN) for the verified destination phone number.</p>

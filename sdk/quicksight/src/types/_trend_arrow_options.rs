@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the presentation of trend arrows in a KPI visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrendArrowOptions {
     /// <p>The visibility of the trend arrows.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the domain name system (DNS) records to add to your domain's DNS to validate it for an Amazon Lightsail certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceRecord {
     /// <p>The name of the record.</p>

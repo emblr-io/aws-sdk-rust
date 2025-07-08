@@ -3,6 +3,8 @@
 /// <p>The structure that describes the snapshot information of a table in source database endpoint that Firehose reads.</p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseSnapshotInfo {
     /// <p>The identifier of the current snapshot of the table in source database endpoint.</p>

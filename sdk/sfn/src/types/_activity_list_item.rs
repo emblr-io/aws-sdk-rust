@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an activity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityListItem {
     /// <p>The Amazon Resource Name (ARN) that identifies the activity.</p>

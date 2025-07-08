@@ -2,6 +2,8 @@
 
 /// <p>The structure type for a boolean condition that provides the address lists and address list attribute to evaluate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleIsInAddressList {
     /// <p>The email attribute that needs to be evaluated against the address list.</p>

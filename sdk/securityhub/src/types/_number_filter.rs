@@ -2,6 +2,8 @@
 
 /// <p>A number filter for querying findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberFilter {
     /// <p>The greater-than-equal condition to be applied to a single field when querying for findings.</p>

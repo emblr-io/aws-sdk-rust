@@ -2,6 +2,8 @@
 
 /// <p>A request to convert a dedicated IP pool to a different scaling mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutDedicatedIpPoolScalingAttributesInput {
     /// <p>The name of the dedicated IP pool.</p>

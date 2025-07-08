@@ -2,6 +2,8 @@
 
 /// <p>Exception to indicate that the service-linked role (SLR) is locked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLinkedRoleLockClientException {
     #[allow(missing_docs)] // documentation missing in model

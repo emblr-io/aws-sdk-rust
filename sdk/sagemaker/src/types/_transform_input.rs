@@ -2,6 +2,8 @@
 
 /// <p>Describes the input source of a transform job and the way the transform job consumes it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformInput {
     /// <p>Describes the location of the channel data, which is, the S3 location of the input data that the model can consume.</p>

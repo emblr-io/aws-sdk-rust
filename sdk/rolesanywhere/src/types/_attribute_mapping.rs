@@ -2,6 +2,8 @@
 
 /// <p>A mapping applied to the authenticating end-entity certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeMapping {
     /// <p>Fields (x509Subject, x509Issuer and x509SAN) within X.509 certificates.</p>

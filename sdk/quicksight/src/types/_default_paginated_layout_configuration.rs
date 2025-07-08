@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the default settings for a paginated layout configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultPaginatedLayoutConfiguration {
     /// <p>The options that determine the default settings for a section-based layout configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The description of the point in time settings applied to the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PointInTimeRecoveryDescription {
     /// <p>The current state of point in time recovery:</p>

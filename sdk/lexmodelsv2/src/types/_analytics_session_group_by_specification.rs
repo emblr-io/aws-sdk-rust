@@ -2,6 +2,8 @@
 
 /// <p>Contains the category by which to group the sessions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsSessionGroupBySpecification {
     /// <p>Specifies whether to group the session by their end state or their locale.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The <code>Change</code> structure describes the changes CloudFormation will perform if you execute the change set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Change {
     /// <p>The type of entity that CloudFormation changes.</p>

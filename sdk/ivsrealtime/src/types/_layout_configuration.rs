@@ -2,6 +2,8 @@
 
 /// <p>Configuration information of supported layouts for server-side composition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayoutConfiguration {
     /// <p>Configuration related to grid layout. Default: Grid layout.</p>

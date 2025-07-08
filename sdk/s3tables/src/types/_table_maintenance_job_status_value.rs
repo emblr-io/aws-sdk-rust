@@ -2,6 +2,8 @@
 
 /// <p>Details about the status of a maintenance job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableMaintenanceJobStatusValue {
     /// <p>The status of the job.</p>

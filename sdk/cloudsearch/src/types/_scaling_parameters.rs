@@ -2,6 +2,8 @@
 
 /// <p>The desired instance type and desired number of replicas of each index partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalingParameters {
     /// <p>The instance type that you want to preconfigure for your domain. For example, <code>search.m1.small</code>.</p>

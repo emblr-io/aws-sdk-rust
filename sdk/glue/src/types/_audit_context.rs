@@ -2,6 +2,8 @@
 
 /// <p>A structure containing the Lake Formation audit context.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditContext {
     /// <p>A string containing the additional audit context information.</p>

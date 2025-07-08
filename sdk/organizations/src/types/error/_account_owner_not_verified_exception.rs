@@ -2,6 +2,8 @@
 
 /// <p>You can't invite an existing account to your organization until you verify that you own the email address associated with the management account. For more information, see <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_create.html#about-email-verification">Email address verification</a> in the <i>Organizations User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountOwnerNotVerifiedException {
     #[allow(missing_docs)] // documentation missing in model

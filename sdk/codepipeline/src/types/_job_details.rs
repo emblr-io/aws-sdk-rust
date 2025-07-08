@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the details of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobDetails {
     /// <p>The unique system-generated ID of the job.</p>

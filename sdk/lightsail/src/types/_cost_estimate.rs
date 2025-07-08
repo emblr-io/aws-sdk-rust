@@ -2,6 +2,8 @@
 
 /// <p>Describes the estimated cost for resources in your Lightsail for Research account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostEstimate {
     /// <p>The types of usage that are included in the estimate, such as costs, usage, or data transfer.</p>

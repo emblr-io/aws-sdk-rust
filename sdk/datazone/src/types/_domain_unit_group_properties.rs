@@ -2,6 +2,8 @@
 
 /// <p>The properties of a domain unit group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainUnitGroupProperties {
     /// <p>The ID of the domain unit group.</p>

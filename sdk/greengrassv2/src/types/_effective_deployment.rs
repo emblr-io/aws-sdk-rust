@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a deployment job that IoT Greengrass sends to a Greengrass core device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EffectiveDeployment {
     /// <p>The ID of the deployment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Amazon Connect Customer Profiles is used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerProfilesDestinationProperties {
     /// <p>The unique name of the Amazon Connect Customer Profiles domain.</p>

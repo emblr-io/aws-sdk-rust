@@ -2,6 +2,8 @@
 
 /// <p>A key and value pair that is attached to the specified Amazon Lookout for Vision model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>The key of the tag that is attached to the specified model.</p>

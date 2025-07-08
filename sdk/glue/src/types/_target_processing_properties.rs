@@ -2,6 +2,8 @@
 
 /// <p>The resource properties associated with the integration target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetProcessingProperties {
     /// <p>The IAM role to access the Glue database.</p>

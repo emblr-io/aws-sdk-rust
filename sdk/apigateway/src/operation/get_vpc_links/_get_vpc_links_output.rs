@@ -2,6 +2,8 @@
 
 /// <p>The collection of VPC links under the caller's account in a region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetVpcLinksOutput {
     /// <p>The current page of elements from this collection.</p>

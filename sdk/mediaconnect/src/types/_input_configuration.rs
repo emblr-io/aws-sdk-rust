@@ -2,6 +2,8 @@
 
 /// <p>The transport parameters that are associated with an incoming media stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputConfiguration {
     /// <p>The IP address that the flow listens on for incoming content for a media stream.</p>

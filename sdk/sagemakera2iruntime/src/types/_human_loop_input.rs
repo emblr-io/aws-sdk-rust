@@ -2,6 +2,8 @@
 
 /// <p>An object containing the human loop input in JSON format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HumanLoopInput {
     /// <p>Serialized input from the human loop. The input must be a string representation of a file in JSON format.</p>

@@ -15,6 +15,8 @@
 /// <p>Ten rules per rule group.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroup {
     /// <p>A unique identifier for a <code>RuleGroup</code>. You use <code>RuleGroupId</code> to get more information about a <code>RuleGroup</code> (see <code>GetRuleGroup</code>), update a <code>RuleGroup</code> (see <code>UpdateRuleGroup</code>), insert a <code>RuleGroup</code> into a <code>WebACL</code> or delete a one from a <code>WebACL</code> (see <code>UpdateWebACL</code>), or delete a <code>RuleGroup</code> from AWS WAF (see <code>DeleteRuleGroup</code>).</p>

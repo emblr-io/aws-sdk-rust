@@ -2,6 +2,8 @@
 
 /// <p>Specifies the network configuration for the public ingress point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicNetworkConfiguration {
     /// <p>The IP address type for the public ingress point. Valid values are IPV4 and DUAL_STACK.</p>

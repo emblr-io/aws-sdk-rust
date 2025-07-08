@@ -2,6 +2,8 @@
 
 /// <p>Returns properties of the user that you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListedUser {
     /// <p>Provides the unique Amazon Resource Name (ARN) for the user that you want to learn about.</p>

@@ -2,6 +2,8 @@
 
 /// A direct source or destination neighbor to an AWS media resource.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaResourceNeighbor {
     /// The ARN of a resource used in AWS media workflows.

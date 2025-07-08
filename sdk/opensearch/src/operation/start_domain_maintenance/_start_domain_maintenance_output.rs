@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>StartDomainMaintenance</code> request that information about the requested action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartDomainMaintenanceOutput {
     /// <p>The request ID of requested action.</p>

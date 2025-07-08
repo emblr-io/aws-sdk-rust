@@ -3,6 +3,8 @@
 /// <p>The name of a field in the request payload that contains part or all of your customer's primary physical address.</p>
 /// <p>This data type is used in the <code>RequestInspectionACFP</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddressField {
     /// <p>The name of a single primary address field.</p>

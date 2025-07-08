@@ -2,6 +2,8 @@
 
 /// <p>A batch operation to remove a facet from an object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchRemoveFacetFromObject {
     /// <p>The facet to remove from the object.</p>

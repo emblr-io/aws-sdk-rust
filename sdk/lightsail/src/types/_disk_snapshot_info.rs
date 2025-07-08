@@ -2,6 +2,8 @@
 
 /// <p>Describes a disk snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DiskSnapshotInfo {
     /// <p>The size of the disk in GB (<code>32</code>).</p>

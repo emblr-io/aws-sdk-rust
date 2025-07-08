@@ -2,6 +2,8 @@
 
 /// <p>Information about a ledger, including its name, state, and when it was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LedgerSummary {
     /// <p>The name of the ledger.</p>

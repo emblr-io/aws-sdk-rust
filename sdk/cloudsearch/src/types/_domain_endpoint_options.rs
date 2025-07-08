@@ -2,6 +2,8 @@
 
 /// <p>The domain's endpoint options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainEndpointOptions {
     /// <p>Whether the domain is HTTPS only enabled.</p>

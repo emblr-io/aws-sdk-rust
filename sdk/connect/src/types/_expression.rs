@@ -2,6 +2,8 @@
 
 /// <p>A tagged union to specify expression for a routing step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Expression {
     /// <p>An object to specify the predefined attribute condition.</p>

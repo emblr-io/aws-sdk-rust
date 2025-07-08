@@ -2,6 +2,8 @@
 
 /// <p>Information about the entity that created the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamAccessKeySessionContextSessionIssuer {
     /// <p>The type of principal (user, role, or group) that created the session.</p>

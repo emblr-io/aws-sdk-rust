@@ -2,6 +2,8 @@
 
 /// <p>You've reached the limit on the number of load balancers for your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyLoadBalancersException {
     #[allow(missing_docs)] // documentation missing in model

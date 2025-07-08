@@ -2,6 +2,8 @@
 
 /// <p>Describes the state of the bitstream generation process for an Amazon FPGA image (AFI).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FpgaImageState {
     /// <p>The state. The following are the possible values:</p>

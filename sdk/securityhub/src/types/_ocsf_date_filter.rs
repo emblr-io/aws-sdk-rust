@@ -2,6 +2,8 @@
 
 /// <p>Enables filtering of security findings based on date and timestamp fields in OCSF.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OcsfDateFilter {
     /// <p>The name of the field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A custom response string that Amazon Lex sends to your application. You define the content and structure the string.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomPayload {
     /// <p>The string that is sent to your application.</p>

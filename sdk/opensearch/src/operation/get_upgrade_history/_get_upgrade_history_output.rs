@@ -2,6 +2,8 @@
 
 /// <p>Container for the response returned by the <code>GetUpgradeHistory</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUpgradeHistoryOutput {
     /// <p>A list of objects corresponding to each upgrade or upgrade eligibility check performed on a domain.</p>

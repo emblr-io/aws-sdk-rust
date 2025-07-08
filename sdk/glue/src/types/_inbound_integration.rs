@@ -2,6 +2,8 @@
 
 /// <p>A structure for an integration that writes data into a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InboundIntegration {
     /// <p>The ARN of the source resource for the integration.</p>

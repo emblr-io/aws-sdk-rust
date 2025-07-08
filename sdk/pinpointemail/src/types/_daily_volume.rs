@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about the volume of email sent on each day of the analysis period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DailyVolume {
     /// <p>The date that the DailyVolume metrics apply to, in Unix time.</p>

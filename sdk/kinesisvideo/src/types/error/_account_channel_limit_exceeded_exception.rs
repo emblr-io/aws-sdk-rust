@@ -2,6 +2,8 @@
 
 /// <p>You have reached the maximum limit of active signaling channels for this Amazon Web Services account in this region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountChannelLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the status and settings of the SMS channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsChannelRequest {
     /// <p>Specifies whether to enable the SMS channel for the application.</p>

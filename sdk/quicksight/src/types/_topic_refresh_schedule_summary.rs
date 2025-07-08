@@ -2,6 +2,8 @@
 
 /// <p>A summary of the refresh schedule details for a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicRefreshScheduleSummary {
     /// <p>The ID of the dataset.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An array of configuration policy associations, one for each configuration policy association identifier, that was specified in a <code>BatchGetConfigurationPolicyAssociations</code> request but couldn’t be processed due to an error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnprocessedConfigurationPolicyAssociation {
     /// <p>Configuration policy association identifiers that were specified in a <code>BatchGetConfigurationPolicyAssociations</code> request but couldn’t be processed due to an error.</p>

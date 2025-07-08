@@ -2,6 +2,8 @@
 
 /// <p>A source for an annotation import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnnotationImportItemSource {
     /// <p>The source file's location in Amazon S3.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A container for the response details that are returned when querying about an asynchronous request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AsyncResponseDetails {
     /// <p>The details for the Multi-Region Access Point.</p>

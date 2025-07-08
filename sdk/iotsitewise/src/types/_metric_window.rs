@@ -2,6 +2,8 @@
 
 /// <p>Contains a time interval window used for data aggregate computations (for example, average, sum, count, and so on).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricWindow {
     /// <p>The tumbling time interval window.</p>

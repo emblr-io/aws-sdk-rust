@@ -2,6 +2,8 @@
 
 /// <p>Output from the bidirectional stream that was used for model invocation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum InvokeModelWithBidirectionalStreamOutput {
     /// <p>The speech chunk that was provided as output from the invocation step.</p>

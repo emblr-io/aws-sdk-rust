@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines configuration settings for an application that supports the OAuth 2.0 Authorization Code Grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationCodeGrant {
     /// <p>A list of URIs that are valid locations to redirect a user's browser after the user is authorized.</p><note>

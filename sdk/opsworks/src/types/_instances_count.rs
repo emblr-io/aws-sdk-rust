@@ -2,6 +2,8 @@
 
 /// <p>Describes how many instances a stack has for each status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstancesCount {
     /// <p>The number of instances in the Assigning state.</p>

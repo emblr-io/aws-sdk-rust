@@ -2,6 +2,8 @@
 
 /// <p>Filter settings that select for read set upload parts of interest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReadSetUploadPartListFilter {
     /// <p>Filters for read set uploads after a specified time.</p>

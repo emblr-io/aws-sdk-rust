@@ -2,6 +2,8 @@
 
 /// <p>Contains information about code hooks that Amazon Lex calls during a conversation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeHookSpecification {
     /// <p>Specifies a Lambda function that verifies requests to a bot or fulfills the user's request to a bot.</p>

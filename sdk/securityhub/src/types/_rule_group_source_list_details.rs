@@ -2,6 +2,8 @@
 
 /// <p>Stateful inspection criteria for a domain list rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupSourceListDetails {
     /// <p>Indicates whether to allow or deny access to the domains listed in <code>Targets</code>.</p>

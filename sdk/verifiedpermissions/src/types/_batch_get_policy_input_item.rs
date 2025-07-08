@@ -2,6 +2,8 @@
 
 /// <p>Information about a policy that you include in a <code>BatchGetPolicy</code> API request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetPolicyInputItem {
     /// <p>The identifier of the policy store where the policy you want information about is stored.</p>

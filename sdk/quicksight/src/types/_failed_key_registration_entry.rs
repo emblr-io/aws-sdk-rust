@@ -2,6 +2,8 @@
 
 /// <p>An entry that appears when a <code>KeyRegistration</code> update to Amazon QuickSight fails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedKeyRegistrationEntry {
     /// <p>The ARN of the KMS key that failed to update.</p>

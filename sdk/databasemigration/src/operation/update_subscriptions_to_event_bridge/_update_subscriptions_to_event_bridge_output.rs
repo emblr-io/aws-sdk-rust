@@ -2,6 +2,8 @@
 
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateSubscriptionsToEventBridgeOutput {
     /// <p>A string that indicates how many event subscriptions were migrated and how many remain to be migrated.</p>

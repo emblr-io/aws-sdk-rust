@@ -2,6 +2,8 @@
 
 /// <p>Each entry contains information about one of the key materials associated with a KMS key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RotationsListEntry {
     /// <p>Unique identifier of the key.</p>

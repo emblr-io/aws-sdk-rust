@@ -2,6 +2,8 @@
 
 /// <p>An object that defines the email template to use for an email message, and the values to use for any message variables in that template. An <i>email template</i> is a type of message template that contains content that you want to reuse in email messages that you send. You can specifiy the email template by providing the name or ARN of an <i>email template</i> previously saved in your Amazon SES account or by providing the full template content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Template {
     /// <p>The name of the template. You will refer to this name when you send email using the <code>SendEmail</code> or <code>SendBulkEmail</code> operations.</p>

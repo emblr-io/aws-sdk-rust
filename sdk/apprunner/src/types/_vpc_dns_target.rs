@@ -2,6 +2,8 @@
 
 /// <p>DNS Target record for a custom domain of this Amazon VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcDnsTarget {
     /// <p>The Amazon Resource Name (ARN) of the VPC Ingress Connection that is associated with your service.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The updated authentication configuration details for a connector destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthConfigUpdate {
     /// <p>The updated OAuth configuration settings for the authentication configuration.</p>

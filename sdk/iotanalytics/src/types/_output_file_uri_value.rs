@@ -2,6 +2,8 @@
 
 /// <p>The value of the variable as a structure that specifies an output file URI.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputFileUriValue {
     /// <p>The URI of the location where dataset contents are stored, usually the URI of a file in an S3 bucket.</p>

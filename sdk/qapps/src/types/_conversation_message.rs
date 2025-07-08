@@ -2,6 +2,8 @@
 
 /// <p>A message in a conversation, used as input for generating an Amazon Q App definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationMessage {
     /// <p>The text content of the conversation message.</p>

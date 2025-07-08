@@ -2,6 +2,8 @@
 
 /// <p>Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateVpcEndpointInput {
     /// <p>Unique identifier of the VPC endpoint to be updated.</p>

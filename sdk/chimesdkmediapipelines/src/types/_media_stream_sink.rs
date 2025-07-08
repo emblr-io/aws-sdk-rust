@@ -2,6 +2,8 @@
 
 /// <p>Structure that contains the settings for a media stream sink.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MediaStreamSink {
     /// <p>The ARN of the Kinesis Video Stream pool returned by the <code>CreateMediaPipelineKinesisVideoStreamPool</code> API.</p>

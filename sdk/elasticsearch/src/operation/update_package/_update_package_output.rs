@@ -2,6 +2,8 @@
 
 /// <p>Container for response returned by <code> <code>UpdatePackage</code> </code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePackageOutput {
     /// <p>Information about the package <code>PackageDetails</code>.</p>

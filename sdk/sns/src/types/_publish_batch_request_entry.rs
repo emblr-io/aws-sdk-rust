@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of a single Amazon SNS message along with an <code>Id</code> that identifies a message within the batch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublishBatchRequestEntry {
     /// <p>An identifier for the message in this batch.</p><note>

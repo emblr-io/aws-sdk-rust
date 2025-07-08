@@ -2,6 +2,8 @@
 
 /// <p>An event from a source outside of Amazon Web Services that you want CloudTrail to log.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditEvent {
     /// <p>The original event ID from the source event.</p>

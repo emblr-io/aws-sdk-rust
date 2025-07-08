@@ -2,6 +2,8 @@
 
 /// <p>Provides details in case one of the following operations fails due to an error related to KMS: <code>CreateDeliveryStream</code>, <code>DeleteDeliveryStream</code>, <code>StartDeliveryStreamEncryption</code>, <code>StopDeliveryStreamEncryption</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailureDescription {
     /// <p>The type of error that caused the failure.</p>

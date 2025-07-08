@@ -2,6 +2,8 @@
 
 /// <p>Lists objects attached to the specified index inside a <code>BatchRead</code> operation. For more information, see <code>ListIndex</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListIndex {
     /// <p>Specifies the ranges of indexed values that you want to query.</p>

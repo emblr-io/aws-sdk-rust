@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a parameter in a function for an action group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterDetail {
     /// <p>A description of the parameter. Helps the foundation model determine how to elicit the parameters from the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains properties for the Redshift IDC application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftIdcApplication {
     /// <p>The ARN for the IAM Identity Center instance that Redshift integrates with.</p>

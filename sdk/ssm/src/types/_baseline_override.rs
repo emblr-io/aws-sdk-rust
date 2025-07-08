@@ -2,6 +2,8 @@
 
 /// <p>Defines the basic information about a patch baseline override.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BaselineOverride {
     /// <p>The operating system rule used by the patch baseline override.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines private IP address configuration for network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PrivateIpAddressSpecification {
     /// <p>Indicates if this is the primary private IP address.</p>

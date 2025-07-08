@@ -2,6 +2,8 @@
 
 /// <p>The scope of an <code>AccessPolicy</code> that's associated to an <code>AccessEntry</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessScope {
     /// <p>The scope type of an access policy.</p>

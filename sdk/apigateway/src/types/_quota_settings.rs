@@ -2,6 +2,8 @@
 
 /// <p>Quotas configured for a usage plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuotaSettings {
     /// <p>The target maximum number of requests that can be made in a given time period.</p>

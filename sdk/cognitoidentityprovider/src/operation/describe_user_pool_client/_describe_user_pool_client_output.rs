@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server from a request to describe the user pool client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeUserPoolClientOutput {
     /// <p>The details of the request app client.</p>

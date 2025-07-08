@@ -2,6 +2,8 @@
 
 /// <p>A map of OpenSearch or Elasticsearch versions and the versions you can upgrade them to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompatibleVersionsMap {
     /// <p>The current version that the OpenSearch Service domain is running.</p>

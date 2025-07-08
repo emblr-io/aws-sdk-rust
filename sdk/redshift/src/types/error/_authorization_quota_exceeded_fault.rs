@@ -2,6 +2,8 @@
 
 /// <p>The authorization quota for the cluster security group has been reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Settings for user pool actions when Amazon Cognito detects compromised credentials with threat protection in full-function <code>ENFORCED</code> mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompromisedCredentialsActionsType {
     /// <p>The action that Amazon Cognito takes when it detects compromised credentials.</p>

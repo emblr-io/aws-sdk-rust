@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the threshold for service level metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThresholdV2 {
     /// <p>The type of comparison. Currently, "less than" (LT), "less than equal" (LTE), and "greater than" (GT) comparisons are supported.</p>

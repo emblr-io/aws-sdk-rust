@@ -2,6 +2,8 @@
 
 /// <p>A location in a policy that is represented as a path through the JSON representation and a corresponding span.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Location {
     /// <p>A path in a policy, represented as a sequence of path elements.</p>

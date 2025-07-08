@@ -2,6 +2,8 @@
 
 /// <p>Describes an association between an app block builder and app block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppBlockBuilderAppBlockAssociation {
     /// <p>The ARN of the app block.</p>

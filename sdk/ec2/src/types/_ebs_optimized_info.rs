@@ -2,6 +2,8 @@
 
 /// <p>Describes the optimized EBS performance for supported instance types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsOptimizedInfo {
     /// <p>The baseline bandwidth performance for an EBS-optimized instance type, in Mbps.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An identifier for the <code>StartBatchJob</code> API to show that it is a restart operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestartBatchJobIdentifier {
     /// <p>The <code>executionId</code> from the <code>StartBatchJob</code> response when the job ran for the first time.</p>

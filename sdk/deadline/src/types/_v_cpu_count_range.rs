@@ -2,6 +2,8 @@
 
 /// <p>The allowable range of vCPU processing power for the fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VCpuCountRange {
     /// <p>The minimum amount of vCPU.</p>

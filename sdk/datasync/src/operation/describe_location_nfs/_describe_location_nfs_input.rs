@@ -2,6 +2,8 @@
 
 /// <p>DescribeLocationNfsRequest</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLocationNfsInput {
     /// <p>Specifies the Amazon Resource Name (ARN) of the NFS location that you want information about.</p>

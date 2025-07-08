@@ -2,6 +2,8 @@
 
 /// <p>Represents metadata about a patch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Patch {
     /// <p>The ID of the patch. Applies to Windows patches only.</p><note>

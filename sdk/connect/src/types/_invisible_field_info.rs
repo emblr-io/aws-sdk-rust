@@ -2,6 +2,8 @@
 
 /// <p>A field that is invisible to an agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvisibleFieldInfo {
     /// <p>Identifier of the invisible field.</p>

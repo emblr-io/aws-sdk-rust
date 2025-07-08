@@ -2,6 +2,8 @@
 
 /// <p>Information about the private DNS name for the service endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateDnsNameConfiguration {
     /// <p>The verification state of the VPC endpoint service.</p>

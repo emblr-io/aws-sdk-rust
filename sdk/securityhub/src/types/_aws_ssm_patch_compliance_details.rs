@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the state of a patch on an instance based on the patch baseline that was used to patch the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSsmPatchComplianceDetails {
     /// <p>Information about the status of a patch.</p>

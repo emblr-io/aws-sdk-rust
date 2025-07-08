@@ -2,6 +2,8 @@
 
 /// <p>An instance type was specified for an in-place deployment. Instance types are supported for blue/green deployments only.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDeploymentInstanceTypeException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

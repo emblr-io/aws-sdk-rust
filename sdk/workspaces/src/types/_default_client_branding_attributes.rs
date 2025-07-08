@@ -4,6 +4,8 @@
 /// <p>Client branding attributes are public facing. Ensure that you don't include sensitive information.</p>
 /// </important>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultClientBrandingAttributes {
     /// <p>The logo. The only image format accepted is a binary data object that is converted from a <code>.png</code> file.</p>

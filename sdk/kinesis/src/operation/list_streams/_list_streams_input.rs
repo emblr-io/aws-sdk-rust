@@ -2,6 +2,8 @@
 
 /// <p>Represents the input for <code>ListStreams</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStreamsInput {
     /// <p>The maximum number of streams to list. The default value is 100. If you specify a value greater than 100, at most 100 results are returned.</p>

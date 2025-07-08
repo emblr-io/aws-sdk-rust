@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an internal access finding. This includes details about the access that was identified within your Amazon Web Services organization or account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalAccessDetails {
     /// <p>The action in the analyzed policy statement that has internal access permission to use.</p>

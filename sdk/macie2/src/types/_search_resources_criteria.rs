@@ -2,6 +2,8 @@
 
 /// <p>Specifies a property- or tag-based filter condition for including or excluding Amazon Web Services resources from the query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchResourcesCriteria {
     /// <p>A property-based condition that defines a property, operator, and one or more values for including or excluding resources from the results.</p>

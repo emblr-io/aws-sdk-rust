@@ -2,6 +2,8 @@
 
 /// <p>You don't have this feature activated for your account. To fix this issue, contact Amazon Web Services support.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRequestException {
     #[allow(missing_docs)] // documentation missing in model

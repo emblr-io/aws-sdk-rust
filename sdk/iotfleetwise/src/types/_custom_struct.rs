@@ -2,6 +2,8 @@
 
 /// <p>The custom structure represents a complex or higher-order data structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomStruct {
     /// <p>The fully qualified name of the custom structure. For example, the fully qualified name of a custom structure might be <code>ComplexDataTypes.VehicleDataTypes.SVMCamera</code>.</p>

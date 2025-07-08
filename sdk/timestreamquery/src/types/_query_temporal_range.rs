@@ -2,6 +2,8 @@
 
 /// <p>Provides insights into the temporal range of the query, including the table with the largest (max) time range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryTemporalRange {
     /// <p>Encapsulates the following properties that provide insights into the most sub-optimal performing table on the temporal axis:</p>

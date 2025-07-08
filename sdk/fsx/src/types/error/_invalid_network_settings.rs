@@ -2,6 +2,8 @@
 
 /// <p>One or more network settings specified in the request are invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidNetworkSettings {
     /// <p>Error message explaining what's wrong with network settings.</p>

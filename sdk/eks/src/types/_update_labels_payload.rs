@@ -2,6 +2,8 @@
 
 /// <p>An object representing a Kubernetes <code>label</code> change for a managed node group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateLabelsPayload {
     /// <p>The Kubernetes <code>labels</code> to add or update.</p>

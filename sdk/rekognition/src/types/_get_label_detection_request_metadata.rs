@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata about a label detection request, including the SortBy and AggregateBy options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetLabelDetectionRequestMetadata {
     /// <p>The sorting method chosen for a GetLabelDetection request.</p>

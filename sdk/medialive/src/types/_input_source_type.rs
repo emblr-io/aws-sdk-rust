@@ -40,6 +40,8 @@
 /// change the source url of the input dynamically using an input switch action. Currently, two input types
 /// support a dynamic url at this time, MP4_FILE and TS_FILE. By default all input sources are static.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

@@ -6,6 +6,8 @@
 /// </note>
 /// <p>In an <code>UpdateByteMatchSet</code> request, <code>ByteMatchSetUpdate</code> specifies whether to insert or delete a <code>ByteMatchTuple</code> and includes the settings for the <code>ByteMatchTuple</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ByteMatchSetUpdate {
     /// <p>Specifies whether to insert or delete a <code>ByteMatchTuple</code>.</p>

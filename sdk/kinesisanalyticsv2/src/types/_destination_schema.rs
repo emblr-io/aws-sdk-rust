@@ -2,6 +2,8 @@
 
 /// <p>Describes the data format when records are written to the destination in a SQL-based Kinesis Data Analytics application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationSchema {
     /// <p>Specifies the format of the records on the output stream.</p>

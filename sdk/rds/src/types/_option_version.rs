@@ -2,6 +2,8 @@
 
 /// <p>The version for an option. Option group option versions are returned by the <code>DescribeOptionGroupOptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptionVersion {
     /// <p>The version of the option.</p>

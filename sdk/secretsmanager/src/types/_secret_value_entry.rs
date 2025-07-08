@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the secret value and other details for a secret.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SecretValueEntry {
     /// <p>The Amazon Resource Name (ARN) of the secret.</p>

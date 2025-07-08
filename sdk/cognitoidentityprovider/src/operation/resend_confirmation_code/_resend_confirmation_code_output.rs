@@ -2,6 +2,8 @@
 
 /// <p>The response from the server when Amazon Cognito makes the request to resend a confirmation code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResendConfirmationCodeOutput {
     /// <p>Information about the phone number or email address that Amazon Cognito sent the confirmation code to.</p>

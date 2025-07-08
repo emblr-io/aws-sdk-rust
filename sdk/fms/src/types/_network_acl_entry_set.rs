@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the first and last rules for the network ACL policy, and the remediation settings for each.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkAclEntrySet {
     /// <p>The rules that you want to run first in the Firewall Manager managed network ACLs.</p><note>

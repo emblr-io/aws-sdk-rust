@@ -2,6 +2,8 @@
 
 /// <p>Pre defined rest profiles for a driver schedule. The only currently supported profile is EU.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaypointOptimizationRestProfile {
     /// <p>Pre defined rest profiles for a driver schedule. The only currently supported profile is EU.</p>

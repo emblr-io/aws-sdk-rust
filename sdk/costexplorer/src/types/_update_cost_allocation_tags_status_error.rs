@@ -2,6 +2,8 @@
 
 /// <p>Gives a detailed description of the result of an action. It's on each cost allocation tag entry in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateCostAllocationTagsStatusError {
     /// <p>The key for the cost allocation tag.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Your request is valid, but WAF couldn’t perform the operation because of a system problem. Retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafInternalErrorException {
     #[allow(missing_docs)] // documentation missing in model

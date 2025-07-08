@@ -5,6 +5,8 @@
 /// <p>If these parameters aren't set and no default parameters were defined in the workflow type, this error is displayed.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultUndefinedFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>An activity that runs a Lambda function to modify the message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaActivity {
     /// <p>The name of the lambda activity.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Points to an <code>S3SignedObject</code> object that contains information about your signed code image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SignedObject {
     /// <p>The <code>S3SignedObject</code>.</p>

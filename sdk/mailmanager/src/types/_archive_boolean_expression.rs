@@ -2,6 +2,8 @@
 
 /// <p>A boolean expression to evaluate email attribute values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArchiveBooleanExpression {
     /// <p>The email attribute value to evaluate.</p>

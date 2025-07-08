@@ -2,6 +2,8 @@
 
 /// <p>This is an error field object that contains the error code and the reason for an operation failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorInfo {
     /// <p>The error code for an invalid or failed operation.</p>

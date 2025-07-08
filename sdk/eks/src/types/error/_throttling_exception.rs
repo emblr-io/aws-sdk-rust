@@ -2,6 +2,8 @@
 
 /// <p>The request or operation couldn't be performed because a service is throttling requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThrottlingException {
     /// <p>The Amazon EKS cluster associated with the exception.</p>

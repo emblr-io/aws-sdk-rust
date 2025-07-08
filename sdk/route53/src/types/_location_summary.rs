@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the CIDR location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationSummary {
     /// <p>A string that specifies a location name.</p>

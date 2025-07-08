@@ -2,6 +2,8 @@
 
 /// <p>The summary information about deprecated resource usage for an insight check in the <code>UPGRADE_READINESS</code> category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeprecationDetail {
     /// <p>The deprecated version of the resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Auto-Tune settings for a domain, displayed when enabling or disabling Auto-Tune.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoTuneOptionsOutput {
     /// <p>The current state of Auto-Tune on the domain.</p>

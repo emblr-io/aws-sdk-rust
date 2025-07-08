@@ -2,6 +2,8 @@
 
 /// <p>The source configuration object of a media capture pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MediaCapturePipelineSourceConfiguration {
     /// <p>The media pipeline ARN in the configuration object of a media capture pipeline.</p>

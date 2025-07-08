@@ -2,6 +2,8 @@
 
 /// <p>An individual installment of the payment that includes the date and amount of the charge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleItem {
     /// <p>The date that the customer would pay the price defined in this payment schedule term. Invoices are generated on the date provided.</p>

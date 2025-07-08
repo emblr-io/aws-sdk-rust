@@ -2,6 +2,8 @@
 
 /// <p>The commit cannot be created because no source files or file content have been specified for the commit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceFileOrContentRequiredException {
     /// <p>Any message associated with the exception.</p>

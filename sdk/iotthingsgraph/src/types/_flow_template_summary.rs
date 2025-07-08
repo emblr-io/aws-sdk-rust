@@ -2,6 +2,8 @@
 
 /// <p>An object that contains summary information about a workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowTemplateSummary {
     /// <p>The ID of the workflow.</p>

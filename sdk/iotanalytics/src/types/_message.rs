@@ -2,6 +2,8 @@
 
 /// <p>Information about a message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Message {
     /// <p>The ID you want to assign to the message. Each <code>messageId</code> must be unique within each batch sent.</p>

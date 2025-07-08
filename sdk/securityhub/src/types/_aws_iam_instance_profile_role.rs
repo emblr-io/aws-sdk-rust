@@ -2,6 +2,8 @@
 
 /// <p>Information about a role associated with an instance profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamInstanceProfileRole {
     /// <p>The ARN of the role.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The section of the contact transcript segment that category rule was detected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisPointOfInterest {
     /// <p>List of the transcript items (segments) that are associated with a given point of interest.</p>

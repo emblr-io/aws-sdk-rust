@@ -2,6 +2,8 @@
 
 /// <p>Provides a template for the configuration information to connect to your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateConfiguration {
     /// <p>The template schema used for the data source, where templates schemas are supported.</p>

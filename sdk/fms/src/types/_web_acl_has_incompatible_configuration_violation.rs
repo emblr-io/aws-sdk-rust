@@ -2,6 +2,8 @@
 
 /// <p>The violation details for a web ACL whose configuration is incompatible with the Firewall Manager policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAclHasIncompatibleConfigurationViolation {
     /// <p>The Amazon Resource Name (ARN) of the web ACL.</p>

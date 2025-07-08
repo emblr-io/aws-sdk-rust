@@ -2,6 +2,8 @@
 
 /// <p>Represents an Amazon EC2 instance provisioned as part of cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Instance {
     /// <p>The unique identifier for the instance in Amazon EMR.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the results of the <code>GetDirectoryLimits</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDirectoryLimitsOutput {
     /// <p>A <code>DirectoryLimits</code> object that contains the directory limits for the current Region.</p>

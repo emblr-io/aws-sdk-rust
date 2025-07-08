@@ -2,6 +2,8 @@
 
 /// <p>A custom header for custom request and response handling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafv2CustomHttpHeader {
     /// <p>The name of the custom header.</p>

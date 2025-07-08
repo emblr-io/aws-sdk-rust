@@ -2,6 +2,8 @@
 
 /// <p>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantCapacityReservationConfig {
     /// <p>Options that you can choose for the capacity reservation. SageMaker AI supports the following options:</p>

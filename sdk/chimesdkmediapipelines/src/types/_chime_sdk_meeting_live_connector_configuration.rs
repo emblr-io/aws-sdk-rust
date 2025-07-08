@@ -2,6 +2,8 @@
 
 /// <p>The media pipeline's configuration object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ChimeSdkMeetingLiveConnectorConfiguration {
     /// <p>The configuration object's Chime SDK meeting ARN.</p>

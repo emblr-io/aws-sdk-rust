@@ -2,6 +2,8 @@
 
 /// <p>A transform operation that tags a column with additional information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagColumnOperation {
     /// <p>The column that this operation acts on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a PartiQL statement that uses parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterizedStatement {
     /// <p>A PartiQL statement that uses parameters.</p>

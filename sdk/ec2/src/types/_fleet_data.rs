@@ -2,6 +2,8 @@
 
 /// <p>Describes an EC2 Fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetData {
     /// <p>The progress of the EC2 Fleet. If there is an error, the status is <code>error</code>. After all requests are placed, the status is <code>pending_fulfillment</code>. If the size of the EC2 Fleet is equal to or greater than its target capacity, the status is <code>fulfilled</code>. If the size of the EC2 Fleet is decreased, the status is <code>pending_termination</code> while instances are terminating.</p>

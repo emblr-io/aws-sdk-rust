@@ -2,6 +2,8 @@
 
 /// <p>The status of the compute fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetStatus {
     /// <p>The status code of the compute fleet. Valid values include:</p>

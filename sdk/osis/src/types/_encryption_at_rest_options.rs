@@ -2,6 +2,8 @@
 
 /// <p>Options to control how OpenSearch encrypts buffer data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionAtRestOptions {
     /// <p>The ARN of the KMS key used to encrypt buffer data. By default, data is encrypted using an Amazon Web Services owned key.</p>

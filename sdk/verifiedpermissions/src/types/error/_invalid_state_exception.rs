@@ -2,6 +2,8 @@
 
 /// <p>The policy store can't be deleted because deletion protection is enabled. To delete this policy store, disable deletion protection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidStateException {
     #[allow(missing_docs)] // documentation missing in model

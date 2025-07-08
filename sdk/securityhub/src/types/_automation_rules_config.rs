@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration of an automation rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesConfig {
     /// <p>The Amazon Resource Name (ARN) of a rule.</p>

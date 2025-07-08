@@ -2,6 +2,8 @@
 
 /// The configured sources for this SRT input.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SrtSettings {
     /// Placeholder documentation for __listOfSrtCallerSource

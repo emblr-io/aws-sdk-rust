@@ -2,6 +2,8 @@
 
 /// <p>The run lineage summary of a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceRunLineageSummary {
     /// <p>The import status that's part of the run lineage summary of a data source.</p>

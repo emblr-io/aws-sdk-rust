@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration properties for the solution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SolutionConfig {
     /// <p>Only events with a value greater than or equal to this threshold are used for training a model.</p>

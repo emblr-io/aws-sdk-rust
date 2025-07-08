@@ -2,6 +2,8 @@
 
 /// <p>Describes the validation record of each domain name in the SSL/TLS certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancerTlsCertificateDomainValidationRecord {
     /// <p>A fully qualified domain name in the certificate. For example, <code>example.com</code>.</p>

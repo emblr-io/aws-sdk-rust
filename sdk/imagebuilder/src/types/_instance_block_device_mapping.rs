@@ -2,6 +2,8 @@
 
 /// <p>Defines block device mappings for the instance used to configure your image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceBlockDeviceMapping {
     /// <p>The device to which these mappings apply.</p>

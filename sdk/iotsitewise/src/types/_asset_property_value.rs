@@ -2,6 +2,8 @@
 
 /// <p>Contains asset property value information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetPropertyValue {
     /// <p>The value of the asset property (see <code>Variant</code>).</p>

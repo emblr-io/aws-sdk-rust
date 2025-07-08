@@ -2,6 +2,8 @@
 
 /// <p>Associates a component property to a binding property. This enables exposed properties on the top level component to propagate data to the component's property values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentPropertyBindingProperties {
     /// <p>The component property to bind to the data field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A <i>ClusterSubnetGroupName</i> is already used by an existing cluster subnet group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSubnetGroupAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

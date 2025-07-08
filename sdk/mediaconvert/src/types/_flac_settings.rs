@@ -2,6 +2,8 @@
 
 /// Required when you set Codec, under AudioDescriptions&gt;CodecSettings, to the value FLAC.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlacSettings {
     /// Specify Bit depth (BitDepth), in bits per sample, to choose the encoding quality for this audio track.

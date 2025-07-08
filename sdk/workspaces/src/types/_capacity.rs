@@ -2,6 +2,8 @@
 
 /// <p>Describes the user capacity for a pool of WorkSpaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Capacity {
     /// <p>The desired number of user sessions for the WorkSpaces in the pool.</p>

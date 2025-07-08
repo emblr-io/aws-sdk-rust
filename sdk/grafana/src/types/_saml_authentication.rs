@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about how this workspace works with SAML.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamlAuthentication {
     /// <p>Specifies whether the workspace's SAML configuration is complete.</p>

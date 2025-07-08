@@ -2,6 +2,8 @@
 
 /// <p>Provides details about input or output in an execution history event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HistoryEventExecutionDataDetails {
     /// <p>Indicates whether input or output was truncated in the response. Always <code>false</code> for API calls. In CloudWatch logs, the value will be true if the data is truncated due to size limits.</p>

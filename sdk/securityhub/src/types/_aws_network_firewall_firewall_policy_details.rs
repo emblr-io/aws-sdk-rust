@@ -2,6 +2,8 @@
 
 /// <p>Details about a firewall policy. A firewall policy defines the behavior of a network firewall.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsNetworkFirewallFirewallPolicyDetails {
     /// <p>The firewall policy configuration.</p>

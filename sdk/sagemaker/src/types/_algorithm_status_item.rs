@@ -2,6 +2,8 @@
 
 /// <p>Represents the overall status of an algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlgorithmStatusItem {
     /// <p>The name of the algorithm for which the overall status is being reported.</p>

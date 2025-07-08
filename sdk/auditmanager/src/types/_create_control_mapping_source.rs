@@ -2,6 +2,8 @@
 
 /// <p>The mapping attributes that determine the evidence source for a given control, along with related parameters and metadata. This doesn't contain <code>mappingID</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateControlMappingSource {
     /// <p>The name of the control mapping data source.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a target that failed to be removed from a rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoveTargetsResultEntry {
     /// <p>The ID of the target.</p>

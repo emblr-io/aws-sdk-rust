@@ -2,6 +2,8 @@
 
 /// <p>The capacity usage summary of the resources used by the <code>ReferenceSets</code> in a firewall.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityUsageSummary {
     /// <p>Describes the capacity usage of the CIDR blocks used by the IP set references in a firewall.</p>

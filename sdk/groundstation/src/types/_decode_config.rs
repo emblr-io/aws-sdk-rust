@@ -2,6 +2,8 @@
 
 /// <p>Information about the decode <code>Config</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecodeConfig {
     /// <p>Unvalidated JSON of a decode <code>Config</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the action to be performed when a rule is triggered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleAction {
     /// <p>The type of action that creates a rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The list of values used to describe a specific command parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandParameterValue {
     /// <p>An attribute of type String. For example:</p>

@@ -2,6 +2,8 @@
 
 /// <p>Attributes are the entries within the inventory item content. It contains name and value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryItemAttribute {
     /// <p>Name of the inventory item attribute.</p>

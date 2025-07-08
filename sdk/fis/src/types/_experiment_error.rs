@@ -2,6 +2,8 @@
 
 /// <p>Describes the error when an experiment has <code>failed</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentError {
     /// <p>The Amazon Web Services Account ID where the experiment failure occurred.</p>

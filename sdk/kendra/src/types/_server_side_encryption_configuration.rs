@@ -2,6 +2,8 @@
 
 /// <p>Provides the identifier of the KMS key used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn't support asymmetric keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServerSideEncryptionConfiguration {
     /// <p>The identifier of the KMS key. Amazon Kendra doesn't support asymmetric keys.</p>

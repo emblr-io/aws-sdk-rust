@@ -2,6 +2,8 @@
 
 /// <p>The configuration that overrides the existing default values for a dataset parameter that is inherited from another dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NewDefaultValues {
     /// <p>A list of static default values for a given string parameter.</p>

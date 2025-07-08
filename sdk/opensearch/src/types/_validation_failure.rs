@@ -2,6 +2,8 @@
 
 /// <p>A validation failure that occurred as the result of a pre-update validation check (verbose dry run) on a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationFailure {
     /// <p>The error code of the failure.</p>

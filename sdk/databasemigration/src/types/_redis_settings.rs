@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines a Redis target endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RedisSettings {
     /// <p>Fully qualified domain name of the endpoint.</p>

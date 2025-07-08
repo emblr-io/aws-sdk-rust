@@ -2,6 +2,8 @@
 
 /// <p>The filter that is used to search for a topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicSearchFilter {
     /// <p>The operator like equals or like.</p>

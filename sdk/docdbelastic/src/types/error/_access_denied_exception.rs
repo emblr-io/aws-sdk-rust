@@ -2,6 +2,8 @@
 
 /// <p>An exception that occurs when there are not sufficient permissions to perform an action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     /// <p>An error message explaining why access was denied.</p>

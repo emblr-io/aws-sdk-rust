@@ -2,6 +2,8 @@
 
 /// <p>Details about an OpenSearch Serverless lifecycle policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyDetail {
     /// <p>The type of lifecycle policy.</p>

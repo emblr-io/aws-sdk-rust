@@ -2,6 +2,8 @@
 
 /// <p>A structure that displays information about one destination that CloudWatch RUM sends extended metrics to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricDestinationSummary {
     /// <p>Specifies whether the destination is <code>CloudWatch</code> or <code>Evidently</code>.</p>

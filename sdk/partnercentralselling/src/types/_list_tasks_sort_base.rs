@@ -2,6 +2,8 @@
 
 /// <p>Defines the sorting parameters for listing tasks. This structure allows for specifying the field to sort by and the order of sorting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTasksSortBase {
     /// <p>Determines the order in which the sorted results are presented.</p>

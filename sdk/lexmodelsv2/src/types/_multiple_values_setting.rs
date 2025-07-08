@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether a slot can return multiple values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultipleValuesSetting {
     /// <p>Indicates whether a slot can return multiple values. When <code>true</code>, the slot may return more than one value in a response. When <code>false</code>, the slot returns only a single value.</p>

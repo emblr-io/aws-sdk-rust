@@ -2,6 +2,8 @@
 
 /// <p>Access hours corresponding to when a destination can be visited.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WaypointOptimizationAccessHours {
     /// <p>Contains the ID of the starting waypoint in this connection.</p>

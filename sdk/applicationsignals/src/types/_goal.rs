@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the attributes that determine the goal of an SLO. This includes the time period for evaluation and the attainment threshold.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Goal {
     /// <p>The time period used to evaluate the SLO. It can be either a calendar interval or rolling interval.</p>

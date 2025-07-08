@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a user pool doesn't have a configured relying party id or a user pool domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebAuthnConfigurationMissingException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about one or more notification actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmNotification {
     /// <p>Contains the notification settings of an alarm model. The settings apply to all alarms that were created based on this alarm model.</p>

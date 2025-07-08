@@ -2,6 +2,8 @@
 
 /// <p>Represents an associated user in the access control system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatedUser {
     /// <p>The unique identifier of the associated user. This is used to identify the user in access control decisions.</p>

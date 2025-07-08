@@ -2,6 +2,8 @@
 
 /// <p>Request to describe a BasePathMapping resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetBasePathMappingInput {
     /// <p>The domain name of the BasePathMapping resource to be described.</p>

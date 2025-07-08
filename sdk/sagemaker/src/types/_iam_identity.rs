@@ -2,6 +2,8 @@
 
 /// <p>The IAM Identity details associated with the user. These details are associated with model package groups, model packages and project entities only.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamIdentity {
     /// <p>The Amazon Resource Name (ARN) of the IAM identity.</p>

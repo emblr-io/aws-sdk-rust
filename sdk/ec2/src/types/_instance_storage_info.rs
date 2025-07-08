@@ -2,6 +2,8 @@
 
 /// <p>Describes the instance store features that are supported by the instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceStorageInfo {
     /// <p>The total size of the disks, in GB.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the schedule for generating inventory results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventorySchedule {
     /// <p>Specifies how frequently inventory results are produced.</p>

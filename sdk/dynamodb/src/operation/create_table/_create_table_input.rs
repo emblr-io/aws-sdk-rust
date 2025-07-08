@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateTable</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTableInput {
     /// <p>An array of attributes that describe the key schema for the table and indexes.</p>

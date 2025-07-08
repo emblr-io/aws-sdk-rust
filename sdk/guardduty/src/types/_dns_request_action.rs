@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the DNS_REQUEST action described in this finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsRequestAction {
     /// <p>The domain information for the DNS query.</p>

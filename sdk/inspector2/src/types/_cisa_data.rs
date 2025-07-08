@@ -2,6 +2,8 @@
 
 /// <p>The Cybersecurity and Infrastructure Security Agency (CISA) details for a specific vulnerability.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CisaData {
     /// <p>The date and time CISA added this vulnerability to their catalogue.</p>

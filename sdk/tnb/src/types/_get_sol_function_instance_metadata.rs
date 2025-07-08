@@ -3,6 +3,8 @@
 /// <p>The metadata of a network function instance.</p>
 /// <p>A network function instance is a function in a function package .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSolFunctionInstanceMetadata {
     /// <p>The date that the resource was created.</p>

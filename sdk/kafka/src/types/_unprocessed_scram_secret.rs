@@ -2,6 +2,8 @@
 
 /// <p>Error info for scram secret associate/disassociate failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnprocessedScramSecret {
     /// <p>Error code for associate/disassociate failure.</p>

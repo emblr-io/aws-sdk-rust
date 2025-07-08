@@ -2,6 +2,8 @@
 
 /// <p>Any number of arrays, where each array is a single flow identified in the scope of the operation. If multiple flows were in the scope of the operation, multiple <code>Flows</code> arrays are returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Flow {
     /// <p>A single IP address specification. This is used in the <code>MatchAttributes</code> source and destination specifications.</p>

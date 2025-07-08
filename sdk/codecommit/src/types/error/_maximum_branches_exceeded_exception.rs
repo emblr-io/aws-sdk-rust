@@ -2,6 +2,8 @@
 
 /// <p>The number of branches for the trigger was exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaximumBranchesExceededException {
     /// <p>Any message associated with the exception.</p>

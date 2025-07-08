@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a resource that is under DDoS protection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Protection {
     /// <p>The unique identifier (ID) of the protection.</p>

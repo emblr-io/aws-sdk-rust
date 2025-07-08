@@ -2,6 +2,8 @@
 
 /// <p>Information about an application. Amazon EMR Serverless uses applications to run jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Application {
     /// <p>The ID of the application.</p>

@@ -3,6 +3,8 @@
 /// <p>Identifies the dependency using the <code>DependencyKeyAttributes</code> and <code>DependencyOperationName</code>.</p>
 /// <p>When creating a service dependency SLO, you must specify the <code>KeyAttributes</code> of the service, and the <code>DependencyConfig</code> for the dependency. You can specify the <code>OperationName</code> of the service, from which it calls the dependency. Alternatively, you can exclude <code>OperationName</code> and the SLO will monitor all of the service's operations that call the dependency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependencyConfig {
     /// <p>This is a string-to-string map. It can include the following fields.</p>

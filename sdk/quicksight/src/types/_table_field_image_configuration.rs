@@ -2,6 +2,8 @@
 
 /// <p>The image configuration of a table field URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableFieldImageConfiguration {
     /// <p>The sizing options for the table image configuration.</p>

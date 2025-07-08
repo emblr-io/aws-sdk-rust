@@ -2,6 +2,8 @@
 
 /// <p>You can't crate any more zero-ETL integrations because the quota has been reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

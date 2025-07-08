@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 bucket name and key where Signer saved your signed code image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3SignedObject {
     /// <p>Name of the S3 bucket.</p>

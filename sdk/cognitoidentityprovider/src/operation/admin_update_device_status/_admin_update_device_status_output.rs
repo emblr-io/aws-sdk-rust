@@ -2,6 +2,8 @@
 
 /// <p>The status response to the request to update the device, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminUpdateDeviceStatusOutput {
     _request_id: Option<String>,

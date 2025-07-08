@@ -4,6 +4,8 @@
 /// <p>Additionally, because you must have at least one parse-type processor in a transformer, you can use <code>ParseJSON</code> as that processor for JSON-format logs, so that you can also apply other processors, such as mutate processors, to these logs.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-parseJSON"> parseJSON</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParseJson {
     /// <p>Path to the field in the log event that will be parsed. Use dot notation to access child fields. For example, <code>store.book</code></p>

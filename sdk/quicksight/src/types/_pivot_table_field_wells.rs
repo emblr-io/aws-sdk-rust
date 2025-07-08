@@ -3,6 +3,8 @@
 /// <p>The field wells for a pivot table visual.</p>
 /// <p>This is a union type structure. For this structure to be valid, only one of the attributes can be defined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableFieldWells {
     /// <p>The aggregated field well for the pivot table.</p>

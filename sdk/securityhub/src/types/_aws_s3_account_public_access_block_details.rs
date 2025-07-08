@@ -2,6 +2,8 @@
 
 /// <p>provides information about the Amazon S3 Public Access Block configuration for accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3AccountPublicAccessBlockDetails {
     /// <p>Indicates whether to reject calls to update an S3 bucket if the calls include a public access control list (ACL).</p>

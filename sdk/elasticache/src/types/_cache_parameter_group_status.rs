@@ -2,6 +2,8 @@
 
 /// <p>Status of the cache parameter group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheParameterGroupStatus {
     /// <p>The name of the cache parameter group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The authorization configuration in case the HTTP endpoint requires authorization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationConfig {
     /// <p>The authorization type that the HTTP endpoint requires.</p>

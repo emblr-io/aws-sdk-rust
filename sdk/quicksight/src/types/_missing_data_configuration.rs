@@ -2,6 +2,8 @@
 
 /// <p>The configuration options that determine how missing data is treated during the rendering of a line chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissingDataConfiguration {
     /// <p>The treatment option that determines how missing data should be rendered. Choose from the following options:</p>

@@ -2,6 +2,8 @@
 
 /// <p>The settings for post-stream analytics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribePostStreamAnalyticsSettings {
     /// <p>Specify settings for the post-stream clinical note generation.</p>

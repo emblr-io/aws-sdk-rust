@@ -2,6 +2,8 @@
 
 /// <p>Describes a rule associated with a transit gateway policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayPolicyRule {
     /// <p>The source CIDR block for the transit gateway policy rule.</p>

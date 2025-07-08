@@ -2,6 +2,8 @@
 
 /// <p>The configuration of loading animation in free-form layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadingAnimation {
     /// <p>The visibility configuration of <code>LoadingAnimation</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the content and settings for an SMS message that's sent to recipients of a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignSmsMessage {
     /// <p>The body of the SMS message.</p>

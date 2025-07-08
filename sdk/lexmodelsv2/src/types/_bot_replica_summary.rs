@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about all the replication statuses applicable for global resiliency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotReplicaSummary {
     /// <p>The replica region used in the replication statuses summary.</p>

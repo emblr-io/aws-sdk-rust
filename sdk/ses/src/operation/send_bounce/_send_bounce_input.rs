@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to send a bounce message to the sender of an email you received through Amazon SES.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendBounceInput {
     /// <p>The message ID of the message to be bounced.</p>

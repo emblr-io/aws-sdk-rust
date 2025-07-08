@@ -2,6 +2,8 @@
 
 /// <p>Describes the result of a data quality rule recommendation run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityRuleRecommendationRunDescription {
     /// <p>The unique run identifier associated with this run.</p>

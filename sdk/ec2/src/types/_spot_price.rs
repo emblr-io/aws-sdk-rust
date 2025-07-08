@@ -4,6 +4,8 @@
 /// <p>If you specify a maximum price, your instances will be interrupted more frequently than if you do not specify this parameter.</p>
 /// </important>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotPrice {
     /// <p>The Availability Zone.</p>

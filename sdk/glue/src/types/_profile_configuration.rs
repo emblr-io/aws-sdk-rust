@@ -2,6 +2,8 @@
 
 /// <p>Specifies the job and session values that an admin configures in an Glue usage profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileConfiguration {
     /// <p>A key-value map of configuration parameters for Glue sessions.</p>

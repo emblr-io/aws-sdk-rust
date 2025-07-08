@@ -2,6 +2,8 @@
 
 /// <p>The information about a grouping or ungrouping resource action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupingStatusesItem {
     /// <p>The Amazon resource name (ARN) of a resource.</p>

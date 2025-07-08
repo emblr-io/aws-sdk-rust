@@ -2,6 +2,8 @@
 
 /// <p>The name, value, and date and time of a metric that was emitted to Amazon CloudWatch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricData {
     /// <p>The name of the metric.</p>

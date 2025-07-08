@@ -2,6 +2,8 @@
 
 /// <p>Description of ephemeris.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EphemerisDescription {
     /// <p>Source S3 object used for the ephemeris.</p>

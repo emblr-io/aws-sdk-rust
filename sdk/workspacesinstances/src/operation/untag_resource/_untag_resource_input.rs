@@ -2,6 +2,8 @@
 
 /// <p>Specifies tags to remove from a WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UntagResourceInput {
     /// <p>Unique identifier of the WorkSpace Instance to untag.</p>

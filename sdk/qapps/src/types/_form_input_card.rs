@@ -2,6 +2,8 @@
 
 /// <p>A card in an Amazon Q App that allows the user to submit a response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormInputCard {
     /// <p>The unique identifier of the form input card.</p>

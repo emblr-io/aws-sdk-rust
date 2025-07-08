@@ -2,6 +2,8 @@
 
 /// <p>A streaming distribution list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingDistributionList {
     /// <p>The value you provided for the <code>Marker</code> request parameter.</p>

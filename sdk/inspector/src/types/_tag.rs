@@ -2,6 +2,8 @@
 
 /// <p>A key and value pair. This data type is used as a request parameter in the <code>SetTagsForResource</code> action and a response element in the <code>ListTagsForResource</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>A tag key.</p>

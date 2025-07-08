@@ -2,6 +2,8 @@
 
 /// <p>Specifies the audio input specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioSpecification {
     /// <p>Time for how long Amazon Lex waits before speech input is truncated and the speech is returned to application.</p>

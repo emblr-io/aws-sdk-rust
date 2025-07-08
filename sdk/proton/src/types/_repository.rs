@@ -2,6 +2,8 @@
 
 /// <p>Detailed data of a linked repository—a repository that has been registered with Proton.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Repository {
     /// <p>The Amazon Resource Name (ARN) of the linked repository.</p>

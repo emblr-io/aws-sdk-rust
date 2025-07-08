@@ -2,6 +2,8 @@
 
 /// <p>The color to be used in the heatmap point style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialHeatmapDataColor {
     /// <p>The hex color to be used in the heatmap point style.</p>

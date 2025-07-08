@@ -2,6 +2,8 @@
 
 /// <p>The amount of utilization, in hours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtilizationByTime {
     /// <p>The period of time that this utilization was used for.</p>

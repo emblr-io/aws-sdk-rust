@@ -2,6 +2,8 @@
 
 /// <p>The SQL query run details of a data lineage run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LineageSqlQueryRunDetails {
     /// <p>The query start time in the SQL query run details of a data lineage run.</p>

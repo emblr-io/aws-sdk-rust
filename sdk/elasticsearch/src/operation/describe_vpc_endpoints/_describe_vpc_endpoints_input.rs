@@ -2,6 +2,8 @@
 
 /// <p>Container for request parameters to the <code><code>DescribeVpcEndpoints</code></code> operation. Specifies the list of VPC endpoints to be described.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeVpcEndpointsInput {
     /// <p>The unique identifiers of the endpoints to get information about.</p>

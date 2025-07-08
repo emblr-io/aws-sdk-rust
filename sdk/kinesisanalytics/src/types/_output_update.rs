@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to the output configuration identified by the <code>OutputId</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputUpdate {
     /// <p>Identifies the specific output configuration that you want to update.</p>

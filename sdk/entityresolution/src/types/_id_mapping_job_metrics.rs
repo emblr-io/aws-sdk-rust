@@ -2,6 +2,8 @@
 
 /// <p>An object that contains metrics about an ID mapping job, including counts of input records, processed records, and mapped records between source and target identifiers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingJobMetrics {
     /// <p>The total number of records that were input for processing.</p>

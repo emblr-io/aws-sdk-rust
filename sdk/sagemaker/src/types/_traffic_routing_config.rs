@@ -2,6 +2,8 @@
 
 /// <p>Defines the traffic routing strategy during an endpoint deployment to shift traffic from the old fleet to the new fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficRoutingConfig {
     /// <p>Traffic routing strategy type.</p>

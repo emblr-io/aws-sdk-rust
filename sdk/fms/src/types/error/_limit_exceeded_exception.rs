@@ -2,6 +2,8 @@
 
 /// <p>The operation exceeds a resource limit, for example, the maximum number of <code>policy</code> objects that you can create for an Amazon Web Services account. For more information, see <a href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-limits.html">Firewall Manager Limits</a> in the <i>WAF Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

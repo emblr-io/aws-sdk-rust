@@ -2,6 +2,8 @@
 
 /// <p>Specifies a grok classifier to update when passed to <code>UpdateClassifier</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateGrokClassifierRequest {
     /// <p>The name of the <code>GrokClassifier</code>.</p>

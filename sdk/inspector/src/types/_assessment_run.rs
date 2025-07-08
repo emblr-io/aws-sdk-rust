@@ -3,6 +3,8 @@
 /// <p>A snapshot of an Amazon Inspector assessment run that contains the findings of the assessment run .</p>
 /// <p>Used as the response element in the <code>DescribeAssessmentRuns</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentRun {
     /// <p>The ARN of the assessment run.</p>

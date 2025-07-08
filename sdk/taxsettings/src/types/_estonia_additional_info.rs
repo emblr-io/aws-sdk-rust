@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in Estonia.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EstoniaAdditionalInfo {
     /// <p>Registry commercial code (RCC) for your TRN in Estonia. This value is an eight-numeric string, such as <code>12345678</code>.</p>

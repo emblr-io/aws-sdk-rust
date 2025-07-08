@@ -2,6 +2,8 @@
 
 /// <p>Request for which contact failed to be generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedRequest {
     /// <p>Request identifier provided in the API call in the ContactDataRequest to create a contact.</p>

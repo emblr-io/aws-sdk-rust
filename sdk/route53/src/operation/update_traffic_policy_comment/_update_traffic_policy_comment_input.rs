@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the traffic policy that you want to update the comment for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateTrafficPolicyCommentInput {
     /// <p>The value of <code>Id</code> for the traffic policy that you want to update the comment for.</p>

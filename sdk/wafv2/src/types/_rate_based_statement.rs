@@ -52,6 +52,8 @@
 /// <p>If you only aggregate on the individual IP address or forwarded IP address, you can retrieve the list of IP addresses that WAF is currently rate limiting for a rule through the API call <code>GetRateBasedStatementManagedKeys</code>. This option is not available for other aggregation configurations.</p>
 /// <p>WAF tracks and manages web requests separately for each instance of a rate-based rule that you use. For example, if you provide the same rate-based rule settings in two web ACLs, each of the two rule statements represents a separate instance of the rate-based rule and gets its own tracking and management by WAF. If you define a rate-based rule inside a rule group, and then use that rule group in multiple places, each use creates a separate instance of the rate-based rule that gets its own tracking and management by WAF.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RateBasedStatement {
     /// <p>The limit on requests during the specified evaluation window for a single aggregation instance for the rate-based rule. If the rate-based statement includes a <code>ScopeDownStatement</code>, this limit is applied only to the requests that match the statement.</p>

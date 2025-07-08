@@ -2,6 +2,8 @@
 
 /// <p>A union type containing information related to the trigger.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RecommendationTriggerData {
     /// <p>Data associated with the QUERY RecommendationTriggerType.</p>

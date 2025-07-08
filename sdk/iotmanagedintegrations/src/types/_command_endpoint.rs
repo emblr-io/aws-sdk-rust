@@ -2,6 +2,8 @@
 
 /// <p>The endpoint for a managed thing when sending a command.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandEndpoint {
     /// <p>The id of the endpoint for a managed thing.</p>

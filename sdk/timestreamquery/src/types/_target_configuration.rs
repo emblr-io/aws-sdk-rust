@@ -2,6 +2,8 @@
 
 /// <p>Configuration used for writing the output of a query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetConfiguration {
     /// <p>Configuration needed to write data into the Timestream database and table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using a customer managed key stored in Amazon Web Services Key Management Service (SSE-KMS).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceSelectionCriteria {
     /// <p>A container for filter information for the selection of Amazon S3 objects encrypted with Amazon Web Services KMS. If you include <code>SourceSelectionCriteria</code> in the replication configuration, this element is required.</p>

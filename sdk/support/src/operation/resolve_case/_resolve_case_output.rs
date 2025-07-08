@@ -2,6 +2,8 @@
 
 /// <p>The status of the case returned by the <code>ResolveCase</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResolveCaseOutput {
     /// <p>The status of the case when the <code>ResolveCase</code> request was sent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Resource Groups settings for this Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountSettings {
     /// <p>The desired target status of the group lifecycle events feature. If</p>

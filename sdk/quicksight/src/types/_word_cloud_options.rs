@@ -2,6 +2,8 @@
 
 /// <p>The word cloud options for a word cloud visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WordCloudOptions {
     /// <p>The word orientation options (horizontal, horizontal_and_vertical) for the words in a word cloud.</p>

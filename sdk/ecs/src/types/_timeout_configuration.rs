@@ -4,6 +4,8 @@
 /// <p>If <code>idleTimeout</code> is set to a time that is less than <code>perRequestTimeout</code>, the connection will close when the <code>idleTimeout</code> is reached and not the <code>perRequestTimeout</code>.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeoutConfiguration {
     /// <p>The amount of time in seconds a connection will stay active while idle. A value of <code>0</code> can be set to disable <code>idleTimeout</code>.</p>

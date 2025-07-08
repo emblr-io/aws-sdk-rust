@@ -2,6 +2,8 @@
 
 /// Details about the pricing plan for your reserved queue. Required for reserved queues and not applicable to on-demand queues.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservationPlan {
     /// The length of the term of your reserved queue pricing plan commitment.

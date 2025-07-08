@@ -2,6 +2,8 @@
 
 /// <p>Features that are allowed while calculating an isoline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IsolineAllowOptions {
     /// <p>Allow Hot (High Occupancy Toll) lanes while calculating an isoline.</p>

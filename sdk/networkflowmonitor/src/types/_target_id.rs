@@ -2,6 +2,8 @@
 
 /// <p>A target ID is an internally-generated identifier for a target. A target allows you to identify all the resources in a Network Flow Monitor scope. Currently, a target is always an Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TargetId {
     /// <p>The identifier for the account for a target.</p>

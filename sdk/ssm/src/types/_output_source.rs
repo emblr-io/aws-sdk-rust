@@ -2,6 +2,8 @@
 
 /// <p>Information about the source where the association execution details are stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputSource {
     /// <p>The ID of the output source, for example the URL of an S3 bucket.</p>

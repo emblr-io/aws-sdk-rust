@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a Greengrass core device, which is an IoT thing that runs the IoT Greengrass Core software.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoreDevice {
     /// <p>The name of the core device. This is also the name of the IoT thing.</p>

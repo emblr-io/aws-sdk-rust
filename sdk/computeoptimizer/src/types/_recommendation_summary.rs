@@ -2,6 +2,8 @@
 
 /// <p>A summary of a recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationSummary {
     /// <p>An array of objects that describe a recommendation summary.</p>

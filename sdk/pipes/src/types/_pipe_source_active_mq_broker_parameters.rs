@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using an Active MQ broker as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PipeSourceActiveMqBrokerParameters {
     /// <p>The credentials needed to access the resource.</p>

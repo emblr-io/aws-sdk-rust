@@ -2,6 +2,8 @@
 
 /// <p>Returns information about an execution of an action, including the action execution ID, and the name, version, and timing of the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecutionDetail {
     /// <p>The pipeline execution ID for the action execution.</p>

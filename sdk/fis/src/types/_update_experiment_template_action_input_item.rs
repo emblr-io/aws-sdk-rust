@@ -2,6 +2,8 @@
 
 /// <p>Specifies an action for an experiment template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateExperimentTemplateActionInputItem {
     /// <p>The ID of the action.</p>

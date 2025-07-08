@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration for organizing and categorizing Amazon Web Services resources based on associated security findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceGroupByRule {
     /// <p>Specifies the attribute that resources should be grouped by.</p>

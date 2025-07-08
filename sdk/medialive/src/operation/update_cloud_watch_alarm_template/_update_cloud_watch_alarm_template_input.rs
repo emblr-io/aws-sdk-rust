@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for UpdateCloudWatchAlarmTemplateRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateCloudWatchAlarmTemplateInput {
     /// The comparison operator used to compare the specified statistic and the threshold.

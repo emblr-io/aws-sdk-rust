@@ -2,6 +2,8 @@
 
 /// <p>Lists the Amazon Web Services Private CA SCEP connectors belonging to your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorSummary {
     /// <p>The Amazon Resource Name (ARN) of the connector.</p>

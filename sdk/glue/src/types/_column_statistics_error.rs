@@ -2,6 +2,8 @@
 
 /// <p>Encapsulates a <code>ColumnStatistics</code> object that failed and the reason for failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnStatisticsError {
     /// <p>The <code>ColumnStatistics</code> of the column.</p>

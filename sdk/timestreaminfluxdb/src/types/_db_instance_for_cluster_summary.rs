@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of a DB instance belonging to a DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstanceForClusterSummary {
     /// <p>The service-generated unique identifier of the DB instance.</p>

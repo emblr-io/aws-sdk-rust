@@ -2,6 +2,8 @@
 
 /// <p>Describes the read, write, and delete permissions users have against your storage S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackendStoragePermissions {
     /// <p>Lists all authenticated user read, write, and delete permissions for your S3 bucket.</p>

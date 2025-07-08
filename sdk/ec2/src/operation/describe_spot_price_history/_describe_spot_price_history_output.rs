@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeSpotPriceHistory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSpotPriceHistoryOutput {
     /// <p>The token to include in another request to get the next page of items. This value is an empty string (<code>""</code>) or <code>null</code> when there are no more items to return.</p>

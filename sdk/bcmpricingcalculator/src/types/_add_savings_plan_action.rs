@@ -2,6 +2,8 @@
 
 /// <p>Represents an action to add a Savings Plan to a bill scenario.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddSavingsPlanAction {
     /// <p>The ID of the Savings Plan offering to add. For more information, see <a href="https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferings.html"> DescribeSavingsPlansOfferings</a>.</p>

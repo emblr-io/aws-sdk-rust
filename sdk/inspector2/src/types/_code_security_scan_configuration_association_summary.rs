@@ -2,6 +2,8 @@
 
 /// <p>A summary of an association between a code repository and a scan configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeSecurityScanConfigurationAssociationSummary {
     /// <p>Identifies a specific resource in a code repository that will be scanned.</p>

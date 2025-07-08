@@ -2,6 +2,8 @@
 
 /// <p>Represents a target that failed to be added to a rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutTargetsResultEntry {
     /// <p>The ID of the target.</p>

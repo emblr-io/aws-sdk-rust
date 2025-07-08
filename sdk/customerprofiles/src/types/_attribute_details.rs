@@ -2,6 +2,8 @@
 
 /// <p>Mathematical expression and a list of attribute items specified in that expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AttributeDetails {
     /// <p>A list of attribute items specified in the mathematical expression.</p>

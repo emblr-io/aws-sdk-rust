@@ -2,6 +2,8 @@
 
 /// <p>The mapping between a patch group and the patch baseline the patch group is registered with.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PatchGroupPatchBaselineMapping {
     /// <p>The name of the patch group registered with the patch baseline.</p>

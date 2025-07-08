@@ -2,6 +2,8 @@
 
 /// <p>The override parameters for a single VPC connection that is imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobVpcConnectionOverrideParameters {
     /// <p>The ID of the VPC Connection to apply overrides to.</p>

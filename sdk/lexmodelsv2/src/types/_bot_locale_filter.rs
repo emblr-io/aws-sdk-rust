@@ -2,6 +2,8 @@
 
 /// <p>Filters responses returned by the <code>ListBotLocales</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotLocaleFilter {
     /// <p>The name of the field to filter the list of bots.</p>

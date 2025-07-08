@@ -2,6 +2,8 @@
 
 /// <p>Describes the recommendation preferences to return in the response of a <code>GetAutoScalingGroupRecommendations</code>, <code>GetEC2InstanceRecommendations</code>, <code>GetEC2RecommendationProjectedMetrics</code>, <code>GetRDSDatabaseRecommendations</code>, and <code>GetRDSDatabaseRecommendationProjectedMetrics</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationPreferences {
     /// <p>Specifies the CPU vendor and architecture for Amazon EC2 instance and Auto Scaling group recommendations.</p>

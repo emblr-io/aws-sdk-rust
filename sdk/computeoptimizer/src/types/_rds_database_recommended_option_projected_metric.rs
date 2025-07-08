@@ -3,6 +3,8 @@
 /// <p>Describes the projected metrics of an Amazon Aurora and RDS database recommendation option.</p>
 /// <p>To determine the performance difference between your current Amazon Aurora and RDS database and the recommended option, compare the metric data of your service against its projected metric data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsDatabaseRecommendedOptionProjectedMetric {
     /// <p>The recommended DB instance class for the Amazon Aurora or RDS database.</p>

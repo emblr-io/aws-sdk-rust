@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about a quick connect.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuickConnectSummary {
     /// <p>The identifier for the quick connect.</p>

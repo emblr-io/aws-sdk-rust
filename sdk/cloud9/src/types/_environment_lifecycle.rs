@@ -2,6 +2,8 @@
 
 /// <p>Information about the current creation or deletion lifecycle state of an Cloud9 development environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentLifecycle {
     /// <p>The current creation or deletion lifecycle state of the environment.</p>

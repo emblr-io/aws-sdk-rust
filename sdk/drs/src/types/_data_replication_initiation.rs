@@ -2,6 +2,8 @@
 
 /// <p>Data replication initiation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataReplicationInitiation {
     /// <p>The date and time of the current attempt to initiate data replication.</p>

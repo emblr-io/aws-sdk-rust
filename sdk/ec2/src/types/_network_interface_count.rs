@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum number of network interfaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInterfaceCount {
     /// <p>The minimum number of network interfaces. If this parameter is not specified, there is no minimum limit.</p>

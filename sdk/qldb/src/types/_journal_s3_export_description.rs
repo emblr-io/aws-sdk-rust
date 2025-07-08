@@ -2,6 +2,8 @@
 
 /// <p>Information about a journal export job, including the ledger name, export ID, creation time, current status, and the parameters of the original export creation request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JournalS3ExportDescription {
     /// <p>The name of the ledger.</p>

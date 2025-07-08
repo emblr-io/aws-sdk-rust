@@ -2,6 +2,8 @@
 
 /// <p>Represents the <code>key:value</code> pair to be matched against given resource property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanConditionPair {
     /// <p>Represents the <b>key</b> in the map condition.</p>

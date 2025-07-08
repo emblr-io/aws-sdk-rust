@@ -2,6 +2,8 @@
 
 /// <p>The filter that specifies criteria that the pricing rules returned by the <code>ListPricingRules</code> API will adhere to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListPricingRulesFilter {
     /// <p>A list containing the pricing rule Amazon Resource Names (ARNs) to include in the API response.</p>

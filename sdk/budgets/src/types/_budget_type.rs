@@ -46,6 +46,8 @@
 /// <code>RI_COVERAGE</code>, <code>SAVINGS_PLANS_UTILIZATION</code>, or
 /// <code>SAVINGS_PLANS_COVERAGE</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

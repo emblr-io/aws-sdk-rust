@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to OneDrive as your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OneDriveConfiguration {
     /// <p>The Azure Active Directory domain of the organization.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A playlist of media (VOD and/or live) to be played instead of the default media on a particular program.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlternateMedia {
     /// <p>The name of the source location for alternateMedia.</p>

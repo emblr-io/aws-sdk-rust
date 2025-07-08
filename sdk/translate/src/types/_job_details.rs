@@ -2,6 +2,8 @@
 
 /// <p>The number of documents successfully and unsuccessfully processed during a translation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobDetails {
     /// <p>The number of documents successfully processed during a translation job.</p>

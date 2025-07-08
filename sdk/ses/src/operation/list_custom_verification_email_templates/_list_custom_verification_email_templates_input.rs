@@ -3,6 +3,8 @@
 /// <p>Represents a request to list the existing custom verification email templates for your account.</p>
 /// <p>For more information about custom verification email templates, see <a href="https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html#send-email-verify-address-custom">Using Custom Verification Email Templates</a> in the <i>Amazon SES Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCustomVerificationEmailTemplatesInput {
     /// <p>An array the contains the name and creation time stamp for each template in your Amazon SES account.</p>

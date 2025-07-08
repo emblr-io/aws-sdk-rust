@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the output of an action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputArtifact {
     /// <p>The name of the output of an artifact, such as "My App".</p>

@@ -2,6 +2,8 @@
 
 /// <p>Cost impact of the purchase recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SavingsPlansCostCalculation {
     /// <p>Pricing details of the purchase recommendation.</p>

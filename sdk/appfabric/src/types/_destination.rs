@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an audit log destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Destination {
     /// <p>Contains information about an Amazon Kinesis Data Firehose delivery stream.</p>

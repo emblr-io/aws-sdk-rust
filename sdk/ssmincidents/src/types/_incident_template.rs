@@ -2,6 +2,8 @@
 
 /// <p>Basic details used in creating a response plan. The response plan is then used to create an incident record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncidentTemplate {
     /// <p>The title of the incident.</p>

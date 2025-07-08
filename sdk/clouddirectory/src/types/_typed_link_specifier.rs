@@ -2,6 +2,8 @@
 
 /// <p>Contains all the information that is used to uniquely identify a typed link. The parameters discussed in this topic are used to uniquely specify the typed link being operated on. The <code>AttachTypedLink</code> API returns a typed link specifier while the <code>DetachTypedLink</code> API accepts one as input. Similarly, the <code>ListIncomingTypedLinks</code> and <code>ListOutgoingTypedLinks</code> API operations provide typed link specifiers as output. You can also construct a typed link specifier from scratch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypedLinkSpecifier {
     /// <p>Identifies the typed link facet that is associated with the typed link.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information required for human workers to complete a labeling task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HumanTaskConfig {
     /// <p>The Amazon Resource Name (ARN) of the work team assigned to complete the tasks.</p>

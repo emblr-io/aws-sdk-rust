@@ -2,6 +2,8 @@
 
 /// <p>The new password provided by the user does not meet the password complexity requirements defined in your directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPasswordException {
     /// <p>The descriptive message for the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an S3 recording <code>Config</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3RecordingConfig {
     /// <p>ARN of the bucket to record to.</p>

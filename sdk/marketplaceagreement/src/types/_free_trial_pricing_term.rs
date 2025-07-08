@@ -2,6 +2,8 @@
 
 /// <p>Defines a short-term free pricing model where the buyers aren’t charged anything within a specified limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FreeTrialPricingTerm {
     /// <p>Category of the term.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The combination of an attribute key and an attribute value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeKeyAndValue {
     /// <p>The key of the attribute.</p>

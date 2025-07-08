@@ -2,6 +2,8 @@
 
 /// <p>Displays the Personal Access Token status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PersonalAccessTokenConfiguration {
     /// <p>The status of the Personal Access Token allowed for the organization.</p>

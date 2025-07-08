@@ -3,6 +3,8 @@
 /// <p>Information about an HTTP header condition.</p>
 /// <p>There is a set of standard HTTP header fields. You can also define custom HTTP header fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpHeaderConditionConfig {
     /// <p>The name of the HTTP header field. The maximum size is 40 characters. The header name is case insensitive. The allowed characters are specified by RFC 7230. Wildcards are not supported.</p>

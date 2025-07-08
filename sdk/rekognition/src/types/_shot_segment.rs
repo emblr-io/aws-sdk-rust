@@ -2,6 +2,8 @@
 
 /// <p>Information about a shot detection segment detected in a video. For more information, see <code>SegmentDetection</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShotSegment {
     /// <p>An Identifier for a shot detection segment detected in a video.</p>

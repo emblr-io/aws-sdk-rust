@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server from the request to get information about the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GetUserOutput {
     /// <p>The name of the user that you requested.</p>

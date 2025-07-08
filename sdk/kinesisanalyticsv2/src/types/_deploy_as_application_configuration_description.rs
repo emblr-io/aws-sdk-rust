@@ -2,6 +2,8 @@
 
 /// <p>The configuration information required to deploy an Amazon Data Analytics Studio notebook as an application with durable state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeployAsApplicationConfigurationDescription {
     /// <p>The location that holds the data required to specify an Amazon Data Analytics application.</p>

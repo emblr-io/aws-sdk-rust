@@ -2,6 +2,8 @@
 
 /// <p>Information about a reviewer's response to a document review request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentReviewerResponseSource {
     /// <p>The date and time that a reviewer entered a response to a document review request.</p>

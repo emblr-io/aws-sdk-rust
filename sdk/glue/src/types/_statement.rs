@@ -2,6 +2,8 @@
 
 /// <p>The statement or request for a particular action to occur in a session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Statement {
     /// <p>The ID of the statement.</p>

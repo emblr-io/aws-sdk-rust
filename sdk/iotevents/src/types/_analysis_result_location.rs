@@ -2,6 +2,8 @@
 
 /// <p>Contains information that you can use to locate the field in your detector model that the analysis result references.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisResultLocation {
     /// <p>A <a href="https://github.com/json-path/JsonPath">JsonPath</a> expression that identifies the error field in your detector model.</p>

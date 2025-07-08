@@ -2,6 +2,8 @@
 
 /// <p>The connector metadata specific to Snowflake.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnowflakeMetadata {
     /// <p>Specifies the supported Amazon Web Services Regions when using Snowflake.</p>

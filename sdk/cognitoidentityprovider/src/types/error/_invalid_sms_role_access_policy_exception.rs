@@ -2,6 +2,8 @@
 
 /// <p>This exception is returned when the role provided for SMS configuration doesn't have permission to publish using Amazon SNS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidSmsRoleAccessPolicyException {
     /// <p>The message returned when the invalid SMS role access policy exception is thrown.</p>

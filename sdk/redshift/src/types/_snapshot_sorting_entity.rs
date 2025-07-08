@@ -2,6 +2,8 @@
 
 /// <p>Describes a sorting entity</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotSortingEntity {
     /// <p>The category for sorting the snapshots.</p>

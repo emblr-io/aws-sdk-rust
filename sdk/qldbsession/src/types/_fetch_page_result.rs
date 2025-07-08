@@ -2,6 +2,8 @@
 
 /// <p>Contains the page that was fetched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FetchPageResult {
     /// <p>Contains details of the fetched page.</p>

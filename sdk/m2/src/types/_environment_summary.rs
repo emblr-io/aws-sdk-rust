@@ -2,6 +2,8 @@
 
 /// <p>Contains a subset of the possible runtime environment attributes. Used in the environment list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentSummary {
     /// <p>The name of the runtime environment.</p>

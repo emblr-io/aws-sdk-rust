@@ -2,6 +2,8 @@
 
 /// <p>Contains the VPC configuration data necessary to interface with AWS Device Farm's services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConfig {
     /// <p>An array of one or more security groups IDs in your Amazon VPC.</p>

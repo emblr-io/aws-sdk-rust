@@ -2,6 +2,8 @@
 
 /// <p>Describes a block device for an EBS volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateEbsBlockDevice {
     /// <p>Indicates whether the EBS volume is encrypted.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The data that is input into Amazon Q in Connect as a result of the assistant association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AssistantAssociationInputData {
     /// <p>The identifier of the knowledge base. This should not be a QUICK_RESPONSES type knowledge base.</p>

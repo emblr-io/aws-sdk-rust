@@ -2,6 +2,8 @@
 
 /// <p>Information about a replica of a DynamoDB table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableReplica {
     /// <p>List of global secondary indexes for the replica.</p>

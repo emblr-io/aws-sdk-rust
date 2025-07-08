@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of the register on-premises instance operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisterOnPremisesInstanceInput {
     /// <p>The name of the on-premises instance to register.</p>

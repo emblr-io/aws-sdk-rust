@@ -2,6 +2,8 @@
 
 /// Details about the media file's data track.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProperties {
     /// The language code of the data track, in three character ISO 639-3 format.

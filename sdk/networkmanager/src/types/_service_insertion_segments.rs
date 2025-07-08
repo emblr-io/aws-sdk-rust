@@ -2,6 +2,8 @@
 
 /// <p>Describes the segments associated with the service insertion action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceInsertionSegments {
     /// <p>The list of segments associated with the <code>send-via</code> action.</p>

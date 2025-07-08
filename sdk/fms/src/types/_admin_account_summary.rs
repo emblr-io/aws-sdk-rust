@@ -2,6 +2,8 @@
 
 /// <p>Contains high level information about the Firewall Manager administrator account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminAccountSummary {
     /// <p>The Amazon Web Services account ID of the Firewall Manager administrator's account.</p>

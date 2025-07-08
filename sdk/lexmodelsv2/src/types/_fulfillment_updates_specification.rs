@@ -2,6 +2,8 @@
 
 /// <p>Provides information for updating the user on the progress of fulfilling an intent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FulfillmentUpdatesSpecification {
     /// <p>Determines whether fulfillment updates are sent to the user. When this field is true, updates are sent.</p>

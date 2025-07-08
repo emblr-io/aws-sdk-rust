@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Autonomous System (AS) associated with the network endpoints involved in an attack sequence.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutonomousSystem {
     /// <p>Name associated with the Autonomous System (AS).</p>

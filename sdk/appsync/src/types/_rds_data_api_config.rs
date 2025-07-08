@@ -2,6 +2,8 @@
 
 /// <p>Contains the metadata required to introspect the RDS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsDataApiConfig {
     /// <p>The resource ARN of the RDS cluster.</p>

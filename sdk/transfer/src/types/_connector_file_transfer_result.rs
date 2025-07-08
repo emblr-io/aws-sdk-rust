@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the details for files transferred using an SFTP connector, during a single transfer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorFileTransferResult {
     /// <p>The filename and path to where the file was sent to or retrieved from.</p>

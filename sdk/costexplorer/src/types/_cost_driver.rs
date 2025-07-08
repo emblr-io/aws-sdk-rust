@@ -2,6 +2,8 @@
 
 /// <p>Represents factors that contribute to cost variations between the baseline and comparison time periods, including the type of driver, an identifier of the driver, and associated metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostDriver {
     /// <p>The category or classification of the cost driver.</p>

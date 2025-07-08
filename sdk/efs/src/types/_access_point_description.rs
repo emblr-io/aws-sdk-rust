@@ -2,6 +2,8 @@
 
 /// <p>Provides a description of an EFS file system access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessPointDescription {
     /// <p>The opaque string specified in the request to ensure idempotent creation.</p>

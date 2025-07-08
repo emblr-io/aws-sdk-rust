@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Timestream for LiveAnalytics table as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeTargetTimestreamParameters {
     /// <p>Dynamic path to the source data field that represents the time value for your data.</p>

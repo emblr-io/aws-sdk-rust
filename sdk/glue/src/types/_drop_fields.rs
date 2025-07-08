@@ -2,6 +2,8 @@
 
 /// <p>Specifies a transform that chooses the data property keys that you want to drop.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DropFields {
     /// <p>The name of the transform node.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server to the request to get the header information of the CSV file for the user import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetCsvHeaderOutput {
     /// <p>The ID of the requested user pool.</p>

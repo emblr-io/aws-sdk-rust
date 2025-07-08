@@ -2,6 +2,8 @@
 
 /// <p>A list of requests that can perform update, put, delete, or check operations on multiple items in one or more tables atomically.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransactWriteItem {
     /// <p>A request to perform a check item operation.</p>

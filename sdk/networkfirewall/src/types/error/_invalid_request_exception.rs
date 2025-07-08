@@ -10,6 +10,8 @@
 /// <p>Your request references an ARN that is malformed, or corresponds to a resource that isn't valid in the context of the request.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRequestException {
     #[allow(missing_docs)] // documentation missing in model

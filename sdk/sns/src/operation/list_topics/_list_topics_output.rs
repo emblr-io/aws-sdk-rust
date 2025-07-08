@@ -2,6 +2,8 @@
 
 /// <p>Response for ListTopics action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTopicsOutput {
     /// <p>A list of topic ARNs.</p>

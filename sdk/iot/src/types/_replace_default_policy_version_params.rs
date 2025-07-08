@@ -2,6 +2,8 @@
 
 /// <p>Parameters to define a mitigation action that adds a blank policy to restrict permissions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplaceDefaultPolicyVersionParams {
     /// <p>The name of the template to be applied. The only supported value is <code>BLANK_POLICY</code>.</p>

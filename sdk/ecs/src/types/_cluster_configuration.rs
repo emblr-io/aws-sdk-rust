@@ -2,6 +2,8 @@
 
 /// <p>The execute command and managed storage configuration for the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterConfiguration {
     /// <p>The details of the execute command configuration.</p>

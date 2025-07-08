@@ -2,6 +2,8 @@
 
 /// <p>Information about the hours of operations with the effective override applied.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EffectiveHoursOfOperations {
     /// <p>The date that the hours of operation or overrides applies to.</p>

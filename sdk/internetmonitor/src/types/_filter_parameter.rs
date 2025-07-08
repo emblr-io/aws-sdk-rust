@@ -5,6 +5,8 @@
 /// <p>For each filter, you specify a field (such as <code>city</code>), an operator (such as <code>not_equals</code>, and a value or array of values (such as <code>\["Seattle", "Redmond"\]</code>). Separate values in the array with commas.</p>
 /// <p>For more information about specifying filter parameters, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-IM-view-cw-tools-cwim-query.html">Using the Amazon CloudWatch Internet Monitor query interface</a> in the Amazon CloudWatch Internet Monitor User Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterParameter {
     /// <p>A data field that you want to filter, to further scope your application's Internet Monitor data in a repository that you created by running a query. A field might be <code>city</code>, for example. The field must be one of the fields that was returned by the specific query that you used to create the repository.</p>

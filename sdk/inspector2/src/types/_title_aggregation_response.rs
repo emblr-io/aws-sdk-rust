@@ -2,6 +2,8 @@
 
 /// <p>A response that contains details on the results of a finding aggregation by title.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TitleAggregationResponse {
     /// <p>The title that the findings were aggregated on.</p>

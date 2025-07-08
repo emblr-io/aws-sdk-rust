@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration settings for individual NDI discovery servers. A maximum of 3 servers is allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NdiDiscoveryServerConfig {
     /// <p>The unique network address of the NDI discovery server.</p>

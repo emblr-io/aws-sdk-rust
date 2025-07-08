@@ -2,6 +2,8 @@
 
 /// <p>The output of the bridge. A network output is delivered to your premises.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BridgeNetworkOutput {
     /// <p>The network output IP address.</p>

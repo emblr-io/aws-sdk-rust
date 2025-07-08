@@ -3,6 +3,8 @@
 /// <p>If the email identity is a domain, this object contains information about the DKIM verification status for the domain.</p>
 /// <p>If the email identity is an email address, this object is empty.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateEmailIdentityOutput {
     /// <p>The email identity type. Note: the <code>MANAGED_DOMAIN</code> identity type is not supported.</p>

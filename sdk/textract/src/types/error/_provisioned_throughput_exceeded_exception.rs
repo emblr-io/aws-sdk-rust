@@ -2,6 +2,8 @@
 
 /// <p>The number of requests exceeded your throughput limit. If you want to increase this limit, contact Amazon Textract.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedThroughputExceededException {
     #[allow(missing_docs)] // documentation missing in model

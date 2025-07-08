@@ -2,6 +2,8 @@
 
 /// <p>The state for the approval is not valid. Valid values include APPROVE and REVOKE.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidApprovalStateException {
     /// <p>Any message associated with the exception.</p>

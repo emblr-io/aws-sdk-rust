@@ -2,6 +2,8 @@
 
 /// <p>The configurable action of a Amazon DataZone environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurableEnvironmentAction {
     /// <p>The type of a configurable action in a Amazon DataZone environment.</p>

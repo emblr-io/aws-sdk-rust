@@ -2,6 +2,8 @@
 
 /// <p>Provides details about an Database Migration Service (DMS) replication task. A replication task moves a set of data from the source endpoint to the target endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDmsReplicationTaskDetails {
     /// <p>Indicates when you want a change data capture (CDC) operation to start. <code>CCdcStartPosition</code> or <code>CCdcStartTime</code> specifies when you want a CDC operation to start. Only a value for one of these fields is included.</p>

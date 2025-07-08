@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a resource conflict.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConflict {
     /// <p>The unique identifier of the resource involved in a conflict.</p>

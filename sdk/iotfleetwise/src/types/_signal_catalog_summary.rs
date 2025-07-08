@@ -2,6 +2,8 @@
 
 /// <p>Information about a collection of standardized signals, which can be attributes, branches, sensors, or actuators.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SignalCatalogSummary {
     /// <p>The name of the signal catalog.</p>

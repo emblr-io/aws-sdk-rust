@@ -2,6 +2,8 @@
 
 /// <p>An object with your <code>accountId</code> and TRN information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AccountDetails {
     /// <p>List of unique account identifiers.</p>

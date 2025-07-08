@@ -2,6 +2,8 @@
 
 /// <p>Allows you to configure automated responses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationRulesActionV2 {
     /// <p>The category of action to be executed by the automation rule.</p>

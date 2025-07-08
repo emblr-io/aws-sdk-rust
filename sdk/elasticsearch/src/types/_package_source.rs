@@ -2,6 +2,8 @@
 
 /// <p>The S3 location for importing the package specified as <code>S3BucketName</code> and <code>S3Key</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageSource {
     /// <p>Name of the bucket containing the package.</p>

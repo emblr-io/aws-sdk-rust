@@ -2,6 +2,8 @@
 
 /// <p>Summary metrics for your Savings Plans Purchase Recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SavingsPlansPurchaseRecommendationSummary {
     /// <p>The estimated return on investment that's based on the recommended Savings Plans and estimated savings.</p>

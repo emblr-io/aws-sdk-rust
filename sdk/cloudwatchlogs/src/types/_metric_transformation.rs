@@ -2,6 +2,8 @@
 
 /// <p>Indicates how to transform ingested log events to metric data in a CloudWatch metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricTransformation {
     /// <p>The name of the CloudWatch metric.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that is used to provide the status of the provisioning operation for a specified permission set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionSetProvisioningStatus {
     /// <p>The status of the permission set provisioning process.</p>

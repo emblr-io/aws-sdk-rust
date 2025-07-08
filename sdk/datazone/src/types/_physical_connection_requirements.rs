@@ -2,6 +2,8 @@
 
 /// <p>Physical connection requirements of a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhysicalConnectionRequirements {
     /// <p>The subnet ID of the physical connection requirements of a connection.</p>

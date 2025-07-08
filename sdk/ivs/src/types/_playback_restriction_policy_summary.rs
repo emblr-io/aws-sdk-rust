@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a PlaybackRestrictionPolicy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlaybackRestrictionPolicySummary {
     /// <p>Playback-restriction-policy ARN</p>

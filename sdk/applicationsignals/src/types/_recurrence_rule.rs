@@ -2,6 +2,8 @@
 
 /// <p>The recurrence rule for the SLO time window exclusion .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecurrenceRule {
     /// <p>A cron or rate expression that specifies the schedule for the exclusion window.</p>

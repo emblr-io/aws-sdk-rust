@@ -2,6 +2,8 @@
 
 /// <p>Input to the <code>LookupDeveloperIdentityInput</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LookupDeveloperIdentityInput {
     /// <p>An identity pool ID in the format REGION:GUID.</p>

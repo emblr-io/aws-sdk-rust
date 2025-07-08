@@ -2,6 +2,8 @@
 
 /// <p>Information about a configuration for automatically rolling back to a previous version of an application revision when a deployment is not completed successfully.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoRollbackConfiguration {
     /// <p>Indicates whether a defined automatic rollback configuration is currently enabled.</p>

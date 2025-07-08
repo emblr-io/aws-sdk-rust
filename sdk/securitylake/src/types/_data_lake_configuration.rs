@@ -2,6 +2,8 @@
 
 /// <p>Provides details of Amazon Security Lake object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeConfiguration {
     /// <p>The Amazon Web Services Regions where Security Lake is automatically enabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Status of the node-to-node encryption options for the specified domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeToNodeEncryptionOptionsStatus {
     /// <p>The node-to-node encryption options for the specified domain.</p>

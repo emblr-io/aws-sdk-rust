@@ -2,6 +2,8 @@
 
 /// <p>Specifies the following details for the step: error (if any), outputs (if any), and the step type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionStepResult {
     /// <p>One of the available step types.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Invitation object returned after emailing users to invite them to join the Amazon Chime <code>Team</code> account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Invite {
     /// <p>The invite ID.</p>

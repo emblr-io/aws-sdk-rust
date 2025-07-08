@@ -2,6 +2,8 @@
 
 /// <p>The service failed to perform an operation due to an internal issue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalFailureException {
     #[allow(missing_docs)] // documentation missing in model

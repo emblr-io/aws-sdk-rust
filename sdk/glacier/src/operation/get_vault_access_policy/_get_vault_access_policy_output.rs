@@ -2,6 +2,8 @@
 
 /// <p>Output for GetVaultAccessPolicy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetVaultAccessPolicyOutput {
     /// <p>Contains the returned vault access policy as a JSON string.</p>

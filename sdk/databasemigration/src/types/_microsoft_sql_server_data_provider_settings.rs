@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines a Microsoft SQL Server data provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MicrosoftSqlServerDataProviderSettings {
     /// <p>The name of the Microsoft SQL Server server.</p>

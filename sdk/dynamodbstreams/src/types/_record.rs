@@ -2,6 +2,8 @@
 
 /// <p>A description of a unique event within a stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Record {
     /// <p>A globally unique identifier for the event that was recorded in this stream record.</p>

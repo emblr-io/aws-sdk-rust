@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a natural language query to transform into SQL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct QueryGenerationInput {
     /// <p>The type of the query.</p>

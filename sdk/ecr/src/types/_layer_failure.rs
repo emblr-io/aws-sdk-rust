@@ -2,6 +2,8 @@
 
 /// <p>An object representing an Amazon ECR image layer failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayerFailure {
     /// <p>The layer digest associated with the failure.</p>

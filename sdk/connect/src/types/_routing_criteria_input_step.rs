@@ -2,6 +2,8 @@
 
 /// <p>Step defines the list of agents to be routed or route based on the agent requirements such as ProficiencyLevel, Name, or Value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutingCriteriaInputStep {
     /// <p>An object to specify the expiration of a routing step.</p>

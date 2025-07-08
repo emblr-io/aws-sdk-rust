@@ -2,6 +2,8 @@
 
 /// <p>The port mappings for a specified endpoint IP address (destination).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationPortMapping {
     /// <p>The Amazon Resource Name (ARN) of the custom routing accelerator that you have port mappings for.</p>

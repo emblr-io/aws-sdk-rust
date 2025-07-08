@@ -2,6 +2,8 @@
 
 /// <p>Details that are specific to a pedestrian leg.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePedestrianLegDetails {
     /// <p>Details corresponding to the arrival for the leg.</p>

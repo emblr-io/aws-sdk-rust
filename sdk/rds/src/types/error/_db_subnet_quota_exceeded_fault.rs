@@ -2,6 +2,8 @@
 
 /// <p>The request would result in the user exceeding the allowed number of subnets in a DB subnet groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSubnetQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

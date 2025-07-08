@@ -2,6 +2,8 @@
 
 /// <p>The cluster management and job scheduling software associated with the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchedulerRequest {
     /// <p>The software Amazon Web Services PCS uses to manage cluster scaling and job scheduling.</p>

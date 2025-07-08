@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of ReportTaskProgress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportTaskProgressOutput {
     /// <p>If true, the calling task runner should cancel processing of the task. The task runner does not need to call <code>SetTaskStatus</code> for canceled tasks.</p>

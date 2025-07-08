@@ -2,6 +2,8 @@
 
 /// <p>LoRaWANGatewayCurrentVersion object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoRaWanGatewayCurrentVersion {
     /// <p>The version of the gateways that should receive the update.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The container path, mount options, and size (in MiB) of a tmpfs mount.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails {
     /// <p>The absolute file path where the tmpfs volume is to be mounted.</p>

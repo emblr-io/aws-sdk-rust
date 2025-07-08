@@ -2,6 +2,8 @@
 
 /// <p>Information about the details of a merge hunk that contains a conflict in a merge or pull request operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MergeHunkDetail {
     /// <p>The start position of the hunk in the merge result.</p>

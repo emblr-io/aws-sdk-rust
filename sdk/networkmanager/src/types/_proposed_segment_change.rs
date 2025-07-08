@@ -2,6 +2,8 @@
 
 /// <p>Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProposedSegmentChange {
     /// <p>The list of key-value tags that changed for the segment.</p>

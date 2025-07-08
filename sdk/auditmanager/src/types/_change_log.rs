@@ -2,6 +2,8 @@
 
 /// <p>The record of a change within Audit Manager. For example, this could be the status change of an assessment or the delegation of a control set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeLog {
     /// <p>The object that was changed, such as an assessment, control, or control set.</p>

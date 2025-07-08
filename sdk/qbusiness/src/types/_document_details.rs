@@ -2,6 +2,8 @@
 
 /// <p>The details of a document within an Amazon Q Business index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentDetails {
     /// <p>The identifier of the document.</p>

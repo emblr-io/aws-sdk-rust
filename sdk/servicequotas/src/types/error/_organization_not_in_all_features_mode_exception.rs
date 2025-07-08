@@ -2,6 +2,8 @@
 
 /// <p>The organization that your Amazon Web Services account belongs to is not in All Features mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationNotInAllFeaturesModeException {
     #[allow(missing_docs)] // documentation missing in model

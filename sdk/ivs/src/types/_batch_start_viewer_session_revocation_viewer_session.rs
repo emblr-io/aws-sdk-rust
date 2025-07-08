@@ -2,6 +2,8 @@
 
 /// <p>A viewer session to revoke in the call to <code>BatchStartViewerSessionRevocation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchStartViewerSessionRevocationViewerSession {
     /// <p>The ARN of the channel associated with the viewer session to revoke.</p>

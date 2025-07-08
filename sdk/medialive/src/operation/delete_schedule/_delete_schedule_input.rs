@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DeleteScheduleRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteScheduleInput {
     /// Id of the channel whose schedule is being deleted.

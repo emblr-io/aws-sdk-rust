@@ -2,6 +2,8 @@
 
 /// SendVoiceMessageRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendVoiceMessageInput {
     /// The phone number that appears on recipients' devices when they receive the message.

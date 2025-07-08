@@ -2,6 +2,8 @@
 
 /// <p>Details about the ECR automated re-scan duration setting for your environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcrConfiguration {
     /// <p>The rescan duration configured for image push date.</p>

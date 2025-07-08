@@ -2,6 +2,8 @@
 
 /// <p>Defines Elastic Network Adapter (ENA) Scalable Reliable Datagram (SRD) configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnaSrdSpecificationRequest {
     /// <p>Enables or disables ENA SRD for network performance.</p>

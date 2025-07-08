@@ -2,6 +2,8 @@
 
 /// <p>Provides upload configuration information. Files are uploaded from the simulation job to a location you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UploadConfiguration {
     /// <p>A prefix that specifies where files will be uploaded in Amazon S3. It is appended to the simulation output location to determine the final path.</p>

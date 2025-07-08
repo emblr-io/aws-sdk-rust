@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for CreateClusterResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateClusterOutput {
     /// The ARN of this Cluster. It is automatically assigned when the Cluster is created.

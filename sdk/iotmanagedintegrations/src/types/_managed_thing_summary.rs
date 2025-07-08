@@ -2,6 +2,8 @@
 
 /// <p>Structure representing one managed thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ManagedThingSummary {
     /// <p>The id of the device.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The distribution of agents between the instance and its replica(s).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentConfig {
     /// <p>Information about traffic distributions.</p>

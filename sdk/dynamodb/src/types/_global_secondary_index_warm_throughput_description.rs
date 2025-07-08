@@ -2,6 +2,8 @@
 
 /// <p>The description of the warm throughput value on a global secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalSecondaryIndexWarmThroughputDescription {
     /// <p>Represents warm throughput read units per second value for a global secondary index.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when Amazon Cognito encounters an invalid Lambda response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidLambdaResponseException {
     /// <p>The message returned when Amazon Cognito throws an invalid Lambda response exception.</p>

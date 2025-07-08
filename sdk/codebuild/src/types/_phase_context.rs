@@ -2,6 +2,8 @@
 
 /// <p>Additional information about a build phase that has an error. You can use this information for troubleshooting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhaseContext {
     /// <p>The status code for the context of the build phase.</p>

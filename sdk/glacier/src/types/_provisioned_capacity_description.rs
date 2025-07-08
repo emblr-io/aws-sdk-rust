@@ -2,6 +2,8 @@
 
 /// <p>The definition for a provisioned capacity unit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedCapacityDescription {
     /// <p>The ID that identifies the provisioned capacity unit.</p>

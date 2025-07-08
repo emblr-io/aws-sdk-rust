@@ -2,6 +2,8 @@
 
 /// <p>The number of days your data is kept in the hot tier. By default, your data is kept indefinitely in the hot tier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetentionPeriod {
     /// <p>The number of days that your data is kept.</p><note>

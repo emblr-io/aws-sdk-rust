@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because an invalid or out-of-range value was supplied for an input parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInputException {
     #[allow(missing_docs)] // documentation missing in model

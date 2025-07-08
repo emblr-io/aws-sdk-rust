@@ -2,6 +2,8 @@
 
 /// <p>Geocode structure which contains a set of inclusion/exclusion properties that results must possess in order to be returned as a result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeocodeFilter {
     /// <p>A list of countries that all results must be in. Countries are represented by either their alpha-2 or alpha-3 character codes.</p>

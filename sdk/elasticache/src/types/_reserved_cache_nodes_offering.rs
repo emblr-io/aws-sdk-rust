@@ -2,6 +2,8 @@
 
 /// <p>Describes all of the attributes of a reserved cache node offering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedCacheNodesOffering {
     /// <p>A unique identifier for the reserved cache node offering.</p>

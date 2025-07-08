@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Security Token Service temporary credential that S3 Access Grants vends to grantees and client applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Credentials {
     /// <p>The unique access key ID of the Amazon Web Services STS temporary credential that S3 Access Grants vends to grantees and client applications.</p>

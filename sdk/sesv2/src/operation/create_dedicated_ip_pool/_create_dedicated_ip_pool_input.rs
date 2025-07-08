@@ -2,6 +2,8 @@
 
 /// <p>A request to create a new dedicated IP pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDedicatedIpPoolInput {
     /// <p>The name of the dedicated IP pool.</p>

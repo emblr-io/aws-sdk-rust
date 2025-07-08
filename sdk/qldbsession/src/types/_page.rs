@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the fetched page.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Page {
     /// <p>A structure that contains values in multiple encoding formats.</p>

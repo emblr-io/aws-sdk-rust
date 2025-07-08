@@ -2,6 +2,8 @@
 
 /// <p>The attributes of a third-party custom source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLogSourceAttributes {
     /// <p>The ARN of the Glue crawler.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because no organization is associated with your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

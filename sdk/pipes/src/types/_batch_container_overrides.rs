@@ -2,6 +2,8 @@
 
 /// <p>The overrides that are sent to a container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchContainerOverrides {
     /// <p>The command to send to the container that overrides the default command from the Docker image or the task definition.</p>

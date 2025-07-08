@@ -2,6 +2,8 @@
 
 /// <p>A request to delete the DomainName resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDomainNameInput {
     /// <p>The name of the DomainName resource to be deleted.</p>

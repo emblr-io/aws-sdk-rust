@@ -2,6 +2,8 @@
 
 /// <p>The input doesn't meet the constraints set by the Amazon Q Business service. Provide the correct input and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationException {
     /// <p>The message describing the <code>ValidationException</code>.</p>

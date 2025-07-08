@@ -2,6 +2,8 @@
 
 /// <p>Represents a variant of a connection type in Glue Data Catalog. Connection type variants provide specific configurations and behaviors for different implementations of the same general connection type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionTypeVariant {
     /// <p>The unique identifier for the connection type variant. This name is used internally to identify the specific variant of a connection type.</p>

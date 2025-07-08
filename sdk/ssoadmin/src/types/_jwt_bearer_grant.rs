@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines configuration settings for an application that supports the JWT Bearer Token Authorization Grant. The <code>AuthorizedAudience</code> field is the aud claim. For more information, see <a href="https://datatracker.ietf.org/doc/html/rfc7523">RFC 7523</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JwtBearerGrant {
     /// <p>A list of allowed token issuers trusted by the Identity Center instances for this application.</p><note>

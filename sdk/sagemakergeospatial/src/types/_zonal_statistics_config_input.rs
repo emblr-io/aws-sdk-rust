@@ -2,6 +2,8 @@
 
 /// <p>The structure representing input configuration of ZonalStatistics operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZonalStatisticsConfigInput {
     /// <p>The Amazon S3 path pointing to the GeoJSON containing the polygonal zones.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains details for an identity source. For more information, see <a href="https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html">Identity source</a> in the <i>Multi-party approval User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentitySourceForList {
     /// <p>The type of resource that provided identities to the identity source. For example, an IAM Identity Center instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The name of the Global datastore and role of this replication group in the Global datastore.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalReplicationGroupInfo {
     /// <p>The name of the Global datastore</p>

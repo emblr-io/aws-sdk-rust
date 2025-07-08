@@ -2,6 +2,8 @@
 
 /// <p>The DB instance configuration used for recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstanceConfiguration {
     /// <p>The DB instance class of the DB instance.</p>

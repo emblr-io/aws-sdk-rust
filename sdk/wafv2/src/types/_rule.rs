@@ -2,6 +2,8 @@
 
 /// <p>A single rule, which you can use in a <code>WebACL</code> or <code>RuleGroup</code> to identify web requests that you want to manage in some way. Each rule includes one top-level <code>Statement</code> that WAF uses to identify matching web requests, and parameters that govern how WAF handles them.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Rule {
     /// <p>The name of the rule.</p>

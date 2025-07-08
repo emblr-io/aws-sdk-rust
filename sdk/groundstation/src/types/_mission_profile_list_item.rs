@@ -2,6 +2,8 @@
 
 /// <p>Item in a list of mission profiles.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissionProfileListItem {
     /// <p>UUID of a mission profile.</p>

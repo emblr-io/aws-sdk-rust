@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of the elastic IP (EIP) address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticIpStatus {
     /// <p>The elastic IP (EIP) address for the cluster.</p>

@@ -2,6 +2,8 @@
 
 /// Response from CompleteAttachedFileUpload API
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompleteAttachedFileUploadOutput {
     _request_id: Option<String>,

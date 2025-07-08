@@ -2,6 +2,8 @@
 
 /// <p>Describe the device using the relevant metadata and supported clusters for device discovery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Device {
     /// <p>The device id as defined by the connector.</p><note>

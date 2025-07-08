@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a vulnerability scan finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageScanFinding {
     /// <p>The Amazon Web Services account ID that's associated with the finding.</p>

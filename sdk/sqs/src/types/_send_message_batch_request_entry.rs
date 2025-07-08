@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of a single Amazon SQS message along with an <code>Id</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendMessageBatchRequestEntry {
     /// <p>An identifier for a message in this batch used to communicate the result.</p><note>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the results for the <code>CreateComputer</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateComputerOutput {
     /// <p>A <code>Computer</code> object that represents the computer account.</p>

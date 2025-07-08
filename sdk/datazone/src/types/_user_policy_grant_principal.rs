@@ -2,6 +2,8 @@
 
 /// <p>The user policy grant principal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum UserPolicyGrantPrincipal {
     /// <p>The all users grant filter of the user policy grant principal.</p>

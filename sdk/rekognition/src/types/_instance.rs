@@ -2,6 +2,8 @@
 
 /// <p>An instance of a label returned by Amazon Rekognition Image (<code>DetectLabels</code>) or by Amazon Rekognition Video (<code>GetLabelDetection</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Instance {
     /// <p>The position of the label instance on the image.</p>

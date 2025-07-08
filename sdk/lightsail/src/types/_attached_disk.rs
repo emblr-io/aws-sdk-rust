@@ -2,6 +2,8 @@
 
 /// <p>Describes a block storage disk that is attached to an instance, and is included in an automatic snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachedDisk {
     /// <p>The path of the disk (<code>/dev/xvdf</code>).</p>

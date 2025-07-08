@@ -2,6 +2,8 @@
 
 /// <p>If this contact was queued, this contains information about the queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueueInfo {
     /// <p>The unique identifier for the queue.</p>

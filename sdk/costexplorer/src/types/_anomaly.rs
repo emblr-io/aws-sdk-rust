@@ -2,6 +2,8 @@
 
 /// <p>An unusual cost pattern. This consists of the detailed metadata and the current status of the anomaly object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Anomaly {
     /// <p>The unique identifier for the anomaly.</p>

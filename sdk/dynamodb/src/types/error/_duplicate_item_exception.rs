@@ -2,6 +2,8 @@
 
 /// <p>There was an attempt to insert an item with the same primary key as an item that already exists in the DynamoDB table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateItemException {
     #[allow(missing_docs)] // documentation missing in model

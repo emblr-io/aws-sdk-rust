@@ -2,6 +2,8 @@
 
 /// <p>A structure describing a table resource with LF-tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaggedTable {
     /// <p>A table that has LF-tags attached to it.</p>

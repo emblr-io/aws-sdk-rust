@@ -2,6 +2,8 @@
 
 /// <p>Describes the resource location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLocation {
     /// <p>The Availability Zone. Follows the format <code>us-east-2a</code> (case-sensitive).</p>

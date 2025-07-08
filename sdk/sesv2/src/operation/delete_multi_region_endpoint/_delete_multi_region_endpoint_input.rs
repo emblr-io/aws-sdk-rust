@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to delete a multi-region endpoint (global-endpoint).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteMultiRegionEndpointInput {
     /// <p>The name of the multi-region endpoint (global-endpoint) to be deleted.</p>

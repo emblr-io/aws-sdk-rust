@@ -2,6 +2,8 @@
 
 /// <p>The request to list your streaming distributions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStreamingDistributionsInput {
     /// <p>The value that you provided for the <code>Marker</code> request parameter.</p>

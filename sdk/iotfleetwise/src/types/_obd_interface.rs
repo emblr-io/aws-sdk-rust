@@ -2,6 +2,8 @@
 
 /// <p>A network interface that specifies the on-board diagnostic (OBD) II network protocol.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObdInterface {
     /// <p>The name of the interface.</p>

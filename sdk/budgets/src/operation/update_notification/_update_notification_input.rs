@@ -2,6 +2,8 @@
 
 /// <p>Request of UpdateNotification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateNotificationInput {
     /// <p>The <code>accountId</code> that is associated with the budget whose notification you want to update.</p>

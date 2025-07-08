@@ -2,6 +2,8 @@
 
 /// <p>Input for an agent collaborator. The input can be text or an action invocation result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentCollaboratorInputPayload {
     /// <p>The input type.</p>

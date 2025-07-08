@@ -2,6 +2,8 @@
 
 /// <p>The configuration for notifications stored for each profiling group. This includes up to to two channels and a list of event publishers associated with each channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationConfiguration {
     /// <p>List of up to two channels to be used for sending notifications for events detected from the application profile.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Settings for exporting data to Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Settings {
     /// <p>The Amazon Resource Name (ARN) used by the service to access the IAM role. The role must allow the <code>iam:PassRole</code> action. It is a required parameter that enables DMS to write and read objects from an S3 bucket.</p>

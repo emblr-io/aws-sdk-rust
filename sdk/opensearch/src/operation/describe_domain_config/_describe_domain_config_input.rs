@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>DescribeDomainConfig</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainConfigInput {
     /// <p>Name of the OpenSearch Service domain configuration that you want to describe.</p>

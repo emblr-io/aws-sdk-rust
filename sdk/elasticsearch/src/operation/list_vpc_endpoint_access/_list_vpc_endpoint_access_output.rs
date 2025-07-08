@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>ListVpcEndpointAccess</code></code> operation. Returns a list of accounts id and account type authorized to manage VPC endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVpcEndpointAccessOutput {
     /// <p>List of <code>AuthorizedPrincipal</code> describing the details of the permissions to manage VPC endpoints against the specified domain.</p>

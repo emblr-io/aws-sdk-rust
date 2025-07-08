@@ -2,6 +2,8 @@
 
 /// <p>Identifies a specific capacity reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationTarget {
     /// <p>Unique identifier for the capacity reservation.</p>

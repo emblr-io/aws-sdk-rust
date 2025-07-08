@@ -2,6 +2,8 @@
 
 /// <p>Information about the cache for the build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectCache {
     /// <p>The type of cache used by the build project. Valid values include:</p>

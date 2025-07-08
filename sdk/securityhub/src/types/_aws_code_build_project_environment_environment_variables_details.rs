@@ -2,6 +2,8 @@
 
 /// <p>Information about an environment variable that is available to builds for the build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails {
     /// <p>The name of the environment variable.</p>

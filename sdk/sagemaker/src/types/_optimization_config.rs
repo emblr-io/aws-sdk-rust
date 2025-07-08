@@ -2,6 +2,8 @@
 
 /// <p>Settings for an optimization technique that you apply with a model optimization job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum OptimizationConfig {
     /// <p>Settings for the model compilation technique that's applied by a model optimization job.</p>

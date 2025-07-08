@@ -2,6 +2,8 @@
 
 /// <p>The number of reactions has been exceeded. Reactions are limited to one reaction per user for each individual comment ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReactionLimitExceededException {
     /// <p>Any message associated with the exception.</p>

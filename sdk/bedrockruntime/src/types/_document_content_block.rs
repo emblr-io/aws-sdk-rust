@@ -2,6 +2,8 @@
 
 /// <p>Contains the actual content of a document that can be processed by the model and potentially cited in the response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DocumentContentBlock {
     /// <p>The text content of the document.</p>

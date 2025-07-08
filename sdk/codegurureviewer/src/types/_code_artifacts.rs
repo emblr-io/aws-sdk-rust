@@ -8,6 +8,8 @@
 /// <p>Build artifacts are .jar or .class files that are compressed in a .zip file.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeArtifacts {
     /// <p>The S3 object key for a source code .zip file. This is required for all code reviews.</p>

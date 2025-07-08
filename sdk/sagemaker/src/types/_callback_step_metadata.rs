@@ -2,6 +2,8 @@
 
 /// <p>Metadata about a callback step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallbackStepMetadata {
     /// <p>The pipeline generated token from the Amazon SQS queue.</p>

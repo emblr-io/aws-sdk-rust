@@ -2,6 +2,8 @@
 
 /// <p>This data type helps to determine Performance Insights metric to render for the insight.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceInsightsMetric {
     /// <p>The Performance Insights metric.</p>

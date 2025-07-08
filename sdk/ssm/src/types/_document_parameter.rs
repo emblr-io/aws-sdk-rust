@@ -2,6 +2,8 @@
 
 /// <p>Parameters specified in a Systems Manager document that run on the server when the command is run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentParameter {
     /// <p>The name of the parameter.</p>

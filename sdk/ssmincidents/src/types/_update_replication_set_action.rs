@@ -2,6 +2,8 @@
 
 /// <p>Details used when updating the replication set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum UpdateReplicationSetAction {
     /// <p>Details about the Amazon Web Services Region that you're adding to the replication set.</p>

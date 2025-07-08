@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the errors in an export EarthObservationJob operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportErrorDetailsOutput {
     /// <p>The type of error in an export EarthObservationJob operation.</p>

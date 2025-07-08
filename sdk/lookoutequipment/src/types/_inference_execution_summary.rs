@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the specific inference execution, including input and output data configuration, inference scheduling information, status, and so on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceExecutionSummary {
     /// <p>The name of the machine learning model being used for the inference execution.</p>

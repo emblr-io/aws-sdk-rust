@@ -2,6 +2,8 @@
 
 /// <p>The request failed because an active instance refresh or rollback for the specified Auto Scaling group was not found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveInstanceRefreshNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

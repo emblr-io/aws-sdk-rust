@@ -2,6 +2,8 @@
 
 /// <p>Represents the drift check data quality baselines that can be used when the model monitor is set using the model package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DriftCheckModelDataQuality {
     /// <p>The drift check model data quality statistics.</p>

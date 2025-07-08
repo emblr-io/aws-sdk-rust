@@ -2,6 +2,8 @@
 
 /// <p>A schema is a relation within a collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Schema {
     /// <p>The columns for the relation that this schema represents.</p>

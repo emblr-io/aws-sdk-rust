@@ -2,6 +2,8 @@
 
 /// <p>Identifies an Amazon EC2 launch template to use for a specific account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateConfiguration {
     /// <p>Identifies the Amazon EC2 launch template to use.</p>

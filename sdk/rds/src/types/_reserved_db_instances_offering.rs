@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element in the <code>DescribeReservedDBInstancesOfferings</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedDbInstancesOffering {
     /// <p>The offering identifier.</p>

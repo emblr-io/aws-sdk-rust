@@ -2,6 +2,8 @@
 
 /// <p>Replication configuration of a server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerReplicationConfiguration {
     /// <p>The ID of the server with which this replication configuration is associated.</p>

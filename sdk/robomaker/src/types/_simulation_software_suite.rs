@@ -2,6 +2,8 @@
 
 /// <p>Information about a simulation software suite.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimulationSoftwareSuite {
     /// <p>The name of the simulation software suite. <code>SimulationRuntime</code> is the only supported value.</p>

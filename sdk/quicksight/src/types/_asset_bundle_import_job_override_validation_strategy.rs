@@ -2,6 +2,8 @@
 
 /// <p>An optional parameter that overrides the validation strategy for all analyses and dashboards before the resource is imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobOverrideValidationStrategy {
     /// <p>A Boolean value that indicates whether to import all analyses and dashboards under strict or lenient mode.</p>

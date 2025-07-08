@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configured restrictions of the origin controls of a package group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageGroupOriginRestriction {
     /// <p>The package group origin restriction setting. If the value of <code>mode</code> is <code>ALLOW</code>, <code>ALLOW_SPECIFIC_REPOSITORIES</code>, or <code>BLOCK</code>, then the value of <code>effectiveMode</code> is the same. Otherwise, when the value is <code>INHERIT</code>, then the value of <code>effectiveMode</code> is the value of <code>mode</code> of the first parent group which does not have a value of <code>INHERIT</code>.</p>

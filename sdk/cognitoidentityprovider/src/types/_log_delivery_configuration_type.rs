@@ -2,6 +2,8 @@
 
 /// <p>The logging parameters of a user pool, as returned in the response to a <code>GetLogDeliveryConfiguration</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogDeliveryConfigurationType {
     /// <p>The ID of the user pool where you configured logging.</p>

@@ -16,6 +16,8 @@
 /// <p>Call the <code>RegisterSlackWorkspaceForOrganization</code> API from a member account, but the management account hasn't registered that workspace yet for the organization.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictException {
     #[allow(missing_docs)] // documentation missing in model

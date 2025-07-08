@@ -2,6 +2,8 @@
 
 /// <p>A list of tag key and value pairs that you define.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>One part of a key-value pair that makes up a tag. A key is a general label that acts like a category for more specific tag values.</p>

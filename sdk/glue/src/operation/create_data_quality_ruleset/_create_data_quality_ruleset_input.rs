@@ -2,6 +2,8 @@
 
 /// <p>A request to create a data quality ruleset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDataQualityRulesetInput {
     /// <p>A unique name for the data quality ruleset.</p>

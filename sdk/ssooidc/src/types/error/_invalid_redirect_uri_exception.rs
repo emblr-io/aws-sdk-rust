@@ -2,6 +2,8 @@
 
 /// <p>Indicates that one or more redirect URI in the request is not supported for this operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRedirectUriException {
     /// <p>Single error code. For this exception the value will be <code>invalid_redirect_uri</code>.</p>

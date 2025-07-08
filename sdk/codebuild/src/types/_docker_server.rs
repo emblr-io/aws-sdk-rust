@@ -2,6 +2,8 @@
 
 /// <p>Contains docker server information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DockerServer {
     /// <p>Information about the compute resources the docker server uses. Available values include:</p>

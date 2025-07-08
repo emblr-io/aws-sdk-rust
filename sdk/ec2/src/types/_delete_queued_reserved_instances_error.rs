@@ -2,6 +2,8 @@
 
 /// <p>Describes the error for a Reserved Instance whose queued purchase could not be deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteQueuedReservedInstancesError {
     /// <p>The error code.</p>

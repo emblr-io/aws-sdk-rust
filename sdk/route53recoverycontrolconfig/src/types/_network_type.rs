@@ -38,6 +38,8 @@
 ///
 /// <p>The network type of a cluster. NetworkType can be one of the following:</p> <p>IPV4: Cluster endpoints support IPv4 only.</p> <p>DUALSTACK: Cluster endpoints support both IPv4 and IPv6.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

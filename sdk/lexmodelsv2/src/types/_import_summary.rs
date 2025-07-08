@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about an import in an import list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportSummary {
     /// <p>The unique identifier that Amazon Lex assigned to the import.</p>

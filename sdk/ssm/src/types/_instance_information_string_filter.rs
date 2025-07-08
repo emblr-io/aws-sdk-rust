@@ -2,6 +2,8 @@
 
 /// <p>The filters to describe or get information about your managed nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceInformationStringFilter {
     /// <p>The filter key name to describe your managed nodes.</p>

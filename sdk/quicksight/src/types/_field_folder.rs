@@ -2,6 +2,8 @@
 
 /// <p>A FieldFolder element is a folder that contains fields and nested subfolders.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldFolder {
     /// <p>The description for a field folder.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides options to add an archive to a vault.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct UploadArchiveInput {
     /// <p>The name of the vault.</p>
@@ -13,6 +15,7 @@ pub struct UploadArchiveInput {
     /// <p>The SHA256 tree hash of the data being uploaded.</p>
     pub checksum: ::std::option::Option<::std::string::String>,
     /// <p>The data to upload.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub body: ::aws_smithy_types::byte_stream::ByteStream,
 }
 impl UploadArchiveInput {

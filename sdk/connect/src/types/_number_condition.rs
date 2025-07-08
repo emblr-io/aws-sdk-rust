@@ -4,6 +4,8 @@
 /// <p>The currently supported value for <code>FieldName</code> is <code>limit</code>.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberCondition {
     /// <p>The name of the field in the number condition.</p>

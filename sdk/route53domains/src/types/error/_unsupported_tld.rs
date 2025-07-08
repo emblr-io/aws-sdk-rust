@@ -2,6 +2,8 @@
 
 /// <p>Amazon Route 53 does not support this top-level domain (TLD).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedTld {
     /// <p>Amazon Route 53 does not support this top-level domain (TLD).</p>

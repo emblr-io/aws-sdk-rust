@@ -2,6 +2,8 @@
 
 /// <p>Specifies the method used to encrypt the user’s data stores in the Athena workgroup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAthenaWorkGroupConfigurationResultConfigurationEncryptionConfigurationDetails {
     /// <p>Indicates whether Amazon Simple Storage Service (Amazon S3) server-side encryption with Amazon S3 managed keys (SSE_S3), server-side encryption with KMS keys (SSE_KMS), or client-side encryption with KMS customer managed keys (CSE_KMS) is used.</p>

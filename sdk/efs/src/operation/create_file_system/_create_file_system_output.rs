@@ -2,6 +2,8 @@
 
 /// <p>A description of the file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateFileSystemOutput {
     /// <p>The Amazon Web Services account that created the file system.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A script that runs on first launch of an Amazon EC2 instance. Used for configuring the server during launch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserData {
     /// <p>Amazon S3 location of the user-data script.</p>

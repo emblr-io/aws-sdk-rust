@@ -2,6 +2,8 @@
 
 /// <p>The indexing rule configuration for probabilistic sampling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProbabilisticRuleValue {
     /// <p>Configured sampling percentage of traceIds. Note that sampling can be subject to limits to ensure completeness of data.</p>

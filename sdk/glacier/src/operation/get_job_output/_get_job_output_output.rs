@@ -2,9 +2,12 @@
 
 /// <p>Contains the Amazon S3 Glacier response to your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct GetJobOutputOutput {
     /// <p>The job data, either archive data or inventory data.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub body: ::aws_smithy_types::byte_stream::ByteStream,
     /// <p>The checksum of the data in the response. This header is returned only when retrieving the output for an archive retrieval job. Furthermore, this header appears only under the following conditions:</p>
     /// <ul>

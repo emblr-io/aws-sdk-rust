@@ -2,6 +2,8 @@
 
 /// <p>Reason why the request was invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum InvalidRequestExceptionReason {
     /// <p>Reason why the StartAttachedFiledUpload request was invalid.</p>

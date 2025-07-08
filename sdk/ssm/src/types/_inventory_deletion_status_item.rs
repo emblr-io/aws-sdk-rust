@@ -2,6 +2,8 @@
 
 /// <p>Status information returned by the <code>DeleteInventory</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryDeletionStatusItem {
     /// <p>The deletion ID returned by the <code>DeleteInventory</code> operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Saves the data binding information for a theme.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateThemeData {
     /// <p>The unique ID of the theme to update.</p>

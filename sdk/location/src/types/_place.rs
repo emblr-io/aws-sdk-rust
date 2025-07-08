@@ -3,6 +3,8 @@
 /// <p>Contains details about addresses or points of interest that match the search criteria.</p>
 /// <p>Not all details are included with all responses. Some details may only be returned by specific data partners.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Place {
     /// <p>The full name and address of the point of interest such as a city, region, or country. For example, <code>123 Any Street, Any Town, USA</code>.</p>

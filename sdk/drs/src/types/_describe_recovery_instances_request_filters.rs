@@ -2,6 +2,8 @@
 
 /// <p>A set of filters by which to return Recovery Instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeRecoveryInstancesRequestFilters {
     /// <p>An array of Recovery Instance IDs that should be returned. An empty array means all Recovery Instances.</p>

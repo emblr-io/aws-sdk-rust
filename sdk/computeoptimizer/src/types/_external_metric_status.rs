@@ -2,6 +2,8 @@
 
 /// <p>Describes Compute Optimizer's integration status with your chosen external metric provider. For example, Datadog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalMetricStatus {
     /// <p>The status code for Compute Optimizer's integration with an external metrics provider.</p>

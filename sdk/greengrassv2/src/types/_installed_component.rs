@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a component on a Greengrass core device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstalledComponent {
     /// <p>The name of the component.</p>

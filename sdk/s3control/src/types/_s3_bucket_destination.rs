@@ -2,6 +2,8 @@
 
 /// <p>A container for the bucket where the Amazon S3 Storage Lens metrics export files are located.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3BucketDestination {
     /// <p></p>

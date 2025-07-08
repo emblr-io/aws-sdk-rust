@@ -2,6 +2,8 @@
 
 /// <p>Permission granted to a user, group, or resource to access a certain aspect of another user, group, or resource mailbox.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Permission {
     /// <p>The identifier of the user, group, or resource to which the permissions are granted.</p>

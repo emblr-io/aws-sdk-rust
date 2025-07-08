@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for a text prompt template. To include a variable, enclose a word in double curly braces as in <code>{{variable}}</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TextPromptTemplateConfiguration {
     /// <p>The message for the prompt.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified <code>ExportTime</code> is outside of the point in time recovery window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidExportTimeException {
     #[allow(missing_docs)] // documentation missing in model

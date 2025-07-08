@@ -2,6 +2,8 @@
 
 /// <p>Describes the possible values for a configuration option.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationOptionDescription {
     /// <p>A unique namespace identifying the option's associated AWS resource.</p>

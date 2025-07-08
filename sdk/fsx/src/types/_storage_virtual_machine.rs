@@ -2,6 +2,8 @@
 
 /// <p>Describes the Amazon FSx for NetApp ONTAP storage virtual machine (SVM) configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageVirtualMachine {
     /// <p>Describes the Microsoft Active Directory configuration to which the SVM is joined, if applicable.</p>

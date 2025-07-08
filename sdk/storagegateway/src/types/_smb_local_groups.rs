@@ -2,6 +2,8 @@
 
 /// <p>A list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmbLocalGroups {
     /// <p>A list of Active Directory users and groups that have local Gateway Admin permissions. Acceptable formats include: <code>DOMAIN\User1</code>, <code>user1</code>, <code>DOMAIN\group1</code>, and <code>group1</code>.</p>

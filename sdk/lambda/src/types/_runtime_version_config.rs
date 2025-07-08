@@ -2,6 +2,8 @@
 
 /// <p>The ARN of the runtime and any errors that occured.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuntimeVersionConfig {
     /// <p>The ARN of the runtime version you want the function to use.</p>

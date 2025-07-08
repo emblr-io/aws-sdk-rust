@@ -2,6 +2,8 @@
 
 /// <p>Configurations related to the TLS certificate for the security configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TlsCertificateConfiguration {
     /// <p>The TLS certificate type. Acceptable values: <code>PEM</code> or <code>Custom</code>.</p>

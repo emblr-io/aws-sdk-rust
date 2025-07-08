@@ -2,6 +2,8 @@
 
 /// <p>The epsilon and noise parameters that you want to use for the privacy budget template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PrivacyBudgetTemplateParametersInput {
     /// <p>An object that specifies the epsilon and noise parameters.</p>

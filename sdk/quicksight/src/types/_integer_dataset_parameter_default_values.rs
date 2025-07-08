@@ -2,6 +2,8 @@
 
 /// <p>The default values of an integer parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegerDatasetParameterDefaultValues {
     /// <p>A list of static default values for a given integer parameter.</p>

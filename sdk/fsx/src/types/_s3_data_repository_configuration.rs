@@ -4,6 +4,8 @@
 /// <p>Data repository associations on Amazon File Cache don't use <code>S3DataRepositoryConfiguration</code> because they don't support automatic import or automatic export.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DataRepositoryConfiguration {
     /// <p>Specifies the type of updated objects (new, changed, deleted) that will be automatically imported from the linked S3 bucket to your file system.</p>

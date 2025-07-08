@@ -2,6 +2,8 @@
 
 /// <p>Network Firewall stateless rule group, used in a <code>NetworkFirewallPolicyDescription</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatelessRuleGroup {
     /// <p>The name of the rule group.</p>

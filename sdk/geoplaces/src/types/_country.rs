@@ -2,6 +2,8 @@
 
 /// <p>The alpha-2 or alpha-3 character code for the country that the results will be present in.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Country {
     /// <p>Country, represented by its alpha 2-character code.</p>

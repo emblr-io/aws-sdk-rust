@@ -2,6 +2,8 @@
 
 /// <p>Describes the information used to create a WorkSpace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkspaceRequest {
     /// <p>The identifier of the Directory Service directory for the WorkSpace. You can use <code>DescribeWorkspaceDirectories</code> to list the available directories.</p>

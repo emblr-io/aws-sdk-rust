@@ -2,6 +2,8 @@
 
 /// <p>Information about cluster attributes that can be updated via update APIs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MutableClusterInfo {
     /// <p>Specifies the size of the EBS volume and the ID of the associated broker.</p>

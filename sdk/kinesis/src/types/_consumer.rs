@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the details of the consumer you registered. This type of object is returned by <code>RegisterStreamConsumer</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Consumer {
     /// <p>The name of the consumer is something you choose when you register the consumer.</p>

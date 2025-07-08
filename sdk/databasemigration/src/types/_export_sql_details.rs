@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a metadata model assessment exported to SQL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportSqlDetails {
     /// <p>The Amazon S3 object key for the object containing the exported metadata model assessment.</p>

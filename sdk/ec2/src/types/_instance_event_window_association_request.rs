@@ -2,6 +2,8 @@
 
 /// <p>One or more targets associated with the specified event window. Only one <i>type</i> of target (instance ID, instance tag, or Dedicated Host ID) can be associated with an event window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceEventWindowAssociationRequest {
     /// <p>The IDs of the instances to associate with the event window. If the instance is on a Dedicated Host, you can't specify the Instance ID parameter; you must use the Dedicated Host ID parameter.</p>

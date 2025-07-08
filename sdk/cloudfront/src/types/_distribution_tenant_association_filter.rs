@@ -2,6 +2,8 @@
 
 /// <p>Filter by the associated distribution ID or connection group ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributionTenantAssociationFilter {
     /// <p>The distribution ID to filter by. You can find distribution tenants associated with a specific distribution.</p>

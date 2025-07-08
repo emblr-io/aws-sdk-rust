@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the configureAgentRequest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigureAgentInput {
     /// <p>The name of the profiling group for which the configured agent is collecting profiling data.</p>

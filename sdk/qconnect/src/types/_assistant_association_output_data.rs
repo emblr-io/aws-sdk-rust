@@ -2,6 +2,8 @@
 
 /// <p>The data that is output as a result of the assistant association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AssistantAssociationOutputData {
     /// <p>The knowledge base where output data is sent.</p>

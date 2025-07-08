@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an AD Connector directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryConnectSettingsDescription {
     /// <p>The identifier of the VPC that the AD Connector is in.</p>

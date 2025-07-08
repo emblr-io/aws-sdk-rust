@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the remote Amazon Web Services account that made the API call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoteAccountDetails {
     /// <p>The Amazon Web Services account ID of the remote API caller.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about which channels are supported, and how many contacts an agent can have on a channel simultaneously.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaConcurrency {
     /// <p>The channels that agents can handle in the Contact Control Panel (CCP).</p>

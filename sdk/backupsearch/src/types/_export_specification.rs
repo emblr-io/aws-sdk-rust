@@ -2,6 +2,8 @@
 
 /// <p>This contains the export specification object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ExportSpecification {
     /// <p>This specifies the destination Amazon S3 bucket for the export job. And, if included, it also specifies the destination prefix.</p>

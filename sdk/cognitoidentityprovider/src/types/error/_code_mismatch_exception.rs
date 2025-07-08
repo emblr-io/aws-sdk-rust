@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown if the provided code doesn't match what the server was expecting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeMismatchException {
     /// <p>The message provided when the code mismatch exception is thrown.</p>

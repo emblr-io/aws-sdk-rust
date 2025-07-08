@@ -2,6 +2,8 @@
 
 /// <p>Represents the result of a list artifacts operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListArtifactsOutput {
     /// <p>Information about the artifacts.</p>

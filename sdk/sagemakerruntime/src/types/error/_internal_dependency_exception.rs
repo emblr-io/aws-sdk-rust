@@ -2,6 +2,8 @@
 
 /// <p>Your request caused an exception with an internal dependency. Contact customer support.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalDependencyException {
     #[allow(missing_docs)] // documentation missing in model

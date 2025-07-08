@@ -2,6 +2,8 @@
 
 /// <p>A list of DNS server name and server IP. This is used to set up Route-53 outbound resolvers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomDnsServer {
     /// <p>The name of the DNS server.</p>

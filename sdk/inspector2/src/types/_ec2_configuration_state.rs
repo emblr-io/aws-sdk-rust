@@ -2,6 +2,8 @@
 
 /// <p>Details about the state of the EC2 scan configuration for your environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2ConfigurationState {
     /// <p>An object that contains details about the state of the Amazon EC2 scan mode.</p>

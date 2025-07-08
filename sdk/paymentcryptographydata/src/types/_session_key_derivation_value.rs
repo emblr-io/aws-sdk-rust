@@ -2,6 +2,8 @@
 
 /// <p>Parameters to derive session key value using a MAC EMV algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum SessionKeyDerivationValue {
     /// <p>The cryptogram provided by the terminal during transaction processing.</p>

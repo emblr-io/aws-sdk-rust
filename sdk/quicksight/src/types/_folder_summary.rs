@@ -2,6 +2,8 @@
 
 /// <p>A summary of information about an existing Amazon QuickSight folder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FolderSummary {
     /// <p>The Amazon Resource Name (ARN) of the folder.</p>

@@ -2,6 +2,8 @@
 
 /// The target to which to send matching events.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventBridgeRuleTemplateTarget {
     /// Target ARNs must be either an SNS topic or CloudWatch log group.

@@ -2,6 +2,8 @@
 
 /// <p>The number of entities in an account that are impacted by a specific event aggregated by the entity status codes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountEntityAggregate {
     /// <p>The 12-digit Amazon Web Services account numbers that contains the affected entities.</p>

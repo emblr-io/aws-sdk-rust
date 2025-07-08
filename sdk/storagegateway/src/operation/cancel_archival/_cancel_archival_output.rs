@@ -2,6 +2,8 @@
 
 /// <p>CancelArchivalOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelArchivalOutput {
     /// <p>The Amazon Resource Name (ARN) of the virtual tape for which archiving was canceled.</p>

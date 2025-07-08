@@ -3,6 +3,8 @@
 /// <p>This API is in preview release for Amazon Connect and is subject to change. To request access to this API, contact Amazon Web ServicesSupport.</p>
 /// <p>Information about an authentication profile. An authentication profile is a resource that stores the authentication settings for users in your contact center. You use authentication profiles to set up IP address range restrictions and session timeouts. For more information, see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/authentication-profiles.html">Set IP address restrictions or session timeouts</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthenticationProfile {
     /// <p>A unique identifier for the authentication profile.</p>

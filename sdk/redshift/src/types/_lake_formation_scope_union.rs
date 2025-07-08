@@ -2,6 +2,8 @@
 
 /// <p>A list of scopes set up for Lake Formation integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum LakeFormationScopeUnion {
     /// <p>The Lake Formation scope.</p>

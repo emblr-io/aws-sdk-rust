@@ -2,6 +2,8 @@
 
 /// <p>A high-level summary of a voice profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct VoiceProfileSummary {
     /// <p>The ID of the voice profile in a voice profile summary.</p>

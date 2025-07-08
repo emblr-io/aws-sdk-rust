@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the Managed Cluster configuration of the knowledge base in Amazon OpenSearch Service. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup-osm.html">Create a vector index in OpenSearch Managed Cluster</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OpenSearchManagedClusterConfiguration {
     /// <p>The endpoint URL the OpenSearch domain.</p>

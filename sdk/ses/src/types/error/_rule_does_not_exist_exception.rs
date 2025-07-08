@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the provided receipt rule does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleDoesNotExistException {
     /// <p>Indicates that the named receipt rule does not exist.</p>

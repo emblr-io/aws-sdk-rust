@@ -2,6 +2,8 @@
 
 /// <p>Contains options for processing inbound EDI files. These options allow for customizing how incoming EDI documents are processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InboundEdiOptions {
     /// <p>A structure that contains X12-specific options for processing inbound X12 EDI files.</p>

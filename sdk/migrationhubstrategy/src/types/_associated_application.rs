@@ -2,6 +2,8 @@
 
 /// <p>Object containing details about applications as defined in Application Discovery Service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatedApplication {
     /// <p>Name of the application as defined in Application Discovery Service.</p>

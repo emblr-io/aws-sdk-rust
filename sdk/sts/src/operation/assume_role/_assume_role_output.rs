@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a successful <code>AssumeRole</code> request, including temporary Amazon Web Services credentials that can be used to make Amazon Web Services requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssumeRoleOutput {
     /// <p>The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.</p><note>

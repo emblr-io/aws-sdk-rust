@@ -2,6 +2,8 @@
 
 /// <p>The filter used to retrieve specific <code>BillingGroupCostReportElements</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListBillingGroupCostReportsFilter {
     /// <p>The list of Amazon Resource Names (ARNs) used to filter billing groups to retrieve reports.</p>

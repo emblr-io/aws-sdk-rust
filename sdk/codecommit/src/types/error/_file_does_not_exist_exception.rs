@@ -2,6 +2,8 @@
 
 /// <p>The specified file does not exist. Verify that you have used the correct file name, full path, and extension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileDoesNotExistException {
     /// <p>Any message associated with the exception.</p>

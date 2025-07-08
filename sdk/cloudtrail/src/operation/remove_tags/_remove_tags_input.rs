@@ -2,6 +2,8 @@
 
 /// <p>Specifies the tags to remove from a trail, event data store, dashboard, or channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoveTagsInput {
     /// <p>Specifies the ARN of the trail, event data store, dashboard, or channel from which tags should be removed.</p>

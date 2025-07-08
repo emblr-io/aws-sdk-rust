@@ -2,6 +2,8 @@
 
 /// <p>Provided if <code>CallerType</code> is <code>domain</code>. It provides information about the DNS domain that issued the API call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiCallActionDomainDetails {
     /// <p>The name of the DNS domain that issued the API call.</p>

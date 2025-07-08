@@ -2,6 +2,8 @@
 
 /// <p>The CloudWatch dashboards to include as data sources in the experiment report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateReportConfigurationCloudWatchDashboard {
     /// <p>The Amazon Resource Name (ARN) of the CloudWatch dashboard to include in the experiment report.</p>

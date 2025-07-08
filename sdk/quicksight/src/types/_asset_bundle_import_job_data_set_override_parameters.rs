@@ -2,6 +2,8 @@
 
 /// <p>The override parameters for a single dataset that is being imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobDataSetOverrideParameters {
     /// <p>The ID of the dataset to apply overrides to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the ID namespace association input reference properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdNamespaceAssociationInputReferencePropertiesSummary {
     /// <p>The ID namespace type for this ID namespace association.</p>

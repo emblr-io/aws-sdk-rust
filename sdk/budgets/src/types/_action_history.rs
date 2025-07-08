@@ -2,6 +2,8 @@
 
 /// <p>The historical records for a budget action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionHistory {
     /// <p>A generic time stamp. In Java, it's transformed to a <code>Date</code> object.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Summary of the AWS resource used for access control that is implicitly linked to your AWS account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProgressUpdateStreamSummary {
     /// <p>The name of the ProgressUpdateStream. <i>Do not store personal data in this field.</i></p>

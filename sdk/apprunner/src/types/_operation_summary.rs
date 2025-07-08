@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information for an operation that occurred on an App Runner service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperationSummary {
     /// <p>A unique ID of this operation. It's unique in the scope of the App Runner service.</p>

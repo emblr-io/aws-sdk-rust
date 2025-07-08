@@ -2,6 +2,8 @@
 
 /// <p>An object representing the logging configuration for resources in your cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Logging {
     /// <p>The cluster control plane logging configuration for your cluster.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that includes attributes that describe a document attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentContent {
     /// <p>The name of an attachment.</p>

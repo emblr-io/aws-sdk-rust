@@ -2,6 +2,8 @@
 
 /// <p>The cluster can't be created because you have reached the maximum allowed quota of clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Attaches the specified object to the specified index inside a <code>BatchRead</code> operation. For more information, see <code>AttachToIndex</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAttachToIndex {
     /// <p>A reference to the index that you are attaching the object to.</p>

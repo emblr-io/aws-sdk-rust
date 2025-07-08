@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains resource policy ID and Amazon Resource Name (ARN).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicySummary {
     /// <p>The unique identifier (ID) of the resource policy.</p>

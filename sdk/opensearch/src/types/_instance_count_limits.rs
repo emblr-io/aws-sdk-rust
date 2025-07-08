@@ -2,6 +2,8 @@
 
 /// <p>Limits on the number of instances that can be created in OpenSearch Service for a given instance type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceCountLimits {
     /// <p>The maximum allowed number of instances.</p>

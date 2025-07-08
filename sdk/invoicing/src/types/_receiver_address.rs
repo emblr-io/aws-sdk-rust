@@ -2,6 +2,8 @@
 
 /// <p>The details of the address associated with the receiver.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ReceiverAddress {
     /// <p>The first line of the address.</p>

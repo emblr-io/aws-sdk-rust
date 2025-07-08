@@ -2,6 +2,8 @@
 
 /// <p>The customer managed key that is registered to your Amazon QuickSight account is unavailable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerManagedKeyUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

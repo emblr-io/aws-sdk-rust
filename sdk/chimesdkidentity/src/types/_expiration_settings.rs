@@ -2,6 +2,8 @@
 
 /// <p>Determines the interval after which an <code>AppInstanceUser</code> is automatically deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpirationSettings {
     /// <p>The period in days after which an <code>AppInstanceUser</code> will be automatically deleted.</p>

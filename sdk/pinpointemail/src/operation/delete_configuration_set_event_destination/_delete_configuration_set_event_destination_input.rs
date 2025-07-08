@@ -2,6 +2,8 @@
 
 /// <p>A request to delete an event destination from a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConfigurationSetEventDestinationInput {
     /// <p>The name of the configuration set that contains the event destination that you want to delete.</p>

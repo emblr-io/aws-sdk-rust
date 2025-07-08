@@ -2,6 +2,8 @@
 
 /// <p>Indicates the pose of the face as determined by its pitch, roll, and yaw.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Pose {
     /// <p>Value representing the face rotation on the roll axis.</p>

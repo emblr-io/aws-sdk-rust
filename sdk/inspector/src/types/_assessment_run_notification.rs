@@ -2,6 +2,8 @@
 
 /// <p>Used as one of the elements of the <code>AssessmentRun</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentRunNotification {
     /// <p>The date of the notification.</p>

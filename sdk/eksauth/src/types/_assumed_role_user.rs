@@ -2,6 +2,8 @@
 
 /// <p>An object with the permanent IAM role identity and the temporary session name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssumedRoleUser {
     /// <p>The ARN of the IAM role that the temporary credentials authenticate to.</p>

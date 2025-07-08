@@ -2,6 +2,8 @@
 
 /// <p>Defines the X.500 relative distinguished name (RDN).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomAttribute {
     /// <p>Specifies the object identifier (OID) of the attribute type of the relative distinguished name (RDN).</p>

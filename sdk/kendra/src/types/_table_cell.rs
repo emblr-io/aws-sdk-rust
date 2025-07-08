@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a table cell in a table excerpt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableCell {
     /// <p>The actual value or content within a table cell. A table cell could contain a date value of a year, or a string value of text, for example.</p>

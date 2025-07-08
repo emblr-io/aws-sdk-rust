@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateDeploymentConfig</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDeploymentConfigInput {
     /// <p>The name of the deployment configuration to create.</p>

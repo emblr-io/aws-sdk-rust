@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to perform an <code>UpdateItem</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Update {
     /// <p>The primary key of the item to be updated. Each element consists of an attribute name and a value for that attribute.</p>

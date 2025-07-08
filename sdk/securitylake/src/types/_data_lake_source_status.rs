@@ -2,6 +2,8 @@
 
 /// <p>Retrieves the Logs status for the Amazon Security Lake account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeSourceStatus {
     /// <p>Defines path the stored logs are available which has information on your systems, applications, and services.</p>

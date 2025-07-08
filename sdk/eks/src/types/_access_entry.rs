@@ -2,6 +2,8 @@
 
 /// <p>An access entry allows an IAM principal (user or role) to access your cluster. Access entries can replace the need to maintain the <code>aws-auth</code> <code>ConfigMap</code> for authentication. For more information about access entries, see <a href="https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html">Access entries</a> in the <i>Amazon EKS User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessEntry {
     /// <p>The name of your cluster.</p>

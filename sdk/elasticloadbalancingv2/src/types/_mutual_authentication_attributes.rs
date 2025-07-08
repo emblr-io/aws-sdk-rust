@@ -2,6 +2,8 @@
 
 /// <p>Information about the mutual authentication attributes of a listener.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MutualAuthenticationAttributes {
     /// <p>The client certificate handling method. Options are <code>off</code>, <code>passthrough</code> or <code>verify</code>. The default value is <code>off</code>.</p>

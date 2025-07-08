@@ -2,6 +2,8 @@
 
 /// <p>An array that contains the sensitivity parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DifferentialPrivacyParameters {
     /// <p>Provides the sensitivity parameters that you can use to better understand the total amount of noise in query results.</p>

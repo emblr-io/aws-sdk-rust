@@ -2,6 +2,8 @@
 
 /// <p>The headers specified are not valid for an Amazon S3 origin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidHeadersForS3Origin {
     #[allow(missing_docs)] // documentation missing in model

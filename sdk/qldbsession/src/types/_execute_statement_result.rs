@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of the executed statement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecuteStatementResult {
     /// <p>Contains the details of the first fetched page.</p>

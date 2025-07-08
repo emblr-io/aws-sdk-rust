@@ -4,6 +4,8 @@
 /// <p>Compute Optimizer only supports Amazon EC2 instance types.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EffectivePreferredResource {
     /// <p>The name of the preferred resource list.</p>

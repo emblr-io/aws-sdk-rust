@@ -2,6 +2,8 @@
 
 /// <p>Details related to the U-turn step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteUTurnStepDetails {
     /// <p>Name of the intersection, if applicable to the step.</p>

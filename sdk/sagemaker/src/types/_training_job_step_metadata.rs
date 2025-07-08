@@ -2,6 +2,8 @@
 
 /// <p>Metadata for a training job step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingJobStepMetadata {
     /// <p>The Amazon Resource Name (ARN) of the training job that was run by this step execution.</p>

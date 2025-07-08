@@ -2,6 +2,8 @@
 
 /// <p>The criteria that a specific object attribute must meet to trigger the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObjectAttribute {
     /// <p>An attribute contained within a source object.</p>

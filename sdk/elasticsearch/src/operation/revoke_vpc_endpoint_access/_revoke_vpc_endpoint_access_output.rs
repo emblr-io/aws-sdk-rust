@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>RevokeVpcEndpointAccess</code></code> operation. The response body for this operation is empty.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RevokeVpcEndpointAccessOutput {
     _request_id: Option<String>,

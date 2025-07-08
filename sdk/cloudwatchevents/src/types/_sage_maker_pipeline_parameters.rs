@@ -2,6 +2,8 @@
 
 /// <p>These are custom parameters to use when the target is a SageMaker Model Building Pipeline that starts based on EventBridge events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SageMakerPipelineParameters {
     /// <p>List of Parameter names and values for SageMaker Model Building Pipeline execution.</p>

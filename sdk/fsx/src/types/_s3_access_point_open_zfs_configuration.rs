@@ -2,6 +2,8 @@
 
 /// <p>Describes the FSx for OpenZFS attachment configuration of an S3 access point attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3AccessPointOpenZfsConfiguration {
     /// <p>The ID of the FSx for OpenZFS volume that the S3 access point is attached to.</p>

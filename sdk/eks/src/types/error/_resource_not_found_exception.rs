@@ -2,6 +2,8 @@
 
 /// <p>The specified resource could not be found. You can view your available clusters with <code>ListClusters</code>. You can view your available managed node groups with <code>ListNodegroups</code>. Amazon EKS clusters and node groups are Amazon Web Services Region specific.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotFoundException {
     /// <p>The Amazon EKS cluster associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request to submit new account details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PutAccountDetailsInput {
     /// <p>The type of email your account will send.</p>

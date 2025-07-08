@@ -2,6 +2,8 @@
 
 /// <p>Describes an association between a local gateway route table and a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocalGatewayRouteTableVpcAssociation {
     /// <p>The ID of the association.</p>

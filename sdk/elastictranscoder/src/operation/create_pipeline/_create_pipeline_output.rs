@@ -2,6 +2,8 @@
 
 /// <p>When you create a pipeline, Elastic Transcoder returns the values that you specified in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreatePipelineOutput {
     /// <p>A section of the response body that provides information about the pipeline that is created.</p>

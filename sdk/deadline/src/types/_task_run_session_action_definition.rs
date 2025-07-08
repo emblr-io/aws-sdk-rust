@@ -2,6 +2,8 @@
 
 /// <p>The task, step, and parameters for the task run in the session action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TaskRunSessionActionDefinition {
     /// <p>The task ID.</p>

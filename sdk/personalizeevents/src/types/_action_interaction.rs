@@ -2,6 +2,8 @@
 
 /// <p>Represents an action interaction event sent using the <code>PutActionInteractions</code> API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ActionInteraction {
     /// <p>The ID of the action the user interacted with. This corresponds to the <code>ACTION_ID</code> field of the Action interaction schema.</p>

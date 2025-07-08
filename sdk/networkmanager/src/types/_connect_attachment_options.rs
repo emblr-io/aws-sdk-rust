@@ -2,6 +2,8 @@
 
 /// <p>Describes a core network Connect attachment options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectAttachmentOptions {
     /// <p>The protocol used for the attachment connection.</p>

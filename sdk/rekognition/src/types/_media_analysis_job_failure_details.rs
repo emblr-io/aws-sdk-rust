@@ -2,6 +2,8 @@
 
 /// <p>Details about the error that resulted in failure of the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaAnalysisJobFailureDetails {
     /// <p>Error code for the failed job.</p>

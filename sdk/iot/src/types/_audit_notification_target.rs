@@ -2,6 +2,8 @@
 
 /// <p>Information about the targets to which audit notifications are sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditNotificationTarget {
     /// <p>The ARN of the target (SNS topic) to which audit notifications are sent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The customizations that you specified for the distribution tenant for geographic restrictions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoRestrictionCustomization {
     /// <p>The method that you want to use to restrict distribution of your content by country:</p>

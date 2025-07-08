@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the metadata and configuration settings for services on an Amazon Web Services Snow Family device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnDeviceServiceConfiguration {
     /// <p>Represents the NFS (Network File System) service on a Snow Family device.</p>

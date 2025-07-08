@@ -2,6 +2,8 @@
 
 /// <p>The batch read exception structure, which contains the exception type and message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchReadException {
     /// <p>A type of exception, such as <code>InvalidArnException</code>.</p>

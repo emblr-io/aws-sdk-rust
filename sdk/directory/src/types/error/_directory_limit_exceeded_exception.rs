@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of directories in the region has been reached. You can use the <code>GetDirectoryLimits</code> operation to determine your directory limits in the region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryLimitExceededException {
     /// <p>The descriptive message for the exception.</p>

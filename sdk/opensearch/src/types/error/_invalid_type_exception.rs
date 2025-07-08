@@ -2,6 +2,8 @@
 
 /// <p>An exception for trying to create or access a sub-resource that's either invalid or not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTypeException {
     /// <p>A description of the error.</p>

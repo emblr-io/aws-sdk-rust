@@ -2,6 +2,8 @@
 
 /// <p>Specifies the contents of an email message, represented as a raw MIME message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RawEmail {
     /// <p>The email message, represented as a raw MIME message. The entire message must be base64 encoded.</p>

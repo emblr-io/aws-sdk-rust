@@ -2,6 +2,8 @@
 
 /// <p>The summary of user access logging settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserAccessLoggingSettingsSummary {
     /// <p>The ARN of the user access logging settings.</p>

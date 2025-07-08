@@ -2,6 +2,8 @@
 
 /// <p>The <code>UpdatePipelineRequest</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipelineInput {
     /// <p>The ID of the pipeline that you want to update.</p>

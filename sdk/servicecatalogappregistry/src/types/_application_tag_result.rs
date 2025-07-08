@@ -2,6 +2,8 @@
 
 /// <p>The result of the application tag that's applied to a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationTagResult {
     /// <p>The application tag is in the process of being applied to a resource, was successfully applied to a resource, or failed to apply to a resource.</p>

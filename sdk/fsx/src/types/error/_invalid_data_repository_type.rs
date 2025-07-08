@@ -2,6 +2,8 @@
 
 /// <p>You have filtered the response to a data repository type that is not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDataRepositoryType {
     /// <p>A detailed error message.</p>

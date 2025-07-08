@@ -2,6 +2,8 @@
 
 /// <p>Summarized information of replication between clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationInfoSummary {
     /// <p>The alias of the source Kafka cluster.</p>

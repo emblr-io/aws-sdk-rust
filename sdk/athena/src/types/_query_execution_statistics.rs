@@ -2,6 +2,8 @@
 
 /// <p>The amount of data scanned during the query execution and the amount of time that it took to execute, and the type of statement that was run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryExecutionStatistics {
     /// <p>The number of milliseconds that the query took to execute.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A combination of a bucket and Region that's part of a Multi-Region Access Point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegionReport {
     /// <p>The name of the bucket.</p>

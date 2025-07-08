@@ -2,6 +2,8 @@
 
 /// <p>Describes the launch specification for VM import.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ImportInstanceLaunchSpecification {
     /// <p>The architecture of the instance.</p>

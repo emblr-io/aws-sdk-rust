@@ -2,6 +2,8 @@
 
 /// <p>Contains incremental updates to citation information during streaming responses. This allows clients to build up citation data progressively as the response is generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CitationsDelta {
     /// <p>The title or identifier of the source document being cited.</p>

@@ -34,6 +34,8 @@
 /// <p>The <code>Invoke</code> API operation on <i>MyOtherLambdaFunction</i> is an Lambda API. Because the CloudTrail user did not specify logging data events for all Lambda functions, the <code>Invoke</code> operation for <i>MyOtherLambdaFunction</i> does not match the function specified for the trail. The trail doesn’t log the event.</p></li>
 /// </ol>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataResource {
     /// <p>The resource type in which you want to log data events. You can specify the following <i>basic</i> event selector resource types:</p>

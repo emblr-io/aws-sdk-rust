@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines configuration settings for an application that supports the OAuth 2.0 Refresh Token Grant. For more, see <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.5">RFC 6749</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshTokenGrant {}
 impl RefreshTokenGrant {

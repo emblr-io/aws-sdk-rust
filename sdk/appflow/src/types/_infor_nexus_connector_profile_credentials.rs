@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required by Infor Nexus.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InforNexusConnectorProfileCredentials {
     /// <p>The Access Key portion of the credentials.</p>

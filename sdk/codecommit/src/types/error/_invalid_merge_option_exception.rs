@@ -2,6 +2,8 @@
 
 /// <p>The specified merge option is not valid for this operation. Not all merge strategies are supported for all operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidMergeOptionException {
     /// <p>Any message associated with the exception.</p>

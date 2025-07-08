@@ -2,6 +2,8 @@
 
 /// <p>The geomerty used to filter device positions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingFilterGeometry {
     /// <p>The set of arrays which define the polygon. A polygon can have between 4 and 1000 vertices.</p>

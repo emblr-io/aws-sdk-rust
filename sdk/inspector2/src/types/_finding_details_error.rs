@@ -2,6 +2,8 @@
 
 /// <p>Details about an error encountered when trying to return vulnerability data for a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingDetailsError {
     /// <p>The finding ARN that returned an error.</p>

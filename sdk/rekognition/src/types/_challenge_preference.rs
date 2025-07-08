@@ -2,6 +2,8 @@
 
 /// <p>An ordered list of preferred challenge type and versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChallengePreference {
     /// <p>The types of challenges that have been selected for the Face Liveness session.</p>

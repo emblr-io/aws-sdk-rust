@@ -2,6 +2,8 @@
 
 /// <p>Amazon Web Services Private CA Connector for Active Directory is a service that links your Active Directory with Amazon Web Services Private CA. The connector brokers the exchange of certificates from Amazon Web Services Private CA to domain-joined users and machines managed with Active Directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Connector {
     /// <p>The Amazon Resource Name (ARN) that was returned when you called <a href="https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API_CreateConnector.html">CreateConnector</a>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the scope a flow operation. You can use up to 20 filters to configure a single flow operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowFilter {
     /// <p>A single IP address specification. This is used in the <code>MatchAttributes</code> source and destination specifications.</p>

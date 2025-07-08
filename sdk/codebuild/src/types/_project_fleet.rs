@@ -2,6 +2,8 @@
 
 /// <p>Information about the compute fleet of the build project. For more information, see <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/fleets.html">Working with reserved capacity in CodeBuild</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectFleet {
     /// <p>Specifies the compute fleet ARN for the build project.</p>

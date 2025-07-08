@@ -2,6 +2,8 @@
 
 /// <p>Information about a <code>Complaint</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Complaint {
     /// <p>Can either be <code>null</code> or <code>OnAccountSuppressionList</code>. If the value is <code>OnAccountSuppressionList</code>, SES accepted the message, but didn't attempt to send it because it was on the account-level suppression list.</p>

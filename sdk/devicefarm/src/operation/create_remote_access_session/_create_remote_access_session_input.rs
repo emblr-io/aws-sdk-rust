@@ -2,6 +2,8 @@
 
 /// <p>Creates and submits a request to start a remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRemoteAccessSessionInput {
     /// <p>The Amazon Resource Name (ARN) of the project for which you want to create a remote access session.</p>

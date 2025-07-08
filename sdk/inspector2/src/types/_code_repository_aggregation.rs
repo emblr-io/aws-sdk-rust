@@ -2,6 +2,8 @@
 
 /// <p>The details that define an aggregation based on code repositories.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeRepositoryAggregation {
     /// <p>The project names to include in the aggregation results.</p>

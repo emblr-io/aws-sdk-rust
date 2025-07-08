@@ -2,6 +2,8 @@
 
 /// <p>A request for a list of the configured Cognito Events</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetCognitoEventsInput {
     /// <p>The Cognito Identity Pool ID for the request</p>

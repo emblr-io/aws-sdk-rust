@@ -2,6 +2,8 @@
 
 /// <p>Container for the response to a <code>CancelServiceSoftwareUpdate</code> operation. Contains the status of the update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelServiceSoftwareUpdateOutput {
     /// <p>Container for the state of your domain relative to the latest service software.</p>

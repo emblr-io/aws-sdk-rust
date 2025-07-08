@@ -2,6 +2,8 @@
 
 /// <p>Information about a consumable resource required to run a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConsumableResourceRequirement {
     /// <p>The name or ARN of the consumable resource.</p>

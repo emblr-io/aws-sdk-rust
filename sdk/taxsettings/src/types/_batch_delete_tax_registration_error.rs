@@ -2,6 +2,8 @@
 
 /// <p>The error object for representing failures in the <code>BatchDeleteTaxRegistration</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BatchDeleteTaxRegistrationError {
     /// <p>The unique account identifier for the account whose tax registration couldn't be deleted during the <code>BatchDeleteTaxRegistration</code> operation.</p>

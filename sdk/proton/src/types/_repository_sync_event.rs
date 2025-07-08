@@ -2,6 +2,8 @@
 
 /// <p>Repository sync event detail data for a sync attempt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositorySyncEvent {
     /// <p>The type of event.</p>

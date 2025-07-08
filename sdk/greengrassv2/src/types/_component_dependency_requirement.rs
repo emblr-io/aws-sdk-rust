@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a component dependency for a Lambda function component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentDependencyRequirement {
     /// <p>The component version requirement for the component dependency.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You don't have access to perform this action. Make sure you have the required permission policies and user accounts and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     #[allow(missing_docs)] // documentation missing in model

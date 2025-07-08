@@ -2,6 +2,8 @@
 
 /// <p>Details about the data source packages ingested by your behavior graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasourcePackageIngestDetail {
     /// <p>Details on which data source packages are ingested for a member account.</p>

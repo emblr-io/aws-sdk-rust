@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the permissions for the resource that you want to override in an asset bundle import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleResourcePermissions {
     /// <p>A list of principals to grant permissions on.</p>

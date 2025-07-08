@@ -3,6 +3,8 @@
 /// <p>Defines a training job and a batch transform job that SageMaker runs to validate your algorithm.</p>
 /// <p>The data provided in the validation profile is made available to your buyers on Amazon Web Services Marketplace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlgorithmValidationProfile {
     /// <p>The name of the profile for the algorithm. The name must have 1 to 63 characters. Valid characters are a-z, A-Z, 0-9, and - (hyphen).</p>

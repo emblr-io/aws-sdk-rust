@@ -2,6 +2,8 @@
 
 /// <p>Specifies details of an outbound connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutboundCrossClusterSearchConnection {
     /// <p>Specifies the <code><code>DomainInformation</code></code> for the source Elasticsearch domain.</p>

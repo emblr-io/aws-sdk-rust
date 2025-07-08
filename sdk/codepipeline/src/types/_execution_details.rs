@@ -2,6 +2,8 @@
 
 /// <p>The details of the actions taken and results produced on an artifact as it passes through stages in the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionDetails {
     /// <p>The summary of the current status of the actions.</p>

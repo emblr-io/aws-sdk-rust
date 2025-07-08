@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an event that occurred affecting the bot locale.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotLocaleHistoryEvent {
     /// <p>A description of the event that occurred.</p>

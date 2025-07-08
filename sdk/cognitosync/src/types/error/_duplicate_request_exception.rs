@@ -2,6 +2,8 @@
 
 /// An exception thrown when there is an IN_PROGRESS bulk publish operation for the given identity pool.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateRequestException {
     /// The message associated with the DuplicateRequestException exception.

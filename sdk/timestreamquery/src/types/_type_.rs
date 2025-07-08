@@ -2,6 +2,8 @@
 
 /// <p>Contains the data type of a column in a query result set. The data type can be scalar or complex. The supported scalar data types are integers, Boolean, string, double, timestamp, date, time, and intervals. The supported complex data types are arrays, rows, and timeseries.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Type {
     /// <p>Indicates if the column is of type string, integer, Boolean, double, timestamp, date, time. For more information, see <a href="https://docs.aws.amazon.com/timestream/latest/developerguide/supported-data-types.html">Supported data types</a>.</p>

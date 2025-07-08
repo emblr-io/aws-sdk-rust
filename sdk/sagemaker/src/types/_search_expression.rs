@@ -13,6 +13,8 @@
 /// <p>A Boolean operator: <code>And</code> or <code>Or</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchExpression {
     /// <p>A list of filter objects.</p>

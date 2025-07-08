@@ -2,6 +2,8 @@
 
 /// <p>The access log configuration for a virtual gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum VirtualGatewayAccessLog {
     /// <p>The file object to send virtual gateway access logs to.</p>

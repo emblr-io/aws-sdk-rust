@@ -2,6 +2,8 @@
 
 /// <p>TracePoint indices for which the provided notice code corresponds to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RoadSnapTracePoint {
     /// <p>GPS Heading at the position.</p>

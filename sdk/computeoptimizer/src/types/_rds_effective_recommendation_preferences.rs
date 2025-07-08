@@ -2,6 +2,8 @@
 
 /// <p>Describes the effective recommendation preferences for Amazon Aurora and RDS databases.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsEffectiveRecommendationPreferences {
     /// <p>Describes the CPU vendor and architecture for DB instance recommendations.</p>

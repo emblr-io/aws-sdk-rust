@@ -2,6 +2,8 @@
 
 /// <p>v2 template schema that uses Legacy Cryptographic Providers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateV2 {
     /// <p>Certificate validity describes the validity and renewal periods of a certificate.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A configured table analysis rule, which limits how data for this table can be used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTableAnalysisRule {
     /// <p>The unique ID for the configured table.</p>

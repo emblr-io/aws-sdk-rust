@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a private IPv4 address that is with the network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2NetworkInterfacePrivateIpAddressDetail {
     /// <p>The IP address.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The certificate could not be added because the certificate limit has been reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateLimitExceededException {
     /// <p>The descriptive message for the exception.</p>

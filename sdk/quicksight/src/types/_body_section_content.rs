@@ -2,6 +2,8 @@
 
 /// <p>The configuration of content in a body section.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BodySectionContent {
     /// <p>The layout configuration of a body section.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes how to interpret an application-defined timestamp value from an MQTT message payload and the precision of that value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationTimestamp {
     /// <p>An expression that returns a long epoch time value.</p>

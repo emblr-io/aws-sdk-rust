@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a stage session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StageSessionSummary {
     /// <p>ID of the session within the stage.</p>

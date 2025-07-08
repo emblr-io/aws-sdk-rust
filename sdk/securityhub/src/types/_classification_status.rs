@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the current status of the sensitive data detection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClassificationStatus {
     /// <p>The code that represents the status of the sensitive data detection.</p>

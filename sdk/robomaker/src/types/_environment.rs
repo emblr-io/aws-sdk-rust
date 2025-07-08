@@ -2,6 +2,8 @@
 
 /// <p>The object that contains the Docker image URI for either your robot or simulation applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Environment {
     /// <p>The Docker image URI for either your robot or simulation applications.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when Amazon Cognito encounters a user name that already exists in the user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsernameExistsException {
     /// <p>The message returned when Amazon Cognito throws a user name exists exception.</p>

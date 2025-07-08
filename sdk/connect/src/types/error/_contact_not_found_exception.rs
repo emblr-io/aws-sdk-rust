@@ -2,6 +2,8 @@
 
 /// <p>The contact with the specified ID is not active or does not exist. Applies to Voice calls only, not to Chat or Task contacts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactNotFoundException {
     /// <p>The message.</p>

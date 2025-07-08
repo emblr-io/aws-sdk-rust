@@ -2,6 +2,8 @@
 
 /// <p>User attempted to create a new DB cluster and the user has already reached the maximum allowed DB cluster quota.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterQuotaExceededFault {
     /// <p>A message describing the details of the problem.</p>

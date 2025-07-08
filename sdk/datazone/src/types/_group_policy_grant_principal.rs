@@ -2,6 +2,8 @@
 
 /// <p>The group principal to whom the policy is granted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum GroupPolicyGrantPrincipal {
     /// <p>The ID Of the group of the group principal.</p>

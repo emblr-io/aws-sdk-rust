@@ -2,6 +2,8 @@
 
 /// <p>Metadata about the detection source that generates proactive anomalies. The anomaly is detected using analysis of the metric data  over a period of time</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalySourceMetadata {
     /// <p>The source of the anomaly.</p>

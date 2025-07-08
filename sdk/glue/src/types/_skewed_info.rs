@@ -2,6 +2,8 @@
 
 /// <p>Specifies skewed values in a table. Skewed values are those that occur with very high frequency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SkewedInfo {
     /// <p>A list of names of columns that contain skewed values.</p>

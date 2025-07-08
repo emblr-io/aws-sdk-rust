@@ -2,6 +2,8 @@
 
 /// <p>Enables the creation of criteria for Amazon Web Services resources in Security Hub.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcesCompositeFilter {
     /// <p>Enables filtering based on string field values.</p>

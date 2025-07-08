@@ -2,6 +2,8 @@
 
 /// <p>Provides settings for a message that is sent to the user when a fulfillment Lambda function starts running.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FulfillmentStartResponseSpecification {
     /// <p>The delay between when the Lambda fulfillment function starts running and the start message is played. If the Lambda function returns before the delay is over, the start message isn't played.</p>

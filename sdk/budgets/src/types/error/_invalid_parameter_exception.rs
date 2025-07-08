@@ -2,6 +2,8 @@
 
 /// <p>An error on the client occurred. Typically, the cause is an invalid input value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidParameterException {
     /// <p>The error message the exception carries.</p>

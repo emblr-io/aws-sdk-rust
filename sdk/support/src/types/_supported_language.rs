@@ -2,6 +2,8 @@
 
 /// <p>A JSON-formatted object that contains the available ISO 639-1 language <code>code</code>, <code>language</code> name and langauge <code>display</code> value. The language code is what should be used in the <code>CreateCase</code> call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedLanguage {
     /// <p>2 digit ISO 639-1 code. e.g. <code>en</code></p>

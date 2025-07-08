@@ -2,6 +2,8 @@
 
 /// Required when you set Codec to the value VP8.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Vp8Settings {
     /// Target bitrate in bits/second. For example, enter five megabits per second as 5000000.

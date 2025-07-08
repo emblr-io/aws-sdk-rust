@@ -2,6 +2,8 @@
 
 /// <p>The category object to be created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateCategoryInputCategory {
     /// <p>The unique identifier to be associated with a category. If you don't include a value, the category is automatically assigned a unique identifier.</p>

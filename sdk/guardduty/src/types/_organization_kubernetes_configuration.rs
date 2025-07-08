@@ -2,6 +2,8 @@
 
 /// <p>Organization-wide Kubernetes data sources configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationKubernetesConfiguration {
     /// <p>Whether Kubernetes audit logs data source should be auto-enabled for new members joining the organization.</p>

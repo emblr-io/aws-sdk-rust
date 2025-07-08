@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it referenced an entity that does not exist. The error code describes the entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchEntityException {
     /// <p>Details of the exception error.</p>

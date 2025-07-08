@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon Web Services account or service that has access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizedPrincipal {
     /// <p>The type of principal.</p>

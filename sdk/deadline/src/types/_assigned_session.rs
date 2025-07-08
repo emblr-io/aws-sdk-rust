@@ -2,6 +2,8 @@
 
 /// <p>The assigned session for the worker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssignedSession {
     /// <p>The queue ID of the assigned session.</p>

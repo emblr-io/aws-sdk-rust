@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code><code>DeleteExpression</code></code> request. Specifies the expression being deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteExpressionOutput {
     /// <p>The status of the expression being deleted.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structure containing traffic policy conditions and actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyStatement {
     /// <p>The list of conditions to apply to incoming messages for filtering email traffic.</p>

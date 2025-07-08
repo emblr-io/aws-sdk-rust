@@ -2,6 +2,8 @@
 
 /// <p>Provides the bot parameters required for importing a bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotImportSpecification {
     /// <p>The name that Amazon Lex should use for the bot.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A list of Stage resources that are associated with the ApiKey resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetStagesOutput {
     /// <p>The current page of elements from this collection.</p>

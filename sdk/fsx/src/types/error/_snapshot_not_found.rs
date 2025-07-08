@@ -2,6 +2,8 @@
 
 /// <p>No Amazon FSx snapshots were found based on the supplied parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotNotFound {
     /// <p>A detailed error message.</p>

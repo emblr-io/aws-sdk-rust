@@ -3,6 +3,8 @@
 /// <p>The confusion matrix shows you what your transform is predicting accurately and what types of errors it is making.</p>
 /// <p>For more information, see <a href="https://en.wikipedia.org/wiki/Confusion_matrix">Confusion matrix</a> in Wikipedia.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfusionMatrix {
     /// <p>The number of matches in the data that the transform correctly found, in the confusion matrix for your transform.</p>

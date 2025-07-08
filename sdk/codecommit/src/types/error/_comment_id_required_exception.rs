@@ -2,6 +2,8 @@
 
 /// <p>The comment ID is missing or null. A comment ID is required.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommentIdRequiredException {
     /// <p>Any message associated with the exception.</p>

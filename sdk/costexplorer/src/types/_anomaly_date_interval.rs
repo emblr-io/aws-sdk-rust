@@ -2,6 +2,8 @@
 
 /// <p>The time period for an anomaly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyDateInterval {
     /// <p>The first date an anomaly was observed.</p>

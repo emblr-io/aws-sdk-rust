@@ -3,6 +3,8 @@
 /// <p>The default settings for shared spaces that users create in the domain.</p>
 /// <p>SageMaker applies these settings only to shared spaces. It doesn't apply them to private spaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultSpaceSettings {
     /// <p>The ARN of the execution role for the space.</p>

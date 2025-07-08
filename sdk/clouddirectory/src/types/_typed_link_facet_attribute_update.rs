@@ -2,6 +2,8 @@
 
 /// <p>A typed link facet attribute update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypedLinkFacetAttributeUpdate {
     /// <p>The attribute to update.</p>

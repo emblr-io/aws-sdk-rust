@@ -2,6 +2,8 @@
 
 /// <p>The data repository task could not be canceled because the task has already ended.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataRepositoryTaskEnded {
     /// <p>A detailed error message.</p>

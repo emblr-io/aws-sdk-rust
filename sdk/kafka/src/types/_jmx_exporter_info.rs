@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether you want to turn on or turn off the JMX Exporter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JmxExporterInfo {
     /// <p>Indicates whether you want to turn on or turn off the JMX Exporter.</p>

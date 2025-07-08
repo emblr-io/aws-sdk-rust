@@ -2,6 +2,8 @@
 
 /// <p>An object that describes the details for a specified dimension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionKeyDetail {
     /// <p>The value of the dimension detail data. Depending on the return status, this value is either the full or truncated SQL query for the following dimensions:</p>

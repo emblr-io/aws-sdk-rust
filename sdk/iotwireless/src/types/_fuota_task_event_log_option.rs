@@ -3,6 +3,8 @@
 /// <p>The log options for a FUOTA task event and can be used to set log levels for a specific FUOTA task event.</p>
 /// <p>For a LoRaWAN FUOTA task, the only possible event for a log message is <code>Fuota</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FuotaTaskEventLogOption {
     /// <p>The event for a log message, if the log message is tied to a FUOTA task.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to ServiceNow as your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceNowConfiguration {
     /// <p>The ServiceNow instance that the data source connects to. The host endpoint should look like the following: <i>{instance}.service-now.com.</i></p>

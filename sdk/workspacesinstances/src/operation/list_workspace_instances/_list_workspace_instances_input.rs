@@ -2,6 +2,8 @@
 
 /// <p>Defines filters and pagination parameters for retrieving WorkSpaces Instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListWorkspaceInstancesInput {
     /// <p>Filter WorkSpaces Instances by their current provisioning states.</p>

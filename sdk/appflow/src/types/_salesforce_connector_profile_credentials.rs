@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required when using Salesforce.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SalesforceConnectorProfileCredentials {
     /// <p>The credentials used to access protected Salesforce resources.</p>

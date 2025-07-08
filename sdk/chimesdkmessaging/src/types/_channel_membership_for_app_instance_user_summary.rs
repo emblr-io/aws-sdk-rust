@@ -2,6 +2,8 @@
 
 /// <p>Summary of the channel membership details of an <code>AppInstanceUser</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelMembershipForAppInstanceUserSummary {
     /// <p>Returns the channel data for an <code>AppInstance</code>.</p>

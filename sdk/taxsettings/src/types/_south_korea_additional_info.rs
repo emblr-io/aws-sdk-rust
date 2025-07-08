@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in South Korea.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SouthKoreaAdditionalInfo {
     /// <p>The business legal name based on the most recently uploaded tax registration certificate.</p>

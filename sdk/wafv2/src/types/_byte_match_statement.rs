@@ -2,6 +2,8 @@
 
 /// <p>A rule statement that defines a string match search for WAF to apply to web requests. The byte match statement provides the bytes to search for, the location in requests that you want WAF to search, and other settings. The bytes to search for are typically a string that corresponds with ASCII characters. In the WAF console and the developer guide, this is called a string match statement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ByteMatchStatement {
     /// <p>A string value that you want WAF to search for. WAF searches only in the part of web requests that you designate for inspection in <code>FieldToMatch</code>. The maximum length of the value is 200 bytes.</p>

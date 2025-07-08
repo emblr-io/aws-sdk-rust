@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for an output flow node in the flow. You specify the data type expected for the input into the node in the <code>type</code> field and how to return the final output in the <code>expression</code> field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputFlowNodeConfiguration {}
 impl OutputFlowNodeConfiguration {

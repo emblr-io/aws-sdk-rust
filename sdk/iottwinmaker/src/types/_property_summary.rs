@@ -2,6 +2,8 @@
 
 /// <p>This is an object that contains the information of a property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertySummary {
     /// <p>This is the schema for the property.</p>

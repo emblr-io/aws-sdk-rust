@@ -2,6 +2,8 @@
 
 /// <p>Settings that are used to configure and manage the lifecycle of Amazon SageMaker Studio applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppLifecycleManagement {
     /// <p>Settings related to idle shutdown of Studio applications.</p>

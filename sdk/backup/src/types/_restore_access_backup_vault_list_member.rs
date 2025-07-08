@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a restore access backup vault.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreAccessBackupVaultListMember {
     /// <p>The ARN of the restore access backup vault.</p>

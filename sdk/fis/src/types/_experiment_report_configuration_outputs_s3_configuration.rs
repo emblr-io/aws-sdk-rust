@@ -2,6 +2,8 @@
 
 /// <p>Specifies the S3 destination for the experiment report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentReportConfigurationOutputsS3Configuration {
     /// <p>The name of the S3 bucket where the experiment report will be stored.</p>

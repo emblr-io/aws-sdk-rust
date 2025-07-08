@@ -2,6 +2,8 @@
 
 /// <p>Specifies changes you are making to the self-managed Microsoft Active Directory configuration to which an FSx for Windows File Server file system or an FSx for ONTAP SVM is joined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SelfManagedActiveDirectoryConfigurationUpdates {
     /// <p>Specifies the updated user name for the service account on your self-managed Active Directory domain. Amazon FSx uses this account to join to your self-managed Active Directory domain.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration of a word cloud visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WordCloudSortConfiguration {
     /// <p>The limit on the number of groups that are displayed in a word cloud.</p>

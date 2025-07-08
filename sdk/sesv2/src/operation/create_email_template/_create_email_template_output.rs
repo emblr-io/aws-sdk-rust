@@ -2,6 +2,8 @@
 
 /// <p>If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateEmailTemplateOutput {
     _request_id: Option<String>,

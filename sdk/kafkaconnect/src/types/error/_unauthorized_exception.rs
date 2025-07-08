@@ -2,6 +2,8 @@
 
 /// <p>HTTP Status Code 401: Unauthorized request. The provided credentials couldn't be validated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnauthorizedException {
     #[allow(missing_docs)] // documentation missing in model

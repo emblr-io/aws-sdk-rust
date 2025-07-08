@@ -2,6 +2,8 @@
 
 /// <p>Contains advanced options specific to X12 EDI processing, such as splitting large X12 files into smaller units.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct X12AdvancedOptions {
     /// <p>Specifies options for splitting X12 EDI files. These options control how large X12 files are divided into smaller, more manageable units.</p>

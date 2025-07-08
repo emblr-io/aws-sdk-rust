@@ -2,6 +2,8 @@
 
 /// <p>Describes an import snapshot task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportSnapshotTask {
     /// <p>A description of the import snapshot task.</p>

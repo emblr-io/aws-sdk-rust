@@ -2,6 +2,8 @@
 
 /// <p>Information about a Savings Plan offering rate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SavingsPlanOfferingRate {
     /// <p>The Savings Plan offering.</p>

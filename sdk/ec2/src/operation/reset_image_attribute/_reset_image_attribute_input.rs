@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for ResetImageAttribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResetImageAttributeInput {
     /// <p>The attribute to reset (currently you can only reset the launch permission attribute).</p>

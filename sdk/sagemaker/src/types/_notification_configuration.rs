@@ -2,6 +2,8 @@
 
 /// <p>Configures Amazon SNS notifications of available or expiring work items for work teams.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationConfiguration {
     /// <p>The ARN for the Amazon SNS topic to which notifications should be published.</p>

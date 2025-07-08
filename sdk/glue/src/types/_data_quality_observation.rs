@@ -2,6 +2,8 @@
 
 /// <p>Describes the observation generated after evaluating the rules and analyzers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataQualityObservation {
     /// <p>A description of the data quality observation.</p>

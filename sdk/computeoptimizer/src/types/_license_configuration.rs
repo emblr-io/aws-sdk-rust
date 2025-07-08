@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of a license for an Amazon EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LicenseConfiguration {
     /// <p>The current number of cores associated with the instance.</p>

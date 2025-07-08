@@ -2,6 +2,8 @@
 
 /// <p>Identifying information for the configuration of a CloudFormation extension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypeConfigurationIdentifier {
     /// <p>The Amazon Resource Name (ARN) for the extension, in this account and Region.</p>

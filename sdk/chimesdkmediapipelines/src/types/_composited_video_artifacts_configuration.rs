@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for compositing video artifacts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositedVideoArtifactsConfiguration {
     /// <p>The layout setting, such as <code>GridView</code> in the configuration object.</p>

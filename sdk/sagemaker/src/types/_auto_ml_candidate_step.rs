@@ -2,6 +2,8 @@
 
 /// <p>Information about the steps for a candidate and what step it is working on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlCandidateStep {
     /// <p>Whether the candidate is at the transform, training, or processing step.</p>

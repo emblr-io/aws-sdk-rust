@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a policy, but does not include the content. To see the content of a policy, see <code>DescribePolicy</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicySummary {
     /// <p>The unique identifier (ID) of the policy.</p>

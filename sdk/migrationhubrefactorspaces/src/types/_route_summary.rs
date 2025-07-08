@@ -2,6 +2,8 @@
 
 /// <p>The summary information for the routes as a response to <code>ListRoutes</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RouteSummary {
     /// <p>The unique identifier of the route.</p>

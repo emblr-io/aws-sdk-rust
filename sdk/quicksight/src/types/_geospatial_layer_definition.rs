@@ -2,6 +2,8 @@
 
 /// <p>The definition properties for a geospatial layer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialLayerDefinition {
     /// <p>The definition for a point layer.</p>

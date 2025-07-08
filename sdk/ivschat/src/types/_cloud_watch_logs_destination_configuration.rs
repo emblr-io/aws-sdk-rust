@@ -2,6 +2,8 @@
 
 /// <p>Specifies a CloudWatch Logs location where chat logs will be stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsDestinationConfiguration {
     /// <p>Name of the Amazon Cloudwatch Logs destination where chat activity will be logged.</p>

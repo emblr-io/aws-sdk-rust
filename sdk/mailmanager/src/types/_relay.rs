@@ -2,6 +2,8 @@
 
 /// <p>The relay resource that can be used as a rule to relay receiving emails to the destination relay server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Relay {
     /// <p>The unique relay identifier.</p>

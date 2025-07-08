@@ -2,6 +2,8 @@
 
 /// <p>Each <code>LongTermPricingListEntry</code> object contains information about a long-term pricing type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LongTermPricingListEntry {
     /// <p>The ID of the long-term pricing type for the device.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the recurrence pattern for running a classification job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobScheduleFrequency {
     /// <p>Specifies a daily recurrence pattern for running the job.</p>

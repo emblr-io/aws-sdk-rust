@@ -2,6 +2,8 @@
 
 /// <p>Information about AwsGroundStationAgentEndpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsGroundStationAgentEndpoint {
     /// <p>Name string associated with AgentEndpoint. Used as a human-readable identifier for AgentEndpoint.</p>

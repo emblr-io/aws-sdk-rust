@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Comprehend Medical service is temporarily unavailable. Please wait and then retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

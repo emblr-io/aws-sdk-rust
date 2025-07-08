@@ -2,6 +2,8 @@
 
 /// <p>Launch configuration for a server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerLaunchConfiguration {
     /// <p>The ID of the server with which the launch configuration is associated.</p>

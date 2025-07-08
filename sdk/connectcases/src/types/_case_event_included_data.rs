@@ -2,6 +2,8 @@
 
 /// <p>Details of what case data is published through the case event stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CaseEventIncludedData {
     /// <p>List of field identifiers.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The action of associating an EC2 resource, such as a subnet or internet gateway, with a route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2AssociateRouteTableAction {
     /// <p>A description of the EC2 route table that is associated with the remediation action.</p>

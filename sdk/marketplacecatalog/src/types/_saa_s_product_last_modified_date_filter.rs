@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering based on the last modified date of SaaS products</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SaaSProductLastModifiedDateFilter {
     /// <p>Dates between which the SaaS product was last modified.</p>

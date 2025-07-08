@@ -2,6 +2,8 @@
 
 /// <p>An Amazon Web Services Systems Manager parameter in Parameter Store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Parameter {
     /// <p>The name of the parameter.</p>

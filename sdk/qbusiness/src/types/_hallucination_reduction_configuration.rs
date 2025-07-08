@@ -4,6 +4,8 @@
 /// <p>The hallucination reduction feature won't work if chat orchestration controls are enabled for your application.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HallucinationReductionConfiguration {
     /// <p>Controls whether hallucination reduction has been enabled or disabled for your application. The default status is <code>DISABLED</code>.</p>

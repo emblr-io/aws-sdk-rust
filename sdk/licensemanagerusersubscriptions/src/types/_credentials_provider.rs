@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the credential provider for user administration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CredentialsProvider {
     /// <p>Identifies the Secrets Manager secret that contains credentials needed for user administration in the Active Directory.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies a page-level location within a document, providing positioning information for cited content using page numbers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentPageLocation {
     /// <p>The index of the document within the array of documents provided in the request.</p>

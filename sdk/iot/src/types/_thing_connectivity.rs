@@ -2,6 +2,8 @@
 
 /// <p>The connectivity status of the thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThingConnectivity {
     /// <p>True if the thing is connected to the Amazon Web Services IoT Core service; false if it is not connected.</p>

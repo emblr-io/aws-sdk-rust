@@ -2,6 +2,8 @@
 
 /// <p>Determines whether Amazon Lex obscures slot values in conversation logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObfuscationSetting {
     /// <p>Value that determines whether Amazon Lex obscures slot values in conversation logs. The default is to obscure the values.</p>

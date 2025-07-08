@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the optimized prompt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum OptimizedPrompt {
     /// <p>Contains information about the text in the prompt that was optimized.</p>

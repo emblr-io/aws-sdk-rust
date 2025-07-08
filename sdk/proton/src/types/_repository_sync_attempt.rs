@@ -2,6 +2,8 @@
 
 /// <p>Detail data for a repository sync attempt activated by a push to a repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositorySyncAttempt {
     /// <p>The time when the sync attempt started.</p>

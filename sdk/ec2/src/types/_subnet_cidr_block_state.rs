@@ -2,6 +2,8 @@
 
 /// <p>Describes the state of a CIDR block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubnetCidrBlockState {
     /// <p>The state of a CIDR block.</p>

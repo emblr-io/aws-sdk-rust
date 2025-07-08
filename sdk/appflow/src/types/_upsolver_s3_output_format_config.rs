@@ -2,6 +2,8 @@
 
 /// <p>The configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpsolverS3OutputFormatConfig {
     /// <p>Indicates the file type that Amazon AppFlow places in the Upsolver Amazon S3 bucket.</p>

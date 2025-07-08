@@ -2,6 +2,8 @@
 
 /// Provides a description of the operation failure
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperationFailureDetails {
     /// Provides the operation ID of a system-rollback operation executed due to failure in the current operation

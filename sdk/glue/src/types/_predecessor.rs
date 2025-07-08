@@ -2,6 +2,8 @@
 
 /// <p>A job run that was used in the predicate of a conditional trigger that triggered this job run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Predecessor {
     /// <p>The name of the job definition used by the predecessor job run.</p>

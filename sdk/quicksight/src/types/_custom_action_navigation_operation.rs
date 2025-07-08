@@ -3,6 +3,8 @@
 /// <p>The navigation operation that navigates between different sheets in the same analysis.</p>
 /// <p>This is a union type structure. For this structure to be valid, only one of the attributes can be defined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomActionNavigationOperation {
     /// <p>The configuration that chooses the navigation target.</p>

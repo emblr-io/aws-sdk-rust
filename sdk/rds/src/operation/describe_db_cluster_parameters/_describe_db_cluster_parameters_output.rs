@@ -2,6 +2,8 @@
 
 /// <p>Provides details about a DB cluster parameter group including the parameters in the DB cluster parameter group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDbClusterParametersOutput {
     /// <p>Provides a list of parameters for the DB cluster parameter group.</p>

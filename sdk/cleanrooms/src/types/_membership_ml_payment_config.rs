@@ -2,6 +2,8 @@
 
 /// <p>An object representing the collaboration member's machine learning payment responsibilities set by the collaboration creator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MembershipMlPaymentConfig {
     /// <p>The payment responsibilities accepted by the member for model training.</p>

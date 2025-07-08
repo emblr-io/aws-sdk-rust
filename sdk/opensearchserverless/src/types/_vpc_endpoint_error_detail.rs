@@ -2,6 +2,8 @@
 
 /// <p>Error information for a failed <code>BatchGetVpcEndpoint</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointErrorDetail {
     /// <p>The unique identifier of the VPC endpoint.</p>

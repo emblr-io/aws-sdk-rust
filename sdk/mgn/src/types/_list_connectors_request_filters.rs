@@ -2,6 +2,8 @@
 
 /// <p>List Connectors Request Filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListConnectorsRequestFilters {
     /// <p>List Connectors Request Filters connector IDs.</p>

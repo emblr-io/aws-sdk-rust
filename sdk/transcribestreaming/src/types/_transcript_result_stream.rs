@@ -2,6 +2,8 @@
 
 /// <p>Contains detailed information about your streaming session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TranscriptResultStream {
     /// <p>Contains <code>Transcript</code>, which contains <code>Results</code>. The <code></code> object contains a set of transcription results from one or more audio segments, along with additional information per your request parameters.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents which scan types are automatically enabled for new members of your Amazon Inspector organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoEnable {
     /// <p>Represents whether Amazon EC2 scans are automatically enabled for new members of your Amazon Inspector organization.</p>

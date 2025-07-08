@@ -2,6 +2,8 @@
 
 /// <p>Specifies the name and version of the message template to use for the message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Template {
     /// <p>The name of the message template to use for the message. If specified, this value must match the name of an existing message template.</p>

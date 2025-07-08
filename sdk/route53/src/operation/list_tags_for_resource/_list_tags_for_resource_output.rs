@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the health checks or hosted zones for which you want to list tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsForResourceOutput {
     /// <p>A <code>ResourceTagSet</code> containing tags associated with the specified resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the version (or revision) of a source artifact that initiated a pipeline execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceRevision {
     /// <p>The name of the action that processed the revision to the source artifact.</p>

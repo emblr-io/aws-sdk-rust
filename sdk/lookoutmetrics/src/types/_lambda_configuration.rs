@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a Lambda configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaConfiguration {
     /// <p>The ARN of an IAM role that has permission to invoke the Lambda function.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the get device pool compatibility operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDevicePoolCompatibilityInput {
     /// <p>The device pool's ARN.</p>

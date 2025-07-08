@@ -2,6 +2,8 @@
 
 /// <p>A source IP addresses and address range to inspect for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupSourceStatelessRuleMatchAttributesSources {
     /// <p>An IP address or a block of IP addresses.</p>

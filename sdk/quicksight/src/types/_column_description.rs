@@ -2,6 +2,8 @@
 
 /// <p>Metadata that contains a description for a column.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ColumnDescription {
     /// <p>The text of a description for a column.</p>

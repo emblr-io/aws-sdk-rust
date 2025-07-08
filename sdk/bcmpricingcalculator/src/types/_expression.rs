@@ -2,6 +2,8 @@
 
 /// <p>Represents a complex filtering expression for cost and usage data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Expression {
     /// <p>A list of expressions to be combined with AND logic.</p>

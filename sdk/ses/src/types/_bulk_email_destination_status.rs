@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the response from the <code>SendBulkTemplatedEmail</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BulkEmailDestinationStatus {
     /// <p>The status of a message sent using the <code>SendBulkTemplatedEmail</code> operation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the automation option based on a rule category for a single select question.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleSelectQuestionRuleCategoryAutomation {
     /// <p>The category name, as defined in Rules.</p>

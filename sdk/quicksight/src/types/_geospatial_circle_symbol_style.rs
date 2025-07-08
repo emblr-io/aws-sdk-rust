@@ -2,6 +2,8 @@
 
 /// <p>The properties for a circle symbol style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialCircleSymbolStyle {
     /// <p>The color and opacity values for the fill color.</p>

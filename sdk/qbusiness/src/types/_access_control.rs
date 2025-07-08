@@ -2,6 +2,8 @@
 
 /// <p>A list of principals. Each principal can be either a <code>USER</code> or a <code>GROUP</code> and can be designated document access permissions of either <code>ALLOW</code> or <code>DENY</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessControl {
     /// <p>Contains a list of principals, where a principal can be either a <code>USER</code> or a <code>GROUP</code>. Each principal can be have the following type of document access: <code>ALLOW</code> or <code>DENY</code>.</p>

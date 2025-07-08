@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an edge in a Neptune Analytics graph.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdgeStructure {
     /// <p>The number of instances of the edge in the graph.</p>

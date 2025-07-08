@@ -2,6 +2,8 @@
 
 /// <p>An error occurred when authenticating with the connector endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorAuthenticationException {
     #[allow(missing_docs)] // documentation missing in model

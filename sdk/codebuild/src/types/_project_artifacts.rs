@@ -2,6 +2,8 @@
 
 /// <p>Information about the build output artifacts for the build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectArtifacts {
     /// <p>The type of build output artifact. Valid values include:</p>

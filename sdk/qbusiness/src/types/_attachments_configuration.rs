@@ -2,6 +2,8 @@
 
 /// <p>Configuration information for the file upload during chat feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttachmentsConfiguration {
     /// <p>Status information about whether file upload functionality is activated or deactivated for your end user.</p>

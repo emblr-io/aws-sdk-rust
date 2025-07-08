@@ -2,6 +2,8 @@
 
 /// <p>Information about a Amazon Web Services Region in your replication set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegionInfo {
     /// <p>The ID of the KMS key used to encrypt the data in this Amazon Web Services Region.</p>

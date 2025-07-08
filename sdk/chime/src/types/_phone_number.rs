@@ -2,6 +2,8 @@
 
 /// <p>A phone number used for Amazon Chime Business Calling or an Amazon Chime Voice Connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PhoneNumber {
     /// <p>The phone number ID.</p>

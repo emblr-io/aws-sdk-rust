@@ -2,6 +2,8 @@
 
 /// <p>Describes the state of an association between a route table and a subnet or gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationStateDetails {
     /// <p>The state of the association.</p>

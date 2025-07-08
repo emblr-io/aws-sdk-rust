@@ -2,6 +2,8 @@
 
 /// <p>Contains the GraphQL operation to be parsed and executed, if the event target is an AppSync API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AppSyncParameters {
     /// <p>The GraphQL operation; that is, the query, mutation, or subscription to be parsed and executed by the GraphQL service.</p>

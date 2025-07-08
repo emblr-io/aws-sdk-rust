@@ -2,6 +2,8 @@
 
 /// <p>Returned by <code>StartWorkflowExecution</code> when an open execution with the same workflowId is already running in the specified domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowExecutionAlreadyStartedFault {
     /// <p>A description that may help with diagnosing the cause of the fault.</p>

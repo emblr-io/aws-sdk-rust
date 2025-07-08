@@ -2,6 +2,8 @@
 
 /// <p>A list of attributes that are associated with a MAIL FROM domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MailFromAttributes {
     /// <p>The name of a domain that an email identity uses as a custom MAIL FROM domain.</p>

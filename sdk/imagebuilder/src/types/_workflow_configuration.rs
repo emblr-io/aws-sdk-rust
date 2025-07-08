@@ -2,6 +2,8 @@
 
 /// <p>Contains control settings and configurable inputs for a workflow resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the workflow resource.</p>

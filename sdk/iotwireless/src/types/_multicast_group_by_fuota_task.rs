@@ -2,6 +2,8 @@
 
 /// <p>A multicast group that is associated with a FUOTA task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MulticastGroupByFuotaTask {
     /// <p>The ID of the multicast group.</p>

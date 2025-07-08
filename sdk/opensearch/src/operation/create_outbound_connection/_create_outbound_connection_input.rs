@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>CreateOutboundConnection</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateOutboundConnectionInput {
     /// <p>Name and Region of the source (local) domain.</p>

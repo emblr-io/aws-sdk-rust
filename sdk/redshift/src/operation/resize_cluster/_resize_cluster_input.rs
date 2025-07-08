@@ -2,6 +2,8 @@
 
 /// <p>Describes a resize cluster operation. For example, a scheduled action to run the <code>ResizeCluster</code> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResizeClusterInput {
     /// <p>The unique identifier for the cluster to resize.</p>

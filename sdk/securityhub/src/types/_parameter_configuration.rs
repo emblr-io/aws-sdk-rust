@@ -2,6 +2,8 @@
 
 /// <p>An object that provides the current value of a security control parameter and identifies whether it has been customized.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterConfiguration {
     /// <p>Identifies whether a control parameter uses a custom user-defined value or subscribes to the default Security Hub behavior.</p>

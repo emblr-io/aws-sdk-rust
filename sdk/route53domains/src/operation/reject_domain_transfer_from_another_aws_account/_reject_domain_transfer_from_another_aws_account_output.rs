@@ -2,6 +2,8 @@
 
 /// <p>The RejectDomainTransferFromAnotherAwsAccount response includes the following element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RejectDomainTransferFromAnotherAwsAccountOutput {
     /// <p>The identifier that <code>TransferDomainToAnotherAwsAccount</code> returned to track the progress of the request. Because the transfer request was rejected, the value is no longer valid, and you can't use <code>GetOperationDetail</code> to query the operation status.</p>

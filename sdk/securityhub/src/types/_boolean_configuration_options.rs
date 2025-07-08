@@ -2,6 +2,8 @@
 
 /// <p>The options for customizing a security control parameter with a boolean. For a boolean parameter, the options are <code>true</code> and <code>false</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BooleanConfigurationOptions {
     /// <p>The Security Hub default value for a boolean parameter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A filter used to match specific automation executions. This is used to limit the scope of Automation execution information returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationExecutionFilter {
     /// <p>One or more keys to limit the results.</p>

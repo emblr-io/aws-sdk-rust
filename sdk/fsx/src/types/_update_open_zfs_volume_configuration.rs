@@ -2,6 +2,8 @@
 
 /// <p>Used to specify changes to the OpenZFS configuration for the volume that you are updating.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateOpenZfsVolumeConfiguration {
     /// <p>The amount of storage in gibibytes (GiB) to reserve from the parent volume. You can't reserve more storage than the parent volume has reserved. You can specify a value of <code>-1</code> to unset a volume's storage capacity reservation.</p>

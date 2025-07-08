@@ -2,6 +2,8 @@
 
 /// <p>The DICOM attributes returned as a part of a response. Each image set has these properties as part of a search result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DicomTags {
     /// <p>The unique identifier for a patient in a DICOM Study.</p>

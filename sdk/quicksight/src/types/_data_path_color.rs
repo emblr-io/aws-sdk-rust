@@ -2,6 +2,8 @@
 
 /// <p>The color map that determines the color options for a particular element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataPathColor {
     /// <p>The element that the color needs to be applied to.</p>

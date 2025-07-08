@@ -2,6 +2,8 @@
 
 /// <p>The override parameters for a single folder that is being imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobFolderOverrideParameters {
     /// <p>The ID of the folder that you want to apply overrides to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A result message containing a list of completed and failed managed actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentManagedActionHistoryOutput {
     /// <p>A list of completed and failed managed actions.</p>

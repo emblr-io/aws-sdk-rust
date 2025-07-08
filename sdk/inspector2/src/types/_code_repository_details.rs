@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a code repository associated with a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeRepositoryDetails {
     /// <p>The name of the project in the code repository.</p>

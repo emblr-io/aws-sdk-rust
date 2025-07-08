@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether to enable CloudWatch Container Insights for the ECS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsClusterClusterSettingsDetails {
     /// <p>The name of the setting. The valid value is <code>containerInsights</code>.</p>

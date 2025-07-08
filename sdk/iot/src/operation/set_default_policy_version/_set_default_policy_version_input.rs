@@ -2,6 +2,8 @@
 
 /// <p>The input for the SetDefaultPolicyVersion operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetDefaultPolicyVersionInput {
     /// <p>The policy name.</p>

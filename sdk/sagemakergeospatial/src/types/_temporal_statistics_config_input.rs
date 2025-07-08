@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the configuration for Temporal Statistics operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemporalStatisticsConfigInput {
     /// <p>The input for the temporal statistics grouping by time frequency option.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the billing for read/write capacity on the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableBillingModeSummary {
     /// <p>The method used to charge for read and write throughput and to manage capacity.</p>

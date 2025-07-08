@@ -2,6 +2,8 @@
 
 /// <p>The target account, organizational unit, or the root that is associated with an Security Hub configuration. The configuration can be a configuration policy or self-managed behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Target {
     /// <p>The Amazon Web Services account ID of the target account.</p>

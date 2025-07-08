@@ -2,6 +2,8 @@
 
 /// <p>The inheritance drift summary for the enabled baseline. Inheritance drift occurs when any accounts in the target OU do not match the baseline configuration defined on that OU.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnabledBaselineInheritanceDrift {
     /// <p>The inheritance drift status for enabled baselines.</p>

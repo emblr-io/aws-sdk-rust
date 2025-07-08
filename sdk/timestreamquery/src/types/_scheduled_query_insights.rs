@@ -2,6 +2,8 @@
 
 /// <p>Encapsulates settings for enabling <code>QueryInsights</code> on an <code>ExecuteScheduledQueryRequest</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledQueryInsights {
     /// <p>Provides the following modes to enable <code>ScheduledQueryInsights</code>:</p>

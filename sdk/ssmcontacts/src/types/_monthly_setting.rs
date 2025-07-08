@@ -2,6 +2,8 @@
 
 /// <p>Information about on-call rotations that recur monthly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonthlySetting {
     /// <p>The day of the month when monthly recurring on-call rotations begin.</p>

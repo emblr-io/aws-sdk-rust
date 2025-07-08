@@ -2,6 +2,8 @@
 
 /// <p>Contains details required to update a code security integration with a specific repository provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum UpdateIntegrationDetails {
     /// <p>Details specific to updating an integration with GitHub.</p>

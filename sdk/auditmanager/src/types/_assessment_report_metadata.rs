@@ -2,6 +2,8 @@
 
 /// <p>The metadata objects that are associated with the specified assessment report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssessmentReportMetadata {
     /// <p>The unique identifier for the assessment report.</p>

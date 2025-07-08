@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum amount of memory per vCPU, in GiB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetails {
     /// <p>The maximum amount of memory per vCPU, in GiB. If this parameter is omitted, there's no maximum limit.</p>

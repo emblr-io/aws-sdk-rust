@@ -2,6 +2,8 @@
 
 /// <p>The SageMaker images that are hidden from the Studio user interface. You must specify the SageMaker image name and version aliases.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HiddenSageMakerImage {
     /// <p>The SageMaker image name that you are hiding from the Studio user interface.</p>

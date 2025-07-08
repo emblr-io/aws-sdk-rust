@@ -2,6 +2,8 @@
 
 /// <p>The value of an <code>IndexField</code> and its current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndexFieldStatus {
     /// <p>Configuration information for a field in the index, including its name, type, and options. The supported options depend on the <code><code>IndexFieldType</code></code>.</p>

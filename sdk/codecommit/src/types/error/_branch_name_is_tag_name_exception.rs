@@ -2,6 +2,8 @@
 
 /// <p>The specified branch name is not valid because it is a tag name. Enter the name of a branch in the repository. For a list of valid branch names, use <code>ListBranches</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BranchNameIsTagNameException {
     /// <p>Any message associated with the exception.</p>

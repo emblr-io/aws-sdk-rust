@@ -2,6 +2,8 @@
 
 /// <p>One of the targets for the stack set. Returned by the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ListStackSetAutoDeploymentTargets.html">ListStackSetAutoDeploymentTargets</a> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackSetAutoDeploymentTargetSummary {
     /// <p>The organization root ID or organizational unit (OU) IDs where the stack set is targeted.</p>

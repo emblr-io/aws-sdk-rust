@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a SSL/TLS certificate renewal managed by Amazon Lightsail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenewalSummary {
     /// <p>An array of objects that describe the domain validation records of the certificate.</p>

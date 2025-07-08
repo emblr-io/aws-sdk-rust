@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an Amazon EC2 network access control list (ACL).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2NetworkAclDetails {
     /// <p>Whether this is the default network ACL for the VPC.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configures AWS Nitro Enclave options for the WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnclaveOptionsRequest {
     /// <p>Enables or disables AWS Nitro Enclaves for enhanced security.</p>

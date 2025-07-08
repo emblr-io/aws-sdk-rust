@@ -2,6 +2,8 @@
 
 /// <p>Information about the number of accounts that have enabled a specific feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationFeatureStatistics {
     /// <p>Name of the feature.</p>

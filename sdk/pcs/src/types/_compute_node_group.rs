@@ -2,6 +2,8 @@
 
 /// <p>A compute node group associated with a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeNodeGroup {
     /// <p>The name that identifies the compute node group.</p>

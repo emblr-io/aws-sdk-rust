@@ -2,6 +2,8 @@
 
 /// <p>Contains a list of HTTP header names.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Headers {
     /// <p>The number of header names in the <code>Items</code> list.</p>

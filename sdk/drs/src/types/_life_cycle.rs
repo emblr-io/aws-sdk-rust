@@ -2,6 +2,8 @@
 
 /// <p>An object representing the Source Server Lifecycle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifeCycle {
     /// <p>The date and time of when the Source Server was added to the service.</p>

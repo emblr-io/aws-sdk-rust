@@ -2,6 +2,8 @@
 
 /// <p>The details of a Crawler node present in the workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrawlerNodeDetails {
     /// <p>A list of crawls represented by the crawl node.</p>

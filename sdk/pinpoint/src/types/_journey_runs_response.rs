@@ -2,6 +2,8 @@
 
 /// <p>Provides information from all runs of a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneyRunsResponse {
     /// <p>An array of responses, one for each run of the journey</p>

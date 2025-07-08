@@ -2,6 +2,8 @@
 
 /// <p>A notification from the client that it is disconnecting from Amazon Lex V2. Sending a <code>DisconnectionEvent</code> event is optional, but can help identify a conversation in logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisconnectionEvent {
     /// <p>A unique identifier that your application assigns to the event. You can use this to identify events in logs.</p>

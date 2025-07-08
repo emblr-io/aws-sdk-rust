@@ -2,6 +2,8 @@
 
 /// <p>The retention policy for an email archive that specifies how long emails are kept before being automatically deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ArchiveRetention {
     /// <p>The enum value sets the period for retaining emails in an archive.</p>

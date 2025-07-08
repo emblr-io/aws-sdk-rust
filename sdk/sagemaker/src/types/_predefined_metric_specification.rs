@@ -2,6 +2,8 @@
 
 /// <p>A specification for a predefined metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredefinedMetricSpecification {
     /// <p>The metric type. You can only apply SageMaker metric types to SageMaker endpoints.</p>

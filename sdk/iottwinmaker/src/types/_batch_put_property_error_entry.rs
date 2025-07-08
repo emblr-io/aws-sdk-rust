@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about errors returned by the <code>BatchPutProperty</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPutPropertyErrorEntry {
     /// <p>A list of objects that contain information about errors returned by the <code>BatchPutProperty</code> action.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes text information objects containing fields that determine how text part objects are composed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextPartValue {
     /// <p>The type of text part. Determines the usage of all other fields and whether or not they're required.</p>

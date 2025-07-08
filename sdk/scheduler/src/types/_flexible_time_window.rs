@@ -2,6 +2,8 @@
 
 /// <p>Allows you to configure a time window during which EventBridge Scheduler invokes the schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlexibleTimeWindow {
     /// <p>Determines whether the schedule is invoked within a flexible time window.</p>

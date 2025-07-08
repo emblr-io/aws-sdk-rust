@@ -2,6 +2,8 @@
 
 /// <p>Returns information about an override event for approval rules for a pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApprovalRuleOverriddenEventMetadata {
     /// <p>The revision ID of the pull request when the override event occurred.</p>

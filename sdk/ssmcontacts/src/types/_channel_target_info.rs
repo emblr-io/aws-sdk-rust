@@ -2,6 +2,8 @@
 
 /// <p>Information about the contact channel that Incident Manager uses to engage the contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelTargetInfo {
     /// <p>The Amazon Resource Name (ARN) of the contact channel.</p>

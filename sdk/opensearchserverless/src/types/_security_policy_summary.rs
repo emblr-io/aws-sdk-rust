@@ -2,6 +2,8 @@
 
 /// <p>A summary of a security policy for OpenSearch Serverless.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityPolicySummary {
     /// <p>The type of security policy.</p>

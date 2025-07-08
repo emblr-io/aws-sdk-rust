@@ -2,6 +2,8 @@
 
 /// <p>Thumbnails for videos.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Thumbnails {
     /// <p>The format of thumbnails, if any. Valid values are <code>jpg</code> and <code>png</code>.</p>

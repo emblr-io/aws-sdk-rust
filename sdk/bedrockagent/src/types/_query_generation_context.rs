@@ -2,6 +2,8 @@
 
 /// <p>&gt;Contains configurations for context to use during query generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct QueryGenerationContext {
     /// <p>An array of objects, each of which defines information about a table in the database.</p>

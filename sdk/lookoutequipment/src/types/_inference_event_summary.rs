@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the specific inference event, including start and end time, diagnostics information, event duration and so on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceEventSummary {
     /// <p>The Amazon Resource Name (ARN) of the inference scheduler being used for the inference event.</p>

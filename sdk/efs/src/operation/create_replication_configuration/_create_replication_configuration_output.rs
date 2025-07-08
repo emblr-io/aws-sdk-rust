@@ -2,6 +2,8 @@
 
 /// <p>Describes the replication configuration for a specific file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateReplicationConfigurationOutput {
     /// <p>The ID of the source Amazon EFS file system that is being replicated.</p>

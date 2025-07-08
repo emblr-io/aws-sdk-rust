@@ -2,6 +2,8 @@
 
 /// <p>Specifies the text input specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextInputSpecification {
     /// <p>Time for which a bot waits before re-prompting a customer for text input.</p>

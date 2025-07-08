@@ -2,6 +2,8 @@
 
 /// <p>Describes the codes to use when checking for a successful response from a target for health checks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Matcher {
     /// <p>The HTTP code to use when checking for a successful response from a target.</p>

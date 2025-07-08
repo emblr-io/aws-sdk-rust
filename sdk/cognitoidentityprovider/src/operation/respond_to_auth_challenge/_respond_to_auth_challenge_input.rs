@@ -2,6 +2,8 @@
 
 /// <p>The request to respond to an authentication challenge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RespondToAuthChallengeInput {
     /// <p>The ID of the app client where the user is signing in.</p>

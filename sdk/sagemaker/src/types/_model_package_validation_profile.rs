@@ -3,6 +3,8 @@
 /// <p>Contains data, such as the inputs and targeted instance types that are used in the process of validating the model package.</p>
 /// <p>The data provided in the validation profile is made available to your buyers on Amazon Web Services Marketplace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPackageValidationProfile {
     /// <p>The name of the profile for the model package.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure returned by the <code>ListGroupResources</code> operation that contains identity and group membership status information for one of the resources in the group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListGroupResourcesItem {
     /// <p>A structure that contains the ARN of a resource and its resource type.</p>

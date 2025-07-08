@@ -2,6 +2,8 @@
 
 /// <p>The overall resiliency score, returned as an object that includes the disruption score and outage score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResiliencyScore {
     /// <p>The outage score for a valid key.</p>

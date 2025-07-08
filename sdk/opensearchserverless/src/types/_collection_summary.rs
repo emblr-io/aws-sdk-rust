@@ -2,6 +2,8 @@
 
 /// <p>Details about each OpenSearch Serverless collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollectionSummary {
     /// <p>The unique identifier of the collection.</p>

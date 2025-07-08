@@ -2,6 +2,8 @@
 
 /// <p>Output parameter of the GetRecords API. The existing child shard of the current shard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChildShard {
     /// <p>The shard ID of the existing child shard of the current shard.</p>

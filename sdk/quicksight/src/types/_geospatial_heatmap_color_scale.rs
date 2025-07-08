@@ -2,6 +2,8 @@
 
 /// <p>The color scale specification for the heatmap point style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialHeatmapColorScale {
     /// <p>The list of colors to be used in heatmap point style.</p>

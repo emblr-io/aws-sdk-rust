@@ -2,6 +2,8 @@
 
 /// <p>Parameters requried to encrypt plaintext data using symmetric keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SymmetricEncryptionAttributes {
     /// <p>The block cipher method to use for encryption.</p>

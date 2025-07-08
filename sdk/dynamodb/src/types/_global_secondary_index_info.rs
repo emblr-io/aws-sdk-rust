@@ -2,6 +2,8 @@
 
 /// <p>Represents the properties of a global secondary index for the table when the backup was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalSecondaryIndexInfo {
     /// <p>The name of the global secondary index.</p>

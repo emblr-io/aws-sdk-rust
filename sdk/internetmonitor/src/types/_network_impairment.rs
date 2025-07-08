@@ -2,6 +2,8 @@
 
 /// <p>Information about the network impairment for a specific network measured by Amazon CloudWatch Internet Monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkImpairment {
     /// <p>The networks that could be impacted by a network impairment event.</p>

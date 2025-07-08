@@ -2,6 +2,8 @@
 
 /// <p>Describes which changes should be applied as part of a mitigation action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MitigationAction {
     /// <p>A user-friendly name for the mitigation action.</p>

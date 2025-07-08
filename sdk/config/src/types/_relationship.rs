@@ -2,6 +2,8 @@
 
 /// <p>The relationship of the related resource to the main resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Relationship {
     /// <p>The resource type of the related resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A best practice, or question choice, that has been identified as a risk in this question.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BestPractice {
     /// <p>The ID of a choice.</p>

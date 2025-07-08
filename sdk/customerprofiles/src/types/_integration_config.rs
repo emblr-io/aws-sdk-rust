@@ -2,6 +2,8 @@
 
 /// <p>Configuration data for integration workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationConfig {
     /// <p>Configuration data for <code>APPFLOW_INTEGRATION</code> workflow type.</p>

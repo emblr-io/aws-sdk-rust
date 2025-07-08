@@ -2,6 +2,8 @@
 
 /// <p>Represents the screen resolution of a device in height and width, expressed in pixels.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Resolution {
     /// <p>The screen resolution's width, expressed in pixels.</p>

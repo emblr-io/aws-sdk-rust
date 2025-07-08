@@ -2,6 +2,8 @@
 
 /// <p>Set configurations for metrics export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricsExportConfig {
     /// <p>The MQTT topic that Device Defender Detect should publish messages to for metrics export.</p>

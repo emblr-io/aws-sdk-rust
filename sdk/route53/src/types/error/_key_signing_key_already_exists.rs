@@ -2,6 +2,8 @@
 
 /// <p>You've already created a key-signing key (KSK) with this name or with the same customer managed key ARN.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeySigningKeyAlreadyExists {
     #[allow(missing_docs)] // documentation missing in model

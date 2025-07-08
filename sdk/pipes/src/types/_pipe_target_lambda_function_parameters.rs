@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Lambda function as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeTargetLambdaFunctionParameters {
     /// <p>Specify whether to invoke the function synchronously or asynchronously.</p>

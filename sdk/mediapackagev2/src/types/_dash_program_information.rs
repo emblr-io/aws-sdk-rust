@@ -2,6 +2,8 @@
 
 /// <p>Details about the content that you want MediaPackage to pass through in the manifest to the playback device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashProgramInformation {
     /// <p>The title for the manifest.</p>

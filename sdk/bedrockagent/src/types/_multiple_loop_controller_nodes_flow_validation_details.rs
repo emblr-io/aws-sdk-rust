@@ -2,6 +2,8 @@
 
 /// <p>Details about a flow that contains multiple <code>LoopController</code> nodes in a DoWhile loop.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultipleLoopControllerNodesFlowValidationDetails {
     /// <p>The DoWhile loop in a flow that contains multiple <code>LoopController</code> nodes.</p>

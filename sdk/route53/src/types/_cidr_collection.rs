@@ -2,6 +2,8 @@
 
 /// <p>A complex type that identifies a CIDR collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CidrCollection {
     /// <p>The ARN of the collection. Can be used to reference the collection in IAM policy or in another Amazon Web Services account.</p>

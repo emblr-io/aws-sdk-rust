@@ -2,6 +2,8 @@
 
 /// <p>A summary of a view version's metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ViewVersionSummary {
     /// <p>The identifier of the view version.</p>

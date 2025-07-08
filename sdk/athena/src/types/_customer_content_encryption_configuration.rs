@@ -2,6 +2,8 @@
 
 /// <p>Specifies the customer managed KMS key that is used to encrypt the user's data stores in Athena. When an Amazon Web Services managed key is used, this value is null. This setting does not apply to Athena SQL workgroups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerContentEncryptionConfiguration {
     /// <p>The customer managed KMS key that is used to encrypt the user's data stores in Athena.</p>

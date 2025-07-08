@@ -2,6 +2,8 @@
 
 /// Settings that describe the active source from the input device, and the video characteristics of that source.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDeviceHdSettings {
     /// If you specified Auto as the configured input, specifies which of the sources is currently active (SDI or HDMI).

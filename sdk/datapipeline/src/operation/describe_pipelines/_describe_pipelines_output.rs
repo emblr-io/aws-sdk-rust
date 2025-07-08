@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribePipelines.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribePipelinesOutput {
     /// <p>An array of descriptions for the specified pipelines.</p>

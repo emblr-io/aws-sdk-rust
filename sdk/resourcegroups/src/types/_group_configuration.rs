@@ -2,6 +2,8 @@
 
 /// <p>A service configuration associated with a resource group. The configuration options are determined by the Amazon Web Services service that defines the <code>Type</code>, and specifies which resources can be included in the group. You can add a service configuration when you create the group by using <code>CreateGroup</code>, or later by using the <code>PutGroupConfiguration</code> operation. For details about group service configuration syntax, see <a href="https://docs.aws.amazon.com/ARG/latest/APIReference/about-slg.html">Service configurations for resource groups</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupConfiguration {
     /// <p>The configuration currently associated with the group and in effect.</p>

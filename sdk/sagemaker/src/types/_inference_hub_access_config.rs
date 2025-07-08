@@ -2,6 +2,8 @@
 
 /// <p>Configuration information specifying which hub contents have accessible deployment options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceHubAccessConfig {
     /// <p>The ARN of the hub content for which deployment access is allowed.</p>

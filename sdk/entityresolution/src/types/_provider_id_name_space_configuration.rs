@@ -2,6 +2,8 @@
 
 /// <p>The provider configuration required for different ID namespace types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProviderIdNameSpaceConfiguration {
     /// <p>The description of the ID namespace.</p>

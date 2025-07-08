@@ -2,6 +2,8 @@
 
 /// <p>Specifies information about the past flow run instances for a given flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionRecord {
     /// <p>Specifies the identifier of the given flow run.</p>

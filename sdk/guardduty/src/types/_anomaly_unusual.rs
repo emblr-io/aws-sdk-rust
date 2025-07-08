@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the behavior of the anomaly that is new to GuardDuty.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyUnusual {
     /// <p>The behavior of the anomalous activity that caused GuardDuty to generate the finding.</p>

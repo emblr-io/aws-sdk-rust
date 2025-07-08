@@ -2,6 +2,8 @@
 
 /// <p>Filters cost anomalies based on the total impact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TotalImpactFilter {
     /// <p>The comparing value that's used in the filter.</p>

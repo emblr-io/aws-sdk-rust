@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the result of an approval request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApprovalResult {
     /// <p>The summary of the current status of the approval request.</p>

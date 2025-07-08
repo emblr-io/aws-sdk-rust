@@ -2,6 +2,8 @@
 
 /// <p>An authorization token data object that corresponds to a public registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationData {
     /// <p>A base64-encoded string that contains authorization data for a public Amazon ECR registry. When the string is decoded, it's presented in the format <code>user:password</code> for public registry authentication using <code>docker login</code>.</p>

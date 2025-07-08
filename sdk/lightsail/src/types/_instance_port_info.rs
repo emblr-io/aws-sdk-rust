@@ -2,6 +2,8 @@
 
 /// <p>Describes information about ports for an Amazon Lightsail instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstancePortInfo {
     /// <p>The first port in a range of open ports on an instance.</p>

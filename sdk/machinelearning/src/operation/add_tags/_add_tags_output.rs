@@ -2,6 +2,8 @@
 
 /// <p>Amazon ML returns the following elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddTagsOutput {
     /// <p>The ID of the ML object that was tagged.</p>

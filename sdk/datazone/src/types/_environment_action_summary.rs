@@ -2,6 +2,8 @@
 
 /// <p>The details about the specified action configured for an environment. For example, the details of the specified console links for an analytics tool that is available in this environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentActionSummary {
     /// <p>The Amazon DataZone domain ID of the environment action.</p>

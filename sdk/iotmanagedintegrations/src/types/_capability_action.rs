@@ -2,6 +2,8 @@
 
 /// <p>Action for an Amazon Web Services capability, containing the action parameters for control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CapabilityAction {
     /// <p>Describe a capability action with a name.</p>

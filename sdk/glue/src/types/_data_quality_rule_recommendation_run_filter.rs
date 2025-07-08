@@ -2,6 +2,8 @@
 
 /// <p>A filter for listing data quality recommendation runs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityRuleRecommendationRunFilter {
     /// <p>Filter based on a specified data source (Glue table).</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request that represents an offering renewal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenewOfferingInput {
     /// <p>The ID of a request to renew an offering.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details of the subscription grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscriptionGrantSummary {
     /// <p>The identifier of the subscription grant.</p>

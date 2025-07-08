@@ -2,6 +2,8 @@
 
 /// <p>Lists parent objects that are associated with a given object in pagination fashion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListObjectParents {
     /// <p>The reference that identifies an object.</p>

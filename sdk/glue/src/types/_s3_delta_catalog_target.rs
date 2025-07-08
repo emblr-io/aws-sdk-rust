@@ -2,6 +2,8 @@
 
 /// <p>Specifies a target that writes to a Delta Lake data source in the Glue Data Catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DeltaCatalogTarget {
     /// <p>The name of the data target.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about parameter usage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ParameterHistory {
     /// <p>The name of the parameter.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the periodic scan configuration settings applied to a specific project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectPeriodicScanConfiguration {
     /// <p>The schedule expression for periodic scans, in cron format, applied to the project.</p>

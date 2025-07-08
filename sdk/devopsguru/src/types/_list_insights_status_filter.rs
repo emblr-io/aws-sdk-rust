@@ -2,6 +2,8 @@
 
 /// <p>A filter used by <code>ListInsights</code> to specify which insights to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListInsightsStatusFilter {
     /// <p>A <code>ListInsightsAnyStatusFilter</code> that specifies ongoing insights that are either <code>REACTIVE</code> or <code>PROACTIVE</code>.</p>

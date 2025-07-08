@@ -2,6 +2,8 @@
 
 /// <p>The specified Amazon S3 key prefix is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidS3KeyPrefixException {
     /// <p>Error executing the command</p>

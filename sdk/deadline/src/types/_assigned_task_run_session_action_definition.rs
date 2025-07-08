@@ -2,6 +2,8 @@
 
 /// <p>The specific task, step, and parameters to include.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AssignedTaskRunSessionActionDefinition {
     /// <p>The task ID.</p>

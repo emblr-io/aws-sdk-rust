@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a <code>DescribeVolumes</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeVolumesOutput {
     /// <p>An array of volume IDs.</p>

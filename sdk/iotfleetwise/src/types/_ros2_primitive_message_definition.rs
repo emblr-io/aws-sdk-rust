@@ -2,6 +2,8 @@
 
 /// <p>Represents a ROS 2 compliant primitive type message of the complex data structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ros2PrimitiveMessageDefinition {
     /// <p>The primitive type (integer, floating point, boolean, etc.) for the ROS 2 primitive message definition.</p>

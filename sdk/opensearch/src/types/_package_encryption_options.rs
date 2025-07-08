@@ -2,6 +2,8 @@
 
 /// <p>Encryption options for a package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageEncryptionOptions {
     /// <p>KMS key ID for encrypting the package.</p>

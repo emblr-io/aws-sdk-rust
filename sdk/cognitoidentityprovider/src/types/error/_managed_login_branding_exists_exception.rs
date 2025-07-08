@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when you attempt to apply a managed login branding style to an app client that already has an assigned style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedLoginBrandingExistsException {
     #[allow(missing_docs)] // documentation missing in model

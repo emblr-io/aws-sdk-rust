@@ -2,6 +2,8 @@
 
 /// <p>Error returned if an attempt is made to delete a patch baseline that is registered for a patch group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceInUseException {
     #[allow(missing_docs)] // documentation missing in model

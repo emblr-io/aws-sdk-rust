@@ -2,6 +2,8 @@
 
 /// <p>A virtual machine that is on a hypervisor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualMachine {
     /// <p>The host name of the virtual machine.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 bucket in your account where your tax document is located.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceS3Location {
     /// <p>The name of your Amazon S3 bucket that your tax document is located.</p>

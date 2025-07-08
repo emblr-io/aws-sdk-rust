@@ -2,6 +2,8 @@
 
 /// <p>Raised when a request fails because of insufficient memory resources. The request can be retried.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemoryLimitExceededException {
     /// <p>A detailed message describing the problem.</p>

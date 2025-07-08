@@ -11,6 +11,8 @@
 /// </note>
 /// <p>You can also override the recording frequency for specific resource types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingMode {
     /// <p>The default recording frequency that Config uses to record configuration changes.</p><important>

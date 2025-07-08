@@ -2,6 +2,8 @@
 
 /// <p>(Optional) An array of filter objects you can use to filter the response of data repository tasks you will see in the response. You can filter the tasks returned in the response by one or more file system IDs, task lifecycles, and by task type. A filter object consists of a filter <code>Name</code>, and one or more <code>Values</code> for the filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataRepositoryTaskFilter {
     /// <p>Name of the task property to use in filtering the tasks returned in the response.</p>

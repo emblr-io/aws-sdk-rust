@@ -2,6 +2,8 @@
 
 /// <p>Task object encapsulating task information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Task {
     /// <p>Status of the task - Not Started, In-Progress, Complete.</p>

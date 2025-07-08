@@ -2,6 +2,8 @@
 
 /// <p>Describes an asset hierarchy that contains a hierarchy's name and ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetHierarchy {
     /// <p>The ID of the hierarchy. This ID is a <code>hierarchyId</code>.</p>

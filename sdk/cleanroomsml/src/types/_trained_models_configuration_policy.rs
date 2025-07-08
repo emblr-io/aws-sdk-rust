@@ -2,6 +2,8 @@
 
 /// <p>The configuration policy for the trained models.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainedModelsConfigurationPolicy {
     /// <p>The container for the logs of the trained model.</p>

@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DeleteSignalMapRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteSignalMapInput {
     /// A signal map's identifier. Can be either be its id or current name.

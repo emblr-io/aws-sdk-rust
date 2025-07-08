@@ -2,6 +2,8 @@
 
 /// <p>Information about the status of a cluster restore action. It only applies if the cluster was created by restoring a snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterRestoreStatus {
     /// <p>The number of megabytes per second being transferred from the backup storage. Returns the average rate for a completed backup.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>DescribeDomainAutoTunes</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainAutoTunesOutput {
     /// <p>The list of setting adjustments that Auto-Tune has made to the domain.</p>

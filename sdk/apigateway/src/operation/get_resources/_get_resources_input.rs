@@ -2,6 +2,8 @@
 
 /// <p>Request to list information about a collection of resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetResourcesInput {
     /// <p>The string identifier of the associated RestApi.</p>

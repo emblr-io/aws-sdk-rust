@@ -2,6 +2,8 @@
 
 /// <p>The target registered with the maintenance window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MaintenanceWindowTarget {
     /// <p>The ID of the maintenance window to register the target with.</p>

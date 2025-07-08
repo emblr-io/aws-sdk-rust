@@ -2,6 +2,8 @@
 
 /// Parameters for the Telephony Channel Subtype
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TelephonyChannelSubtypeParameters {
     /// The phone number of the customer, in E.164 format.

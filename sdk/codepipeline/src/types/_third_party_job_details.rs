@@ -2,6 +2,8 @@
 
 /// <p>The details of a job sent in response to a <code>GetThirdPartyJobDetails</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThirdPartyJobDetails {
     /// <p>The identifier used to identify the job details in CodePipeline.</p>

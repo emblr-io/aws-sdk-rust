@@ -2,6 +2,8 @@
 
 /// <p>Contains information summarizing an edge deployment plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdgeDeploymentPlanSummary {
     /// <p>The ARN of the edge deployment plan.</p>

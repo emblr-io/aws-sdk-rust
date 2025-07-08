@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information about email that was sent from the selected domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverallVolume {
     /// <p>An object that contains information about the numbers of messages that arrived in recipients' inboxes and junk mail folders.</p>

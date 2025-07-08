@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration settings for an issue detection task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IssueDetectionConfiguration {
     /// <p>The name of the issue detection rule.</p>

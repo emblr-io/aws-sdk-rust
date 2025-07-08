@@ -2,6 +2,8 @@
 
 /// <p>The internet key exchange (IKE) version permitted for the VPN tunnel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IkeVersionsListValue {
     /// <p>The IKE version.</p>

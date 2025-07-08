@@ -2,6 +2,8 @@
 
 /// <p>Information about the user who created or modified an experiment, trial, trial component, lineage group, project, or model card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserContext {
     /// <p>The Amazon Resource Name (ARN) of the user's profile.</p>

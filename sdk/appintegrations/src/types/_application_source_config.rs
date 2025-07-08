@@ -2,6 +2,8 @@
 
 /// <p>The configuration for where the application should be loaded from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationSourceConfig {
     /// <p>The external URL source for the application.</p>

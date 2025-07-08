@@ -2,6 +2,8 @@
 
 /// <p>The information about the updates in the query results, such as output location and encryption configuration for the query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResultConfigurationUpdates {
     /// <p>The location in Amazon S3 where your query and calculation results are stored, such as <code>s3://path/to/query/bucket/</code>. If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup. The "workgroup settings override" is specified in <code>EnforceWorkGroupConfiguration</code> (true/false) in the <code>WorkGroupConfiguration</code>. See <code>WorkGroupConfiguration$EnforceWorkGroupConfiguration</code>.</p>

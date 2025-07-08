@@ -2,6 +2,8 @@
 
 /// <p>A filter that specifies the custom line items and billing groups to retrieve FFLI information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCustomLineItemsFilter {
     /// <p>A list of custom line items to retrieve information.</p>

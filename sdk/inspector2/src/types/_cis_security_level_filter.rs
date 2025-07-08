@@ -2,6 +2,8 @@
 
 /// <p>The CIS security level filter. Security level refers to the Benchmark levels that CIS assigns to a profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CisSecurityLevelFilter {
     /// <p>The CIS security filter comparison value.</p>

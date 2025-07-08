@@ -2,6 +2,8 @@
 
 /// <p>Contains the map of attribute names to attribute dimensions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterDimension {
     /// <p>Is the attribute within the FilterDimension map</p>

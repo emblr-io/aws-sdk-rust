@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required for ARPC response generation using method2 after ARQC verification is successful.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CryptogramVerificationArpcMethod2 {
     /// <p>The data indicating whether the issuer approves or declines an online transaction using an EMV chip card.</p>

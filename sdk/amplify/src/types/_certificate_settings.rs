@@ -2,6 +2,8 @@
 
 /// <p>The type of SSL/TLS certificate to use for your custom domain. If a certificate type isn't specified, Amplify uses the default <code>AMPLIFY_MANAGED</code> certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateSettings {
     /// <p>The certificate type.</p>

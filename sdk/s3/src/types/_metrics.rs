@@ -2,6 +2,8 @@
 
 /// <p>A container specifying replication metrics-related settings enabling replication metrics and events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Metrics {
     /// <p>Specifies whether the replication metrics are enabled.</p>

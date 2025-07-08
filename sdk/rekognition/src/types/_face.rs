@@ -2,6 +2,8 @@
 
 /// <p>Describes the face properties such as the bounding box, face ID, image ID of the input image, and external image ID that you assigned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Face {
     /// <p>Unique identifier that Amazon Rekognition assigns to the face.</p>

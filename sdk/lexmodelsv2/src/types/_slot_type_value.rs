@@ -2,6 +2,8 @@
 
 /// <p>Each slot type can have a set of values. Each <code>SlotTypeValue</code> represents a value that the slot type can take.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotTypeValue {
     /// <p>The value of the slot type entry.</p>

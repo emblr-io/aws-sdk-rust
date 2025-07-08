@@ -2,6 +2,8 @@
 
 /// <p>Represents a single step of the Upgrade or Upgrade Eligibility Check workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpgradeStepItem {
     /// <p>Represents one of 3 steps that an Upgrade or Upgrade Eligibility Check does through:</p>

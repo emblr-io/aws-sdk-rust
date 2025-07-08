@@ -2,6 +2,8 @@
 
 /// <p>Configuration details about encryption for the cluster including the KMS key ARN, encryption type, and encryption status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionDetails {
     /// <p>The type of encryption that protects the data on your cluster.</p>

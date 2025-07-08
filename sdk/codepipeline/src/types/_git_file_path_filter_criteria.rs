@@ -2,6 +2,8 @@
 
 /// <p>The Git repository file paths specified as filter criteria to start the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitFilePathFilterCriteria {
     /// <p>The list of patterns of Git repository file paths that, when a commit is pushed, are to be included as criteria that starts the pipeline.</p>

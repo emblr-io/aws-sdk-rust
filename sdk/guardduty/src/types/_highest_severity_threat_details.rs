@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the highest severity threat detected during scan and number of infected files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HighestSeverityThreatDetails {
     /// <p>Severity level of the highest severity threat detected.</p>

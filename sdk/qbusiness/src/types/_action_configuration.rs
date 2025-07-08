@@ -2,6 +2,8 @@
 
 /// <p>Specifies an allowed action and its associated filter configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionConfiguration {
     /// <p>The Amazon Q Business action that is allowed.</p>

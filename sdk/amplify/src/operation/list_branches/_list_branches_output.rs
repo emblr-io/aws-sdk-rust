@@ -2,6 +2,8 @@
 
 /// <p>The result structure for the list branches request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListBranchesOutput {
     /// <p>A list of branches for an Amplify app.</p>

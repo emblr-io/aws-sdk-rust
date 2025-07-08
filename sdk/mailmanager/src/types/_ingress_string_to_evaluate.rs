@@ -2,6 +2,8 @@
 
 /// <p>The union type representing the allowed types for the left hand side of a string condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IngressStringToEvaluate {
     /// <p>The structure type for a string condition stating the Add On ARN and its returned value.</p>

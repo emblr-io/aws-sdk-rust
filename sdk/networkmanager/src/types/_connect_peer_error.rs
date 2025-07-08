@@ -2,6 +2,8 @@
 
 /// <p>Describes an error associated with a Connect peer request</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectPeerError {
     /// <p>The error code for the Connect peer request.</p>

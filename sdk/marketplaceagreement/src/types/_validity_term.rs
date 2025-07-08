@@ -2,6 +2,8 @@
 
 /// <p>Defines the conditions that will keep an agreement created from this offer valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidityTerm {
     /// <p>Category of the term being updated.</p>

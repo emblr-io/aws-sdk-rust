@@ -2,6 +2,8 @@
 
 /// <p>The structure of the transit gateway and network configuration that is used to connect the kdb environment to an internal network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayConfiguration {
     /// <p>The identifier of the transit gateway created by the customer to connect outbound traffics from kdb network to your internal network.</p>

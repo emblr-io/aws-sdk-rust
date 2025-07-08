@@ -2,6 +2,8 @@
 
 /// <p>Custom icon options for an icon set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionalFormattingCustomIconOptions {
     /// <p>Determines the type of icon.</p>

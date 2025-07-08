@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of an analyzer for an Amazon Web Services organization or account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AnalyzerConfiguration {
     /// <p>Specifies the configuration of an internal access analyzer for an Amazon Web Services organization or account. This configuration determines how the analyzer evaluates access within your Amazon Web Services environment.</p>

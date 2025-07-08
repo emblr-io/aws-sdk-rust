@@ -2,6 +2,8 @@
 
 /// <p>A training dataset or a test dataset used in a dataset distribution operation. For more information, see <code>DistributeDatasetEntries</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributeDataset {
     /// <p>The Amazon Resource Name (ARN) of the dataset that you want to use.</p>

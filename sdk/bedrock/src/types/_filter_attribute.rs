@@ -2,6 +2,8 @@
 
 /// <p>Specifies the name of the metadata attribute/field to apply filters. You must match the name of the attribute/field in your data source/document metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterAttribute {
     /// <p>The name of metadata attribute/field, which must match the name in your data source/document metadata.</p>

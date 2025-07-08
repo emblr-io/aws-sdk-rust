@@ -2,6 +2,8 @@
 
 /// <p>Summarizes an optimization job by providing some of its key properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptimizationJobSummary {
     /// <p>The name that you assigned to the optimization job.</p>

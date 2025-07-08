@@ -2,6 +2,8 @@
 
 /// <p>An error occurred when reading from or writing to a connected file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EfsioException {
     #[allow(missing_docs)] // documentation missing in model

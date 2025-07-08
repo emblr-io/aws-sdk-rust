@@ -2,6 +2,8 @@
 
 /// <p>Query argument-profile mapping for field-level encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryArgProfiles {
     /// <p>Number of profiles for query argument-profile mapping for field-level encryption.</p>

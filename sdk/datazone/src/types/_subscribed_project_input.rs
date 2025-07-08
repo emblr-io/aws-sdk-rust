@@ -2,6 +2,8 @@
 
 /// <p>The project that is to be given a subscription grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscribedProjectInput {
     /// <p>The identifier of the project that is to be given a subscription grant.</p>

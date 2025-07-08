@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon Web Services resource associated with the activity that prompted GuardDuty to generate a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Resource {
     /// <p>The IAM access key details (user information) of a user that engaged in the activity that prompted GuardDuty to generate a finding.</p>

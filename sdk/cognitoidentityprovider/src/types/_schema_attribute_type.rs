@@ -3,6 +3,8 @@
 /// <p>A list of the user attributes and their properties in your user pool. The attribute schema contains standard attributes, custom attributes with a <code>custom:</code> prefix, and developer attributes with a <code>dev:</code> prefix. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html">User pool attributes</a>.</p>
 /// <p>Developer-only <code>dev:</code> attributes are a legacy feature of user pools, and are read-only to all app clients. You can create and update developer-only attributes only with IAM-authenticated API operations. Use app client read/write permissions instead.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaAttributeType {
     /// <p>The name of your user pool attribute. When you create or update a user pool, adding a schema attribute creates a custom or developer-only attribute. When you add an attribute with a <code>Name</code> value of <code>MyAttribute</code>, Amazon Cognito creates the custom attribute <code>custom:MyAttribute</code>. When <code>DeveloperOnlyAttribute</code> is <code>true</code>, Amazon Cognito creates your attribute as <code>dev:MyAttribute</code>. In an operation that describes a user pool, Amazon Cognito returns this value as <code>value</code> for standard attributes, <code>custom:value</code> for custom attributes, and <code>dev:value</code> for developer-only attributes..</p>

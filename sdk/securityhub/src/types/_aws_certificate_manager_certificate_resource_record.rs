@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the CNAME record that is added to the DNS database for domain validation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateResourceRecord {
     /// <p>The name of the resource.</p>

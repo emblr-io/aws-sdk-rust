@@ -2,6 +2,8 @@
 
 /// <p>Contains the additional parameters to use for the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateConnectionAuthRequestParameters {
     /// <p>A <code>UpdateConnectionBasicAuthRequestParameters</code> object that contains the authorization parameters for Basic authorization.</p>

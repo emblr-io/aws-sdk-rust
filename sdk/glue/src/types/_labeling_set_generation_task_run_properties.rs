@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration properties for a labeling set generation task run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelingSetGenerationTaskRunProperties {
     /// <p>The Amazon Simple Storage Service (Amazon S3) path where you will generate the labeling set.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Ingress address of AgentEndpoint with a port range and an optional mtu.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RangedConnectionDetails {
     /// <p>A ranged socket address.</p>

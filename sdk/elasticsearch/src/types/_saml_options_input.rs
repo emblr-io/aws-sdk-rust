@@ -2,6 +2,8 @@
 
 /// <p>Specifies the SAML application configuration for the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SamlOptionsInput {
     /// <p>True if SAML is enabled.</p>

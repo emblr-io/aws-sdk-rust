@@ -2,6 +2,8 @@
 
 /// <p>The calculated field of an analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CalculatedField {
     /// <p>The data set that is used in this calculated field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A collection of segment documents with matching trace IDs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Trace {
     /// <p>The unique identifier for the request that generated the trace's segments and subsegments.</p>

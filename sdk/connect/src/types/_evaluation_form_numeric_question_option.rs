@@ -2,6 +2,8 @@
 
 /// <p>Information about the option range used for scoring in numeric questions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationFormNumericQuestionOption {
     /// <p>The minimum answer value of the range option.</p>

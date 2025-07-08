@@ -2,6 +2,8 @@
 
 /// <p>Request to describe Job log filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeJobsRequestFilters {
     /// <p>Request to describe Job log filters by job ID.</p>

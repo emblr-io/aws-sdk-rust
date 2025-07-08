@@ -2,6 +2,8 @@
 
 /// <p>A Changeset is unit of data in a Dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangesetSummary {
     /// <p>The unique identifier for a Changeset.</p>

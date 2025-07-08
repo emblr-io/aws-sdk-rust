@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a mapping between a <code>Metric</code> and <code>MetricAggregation</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportMetric {
     /// <p>The metric to export, can be one of the following:</p>

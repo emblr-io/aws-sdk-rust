@@ -3,6 +3,8 @@
 /// <p>KMS uses the authentication credential to sign requests that it sends to the external key store proxy (XKS proxy) on your behalf. You establish these credentials on your external key store proxy and report them to KMS.</p>
 /// <p>The <code>XksProxyAuthenticationCredential</code> includes two required elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct XksProxyAuthenticationCredentialType {
     /// <p>A unique identifier for the raw secret access key.</p>

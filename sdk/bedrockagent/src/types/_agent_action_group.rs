@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an action group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentActionGroup {
     /// <p>The unique identifier of the agent to which the action group belongs.</p>

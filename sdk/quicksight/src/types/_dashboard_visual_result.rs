@@ -2,6 +2,8 @@
 
 /// <p>The QA result that is made from dashboard visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashboardVisualResult {
     /// <p>The ID of the dashboard.</p>

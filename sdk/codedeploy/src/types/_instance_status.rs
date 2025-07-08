@@ -45,6 +45,8 @@
 /// _Note: `InstanceStatus::Unknown` has been renamed to `::UnknownValue`._
 #[deprecated(note = "InstanceStatus is deprecated, use TargetStatus instead.")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(
     ::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::fmt::Debug, ::std::hash::Hash,
 )]

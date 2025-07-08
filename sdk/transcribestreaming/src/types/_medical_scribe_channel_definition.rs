@@ -3,6 +3,8 @@
 /// <p>Makes it possible to specify which speaker is on which channel. For example, if the clinician is the first participant to speak, you would set the <code>ChannelId</code> of the first <code>ChannelDefinition</code> in the list to <code>0</code> (to indicate the first channel) and <code>ParticipantRole</code> to <code>CLINICIAN</code> (to indicate that it's the clinician speaking). Then you would set the <code>ChannelId</code> of the second <code>ChannelDefinition</code> in the list to <code>1</code> (to indicate the second channel) and <code>ParticipantRole</code> to <code>PATIENT</code> (to indicate that it's the patient speaking).</p>
 /// <p>If you don't specify a channel definition, HealthScribe will diarize the transcription and identify speaker roles for each speaker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeChannelDefinition {
     /// <p>Specify the audio channel you want to define.</p>

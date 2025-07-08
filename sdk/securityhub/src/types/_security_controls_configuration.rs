@@ -2,6 +2,8 @@
 
 /// <p>An object that defines which security controls are enabled in an Security Hub configuration policy. The enablement status of a control is aligned across all of the enabled standards in an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityControlsConfiguration {
     /// <p>A list of security controls that are enabled in the configuration policy. Security Hub disables all other controls (including newly released controls) other than the listed controls.</p>

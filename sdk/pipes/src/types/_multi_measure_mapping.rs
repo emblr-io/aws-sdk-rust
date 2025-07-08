@@ -3,6 +3,8 @@
 /// <p>Maps multiple measures from the source event to the same Timestream for LiveAnalytics record.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/timestream/latest/developerguide/concepts.html">Amazon Timestream for LiveAnalytics concepts</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiMeasureMapping {
     /// <p>The name of the multiple measurements per record (multi-measure).</p>

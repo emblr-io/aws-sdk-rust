@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 options used in S3 source and target configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowS3Options {
     /// <p>The Amazon S3 file type in S3 options.</p>

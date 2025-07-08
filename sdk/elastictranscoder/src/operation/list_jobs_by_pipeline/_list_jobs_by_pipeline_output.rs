@@ -2,6 +2,8 @@
 
 /// <p>The <code>ListJobsByPipelineResponse</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsByPipelineOutput {
     /// <p>An array of <code>Job</code> objects that are in the specified pipeline.</p>

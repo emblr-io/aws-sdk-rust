@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element to <code>DownloadDBLogFilePortion</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DownloadDbLogFilePortionOutput {
     /// <p>Entries from the specified log file.</p>

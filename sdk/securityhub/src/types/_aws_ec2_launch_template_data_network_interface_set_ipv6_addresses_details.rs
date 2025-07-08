@@ -2,6 +2,8 @@
 
 /// <p>Specifies an IPv6 address in an Amazon EC2 launch template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetails {
     /// <p>One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet.</p>

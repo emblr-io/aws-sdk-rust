@@ -2,6 +2,8 @@
 
 /// <p>This exception is returned in a Live Tail stream when the Live Tail session times out. Live Tail sessions time out after three hours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionTimeoutException {
     #[allow(missing_docs)] // documentation missing in model

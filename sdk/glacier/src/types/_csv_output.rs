@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the comma-separated value (CSV) file that the job results are stored in.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvOutput {
     /// <p>A value that indicates whether all output fields should be contained within quotation marks.</p>

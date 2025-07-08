@@ -2,6 +2,8 @@
 
 /// <p>Represents the raw content of an email message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RawMessage {
     /// <p>The raw email message. The message has to meet the following criteria:</p>

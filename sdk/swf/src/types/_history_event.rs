@@ -100,6 +100,8 @@
 /// <p><code>WorkflowExecutionTimedOut</code> – The workflow execution was closed because a time out was exceeded.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HistoryEvent {
     /// <p>The date and time when the event occurred.</p>

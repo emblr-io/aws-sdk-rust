@@ -2,6 +2,8 @@
 
 /// <p>The Lustre metadata performance configuration update for an Amazon FSx for Lustre file system using a <code>PERSISTENT_2</code> deployment type. You can request an increase in your file system's Metadata IOPS and/or switch your file system's metadata configuration mode. For more information, see <a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/managing-metadata-performance.html">Managing metadata performance</a> in the <i>Amazon FSx for Lustre User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateFileSystemLustreMetadataConfiguration {
     /// <p>(USER_PROVISIONED mode only) Specifies the number of Metadata IOPS to provision for your file system.</p>

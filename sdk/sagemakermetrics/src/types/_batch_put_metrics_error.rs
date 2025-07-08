@@ -2,6 +2,8 @@
 
 /// <p>An error that occured when putting the metric data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPutMetricsError {
     /// <p>The error code of an error that occured when attempting to put metrics.</p>

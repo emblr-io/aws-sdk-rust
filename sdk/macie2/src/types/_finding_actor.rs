@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an entity that performed an action that produced a policy finding for a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingActor {
     /// <p>The domain name of the device that the entity used to perform the action on the affected resource.</p>

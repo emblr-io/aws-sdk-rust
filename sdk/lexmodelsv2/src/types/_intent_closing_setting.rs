@@ -2,6 +2,8 @@
 
 /// <p>Provides a statement the Amazon Lex conveys to the user when the intent is successfully fulfilled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentClosingSetting {
     /// <p>The response that Amazon Lex sends to the user when the intent is complete.</p>

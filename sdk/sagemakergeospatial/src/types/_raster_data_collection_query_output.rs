@@ -2,6 +2,8 @@
 
 /// <p>The output structure contains the Raster Data Collection Query input along with some additional metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RasterDataCollectionQueryOutput {
     /// <p>The ARN of the Raster Data Collection against which the search is done.</p>

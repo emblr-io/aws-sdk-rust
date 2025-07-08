@@ -2,6 +2,8 @@
 
 /// <p>A specification about how data from the configured table can be used in a query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisRule {
     /// <p>The unique ID for the associated collaboration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The status of the the OpenSearch or Elasticsearch version options for the specified Amazon OpenSearch Service domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VersionStatus {
     /// <p>The OpenSearch or Elasticsearch version for the specified domain.</p>

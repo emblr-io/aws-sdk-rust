@@ -2,6 +2,8 @@
 
 /// <p>Describes the utilization metric of an idle resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdleUtilizationMetric {
     /// <p>The name of the utilization metric.</p>

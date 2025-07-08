@@ -2,6 +2,8 @@
 
 /// <p>The format of the traffic policy document that you specified in the <code>Document</code> element is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTrafficPolicyDocument {
     /// <p></p>

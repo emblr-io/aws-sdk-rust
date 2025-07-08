@@ -2,6 +2,8 @@
 
 /// <p>The tier that your guardrail uses for denied topic filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailTopicsTier {
     /// <p>The tier that your guardrail uses for denied topic filters. Valid values include:</p>

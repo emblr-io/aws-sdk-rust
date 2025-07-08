@@ -2,6 +2,8 @@
 
 /// <p>The details about the physical network interface for the device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhysicalNetworkInterface {
     /// <p>The physical network interface ID.</p>

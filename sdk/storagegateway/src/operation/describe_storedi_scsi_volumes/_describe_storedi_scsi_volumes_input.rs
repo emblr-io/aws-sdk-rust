@@ -2,6 +2,8 @@
 
 /// <p>A JSON object containing a list of <code>DescribeStorediSCSIVolumesInput$VolumeARNs</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeStorediScsiVolumesInput {
     /// <p>An array of strings where each string represents the Amazon Resource Name (ARN) of a stored volume. All of the specified stored volumes must be from the same gateway. Use <code>ListVolumes</code> to get volume ARNs for a gateway.</p>

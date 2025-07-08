@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when you try to update or delete an event data store that currently has an import in progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDataStoreHasOngoingImportException {
     /// <p>Brief description of the exception returned by the request.</p>

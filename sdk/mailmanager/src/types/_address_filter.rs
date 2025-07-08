@@ -2,6 +2,8 @@
 
 /// <p>Filtering options for ListMembersOfAddressList operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AddressFilter {
     /// <p>Filter to limit the results to addresses having the provided prefix.</p>

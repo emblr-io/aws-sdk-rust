@@ -2,6 +2,8 @@
 
 /// <p>Performs an Amazon Q Business plugin action during a non-streaming chat conversation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecution {
     /// <p>The identifier of the plugin the action is attached to.</p>

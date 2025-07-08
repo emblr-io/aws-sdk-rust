@@ -2,6 +2,8 @@
 
 /// <p>Subslot specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Specifications {
     /// <p>The unique identifier assigned to the slot type.</p>

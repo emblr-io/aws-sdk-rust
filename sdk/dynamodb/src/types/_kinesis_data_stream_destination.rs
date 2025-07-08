@@ -2,6 +2,8 @@
 
 /// <p>Describes a Kinesis data stream destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisDataStreamDestination {
     /// <p>The ARN for a specific Kinesis data stream.</p>

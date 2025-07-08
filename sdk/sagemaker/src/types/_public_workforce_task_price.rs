@@ -204,6 +204,8 @@
 /// <p>0.012</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicWorkforceTaskPrice {
     /// <p>Defines the amount of money paid to an Amazon Mechanical Turk worker in United States dollars.</p>

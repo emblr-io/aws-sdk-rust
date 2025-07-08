@@ -2,6 +2,8 @@
 
 /// <p>A resource with the same name or ID already exists. Notification rule names must be unique in your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

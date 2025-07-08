@@ -2,6 +2,8 @@
 
 /// <p>Response object containing details for a specific RasterDataCollection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RasterDataCollectionMetadata {
     /// <p>The name of the raster data collection.</p>

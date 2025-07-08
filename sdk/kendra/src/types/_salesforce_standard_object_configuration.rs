@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for indexing a single standard object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SalesforceStandardObjectConfiguration {
     /// <p>The name of the standard object.</p>

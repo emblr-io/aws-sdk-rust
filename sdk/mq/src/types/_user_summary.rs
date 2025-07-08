@@ -2,6 +2,8 @@
 
 /// <p>Returns a list of all broker users. Does not apply to RabbitMQ brokers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserSummary {
     /// <p>The type of change pending for the broker user.</p>

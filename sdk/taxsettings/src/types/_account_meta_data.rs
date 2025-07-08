@@ -2,6 +2,8 @@
 
 /// <p>The meta data information associated with the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AccountMetaData {
     /// <p>The Amazon Web Services accounts name.</p>

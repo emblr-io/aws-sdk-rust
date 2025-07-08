@@ -2,6 +2,8 @@
 
 /// <p>Defines the traffic pattern of the load test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficPattern {
     /// <p>Defines the traffic patterns. Choose either <code>PHASES</code> or <code>STAIRS</code>.</p>

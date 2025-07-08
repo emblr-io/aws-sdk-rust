@@ -2,6 +2,8 @@
 
 /// <p>The object representing the URL of the bot definition, the URL of the associated transcript, and a statistical summary of the bot recommendation results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotRecommendationResults {
     /// <p>The presigned URL link of the recommended bot definition.</p>

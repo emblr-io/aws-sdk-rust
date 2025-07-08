@@ -2,6 +2,8 @@
 
 /// <p>The specified platform version doesn't satisfy the required capabilities of the task definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlatformTaskDefinitionIncompatibilityException {
     /// <p>Message that describes the cause of the exception.</p>

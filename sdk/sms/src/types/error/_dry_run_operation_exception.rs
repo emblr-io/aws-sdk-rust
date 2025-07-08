@@ -2,6 +2,8 @@
 
 /// <p>The user has the required permissions, so the request would have succeeded, but a dry run was performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DryRunOperationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of Amazon Web Services accounts that you can share with this directory has been reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShareLimitExceededException {
     /// <p>The descriptive message for the exception.</p>

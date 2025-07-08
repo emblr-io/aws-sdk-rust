@@ -2,6 +2,8 @@
 
 /// <p>Describes a cluster version, including the parameter group family and description of the version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterVersion {
     /// <p>The version number used by the cluster.</p>

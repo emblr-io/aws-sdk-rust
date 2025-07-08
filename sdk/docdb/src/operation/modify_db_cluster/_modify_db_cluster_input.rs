@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>ModifyDBCluster</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyDbClusterInput {
     /// <p>The cluster identifier for the cluster that is being modified. This parameter is not case sensitive.</p>

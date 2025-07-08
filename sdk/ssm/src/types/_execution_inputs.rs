@@ -2,6 +2,8 @@
 
 /// <p>Information about the inputs for an execution preview.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ExecutionInputs {
     /// <p>Information about the optional inputs that can be specified for an automation execution preview.</p>

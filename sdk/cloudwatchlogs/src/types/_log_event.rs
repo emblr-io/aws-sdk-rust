@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the information for one sample log event that is associated with an anomaly found by a log anomaly detector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogEvent {
     /// <p>The time stamp of the log event.</p>

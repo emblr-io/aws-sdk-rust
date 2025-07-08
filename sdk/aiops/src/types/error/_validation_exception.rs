@@ -2,6 +2,8 @@
 
 /// <p>This operation or its parameters aren't formatted correctly.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationException {
     #[allow(missing_docs)] // documentation missing in model

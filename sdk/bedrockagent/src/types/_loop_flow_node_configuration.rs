@@ -14,6 +14,8 @@
 /// </ul>
 /// <p>These nodes work together to create a loop that runs at least once and continues until a specified condition is met or a maximum number of iterations is reached.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LoopFlowNodeConfiguration {
     /// <p>The definition of the DoWhile loop nodes and connections between nodes in the flow.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the error message that is returned if the operation cannot be successfully completed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectDeletionError {
     /// <p>The code of the project deletion error.</p>

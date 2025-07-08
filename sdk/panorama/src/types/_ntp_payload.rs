@@ -2,6 +2,8 @@
 
 /// <p>Network time protocol (NTP) server settings. Use this option to connect to local NTP servers instead of <code>pool.ntp.org</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NtpPayload {
     /// <p>NTP servers to use, in order of preference.</p>

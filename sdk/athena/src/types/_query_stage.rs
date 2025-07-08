@@ -2,6 +2,8 @@
 
 /// <p>Stage statistics such as input and output rows and bytes, execution time and stage state. This information also includes substages and the query stage plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryStage {
     /// <p>The identifier for a stage.</p>

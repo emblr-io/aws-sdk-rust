@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes how data is partitioned on the target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationPartition {
     /// <p>The field name used to partition data on the target. Avoid using columns that have unique values for each row (for example, `LastModifiedTimestamp`, `SystemModTimeStamp`) as the partition column. These columns are not suitable for partitioning because they create a large number of small partitions, which can lead to performance issues.</p>

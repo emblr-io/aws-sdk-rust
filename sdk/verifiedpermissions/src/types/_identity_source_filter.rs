@@ -3,6 +3,8 @@
 /// <p>A structure that defines characteristics of an identity source that you can use to filter.</p>
 /// <p>This data type is a request parameter for the <a href="https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListIdentityStores.html">ListIdentityStores</a> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct IdentitySourceFilter {
     /// <p>The Cedar entity type of the principals returned by the identity provider (IdP) associated with this identity source.</p>

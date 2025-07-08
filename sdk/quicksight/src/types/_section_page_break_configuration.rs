@@ -2,6 +2,8 @@
 
 /// <p>The configuration of a page break for a section.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SectionPageBreakConfiguration {
     /// <p>The configuration of a page break after a section.</p>

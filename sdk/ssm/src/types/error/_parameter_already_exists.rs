@@ -2,6 +2,8 @@
 
 /// <p>The parameter already exists. You can't create duplicate parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterAlreadyExists {
     #[allow(missing_docs)] // documentation missing in model

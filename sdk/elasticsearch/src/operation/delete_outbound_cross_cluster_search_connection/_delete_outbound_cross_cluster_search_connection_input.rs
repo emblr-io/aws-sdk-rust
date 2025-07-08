@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DeleteOutboundCrossClusterSearchConnection</code></code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteOutboundCrossClusterSearchConnectionInput {
     /// <p>The id of the outbound connection that you want to permanently delete.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The filter definition for filtering registrations that meets a specified criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegistrationFilter {
     /// <p>The name of the attribute to filter on.</p>

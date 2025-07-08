@@ -16,6 +16,8 @@
 /// <p>A <code>Unit</code> of <code>GB</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Spend {
     /// <p>The cost or usage amount that's associated with a budget forecast, actual spend, or budget threshold.</p>

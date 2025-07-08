@@ -4,6 +4,8 @@
 /// <p>We recommend that you specify conditions, tags, or resources to include or exclude. Otherwise, Backup attempts to select all supported and opted-in storage resources, which could have unintended cost implications.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-resources.html#assigning-resources-json">Assigning resources programmatically</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupSelection {
     /// <p>The display name of a resource selection document. Must contain 1 to 50 alphanumeric or '-_.' characters.</p>

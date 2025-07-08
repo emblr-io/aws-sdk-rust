@@ -2,6 +2,8 @@
 
 /// <p>Represents a harvest job resource in MediaPackage v2, which is used to export content from an origin endpoint to an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HarvestJob {
     /// <p>The name of the channel group containing the channel associated with this harvest job.</p>

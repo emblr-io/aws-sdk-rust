@@ -2,6 +2,8 @@
 
 /// <p>Describes an Outpost link aggregation group (LAG).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutpostLag {
     /// <p>The Amazon Resource Number (ARN) of the Outpost LAG.</p>

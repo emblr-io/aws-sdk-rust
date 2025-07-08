@@ -2,6 +2,8 @@
 
 /// <p>An occurrence of sensitive data in an Adobe Portable Document Format (PDF) file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Page {
     /// <p>The page number of the page that contains the sensitive data.</p>

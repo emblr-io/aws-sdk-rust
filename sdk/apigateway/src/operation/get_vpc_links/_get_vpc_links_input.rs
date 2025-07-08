@@ -2,6 +2,8 @@
 
 /// <p>Gets the VpcLinks collection under the caller's account in a selected region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetVpcLinksInput {
     /// <p>The current pagination position in the paged result set.</p>

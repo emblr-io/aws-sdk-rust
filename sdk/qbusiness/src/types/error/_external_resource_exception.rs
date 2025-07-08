@@ -2,6 +2,8 @@
 
 /// <p>An external resource that you configured with your application is returning errors and preventing this operation from succeeding. Fix those errors and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalResourceException {
     #[allow(missing_docs)] // documentation missing in model

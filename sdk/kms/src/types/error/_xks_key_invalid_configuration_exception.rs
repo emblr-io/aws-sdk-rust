@@ -3,6 +3,8 @@
 /// <p>The request was rejected because the external key specified by the <code>XksKeyId</code> parameter did not meet the configuration requirements for an external key store.</p>
 /// <p>The external key must be an AES-256 symmetric key that is enabled and performs encryption and decryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct XksKeyInvalidConfigurationException {
     #[allow(missing_docs)] // documentation missing in model

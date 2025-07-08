@@ -2,6 +2,8 @@
 
 /// <p>Configuration of the Jira integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JiraConfiguration {
     /// <p>The URL of the associated Jira issue.</p>

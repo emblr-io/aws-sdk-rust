@@ -2,6 +2,8 @@
 
 /// <p>Item that contains the attribute and when it was last updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListObjectTypeAttributeItem {
     /// <p>Name of the attribute.</p>

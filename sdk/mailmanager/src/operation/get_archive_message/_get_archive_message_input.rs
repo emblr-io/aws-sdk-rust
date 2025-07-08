@@ -2,6 +2,8 @@
 
 /// <p>The request to get details of a specific email message stored in an archive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveMessageInput {
     /// <p>The unique identifier of the archived email message.</p>

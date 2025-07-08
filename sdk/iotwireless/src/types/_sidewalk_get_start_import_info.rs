@@ -2,6 +2,8 @@
 
 /// <p>Sidewalk-related information for devices in an import task that are being onboarded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SidewalkGetStartImportInfo {
     /// <p>List of Sidewalk devices that are added to the import task.</p>

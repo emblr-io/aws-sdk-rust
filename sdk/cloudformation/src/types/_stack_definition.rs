@@ -2,6 +2,8 @@
 
 /// <p>Describes the stack and the template used by the stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackDefinition {
     /// <p>The name associated with the stack.</p>

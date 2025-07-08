@@ -2,6 +2,8 @@
 
 /// <p>An object that filters a system search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SystemTemplateFilter {
     /// <p>The name of the system search filter field.</p>

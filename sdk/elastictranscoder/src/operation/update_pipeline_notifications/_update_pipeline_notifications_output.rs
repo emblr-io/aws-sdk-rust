@@ -2,6 +2,8 @@
 
 /// <p>The <code>UpdatePipelineNotificationsResponse</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipelineNotificationsOutput {
     /// <p>A section of the response body that provides information about the pipeline associated with this notification.</p>

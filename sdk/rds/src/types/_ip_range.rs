@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element in the <code>DescribeDBSecurityGroups</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpRange {
     /// <p>The status of the IP range. Status can be "authorizing", "authorized", "revoking", and "revoked".</p>

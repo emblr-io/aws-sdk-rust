@@ -2,6 +2,8 @@
 
 /// <p>Text config for Message Body.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InAppMessageBodyConfig {
     /// <p>The alignment of the text. Valid values: LEFT, CENTER, RIGHT.</p>

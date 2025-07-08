@@ -2,6 +2,8 @@
 
 /// <p>Information about the number of aggregation functions that the member who can query can run given the epsilon and noise parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DifferentialPrivacyPrivacyImpact {
     /// <p>The number of aggregation functions that you can perform.</p>

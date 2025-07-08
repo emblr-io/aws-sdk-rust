@@ -2,6 +2,8 @@
 
 /// <p>The specified pipeline was not found. Verify that you used the correct user and account identifiers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineNotFoundException {
     /// <p>Description of the error message.</p>

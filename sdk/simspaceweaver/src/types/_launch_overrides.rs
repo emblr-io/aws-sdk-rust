@@ -2,6 +2,8 @@
 
 /// <p>Options that apply when the app starts. These options override default behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchOverrides {
     /// <p>App launch commands and command line parameters that override the launch command configured in the simulation schema.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request to retrieve details of a specific archive export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveExportInput {
     /// <p>The identifier of the export job to get details for.</p>

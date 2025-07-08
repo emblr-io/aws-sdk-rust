@@ -2,6 +2,8 @@
 
 /// <p>Details about topics for the AI Guardrail to identify and deny.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailTopicConfig {
     /// <p>The name of the topic to deny.</p>

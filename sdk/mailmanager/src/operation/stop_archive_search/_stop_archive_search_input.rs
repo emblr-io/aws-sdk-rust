@@ -2,6 +2,8 @@
 
 /// <p>The request to stop an in-progress archive search job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopArchiveSearchInput {
     /// <p>The identifier of the search job to stop.</p>

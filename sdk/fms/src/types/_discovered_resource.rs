@@ -2,6 +2,8 @@
 
 /// <p>A resource in the organization that's available to be associated with a Firewall Manager resource set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DiscoveredResource {
     /// <p>The universal resource identifier (URI) of the discovered resource.</p>

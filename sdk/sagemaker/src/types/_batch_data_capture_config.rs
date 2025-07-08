@@ -2,6 +2,8 @@
 
 /// <p>Configuration to control how SageMaker captures inference data for batch transform jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDataCaptureConfig {
     /// <p>The Amazon S3 location being used to capture the data.</p>

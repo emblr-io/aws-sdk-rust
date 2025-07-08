@@ -4,6 +4,8 @@
 /// <p>Additional properties, including status, that describe an EC2 instance in a game server group. Instance configurations are set with game server group properties (see <code>DescribeGameServerGroup</code> and with the EC2 launch template that was used when creating the game server group.</p>
 /// <p>Retrieve game server instances for a game server group by calling <code>DescribeGameServerInstances</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GameServerInstance {
     /// <p>A developer-defined identifier for the game server group that includes the game server instance. The name is unique for each Region in each Amazon Web Services account.</p>

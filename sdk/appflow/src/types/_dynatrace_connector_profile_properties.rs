@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile properties required by Dynatrace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynatraceConnectorProfileProperties {
     /// <p>The location of the Dynatrace resource.</p>

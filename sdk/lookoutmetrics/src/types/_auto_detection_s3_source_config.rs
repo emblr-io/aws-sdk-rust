@@ -2,6 +2,8 @@
 
 /// <p>An auto detection source config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoDetectionS3SourceConfig {
     /// <p>The config's templated path list.</p>

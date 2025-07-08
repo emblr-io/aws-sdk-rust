@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the lines of code associated with a code snippet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeLine {
     /// <p>The content of a line of code</p>

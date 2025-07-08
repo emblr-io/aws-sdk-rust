@@ -2,6 +2,8 @@
 
 /// <p>List item for keys to delete.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteKeyRequestListItem {
     /// <p>The key of the key value pair to be deleted.</p>

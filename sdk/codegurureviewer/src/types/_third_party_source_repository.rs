@@ -2,6 +2,8 @@
 
 /// <p>Information about a third-party source repository connected to CodeGuru Reviewer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThirdPartySourceRepository {
     /// <p>The name of the third party source repository.</p>

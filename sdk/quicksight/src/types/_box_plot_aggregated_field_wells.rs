@@ -2,6 +2,8 @@
 
 /// <p>The aggregated field well for a box plot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BoxPlotAggregatedFieldWells {
     /// <p>The group by field well of a box plot chart. Values are grouped based on group by fields.</p>

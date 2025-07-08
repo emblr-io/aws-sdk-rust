@@ -2,6 +2,8 @@
 
 /// <p>The interval period with the start and end time for the metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricInterval {
     /// <p>The interval period provided in the API request.</p>

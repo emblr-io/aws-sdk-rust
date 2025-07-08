@@ -3,6 +3,8 @@
 /// <p>Describes resource being monitored by an alarm.</p>
 /// <p>An alarm is a way to monitor your Amazon Lightsail resource metrics. For more information, see <a href="https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-alarms">Alarms in Amazon Lightsail</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoredResourceInfo {
     /// <p>The Amazon Resource Name (ARN) of the resource being monitored.</p>

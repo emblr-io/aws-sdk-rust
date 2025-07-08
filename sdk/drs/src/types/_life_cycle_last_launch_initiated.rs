@@ -2,6 +2,8 @@
 
 /// <p>An object containing information regarding the initiation of the last launch of a Source Server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifeCycleLastLaunchInitiated {
     /// <p>The date and time the last Source Server launch was initiated.</p>

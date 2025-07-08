@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about the state of an asynchronous change to a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableStatus {
     /// <p>The ARN of the user who requested the asynchronous change.</p>

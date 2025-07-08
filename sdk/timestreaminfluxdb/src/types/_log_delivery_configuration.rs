@@ -2,6 +2,8 @@
 
 /// <p>Configuration for sending InfluxDB engine logs to send to specified S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogDeliveryConfiguration {
     /// <p>Configuration for S3 bucket log delivery.</p>

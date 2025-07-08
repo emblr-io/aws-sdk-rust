@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it referenced a resource entity that does not exist. The error message describes the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchEntityException {
     #[allow(missing_docs)] // documentation missing in model

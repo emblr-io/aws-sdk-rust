@@ -2,6 +2,8 @@
 
 /// <p>You get this exception if you call <code>CreateReturnShippingLabel</code> and a valid return shipping label already exists. In this case, use <code>DescribeReturnShippingLabel</code> to get the URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReturnShippingLabelAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

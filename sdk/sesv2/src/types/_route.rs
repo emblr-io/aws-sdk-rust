@@ -2,6 +2,8 @@
 
 /// <p>An object which contains an AWS-Region and routing status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Route {
     /// <p>The name of an AWS-Region.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The required configuration fields to give intermediate access to a provider service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProviderIntermediateDataAccessConfiguration {
     /// <p>The Amazon Web Services account that provider can use to read or write data into the customer's intermediate S3 bucket.</p>

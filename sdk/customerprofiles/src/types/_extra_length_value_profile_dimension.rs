@@ -2,6 +2,8 @@
 
 /// <p>Object that segments on various Customer profile's fields that are larger than normal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExtraLengthValueProfileDimension {
     /// <p>The action to segment with.</p>

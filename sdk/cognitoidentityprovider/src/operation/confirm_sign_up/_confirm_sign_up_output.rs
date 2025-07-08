@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server for the registration confirmation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConfirmSignUpOutput {
     /// <p>A session identifier that you can use to immediately sign in the confirmed user. You can automatically sign users in with the one-time password that they provided in a successful <code>ConfirmSignUp</code> request.</p>

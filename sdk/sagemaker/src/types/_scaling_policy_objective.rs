@@ -2,6 +2,8 @@
 
 /// <p>An object where you specify the anticipated traffic pattern for an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalingPolicyObjective {
     /// <p>The minimum number of expected requests to your endpoint per minute.</p>

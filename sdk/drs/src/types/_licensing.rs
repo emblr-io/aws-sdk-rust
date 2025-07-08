@@ -2,6 +2,8 @@
 
 /// <p>Configuration of a machine's license.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Licensing {
     /// <p>Whether to enable "Bring your own license" or not.</p>

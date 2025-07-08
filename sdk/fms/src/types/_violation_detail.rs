@@ -2,6 +2,8 @@
 
 /// <p>Violations for a resource based on the specified Firewall Manager policy and Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViolationDetail {
     /// <p>The ID of the Firewall Manager policy that the violation details were requested for.</p>

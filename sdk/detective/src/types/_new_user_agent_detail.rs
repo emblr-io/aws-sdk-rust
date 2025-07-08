@@ -2,6 +2,8 @@
 
 /// <p>Details new user agents used either at the resource or account level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NewUserAgentDetail {
     /// <p>New user agent which accessed the resource.</p>

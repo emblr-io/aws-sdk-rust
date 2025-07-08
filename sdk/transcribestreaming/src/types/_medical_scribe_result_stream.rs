@@ -2,6 +2,8 @@
 
 /// <p>Result stream where you will receive the output events. The details are provided in the <code>MedicalScribeTranscriptEvent</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MedicalScribeResultStream {
     /// <p>The transcript event that contains real-time transcription results.</p>

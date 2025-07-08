@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a topic refresh schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicRefreshSchedule {
     /// <p>A Boolean value that controls whether to schedule is enabled.</p>

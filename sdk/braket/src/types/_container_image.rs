@@ -2,6 +2,8 @@
 
 /// <p>The container image used to create an Amazon Braket job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerImage {
     /// <p>The URI locating the container image.</p>

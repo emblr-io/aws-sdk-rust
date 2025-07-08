@@ -2,6 +2,8 @@
 
 /// <p>The captions to be created, if any.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputCaptions {
     /// <p>A policy that determines how Elastic Transcoder handles the existence of multiple captions.</p>

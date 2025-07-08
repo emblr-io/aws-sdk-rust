@@ -2,6 +2,8 @@
 
 /// <p>This input determines which instance groups to retrieve.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListInstanceGroupsInput {
     /// <p>The identifier of the cluster for which to list the instance groups.</p>

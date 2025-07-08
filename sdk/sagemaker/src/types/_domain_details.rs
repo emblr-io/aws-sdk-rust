@@ -2,6 +2,8 @@
 
 /// <p>The domain's details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainDetails {
     /// <p>The domain's Amazon Resource Name (ARN).</p>

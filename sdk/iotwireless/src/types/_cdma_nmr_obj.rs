@@ -2,6 +2,8 @@
 
 /// <p>CDMA object for network measurement reports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CdmaNmrObj {
     /// <p>Pseudo-noise offset, which is a characteristic of the signal from a cell on a radio tower.</p>

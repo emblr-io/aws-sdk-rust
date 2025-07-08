@@ -2,6 +2,8 @@
 
 /// <p>The series axis configuration of a line chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LineSeriesAxisDisplayOptions {
     /// <p>The options that determine the presentation of the line series axis.</p>

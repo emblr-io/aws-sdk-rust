@@ -2,6 +2,8 @@
 
 /// <p>Information that identifies a mitigation action. This information is returned by ListMitigationActions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MitigationActionIdentifier {
     /// <p>The friendly name of the mitigation action.</p>

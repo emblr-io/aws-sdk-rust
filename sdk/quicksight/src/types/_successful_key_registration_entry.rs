@@ -2,6 +2,8 @@
 
 /// <p>A success entry that occurs when a <code>KeyRegistration</code> job is successfully applied to the Amazon QuickSight account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuccessfulKeyRegistrationEntry {
     /// <p>The ARN of the KMS key that is associated with the <code>SuccessfulKeyRegistrationEntry</code> entry.</p>

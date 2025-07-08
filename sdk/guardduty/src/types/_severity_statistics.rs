@@ -2,6 +2,8 @@
 
 /// <p>Information about severity level for each finding type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SeverityStatistics {
     /// <p>The timestamp at which a finding type for a specific severity was last generated.</p>

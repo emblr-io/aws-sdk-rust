@@ -2,6 +2,8 @@
 
 /// <p>The RxNorm concept that the entity could refer to, along with a score indicating the likelihood of the match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RxNormConcept {
     /// <p>The description of the RxNorm concept.</p>

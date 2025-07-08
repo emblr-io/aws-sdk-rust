@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information associated with your TRN in Indonesia.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndonesiaAdditionalInfo {
     /// <p>The tax registration number type.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that contains configuration details of multi-region endpoint (global-endpoint).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Details {
     /// <p>A list of route configuration details. Must contain exactly one route configuration.</p>

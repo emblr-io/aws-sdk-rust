@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an exported metadata model assessment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportMetadataModelAssessmentResultEntry {
     /// <p>The object key for the object containing the exported metadata model assessment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration of a job template parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateParameterConfiguration {
     /// <p>The type of the job template parameter. Allowed values are: ‘STRING’, ‘NUMBER’.</p>

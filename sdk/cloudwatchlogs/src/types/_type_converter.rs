@@ -3,6 +3,8 @@
 /// <p>Use this processor to convert a value type associated with the specified key to the specified type. It's a casting processor that changes the types of the specified fields. Values can be converted into one of the following datatypes: <code>integer</code>, <code>double</code>, <code>string</code> and <code>boolean</code>.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-trimString"> trimString</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypeConverter {
     /// <p>An array of <code>TypeConverterEntry</code> objects, where each object contains the information about one field to change the type of.</p>

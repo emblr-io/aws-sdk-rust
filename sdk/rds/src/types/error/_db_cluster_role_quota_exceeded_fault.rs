@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded the maximum number of IAM roles that can be associated with the specified DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterRoleQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

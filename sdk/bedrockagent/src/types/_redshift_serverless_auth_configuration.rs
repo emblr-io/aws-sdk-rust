@@ -2,6 +2,8 @@
 
 /// <p>Specifies configurations for authentication to a Redshift Serverless. Specify the type of authentication to use in the <code>type</code> field and include the corresponding field. If you specify IAM authentication, you don't need to include another field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftServerlessAuthConfiguration {
     /// <p>The type of authentication to use.</p>

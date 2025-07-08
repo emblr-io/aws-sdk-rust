@@ -2,6 +2,8 @@
 
 /// <p>The shape conditional formatting of a filled map visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShapeConditionalFormat {
     /// <p>The conditional formatting for the shape background color of a filled map visual.</p>

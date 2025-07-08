@@ -2,6 +2,8 @@
 
 /// <p>Describes a path match type. Each rule can include only one of the following types of paths.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PathMatchType {
     /// <p>An exact match of the path.</p>

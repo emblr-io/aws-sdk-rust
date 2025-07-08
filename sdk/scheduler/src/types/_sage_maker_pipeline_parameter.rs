@@ -2,6 +2,8 @@
 
 /// <p>The name and value pair of a parameter to use to start execution of a SageMaker Model Building Pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SageMakerPipelineParameter {
     /// <p>Name of parameter to start execution of a SageMaker Model Building Pipeline.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A migration-task progress update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MigrationTaskUpdate {
     /// <p>The timestamp for the update.</p>

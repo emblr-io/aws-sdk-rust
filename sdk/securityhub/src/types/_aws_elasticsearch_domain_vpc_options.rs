@@ -2,6 +2,8 @@
 
 /// <p>Information that OpenSearch derives based on <code>VPCOptions</code> for the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainVpcOptions {
     /// <p>The list of Availability Zones associated with the VPC subnets.</p>

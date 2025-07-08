@@ -2,6 +2,8 @@
 
 /// <p>Contains the secret managed by Amazon DocumentDB in Amazon Web Services Secrets Manager for the master user password.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterMasterUserSecret {
     /// <p>The Amazon Resource Name (ARN) of the secret.</p>

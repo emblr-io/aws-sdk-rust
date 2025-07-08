@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of an <code>UpdatePipeline</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipelineOutput {
     /// <p>The structure of the updated pipeline.</p>

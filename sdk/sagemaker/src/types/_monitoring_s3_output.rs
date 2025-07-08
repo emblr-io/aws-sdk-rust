@@ -2,6 +2,8 @@
 
 /// <p>Information about where and how you want to store the results of a monitoring job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringS3Output {
     /// <p>A URI that identifies the Amazon S3 storage location where Amazon SageMaker AI saves the results of a monitoring job.</p>

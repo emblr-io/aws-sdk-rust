@@ -2,6 +2,8 @@
 
 /// <p>The RDS options for a Verified Access endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyVerifiedAccessEndpointRdsOptions {
     /// <p>The IDs of the subnets.</p>

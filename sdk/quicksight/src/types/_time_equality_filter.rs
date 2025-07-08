@@ -2,6 +2,8 @@
 
 /// <p>A <code>TimeEqualityFilter</code> filters values that are equal to a given value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeEqualityFilter {
     /// <p>An identifier that uniquely identifies a filter within a dashboard, analysis, or template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the parameters of a VPC used by the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConfigurationDescription {
     /// <p>The ID of the VPC configuration.</p>

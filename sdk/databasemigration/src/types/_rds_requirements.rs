@@ -2,6 +2,8 @@
 
 /// <p>Provides information that describes the requirements to the target engine on Amazon RDS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsRequirements {
     /// <p>The required target Amazon RDS engine edition.</p>

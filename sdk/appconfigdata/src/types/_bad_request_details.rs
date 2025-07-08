@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the input that failed to satisfy the constraints specified by a call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum BadRequestDetails {
     /// <p>One or more specified parameters are not valid for the call.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an activity scheduled during an execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ActivityScheduledEventDetails {
     /// <p>The Amazon Resource Name (ARN) of the scheduled activity.</p>

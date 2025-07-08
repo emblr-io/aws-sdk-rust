@@ -2,6 +2,8 @@
 
 /// <p>The type of adjustment the automatic scaling activity makes when triggered, and the periodicity of the adjustment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalingAction {
     /// <p>Not available for instance groups. Instance groups use the market type specified for the group.</p>

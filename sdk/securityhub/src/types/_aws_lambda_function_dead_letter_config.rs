@@ -2,6 +2,8 @@
 
 /// <p>The dead-letter queue for failed asynchronous invocations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsLambdaFunctionDeadLetterConfig {
     /// <p>The ARN of an SQS queue or SNS topic.</p>

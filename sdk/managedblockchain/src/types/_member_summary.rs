@@ -3,6 +3,8 @@
 /// <p>A summary of configuration properties for a member.</p>
 /// <p>Applies only to Hyperledger Fabric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberSummary {
     /// <p>The unique identifier of the member.</p>

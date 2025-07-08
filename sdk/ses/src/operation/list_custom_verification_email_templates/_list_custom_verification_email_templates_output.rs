@@ -2,6 +2,8 @@
 
 /// <p>A paginated list of custom verification email templates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCustomVerificationEmailTemplatesOutput {
     /// <p>A list of the custom verification email templates that exist in your account.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about neighboring servers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NeighborConnectionDetail {
     /// <p>The ID of the server that opened the network connection.</p>

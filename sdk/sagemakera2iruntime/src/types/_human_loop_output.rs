@@ -2,6 +2,8 @@
 
 /// <p>Information about where the human output will be stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HumanLoopOutput {
     /// <p>The location of the Amazon S3 object where Amazon Augmented AI stores your human loop output.</p>

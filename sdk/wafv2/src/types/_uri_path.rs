@@ -4,6 +4,8 @@
 /// <p>This is used in the <code>FieldToMatch</code> specification for some web request component types.</p>
 /// <p>JSON specification: <code>"UriPath": {}</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UriPath {}
 impl UriPath {

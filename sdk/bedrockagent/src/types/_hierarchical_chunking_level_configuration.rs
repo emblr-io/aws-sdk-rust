@@ -2,6 +2,8 @@
 
 /// <p>Token settings for a layer in a hierarchical chunking configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchicalChunkingLevelConfiguration {
     /// <p>The maximum number of tokens that a chunk can contain in this layer.</p>

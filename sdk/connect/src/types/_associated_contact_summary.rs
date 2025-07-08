@@ -2,6 +2,8 @@
 
 /// <p>Contact summary of a contact in contact tree associated with unique identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatedContactSummary {
     /// <p>The identifier of the contact in this instance of Amazon Connect.</p>

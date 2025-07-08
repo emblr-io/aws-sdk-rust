@@ -3,6 +3,8 @@
 /// <p>The overrides that should be sent to a container.</p>
 /// <p>For information about using Batch overrides when you connect event sources to targets, see <a href="https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_BatchContainerOverrides.html">BatchContainerOverrides</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskContainerOverrides {
     /// <p>The command to send to the container that overrides the default command from the Docker image or the job definition.</p><note>

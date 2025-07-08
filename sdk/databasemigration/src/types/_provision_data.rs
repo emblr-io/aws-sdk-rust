@@ -2,6 +2,8 @@
 
 /// <p>Information about provisioning resources for an DMS serverless replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionData {
     /// <p>The current provisioning state</p>

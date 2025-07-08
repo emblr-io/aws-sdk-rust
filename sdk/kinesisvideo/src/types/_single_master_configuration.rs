@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration for the <code>SINGLE_MASTER</code> channel type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleMasterConfiguration {
     /// <p>The period of time a signaling channel retains undelivered messages before they are discarded.</p>

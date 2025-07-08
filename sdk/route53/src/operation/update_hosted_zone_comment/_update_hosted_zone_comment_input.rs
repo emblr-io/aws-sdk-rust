@@ -2,6 +2,8 @@
 
 /// <p>A request to update the comment for a hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateHostedZoneCommentInput {
     /// <p>The ID for the hosted zone that you want to update the comment for.</p>

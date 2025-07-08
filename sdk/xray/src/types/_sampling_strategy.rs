@@ -2,6 +2,8 @@
 
 /// <p>The name and value of a sampling rule to apply to a trace summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamplingStrategy {
     /// <p>The name of a sampling rule.</p>

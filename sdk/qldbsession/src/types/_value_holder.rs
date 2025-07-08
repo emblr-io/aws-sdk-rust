@@ -2,6 +2,8 @@
 
 /// <p>A structure that can contain a value in multiple encoding formats.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValueHolder {
     /// <p>An Amazon Ion binary value contained in a <code>ValueHolder</code> structure.</p>

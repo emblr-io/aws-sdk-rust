@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an API request or response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForbiddenException {
     /// <p>The message that's returned from the API.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to the input streams, destination streams, and reference data sources for a SQL-based Kinesis Data Analytics application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqlApplicationConfigurationUpdate {
     /// <p>The array of <code>InputUpdate</code> objects describing the new input streams used by the application.</p>

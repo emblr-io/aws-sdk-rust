@@ -2,6 +2,8 @@
 
 /// <p>Travel mode options when the provided travel mode is "Truck".</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoadSnapTruckOptions {
     /// <p>Gross weight of the vehicle including trailers, and goods at capacity.</p>

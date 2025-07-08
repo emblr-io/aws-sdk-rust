@@ -2,6 +2,8 @@
 
 /// <p>A resource association result for a percentage custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociateResourceResponseElement {
     /// <p>The resource ARN that was associated to the custom line item.</p>

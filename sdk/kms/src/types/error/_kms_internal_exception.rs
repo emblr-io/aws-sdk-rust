@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because an internal exception occurred. The request can be retried.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsInternalException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>A representation of a pricing rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PricingRuleListElement {
     /// <p>The name of a pricing rule.</p>

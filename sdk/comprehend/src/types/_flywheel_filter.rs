@@ -2,6 +2,8 @@
 
 /// <p>Filter the flywheels based on creation time or flywheel status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlywheelFilter {
     /// <p>Filter the flywheels based on the flywheel status.</p>

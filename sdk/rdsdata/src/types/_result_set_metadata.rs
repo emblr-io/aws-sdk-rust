@@ -2,6 +2,8 @@
 
 /// <p>The metadata of the result set returned by a SQL statement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResultSetMetadata {
     /// <p>The number of columns in the result set.</p>

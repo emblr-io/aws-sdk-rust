@@ -23,6 +23,8 @@
 /// </ul>
 /// <p>You can either choose <code>ONE_TO_ONE</code> or <code>MANY_TO_MANY</code> as the <code>AttributeMatchingModel</code>. When choosing <code>MANY_TO_MANY</code>, the system can match attribute across the sub-types of an attribute type. For example, if the value of the <code>Email</code> field of Profile A and the value of <code>BusinessEmail</code> field of Profile B matches, the two profiles are matched on the Email type. When choosing <code>ONE_TO_ONE</code> the system can only match if the sub-types are exact matches. For example, only when the value of the <code>Email</code> field of Profile A and the value of the <code>Email</code> field of Profile B matches, the two profiles are matched on the Email type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeTypesSelector {
     /// <p>Configures the <code>AttributeMatchingModel</code>, you can either choose <code>ONE_TO_ONE</code> or <code>MANY_TO_MANY</code>.</p>

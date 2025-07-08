@@ -2,6 +2,8 @@
 
 /// <p>Information about GuardDuty coverage statistics for members in your Amazon Web Services organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationDetails {
     /// <p>The timestamp at which the organization statistics was last updated. This is in UTC format.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the output for DisableAvailabilityZonesForLoadBalancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisableAvailabilityZonesForLoadBalancerOutput {
     /// <p>The remaining Availability Zones for the load balancer.</p>

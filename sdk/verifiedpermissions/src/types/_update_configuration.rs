@@ -2,6 +2,8 @@
 
 /// <p>Contains an update to replace the configuration in an existing identity source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum UpdateConfiguration {
     /// <p>Contains configuration details of a Amazon Cognito user pool.</p>

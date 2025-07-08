@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when a verification code fails to deliver successfully.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeDeliveryFailureException {
     /// <p>The message sent when a verification code fails to deliver successfully.</p>

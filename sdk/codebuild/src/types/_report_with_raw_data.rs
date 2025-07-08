@@ -2,6 +2,8 @@
 
 /// <p>Contains the unmodified data for the report. For more information, see .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportWithRawData {
     /// <p>The ARN of the report.</p>

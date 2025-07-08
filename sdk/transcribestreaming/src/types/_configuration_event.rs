@@ -2,6 +2,8 @@
 
 /// <p>Allows you to set audio channel definitions and post-call analytics settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationEvent {
     /// <p>Indicates which speaker is on which audio channel.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Objects that allows sorting on container products based on certain fields and sorting order.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerProductSort {
     /// <p>Field to sort the container products by.</p>

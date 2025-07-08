@@ -2,6 +2,8 @@
 
 /// <p>The lifecycle policy could not be found, and no policy is set to the repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

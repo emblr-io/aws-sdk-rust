@@ -2,6 +2,8 @@
 
 /// <p>CreateLocationNfsRequest</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateLocationNfsInput {
     /// <p>Specifies the export path in your NFS file server that you want DataSync to mount.</p>

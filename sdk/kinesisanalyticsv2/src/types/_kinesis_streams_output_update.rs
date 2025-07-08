@@ -2,6 +2,8 @@
 
 /// <p>When you update a SQL-based Kinesis Data Analytics application's output configuration using the <code>UpdateApplication</code> operation, provides information about a Kinesis data stream that is configured as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisStreamsOutputUpdate {
     /// <p>The Amazon Resource Name (ARN) of the Kinesis data stream where you want to write the output.</p>

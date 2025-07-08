@@ -6,6 +6,8 @@
 /// </note>
 /// <p>The country from which web requests originate that you want AWS WAF to search for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoMatchConstraint {
     /// <p>The type of geographical area you want AWS WAF to search for. Currently <code>Country</code> is the only valid value.</p>

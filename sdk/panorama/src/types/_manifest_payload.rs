@@ -2,6 +2,8 @@
 
 /// <p>A application verion's manifest file. This is a JSON document that has a single key (<code>PayloadData</code>) where the value is an escaped string representation of the application manifest (<code>graph.json</code>). This file is located in the <code>graphs</code> folder in your application source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ManifestPayload {
     /// <p>The application manifest.</p>

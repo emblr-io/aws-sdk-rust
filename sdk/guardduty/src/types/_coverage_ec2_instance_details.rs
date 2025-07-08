@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon EC2 instance runtime coverage details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageEc2InstanceDetails {
     /// <p>The Amazon EC2 instance ID.</p>

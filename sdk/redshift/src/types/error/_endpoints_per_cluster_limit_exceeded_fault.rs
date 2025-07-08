@@ -2,6 +2,8 @@
 
 /// <p>The number of Redshift-managed VPC endpoints per cluster has exceeded its limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointsPerClusterLimitExceededFault {
     #[allow(missing_docs)] // documentation missing in model

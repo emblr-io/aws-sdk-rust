@@ -2,6 +2,8 @@
 
 /// <p>A custom action definition. A custom action is an optional, non-standard action to use for stateless packet handling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupSourceCustomActionsDetails {
     /// <p>The definition of a custom action.</p>

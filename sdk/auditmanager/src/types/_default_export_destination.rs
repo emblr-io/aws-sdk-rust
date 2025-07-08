@@ -2,6 +2,8 @@
 
 /// <p>The default s3 bucket where Audit Manager saves the files that you export from evidence finder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultExportDestination {
     /// <p>The destination type, such as Amazon S3.</p>

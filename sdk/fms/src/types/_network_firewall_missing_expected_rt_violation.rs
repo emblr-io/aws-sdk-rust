@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for Network Firewall for a subnet that's not associated to the expected Firewall Manager managed route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFirewallMissingExpectedRtViolation {
     /// <p>The ID of the Network Firewall or VPC resource that's in violation.</p>

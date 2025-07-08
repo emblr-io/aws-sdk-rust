@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Amazon EventBridge is being used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventBridgeDestinationProperties {
     /// <p>The object specified in the Amazon EventBridge flow destination.</p>

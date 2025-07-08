@@ -2,6 +2,8 @@
 
 /// <p>Provides you with the Amazon S3 URI you can use to access your transcript.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalTranscript {
     /// <p>The Amazon S3 location of your transcript. You can use this URI to access or download your transcript.</p>

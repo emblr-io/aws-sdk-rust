@@ -2,6 +2,8 @@
 
 /// <p>Information about the metric for a candidate produced by an AutoML job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricDatum {
     /// <p>The name of the metric.</p>

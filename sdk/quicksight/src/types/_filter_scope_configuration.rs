@@ -3,6 +3,8 @@
 /// <p>The scope configuration for a <code>FilterGroup</code>.</p>
 /// <p>This is a union type structure. For this structure to be valid, only one of the attributes can be defined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterScopeConfiguration {
     /// <p>The configuration for applying a filter to specific sheets.</p>

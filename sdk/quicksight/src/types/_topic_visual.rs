@@ -2,6 +2,8 @@
 
 /// <p>The definition for a <code>TopicVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicVisual {
     /// <p>The visual ID for the <code>TopicVisual</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>CloudFront origin access identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudFrontOriginAccessIdentity {
     /// <p>The ID for the origin access identity, for example, <code>E74FTE3AJFJ256A</code>.</p>

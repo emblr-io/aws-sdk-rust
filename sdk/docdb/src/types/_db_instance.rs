@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about an instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstance {
     /// <p>Contains a user-provided database identifier. This identifier is the unique key that identifies an instance.</p>

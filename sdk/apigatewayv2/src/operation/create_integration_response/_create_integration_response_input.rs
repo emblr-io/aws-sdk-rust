@@ -2,6 +2,8 @@
 
 /// <p>Creates a new IntegrationResponse resource to represent an integration response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateIntegrationResponseInput {
     /// <p>The API identifier.</p>

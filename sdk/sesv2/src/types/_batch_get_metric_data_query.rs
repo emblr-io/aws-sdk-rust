@@ -2,6 +2,8 @@
 
 /// <p>Represents a single metric data query to include in a batch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetMetricDataQuery {
     /// <p>The query identifier.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a finding category with open findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CategoryWithFindingNum {
     /// <p>The name of the finding category. A finding category is determined by the detector that detected the finding.</p>

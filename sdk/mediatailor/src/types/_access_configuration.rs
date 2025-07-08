@@ -2,6 +2,8 @@
 
 /// <p>Access configuration parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessConfiguration {
     /// <p>The type of authentication used to access content from <code>HttpConfiguration::BaseUrl</code> on your source location.</p>

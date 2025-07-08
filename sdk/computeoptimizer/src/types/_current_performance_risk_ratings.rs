@@ -3,6 +3,8 @@
 /// <p>Describes the performance risk ratings for a given resource type.</p>
 /// <p>Resources with a <code>high</code> or <code>medium</code> rating are at risk of not meeting the performance needs of their workloads, while resources with a <code>low</code> rating are performing well in their workloads.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CurrentPerformanceRiskRatings {
     /// <p>A count of the applicable resource types with a high performance risk rating.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about all of your applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationsResponse {
     /// <p>An array of responses, one for each application that was returned.</p>

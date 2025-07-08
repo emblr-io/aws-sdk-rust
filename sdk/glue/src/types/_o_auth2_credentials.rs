@@ -2,6 +2,8 @@
 
 /// <p>The credentials used when the authentication type is OAuth2 authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OAuth2Credentials {
     /// <p>The client application client secret if the client application is user managed.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Properties of the cloud environment where this Source Server originated from.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceCloudProperties {
     /// <p>AWS Account ID for an EC2-originated Source Server.</p>

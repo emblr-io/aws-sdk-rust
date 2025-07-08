@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the account level permissions on the S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountLevelPermissions {
     /// <p>Describes the S3 Block Public Access settings of the bucket's parent account.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Additional parameters specified by the acceptor while accepting the term.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenewalTermConfiguration {
     /// <p>Defines whether the acceptor has chosen to auto-renew the agreement at the end of its lifecycle. Can be set to <code>True</code> or <code>False</code>.</p>

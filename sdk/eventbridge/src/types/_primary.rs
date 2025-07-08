@@ -2,6 +2,8 @@
 
 /// <p>The primary Region of the endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Primary {
     /// <p>The ARN of the health check used by the endpoint to determine whether failover is triggered.</p>

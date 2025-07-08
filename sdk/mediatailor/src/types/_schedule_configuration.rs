@@ -2,6 +2,8 @@
 
 /// <p>Schedule configuration parameters. A channel must be stopped before changes can be made to the schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleConfiguration {
     /// <p>Program transition configurations.</p>

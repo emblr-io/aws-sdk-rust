@@ -2,6 +2,8 @@
 
 /// <p>Defines the information about the Amazon Web Services Region you're deleting from your replication set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteRegionAction {
     /// <p>The name of the Amazon Web Services Region you're deleting from the replication set.</p>

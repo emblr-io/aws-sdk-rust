@@ -2,6 +2,8 @@
 
 /// <p>The options for how a device's CPU is configured.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CpuOptions {
     /// <p>The number of cores that the CPU can use.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A collection of field wells for a plugin visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisualFieldWell {
     /// <p>The semantic axis name for the field well.</p>

@@ -2,6 +2,8 @@
 
 /// The API encountered an unexpected error and couldn't complete the request. You might be able to successfully issue the request again in the future.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServiceErrorException {
     #[allow(missing_docs)] // documentation missing in model

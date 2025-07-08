@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to specify the Amazon SNS topic to which Amazon SES publishes bounce, complaint, or delivery notifications for emails sent with that identity as the source. For information about Amazon SES notifications, see the <a href="https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity-using-notifications-sns.html">Amazon SES Developer Guide</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetIdentityNotificationTopicInput {
     /// <p>The identity (email address or domain) for the Amazon SNS topic.</p><important>

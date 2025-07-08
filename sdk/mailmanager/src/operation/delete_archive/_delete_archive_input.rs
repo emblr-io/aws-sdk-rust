@@ -2,6 +2,8 @@
 
 /// <p>The request to initiate deletion of an email archive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteArchiveInput {
     /// <p>The identifier of the archive to delete.</p>

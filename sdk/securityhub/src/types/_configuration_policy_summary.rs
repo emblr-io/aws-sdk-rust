@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the details of an Security Hub configuration policy that’s returned in a <code>ListConfigurationPolicies</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationPolicySummary {
     /// <p>The Amazon Resource Name (ARN) of the configuration policy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The exception when the input doesn't pass validation for at least one of the input parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ValidationException {
     #[allow(missing_docs)] // documentation missing in model

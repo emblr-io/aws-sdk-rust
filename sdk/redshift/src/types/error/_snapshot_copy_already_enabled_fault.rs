@@ -2,6 +2,8 @@
 
 /// <p>The cluster already has cross-region snapshot copy enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotCopyAlreadyEnabledFault {
     #[allow(missing_docs)] // documentation missing in model

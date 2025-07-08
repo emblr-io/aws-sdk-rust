@@ -2,6 +2,8 @@
 
 /// <p>A configuration for Amazon SNS-integrated notifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Alert {
     /// <p>Action that will be triggered when there is an alert.</p>

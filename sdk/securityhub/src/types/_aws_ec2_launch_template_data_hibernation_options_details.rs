@@ -2,6 +2,8 @@
 
 /// <p>Specifies whether your Amazon EC2 instance is configured for hibernation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataHibernationOptionsDetails {
     /// <p>If you set this parameter to <code>true</code>, the instance is enabled for hibernation.</p>

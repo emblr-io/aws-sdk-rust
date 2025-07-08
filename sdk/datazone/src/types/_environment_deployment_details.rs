@@ -2,6 +2,8 @@
 
 /// <p>The environment deployment details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentDeploymentDetails {
     /// <p>The overall deployment status of the environment.</p>

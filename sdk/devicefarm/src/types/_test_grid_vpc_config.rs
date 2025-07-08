@@ -2,6 +2,8 @@
 
 /// <p>The VPC security groups and subnets that are attached to a project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestGridVpcConfig {
     /// <p>A list of VPC security group IDs in your Amazon VPC.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration details for OAuth authentication with a third-party service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OAuthConfig {
     /// <p>The authorization URL for the OAuth service, where users are directed to authenticate and authorize access.</p>

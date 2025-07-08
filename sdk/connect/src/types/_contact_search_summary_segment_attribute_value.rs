@@ -2,6 +2,8 @@
 
 /// <p>The value of a segment attribute. This is structured as a map with a single key-value pair. The key 'valueString' indicates that the attribute type is a string, and its corresponding value is the actual string value of the segment attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactSearchSummarySegmentAttributeValue {
     /// <p>The value of a segment attribute represented as a string.</p>

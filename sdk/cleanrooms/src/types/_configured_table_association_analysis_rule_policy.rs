@@ -2,6 +2,8 @@
 
 /// <p>Controls on the query specifications that can be run on an associated configured table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ConfiguredTableAssociationAnalysisRulePolicy {
     /// <p>The policy for the configured table association analysis rule.</p>

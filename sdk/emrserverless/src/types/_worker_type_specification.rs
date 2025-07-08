@@ -2,6 +2,8 @@
 
 /// <p>The specifications for a worker type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkerTypeSpecification {
     /// <p>The image configuration for a worker type.</p>

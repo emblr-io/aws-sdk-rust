@@ -2,6 +2,8 @@
 
 /// <p>The subtitle label options for a visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualSubtitleLabelOptions {
     /// <p>The visibility of the subtitle label.</p>

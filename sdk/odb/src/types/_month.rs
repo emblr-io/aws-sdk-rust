@@ -2,6 +2,8 @@
 
 /// <p>An enumeration of months used for scheduling maintenance windows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Month {
     /// <p>The name of the month.</p>

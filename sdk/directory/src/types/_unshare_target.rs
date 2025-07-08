@@ -2,6 +2,8 @@
 
 /// <p>Identifier that contains details about the directory consumer account with whom the directory is being unshared.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnshareTarget {
     /// <p>Identifier of the directory consumer account.</p>

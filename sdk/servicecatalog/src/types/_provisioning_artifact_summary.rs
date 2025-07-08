@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a provisioning artifact (also known as a version) for a product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisioningArtifactSummary {
     /// <p>The identifier of the provisioning artifact.</p>

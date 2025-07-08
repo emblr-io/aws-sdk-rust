@@ -2,6 +2,8 @@
 
 /// <p>The organization must have a valid state to perform certain operations on the organization or its members.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationStateException {
     #[allow(missing_docs)] // documentation missing in model

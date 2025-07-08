@@ -2,6 +2,8 @@
 
 /// <p>A request to change information about the BasePathMapping resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBasePathMappingInput {
     /// <p>The domain name of the BasePathMapping resource to change.</p>

@@ -18,6 +18,8 @@
 /// </iso></code> and <code>awswaf:forwardedip:geo:country:<iso country code></iso></code>.</p>
 /// <p>For additional details, see <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html">Geographic match rule statement</a> in the <a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">WAF Developer Guide</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoMatchStatement {
     /// <p>An array of two-character country codes that you want to match against, for example, <code>\[ "US", "CN" \]</code>, from the alpha-2 country ISO codes of the ISO 3166 international standard.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A type of analysis rule that enables query structure and specified queries that produce aggregate statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisRuleAggregation {
     /// <p>The columns that query runners are allowed to use in aggregation queries.</p>

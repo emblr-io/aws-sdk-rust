@@ -8,6 +8,8 @@
 /// <p><code>ListGatewaysInput$Marker</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListGatewaysInput {
     /// <p>An opaque string that indicates the position at which to begin the returned list of gateways.</p>

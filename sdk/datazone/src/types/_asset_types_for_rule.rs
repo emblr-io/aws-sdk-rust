@@ -2,6 +2,8 @@
 
 /// <p>The asset type for the rule details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetTypesForRule {
     /// <p>The selection mode for the rule.</p>

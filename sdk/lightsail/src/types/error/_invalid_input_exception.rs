@@ -4,6 +4,8 @@
 /// <p>Domain and distribution APIs are only available in the N. Virginia (<code>us-east-1</code>) Amazon Web Services Region. Please set your Amazon Web Services Region configuration to <code>us-east-1</code> to create, view, or edit these resources.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInputException {
     #[allow(missing_docs)] // documentation missing in model

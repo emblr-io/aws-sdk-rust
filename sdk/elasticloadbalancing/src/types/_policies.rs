@@ -2,6 +2,8 @@
 
 /// <p>The policies for a load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Policies {
     /// <p>The stickiness policies created using <code>CreateAppCookieStickinessPolicy</code>.</p>

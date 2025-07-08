@@ -2,6 +2,8 @@
 
 /// <p>A <code>persistentVolumeClaim</code> volume is used to mount a <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/">PersistentVolume</a> into a Pod. PersistentVolumeClaims are a way for users to "claim" durable storage without knowing the details of the particular cloud environment. See the information about <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/">PersistentVolumes</a> in the <i>Kubernetes documentation</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksPersistentVolumeClaim {
     /// <p>The name of the <code>persistentVolumeClaim</code> bounded to a <code>persistentVolume</code>. For more information, see <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims"> Persistent Volume Claims</a> in the <i>Kubernetes documentation</i>.</p>

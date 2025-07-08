@@ -2,6 +2,8 @@
 
 /// <p>Configuration for a single Parameter in the Amazon Web Services Systems Manager (SSM) Parameter Store in a given Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SsmParameterConfiguration {
     /// <p>Specify the account that will own the Parameter in a given Region. During distribution, this account must be specified in distribution settings as a target account for the Region.</p>

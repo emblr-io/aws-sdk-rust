@@ -2,6 +2,8 @@
 
 /// <p>Contains input information for protected jobs with an S3 output type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedJobS3OutputConfigurationInput {
     /// <p>The S3 bucket for job output.</p>

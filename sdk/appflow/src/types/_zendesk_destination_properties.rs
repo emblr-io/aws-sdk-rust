@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Zendesk is used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZendeskDestinationProperties {
     /// <p>The object specified in the Zendesk flow destination.</p>

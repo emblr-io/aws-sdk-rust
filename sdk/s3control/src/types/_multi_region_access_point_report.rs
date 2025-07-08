@@ -2,6 +2,8 @@
 
 /// <p>A collection of statuses for a Multi-Region Access Point in the various Regions it supports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiRegionAccessPointReport {
     /// <p>The name of the Multi-Region Access Point.</p>

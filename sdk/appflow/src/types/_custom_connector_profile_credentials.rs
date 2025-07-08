@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials that are required when using the custom connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomConnectorProfileCredentials {
     /// <p>The authentication type that the custom connector uses for authenticating while creating a connector profile.</p>

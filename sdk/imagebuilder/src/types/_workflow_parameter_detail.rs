@@ -2,6 +2,8 @@
 
 /// <p>Defines a parameter that's used to provide configuration details for the workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowParameterDetail {
     /// <p>The name of this input parameter.</p>

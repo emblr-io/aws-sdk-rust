@@ -2,6 +2,8 @@
 
 /// <p>Represents the custom MAIL FROM attributes for a list of identities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetIdentityMailFromDomainAttributesOutput {
     /// <p>A map of identities to custom MAIL FROM attributes.</p>

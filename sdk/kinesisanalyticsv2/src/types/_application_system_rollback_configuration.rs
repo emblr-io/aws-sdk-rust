@@ -2,6 +2,8 @@
 
 /// Describes system rollback configuration for a Managed Service for Apache Flink application
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationSystemRollbackConfiguration {
     /// Describes whether system rollbacks are enabled for a Managed Service for Apache Flink application

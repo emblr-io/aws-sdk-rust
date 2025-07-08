@@ -2,6 +2,8 @@
 
 /// <p>Specifies that a value might be not like the expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotLikeExpression {
     /// <p>The name of the column.</p>

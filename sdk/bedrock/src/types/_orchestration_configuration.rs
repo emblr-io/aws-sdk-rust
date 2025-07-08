@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for the model to process the prompt prior to retrieval and response generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrchestrationConfiguration {
     /// <p>Contains configuration details for transforming the prompt.</p>

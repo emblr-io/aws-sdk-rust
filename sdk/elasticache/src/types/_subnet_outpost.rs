@@ -2,6 +2,8 @@
 
 /// <p>The ID of the outpost subnet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubnetOutpost {
     /// <p>The outpost ARN of the subnet.</p>

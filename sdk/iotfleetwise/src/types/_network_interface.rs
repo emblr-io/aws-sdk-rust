@@ -3,6 +3,8 @@
 /// <p>Represents a node and its specifications in an in-vehicle communication network. All signal decoders must be associated with a network node.</p>
 /// <p>To return this information about all the network interfaces specified in a decoder manifest, use the API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkInterface {
     /// <p>The ID of the network interface.</p>

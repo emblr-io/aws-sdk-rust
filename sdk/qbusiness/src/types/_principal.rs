@@ -2,6 +2,8 @@
 
 /// <p>Provides user and group information used for filtering documents to use for generating Amazon Q Business conversation responses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Principal {
     /// <p>The group associated with the principal.</p>

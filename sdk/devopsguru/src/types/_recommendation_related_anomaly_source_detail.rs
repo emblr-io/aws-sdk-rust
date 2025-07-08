@@ -2,6 +2,8 @@
 
 /// <p>Contains an array of <code>RecommendationRelatedCloudWatchMetricsSourceDetail</code> objects that contain the name and namespace of an Amazon CloudWatch metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationRelatedAnomalySourceDetail {
     /// <p>An array of <code>CloudWatchMetricsDetail</code> objects that contains information about the analyzed metrics that displayed anomalous behavior.</p>

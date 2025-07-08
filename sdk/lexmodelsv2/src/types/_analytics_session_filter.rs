@@ -31,6 +31,8 @@
 /// <p><code>IntentPath</code> – <code>EQ</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsSessionFilter {
     /// <p>The category by which to filter the sessions. The descriptions for each option are as follows:</p>

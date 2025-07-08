@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the properties for the Amazon ECS resources of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsProperties {
     /// <p>An object that contains the properties for the Amazon ECS task definition of a job.</p><note>

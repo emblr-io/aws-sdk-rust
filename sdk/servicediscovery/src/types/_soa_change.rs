@@ -2,6 +2,8 @@
 
 /// <p>Updated Start of Authority (SOA) properties for a public or private DNS namespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SoaChange {
     /// <p>The updated time to live (TTL) for purposes of negative caching.</p>

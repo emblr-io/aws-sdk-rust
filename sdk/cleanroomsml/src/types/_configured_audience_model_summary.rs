@@ -2,6 +2,8 @@
 
 /// <p>Information about the configured audience model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredAudienceModelSummary {
     /// <p>The time at which the configured audience model was created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the error(s) encountered with the last update of the environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateError {
     /// <p>The error code that corresponds to the error with the last update.</p>

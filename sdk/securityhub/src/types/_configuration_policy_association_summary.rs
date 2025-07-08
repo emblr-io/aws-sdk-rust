@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the details of a configuration policy association that’s returned in a <code>ListConfigurationPolicyAssociations</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationPolicyAssociationSummary {
     /// <p>The universally unique identifier (UUID) of the configuration policy.</p>

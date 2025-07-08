@@ -2,6 +2,8 @@
 
 /// <p>Individual item from the list of entity types in the metadata of an entity recognizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityRecognizerMetadataEntityTypesListItem {
     /// <p>Type of entity from the list of entity types in the metadata of an entity recognizer.</p>

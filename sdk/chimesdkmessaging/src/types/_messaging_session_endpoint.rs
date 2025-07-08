@@ -2,6 +2,8 @@
 
 /// <p>The websocket endpoint used to connect to Amazon Chime SDK messaging.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessagingSessionEndpoint {
     /// <p>The endpoint to which you establish a websocket connection.</p>

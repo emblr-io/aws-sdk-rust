@@ -2,6 +2,8 @@
 
 /// <p>The time range of a cost estimation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostEstimationTimeRange {
     /// <p>The start time of the cost estimation.</p>

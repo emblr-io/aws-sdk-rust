@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an <code>UpdateTimeToLive</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateTimeToLiveInput {
     /// <p>The name of the table to be configured. You can also provide the Amazon Resource Name (ARN) of the table in this parameter.</p>

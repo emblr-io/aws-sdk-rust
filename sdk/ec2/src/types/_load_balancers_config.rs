@@ -2,6 +2,8 @@
 
 /// <p>Describes the Classic Load Balancers and target groups to attach to a Spot Fleet request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancersConfig {
     /// <p>The Classic Load Balancers.</p>

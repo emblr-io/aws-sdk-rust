@@ -2,6 +2,8 @@
 
 /// <p>Replica-specific configuration for the provisioned throughput.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableProvisionedThroughputOverride {
     /// <p>The read capacity units for the replica.</p>

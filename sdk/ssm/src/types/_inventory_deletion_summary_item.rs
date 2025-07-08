@@ -2,6 +2,8 @@
 
 /// <p>Either a count, remaining count, or a version number in a delete inventory summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryDeletionSummaryItem {
     /// <p>The inventory type version.</p>

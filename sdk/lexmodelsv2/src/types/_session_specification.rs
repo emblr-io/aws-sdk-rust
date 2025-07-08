@@ -2,6 +2,8 @@
 
 /// <p>An object containing information about a specific session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionSpecification {
     /// <p>The identifier of the alias of the bot that the session was held with.</p>

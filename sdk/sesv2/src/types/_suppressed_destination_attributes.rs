@@ -2,6 +2,8 @@
 
 /// <p>An object that contains additional attributes that are related an email address that is on the suppression list for your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuppressedDestinationAttributes {
     /// <p>The unique identifier of the email message that caused the email address to be added to the suppression list for your account.</p>

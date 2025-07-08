@@ -3,6 +3,8 @@
 /// <p>A description for a dataset. For more information, see <code>DescribeDataset</code>.</p>
 /// <p>The status fields <code>Status</code>, <code>StatusMessage</code>, and <code>StatusMessageCode</code> reflect the last operation on the dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetDescription {
     /// <p>The Unix timestamp for the time and date that the dataset was created.</p>

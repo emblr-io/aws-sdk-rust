@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the storage configuration of the knowledge base in Amazon Neptune Analytics. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup-neptune.html">Create a vector index in Amazon Neptune Analytics</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NeptuneAnalyticsConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the Neptune Analytics vector store.</p>

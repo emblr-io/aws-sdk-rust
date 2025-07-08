@@ -2,6 +2,8 @@
 
 /// <p>If an entity is rejected when a <code>PutLogEvents</code> request was made, this includes details about the reason for the rejection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RejectedEntityInfo {
     /// <p>The type of error that caused the rejection of the entity when calling <code>PutLogEvents</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object containing information about the output file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEarthObservationJobOutputConfig {
     /// <p>The Amazon Resource Name (ARN) of the list of the Earth Observation jobs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains options for wrapping (line folding) in X12 EDI files. Wrapping controls how long lines are handled in the EDI output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WrapOptions {
     /// <p>Specifies the method used for wrapping lines in the EDI output. Valid values:</p>

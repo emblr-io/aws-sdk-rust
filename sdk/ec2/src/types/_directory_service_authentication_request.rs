@@ -2,6 +2,8 @@
 
 /// <p>Describes the Active Directory to be used for client authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryServiceAuthenticationRequest {
     /// <p>The ID of the Active Directory to be used for authentication.</p>

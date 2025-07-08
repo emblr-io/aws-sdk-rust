@@ -2,6 +2,8 @@
 
 /// <p>Property key-value pairs passed into an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyGroup {
     /// <p>Describes the key of an application execution property key-value pair.</p>

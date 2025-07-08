@@ -2,6 +2,8 @@
 
 /// <p>Details about the CloudFormation stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CfnStackDetail {
     /// <p>The name of the CloudFormation stack.</p>

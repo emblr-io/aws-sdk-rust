@@ -2,6 +2,8 @@
 
 /// <p>The configuration of crawl limits for the web URLs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebCrawlerLimits {
     /// <p>Rate of web URLs retrieved per minute.</p>

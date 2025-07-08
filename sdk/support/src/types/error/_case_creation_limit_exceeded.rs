@@ -2,6 +2,8 @@
 
 /// <p>The case creation limit for the account has been exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CaseCreationLimitExceeded {
     /// <p>An error message that indicates that you have exceeded the number of cases you can have open.</p>

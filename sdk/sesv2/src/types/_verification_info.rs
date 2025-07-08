@@ -2,6 +2,8 @@
 
 /// <p>An object that contains additional information about the verification status for the identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerificationInfo {
     /// <p>The last time a verification attempt was made for this identity.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Filters the results by resource account ID, region, resource ID, and resource name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceFilters {
     /// <p>The 12-digit source account ID.</p>

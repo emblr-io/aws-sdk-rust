@@ -2,6 +2,8 @@
 
 /// <p>Contains <code>ProfileObjectType</code> mapping information from the model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DetectedProfileObjectType {
     /// <p>The format of <code>sourceLastUpdatedTimestamp</code> that was detected in fields.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides face metadata for the faces that are disassociated from a specific UserID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisassociatedFace {
     /// <p>Unique identifier assigned to the face.</p>

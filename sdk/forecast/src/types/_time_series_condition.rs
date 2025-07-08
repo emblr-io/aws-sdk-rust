@@ -2,6 +2,8 @@
 
 /// <p>Creates a subset of items within an attribute that are modified. For example, you can use this operation to create a subset of items that cost $5 or less. To do this, you specify <code>"AttributeName": "price"</code>, <code>"AttributeValue": "5"</code>, and <code>"Condition": "LESS_THAN"</code>. Pair this operation with the <code>Action</code> operation within the <code>CreateWhatIfForecastRequest$TimeSeriesTransformations</code> operation to define how the attribute is modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeSeriesCondition {
     /// <p>The item_id, dimension name, IM name, or timestamp that you are modifying.</p>

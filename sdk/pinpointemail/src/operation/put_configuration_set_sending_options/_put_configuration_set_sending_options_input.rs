@@ -2,6 +2,8 @@
 
 /// <p>A request to enable or disable the ability of Amazon Pinpoint to send emails that use a specific configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutConfigurationSetSendingOptionsInput {
     /// <p>The name of the configuration set that you want to enable or disable email sending for.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents configuration information about a test run, such as the execution timeout (in minutes).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionConfiguration {
     /// <p>The number of minutes a test run executes before it times out.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The API of the connector application that Amazon AppFlow uses to transfer your data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataTransferApi {
     /// <p>The name of the connector application API.</p>

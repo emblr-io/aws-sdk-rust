@@ -2,6 +2,8 @@
 
 /// <p>You've reached the limit on the number of times a target can be registered with a load balancer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyRegistrationsForTargetIdException {
     #[allow(missing_docs)] // documentation missing in model

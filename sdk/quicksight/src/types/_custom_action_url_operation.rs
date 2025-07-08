@@ -2,6 +2,8 @@
 
 /// <p>The URL operation that opens a link to another webpage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomActionUrlOperation {
     /// <p>THe URL link of the <code>CustomActionURLOperation</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Part of the search expression. You can specify the name and value (domain, task, framework, framework version, task, and model).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelMetadataFilter {
     /// <p>The name of the of the model to filter by.</p>

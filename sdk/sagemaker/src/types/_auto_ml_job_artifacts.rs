@@ -2,6 +2,8 @@
 
 /// <p>The artifacts that are generated during an AutoML job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlJobArtifacts {
     /// <p>The URL of the notebook location.</p>

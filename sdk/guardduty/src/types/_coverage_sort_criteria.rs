@@ -2,6 +2,8 @@
 
 /// <p>Information about the sorting criteria used in the coverage statistics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageSortCriteria {
     /// <p>Represents the field name used to sort the coverage details.</p><note>

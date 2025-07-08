@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a traffic distribution group user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficDistributionGroupUserSummary {
     /// <p>The identifier for the user. This can be the ID or the ARN of the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that describes the details of a number filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NumberFilter {
     /// <p>The highest number to be included in the filter.</p>

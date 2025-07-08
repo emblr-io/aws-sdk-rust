@@ -2,6 +2,8 @@
 
 /// <p>Contains the geometry details for each path between a pair of positions. Used in plotting a route leg on a map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LegGeometry {
     /// <p>An ordered list of positions used to plot a route on a map.</p>

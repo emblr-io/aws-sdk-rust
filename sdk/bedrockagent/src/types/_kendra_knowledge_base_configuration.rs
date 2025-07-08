@@ -2,6 +2,8 @@
 
 /// <p>Settings for an Amazon Kendra knowledge base.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KendraKnowledgeBaseConfiguration {
     /// <p>The ARN of the Amazon Kendra index.</p>

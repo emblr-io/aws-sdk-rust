@@ -2,6 +2,8 @@
 
 /// <p>Contains citations for a part of an agent response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Attribution {
     /// <p>A list of citations and related information for a part of an agent response.</p>

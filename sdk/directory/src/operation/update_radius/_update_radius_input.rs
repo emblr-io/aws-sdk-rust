@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>UpdateRadius</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRadiusInput {
     /// <p>The identifier of the directory for which to update the RADIUS server information.</p>

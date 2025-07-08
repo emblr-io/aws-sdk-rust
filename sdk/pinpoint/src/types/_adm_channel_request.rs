@@ -2,6 +2,8 @@
 
 /// <p>Specifies the status and settings of the ADM (Amazon Device Messaging) channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdmChannelRequest {
     /// <p>The Client ID that you received from Amazon to send messages by using ADM.</p>

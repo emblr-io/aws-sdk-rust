@@ -2,6 +2,8 @@
 
 /// <p>Resource sharing configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSharingConfig {
     /// <p>The strategy of how idle compute is shared within the cluster. The following are the options of strategies.</p>

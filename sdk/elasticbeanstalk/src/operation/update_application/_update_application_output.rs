@@ -2,6 +2,8 @@
 
 /// <p>Result message containing a single description of an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateApplicationOutput {
     /// <p>The <code>ApplicationDescription</code> of the application.</p>

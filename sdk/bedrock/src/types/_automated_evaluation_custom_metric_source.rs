@@ -2,6 +2,8 @@
 
 /// <p>An array item definining a single custom metric for use in an Amazon Bedrock evaluation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum AutomatedEvaluationCustomMetricSource {
     /// <p>The definition of a custom metric for use in an Amazon Bedrock evaluation job.</p>

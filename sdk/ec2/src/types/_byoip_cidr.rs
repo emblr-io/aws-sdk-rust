@@ -2,6 +2,8 @@
 
 /// <p>Information about an address range that is provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ByoipCidr {
     /// <p>The address range, in CIDR notation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the generated column-level statistics for a table or partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnStatistics {
     /// <p>Name of column which statistics belong to.</p>

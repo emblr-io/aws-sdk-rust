@@ -2,6 +2,8 @@
 
 /// <p>Object representing any Kubernetes overrides to a job definition that's used in a <a href="https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html">SubmitJob</a> API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksContainerOverride {
     /// <p>A pointer to the container that you want to override. The name must match a unique container name that you wish to override.</p>

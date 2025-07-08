@@ -2,6 +2,8 @@
 
 /// <p>The ListTagsForDomain response includes the following elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsForDomainOutput {
     /// <p>A list of the tags that are associated with the specified domain.</p>

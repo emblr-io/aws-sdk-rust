@@ -2,6 +2,8 @@
 
 /// <p>The template for the verification message that your user pool delivers to users who set an email address or phone number attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerificationMessageTemplateType {
     /// <p>The template for SMS messages that Amazon Cognito sends to your users.</p>

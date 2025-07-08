@@ -2,6 +2,8 @@
 
 /// <p>Details about an unreachable node in the flow. A node is unreachable when there are no paths to it from any starting node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnreachableNodeFlowValidationDetails {
     /// <p>The name of the unreachable node.</p>

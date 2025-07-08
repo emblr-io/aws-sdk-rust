@@ -2,6 +2,8 @@
 
 /// <p>Requests API Gateway to flush a stage's cache.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlushStageCacheInput {
     /// <p>The string identifier of the associated RestApi.</p>

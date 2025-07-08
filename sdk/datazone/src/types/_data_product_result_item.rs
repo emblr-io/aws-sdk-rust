@@ -2,6 +2,8 @@
 
 /// <p>The data product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataProductResultItem {
     /// <p>The ID of the domain where the data product lives.</p>

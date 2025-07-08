@@ -2,6 +2,8 @@
 
 /// <p>The member object listed by the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberSummary {
     /// <p>The identifier used to reference members of the collaboration. Currently only supports Amazon Web Services account ID.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the state of the specified resource is not valid for this request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsInvalidState {
     #[allow(missing_docs)] // documentation missing in model

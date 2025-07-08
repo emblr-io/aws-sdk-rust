@@ -2,6 +2,8 @@
 
 /// <p>The response is too large to return. The request must include a filter to reduce the size of the response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestedEntityTooLargeException {
     #[allow(missing_docs)] // documentation missing in model

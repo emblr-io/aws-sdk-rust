@@ -2,6 +2,8 @@
 
 /// <p>Indicates the field or attribute of a resource or data structure on which a condition is being applied or evaluated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Field {
     /// <p>Name of the field.</p>

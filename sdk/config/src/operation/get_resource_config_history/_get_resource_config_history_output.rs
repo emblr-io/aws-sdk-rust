@@ -2,6 +2,8 @@
 
 /// <p>The output for the <code>GetResourceConfigHistory</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetResourceConfigHistoryOutput {
     /// <p>A list that contains the configuration history of one or more resources.</p>

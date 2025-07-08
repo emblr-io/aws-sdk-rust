@@ -2,6 +2,8 @@
 
 /// <p>A value for a segment attribute. This is structured as a map where the key is <code>valueString</code> and the value is a string.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentAttributeValue {
     /// <p>The value of a segment attribute.</p>

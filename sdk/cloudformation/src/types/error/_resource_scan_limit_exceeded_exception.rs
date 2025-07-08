@@ -10,6 +10,8 @@
 /// <p>The last resource scan failed after exceeding 100,000 resources. When this happens, you must wait 24 hours before starting a new resource scan.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceScanLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

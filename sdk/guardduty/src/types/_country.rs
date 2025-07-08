@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the country where the remote IP address is located.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Country {
     /// <p>The country code of the remote IP address.</p>

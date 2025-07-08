@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required when using Trend Micro.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TrendmicroConnectorProfileCredentials {
     /// <p>The Secret Access Key portion of the credentials.</p>

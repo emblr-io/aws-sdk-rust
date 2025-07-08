@@ -2,6 +2,8 @@
 
 /// <p>A set of patch filters, typically used for approval rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PatchFilterGroup {
     /// <p>The set of patch filters that make up the group.</p>

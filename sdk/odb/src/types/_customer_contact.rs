@@ -2,6 +2,8 @@
 
 /// <p>A contact to receive notification from Oracle about maintenance updates for a specific Exadata infrastructure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomerContact {
     /// <p>The email address of the contact.</p>

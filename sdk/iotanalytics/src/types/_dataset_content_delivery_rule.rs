@@ -2,6 +2,8 @@
 
 /// <p>When dataset contents are created, they are delivered to destination specified here.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetContentDeliveryRule {
     /// <p>The name of the dataset content delivery rules entry.</p>

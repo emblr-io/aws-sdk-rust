@@ -5,6 +5,8 @@
 /// <p>Use <code> <code>NextToken</code> </code> in response to retrieve more results. If the received response does not contain a NextToken, then there are no more results to retrieve.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListElasticsearchVersionsInput {
     /// <p>Set this value to limit the number of results returned. Value provided must be greater than 10 else it wont be honored.</p>

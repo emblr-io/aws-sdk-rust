@@ -2,6 +2,8 @@
 
 /// <p>Information about the size of files in a merge or pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSizes {
     /// <p>The size of a file in the source of a merge or pull request.</p>

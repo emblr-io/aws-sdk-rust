@@ -2,6 +2,8 @@
 
 /// <p>The Lustre metadata performance configuration of an Amazon FSx for Lustre file system using a <code>PERSISTENT_2</code> deployment type. The configuration enables the file system to support increasing metadata performance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSystemLustreMetadataConfiguration {
     /// <p>The number of Metadata IOPS provisioned for the file system.</p>

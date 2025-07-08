@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for ModifyReservedInstances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyReservedInstancesInput {
     /// <p>The IDs of the Reserved Instances to modify.</p>

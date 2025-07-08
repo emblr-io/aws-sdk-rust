@@ -2,6 +2,8 @@
 
 /// <p>Configures marketplace-specific instance deployment options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceMarketOptionsRequest {
     /// <p>Specifies the type of marketplace for instance deployment.</p>

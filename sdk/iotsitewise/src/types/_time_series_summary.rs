@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of a time series (data stream).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeSeriesSummary {
     /// <p>The ID of the asset in which the asset property was created.</p>

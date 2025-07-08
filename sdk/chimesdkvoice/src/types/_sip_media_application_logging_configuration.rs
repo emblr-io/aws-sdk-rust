@@ -2,6 +2,8 @@
 
 /// <p>The logging configuration of a SIP media application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SipMediaApplicationLoggingConfiguration {
     /// <p>Enables message logging for the specified SIP media application.</p>

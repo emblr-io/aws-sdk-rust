@@ -2,6 +2,8 @@
 
 /// <p>Defines the predicate of the trigger, which determines when it fires.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Predicate {
     /// <p>An optional field if only one condition is listed. If multiple conditions are listed, then this field is required.</p>

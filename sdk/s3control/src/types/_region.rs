@@ -2,6 +2,8 @@
 
 /// <p>A Region that supports a Multi-Region Access Point as well as the associated bucket for the Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Region {
     /// <p>The name of the associated bucket for the Region.</p>

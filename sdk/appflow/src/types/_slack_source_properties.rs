@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Slack is being used as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlackSourceProperties {
     /// <p>The object specified in the Slack flow source.</p>

@@ -2,6 +2,8 @@
 
 /// Provides messages from the service about jobs that you have already successfully submitted.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobMessages {
     /// List of messages that are informational only and don't indicate a problem with your job.

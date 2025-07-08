@@ -2,6 +2,8 @@
 
 /// <p>The object that contains the statistical summary of the recommended slot type associated with the bot recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotTypeStatistics {
     /// <p>The number of recommended slot types associated with the bot recommendation.</p>

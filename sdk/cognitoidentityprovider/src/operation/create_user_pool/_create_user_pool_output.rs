@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server for the request to create a user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateUserPoolOutput {
     /// <p>The details of the created user pool.</p>

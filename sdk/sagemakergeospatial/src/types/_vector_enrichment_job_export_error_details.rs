@@ -2,6 +2,8 @@
 
 /// <p>VectorEnrichmentJob export error details in response from GetVectorEnrichmentJob.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VectorEnrichmentJobExportErrorDetails {
     /// <p>The output error details for an Export operation on a Vector Enrichment job.</p>

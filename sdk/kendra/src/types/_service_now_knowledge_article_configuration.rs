@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for crawling knowledge articles in the ServiceNow site.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceNowKnowledgeArticleConfiguration {
     /// <p><code>TRUE</code> to index attachments to knowledge articles.</p>

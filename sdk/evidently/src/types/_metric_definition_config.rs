@@ -2,6 +2,8 @@
 
 /// <p>This structure defines a metric that you want to use to evaluate the variations during a launch or experiment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricDefinitionConfig {
     /// <p>A name for the metric.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure of search criteria to be used to return contacts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchCriteria {
     /// <p>The identifiers of agents who handled the contacts.</p>

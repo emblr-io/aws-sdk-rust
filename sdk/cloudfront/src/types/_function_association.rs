@@ -2,6 +2,8 @@
 
 /// <p>A CloudFront function that is associated with a cache behavior in a CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionAssociation {
     /// <p>The Amazon Resource Name (ARN) of the function.</p>

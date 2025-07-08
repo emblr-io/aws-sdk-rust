@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration parameters for a PUT Object ACL operation. S3 Batch Operations passes every object to the underlying <code>PutObjectAcl</code> API operation. For more information about the parameters for this operation, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUTacl.html">PutObjectAcl</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3SetObjectAclOperation {
     /// <p></p>

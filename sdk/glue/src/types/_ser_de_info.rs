@@ -2,6 +2,8 @@
 
 /// <p>Information about a serialization/deserialization program (SerDe) that serves as an extractor and loader.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SerDeInfo {
     /// <p>Name of the SerDe.</p>

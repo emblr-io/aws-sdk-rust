@@ -2,6 +2,8 @@
 
 /// <p>Describes the burstable performance instance whose credit option for CPU usage was successfully modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuccessfulInstanceCreditSpecificationItem {
     /// <p>The ID of the instance.</p>

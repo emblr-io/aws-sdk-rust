@@ -2,6 +2,8 @@
 
 /// <p>Describes the network details of a WorkSpaces Pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkAccessConfiguration {
     /// <p>The private IP address of the elastic network interface that is attached to instances in your VPC.</p>

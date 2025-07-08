@@ -32,7 +32,7 @@
 //! ```toml
 //! [dependencies]
 //! aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-//! aws-sdk-eksauth = "1.72.0"
+//! aws-sdk-eksauth = "0.0.0-local"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!

@@ -2,6 +2,8 @@
 
 /// <p>Input to the <code>DeleteIdentities</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteIdentitiesInput {
     /// <p>A list of 1-60 identities that you want to delete.</p>

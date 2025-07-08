@@ -2,6 +2,8 @@
 
 /// <p>Information about the output from a model packaging job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPackagingOutputDetails {
     /// <p>Information about the AWS IoT Greengrass component in a model packaging job.</p>

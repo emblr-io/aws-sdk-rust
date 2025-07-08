@@ -2,6 +2,8 @@
 
 /// <p>A summary of the resource scan. This is returned by the <code>ListResourceScan</code> API action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceScanSummary {
     /// <p>The Amazon Resource Name (ARN) of the resource scan.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The SNOMED-CT concepts that the entity could refer to, along with a score indicating the likelihood of the match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnomedctConcept {
     /// <p>The description of the SNOMED-CT concept.</p>

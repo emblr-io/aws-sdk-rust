@@ -4,6 +4,8 @@
 /// <p>Amazon Personalize doesn't support configuring the <code>hpoObjective</code> at this time.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HpoObjective {
     /// <p>The type of the metric. Valid values are <code>Maximize</code> and <code>Minimize</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Marker styles options for a line series in <code>LineChartVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LineChartMarkerStyleSettings {
     /// <p>Configuration option that determines whether to show the markers in the series.</p>

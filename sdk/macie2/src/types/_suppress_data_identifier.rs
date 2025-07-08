@@ -2,6 +2,8 @@
 
 /// <p>Specifies a custom data identifier or managed data identifier that detected a type of sensitive data to exclude from an S3 bucket's sensitivity score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuppressDataIdentifier {
     /// <p>The unique identifier for the custom data identifier or managed data identifier that detected the type of sensitive data to exclude from the score.</p>

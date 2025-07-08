@@ -2,6 +2,8 @@
 
 /// Configuration settings for running telemetry.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TelemetryConfiguration {
     /// Synchronization status of the device reported configuration with the desired configuration.

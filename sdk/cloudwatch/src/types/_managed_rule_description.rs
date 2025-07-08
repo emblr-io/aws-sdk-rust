@@ -2,6 +2,8 @@
 
 /// <p>Contains information about managed Contributor Insights rules, as returned by <code>ListManagedInsightRules</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedRuleDescription {
     /// <p>The template name for the managed rule. Used to enable managed rules using <code>PutManagedInsightRules</code>.</p>

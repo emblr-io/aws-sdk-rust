@@ -2,6 +2,8 @@
 
 /// <p>Configuration of a bootstrap action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BootstrapActionConfig {
     /// <p>The name of the bootstrap action.</p>

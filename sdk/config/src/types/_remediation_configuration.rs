@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the details about the remediation configuration that includes the remediation action, parameters, and data to execute the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemediationConfiguration {
     /// <p>The name of the Config rule.</p>

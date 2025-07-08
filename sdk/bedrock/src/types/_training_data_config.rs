@@ -2,6 +2,8 @@
 
 /// <p>S3 Location of the training data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingDataConfig {
     /// <p>The S3 URI where the training data is stored.</p>

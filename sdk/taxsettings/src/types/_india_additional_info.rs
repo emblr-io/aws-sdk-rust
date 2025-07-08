@@ -2,6 +2,8 @@
 
 /// <p>Additional tax information in India.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndiaAdditionalInfo {
     /// <p>India pan information associated with the account.</p>

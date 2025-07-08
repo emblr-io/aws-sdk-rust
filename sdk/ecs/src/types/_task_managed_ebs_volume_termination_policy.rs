@@ -2,6 +2,8 @@
 
 /// <p>The termination policy for the Amazon EBS volume when the task exits. For more information, see <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-volumes.html#ebs-volume-types">Amazon ECS volume termination policy</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskManagedEbsVolumeTerminationPolicy {
     /// <p>Indicates whether the volume should be deleted on when the task stops. If a value of <code>true</code> is specified,  Amazon ECS deletes the Amazon EBS volume on your behalf when the task goes into the <code>STOPPED</code> state. If no value is specified, the  default value is <code>true</code> is used. When set to <code>false</code>, Amazon ECS leaves the volume in your  account.</p>

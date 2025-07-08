@@ -2,6 +2,8 @@
 
 /// <p>CreateTapeOutput</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateTapesOutput {
     /// <p>A list of unique Amazon Resource Names (ARNs) that represents the virtual tapes that were created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The entity tag (ETag) is a hash of the object representing its semantic content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ETag {
     /// <p>The algorithm used to calculate the read set’s ETag(s).</p>

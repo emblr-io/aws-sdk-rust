@@ -4,6 +4,8 @@
 /// <p>The data protection that you configure for the web ACL alters the data that's available for any other data collection activity, including your WAF logging destinations, web ACL request sampling, and Amazon Security Lake data collection and management. Your other option for data protection is in the logging configuration, which only affects logging.</p>
 /// <p>This is part of the data protection configuration for a web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProtectionConfig {
     /// <p>An array of data protection configurations for specific web request field types. This is defined for each web ACL. WAF applies the specified protection to all web requests that the web ACL inspects.</p>

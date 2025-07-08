@@ -2,6 +2,8 @@
 
 /// <p>A structure used to define a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableInput {
     /// <p>The table name. For Hive compatibility, this is folded to lowercase when it is stored.</p>

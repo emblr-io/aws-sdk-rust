@@ -2,6 +2,8 @@
 
 /// <p>The source reference for an existing attachment in an existing conversation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationSource {
     /// <p>The unique identifier of the Amazon Q Business conversation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A widget on a CloudTrail Lake dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Widget {
     /// <p>The query alias used to identify the query for the widget.</p>

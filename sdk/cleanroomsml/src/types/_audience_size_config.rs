@@ -3,6 +3,8 @@
 /// <p>Returns the relevance scores at these audience sizes when used in the <code>GetAudienceGenerationJob</code> for a specified audience generation job and configured audience model.</p>
 /// <p>Specifies the list of allowed <code>audienceSize</code> values when used in the <code>StartAudienceExportJob</code> for an audience generation job. You can use the <code>ABSOLUTE</code> <code>AudienceSize</code> to configure out audience sizes using the count of identifiers in the output. You can use the <code>Percentage</code> <code>AudienceSize</code> to configure sizes in the range 1-100 percent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudienceSizeConfig {
     /// <p>Whether the audience output sizes are defined as an absolute number or a percentage.</p>

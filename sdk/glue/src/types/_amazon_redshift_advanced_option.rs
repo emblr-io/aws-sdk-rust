@@ -2,6 +2,8 @@
 
 /// <p>Specifies an optional value when connecting to the Redshift cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmazonRedshiftAdvancedOption {
     /// <p>The key for the additional connection option.</p>

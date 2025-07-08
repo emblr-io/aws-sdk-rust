@@ -2,6 +2,8 @@
 
 /// <p>A distribution tells CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Distribution {
     /// <p>The distribution's identifier. For example: <code>E1U5RQF7T870K0</code>.</p>

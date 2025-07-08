@@ -3,6 +3,8 @@
 /// <p>Describes an action to write to a DynamoDB table.</p>
 /// <p>This DynamoDB action writes each attribute in the message payload into it's own column in the DynamoDB table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynamoDBv2Action {
     /// <p>The ARN of the IAM role that grants access to the DynamoDB table.</p>

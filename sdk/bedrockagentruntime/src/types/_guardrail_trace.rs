@@ -2,6 +2,8 @@
 
 /// <p>The trace details used in the Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailTrace {
     /// <p>The trace action details used with the Guardrail.</p>

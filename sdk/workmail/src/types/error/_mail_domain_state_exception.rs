@@ -2,6 +2,8 @@
 
 /// <p>After a domain has been added to the organization, it must be verified. The domain is not yet verified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MailDomainStateException {
     #[allow(missing_docs)] // documentation missing in model

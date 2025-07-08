@@ -4,6 +4,8 @@
 /// <p>For example, you could specify <code>Browser</code> as the <code>Name</code> and specify <code>Chrome,Firefox</code> as the <code>Values</code> to return events generated only from those browsers.</p>
 /// <p>Specifying <code>Invert</code> as the <code>Name</code> works as a "not equal to" filter. For example, specify <code>Invert</code> as the <code>Name</code> and specify <code>Chrome</code> as the value to return all events except events from user sessions with the Chrome browser.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryFilter {
     /// <p>The name of a key to search for. The filter returns only the events that match the <code>Name</code> and <code>Values</code> that you specify.</p>

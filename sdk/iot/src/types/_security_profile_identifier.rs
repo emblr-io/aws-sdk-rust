@@ -2,6 +2,8 @@
 
 /// <p>Identifying information for a Device Defender security profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityProfileIdentifier {
     /// <p>The name you've given to the security profile.</p>

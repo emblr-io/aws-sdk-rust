@@ -2,6 +2,8 @@
 
 /// <p>Describes the resources, including machine learning (ML) compute instances and ML storage volumes, to use for model training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConfig {
     /// <p>The ML compute instance type.</p>

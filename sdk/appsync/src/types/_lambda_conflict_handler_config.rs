@@ -2,6 +2,8 @@
 
 /// <p>The <code>LambdaConflictHandlerConfig</code> object when configuring <code>LAMBDA</code> as the Conflict Handler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaConflictHandlerConfig {
     /// <p>The Amazon Resource Name (ARN) for the Lambda function to use as the Conflict Handler.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The format of the input document isn't supported. Documents for operations can be in PNG, JPEG, PDF, or TIFF format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedDocumentException {
     #[allow(missing_docs)] // documentation missing in model

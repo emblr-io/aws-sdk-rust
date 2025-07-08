@@ -2,6 +2,8 @@
 
 /// <p>Provides detailed error metrics to evaluate the performance of a predictor. This object is part of the <code>Metrics</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorMetric {
     /// <p>The Forecast type used to compute WAPE, MAPE, MASE, and RMSE.</p>

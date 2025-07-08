@@ -2,6 +2,8 @@
 
 /// <p>The definition of the Network Firewall firewall policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFirewallPolicyDescription {
     /// <p>The stateless rule groups that are used in the Network Firewall firewall policy.</p>

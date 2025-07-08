@@ -2,6 +2,8 @@
 
 /// <p>The results of evaluating an algorithm. Returned as part of the <code>GetAccuracyMetrics</code> response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationResult {
     /// <p>The Amazon Resource Name (ARN) of the algorithm that was evaluated.</p>

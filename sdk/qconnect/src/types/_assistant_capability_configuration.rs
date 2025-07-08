@@ -2,6 +2,8 @@
 
 /// <p>The capability configuration for an Amazon Q in Connect assistant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssistantCapabilityConfiguration {
     /// <p>The type of Amazon Q in Connect assistant capability.</p>

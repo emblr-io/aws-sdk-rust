@@ -2,6 +2,8 @@
 
 /// <p>Describes a refresh token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RefreshTokenRequestBody {
     /// <p>The token to use to refresh a previously issued access token that might have expired.</p>

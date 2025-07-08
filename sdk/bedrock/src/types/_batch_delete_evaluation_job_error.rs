@@ -2,6 +2,8 @@
 
 /// <p>A JSON array that provides the status of the evaluation jobs being deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BatchDeleteEvaluationJobError {
     /// <p>The ARN of the evaluation job being deleted.</p>

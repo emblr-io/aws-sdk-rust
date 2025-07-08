@@ -2,6 +2,8 @@
 
 /// <p>A member of an Amazon QuickSight group. Currently, group members must be users. Groups can't be members of another group. .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupMember {
     /// <p>The Amazon Resource Name (ARN) for the group member (user).</p>

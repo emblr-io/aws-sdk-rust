@@ -2,6 +2,8 @@
 
 /// <p>Represents a log subscription, which tracks real-time data from a chosen log group to a specified destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogSubscription {
     /// <p>Identifier (ID) of the directory that you want to associate with the log subscription.</p>

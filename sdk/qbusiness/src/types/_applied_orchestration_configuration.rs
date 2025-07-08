@@ -3,6 +3,8 @@
 /// <p>The chat orchestration specific admin controls configured for an Amazon Q Business application. Determines whether Amazon Q Business automatically routes chat requests across configured plugins and data sources in your Amazon Q Business application.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-orchestration">Chat orchestration settings</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppliedOrchestrationConfiguration {
     /// <p>Information about whether chat orchestration is enabled or disabled for an Amazon Q Business application.</p>

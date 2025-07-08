@@ -2,6 +2,8 @@
 
 /// <p>Transformations allowed on the dataset. Supported transformations are <code>Filling</code> and <code>Aggregation</code>. <code>Filling</code> specifies how to add values to missing values in the dataset. <code>Aggregation</code> defines how to aggregate data that does not align with forecast frequency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeSeriesTransformations {
     /// <p>A key value pair defining the filling method for a column, where the key is the column name and the value is an object which defines the filling logic. You can specify multiple filling methods for a single column.</p>

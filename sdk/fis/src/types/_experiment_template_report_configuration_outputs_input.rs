@@ -2,6 +2,8 @@
 
 /// <p>Specifies the outputs for the experiment templates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateReportConfigurationOutputsInput {
     /// <p>The S3 destination for the experiment report.</p>

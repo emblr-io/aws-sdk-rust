@@ -2,6 +2,8 @@
 
 /// <p>Describes a short summary and metadata for a <code>NotificationEvent</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationEventSummary {
     /// <p>The schema version of the Notification Event.</p>

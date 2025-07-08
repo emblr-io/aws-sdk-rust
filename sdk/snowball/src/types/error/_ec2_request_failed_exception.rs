@@ -2,6 +2,8 @@
 
 /// <p>Your user lacks the necessary Amazon EC2 permissions to perform the attempted action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2RequestFailedException {
     #[allow(missing_docs)] // documentation missing in model

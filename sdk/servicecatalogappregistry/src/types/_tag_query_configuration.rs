@@ -2,6 +2,8 @@
 
 /// <p>The definition of <code>tagQuery</code>. Specifies which resources are associated with an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagQueryConfiguration {
     /// <p>Condition in the IAM policy that associates resources to an application.</p>

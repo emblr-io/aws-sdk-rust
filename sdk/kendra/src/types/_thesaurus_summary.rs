@@ -2,6 +2,8 @@
 
 /// <p>An array of summary information for a thesaurus or multiple thesauri.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThesaurusSummary {
     /// <p>The identifier of the thesaurus.</p>

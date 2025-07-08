@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the external key store proxy is not configured correctly. To identify the cause, see the error message that accompanies the exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct XksProxyInvalidConfigurationException {
     #[allow(missing_docs)] // documentation missing in model

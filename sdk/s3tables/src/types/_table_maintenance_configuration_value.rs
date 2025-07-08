@@ -2,6 +2,8 @@
 
 /// <p>Contains the values that define a maintenance configuration for a table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableMaintenanceConfigurationValue {
     /// <p>The status of the maintenance configuration.</p>

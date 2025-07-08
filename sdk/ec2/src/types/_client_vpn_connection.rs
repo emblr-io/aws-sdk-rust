@@ -2,6 +2,8 @@
 
 /// <p>Describes a client connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientVpnConnection {
     /// <p>The ID of the Client VPN endpoint to which the client is connected.</p>

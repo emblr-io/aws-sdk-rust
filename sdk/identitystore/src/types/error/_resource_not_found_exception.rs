@@ -2,6 +2,8 @@
 
 /// <p>Indicates that a requested resource is not found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotFoundException {
     /// <p>An enum object indicating the type of resource in the identity store service. Valid values include USER, GROUP, and IDENTITY_STORE.</p>

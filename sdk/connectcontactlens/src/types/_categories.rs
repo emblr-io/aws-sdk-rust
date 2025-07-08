@@ -2,6 +2,8 @@
 
 /// <p>Provides the category rules that are used to automatically categorize contacts based on uttered keywords and phrases.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Categories {
     /// <p>The category rules that have been matched in the analyzed segment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Run summary for the scheduled query</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledQueryRunSummary {
     /// <p>InvocationTime for this run. This is the time at which the query is scheduled to run. Parameter <code>@scheduled_runtime</code> can be used in the query to get the value.</p>

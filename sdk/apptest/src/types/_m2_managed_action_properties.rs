@@ -2,6 +2,8 @@
 
 /// <p>Specifies the AWS Mainframe Modernization managed action properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct M2ManagedActionProperties {
     /// <p>Force stops the AWS Mainframe Modernization managed action properties.</p>

@@ -2,6 +2,8 @@
 
 /// <p>OS version that the directory needs to be updated to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OsUpdateSettings {
     /// <p>OS version that the directory needs to be updated to.</p>

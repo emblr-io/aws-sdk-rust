@@ -4,6 +4,8 @@
 /// <p>You can choose a start index of 0 or 1, and you can specify either WebVTT or SubRip (or both) as your output format.</p>
 /// <p>Note that your subtitle files are placed in the same location as your transcription output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Subtitles {
     /// <p>Specify the output format for your subtitle file; if you select both WebVTT (<code>vtt</code>) and SubRip (<code>srt</code>) formats, two output files are generated.</p>

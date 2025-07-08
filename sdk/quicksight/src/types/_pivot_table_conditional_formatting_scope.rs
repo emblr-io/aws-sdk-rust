@@ -2,6 +2,8 @@
 
 /// <p>The scope of the cell for conditional formatting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableConditionalFormattingScope {
     /// <p>The role (field, field total, grand total) of the cell for conditional formatting.</p>

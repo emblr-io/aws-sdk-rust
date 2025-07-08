@@ -2,6 +2,8 @@
 
 /// <p>Represents an association between an Amazon Lex bot and an external messaging platform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BotChannelAssociation {
     /// <p>The name of the association between the bot and the channel.</p>

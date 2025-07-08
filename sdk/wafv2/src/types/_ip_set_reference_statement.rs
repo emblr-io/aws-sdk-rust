@@ -3,6 +3,8 @@
 /// <p>A rule statement used to detect web requests coming from particular IP addresses or address ranges. To use this, create an <code>IPSet</code> that specifies the addresses you want to detect, then use the ARN of that set in this statement. To create an IP set, see <code>CreateIPSet</code>.</p>
 /// <p>Each IP set rule statement references an IP set. You create and maintain the set independent of your rules. This allows you to use the single set in multiple rules. When you update the referenced set, WAF automatically updates all rules that reference it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpSetReferenceStatement {
     /// <p>The Amazon Resource Name (ARN) of the <code>IPSet</code> that this statement references.</p>

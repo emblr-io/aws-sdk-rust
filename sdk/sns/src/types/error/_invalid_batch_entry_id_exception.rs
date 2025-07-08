@@ -2,6 +2,8 @@
 
 /// <p>The <code>Id</code> of a batch entry in a batch request doesn't abide by the specification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidBatchEntryIdException {
     #[allow(missing_docs)] // documentation missing in model

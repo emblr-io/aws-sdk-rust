@@ -2,6 +2,8 @@
 
 /// <p>The RetrieveDomainAuthCode response includes the following element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RetrieveDomainAuthCodeOutput {
     /// <p>The authorization code for the domain.</p>

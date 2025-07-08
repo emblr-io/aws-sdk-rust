@@ -2,6 +2,8 @@
 
 /// <p>Shows the vulnerability scan status for a specific image, and the reason for that status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageScanState {
     /// <p>The current state of vulnerability scans for the image.</p>

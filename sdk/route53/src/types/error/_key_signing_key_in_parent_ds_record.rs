@@ -2,6 +2,8 @@
 
 /// <p>The key-signing key (KSK) is specified in a parent DS record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeySigningKeyInParentDsRecord {
     #[allow(missing_docs)] // documentation missing in model

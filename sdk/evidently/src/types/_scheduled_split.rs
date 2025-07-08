@@ -2,6 +2,8 @@
 
 /// <p>This structure defines the traffic allocation percentages among the feature variations during one step of a launch, and the start time of that step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledSplit {
     /// <p>The date and time that this step of the launch starts.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration about the model associated with a flywheel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskConfig {
     /// <p>Language code for the language that the model supports.</p>

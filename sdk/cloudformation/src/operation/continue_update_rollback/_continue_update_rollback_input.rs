@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>ContinueUpdateRollback</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinueUpdateRollbackInput {
     /// <p>The name or the unique ID of the stack that you want to continue rolling back.</p><note>

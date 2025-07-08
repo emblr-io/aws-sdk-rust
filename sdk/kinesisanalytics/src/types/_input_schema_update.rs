@@ -2,6 +2,8 @@
 
 /// <p>Describes updates for the application's input schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputSchemaUpdate {
     /// <p>Specifies the format of the records on the streaming source.</p>

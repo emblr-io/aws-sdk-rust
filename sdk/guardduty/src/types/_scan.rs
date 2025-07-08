@@ -2,6 +2,8 @@
 
 /// <p>Contains information about malware scans associated with GuardDuty Malware Protection for EC2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scan {
     /// <p>The unique ID of the detector that is associated with the request.</p>

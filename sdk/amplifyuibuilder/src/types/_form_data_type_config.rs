@@ -2,6 +2,8 @@
 
 /// <p>Describes the data type configuration for the data source associated with a form.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormDataTypeConfig {
     /// <p>The data source type, either an Amplify DataStore model or a custom data type.</p>

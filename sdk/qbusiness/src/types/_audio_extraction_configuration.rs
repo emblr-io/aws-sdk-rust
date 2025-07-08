@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for audio content extraction and processing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioExtractionConfiguration {
     /// <p>The status of audio extraction (ENABLED or DISABLED) for processing audio content from files.</p>

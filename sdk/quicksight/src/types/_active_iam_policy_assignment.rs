@@ -2,6 +2,8 @@
 
 /// <p>The active Identity and Access Management (IAM) policy assignment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveIamPolicyAssignment {
     /// <p>A name for the IAM policy assignment.</p>

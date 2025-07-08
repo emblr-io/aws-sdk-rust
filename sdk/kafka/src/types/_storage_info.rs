@@ -2,6 +2,8 @@
 
 /// <p>Contains information about storage volumes attached to MSK broker nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageInfo {
     /// <p>EBS volume information.</p>

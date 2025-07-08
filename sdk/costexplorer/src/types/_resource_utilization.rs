@@ -2,6 +2,8 @@
 
 /// <p>Resource utilization of current resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceUtilization {
     /// <p>The utilization of current Amazon EC2 instance.</p>

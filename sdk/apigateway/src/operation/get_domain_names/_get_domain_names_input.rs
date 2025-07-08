@@ -2,6 +2,8 @@
 
 /// <p>Request to describe a collection of DomainName resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDomainNamesInput {
     /// <p>The current pagination position in the paged result set.</p>

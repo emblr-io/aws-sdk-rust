@@ -2,6 +2,8 @@
 
 /// <p>A local resource is the host where the agent is installed. Local resources can be a a subnet, a VPC, or an Availability Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitorLocalResource {
     /// <p>The type of the local resource. Valid values are <code>AWS::EC2::VPC</code> <code>AWS::AvailabilityZone</code> or <code>AWS::EC2::Subnet</code>.</p>

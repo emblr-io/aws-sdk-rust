@@ -2,6 +2,8 @@
 
 /// <p>Information about the post-contact summary for a real-time contact segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealTimeContactAnalysisSegmentPostContactSummary {
     /// <p>The content of the summary.</p>

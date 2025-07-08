@@ -2,6 +2,8 @@
 
 /// <p>The supported properties for a PS type data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PsAttributes {
     /// <p>The format of the data set records.</p>

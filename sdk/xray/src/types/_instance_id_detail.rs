@@ -2,6 +2,8 @@
 
 /// <p>A list of EC2 instance IDs corresponding to the segments in a trace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceIdDetail {
     /// <p>The ID of a corresponding EC2 instance.</p>

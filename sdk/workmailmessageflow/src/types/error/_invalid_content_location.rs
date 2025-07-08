@@ -10,6 +10,8 @@
 /// <p>You have an incomplete or missing S3 bucket policy. For more information about policies, see <a href="https://docs.aws.amazon.com/workmail/latest/adminguide/update-with-lambda.html"> Updating message content with AWS Lambda </a> in the <i>WorkMail Administrator Guide</i>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidContentLocation {
     #[allow(missing_docs)] // documentation missing in model

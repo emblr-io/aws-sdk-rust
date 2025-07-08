@@ -2,6 +2,8 @@
 
 /// <p>The option that determines the hierarchy of any <code>DateTime</code> fields.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DateTimeHierarchy {
     /// <p>The hierarchy ID of the <code>DateTime</code> hierarchy.</p>

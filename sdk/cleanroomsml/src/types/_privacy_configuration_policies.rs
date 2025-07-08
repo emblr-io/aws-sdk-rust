@@ -2,6 +2,8 @@
 
 /// <p>Information about the privacy configuration policies for a configured model algorithm association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivacyConfigurationPolicies {
     /// <p>Specifies who will receive the trained models.</p>

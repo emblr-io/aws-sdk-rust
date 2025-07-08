@@ -2,6 +2,8 @@
 
 /// <p>Hardware specifications for the service that you want recommendations for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSpecification {
     /// <p>The Amazon EC2 hardware specifications that you want Amazon Web Services to provide recommendations for.</p>

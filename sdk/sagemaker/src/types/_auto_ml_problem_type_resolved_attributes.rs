@@ -2,6 +2,8 @@
 
 /// <p>Stores resolved attributes specific to the problem type of an AutoML job V2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AutoMlProblemTypeResolvedAttributes {
     /// <p>The resolved attributes for the tabular problem type.</p>

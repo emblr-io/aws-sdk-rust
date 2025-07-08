@@ -2,6 +2,8 @@
 
 /// <p>Parameters to derive the payment card specific confidentiality and integrity keys.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DerivationMethodAttributes {
     /// <p>Parameters to derive the confidentiality and integrity keys for a payment card using Amex derivation method.</p>

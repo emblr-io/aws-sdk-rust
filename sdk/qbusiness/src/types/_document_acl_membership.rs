@@ -2,6 +2,8 @@
 
 /// <p>Represents membership rules in the document's ACL, defining how users or groups are associated with access permissions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAclMembership {
     /// <p>The logical relation between members in the membership rule, determining how multiple conditions are combined.</p>

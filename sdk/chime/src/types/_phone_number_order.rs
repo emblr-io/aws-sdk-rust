@@ -2,6 +2,8 @@
 
 /// <p>The details of a phone number order created for Amazon Chime.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhoneNumberOrder {
     /// <p>The phone number order ID.</p>

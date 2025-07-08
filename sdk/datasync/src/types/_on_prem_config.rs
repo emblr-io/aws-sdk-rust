@@ -2,6 +2,8 @@
 
 /// <p>The DataSync agents that can connect to your Network File System (NFS) file server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnPremConfig {
     /// <p>The Amazon Resource Names (ARNs) of the DataSync agents that can connect to your NFS file server.</p>

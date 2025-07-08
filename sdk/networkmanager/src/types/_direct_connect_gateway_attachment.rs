@@ -2,6 +2,8 @@
 
 /// <p>Describes a Direct Connect gateway attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectConnectGatewayAttachment {
     /// <p>Describes a core network attachment.</p>

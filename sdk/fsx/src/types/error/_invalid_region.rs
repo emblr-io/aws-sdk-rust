@@ -2,6 +2,8 @@
 
 /// <p>The Region provided for <code>SourceRegion</code> is not valid or is in a different Amazon Web Services partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRegion {
     /// <p>A detailed error message.</p>

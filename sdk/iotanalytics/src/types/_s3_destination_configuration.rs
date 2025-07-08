@@ -2,6 +2,8 @@
 
 /// <p>Configuration information for delivery of dataset contents to Amazon Simple Storage Service (Amazon S3).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DestinationConfiguration {
     /// <p>The name of the S3 bucket to which dataset contents are delivered.</p>

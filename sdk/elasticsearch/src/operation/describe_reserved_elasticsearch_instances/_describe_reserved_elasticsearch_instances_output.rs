@@ -2,6 +2,8 @@
 
 /// <p>Container for results from <code>DescribeReservedElasticsearchInstances</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeReservedElasticsearchInstancesOutput {
     /// <p>Provides an identifier to allow retrieval of paginated results.</p>

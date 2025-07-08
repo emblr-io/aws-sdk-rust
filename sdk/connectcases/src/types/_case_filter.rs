@@ -2,6 +2,8 @@
 
 /// <p>A filter for cases. Only one value can be provided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CaseFilter {
     /// <p>Provides "and all" filtering.</p>

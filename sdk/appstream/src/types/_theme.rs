@@ -2,6 +2,8 @@
 
 /// <p>The custom branding theme, which might include a custom logo, website links, and other branding to display to users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Theme {
     /// <p>The stack that has the custom branding theme.</p>

@@ -3,6 +3,8 @@
 /// <p>Contains the row and column of a location of a <code>Statement</code> element in a policy document.</p>
 /// <p>This data type is used as a member of the <code> <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_Statement.html">Statement</a> </code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Position {
     /// <p>The line containing the specified position in the document.</p>

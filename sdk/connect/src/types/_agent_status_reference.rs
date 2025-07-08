@@ -2,6 +2,8 @@
 
 /// <p>Information about the agent's status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentStatusReference {
     /// <p>The start timestamp of the agent's status.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The image format of a AWS Signer platform or profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SigningImageFormat {
     /// <p>The supported formats of a signing image.</p>

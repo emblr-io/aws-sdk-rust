@@ -2,6 +2,8 @@
 
 /// A Dynamic Adaptive Streaming over HTTP (DASH) packaging configuration.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DashPackage {
     /// A list of DASH manifest configurations.

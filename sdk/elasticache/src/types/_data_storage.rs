@@ -2,6 +2,8 @@
 
 /// <p>The data storage limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataStorage {
     /// <p>The upper limit for data storage the cache is set to use.</p>

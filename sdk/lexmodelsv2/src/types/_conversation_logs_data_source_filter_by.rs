@@ -2,6 +2,8 @@
 
 /// <p>The selected data source to filter the conversation log.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLogsDataSourceFilterBy {
     /// <p>The start time for the conversation log.</p>

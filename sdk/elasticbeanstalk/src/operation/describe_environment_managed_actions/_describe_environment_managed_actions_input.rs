@@ -2,6 +2,8 @@
 
 /// <p>Request to list an environment's upcoming and in-progress managed actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentManagedActionsInput {
     /// <p>The name of the target environment.</p>

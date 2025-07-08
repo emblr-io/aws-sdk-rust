@@ -2,6 +2,8 @@
 
 /// <p>The details of the repository creation template associated with the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryCreationTemplate {
     /// <p>The repository namespace prefix associated with the repository creation template.</p>

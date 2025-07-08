@@ -2,6 +2,8 @@
 
 /// <p>Describes the error that is returned when a usage report can't be generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastReportGenerationExecutionError {
     /// <p>The error code for the error that is returned when a usage report can't be generated.</p>

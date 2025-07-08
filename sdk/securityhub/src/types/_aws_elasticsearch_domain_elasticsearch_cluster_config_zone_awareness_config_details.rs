@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for zone awareness.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetails {
     /// <p>he number of Availability Zones that the domain uses. Valid values are 2 and 3. The default is 2.</p>

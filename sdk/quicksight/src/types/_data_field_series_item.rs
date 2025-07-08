@@ -2,6 +2,8 @@
 
 /// <p>The data field series item configuration of a line chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataFieldSeriesItem {
     /// <p>The field ID of the field that you are setting the axis binding to.</p>

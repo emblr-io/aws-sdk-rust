@@ -2,6 +2,8 @@
 
 /// <p>Configuration details of either a CloudWatch Logs destination or Kinesis Data Firehose destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationDetails {
     /// <p>The configuration details of the CloudWatch Logs destination.</p>

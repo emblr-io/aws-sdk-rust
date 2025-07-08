@@ -2,6 +2,8 @@
 
 /// <p>Filter the results of a <code>ListVpcEndpoints</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointFilters {
     /// <p>The current status of the endpoint.</p>

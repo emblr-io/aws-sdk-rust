@@ -2,6 +2,8 @@
 
 /// <p>A filter used to return reports with the status specified by the input <code>status</code> parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportFilter {
     /// <p>The status used to filter reports. You can filter using one status only.</p>

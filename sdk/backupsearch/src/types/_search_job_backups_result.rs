@@ -2,6 +2,8 @@
 
 /// <p>This contains the information about recovery points returned in results of a search job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchJobBackupsResult {
     /// <p>This is the status of the search job backup result.</p>

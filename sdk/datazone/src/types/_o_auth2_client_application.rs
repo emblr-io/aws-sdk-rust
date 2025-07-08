@@ -2,6 +2,8 @@
 
 /// <p>The OAuth2Client application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OAuth2ClientApplication {
     /// <p>The user managed client application client ID in the OAuth2Client application.</p>

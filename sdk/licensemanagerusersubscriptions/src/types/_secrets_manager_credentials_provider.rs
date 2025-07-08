@@ -2,6 +2,8 @@
 
 /// <p>Contains a credentials secret that's stored in Secrets Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecretsManagerCredentialsProvider {
     /// <p>The ID of the Secrets Manager secret that contains credentials.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the location for the file that's being processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputFileLocation {
     /// <p>Specifies the details for the Amazon S3 file that's being copied or decrypted.</p>

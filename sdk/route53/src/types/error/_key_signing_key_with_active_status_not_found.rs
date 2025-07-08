@@ -2,6 +2,8 @@
 
 /// <p>A key-signing key (KSK) with <code>ACTIVE</code> status wasn't found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeySigningKeyWithActiveStatusNotFound {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Defines the value for one rating in a custom metric rating scale.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RatingScaleItemValue {
     /// <p>A floating point number representing the value for a rating in a custom metric rating scale.</p>

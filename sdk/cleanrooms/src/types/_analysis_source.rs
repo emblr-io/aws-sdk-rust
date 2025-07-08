@@ -2,6 +2,8 @@
 
 /// <p>The structure that defines the body of the analysis template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum AnalysisSource {
     /// <p>The artifacts of the analysis source.</p>

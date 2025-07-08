@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a singular filter constant, used in filters to specify a single value to match against.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TopicSingularFilterConstant {
     /// <p>The type of the singular filter constant. Valid values for this structure are <code>SINGULAR</code>.</p>

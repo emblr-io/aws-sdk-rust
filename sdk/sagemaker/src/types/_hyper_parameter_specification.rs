@@ -2,6 +2,8 @@
 
 /// <p>Defines a hyperparameter to be used by an algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HyperParameterSpecification {
     /// <p>The name of this hyperparameter. The name must be unique.</p>

@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for DescribeInputDeviceThumbnailRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeInputDeviceThumbnailInput {
     /// The unique ID of this input device. For example, hd-123456789abcdef.

@@ -2,6 +2,8 @@
 
 /// <p>The metadata table configuration for a general purpose bucket. The destination table bucket must be in the same Region and Amazon Web Services account as the general purpose bucket. The specified metadata table name must be unique within the <code>aws_s3_metadata</code> namespace in the destination table bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataTableConfigurationResult {
     /// <p>The destination information for the metadata table configuration. The destination table bucket must be in the same Region and Amazon Web Services account as the general purpose bucket. The specified metadata table name must be unique within the <code>aws_s3_metadata</code> namespace in the destination table bucket.</p>

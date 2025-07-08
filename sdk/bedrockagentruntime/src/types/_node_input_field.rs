@@ -2,6 +2,8 @@
 
 /// <p>Represents an input field provided to a node during a flow execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NodeInputField {
     /// <p>The name of the input field as defined in the node's input schema.</p>

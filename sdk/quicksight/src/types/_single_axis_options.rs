@@ -2,6 +2,8 @@
 
 /// <p>The settings of a chart's single axis configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleAxisOptions {
     /// <p>The Y axis options of a single axis configuration.</p>

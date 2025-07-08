@@ -2,6 +2,8 @@
 
 /// <p>Specifies one or more sets of channel messages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelMessages {
     /// <p>Specifies one or more keys that identify the Amazon Simple Storage Service (Amazon S3) objects that save your channel messages.</p>

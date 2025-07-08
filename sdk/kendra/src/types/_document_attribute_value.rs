@@ -2,6 +2,8 @@
 
 /// <p>The value of a document attribute. You can only provide one value for a document attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAttributeValue {
     /// <p>A string, such as "department".</p>

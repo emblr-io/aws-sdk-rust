@@ -2,6 +2,8 @@
 
 /// <p>The search filter to use when listing history records.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRecordHistorySearchFilter {
     /// <p>The filter key.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes code configuration for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationCodeConfigurationDescription {
     /// <p>Specifies whether the code content is in text or zip format.</p>

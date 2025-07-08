@@ -3,6 +3,8 @@
 /// <p>Represents an action to remove a Reserved Instance from a bill scenario.</p>
 /// <p>This is the ID of an existing Reserved Instance in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NegateReservedInstanceAction {
     /// <p>The ID of the Reserved Instance to remove.</p>

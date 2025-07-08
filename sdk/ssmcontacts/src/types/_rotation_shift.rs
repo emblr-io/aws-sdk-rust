@@ -2,6 +2,8 @@
 
 /// <p>Information about a shift that belongs to an on-call rotation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RotationShift {
     /// <p>The Amazon Resource Names (ARNs) of the contacts who are part of the shift rotation.</p>

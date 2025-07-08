@@ -2,6 +2,8 @@
 
 /// <p>A file that is deleted as part of a commit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteFileEntry {
     /// <p>The full path of the file to be deleted, including the name of the file.</p>

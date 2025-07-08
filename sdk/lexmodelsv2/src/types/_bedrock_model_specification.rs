@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon Bedrock model used to interpret the prompt used in descriptive bot building.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BedrockModelSpecification {
     /// <p>The ARN of the foundation model used in descriptive bot building.</p>

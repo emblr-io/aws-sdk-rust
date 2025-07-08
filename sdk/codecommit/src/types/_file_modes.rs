@@ -2,6 +2,8 @@
 
 /// <p>Information about file modes in a merge or pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileModes {
     /// <p>The file mode of a file in the source of a merge or pull request.</p>

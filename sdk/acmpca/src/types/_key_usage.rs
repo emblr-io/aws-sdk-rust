@@ -2,6 +2,8 @@
 
 /// <p>Defines one or more purposes for which the key contained in the certificate can be used. Default value for each option is false.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyUsage {
     /// <p>Key can be used for digital signing.</p>

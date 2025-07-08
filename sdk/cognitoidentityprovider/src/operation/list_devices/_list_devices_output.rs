@@ -2,6 +2,8 @@
 
 /// <p>Represents the response to list devices.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDevicesOutput {
     /// <p>An array of devices and their details. Each entry that's returned includes device information, last-accessed and created dates, and the device key.</p>

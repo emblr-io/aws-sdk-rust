@@ -2,6 +2,8 @@
 
 /// <p>Describes the Apache Airflow log types that are published to CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoggingConfiguration {
     /// <p>The Airflow DAG processing logs published to CloudWatch Logs and the log level.</p>

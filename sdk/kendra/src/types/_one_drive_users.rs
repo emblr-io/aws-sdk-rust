@@ -2,6 +2,8 @@
 
 /// <p>User accounts whose documents should be indexed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OneDriveUsers {
     /// <p>A list of users whose documents should be indexed. Specify the user names in email format, for example, <code>username@tenantdomain</code>. If you need to index the documents of more than 10 users, use the <code>OneDriveUserS3Path</code> field to specify the location of a file containing a list of users.</p>

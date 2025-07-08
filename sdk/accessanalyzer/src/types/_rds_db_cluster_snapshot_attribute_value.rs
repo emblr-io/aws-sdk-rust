@@ -2,6 +2,8 @@
 
 /// <p>The values for a manual Amazon RDS DB cluster snapshot attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RdsDbClusterSnapshotAttributeValue {
     /// <p>The Amazon Web Services account IDs that have access to the manual Amazon RDS DB cluster snapshot. If the value <code>all</code> is specified, then the Amazon RDS DB cluster snapshot is public and can be copied or restored by all Amazon Web Services accounts.</p>

@@ -2,6 +2,8 @@
 
 /// Cmaf Ingest Output Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CmafIngestOutputSettings {
     /// String concatenated to the end of the destination filename. Required for multiple outputs of the same type.

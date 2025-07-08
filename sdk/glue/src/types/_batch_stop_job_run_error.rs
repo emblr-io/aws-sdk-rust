@@ -2,6 +2,8 @@
 
 /// <p>Records an error that occurred when attempting to stop a specified job run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchStopJobRunError {
     /// <p>The name of the job definition that is used in the job run in question.</p>

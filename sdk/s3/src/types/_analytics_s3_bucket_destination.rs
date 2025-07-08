@@ -2,6 +2,8 @@
 
 /// <p>Contains information about where to publish the analytics results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsS3BucketDestination {
     /// <p>Specifies the file format used when exporting data to Amazon S3.</p>

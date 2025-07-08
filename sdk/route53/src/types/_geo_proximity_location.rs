@@ -3,6 +3,8 @@
 /// <p>(Resource record sets only): A complex type that lets you specify where your resources are located. Only one of <code>LocalZoneGroup</code>, <code>Coordinates</code>, or <code>Amazon Web ServicesRegion</code> is allowed per request at a time.</p>
 /// <p>For more information about geoproximity routing, see <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html">Geoproximity routing</a> in the <i>Amazon Route&nbsp;53 Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoProximityLocation {
     /// <p>The Amazon Web Services Region the resource you are directing DNS traffic to, is in.</p>

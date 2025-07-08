@@ -2,6 +2,8 @@
 
 /// <p>Details of the Semtech GNSS solver object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SemtechGnssDetail {
     /// <p>The vendor of the solver object.</p>

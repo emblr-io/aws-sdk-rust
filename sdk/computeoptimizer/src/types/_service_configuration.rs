@@ -2,6 +2,8 @@
 
 /// <p>The Amazon ECS service configurations used for recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceConfiguration {
     /// <p>The amount of memory used by the tasks in the Amazon ECS service.</p>

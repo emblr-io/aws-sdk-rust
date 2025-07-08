@@ -2,6 +2,8 @@
 
 /// <p>The recommended actions to apply to resolve the issues associated with your DB instances, DB clusters, and DB parameter groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendedAction {
     /// <p>The unique identifier of the recommended action.</p>

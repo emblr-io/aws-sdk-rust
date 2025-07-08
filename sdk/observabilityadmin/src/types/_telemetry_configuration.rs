@@ -2,6 +2,8 @@
 
 /// <p>A model representing the state of a resource within an account according to telemetry config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TelemetryConfiguration {
     /// <p>The account ID which contains the resource managed in telemetry configuration. An example of a valid account ID is <code>012345678901</code>.</p>

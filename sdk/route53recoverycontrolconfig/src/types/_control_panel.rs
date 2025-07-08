@@ -2,6 +2,8 @@
 
 /// <p>A control panel represents a group of routing controls that can be changed together in a single transaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlPanel {
     /// <p>The Amazon Resource Name (ARN) of the cluster that includes the control panel.</p>

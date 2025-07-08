@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contain the response to a <code>GetHostedZone</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetHostedZoneOutput {
     /// <p>A complex type that contains general information about the specified hosted zone.</p>

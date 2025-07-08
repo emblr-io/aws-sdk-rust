@@ -2,6 +2,8 @@
 
 /// <p>Summary information about the DataIntegration association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationAssociationSummary {
     /// <p>The Amazon Resource Name (ARN) of the DataIntegration association.</p>

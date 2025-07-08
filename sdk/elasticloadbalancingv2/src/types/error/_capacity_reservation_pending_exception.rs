@@ -2,6 +2,8 @@
 
 /// <p>There is a pending capacity reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationPendingException {
     #[allow(missing_docs)] // documentation missing in model

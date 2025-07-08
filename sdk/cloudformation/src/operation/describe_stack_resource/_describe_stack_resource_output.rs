@@ -2,6 +2,8 @@
 
 /// <p>The output for a <code>DescribeStackResource</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeStackResourceOutput {
     /// <p>A <code>StackResourceDetail</code> structure that contains the description of the specified resource in the specified stack.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a source or destination email address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmailAddressInfo {
     /// <p>The email address, including the domain.</p>

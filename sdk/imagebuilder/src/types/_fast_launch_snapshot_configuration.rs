@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for creating and managing pre-provisioned snapshots for a fast-launch enabled Windows AMI.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FastLaunchSnapshotConfiguration {
     /// <p>The number of pre-provisioned snapshots to keep on hand for a fast-launch enabled Windows AMI.</p>

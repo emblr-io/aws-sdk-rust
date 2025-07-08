@@ -2,6 +2,8 @@
 
 /// <p>The revision ID is not valid. Use GetPullRequest to determine the value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRevisionIdException {
     /// <p>Any message associated with the exception.</p>

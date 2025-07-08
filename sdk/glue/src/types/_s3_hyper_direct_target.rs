@@ -2,6 +2,8 @@
 
 /// <p>Specifies a HyperDirect data target that writes to Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3HyperDirectTarget {
     /// <p>The unique identifier for the HyperDirect target node.</p>

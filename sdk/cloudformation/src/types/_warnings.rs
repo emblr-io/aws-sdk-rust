@@ -2,6 +2,8 @@
 
 /// <p>Contains any warnings returned by the <code>GetTemplateSummary</code> API action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Warnings {
     /// <p>A list of all of the unrecognized resource types. This is only returned if the <code>TemplateSummaryConfig</code> parameter has the <code>TreatUnrecognizedResourceTypesAsWarning</code> configuration set to <code>True</code>.</p>

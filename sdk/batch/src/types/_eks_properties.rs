@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the properties for the Kubernetes resources of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksProperties {
     /// <p>The properties for the Kubernetes pod resources of a job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the estimated monthly savings possible for idle resources by adopting Compute Optimizer recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdleEstimatedMonthlySavings {
     /// <p>The currency of the estimated monthly savings.</p>

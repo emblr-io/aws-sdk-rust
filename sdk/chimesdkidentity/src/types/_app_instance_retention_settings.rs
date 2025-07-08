@@ -2,6 +2,8 @@
 
 /// <p>The details of the data-retention settings for an <code>AppInstance</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppInstanceRetentionSettings {
     /// <p>The length of time in days to retain the messages in a channel.</p>

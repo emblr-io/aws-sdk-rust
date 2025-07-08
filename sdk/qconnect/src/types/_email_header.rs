@@ -2,6 +2,8 @@
 
 /// <p>The email header to include in email messages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EmailHeader {
     /// <p>The name of the email header.</p>

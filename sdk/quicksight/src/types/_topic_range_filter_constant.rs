@@ -2,6 +2,8 @@
 
 /// <p>A constant value that is used in a range filter to specify the endpoints of the range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TopicRangeFilterConstant {
     /// <p>The data type of the constant value that is used in a range filter. Valid values for this structure are <code>RANGE</code>.</p>

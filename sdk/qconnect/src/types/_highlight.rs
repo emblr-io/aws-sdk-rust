@@ -2,6 +2,8 @@
 
 /// <p>Offset specification to describe highlighting of document excerpts for rendering search results and recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Highlight {
     /// <p>The offset for the start of the highlight.</p>

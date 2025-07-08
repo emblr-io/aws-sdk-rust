@@ -2,6 +2,8 @@
 
 /// <p>The geographic extent of the Earth Observation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AreaOfInterest {
     /// <p>A GeoJSON object representing the geographic extent in the coordinate space.</p>

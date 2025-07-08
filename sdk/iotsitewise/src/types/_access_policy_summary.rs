@@ -2,6 +2,8 @@
 
 /// <p>Contains an access policy that defines an identity's access to an IoT SiteWise Monitor resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessPolicySummary {
     /// <p>The ID of the access policy.</p>

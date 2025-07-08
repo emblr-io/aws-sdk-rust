@@ -2,6 +2,8 @@
 
 /// Holds one set of SCTE-35 Descriptor Settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte35Descriptor {
     /// SCTE-35 Descriptor Settings.

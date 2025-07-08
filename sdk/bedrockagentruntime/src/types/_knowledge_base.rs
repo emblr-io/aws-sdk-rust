@@ -2,6 +2,8 @@
 
 /// <p>Details of the knowledge base associated withe inline agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct KnowledgeBase {
     /// <p>The unique identifier for a knowledge base associated with the inline agent.</p>

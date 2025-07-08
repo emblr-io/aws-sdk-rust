@@ -2,6 +2,8 @@
 
 /// <p>Specifies the message template to use for the message, for each type of channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateConfiguration {
     /// <p>The email template to use for the message.</p>

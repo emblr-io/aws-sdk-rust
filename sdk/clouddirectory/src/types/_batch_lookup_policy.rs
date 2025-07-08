@@ -2,6 +2,8 @@
 
 /// <p>Lists all policies from the root of the Directory to the object specified inside a <code>BatchRead</code> operation. For more information, see <code>LookupPolicy</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchLookupPolicy {
     /// <p>Reference that identifies the object whose policies will be looked up.</p>

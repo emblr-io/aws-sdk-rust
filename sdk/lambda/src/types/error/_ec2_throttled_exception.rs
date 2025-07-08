@@ -2,6 +2,8 @@
 
 /// <p>Amazon EC2 throttled Lambda during Lambda function initialization using the execution role provided for the function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2ThrottledException {
     #[allow(missing_docs)] // documentation missing in model

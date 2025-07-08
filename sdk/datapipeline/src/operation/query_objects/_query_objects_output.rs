@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of QueryObjects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryObjectsOutput {
     /// <p>The identifiers that match the query selectors.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the DataStore configuration for an API for a code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataStoreRenderConfig {}
 impl DataStoreRenderConfig {

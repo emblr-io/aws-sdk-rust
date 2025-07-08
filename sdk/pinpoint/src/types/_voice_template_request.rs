@@ -2,6 +2,8 @@
 
 /// <p>Specifies the content and settings for a message template that can be used in messages that are sent through the voice channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceTemplateRequest {
     /// <p>The text of the script to use in messages that are based on the message template, in plain text format.</p>

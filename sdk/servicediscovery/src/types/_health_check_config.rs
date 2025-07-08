@@ -50,6 +50,8 @@
 /// </dd>
 /// </dl>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheckConfig {
     /// <p>The type of health check that you want to create, which indicates how Route&nbsp;53 determines whether an endpoint is healthy.</p><important>

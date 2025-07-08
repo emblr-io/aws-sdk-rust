@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a private IP address associated with a network interface. This data type is used as a response element in the <code>DescribeFindings</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateIp {
     /// <p>The DNS name of the private IP address.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Tags for a configuration item. Tags are metadata that help you categorize IT assets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationTag {
     /// <p>A type of IT asset to tag.</p>

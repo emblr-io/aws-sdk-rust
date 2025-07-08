@@ -2,6 +2,8 @@
 
 /// <p>A conditional statement for filtering a list of past predictions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterCondition {
     /// <p>A statement containing a resource property and a value to specify filter condition.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the status of the changes pending for the ActiveMQ user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserPendingChanges {
     /// <p>Enables access to the the ActiveMQ Web Console for the ActiveMQ user.</p>

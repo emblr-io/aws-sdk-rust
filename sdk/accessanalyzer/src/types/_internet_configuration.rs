@@ -2,6 +2,8 @@
 
 /// <p>This configuration sets the network origin for the Amazon S3 access point or multi-region access point to <code>Internet</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternetConfiguration {}
 impl InternetConfiguration {

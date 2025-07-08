@@ -2,6 +2,8 @@
 
 /// <p>The <code>aurora-iopt1</code> storage type isn't available, because you modified the DB cluster to use this storage type less than one month ago.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageTypeNotAvailableFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Aggregated field wells of a tree map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TreeMapAggregatedFieldWells {
     /// <p>The group by field well of a tree map. Values are grouped based on group by fields.</p>

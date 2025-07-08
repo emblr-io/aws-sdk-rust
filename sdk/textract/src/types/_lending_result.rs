@@ -2,6 +2,8 @@
 
 /// <p>Contains the detections for each page analyzed through the Analyze Lending API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LendingResult {
     /// <p>The page number for a page, with regard to whole submission.</p>

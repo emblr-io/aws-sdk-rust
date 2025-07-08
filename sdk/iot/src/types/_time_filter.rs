@@ -2,6 +2,8 @@
 
 /// <p>A filter that can be used to list command executions for a device that started or completed before or after a particular date and time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeFilter {
     /// <p>Filter to display command executions that started or completed only after a particular date and time.</p>

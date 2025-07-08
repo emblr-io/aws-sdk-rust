@@ -2,6 +2,8 @@
 
 /// <p>Represents individual aggregated results when grouping security findings for each <code>GroupByField</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupByValue {
     /// <p>The value of the field by which findings are grouped.</p>

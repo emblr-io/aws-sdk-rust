@@ -2,6 +2,8 @@
 
 /// <p>The settings that apply to an Amazon SageMaker AI domain when you use it in Amazon SageMaker Unified Studio.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnifiedStudioSettings {
     /// <p>Sets whether you can access the domain in Amazon SageMaker Studio:</p>

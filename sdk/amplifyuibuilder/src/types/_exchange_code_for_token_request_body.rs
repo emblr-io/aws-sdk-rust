@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of a request to exchange an access code for a token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ExchangeCodeForTokenRequestBody {
     /// <p>The access code to send in the request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that encapsulates a signaling channel's metadata and properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelInfo {
     /// <p>The name of the signaling channel.</p>

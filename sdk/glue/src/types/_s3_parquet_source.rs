@@ -2,6 +2,8 @@
 
 /// <p>Specifies an Apache Parquet data store stored in Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ParquetSource {
     /// <p>The name of the data store.</p>

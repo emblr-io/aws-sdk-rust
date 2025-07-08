@@ -2,6 +2,8 @@
 
 /// <p>Information about the build environment of the build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectEnvironment {
     /// <p>The type of build environment to use for related builds.</p><note>

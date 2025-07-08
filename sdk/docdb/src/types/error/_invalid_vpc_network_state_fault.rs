@@ -2,6 +2,8 @@
 
 /// <p>The subnet group doesn't cover all Availability Zones after it is created because of changes that were made.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidVpcNetworkStateFault {
     #[allow(missing_docs)] // documentation missing in model

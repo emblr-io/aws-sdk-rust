@@ -2,6 +2,8 @@
 
 /// <p>Information about a Lambda function specified in a deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionInfo {
     /// <p>The name of a Lambda function.</p>

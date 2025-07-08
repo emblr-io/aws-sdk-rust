@@ -2,6 +2,8 @@
 
 /// <p>Container for the response parameters to the <code>ListPackagesForDomain</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListPackagesForDomainOutput {
     /// <p>List of all packages associated with a domain.</p>

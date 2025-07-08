@@ -2,6 +2,8 @@
 
 /// <p>A sample utterance that invokes an intent or respond to a slot elicitation prompt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SampleUtterance {
     /// <p>The sample utterance that Amazon Lex uses to build its machine-learning model to recognize intents.</p>

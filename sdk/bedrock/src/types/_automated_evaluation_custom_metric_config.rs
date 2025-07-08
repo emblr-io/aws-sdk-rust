@@ -2,6 +2,8 @@
 
 /// <p>Defines the configuration of custom metrics to be used in an evaluation job. To learn more about using custom metrics in Amazon Bedrock evaluation jobs, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation-custom-metrics-prompt-formats.html">Create a prompt for a custom metrics (LLM-as-a-judge model evaluations)</a> and <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/kb-evaluation-custom-metrics-prompt-formats.html">Create a prompt for a custom metrics (RAG evaluations)</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomatedEvaluationCustomMetricConfig {
     /// <p>Defines a list of custom metrics to be used in an Amazon Bedrock evaluation job.</p>

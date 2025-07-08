@@ -2,6 +2,8 @@
 
 /// <p>The data that details a workload deployment pattern.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadDeploymentPatternData {
     /// <p>The workload name of the deployment pattern.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The response containing a list of archive export jobs and their statuses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListArchiveExportsOutput {
     /// <p>The list of export job identifiers and statuses.</p>

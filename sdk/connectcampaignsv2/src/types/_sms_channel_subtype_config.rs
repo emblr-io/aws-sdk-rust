@@ -2,6 +2,8 @@
 
 /// SMS Channel Subtype config
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsChannelSubtypeConfig {
     /// Allocates outbound capacity for the specific channel subtype of this campaign between multiple active campaigns

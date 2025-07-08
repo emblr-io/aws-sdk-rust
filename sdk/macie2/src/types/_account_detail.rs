@@ -2,6 +2,8 @@
 
 /// <p>Specifies the details of an account to associate with an Amazon Macie administrator account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountDetail {
     /// <p>The Amazon Web Services account ID for the account.</p>

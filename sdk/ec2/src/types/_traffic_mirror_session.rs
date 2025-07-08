@@ -2,6 +2,8 @@
 
 /// <p>Describes a Traffic Mirror session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficMirrorSession {
     /// <p>The ID for the Traffic Mirror session.</p>

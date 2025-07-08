@@ -2,6 +2,8 @@
 #[allow(missing_docs)] // documentation missing in model
 #[deprecated(note = "This operation is no longer supported.")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetPositionInput {
     /// <p>Resource identifier used to retrieve the position information.</p>

@@ -3,6 +3,8 @@
 /// <p>A reference to a Cost Category containing only enough information to identify the Cost Category.</p>
 /// <p>You can use this information to retrieve the full Cost Category information using <code>DescribeCostCategory</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostCategoryReference {
     /// <p>The unique identifier for your Cost Category.</p>

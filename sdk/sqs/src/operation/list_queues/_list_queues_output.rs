@@ -2,6 +2,8 @@
 
 /// <p>A list of your queues.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListQueuesOutput {
     /// <p>A list of queue URLs, up to 1,000 entries, or the value of <code>MaxResults</code> that you sent in the request.</p>

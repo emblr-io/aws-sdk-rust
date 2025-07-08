@@ -2,6 +2,8 @@
 
 /// <p>The object that shows the details of the column stats run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnStatisticsTaskRun {
     /// <p>The Amazon Web Services account ID.</p>

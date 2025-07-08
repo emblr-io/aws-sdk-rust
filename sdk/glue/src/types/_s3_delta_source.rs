@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Delta Lake data source stored in Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DeltaSource {
     /// <p>The name of the Delta Lake source.</p>

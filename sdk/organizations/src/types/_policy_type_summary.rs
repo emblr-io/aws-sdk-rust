@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a policy type and its status in the associated root.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyTypeSummary {
     /// <p>The name of the policy type.</p>

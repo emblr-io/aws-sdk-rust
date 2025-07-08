@@ -2,6 +2,8 @@
 
 /// <p>The provided revocation file is an invalid format, or uses an incorrect algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRevocationContentException {
     #[allow(missing_docs)] // documentation missing in model

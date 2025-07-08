@@ -3,6 +3,8 @@
 /// <p>The firewall policy defines the behavior of a firewall using a collection of stateless and stateful rule groups and other settings. You can use one firewall policy for multiple firewalls.</p>
 /// <p>This, along with <code>FirewallPolicyResponse</code>, define the policy. You can retrieve all objects for a firewall policy by calling <code>DescribeFirewallPolicy</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallPolicy {
     /// <p>References to the stateless rule groups that are used in the policy. These define the matching criteria in stateless rules.</p>

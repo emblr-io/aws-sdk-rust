@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the prompt to optimize.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum InputPrompt {
     /// <p>Contains information about the text prompt to optimize.</p>

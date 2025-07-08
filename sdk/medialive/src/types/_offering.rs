@@ -2,6 +2,8 @@
 
 /// Reserved resources available for purchase
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Offering {
     /// Unique offering ARN, e.g. 'arn:aws:medialive:us-west-2:123456789012:offering:87654321'

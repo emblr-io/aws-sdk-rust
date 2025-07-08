@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the location of the remote IP address. By default, GuardDuty returns <code>Geolocation</code> with <code>Lat</code> and <code>Lon</code> as <code>0.0</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeoLocation {
     /// <p>The latitude information of the remote IP address.</p>

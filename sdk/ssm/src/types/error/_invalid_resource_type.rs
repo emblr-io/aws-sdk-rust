@@ -2,6 +2,8 @@
 
 /// <p>The resource type isn't valid. For example, if you are attempting to tag an EC2 instance, the instance must be a registered managed node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidResourceType {
     #[allow(missing_docs)] // documentation missing in model

@@ -3,6 +3,8 @@
 /// <p>The number and status of game server container groups that are deployed across a container fleet. Combine this count with the number of server processes that each game server container group runs to learn how many game sessions the fleet is capable of hosting concurrently. For example, if a fleet has 50 game server container groups, and the game server container in each group runs 1 game server process, then the fleet has the capacity to run host 50 game sessions at a time.</p>
 /// <p><b>Returned by:</b> <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetCapacity.html">https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetCapacity.html</a>, <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetLocationCapacity.html">https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeFleetLocationCapacity.html</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GameServerContainerGroupCounts {
     /// <p>The number of container groups that are starting up but haven't yet registered.</p>

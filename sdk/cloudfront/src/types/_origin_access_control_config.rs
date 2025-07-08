@@ -2,6 +2,8 @@
 
 /// <p>A CloudFront origin access control configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OriginAccessControlConfig {
     /// <p>A name to identify the origin access control. You can specify up to 64 characters.</p>

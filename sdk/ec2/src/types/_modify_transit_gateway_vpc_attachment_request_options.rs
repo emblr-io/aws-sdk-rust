@@ -2,6 +2,8 @@
 
 /// <p>Describes the options for a VPC attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyTransitGatewayVpcAttachmentRequestOptions {
     /// <p>Enable or disable DNS support. The default is <code>enable</code>.</p>

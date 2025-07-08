@@ -2,6 +2,8 @@
 
 /// <p>The container for browser extension configuration for an Amazon Q Business web experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BrowserExtensionConfiguration {
     /// <p>Specify the browser extensions allowed for your Amazon Q web experience.</p>

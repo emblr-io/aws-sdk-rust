@@ -2,6 +2,8 @@
 
 /// <p>The <code>ListJobsByPipelineRequest</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsByPipelineInput {
     /// <p>The ID of the pipeline for which you want to get job information.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Structure containing summary information about a device discovery job, including its identifier, type, and status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceDiscoverySummary {
     /// <p>The unique identifier of the device discovery job.</p>

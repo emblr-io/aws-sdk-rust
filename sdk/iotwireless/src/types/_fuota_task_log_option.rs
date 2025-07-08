@@ -2,6 +2,8 @@
 
 /// <p>The log options for FUOTA tasks and can be used to set log levels for a specific type of FUOTA task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FuotaTaskLogOption {
     /// <p>The FUOTA task type.</p>

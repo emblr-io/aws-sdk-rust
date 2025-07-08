@@ -2,6 +2,8 @@
 
 /// <p>A leaf node condition which can be used to specify a tag condition, for example, <code>HAVE BPO = 123</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagCondition {
     /// <p>The tag key in the tag condition.</p>

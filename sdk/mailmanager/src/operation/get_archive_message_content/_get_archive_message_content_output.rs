@@ -2,6 +2,8 @@
 
 /// <p>The response containing the textual content of the requested archived email message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveMessageContentOutput {
     /// <p>The textual body content of the email message.</p>

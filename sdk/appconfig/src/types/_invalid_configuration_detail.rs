@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the bad request exception error when creating a hosted configuration version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidConfigurationDetail {
     /// <p>The invalid or out-of-range validation constraint in your JSON schema that failed validation.</p>

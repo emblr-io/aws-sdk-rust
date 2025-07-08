@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an <code>UpdateDeploymentGroup</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDeploymentGroupInput {
     /// <p>The application name that corresponds to the deployment group to update.</p>

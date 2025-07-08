@@ -2,6 +2,8 @@
 
 /// <p>A relation within an analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisSchema {
     /// <p>The tables referenced in the analysis schema.</p>

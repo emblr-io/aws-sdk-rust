@@ -3,6 +3,8 @@
 /// <p>The structure to configure the authentication methods for Firehose to connect to source database endpoint.</p>
 /// <p>Amazon Data Firehose is in preview release and is subject to change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseSourceAuthenticationConfiguration {
     /// <p>The structure that defines how Firehose accesses the secret.</p>

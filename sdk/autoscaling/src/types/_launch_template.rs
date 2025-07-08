@@ -2,6 +2,8 @@
 
 /// <p>Use this structure to specify the launch templates and instance types (overrides) for a mixed instances policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplate {
     /// <p>The launch template.</p>

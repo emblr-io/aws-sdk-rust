@@ -2,6 +2,8 @@
 
 /// <p>In response to a request by the <code>DescribeReplicationTasks</code> operation, this object provides a collection of statistics about a replication task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationTaskStats {
     /// <p>The percent complete for the full load migration task.</p>

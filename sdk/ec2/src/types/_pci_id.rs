@@ -2,6 +2,8 @@
 
 /// <p>Describes the data that identifies an Amazon FPGA image (AFI) on the PCI bus.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PciId {
     /// <p>The ID of the device.</p>

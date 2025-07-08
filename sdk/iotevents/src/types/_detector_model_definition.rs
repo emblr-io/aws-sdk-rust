@@ -2,6 +2,8 @@
 
 /// <p>Information that defines how a detector operates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectorModelDefinition {
     /// <p>Information about the states of the detector.</p>

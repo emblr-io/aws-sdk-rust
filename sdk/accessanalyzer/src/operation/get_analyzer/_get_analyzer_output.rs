@@ -2,6 +2,8 @@
 
 /// <p>The response to the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetAnalyzerOutput {
     /// <p>An <code>AnalyzerSummary</code> object that contains information about the analyzer.</p>

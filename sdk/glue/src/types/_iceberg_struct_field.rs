@@ -2,6 +2,8 @@
 
 /// <p>Defines a single field within an Iceberg table schema, including its identifier, name, data type, nullability, and documentation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergStructField {
     /// <p>The unique identifier assigned to this field within the Iceberg table schema, used for schema evolution and field tracking.</p>

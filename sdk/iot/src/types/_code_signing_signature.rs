@@ -2,6 +2,8 @@
 
 /// <p>Describes the signature for a file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeSigningSignature {
     /// <p>A base64 encoded binary representation of the code signing signature.</p>

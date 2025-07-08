@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the request to create a hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetHostedZoneLimitInput {
     /// <p>The limit that you want to get. Valid values include the following:</p>

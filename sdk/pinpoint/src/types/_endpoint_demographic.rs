@@ -2,6 +2,8 @@
 
 /// <p>Specifies demographic information about an endpoint, such as the applicable time zone and platform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointDemographic {
     /// <p>The version of the app that's associated with the endpoint.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object representing a policy to constrain playback by country and/or origin sites.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlaybackRestrictionPolicy {
     /// <p>Playback-restriction-policy ARN</p>

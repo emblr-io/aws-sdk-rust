@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to update user attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateUserAttributesInput {
     /// <p>An array of name-value pairs representing user attributes.</p>

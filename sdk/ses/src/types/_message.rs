@@ -2,6 +2,8 @@
 
 /// <p>Represents the message to be sent, composed of a subject and a body.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Message {
     /// <p>The subject of the message: A short summary of the content, which appears in the recipient's inbox.</p>

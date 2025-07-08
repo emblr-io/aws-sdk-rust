@@ -2,6 +2,8 @@
 
 /// <p>The setup for the detailed tooltip.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldBasedTooltip {
     /// <p>The visibility of <code>Show aggregations</code>.</p>

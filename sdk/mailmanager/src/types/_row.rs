@@ -2,6 +2,8 @@
 
 /// <p>A result row containing metadata for an archived email message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Row {
     /// <p>The unique identifier of the archived message.</p>

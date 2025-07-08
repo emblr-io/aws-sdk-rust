@@ -2,6 +2,8 @@
 
 /// <p>The <code>ListJobsByStatusResponse</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListJobsByStatusOutput {
     /// <p>An array of <code>Job</code> objects that have the specified status.</p>

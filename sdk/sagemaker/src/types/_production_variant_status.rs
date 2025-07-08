@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of the production variant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantStatus {
     /// <p>The endpoint variant status which describes the current deployment stage status or operational status.</p>

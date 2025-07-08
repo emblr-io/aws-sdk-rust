@@ -2,6 +2,8 @@
 
 /// <p>An object that specifies the last used intent at the time of the utterance as an attribute to return.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsUtteranceAttribute {
     /// <p>An attribute to return. The only available attribute is the intent that the bot mapped the utterance to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The parameters for an Clean Rooms protected query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ProtectedQuery {
     /// <p>The identifier for a protected query instance.</p>

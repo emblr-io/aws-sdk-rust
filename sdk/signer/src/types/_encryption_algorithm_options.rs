@@ -2,6 +2,8 @@
 
 /// <p>The encryption algorithm options that are available to a code-signing job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionAlgorithmOptions {
     /// <p>The set of accepted encryption algorithms that are allowed in a code-signing job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>CreateHapgRequest</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateHapgInput {
     /// <p>The label of the new high-availability partition group.</p>

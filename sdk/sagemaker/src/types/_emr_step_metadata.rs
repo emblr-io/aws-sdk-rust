@@ -2,6 +2,8 @@
 
 /// <p>The configurations and outcomes of an Amazon EMR step execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmrStepMetadata {
     /// <p>The identifier of the EMR cluster.</p>

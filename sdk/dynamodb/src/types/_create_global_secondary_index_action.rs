@@ -2,6 +2,8 @@
 
 /// <p>Represents a new global secondary index to be added to an existing table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateGlobalSecondaryIndexAction {
     /// <p>The name of the global secondary index to be created.</p>

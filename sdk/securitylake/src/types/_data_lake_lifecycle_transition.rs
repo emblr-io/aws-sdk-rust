@@ -2,6 +2,8 @@
 
 /// <p>Provide transition lifecycle details of Amazon Security Lake object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeLifecycleTransition {
     /// <p>The range of storage classes that you can choose from based on the data access, resiliency, and cost requirements of your workloads.</p>

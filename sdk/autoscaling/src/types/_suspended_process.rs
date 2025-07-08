@@ -3,6 +3,8 @@
 /// <p>Describes an auto scaling process that has been suspended.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-suspend-resume-processes.html#process-types">Types of processes</a> in the <i>Amazon EC2 Auto Scaling User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuspendedProcess {
     /// <p>The name of the suspended process.</p>

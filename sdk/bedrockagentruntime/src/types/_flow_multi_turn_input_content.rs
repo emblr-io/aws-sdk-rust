@@ -2,6 +2,8 @@
 
 /// <p>The content structure containing input information for multi-turn flow interactions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum FlowMultiTurnInputContent {
     /// <p>The requested additional input to send back to the multi-turn flow node.</p>

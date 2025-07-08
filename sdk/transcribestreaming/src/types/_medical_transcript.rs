@@ -3,6 +3,8 @@
 /// <p>The <code>MedicalTranscript</code> associated with a <code></code>.</p>
 /// <p><code>MedicalTranscript</code> contains <code>Results</code>, which contains a set of transcription results from one or more audio segments, along with additional information per your request parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalTranscript {
     /// <p>Contains a set of transcription results from one or more audio segments, along with additional information per your request parameters. This can include information relating to alternative transcriptions, channel identification, partial result stabilization, language identification, and other transcription-related data.</p>

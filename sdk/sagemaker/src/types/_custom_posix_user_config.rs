@@ -2,6 +2,8 @@
 
 /// <p>Details about the POSIX identity that is used for file system operations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomPosixUserConfig {
     /// <p>The POSIX user ID.</p>

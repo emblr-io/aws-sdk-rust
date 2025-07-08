@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon Web Services resource that is associated with the activity that prompted GuardDuty to generate a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceData {
     /// <p>Contains information about the Amazon S3 bucket.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents records that were not successfully inserted into Timestream due to data validation issues that must be resolved before reinserting time-series data into the system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RejectedRecord {
     /// <p>The index of the record in the input request for WriteRecords. Indexes begin with 0.</p>

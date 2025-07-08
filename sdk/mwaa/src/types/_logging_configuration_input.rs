@@ -2,6 +2,8 @@
 
 /// <p>Defines the Apache Airflow log types to send to CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoggingConfigurationInput {
     /// <p>Publishes Airflow DAG processing logs to CloudWatch Logs.</p>

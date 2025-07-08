@@ -2,6 +2,8 @@
 
 /// <p>The USPS zip+4 code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UspsZipPlus4 {
     /// <p>The USPS ZIP+4 Record Type Code.</p>

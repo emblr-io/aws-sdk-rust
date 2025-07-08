@@ -9,6 +9,8 @@
 /// <p>When a game session request includes player latency data, Amazon GameLift Servers re-orders the queue's destinations to make placements where the average player latency is lowest. It reorders based the following priorities: (1) the lowest average latency across all players, (2) the lowest hosting cost, (3) the queue's default destination order, and (4) for multi-location fleets, an alphabetic list of locations.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PriorityConfiguration {
     /// <p>A custom sequence to use when prioritizing where to place new game sessions. Each priority type is listed once.</p>

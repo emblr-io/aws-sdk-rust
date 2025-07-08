@@ -3,6 +3,8 @@
 /// <p>Contains the details of an Amazon Neptune global database.</p>
 /// <p>This data type is used as a response element for the <code>CreateGlobalCluster</code>, <code>DescribeGlobalClusters</code>, <code>ModifyGlobalCluster</code>, <code>DeleteGlobalCluster</code>, <code>FailoverGlobalCluster</code>, and <code>RemoveFromGlobalCluster</code> actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalCluster {
     /// <p>Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The range of timestamps for which to return fragments.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestampRange {
     /// <p>The starting timestamp in the range of timestamps for which to return fragments.</p>

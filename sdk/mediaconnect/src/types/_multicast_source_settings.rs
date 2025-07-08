@@ -2,6 +2,8 @@
 
 /// <p>The settings related to the multicast source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MulticastSourceSettings {
     /// <p>The IP address of the source for source-specific multicast (SSM).</p>

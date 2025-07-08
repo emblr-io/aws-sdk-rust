@@ -2,6 +2,8 @@
 
 /// <p>The conditional formatting of a <code>FilledMapVisual</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilledMapConditionalFormatting {
     /// <p>Conditional formatting options of a <code>FilledMapVisual</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A set of variables indicating the software update preferences for the gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SoftwareUpdatePreferences {
     /// <p>Indicates the automatic update policy for a gateway.</p>

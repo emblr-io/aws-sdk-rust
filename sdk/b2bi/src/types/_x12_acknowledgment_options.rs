@@ -2,6 +2,8 @@
 
 /// <p>Contains options for configuring X12 acknowledgments. These options control how functional and technical acknowledgments are handled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct X12AcknowledgmentOptions {
     /// <p>Specifies whether functional acknowledgments (997/999) should be generated for incoming X12 transactions. Valid values are <code>DO_NOT_GENERATE</code>, <code>GENERATE_ALL_SEGMENTS</code> and <code>GENERATE_WITHOUT_TRANSACTION_SET_RESPONSE_LOOP</code>.</p>

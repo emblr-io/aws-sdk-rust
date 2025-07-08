@@ -2,6 +2,8 @@
 
 /// <p>Represents a conditional expression to set a component property. Use <code>ComponentConditionProperty</code> to set a property to different values conditionally, based on the value of another property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentConditionProperty {
     /// <p>The name of the conditional property.</p>

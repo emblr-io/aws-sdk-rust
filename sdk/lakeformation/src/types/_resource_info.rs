@@ -2,6 +2,8 @@
 
 /// <p>A structure containing information about an Lake Formation resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceInfo {
     /// <p>The Amazon Resource Name (ARN) of the resource.</p>

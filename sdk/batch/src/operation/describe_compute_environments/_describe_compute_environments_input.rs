@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DescribeComputeEnvironments</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeComputeEnvironmentsInput {
     /// <p>A list of up to 100 compute environment names or full Amazon Resource Name (ARN) entries.</p>

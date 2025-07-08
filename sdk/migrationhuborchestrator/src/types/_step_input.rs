@@ -2,6 +2,8 @@
 
 /// <p>A map of key value pairs that is generated when you create a migration workflow. The key value pairs will differ based on your selection of the template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum StepInput {
     /// <p>The value of the integer.</p>

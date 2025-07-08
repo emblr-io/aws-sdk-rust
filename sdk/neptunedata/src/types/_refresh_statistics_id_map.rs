@@ -2,6 +2,8 @@
 
 /// <p>Statistics for <code>REFRESH</code> mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshStatisticsIdMap {
     /// <p>The ID of the statistics generation run that is currently occurring.</p>

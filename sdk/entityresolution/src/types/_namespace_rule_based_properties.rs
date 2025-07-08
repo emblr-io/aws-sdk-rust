@@ -2,6 +2,8 @@
 
 /// <p>The rule-based properties of an ID namespace. These properties define how the ID namespace can be used in an ID mapping workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NamespaceRuleBasedProperties {
     /// <p>The rules for the ID namespace.</p>

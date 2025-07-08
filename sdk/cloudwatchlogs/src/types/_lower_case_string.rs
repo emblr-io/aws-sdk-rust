@@ -3,6 +3,8 @@
 /// <p>This processor converts a string to lowercase.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-lowerCaseString"> lowerCaseString</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LowerCaseString {
     /// <p>The array caontaining the keys of the fields to convert to lowercase.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The policy grant principal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PolicyGrantPrincipal {
     /// <p>The domain unit of the policy grant principal.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The response object for <code>DescribeFileSystemAliases</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeFileSystemAliasesOutput {
     /// <p>An array of one or more DNS aliases currently associated with the specified file system.</p>

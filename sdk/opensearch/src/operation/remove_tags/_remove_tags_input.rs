@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to the <code>RemoveTags</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoveTagsInput {
     /// <p>The Amazon Resource Name (ARN) of the domain, data source, or application from which you want to delete the specified tags.</p>

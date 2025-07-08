@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Amazon Honeycode is used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoneycodeDestinationProperties {
     /// <p>The object specified in the Amazon Honeycode flow destination.</p>

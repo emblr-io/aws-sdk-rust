@@ -2,6 +2,8 @@
 
 /// <p>Specifies the validation and image scan statuses of the model package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPackageStatusDetails {
     /// <p>The validation status of the model package.</p>

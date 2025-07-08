@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a timestamp.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestampValue {
     /// <p>The value of the timestamp, in the Unix epoch format.</p>

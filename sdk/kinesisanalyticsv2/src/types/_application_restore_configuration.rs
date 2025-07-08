@@ -2,6 +2,8 @@
 
 /// <p>Specifies the method and snapshot to use when restarting an application using previously saved application state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationRestoreConfiguration {
     /// <p>Specifies how the application should be restored.</p>

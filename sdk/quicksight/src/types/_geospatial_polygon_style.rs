@@ -2,6 +2,8 @@
 
 /// <p>The polygon style for a polygon layer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialPolygonStyle {
     /// <p>The polygon symbol style for a polygon layer.</p>

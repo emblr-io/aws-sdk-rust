@@ -4,6 +4,8 @@
 /// <p>PlayReady DRM encrypts your media files using <code>aes-ctr</code> encryption.</p>
 /// <p>If you use DRM for an <code>HLSv3</code> playlist, your outputs must have a master playlist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlayReadyDrm {
     /// <p>The type of DRM, if any, that you want Elastic Transcoder to apply to the output files associated with this playlist.</p>

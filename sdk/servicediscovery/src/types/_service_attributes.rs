@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about attributes associated with a specific service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceAttributes {
     /// <p>The ARN of the service that the attributes are associated with.</p>

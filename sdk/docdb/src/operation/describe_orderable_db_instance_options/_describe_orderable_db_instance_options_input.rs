@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>DescribeOrderableDBInstanceOptions</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeOrderableDbInstanceOptionsInput {
     /// <p>The name of the engine to retrieve instance options for.</p>

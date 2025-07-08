@@ -2,6 +2,8 @@
 
 /// <p>The activity that determines the source of the messages to be processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelActivity {
     /// <p>The name of the channel activity.</p>

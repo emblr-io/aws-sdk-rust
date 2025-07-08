@@ -2,6 +2,8 @@
 
 /// <p>Source details for an Amazon S3 data access asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3DataAccessAssetSourceEntry {
     /// <p>The Amazon S3 bucket used for hosting shared data in the Amazon S3 data access.</p>

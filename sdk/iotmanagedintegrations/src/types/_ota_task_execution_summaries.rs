@@ -2,6 +2,8 @@
 
 /// <p>Structure representing one execution summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtaTaskExecutionSummaries {
     /// <p>Structure representing one over-the-air (OTA) task execution summary</p>

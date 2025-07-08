@@ -2,6 +2,8 @@
 
 /// <p>This structure contains much of the configuration data for the app monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppMonitorConfiguration {
     /// <p>The ID of the Amazon Cognito identity pool that is used to authorize the sending of data to RUM.</p>

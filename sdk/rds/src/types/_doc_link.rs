@@ -2,6 +2,8 @@
 
 /// <p>A link to documentation that provides additional information for a recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocLink {
     /// <p>The text with the link to documentation for the recommendation.</p>

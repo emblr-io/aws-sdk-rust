@@ -2,6 +2,8 @@
 
 /// <p>Contains the results of the test execution, grouped by type of results. See <a href="https://docs.aws.amazon.com/lexv2/latest/dg/test-results-details-test-set.html">Test result details"&gt;Test results details</a> for details about different types of results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestExecutionResultItems {
     /// <p>Overall results for the test execution, including the breakdown of conversations and single-input utterances.</p>

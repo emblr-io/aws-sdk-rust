@@ -2,6 +2,8 @@
 
 /// <p>Status Code: 403, The caller is not authorized to perform an operation on the given stream, or the token has expired.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotAuthorizedException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Details about a Kinesis data stream used as the source for a Firehose stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceDescription {
     /// <p>Details about Direct PUT used as the source for a Firehose stream.</p>

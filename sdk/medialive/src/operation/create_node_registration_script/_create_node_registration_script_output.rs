@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for CreateNodeRegistrationScriptResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateNodeRegistrationScriptOutput {
     /// A script that can be run on a Bring Your Own Device Elemental Anywhere system to create a node in a cluster.

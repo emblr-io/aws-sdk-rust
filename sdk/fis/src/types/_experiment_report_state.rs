@@ -2,6 +2,8 @@
 
 /// <p>Describes the state of the experiment report generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentReportState {
     /// <p>The state of the experiment report generation.</p>

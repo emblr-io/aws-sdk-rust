@@ -2,6 +2,8 @@
 
 /// <p>A tool result block that contains the results for a tool request that the model previously made.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ToolResultBlock {
     /// <p>The ID of the tool request that this is the result for.</p>

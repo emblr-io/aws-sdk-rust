@@ -2,6 +2,8 @@
 
 /// <p>The topic of the notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Topic {
     /// <p>The subject of the resource mentioned in a notification.</p>

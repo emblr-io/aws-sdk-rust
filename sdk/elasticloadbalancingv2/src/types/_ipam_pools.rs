@@ -2,6 +2,8 @@
 
 /// <p>An IPAM pool is a collection of IP address CIDRs. IPAM pools enable you to organize your IP addresses according to your routing and security needs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpamPools {
     /// <p>The ID of the IPv4 IPAM pool.</p>

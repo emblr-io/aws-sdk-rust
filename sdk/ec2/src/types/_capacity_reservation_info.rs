@@ -2,6 +2,8 @@
 
 /// <p>Information about a Capacity Reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationInfo {
     /// <p>The instance type for the Capacity Reservation.</p>

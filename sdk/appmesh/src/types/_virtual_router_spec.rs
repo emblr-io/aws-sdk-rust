@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the specification of a virtual router.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualRouterSpec {
     /// <p>The listeners that the virtual router is expected to receive inbound traffic from. You can specify one listener.</p>

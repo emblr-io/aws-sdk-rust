@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes the Amazon S3 settings to use to save the generated dashboard snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotS3DestinationConfiguration {
     /// <p>A structure that contains details about the Amazon S3 bucket that the generated dashboard snapshot is saved in.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Result of a VerifyTrust request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifyTrustOutput {
     /// <p>The unique Trust ID of the trust relationship that was verified.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The time period for when the predictions were generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictionTimeRange {
     /// <p>The start time of the time period for when the predictions were generated.</p>

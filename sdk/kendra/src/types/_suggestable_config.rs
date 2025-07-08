@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for a document field/attribute that you want to base query suggestions on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuggestableConfig {
     /// <p>The name of the document field/attribute.</p>

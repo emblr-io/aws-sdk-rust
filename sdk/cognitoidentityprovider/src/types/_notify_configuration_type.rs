@@ -2,6 +2,8 @@
 
 /// <p>The configuration for Amazon SES email messages that threat protection sends to a user when your adaptive authentication automated response has a <i>Notify</i> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotifyConfigurationType {
     /// <p>The email address that sends the email message. The address must be either individually verified with Amazon Simple Email Service, or from a domain that has been verified with Amazon SES.</p>

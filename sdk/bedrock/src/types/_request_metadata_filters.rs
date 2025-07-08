@@ -2,6 +2,8 @@
 
 /// <p>Rules for filtering invocation logs. A filter can be a mapping of a metadata key to a value that it should or should not equal (a base filter), or a list of base filters that are all applied with <code>AND</code> or <code>OR</code> logical operators</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum RequestMetadataFilters {
     /// <p>Include results where all of the based filters match.</p>

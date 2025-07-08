@@ -2,6 +2,8 @@
 
 /// <p>Provide additional context about the status of a command execution using a reason code and description.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatusReason {
     /// <p>A code that provides additional context for the command execution status.</p>

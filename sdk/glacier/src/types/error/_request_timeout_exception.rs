@@ -2,6 +2,8 @@
 
 /// <p>Returned if, when uploading an archive, Amazon S3 Glacier times out while receiving the upload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestTimeoutException {
     /// <p>Client</p>

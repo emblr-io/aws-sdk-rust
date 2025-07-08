@@ -2,6 +2,8 @@
 
 /// <p>Represents the auto scaling policy to be modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingPolicyUpdate {
     /// <p>The name of the scaling policy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains command execution information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CommandExecution {
     /// <p>The ID of the command execution.</p>

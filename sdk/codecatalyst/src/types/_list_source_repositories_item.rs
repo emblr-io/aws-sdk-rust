@@ -2,6 +2,8 @@
 
 /// <p>Information about a source repository returned in a list of source repositories.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSourceRepositoriesItem {
     /// <p>The system-generated unique ID of the source repository.</p>

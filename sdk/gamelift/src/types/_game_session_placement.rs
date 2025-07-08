@@ -4,6 +4,8 @@
 /// <p>If the game session placement status is <code>PENDING</code>, the properties for game session ID/ARN, region, IP address/DNS, and port aren't final. A game session is not active and ready to accept players until placement status reaches <code>FULFILLED</code>. When the placement is in <code>PENDING</code> status, Amazon GameLift Servers may attempt to place a game session multiple times before succeeding. With each attempt it creates a <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameSession">https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameSession</a> object and updates this placement object with the new game session properties.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GameSessionPlacement {
     /// <p>A unique identifier for a game session placement.</p>

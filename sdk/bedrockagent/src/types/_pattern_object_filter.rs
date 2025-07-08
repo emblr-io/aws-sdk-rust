@@ -2,6 +2,8 @@
 
 /// <p>The specific filters applied to your data source content. You can filter out or include certain content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PatternObjectFilter {
     /// <p>The supported object type or content type of the data source.</p>

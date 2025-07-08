@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of SSL/TLS certificate metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadBalancerTlsCertificateSummary {
     /// <p>The name of the SSL/TLS certificate.</p>

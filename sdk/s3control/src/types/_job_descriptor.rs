@@ -2,6 +2,8 @@
 
 /// <p>A container element for the job configuration and status information returned by a <code>Describe Job</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobDescriptor {
     /// <p>The ID for the specified job.</p>

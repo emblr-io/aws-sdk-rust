@@ -2,6 +2,8 @@
 
 /// <p>Information about a domain. A domain is a container for repositories. When you create a domain, it is empty until you add one or more repositories.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainDescription {
     /// <p>The name of the domain.</p>

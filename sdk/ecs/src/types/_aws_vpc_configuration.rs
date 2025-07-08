@@ -2,6 +2,8 @@
 
 /// <p>An object representing the networking details for a task or service. For example <code>awsVpcConfiguration={subnets=\["subnet-12344321"\],securityGroups=\["sg-12344321"\]}</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsVpcConfiguration {
     /// <p>The IDs of the subnets associated with the task or service. There's a limit of 16 subnets that can be specified.</p><note>

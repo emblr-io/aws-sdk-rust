@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether DataSync created a complete <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html">task report</a> for your transfer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportResult {
     /// <p>Indicates whether DataSync is still working on your report, created a report, or can't create a complete report.</p>

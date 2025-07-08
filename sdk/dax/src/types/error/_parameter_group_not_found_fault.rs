@@ -2,6 +2,8 @@
 
 /// <p>The specified parameter group does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterGroupNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

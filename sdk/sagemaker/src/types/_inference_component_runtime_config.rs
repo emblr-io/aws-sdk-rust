@@ -2,6 +2,8 @@
 
 /// <p>Runtime settings for a model that is deployed with an inference component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceComponentRuntimeConfig {
     /// <p>The number of runtime copies of the model container to deploy with the inference component. Each copy can serve inference requests.</p>

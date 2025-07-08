@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of an event. You can bind an event and a corresponding action to a <code>Component</code> or a <code>ComponentChild</code>. A button click is an example of an event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentEvent {
     /// <p>The action to perform when a specific event is raised.</p>

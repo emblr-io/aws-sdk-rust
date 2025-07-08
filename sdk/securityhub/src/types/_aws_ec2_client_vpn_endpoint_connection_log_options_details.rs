@@ -2,6 +2,8 @@
 
 /// <p>Information about the client connection logging options for the Client VPN endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2ClientVpnEndpointConnectionLogOptionsDetails {
     /// <p>Indicates whether client connection logging is enabled for the Client VPN endpoint.</p>

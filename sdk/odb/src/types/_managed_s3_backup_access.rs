@@ -2,6 +2,8 @@
 
 /// <p>The configuration for managed Amazon S3 backup access from the ODB network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedS3BackupAccess {
     /// <p>The status of the managed Amazon S3 backup access.</p>

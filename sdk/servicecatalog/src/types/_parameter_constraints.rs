@@ -2,6 +2,8 @@
 
 /// <p>The constraints that the administrator has put on the parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterConstraints {
     /// <p>The values that the administrator has allowed for the parameter.</p>

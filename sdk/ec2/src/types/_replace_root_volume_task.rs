@@ -2,6 +2,8 @@
 
 /// <p>Information about a root volume replacement task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplaceRootVolumeTask {
     /// <p>The ID of the root volume replacement task.</p>

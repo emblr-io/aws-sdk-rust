@@ -2,6 +2,8 @@
 
 /// <p>Condition expression defined in the Glue Studio data preparation recipe node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionExpression {
     /// <p>The condition of the condition expression.</p>

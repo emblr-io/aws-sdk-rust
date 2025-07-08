@@ -3,6 +3,8 @@
 /// <p>Contains the delivery stream Amazon Resource Name (ARN), and the ARN of the Identity and Access Management (IAM) role associated with a Firehose event destination.</p>
 /// <p>Event destinations, such as Firehose, are associated with configuration sets, which enable you to publish message sending events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisFirehoseDestination {
     /// <p>The ARN of an Identity and Access Management role that is able to write event data to an Amazon Data Firehose destination.</p>

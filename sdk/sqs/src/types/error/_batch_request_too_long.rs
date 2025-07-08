@@ -2,6 +2,8 @@
 
 /// <p>The length of all the messages put together is more than the limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchRequestTooLong {
     #[allow(missing_docs)] // documentation missing in model

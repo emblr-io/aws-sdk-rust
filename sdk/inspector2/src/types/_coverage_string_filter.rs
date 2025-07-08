@@ -2,6 +2,8 @@
 
 /// <p>Contains details of a coverage string filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageStringFilter {
     /// <p>The operator to compare strings on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DeleteJobQueue</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteJobQueueInput {
     /// <p>The short name or full Amazon Resource Name (ARN) of the queue to delete.</p>

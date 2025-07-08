@@ -2,6 +2,8 @@
 
 /// <p>Returns the created volume identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVolumeOutput {
     /// <p>Unique identifier for the new volume.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An exception for when a failure in one of the dependencies results in the service being unable to fetch details about the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependencyFailureException {
     /// <p>A description of the error.</p>

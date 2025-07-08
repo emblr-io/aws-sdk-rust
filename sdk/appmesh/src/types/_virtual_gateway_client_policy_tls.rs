@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a Transport Layer Security (TLS) client policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualGatewayClientPolicyTls {
     /// <p>Whether the policy is enforced. The default is <code>True</code>, if a value isn't specified.</p>

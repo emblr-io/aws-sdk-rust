@@ -2,6 +2,8 @@
 
 /// <p>Contains performance settings for a model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceConfiguration {
     /// <p>Specifies whether to use the latency-optimized or standard version of a model or inference profile.</p>

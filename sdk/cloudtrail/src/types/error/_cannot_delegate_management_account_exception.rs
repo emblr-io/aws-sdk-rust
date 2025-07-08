@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the management account of an organization is registered as the CloudTrail delegated administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CannotDelegateManagementAccountException {
     /// <p>Brief description of the exception returned by the request.</p>

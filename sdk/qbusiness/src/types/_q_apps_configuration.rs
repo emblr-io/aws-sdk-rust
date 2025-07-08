@@ -2,6 +2,8 @@
 
 /// <p>Configuration information about Amazon Q Apps.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QAppsConfiguration {
     /// <p>Status information about whether end users can create and use Amazon Q Apps in the web experience.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the information that's required to enable a managed Contributor Insights rule for an Amazon Web Services resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedRule {
     /// <p>The template name for the managed Contributor Insights rule, as returned by <code>ListManagedInsightRules</code>.</p>

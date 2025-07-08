@@ -2,6 +2,8 @@
 
 /// <p>The branch for an Amplify app, which maps to a third-party repository branch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Branch {
     /// <p>The Amazon Resource Name (ARN) for a branch that is part of an Amplify app.</p>

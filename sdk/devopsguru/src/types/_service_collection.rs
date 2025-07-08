@@ -2,6 +2,8 @@
 
 /// <p>A collection of the names of Amazon Web Services services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceCollection {
     /// <p>An array of strings that each specifies the name of an Amazon Web Services service.</p>

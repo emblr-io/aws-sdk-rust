@@ -2,6 +2,8 @@
 
 /// <p>Contains names of objects associated with a scheduled action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledActionAssociation {
     /// <p>Name of associated Amazon Redshift Serverless namespace.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a Hook invocation, its status, and the reason for its status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HookResultSummary {
     /// <p>The exact point in the provisioning logic where the Hook runs.</p>

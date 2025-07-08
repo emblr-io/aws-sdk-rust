@@ -2,6 +2,8 @@
 
 /// <p>Describes a set of routes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifiedAccessInstanceOpenVpnClientConfiguration {
     /// <p>The base64-encoded Open VPN client configuration.</p>

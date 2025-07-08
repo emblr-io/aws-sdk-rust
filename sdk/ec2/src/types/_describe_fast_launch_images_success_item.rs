@@ -2,6 +2,8 @@
 
 /// <p>Describe details about a Windows image with Windows fast launch enabled that meets the requested criteria. Criteria are defined by the <code>DescribeFastLaunchImages</code> action filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeFastLaunchImagesSuccessItem {
     /// <p>The image ID that identifies the Windows fast launch enabled image.</p>

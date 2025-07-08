@@ -2,6 +2,8 @@
 
 /// <p>This object typically provides details about a control finding, such as applicable standards and the status of control checks. While finding providers can add custom content in <code>Compliance</code> object fields, they are typically used to review details of Security Hub control findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Compliance {
     /// <p>Typically summarizes the result of a control check.</p>

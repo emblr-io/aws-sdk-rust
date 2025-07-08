@@ -2,6 +2,8 @@
 
 /// <p>The DynamoDB reserved capacity recommendation details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynamoDbReservedCapacity {
     /// <p>The DynamoDB reserved capacity configuration used for recommendations.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An Amazon CloudWatch log group that contains log anomalies and is used to generate an insight.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalousLogGroup {
     /// <p>The name of the CloudWatch log group.</p>

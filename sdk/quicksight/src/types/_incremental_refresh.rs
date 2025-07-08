@@ -2,6 +2,8 @@
 
 /// <p>The incremental refresh configuration for a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncrementalRefresh {
     /// <p>The lookback window setup for an incremental refresh configuration.</p>

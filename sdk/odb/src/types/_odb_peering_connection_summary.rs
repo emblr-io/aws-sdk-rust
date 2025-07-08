@@ -2,6 +2,8 @@
 
 /// <p>A summary of an ODB peering connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OdbPeeringConnectionSummary {
     /// <p>The unique identifier of the ODB peering connection. A sample ID is <code>odbpcx-abcdefgh12345678</code>.</p>

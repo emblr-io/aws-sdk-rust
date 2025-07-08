@@ -2,6 +2,8 @@
 
 /// <p>The receipt for the message delivered to the recipient.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Receipt {
     /// <p>The time when the message was delivered to the recipient.</p>

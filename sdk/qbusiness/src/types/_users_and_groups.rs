@@ -2,6 +2,8 @@
 
 /// <p>Provides information about users and group names associated with a topic control rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsersAndGroups {
     /// <p>The user ids associated with a topic control rule.</p>

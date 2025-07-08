@@ -2,6 +2,8 @@
 
 /// <p>Configurations to apply to a knowledge base attached to the agent during query. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/agents-session-state.html#session-state-kb">Knowledge base retrieval configurations</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KnowledgeBaseConfiguration {
     /// <p>The unique identifier for a knowledge base attached to the agent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object representing the resources associated with the node group, such as Auto Scaling groups and security groups for remote access.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodegroupResources {
     /// <p>The Auto Scaling groups associated with the node group.</p>

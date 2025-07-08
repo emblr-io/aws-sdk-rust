@@ -2,6 +2,8 @@
 
 /// <p>Details about the export revisions to Amazon S3 response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportRevisionsToS3ResponseDetails {
     /// <p>The unique identifier for the data set associated with this export job.</p>

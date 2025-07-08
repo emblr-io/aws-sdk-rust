@@ -2,6 +2,8 @@
 
 /// <p>Represents the usage data of a usage plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUsageOutput {
     /// <p>The plan Id associated with this usage data.</p>

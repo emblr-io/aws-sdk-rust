@@ -2,6 +2,8 @@
 
 /// <p>The service is unavailable. Back off and retry the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceUnavailableException {
     /// <p>The request has failed due to a temporary failure of the server.</p>

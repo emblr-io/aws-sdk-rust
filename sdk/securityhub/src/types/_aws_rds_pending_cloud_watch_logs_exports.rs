@@ -2,6 +2,8 @@
 
 /// <p>Identifies the log types to enable and disable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRdsPendingCloudWatchLogsExports {
     /// <p>A list of log types that are being enabled.</p>

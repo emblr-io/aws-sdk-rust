@@ -2,6 +2,8 @@
 
 /// <p>Parameter information for IPEK generation during export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportDukptInitialKey {
     /// <p>The KSN for IPEK generation using DUKPT.</p>

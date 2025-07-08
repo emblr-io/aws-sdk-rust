@@ -3,6 +3,8 @@
 /// <p>Provides the configuration information for altering document metadata and content during the document ingestion process.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/kendra/latest/dg/custom-document-enrichment.html">Customizing document metadata during the ingestion process</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomDocumentEnrichmentConfiguration {
     /// <p>Configuration information to alter document attributes or metadata fields and content when ingesting documents into Amazon Kendra.</p>

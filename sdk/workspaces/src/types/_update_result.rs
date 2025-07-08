@@ -4,6 +4,8 @@
 /// <p>Only Windows 10 WorkSpace images can be programmatically updated at this time.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateResult {
     /// <p>Indicates whether updated drivers or other components are available for the specified WorkSpace image.</p>

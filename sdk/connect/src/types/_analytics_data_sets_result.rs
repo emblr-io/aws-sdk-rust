@@ -2,6 +2,8 @@
 
 /// <p>Information about datasets that are available to associate with: <code>DataSetId</code>, <code>DataSetName</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsDataSetsResult {
     /// <p>The identifier of the dataset.</p>

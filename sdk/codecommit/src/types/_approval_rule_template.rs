@@ -2,6 +2,8 @@
 
 /// <p>Returns information about an approval rule template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApprovalRuleTemplate {
     /// <p>The system-generated ID of the approval rule template.</p>

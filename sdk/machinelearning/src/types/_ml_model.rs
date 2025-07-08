@@ -3,6 +3,8 @@
 /// <p>Represents the output of a <code>GetMLModel</code> operation.</p>
 /// <p>The content consists of the detailed metadata and the current status of the <code>MLModel</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MlModel {
     /// <p>The ID assigned to the <code>MLModel</code> at creation.</p>

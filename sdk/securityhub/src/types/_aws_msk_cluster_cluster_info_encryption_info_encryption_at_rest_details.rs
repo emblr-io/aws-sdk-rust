@@ -2,6 +2,8 @@
 
 /// <p>The data-volume encryption details. You can't update encryption at rest settings for existing clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsMskClusterClusterInfoEncryptionInfoEncryptionAtRestDetails {
     /// <p>The Amazon Resource Name (ARN) of the KMS key for encrypting data at rest. If you don't specify a KMS key, MSK creates one for you and uses it.</p>

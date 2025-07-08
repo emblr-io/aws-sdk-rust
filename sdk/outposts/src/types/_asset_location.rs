@@ -2,6 +2,8 @@
 
 /// <p>Information about the position of the asset in a rack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetLocation {
     /// <p>The position of an asset in a rack measured in rack units.</p>

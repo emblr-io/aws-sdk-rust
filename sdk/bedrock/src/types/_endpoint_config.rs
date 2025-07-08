@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for the endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EndpointConfig {
     /// <p>The configuration specific to Amazon SageMaker for the endpoint.</p>

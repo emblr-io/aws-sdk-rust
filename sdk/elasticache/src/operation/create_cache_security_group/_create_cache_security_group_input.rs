@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateCacheSecurityGroup</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCacheSecurityGroupInput {
     /// <p>A name for the cache security group. This value is stored as a lowercase string.</p>

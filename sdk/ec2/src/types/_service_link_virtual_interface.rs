@@ -2,6 +2,8 @@
 
 /// <p>Describes the service link virtual interfaces that establish connectivity between Amazon Web Services Outpost and on-premises networks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLinkVirtualInterface {
     /// <p>The ID of the service link virtual interface.</p>

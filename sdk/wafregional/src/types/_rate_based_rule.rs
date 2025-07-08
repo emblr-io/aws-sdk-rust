@@ -14,6 +14,8 @@
 /// <p>In the rule, you also define the rate limit as 1,000.</p>
 /// <p>Requests that meet both of these conditions and exceed 1,000 requests every five minutes trigger the rule's action (block or count), which is defined in the web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RateBasedRule {
     /// <p>A unique identifier for a <code>RateBasedRule</code>. You use <code>RuleId</code> to get more information about a <code>RateBasedRule</code> (see <code>GetRateBasedRule</code>), update a <code>RateBasedRule</code> (see <code>UpdateRateBasedRule</code>), insert a <code>RateBasedRule</code> into a <code>WebACL</code> or delete one from a <code>WebACL</code> (see <code>UpdateWebACL</code>), or delete a <code>RateBasedRule</code> from AWS WAF (see <code>DeleteRateBasedRule</code>).</p>

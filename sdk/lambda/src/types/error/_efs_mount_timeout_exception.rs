@@ -2,6 +2,8 @@
 
 /// <p>The Lambda function made a network connection to the configured file system, but the mount operation timed out.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EfsMountTimeoutException {
     #[allow(missing_docs)] // documentation missing in model

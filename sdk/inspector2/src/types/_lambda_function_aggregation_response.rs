@@ -2,6 +2,8 @@
 
 /// <p>A response that contains the results of an Amazon Web Services Lambda function finding aggregation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionAggregationResponse {
     /// <p>The resource IDs included in the aggregation results.</p>

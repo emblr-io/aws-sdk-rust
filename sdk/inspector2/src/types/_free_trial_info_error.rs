@@ -2,6 +2,8 @@
 
 /// <p>Information about an error received while accessing free trail data for an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FreeTrialInfoError {
     /// <p>The account associated with the Amazon Inspector free trial information.</p>

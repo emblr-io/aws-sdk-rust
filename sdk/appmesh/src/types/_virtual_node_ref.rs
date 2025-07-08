@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a virtual node returned by a list operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VirtualNodeRef {
     /// <p>The name of the service mesh that the virtual node resides in.</p>

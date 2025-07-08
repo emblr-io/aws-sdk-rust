@@ -2,6 +2,8 @@
 
 /// <p>Creates the OAuth configuration for your Amplify project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBackendAuthOAuthConfig {
     /// <p>The domain prefix for your Amplify app.</p>

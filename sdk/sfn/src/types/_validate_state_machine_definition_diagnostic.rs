@@ -118,6 +118,8 @@
 /// </dd>
 /// </dl>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ValidateStateMachineDefinitionDiagnostic {
     /// <p>A value of <code>ERROR</code> means that you cannot create or update a state machine with this definition.</p>

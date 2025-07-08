@@ -2,6 +2,8 @@
 
 /// <p>The Spot placement score for this Region or Availability Zone. The score is calculated based on the assumption that the <code>capacity-optimized</code> allocation strategy is used and that all of the Availability Zones in the Region can be used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotPlacementScore {
     /// <p>The Region.</p>

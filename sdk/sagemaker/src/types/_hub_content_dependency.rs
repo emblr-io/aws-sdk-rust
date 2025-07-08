@@ -2,6 +2,8 @@
 
 /// <p>Any dependencies related to hub content, such as scripts, model artifacts, datasets, or notebooks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HubContentDependency {
     /// <p>The hub content dependency origin path.</p>

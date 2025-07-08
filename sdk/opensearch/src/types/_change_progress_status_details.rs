@@ -2,6 +2,8 @@
 
 /// <p>The progress details of a specific domain configuration change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeProgressStatusDetails {
     /// <p>The unique change identifier associated with a specific domain configuration change.</p>

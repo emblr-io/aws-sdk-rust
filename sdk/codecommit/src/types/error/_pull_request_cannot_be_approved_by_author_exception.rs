@@ -2,6 +2,8 @@
 
 /// <p>The approval cannot be applied because the user approving the pull request matches the user who created the pull request. You cannot approve a pull request that you created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullRequestCannotBeApprovedByAuthorException {
     /// <p>Any message associated with the exception.</p>

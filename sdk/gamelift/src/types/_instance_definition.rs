@@ -3,6 +3,8 @@
 /// <p><b>This data type is used with the Amazon GameLift Servers FleetIQ and game server groups.</b></p>
 /// <p>An allowed instance type for a game server group. All game server groups must have at least two instance types defined for it. Amazon GameLift Servers FleetIQ periodically evaluates each defined instance type for viability. It then updates the Auto Scaling group with the list of viable instance types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceDefinition {
     /// <p>An Amazon EC2 instance type designation.</p>

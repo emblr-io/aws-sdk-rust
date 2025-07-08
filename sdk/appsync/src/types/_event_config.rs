@@ -2,6 +2,8 @@
 
 /// <p>Describes the authorization configuration for connections, message publishing, message subscriptions, and logging for an Event API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventConfig {
     /// <p>A list of authorization providers.</p>

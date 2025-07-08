@@ -2,6 +2,8 @@
 
 /// <p>The NextToken is invalid. Verify that it's spelled correctly, and then try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidNextTokenException {
     #[allow(missing_docs)] // documentation missing in model

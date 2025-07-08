@@ -2,6 +2,8 @@
 
 /// <p>Details about a failed attempt to associate or disassociate a code repository with a scan configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedAssociationResult {
     /// <p>The Amazon Resource Name (ARN) of the scan configuration that failed to be associated or disassociated.</p>

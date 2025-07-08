@@ -2,6 +2,8 @@
 
 /// <p>Contains high-level information about the invoice receiver.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InvoiceProfile {
     /// <p>The account ID the invoice profile is generated for.</p>

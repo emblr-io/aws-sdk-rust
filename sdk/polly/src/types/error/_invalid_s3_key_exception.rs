@@ -2,6 +2,8 @@
 
 /// <p>The provided Amazon S3 key prefix is invalid. Please provide a valid S3 object key name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidS3KeyException {
     #[allow(missing_docs)] // documentation missing in model

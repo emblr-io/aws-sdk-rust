@@ -2,6 +2,8 @@
 
 /// <p>The information about the AMI store task, including the progress of the task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StoreImageTaskResult {
     /// <p>The ID of the AMI that is being stored.</p>

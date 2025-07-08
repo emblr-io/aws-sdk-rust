@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a cluster restore action. Returns null if the cluster was not created by restoring a snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreStatus {
     /// <p>The status of the restore action. Returns starting, restoring, completed, or failed.</p>

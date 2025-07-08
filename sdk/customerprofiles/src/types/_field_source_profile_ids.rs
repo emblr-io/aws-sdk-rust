@@ -2,6 +2,8 @@
 
 /// <p>A duplicate customer profile that is to be merged into a main profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldSourceProfileIds {
     /// <p>A unique identifier for the account number field to be merged.</p>

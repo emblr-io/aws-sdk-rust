@@ -2,6 +2,8 @@
 
 /// <p>Contains the category by which the session analytics were grouped and a member of that category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsSessionGroupByKey {
     /// <p>The category by which the session analytics were grouped.</p>

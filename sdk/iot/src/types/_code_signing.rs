@@ -2,6 +2,8 @@
 
 /// <p>Describes the method to use when code signing a file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeSigning {
     /// <p>The ID of the <code>AWSSignerJob</code> which was created to sign the file.</p>

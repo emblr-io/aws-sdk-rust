@@ -2,6 +2,8 @@
 
 /// <p>Represents the device filters used in a test run and the maximum number of devices to be included in the run. It is passed in as the <code>deviceSelectionConfiguration</code> request parameter in <code>ScheduleRun</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceSelectionConfiguration {
     /// <p>Used to dynamically select a set of devices for a test run. A filter is made up of an attribute, an operator, and one or more values.</p>

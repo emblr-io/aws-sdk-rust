@@ -2,6 +2,8 @@
 
 /// <p>The start and end time of the budget.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum BudgetSchedule {
     /// <p>The fixed start and end time of the budget's schedule.</p>

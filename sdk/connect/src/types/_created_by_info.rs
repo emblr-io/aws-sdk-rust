@@ -2,6 +2,8 @@
 
 /// <p>Information on the identity that created the file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CreatedByInfo {
     /// <p>STS or IAM ARN representing the identity of API Caller. SDK users cannot populate this and this value is calculated automatically if <code>ConnectUserArn</code> is not provided.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a text extract in a chat response that can be attributed to a source document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TextSegment {
     /// <p>The zero-based location in the response string where the source attribution starts.</p>

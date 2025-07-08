@@ -2,6 +2,8 @@
 
 /// <p>The response elements represent the output of a SQL statement over an array of data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchExecuteStatementOutput {
     /// <p>The execution results of each batch entry.</p>

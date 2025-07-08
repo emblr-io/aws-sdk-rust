@@ -2,6 +2,8 @@
 
 /// <p>The details of a single calculated attribute for a profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListCalculatedAttributeForProfileItem {
     /// <p>The unique name of the calculated attribute.</p>

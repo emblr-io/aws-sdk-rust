@@ -2,6 +2,8 @@
 
 /// <p>A structure used to provide information used to update a trigger. This object updates the previous trigger definition by overwriting it completely.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TriggerUpdate {
     /// <p>Reserved for future use.</p>

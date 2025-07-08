@@ -2,6 +2,8 @@
 
 /// <p>A container for object key name prefix and suffix filtering rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3KeyFilter {
     /// <p>A list of containers for the key-value pair that defines the criteria for the filter rule.</p>

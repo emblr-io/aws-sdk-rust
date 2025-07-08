@@ -2,6 +2,8 @@
 
 /// <p>Category of the <code>Place</code> returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Category {
     /// <p>The category ID.</p>

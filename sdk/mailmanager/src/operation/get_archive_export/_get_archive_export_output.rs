@@ -2,6 +2,8 @@
 
 /// <p>The response containing details of the specified archive export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveExportOutput {
     /// <p>The identifier of the archive the email export was performed from.</p>

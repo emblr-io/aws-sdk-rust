@@ -2,6 +2,8 @@
 
 /// <p>The list of information about logs to be enabled for the specified broker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingLogs {
     /// <p>Enables audit logging. Every user management action made using JMX or the ActiveMQ Web Console is logged.</p>

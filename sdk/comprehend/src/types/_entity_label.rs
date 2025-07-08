@@ -2,6 +2,8 @@
 
 /// <p>Specifies one of the label or labels that categorize the personally identifiable information (PII) entity being analyzed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityLabel {
     /// <p>The name of the label.</p>

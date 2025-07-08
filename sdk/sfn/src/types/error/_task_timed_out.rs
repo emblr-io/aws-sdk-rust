@@ -2,6 +2,8 @@
 
 /// <p>The task token has either expired or the task associated with the token has already been closed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskTimedOut {
     #[allow(missing_docs)] // documentation missing in model

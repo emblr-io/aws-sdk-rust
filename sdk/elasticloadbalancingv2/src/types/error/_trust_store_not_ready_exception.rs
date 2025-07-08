@@ -2,6 +2,8 @@
 
 /// <p>The specified trust store is not active.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrustStoreNotReadyException {
     #[allow(missing_docs)] // documentation missing in model

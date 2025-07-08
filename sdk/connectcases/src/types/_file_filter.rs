@@ -2,6 +2,8 @@
 
 /// <p>A filter for related items of type <code>File</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileFilter {
     /// <p>The Amazon Resource Name (ARN) of the file.</p>

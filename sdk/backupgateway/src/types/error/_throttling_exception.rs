@@ -2,6 +2,8 @@
 
 /// <p>TPS has been limited to protect against intentional or unintentional high request volumes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThrottlingException {
     /// <p>Error: TPS has been limited to protect against intentional or unintentional high request volumes.</p>

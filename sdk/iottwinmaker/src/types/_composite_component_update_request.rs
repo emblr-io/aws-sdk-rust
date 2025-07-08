@@ -2,6 +2,8 @@
 
 /// <p>An object that sets information about the composite component update request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositeComponentUpdateRequest {
     /// <p>The update type of the component update request.</p>

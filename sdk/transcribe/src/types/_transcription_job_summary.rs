@@ -2,6 +2,8 @@
 
 /// <p>Provides detailed information about a specific transcription job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TranscriptionJobSummary {
     /// <p>The name of the transcription job. Job names are case sensitive and must be unique within an Amazon Web Services account.</p>

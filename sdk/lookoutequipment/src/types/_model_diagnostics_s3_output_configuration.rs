@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 location for the pointwise model diagnostics for an Amazon Lookout for Equipment model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelDiagnosticsS3OutputConfiguration {
     /// <p>The name of the Amazon S3 bucket where the pointwise model diagnostics are located. You must be the owner of the Amazon S3 bucket.</p>

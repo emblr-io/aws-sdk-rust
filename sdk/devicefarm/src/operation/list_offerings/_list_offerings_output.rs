@@ -2,6 +2,8 @@
 
 /// <p>Represents the return values of the list of offerings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListOfferingsOutput {
     /// <p>A value that represents the list offering results.</p>

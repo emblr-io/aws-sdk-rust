@@ -2,6 +2,8 @@
 
 /// <p>Specifies network configuration information for the gateway associated with the Amazon FSx file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointNetworkConfiguration {
     /// <p>A list of gateway IP addresses on which the associated Amazon FSx file system is available.</p><note>

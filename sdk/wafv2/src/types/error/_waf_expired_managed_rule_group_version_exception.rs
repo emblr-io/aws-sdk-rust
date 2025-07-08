@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because the specified version for the managed rule group has expired. You can retrieve the available versions for the managed rule group by calling <code>ListAvailableManagedRuleGroupVersions</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WafExpiredManagedRuleGroupVersionException {
     #[allow(missing_docs)] // documentation missing in model

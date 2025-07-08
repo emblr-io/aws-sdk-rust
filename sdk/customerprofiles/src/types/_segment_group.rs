@@ -2,6 +2,8 @@
 
 /// <p>Contains all groups of the segment definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SegmentGroup {
     /// <p>Holds the list of groups within the segment definition.</p>

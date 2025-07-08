@@ -2,6 +2,8 @@
 
 /// <p>Describes a virtual tape.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TapeInfo {
     /// <p>The Amazon Resource Name (ARN) of a virtual tape.</p>

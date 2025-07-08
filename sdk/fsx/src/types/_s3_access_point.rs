@@ -2,6 +2,8 @@
 
 /// <p>Describes the S3 access point configuration of the S3 access point attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3AccessPoint {
     /// <p>he S3 access point's ARN.</p>

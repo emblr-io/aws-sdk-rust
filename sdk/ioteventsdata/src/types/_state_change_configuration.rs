@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration information of alarm state changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StateChangeConfiguration {
     /// <p>The trigger type. If the value is <code>SNOOZE_TIMEOUT</code>, the snooze duration ends and the alarm automatically changes to the <code>NORMAL</code> state.</p>

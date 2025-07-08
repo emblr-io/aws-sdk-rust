@@ -2,6 +2,8 @@
 
 /// <p>Specifies filters to apply to an allowed action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionFilterConfiguration {
     /// <p>Enables filtering of responses based on document attributes or metadata fields.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An individual metric that you can use for comparison as you evaluate your monitoring results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BaselineMetric {
     /// <p>The name of the metric.</p>

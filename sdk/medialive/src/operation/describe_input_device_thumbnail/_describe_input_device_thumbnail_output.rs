@@ -2,9 +2,12 @@
 
 /// Placeholder documentation for DescribeInputDeviceThumbnailResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct DescribeInputDeviceThumbnailOutput {
     /// The binary data for the thumbnail that the Link device has most recently sent to MediaLive.
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub body: ::aws_smithy_types::byte_stream::ByteStream,
     /// Specifies the media type of the thumbnail.
     pub content_type: ::std::option::Option<crate::types::ContentType>,

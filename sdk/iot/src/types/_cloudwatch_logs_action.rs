@@ -2,6 +2,8 @@
 
 /// <p>Describes an action that sends data to CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudwatchLogsAction {
     /// <p>The IAM role that allows access to the CloudWatch log.</p>

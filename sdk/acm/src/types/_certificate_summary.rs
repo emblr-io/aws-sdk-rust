@@ -2,6 +2,8 @@
 
 /// <p>This structure is returned in the response object of <code>ListCertificates</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateSummary {
     /// <p>Amazon Resource Name (ARN) of the certificate. This is of the form:</p>

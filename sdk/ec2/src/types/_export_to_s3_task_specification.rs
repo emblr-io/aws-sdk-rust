@@ -2,6 +2,8 @@
 
 /// <p>Describes an export instance task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportToS3TaskSpecification {
     /// <p>The format for the exported image.</p>

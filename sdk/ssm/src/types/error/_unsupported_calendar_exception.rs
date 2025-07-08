@@ -2,6 +2,8 @@
 
 /// <p>The calendar entry contained in the specified SSM document isn't supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedCalendarException {
     #[allow(missing_docs)] // documentation missing in model

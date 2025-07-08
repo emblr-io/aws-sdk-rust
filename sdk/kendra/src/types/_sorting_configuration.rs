@@ -16,6 +16,8 @@
 /// <p>String list value</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SortingConfiguration {
     /// <p>The name of the document attribute used to sort the response. You can use any field that has the <code>Sortable</code> flag set to true.</p>

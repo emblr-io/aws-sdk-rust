@@ -22,6 +22,8 @@
 /// _raw
 /// </payload-field></code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DynamoDbAction {
     /// <p>The data type for the hash key (also called the partition key). You can specify the following values:</p>

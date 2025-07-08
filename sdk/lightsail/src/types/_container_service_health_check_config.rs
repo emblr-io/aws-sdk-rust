@@ -2,6 +2,8 @@
 
 /// <p>Describes the health check configuration of an Amazon Lightsail container service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerServiceHealthCheckConfig {
     /// <p>The number of consecutive health checks successes required before moving the container to the <code>Healthy</code> state. The default value is <code>2</code>.</p>

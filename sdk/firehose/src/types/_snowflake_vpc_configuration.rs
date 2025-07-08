@@ -2,6 +2,8 @@
 
 /// <p>Configure a Snowflake VPC</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SnowflakeVpcConfiguration {
     /// <p>The VPCE ID for Firehose to privately connect with Snowflake. The ID format is com.amazonaws.vpce.\[region\].vpce-svc-&lt;\[id\]&gt;. For more information, see Amazon PrivateLink &amp; Snowflake</p>

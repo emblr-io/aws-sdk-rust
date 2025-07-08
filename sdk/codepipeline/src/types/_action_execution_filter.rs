@@ -2,6 +2,8 @@
 
 /// <p>Filter values for the action execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecutionFilter {
     /// <p>The pipeline execution ID used to filter action execution history.</p>

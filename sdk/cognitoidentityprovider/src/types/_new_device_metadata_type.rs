@@ -2,6 +2,8 @@
 
 /// <p>Information that your user pool responds with in <code>AuthenticationResult</code>when you configure it to remember devices and a user signs in with an unrecognized device. Amazon Cognito presents a new device key that you can use to set up <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-device-tracking.html">device authentication</a> in a "Remember me on this device" authentication model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NewDeviceMetadataType {
     /// <p>The device key, an identifier used in generating the <code>DEVICE_PASSWORD_VERIFIER</code> for device SRP authentication.</p>

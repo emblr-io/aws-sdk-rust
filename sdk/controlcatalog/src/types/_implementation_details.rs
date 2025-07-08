@@ -15,6 +15,8 @@
 /// <p>For example, <code>AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</code> <b>or</b> <code>AWS::CloudFormation::Type::HOOK</code> have the format with four segments.</p>
 /// <p>Although the format is similar, the values for the <code>Type</code> field do not match any Amazon Web Services CloudFormation values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImplementationDetails {
     /// <p>A string that describes a control's implementation type.</p>

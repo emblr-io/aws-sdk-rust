@@ -2,6 +2,8 @@
 
 /// <p>Represents an Amazon Virtual Private Cloud (VPC) endpoint configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpceConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the VPC endpoint configuration.</p>

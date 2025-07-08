@@ -2,6 +2,8 @@
 
 /// <p>Defines a Speech Synthesis Markup Language (SSML) prompt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SsmlMessage {
     /// <p>The SSML text that defines the prompt.</p>

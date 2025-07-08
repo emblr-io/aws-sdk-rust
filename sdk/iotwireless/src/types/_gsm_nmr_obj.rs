@@ -2,6 +2,8 @@
 
 /// <p>GSM object for network measurement reports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GsmNmrObj {
     /// <p>GSM base station identity code (BSIC).</p>

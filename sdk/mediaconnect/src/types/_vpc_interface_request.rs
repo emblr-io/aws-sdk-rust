@@ -2,6 +2,8 @@
 
 /// <p>The details of the VPC interfaces that you want to add to the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcInterfaceRequest {
     /// <p>The name for the VPC interface. This name must be unique within the flow.</p>

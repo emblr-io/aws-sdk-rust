@@ -2,6 +2,8 @@
 
 /// <p>The name and ARN of the admin for the <code>AppInstance</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppInstanceAdmin {
     /// <p>The <code>AppInstanceAdmin</code> data.</p>

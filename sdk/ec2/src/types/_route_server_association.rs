@@ -3,6 +3,8 @@
 /// <p>Describes the association between a route server and a VPC.</p>
 /// <p>A route server association is the connection established between a route server and a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteServerAssociation {
     /// <p>The ID of the associated route server.</p>

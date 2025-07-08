@@ -2,6 +2,8 @@
 
 /// <p>An object representing a configuration of thumbnails for recorded video for a <code>Composition</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositionThumbnailConfiguration {
     /// <p>The targeted thumbnail-generation interval in seconds. Default: 60.</p>

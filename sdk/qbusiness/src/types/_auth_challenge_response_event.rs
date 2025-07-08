@@ -2,6 +2,8 @@
 
 /// <p>An authentication verification event response by a third party authentication server to Amazon Q Business.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthChallengeResponseEvent {
     /// <p>The mapping of key-value pairs in an authentication challenge response.</p>

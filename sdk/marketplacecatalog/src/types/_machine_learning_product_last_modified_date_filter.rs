@@ -2,6 +2,8 @@
 
 /// <p>The filter for machine learning product last modified date.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MachineLearningProductLastModifiedDateFilter {
     /// <p>A date range to filter by. The operation returns machine learning products with last modified dates that fall within this range.</p>

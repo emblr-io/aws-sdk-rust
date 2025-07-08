@@ -2,6 +2,8 @@
 
 /// <p>Properties of a conversion job</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversionProperties {
     /// <p>A mapping between the volumes being converted and the converted snapshot ids</p>

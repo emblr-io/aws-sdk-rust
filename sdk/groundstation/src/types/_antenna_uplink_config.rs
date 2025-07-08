@@ -2,6 +2,8 @@
 
 /// <p>Information about the uplink <code>Config</code> of an antenna.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AntennaUplinkConfig {
     /// <p>Whether or not uplink transmit is disabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The response to the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveRuleOutput {
     /// <p>Contains information about an archive rule. Archive rules automatically archive new findings that meet the criteria you define when you create the rule.</p>

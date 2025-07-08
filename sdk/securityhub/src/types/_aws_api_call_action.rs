@@ -2,6 +2,8 @@
 
 /// <p>Provided if <code>ActionType</code> is <code>AWS_API_CALL</code>. It provides details about the API call that was detected.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsApiCallAction {
     /// <p>The name of the API method that was issued.</p>

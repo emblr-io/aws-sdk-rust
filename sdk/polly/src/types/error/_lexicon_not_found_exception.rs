@@ -3,6 +3,8 @@
 /// <p>Amazon Polly can't find the specified lexicon. This could be caused by a lexicon that is missing, its name is misspelled or specifying a lexicon that is in a different region.</p>
 /// <p>Verify that the lexicon exists, is in the region (see <code>ListLexicons</code>) and that you spelled its name is spelled correctly. Then try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LexiconNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The limit configuration of the visual display for an axis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemsLimitConfiguration {
     /// <p>The limit on how many items of a field are showed in the chart. For example, the number of slices that are displayed in a pie chart.</p>

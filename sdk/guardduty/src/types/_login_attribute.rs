@@ -2,6 +2,8 @@
 
 /// <p>Information about the login attempts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoginAttribute {
     /// <p>Indicates the user name which attempted to log in.</p>

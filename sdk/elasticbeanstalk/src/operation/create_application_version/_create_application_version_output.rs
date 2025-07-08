@@ -2,6 +2,8 @@
 
 /// <p>Result message wrapping a single description of an application version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateApplicationVersionOutput {
     /// <p>The <code>ApplicationVersionDescription</code> of the application version.</p>

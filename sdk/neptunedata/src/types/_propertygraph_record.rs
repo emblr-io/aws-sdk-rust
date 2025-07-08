@@ -2,6 +2,8 @@
 
 /// <p>Structure of a property graph record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertygraphRecord {
     /// <p>The time at which the commit for the transaction was requested, in milliseconds from the Unix epoch.</p>

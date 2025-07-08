@@ -2,6 +2,8 @@
 
 /// <p>A summary of the information about your continuous deployment policies.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousDeploymentPolicySummary {
     /// <p>The continuous deployment policy.</p>

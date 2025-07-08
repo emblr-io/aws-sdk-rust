@@ -2,6 +2,8 @@
 
 /// OutputChannel mapping settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputChannelMapping {
     /// Use this setting to specify your remix values when they are integers, such as -10, 0, or 4.

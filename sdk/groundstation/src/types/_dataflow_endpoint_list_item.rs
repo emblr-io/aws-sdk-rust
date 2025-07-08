@@ -2,6 +2,8 @@
 
 /// <p>Item in a list of <code>DataflowEndpoint</code> groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataflowEndpointListItem {
     /// <p>UUID of a dataflow endpoint group.</p>

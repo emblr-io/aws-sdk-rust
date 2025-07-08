@@ -2,6 +2,8 @@
 
 /// <p>The start of a tool use block.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ToolUseBlockStart {
     /// <p>The ID for the tool request.</p>

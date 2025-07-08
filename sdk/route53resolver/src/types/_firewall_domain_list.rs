@@ -3,6 +3,8 @@
 /// <p>High-level information about a list of firewall domains for use in a <code>FirewallRule</code>. This is returned by <code>GetFirewallDomainList</code>.</p>
 /// <p>To retrieve the domains that are defined for this domain list, call <code>ListFirewallDomains</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallDomainList {
     /// <p>The ID of the domain list.</p>

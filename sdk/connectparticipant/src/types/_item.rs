@@ -2,6 +2,8 @@
 
 /// <p>An item - message or event - that has been sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Item {
     /// <p>The time when the message or event was sent.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified VPC and hosted zone are not currently associated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcAssociationNotFound {
     /// <p>The specified VPC or hosted zone weren't found.</p>

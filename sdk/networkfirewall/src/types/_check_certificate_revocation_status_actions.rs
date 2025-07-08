@@ -2,6 +2,8 @@
 
 /// <p>Defines the actions to take on the SSL/TLS connection if the certificate presented by the server in the connection has a revoked or unknown status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CheckCertificateRevocationStatusActions {
     /// <p>Configures how Network Firewall processes traffic when it determines that the certificate presented by the server in the SSL/TLS connection has a revoked status.</p>

@@ -3,6 +3,8 @@
 /// <p>Configuration details of the Amazon SQS queue for EventBridge to use as a dead-letter queue (DLQ).</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rule-event-delivery.html#eb-rule-dlq">Using dead-letter queues to process undelivered events</a> in the <i>EventBridge User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeadLetterConfig {
     /// <p>The ARN of the SQS queue specified as the target for the dead-letter queue.</p>

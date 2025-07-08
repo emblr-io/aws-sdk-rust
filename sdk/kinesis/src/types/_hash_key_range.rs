@@ -2,6 +2,8 @@
 
 /// <p>The range of possible hash key values for the shard, which is a set of ordered contiguous positive integers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HashKeyRange {
     /// <p>The starting hash key of the hash key range.</p>

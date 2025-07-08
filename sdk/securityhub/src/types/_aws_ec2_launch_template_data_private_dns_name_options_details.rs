@@ -2,6 +2,8 @@
 
 /// <p>Describes the options for Amazon EC2 instance hostnames.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetails {
     /// <p>Indicates whether to respond to DNS queries for instance hostnames with DNS AAAA records.</p>

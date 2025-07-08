@@ -2,6 +2,8 @@
 
 /// <p>Information about the summary of an event variable that was evaluated for generating prediction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EventVariableSummary {
     /// <p>The event variable name.</p>

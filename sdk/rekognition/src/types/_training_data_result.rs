@@ -2,6 +2,8 @@
 
 /// <p>The data validation manifest created for the training dataset during model training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingDataResult {
     /// <p>The training data that you supplied.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The resource you're trying to access is unsupported on this Amazon Route 53 endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncompatibleVersion {
     #[allow(missing_docs)] // documentation missing in model

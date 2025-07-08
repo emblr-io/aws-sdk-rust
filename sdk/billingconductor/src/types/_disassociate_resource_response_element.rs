@@ -2,6 +2,8 @@
 
 /// <p>A resource disassociation result for a percentage custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisassociateResourceResponseElement {
     /// <p>The resource ARN that was disassociated from the custom line item.</p>

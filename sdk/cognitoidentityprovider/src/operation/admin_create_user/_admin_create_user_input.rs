@@ -2,6 +2,8 @@
 
 /// <p>Creates a new user in the specified user pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminCreateUserInput {
     /// <p>The ID of the user pool where you want to create a user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains list of scanned and skipped EBS volumes with details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsVolumeDetails {
     /// <p>List of EBS volumes that were scanned.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the configuration set you specified already contains a TrackingOptions object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingOptionsAlreadyExistsException {
     /// <p>Indicates that a TrackingOptions object already exists in the specified configuration set.</p>

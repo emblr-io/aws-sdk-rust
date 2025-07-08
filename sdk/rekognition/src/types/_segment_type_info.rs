@@ -2,6 +2,8 @@
 
 /// <p>Information about the type of a segment requested in a call to <code>StartSegmentDetection</code>. An array of <code>SegmentTypeInfo</code> objects is returned by the response from <code>GetSegmentDetection</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentTypeInfo {
     /// <p>The type of a segment (technical cue or shot detection).</p>

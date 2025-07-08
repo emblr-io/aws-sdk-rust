@@ -2,6 +2,8 @@
 
 /// <p>Represents the structure of actions and stages to be performed in the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineDeclaration {
     /// <p>The name of the pipeline.</p>

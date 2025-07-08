@@ -15,6 +15,8 @@
 /// <p>If you do not want to record <code>AWS::RDS::GlobalCluster</code> in all enabled Regions, use the <code>EXCLUSION_BY_RESOURCE_TYPES</code> or <code>INCLUSION_BY_RESOURCE_TYPES</code> recording strategy.</p>
 /// </important>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingGroup {
     /// <p>Specifies whether Config records configuration changes for all supported resource types, excluding the global IAM resource types.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A member account that was included in a request but for which the request could not be processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnprocessedAccount {
     /// <p>The Amazon Web Services account identifier of the member account that was not processed.</p>

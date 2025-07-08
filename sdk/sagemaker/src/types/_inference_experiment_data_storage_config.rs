@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 location and configuration for storing inference request and response data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceExperimentDataStorageConfig {
     /// <p>The Amazon S3 bucket where the inference request and response data is stored.</p>

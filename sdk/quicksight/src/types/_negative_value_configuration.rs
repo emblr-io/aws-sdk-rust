@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the negative value configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NegativeValueConfiguration {
     /// <p>Determines the display mode of the negative value configuration.</p>

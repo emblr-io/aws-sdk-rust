@@ -2,6 +2,8 @@
 
 /// <p>A <code>LambdaAuthorizerConfig</code> specifies how to authorize AppSync API access when using the <code>AWS_LAMBDA</code> authorizer mode. Be aware that an AppSync API can have only one Lambda authorizer configured at a time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaAuthorizerConfig {
     /// <p>The number of seconds a response should be cached for. The default is 0 seconds, which disables caching. If you don't specify a value for <code>authorizerResultTtlInSeconds</code>, the default value is used. The maximum value is one hour (3600 seconds). The Lambda function can override this by returning a <code>ttlOverride</code> key in its response.</p>

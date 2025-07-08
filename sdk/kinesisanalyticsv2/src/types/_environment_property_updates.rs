@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to the execution property groups for a Managed Service for Apache Flink application or a Studio notebook.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentPropertyUpdates {
     /// <p>Describes updates to the execution property groups.</p>

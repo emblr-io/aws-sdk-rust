@@ -2,6 +2,8 @@
 
 /// <p>The bound options (north, south, west, east) of the geospatial window options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialCoordinateBounds {
     /// <p>The latitude of the north bound of the geospatial coordinate bounds.</p>

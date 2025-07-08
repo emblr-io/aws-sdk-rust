@@ -2,6 +2,8 @@
 
 /// MediaLive will perform a failover if content is not detected in this input for the specified period.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputLossFailoverSettings {
     /// The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.

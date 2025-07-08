@@ -2,6 +2,8 @@
 
 /// <p>A string representing the status of DNSSEC signing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnssecStatus {
     /// <p>A string that represents the current hosted zone signing status.</p>

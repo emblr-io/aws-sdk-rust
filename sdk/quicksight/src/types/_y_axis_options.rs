@@ -2,6 +2,8 @@
 
 /// <p>The options that are available for a single Y axis in a chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct YAxisOptions {
     /// <p>The Y axis type to be used in the chart.</p>

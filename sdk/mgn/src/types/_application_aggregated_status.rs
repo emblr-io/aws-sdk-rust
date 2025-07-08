@@ -2,6 +2,8 @@
 
 /// <p>Application aggregated status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationAggregatedStatus {
     /// <p>Application aggregated status last update dateTime.</p>

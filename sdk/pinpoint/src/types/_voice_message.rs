@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for a one-time voice message that's sent directly to an endpoint through the voice channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceMessage {
     /// <p>The text of the script to use for the voice message.</p>

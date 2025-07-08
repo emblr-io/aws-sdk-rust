@@ -2,6 +2,8 @@
 
 /// <p>Stores the configuration information for a visual helper element for a form. A sectional element can be a header, a text block, or a divider. These elements are static and not associated with any data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SectionalElement {
     /// <p>The type of sectional element. Valid values are <code>Heading</code>, <code>Text</code>, and <code>Divider</code>.</p>

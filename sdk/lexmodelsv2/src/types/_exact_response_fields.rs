@@ -2,6 +2,8 @@
 
 /// <p>Contains the names of the fields used for an exact response to the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExactResponseFields {
     /// <p>The name of the field that contains the query made to the OpenSearch Service database.</p>

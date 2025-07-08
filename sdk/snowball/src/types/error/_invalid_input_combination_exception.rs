@@ -2,6 +2,8 @@
 
 /// <p>Job or cluster creation failed. One or more inputs were invalid. Confirm that the <code>CreateClusterRequest$SnowballType</code> value supports your <code>CreateJobRequest$JobType</code>, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInputCombinationException {
     #[allow(missing_docs)] // documentation missing in model

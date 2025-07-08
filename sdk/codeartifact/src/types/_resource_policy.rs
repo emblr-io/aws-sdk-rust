@@ -2,6 +2,8 @@
 
 /// <p>An CodeArtifact resource policy that contains a resource ARN, document details, and a revision.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicy {
     /// <p>The ARN of the resource associated with the resource policy</p>

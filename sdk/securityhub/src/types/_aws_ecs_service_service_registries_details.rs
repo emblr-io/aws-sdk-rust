@@ -2,6 +2,8 @@
 
 /// <p>Information about a service discovery registry to assign to the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsServiceServiceRegistriesDetails {
     /// <p>The container name value to use for the service discovery service.</p>

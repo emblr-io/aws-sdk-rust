@@ -2,6 +2,8 @@
 
 /// <p>Contains information about how ingested data is processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProcessingConfiguration {
     /// <p>Contains information about an audit log processing configuration.</p>

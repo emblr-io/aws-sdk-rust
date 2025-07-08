@@ -2,6 +2,8 @@
 
 /// Information about a bulk deployment. You cannot start a new bulk deployment while another one is still running or in a non-terminal state.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BulkDeployment {
     /// The ARN of the bulk deployment.

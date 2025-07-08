@@ -2,6 +2,8 @@
 
 /// <p>The catalog data for a repository. This data is publicly visible in the Amazon ECR Public Gallery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryCatalogData {
     /// <p>The short description of the repository.</p>

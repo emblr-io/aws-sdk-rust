@@ -2,6 +2,8 @@
 
 /// <p>Information about the instance and the AMI used to launch the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceImageMetadata {
     /// <p>The ID of the instance.</p>

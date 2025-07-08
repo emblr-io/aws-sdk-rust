@@ -2,6 +2,8 @@
 
 /// <p>Describes the options when creating an Amazon Web Services Verified Access trust provider using the <code>device</code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateVerifiedAccessTrustProviderDeviceOptions {
     /// <p>The ID of the tenant application with the device-identity provider.</p>

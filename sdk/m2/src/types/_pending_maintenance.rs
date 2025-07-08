@@ -2,6 +2,8 @@
 
 /// <p>The scheduled maintenance for a runtime engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingMaintenance {
     /// <p>The maintenance schedule for the runtime engine version.</p>

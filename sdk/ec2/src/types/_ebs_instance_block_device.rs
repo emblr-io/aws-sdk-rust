@@ -2,6 +2,8 @@
 
 /// <p>Describes a parameter used to set up an EBS volume in a block device mapping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsInstanceBlockDevice {
     /// <p>The time stamp when the attachment initiated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A list of events that changed the specified finding during the specified time period. Each record represents a single finding change event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingHistoryRecord {
     /// <p>Identifies which finding to get the finding history for.</p>

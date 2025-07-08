@@ -2,6 +2,8 @@
 
 /// <p>The metrics configuration for your event source. Use this configuration object to define which metrics you want your event source mapping to produce.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventSourceMappingMetricsConfig {
     /// <p>The metrics you want your event source mapping to produce. Include <code>EventCount</code> to receive event source mapping metrics related to the number of events processed by your event source mapping. For more information about these metrics, see <a href="https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics-types.html#event-source-mapping-metrics"> Event source mapping metrics</a>.</p>

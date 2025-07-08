@@ -2,6 +2,8 @@
 
 /// <p>Configure image tests for your pipeline build. Tests run after building the image, to verify that the AMI or container image is valid before distributing it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageTestsConfiguration {
     /// <p>Determines if tests should run after building the image. Image Builder defaults to enable tests to run following the image build, before image distribution.</p>

@@ -3,6 +3,8 @@
 /// <p>This processor parses a specified field in the original log event into key-value pairs.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-parseKeyValue"> parseKeyValue</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParseKeyValue {
     /// <p>Path to the field in the log event that will be parsed. Use dot notation to access child fields. For example, <code>store.book</code></p>

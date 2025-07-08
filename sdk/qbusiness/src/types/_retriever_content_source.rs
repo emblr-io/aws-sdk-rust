@@ -2,6 +2,8 @@
 
 /// <p>Specifies a retriever as the content source for a search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetrieverContentSource {
     /// <p>The unique identifier of the retriever to use as the content source.</p>

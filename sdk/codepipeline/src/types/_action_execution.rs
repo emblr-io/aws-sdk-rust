@@ -2,6 +2,8 @@
 
 /// <p>Represents information about the run of an action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecution {
     /// <p>ID of the workflow action execution in the current stage. Use the <code>GetPipelineState</code> action to retrieve the current action execution details of the current stage.</p><note>

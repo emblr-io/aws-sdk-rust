@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information of an alert's history.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringAlertHistorySummary {
     /// <p>The name of a monitoring schedule.</p>

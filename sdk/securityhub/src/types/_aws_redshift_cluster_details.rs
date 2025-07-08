@@ -2,6 +2,8 @@
 
 /// <p>Details about an Amazon Redshift cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterDetails {
     /// <p>Indicates whether major version upgrades are applied automatically to the cluster during the maintenance window.</p>

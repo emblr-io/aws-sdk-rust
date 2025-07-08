@@ -2,6 +2,8 @@
 
 /// <p>An object specifying the measure and method by which to sort the session analytics data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionDataSortBy {
     /// <p>The measure by which to sort the session analytics data.</p>

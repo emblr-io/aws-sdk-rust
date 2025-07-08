@@ -2,6 +2,8 @@
 
 /// <p>Contains details about PII entities and regular expressions to configure for the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailSensitiveInformationPolicyConfig {
     /// <p>A list of PII entities to configure to the guardrail.</p>

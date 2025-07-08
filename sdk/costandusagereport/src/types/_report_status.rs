@@ -2,6 +2,8 @@
 
 /// <p>A two element dictionary with a <code>lastDelivery</code> and <code>lastStatus</code> key whose values describe the date and status of the last delivered report for a particular report definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportStatus {
     /// <p>A timestamp that gives the date of a report delivery.</p>

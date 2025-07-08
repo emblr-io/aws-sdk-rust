@@ -2,6 +2,8 @@
 
 /// <p>A request to begin the verification process for an email identity (an email address or domain).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateEmailIdentityInput {
     /// <p>The email address or domain to verify.</p>

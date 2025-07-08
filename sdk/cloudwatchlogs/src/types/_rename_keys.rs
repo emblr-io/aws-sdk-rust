@@ -3,6 +3,8 @@
 /// <p>Use this processor to rename keys in a log event.</p>
 /// <p>For more information about this processor including examples, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Transformation.html#CloudWatch-Logs-Transformation-renameKeys"> renameKeys</a> in the <i>CloudWatch Logs User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RenameKeys {
     /// <p>An array of <code>RenameKeyEntry</code> objects, where each object contains the information about a single key to rename.</p>

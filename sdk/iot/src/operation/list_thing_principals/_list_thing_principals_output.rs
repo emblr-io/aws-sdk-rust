@@ -2,6 +2,8 @@
 
 /// <p>The output from the ListThingPrincipals operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListThingPrincipalsOutput {
     /// <p>The principals associated with the thing.</p>

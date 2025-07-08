@@ -2,6 +2,8 @@
 
 /// <p>Details about an email identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetEmailIdentityOutput {
     /// <p>The email identity type. Note: the <code>MANAGED_DOMAIN</code> identity type is not supported.</p>

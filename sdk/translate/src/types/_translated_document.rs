@@ -2,6 +2,8 @@
 
 /// <p>The translated content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TranslatedDocument {
     /// <p>The document containing the translated content.</p>

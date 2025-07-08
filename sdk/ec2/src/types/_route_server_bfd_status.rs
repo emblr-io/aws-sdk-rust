@@ -2,6 +2,8 @@
 
 /// <p>The current status of Bidirectional Forwarding Detection (BFD) for a BGP session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteServerBfdStatus {
     /// <p>The operational status of the BFD session.</p>

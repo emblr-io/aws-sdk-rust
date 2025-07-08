@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the delete run operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteRunInput {
     /// <p>The Amazon Resource Name (ARN) for the run to delete.</p>

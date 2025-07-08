@@ -2,6 +2,8 @@
 
 /// <p>An Amazon EC2 launch template Amazon Web Services PCS uses to launch compute nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLaunchTemplate {
     /// <p>The ID of the EC2 launch template to use to provision instances.</p>

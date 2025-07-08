@@ -2,6 +2,8 @@
 
 /// <p>A group of settings that are applied to the cluster in the future, or that are currently being applied.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PendingModifiedValues {
     /// <p>The new number of cache nodes for the cluster.</p>

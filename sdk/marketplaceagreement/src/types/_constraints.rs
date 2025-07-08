@@ -2,6 +2,8 @@
 
 /// <p>Defines limits on how the term can be configured by acceptors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Constraints {
     /// <p>Determines if buyers are allowed to select multiple dimensions in the rate card. The possible values are <code>Allowed</code> and <code>Disallowed</code>. The default value is <code>Allowed</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This data type is used as a response element in the <code>ListEventSubscriptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Subscription {
     /// <p>The ARN of the assessment template that is used during the event for which the SNS notification is sent.</p>

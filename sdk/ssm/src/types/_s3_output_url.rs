@@ -2,6 +2,8 @@
 
 /// <p>A URL for the Amazon Web Services Systems Manager (Systems Manager) bucket where you want to store the results of this request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3OutputUrl {
     /// <p>A URL for an S3 bucket where you want to store the results of this request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structure containing the size and type of the network attached storage (NAS_1) file system volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxNas1Configuration {
     /// <p>The type of the network attached storage.</p>

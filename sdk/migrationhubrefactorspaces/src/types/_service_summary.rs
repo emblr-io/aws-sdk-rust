@@ -2,6 +2,8 @@
 
 /// <p>A summary for the service as a response to <code>ListServices</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServiceSummary {
     /// <p>The unique identifier of the service.</p>

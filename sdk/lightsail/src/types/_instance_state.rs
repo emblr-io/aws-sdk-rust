@@ -2,6 +2,8 @@
 
 /// <p>Describes the virtual private server (or <i>instance</i>) status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceState {
     /// <p>The status code for the instance.</p>

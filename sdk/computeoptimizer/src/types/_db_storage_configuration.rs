@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the recommended RDS storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbStorageConfiguration {
     /// <p>The type of DB storage.</p>

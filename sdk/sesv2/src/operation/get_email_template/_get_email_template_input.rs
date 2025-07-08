@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to display the template object (which includes the subject line, HTML part and text part) for the template you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetEmailTemplateInput {
     /// <p>The name of the template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request from an end user signalling an intent to perform an Amazon Q Business plugin action during a streaming chat.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionExecutionEvent {
     /// <p>The identifier of the plugin for which the action is being requested.</p>

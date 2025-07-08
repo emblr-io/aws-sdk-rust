@@ -2,6 +2,8 @@
 
 /// <p>Details about a network path component that occurs before or after the current component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkHeader {
     /// <p>The protocol used for the component.</p>

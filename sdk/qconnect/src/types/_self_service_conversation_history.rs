@@ -2,6 +2,8 @@
 
 /// <p>The conversation history data to included in conversation context data before the Amazon Q in Connect session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SelfServiceConversationHistory {
     /// <p>The number of turn of the conversation history data.</p>

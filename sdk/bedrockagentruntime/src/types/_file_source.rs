@@ -2,6 +2,8 @@
 
 /// <p>The source file of the content contained in the wrapper object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileSource {
     /// <p>The source type of the files to attach.</p>

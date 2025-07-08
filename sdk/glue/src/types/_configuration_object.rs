@@ -2,6 +2,8 @@
 
 /// <p>Specifies the values that an admin sets for each job or session parameter configured in a Glue usage profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationObject {
     /// <p>A default value for the parameter.</p>

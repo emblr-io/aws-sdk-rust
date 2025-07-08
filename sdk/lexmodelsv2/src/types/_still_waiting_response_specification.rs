@@ -2,6 +2,8 @@
 
 /// <p>Defines the messages that Amazon Lex sends to a user to remind them that the bot is waiting for a response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StillWaitingResponseSpecification {
     /// <p>One or more message groups, each containing one or more messages, that define the prompts that Amazon Lex sends to the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanCondition {
     /// <p>Represents an <i>mapEqual</i> <b></b> condition to be applied to a single field when triggering for malware scan.</p>

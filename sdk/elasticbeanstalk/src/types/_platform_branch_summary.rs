@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a platform branch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlatformBranchSummary {
     /// <p>The name of the platform to which this platform branch belongs.</p>

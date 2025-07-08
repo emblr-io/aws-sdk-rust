@@ -8,6 +8,8 @@
 /// <p>The document to classify is semi-structured, but the classifier is a plain-text model.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WarningsListItem {
     /// <p>Page number in the input document.</p>

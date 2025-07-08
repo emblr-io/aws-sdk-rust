@@ -2,6 +2,8 @@
 
 /// <p>The identifier of an ApiKey used in a UsagePlan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportApiKeysOutput {
     /// <p>A list of all the ApiKey identifiers.</p>

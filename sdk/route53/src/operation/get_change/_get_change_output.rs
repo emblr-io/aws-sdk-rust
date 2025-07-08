@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the <code>ChangeInfo</code> element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetChangeOutput {
     /// <p>A complex type that contains information about the specified change batch.</p>

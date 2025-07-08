@@ -2,6 +2,8 @@
 
 /// <p>Isolines may contain multiple components, if these components are connected by ferry links. These components are returned as separate polygons while the ferry links are returned as connections.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IsolineConnection {
     /// <p>Index of the polygon corresponding to the "from" component of the connection. The polygon is available from <code>Isoline\[\].Geometries</code>.</p>

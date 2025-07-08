@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration information for the default behavior of the CRL Distribution Point (CDP) extension in certificates issued by your CA. This extension contains a link to download the CRL, so you can check whether a certificate has been revoked. To choose whether you want this extension omitted or not in certificates issued by your CA, you can set the <b>OmitExtension</b> parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrlDistributionPointExtensionConfiguration {
     /// <p>Configures whether the CRL Distribution Point extension should be populated with the default URL to the CRL. If set to <code>true</code>, then the CDP extension will not be present in any certificates issued by that CA unless otherwise specified through CSR or API passthrough.</p><note>

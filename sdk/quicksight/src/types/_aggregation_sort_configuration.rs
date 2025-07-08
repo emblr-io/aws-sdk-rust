@@ -2,6 +2,8 @@
 
 /// <p>The configuration options to sort aggregated values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationSortConfiguration {
     /// <p>The column that determines the sort order of aggregated values.</p>

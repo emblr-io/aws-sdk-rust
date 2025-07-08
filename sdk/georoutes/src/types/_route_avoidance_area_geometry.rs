@@ -2,6 +2,8 @@
 
 /// <p>Geometry of the area to be avoided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RouteAvoidanceAreaGeometry {
     /// <p>Geometry defined as a corridor - a LineString with a radius that defines the width of the corridor.</p>

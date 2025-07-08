@@ -2,6 +2,8 @@
 
 /// <p>Information about the contact evaluations where the key is the FormId, which is a unique identifier for the form.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactEvaluation {
     /// <p>The <code>FormId</code> of the contact evaluation.</p>

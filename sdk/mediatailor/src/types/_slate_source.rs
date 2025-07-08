@@ -2,6 +2,8 @@
 
 /// <p>Slate VOD source configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlateSource {
     /// <p>The name of the source location where the slate VOD source is stored.</p>

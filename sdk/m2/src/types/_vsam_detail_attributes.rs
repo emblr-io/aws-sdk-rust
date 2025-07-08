@@ -2,6 +2,8 @@
 
 /// <p>The attributes of a VSAM type data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VsamDetailAttributes {
     /// <p>The character set used by the data set. Can be ASCII, EBCDIC, or unknown.</p>

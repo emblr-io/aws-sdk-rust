@@ -2,6 +2,8 @@
 
 /// <p>Specifies summary information about the space sharing settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpaceSharingSettingsSummary {
     /// <p>Specifies the sharing type of the space.</p>

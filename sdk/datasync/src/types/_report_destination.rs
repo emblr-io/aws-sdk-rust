@@ -2,6 +2,8 @@
 
 /// <p>Specifies where DataSync uploads your <a href="https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html">task report</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportDestination {
     /// <p>Specifies the Amazon S3 bucket where DataSync uploads your task report.</p>

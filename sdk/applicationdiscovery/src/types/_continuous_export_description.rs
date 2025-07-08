@@ -2,6 +2,8 @@
 
 /// <p>A list of continuous export descriptions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousExportDescription {
     /// <p>The unique ID assigned to this export.</p>

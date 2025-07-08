@@ -2,6 +2,8 @@
 
 /// <p>Describes a bundle task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BundleTask {
     /// <p>The ID of the instance associated with this bundle task.</p>

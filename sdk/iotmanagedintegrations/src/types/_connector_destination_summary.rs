@@ -2,6 +2,8 @@
 
 /// <p>Structure containing summary information about a connector destination, which defines how a cloud-to-cloud connector connects to a customer's AWS account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorDestinationSummary {
     /// <p>The display name of the connector destination.</p>

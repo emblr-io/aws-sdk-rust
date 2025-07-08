@@ -2,6 +2,8 @@
 
 /// <p>The static value of the resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StaticValue {
     /// <p>A list of values. For example, the ARN of the assumed role.</p>

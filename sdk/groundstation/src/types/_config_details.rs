@@ -2,6 +2,8 @@
 
 /// <p>Details for certain <code>Config</code> object types in a contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ConfigDetails {
     /// <p>Details for antenna demod decode <code>Config</code> in a contact.</p>

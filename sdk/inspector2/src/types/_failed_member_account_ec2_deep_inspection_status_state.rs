@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about a member account in your organization that failed to activate Amazon Inspector deep inspection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedMemberAccountEc2DeepInspectionStatusState {
     /// <p>The unique identifier for the Amazon Web Services account of the organization member that failed to activate Amazon Inspector deep inspection.</p>

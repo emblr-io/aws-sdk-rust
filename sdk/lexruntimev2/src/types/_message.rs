@@ -2,6 +2,8 @@
 
 /// <p>Container for text that is returned to the customer..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Message {
     /// <p>The text of the message.</p>

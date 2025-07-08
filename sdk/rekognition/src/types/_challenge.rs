@@ -2,6 +2,8 @@
 
 /// <p>Describes the type and version of the challenge being used for the Face Liveness session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Challenge {
     /// <p>The type of the challenge being used for the Face Liveness session.</p>

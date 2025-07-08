@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for Network Firewall for a firewall policy that has a different <code>NetworkFirewallPolicyDescription</code> than is required by the Firewall Manager policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFirewallPolicyModifiedViolation {
     /// <p>The ID of the Network Firewall or VPC resource that's in violation.</p>

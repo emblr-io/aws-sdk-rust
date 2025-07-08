@@ -2,6 +2,8 @@
 
 /// <p>The deployment summary of an <code>EnabledControl</code> or <code>EnabledBaseline</code> resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnablementStatusSummary {
     /// <p>The deployment status of the enabled resource.</p>

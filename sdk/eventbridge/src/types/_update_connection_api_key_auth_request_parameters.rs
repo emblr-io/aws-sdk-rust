@@ -2,6 +2,8 @@
 
 /// <p>Contains the API key authorization parameters to use to update the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateConnectionApiKeyAuthRequestParameters {
     /// <p>The name of the API key to use for authorization.</p>

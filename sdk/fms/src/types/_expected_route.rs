@@ -2,6 +2,8 @@
 
 /// <p>Information about the expected route in the route table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpectedRoute {
     /// <p>Information about the IPv4 CIDR block.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the verification attributes of a single identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityVerificationAttributes {
     /// <p>The verification status of the identity: "Pending", "Success", "Failed", or "TemporaryFailure".</p>

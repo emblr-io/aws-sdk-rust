@@ -2,6 +2,8 @@
 
 /// <p>The option that determines the text display weight, or boldness.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FontWeight {
     /// <p>The lexical name for the level of boldness of the text display.</p>

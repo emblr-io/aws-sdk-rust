@@ -2,6 +2,8 @@
 
 /// <p>Gets a GatewayResponse of a specified response type on the given RestApi.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetGatewayResponseInput {
     /// <p>The string identifier of the associated RestApi.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a task that failed to submit during an execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TaskSubmitFailedEventDetails {
     /// <p>The service name of the resource in a task state.</p>

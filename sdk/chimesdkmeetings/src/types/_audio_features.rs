@@ -2,6 +2,8 @@
 
 /// <p>An optional category of meeting features that contains audio-specific configurations, such as operating parameters for Amazon Voice Focus.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioFeatures {
     /// <p>Makes echo reduction available to clients who connect to the meeting.</p>

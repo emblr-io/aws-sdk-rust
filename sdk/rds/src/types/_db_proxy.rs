@@ -3,6 +3,8 @@
 /// <p>The data structure representing a proxy managed by the RDS Proxy.</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBProxies</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbProxy {
     /// <p>The identifier for the proxy. This name must be unique for all proxies owned by your Amazon Web Services account in the specified Amazon Web Services Region.</p>

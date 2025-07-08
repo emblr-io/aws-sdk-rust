@@ -2,6 +2,8 @@
 
 /// <p>The response received when attempting to send the custom verification email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendCustomVerificationEmailOutput {
     /// <p>The unique message identifier returned from the <code>SendCustomVerificationEmail</code> operation.</p>

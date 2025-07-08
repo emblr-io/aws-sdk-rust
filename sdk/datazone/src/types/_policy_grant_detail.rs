@@ -2,6 +2,8 @@
 
 /// <p>The details of the policy grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PolicyGrantDetail {
     /// <p>Specifies that the policy grant is to be added to the members of the project.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The stop CIS message progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopCisMessageProgress {
     /// <p>The progress' total checks.</p>

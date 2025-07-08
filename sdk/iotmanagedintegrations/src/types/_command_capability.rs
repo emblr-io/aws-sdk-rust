@@ -2,6 +2,8 @@
 
 /// <p>The command capabilities added for the managed thing</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandCapability {
     /// <p>Describe the capability with an id.</p>

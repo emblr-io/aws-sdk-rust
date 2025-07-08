@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an API operation that an entity invoked for an affected resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiCallDetails {
     /// <p>The name of the operation that was invoked most recently and produced the finding.</p>

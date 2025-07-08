@@ -2,6 +2,8 @@
 
 /// <p>A representation of the new charge details that are associated with a percentage custom line item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateCustomLineItemPercentageChargeDetails {
     /// <p>The custom line item's new percentage value. This will be multiplied against the combined value of its associated resources to determine its charge value.</p>

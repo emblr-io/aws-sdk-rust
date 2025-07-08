@@ -2,6 +2,8 @@
 
 /// <p>The specified repository can't be found. Check the spelling of the specified repository and ensure that you're performing operations on the correct registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositoryNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

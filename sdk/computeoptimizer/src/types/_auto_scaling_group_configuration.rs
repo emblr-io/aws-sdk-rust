@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of an EC2 Auto Scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingGroupConfiguration {
     /// <p>The desired capacity, or number of instances, for the EC2 Auto Scaling group.</p>

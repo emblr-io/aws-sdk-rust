@@ -2,6 +2,8 @@
 
 /// <p>The text block to be evaluated by the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailTextBlock {
     /// <p>The input text details to be evaluated by the guardrail.</p>

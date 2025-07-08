@@ -2,6 +2,8 @@
 
 /// <p>Details for updating the topic replication of a replicator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicReplicationUpdate {
     /// <p>Whether to periodically configure remote topic ACLs to match their corresponding upstream topics.</p>

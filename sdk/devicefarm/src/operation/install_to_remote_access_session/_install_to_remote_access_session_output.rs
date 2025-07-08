@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server after AWS Device Farm makes a request to install to a remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstallToRemoteAccessSessionOutput {
     /// <p>An app to upload or that has been uploaded.</p>

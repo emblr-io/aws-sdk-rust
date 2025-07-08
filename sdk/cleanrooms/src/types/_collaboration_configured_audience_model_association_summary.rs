@@ -2,6 +2,8 @@
 
 /// <p>A summary of the configured audience model association in the collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationConfiguredAudienceModelAssociationSummary {
     /// <p>The Amazon Resource Name (ARN) of the configured audience model association.</p>

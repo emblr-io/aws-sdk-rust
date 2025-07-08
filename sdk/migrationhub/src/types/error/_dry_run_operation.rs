@@ -2,6 +2,8 @@
 
 /// <p>Exception raised to indicate a successfully authorized action when the <code>DryRun</code> flag is set to "true".</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DryRunOperation {
     #[allow(missing_docs)] // documentation missing in model

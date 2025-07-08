@@ -2,6 +2,8 @@
 
 /// <p>An object used to store information about the Type detected by Amazon Textract.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpenseType {
     /// <p>The word or line of text detected by Amazon Textract.</p>

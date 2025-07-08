@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes details for authentication that uses IAM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamAuthenticationMethod {
     /// <p>An IAM policy document in JSON.</p>

@@ -4,6 +4,8 @@
 /// <p>Node properties can't be specified for Amazon EKS based job definitions.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeProperties {
     /// <p>The number of nodes that are associated with a multi-node parallel job.</p>

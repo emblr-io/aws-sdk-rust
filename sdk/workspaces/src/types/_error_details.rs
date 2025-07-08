@@ -2,6 +2,8 @@
 
 /// <p>Describes in-depth details about the error. These details include the possible causes of the error and troubleshooting information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorDetails {
     /// <p>Indicates the error code returned.</p>

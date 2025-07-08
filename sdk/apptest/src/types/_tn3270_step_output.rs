@@ -2,6 +2,8 @@
 
 /// <p>Specifies a TN3270 step output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tn3270StepOutput {
     /// <p>The data set export location of the TN3270 step output.</p>

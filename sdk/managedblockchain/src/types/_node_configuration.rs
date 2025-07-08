@@ -2,6 +2,8 @@
 
 /// <p>Configuration properties of a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeConfiguration {
     /// <p>The Amazon Managed Blockchain instance type for the node.</p>

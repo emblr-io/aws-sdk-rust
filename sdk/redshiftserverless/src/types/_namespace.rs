@@ -2,6 +2,8 @@
 
 /// <p>A collection of database objects and users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Namespace {
     /// <p>The Amazon Resource Name (ARN) associated with a namespace.</p>

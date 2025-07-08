@@ -2,6 +2,8 @@
 
 /// <p>An object for you to specify your overrides for the recording mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingModeOverride {
     /// <p>A description that you provide for the override.</p>

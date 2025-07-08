@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the metadata associate with the content to ingest into a knowledge base. Choose a <code>type</code> and include the field that corresponds to it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentMetadata {
     /// <p>The type of the source source from which to add metadata.</p>

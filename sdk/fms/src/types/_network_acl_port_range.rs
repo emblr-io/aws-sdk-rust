@@ -2,6 +2,8 @@
 
 /// <p>TCP or UDP protocols: The range of ports the rule applies to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkAclPortRange {
     /// <p>The beginning port number of the range.</p>

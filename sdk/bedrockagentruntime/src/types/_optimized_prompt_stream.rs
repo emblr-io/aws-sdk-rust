@@ -2,6 +2,8 @@
 
 /// <p>The stream containing events in the prompt optimization process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum OptimizedPromptStream {
     /// <p>An event in which the prompt was analyzed in preparation for optimization.</p>

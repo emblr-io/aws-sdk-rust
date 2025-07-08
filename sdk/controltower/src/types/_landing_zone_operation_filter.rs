@@ -2,6 +2,8 @@
 
 /// <p>A filter object that lets you call <code>ListLandingZoneOperations</code> with a specific filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LandingZoneOperationFilter {
     /// <p>The set of landing zone operation types selected by the filter.</p>

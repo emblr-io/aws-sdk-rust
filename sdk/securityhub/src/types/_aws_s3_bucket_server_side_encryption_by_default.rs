@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default server-side encryption to apply to new objects in the bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketServerSideEncryptionByDefault {
     /// <p>Server-side encryption algorithm to use for the default encryption. Valid values are <code>aws: kms</code> or <code>AES256</code>.</p>

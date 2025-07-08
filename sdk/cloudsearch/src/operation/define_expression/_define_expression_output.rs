@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>DefineExpression</code> request. Contains the status of the newly-configured expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefineExpressionOutput {
     /// <p>The value of an <code>Expression</code> and its current status.</p>

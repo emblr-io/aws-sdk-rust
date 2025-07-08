@@ -3,6 +3,8 @@
 /// <p>The minimum and maximum amount of memory per vCPU, in GiB.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemoryGiBPerVCpu {
     /// <p>The minimum amount of memory per vCPU, in GiB. If this parameter is not specified, there is no minimum limit.</p>

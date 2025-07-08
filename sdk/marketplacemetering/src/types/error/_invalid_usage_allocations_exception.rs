@@ -2,6 +2,8 @@
 
 /// <p>Sum of allocated usage quantities is not equal to the usage quantity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidUsageAllocationsException {
     #[allow(missing_docs)] // documentation missing in model

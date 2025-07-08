@@ -2,6 +2,8 @@
 
 /// <p>Provides the parameters required for exporting a custom vocabulary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomVocabularyExportSpecification {
     /// <p>The identifier of the bot that contains the custom vocabulary to export.</p>

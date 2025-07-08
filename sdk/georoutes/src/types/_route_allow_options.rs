@@ -2,6 +2,8 @@
 
 /// <p>Features that are allowed while calculating a route.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteAllowOptions {
     /// <p>Allow Hot (High Occupancy Toll) lanes while calculating the route.</p>

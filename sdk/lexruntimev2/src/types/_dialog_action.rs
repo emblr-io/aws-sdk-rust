@@ -2,6 +2,8 @@
 
 /// <p>The next action that Amazon Lex V2 should take.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DialogAction {
     /// <p>The next action that the bot should take in its interaction with the user. The following values are possible:</p>

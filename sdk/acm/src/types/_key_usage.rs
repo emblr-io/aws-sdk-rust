@@ -2,6 +2,8 @@
 
 /// <p>The Key Usage X.509 v3 extension defines the purpose of the public key contained in the certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyUsage {
     /// <p>A string value that contains a Key Usage extension name.</p>

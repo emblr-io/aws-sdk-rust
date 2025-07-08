@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the remote port that was involved in an attempted network connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionRemotePortDetails {
     /// <p>The number of the port.</p>

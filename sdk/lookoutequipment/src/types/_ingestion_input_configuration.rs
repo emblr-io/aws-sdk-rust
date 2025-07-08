@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration information for the input data for the data ingestion job, including input data S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestionInputConfiguration {
     /// <p>The location information for the S3 bucket used for input data for the data ingestion.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The namespace isn't valid because the namespace doesn't exist. Provide a valid namespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidNamespaceFault {
     #[allow(missing_docs)] // documentation missing in model

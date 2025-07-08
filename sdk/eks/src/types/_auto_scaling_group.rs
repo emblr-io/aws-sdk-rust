@@ -2,6 +2,8 @@
 
 /// <p>An Auto Scaling group that is associated with an Amazon EKS managed node group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingGroup {
     /// <p>The name of the Auto Scaling group associated with an Amazon EKS managed node group.</p>

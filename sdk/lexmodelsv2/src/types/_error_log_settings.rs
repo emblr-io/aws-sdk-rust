@@ -2,6 +2,8 @@
 
 /// <p>Settings parameters for the error logs, whether it is enabled or disabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorLogSettings {
     /// <p>Settings parameters for the error logs, when it is enabled.</p>

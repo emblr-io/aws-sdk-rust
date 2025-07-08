@@ -2,6 +2,8 @@
 
 /// <p>The field used in the field priority deduplication strategy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowFieldPriorityDedupeField {
     /// <p>The name of the deduplication field. Must exist in the dataset and not be a primary key.</p>

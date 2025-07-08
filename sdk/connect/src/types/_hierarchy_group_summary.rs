@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about a hierarchy group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchyGroupSummary {
     /// <p>The identifier of the hierarchy group.</p>

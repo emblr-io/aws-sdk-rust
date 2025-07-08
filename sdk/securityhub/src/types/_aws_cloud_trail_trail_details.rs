@@ -2,6 +2,8 @@
 
 /// <p>Provides details about a CloudTrail trail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudTrailTrailDetails {
     /// <p>The ARN of the log group that CloudTrail logs are delivered to.</p>

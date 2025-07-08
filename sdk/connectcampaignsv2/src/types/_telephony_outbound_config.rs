@@ -2,6 +2,8 @@
 
 /// Default Telephony Outbound config
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TelephonyOutboundConfig {
     /// The identifier of the contact flow for the outbound call.

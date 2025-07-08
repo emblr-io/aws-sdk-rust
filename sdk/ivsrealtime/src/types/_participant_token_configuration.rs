@@ -2,6 +2,8 @@
 
 /// <p>Object specifying a participant token configuration in a stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParticipantTokenConfiguration {
     /// <p>Duration (in minutes), after which the corresponding participant token expires. Default: 720 (12 hours).</p>

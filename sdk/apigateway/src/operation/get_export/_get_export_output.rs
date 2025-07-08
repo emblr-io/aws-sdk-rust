@@ -2,6 +2,8 @@
 
 /// <p>The binary blob response to GetExport, which contains the generated SDK.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetExportOutput {
     /// <p>The content-type header value in the HTTP response. This will correspond to a valid 'accept' type in the request.</p>

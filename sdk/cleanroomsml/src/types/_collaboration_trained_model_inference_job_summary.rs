@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a trained model inference job in a collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationTrainedModelInferenceJobSummary {
     /// <p>The Amazon Resource Name (ARN) of the trained model inference job.</p>

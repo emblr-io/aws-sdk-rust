@@ -2,6 +2,8 @@
 
 /// <p>Represents a condition for a device pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Rule {
     /// <p>The rule's stringified attribute. For example, specify the value as <code>"\"abc\""</code>.</p>

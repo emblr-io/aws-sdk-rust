@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the specific model version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelVersionSummary {
     /// <p>The name of the model that this model version is a version of.</p>

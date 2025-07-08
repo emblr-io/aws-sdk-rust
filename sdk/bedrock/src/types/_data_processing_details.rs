@@ -2,6 +2,8 @@
 
 /// <p>For a Distillation job, the status details for the data processing sub-task of the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProcessingDetails {
     /// <p>The status of the data processing sub-task of the job.</p>

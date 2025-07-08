@@ -2,6 +2,8 @@
 
 /// <p>Specifies how WAF should handle <code>Challenge</code> evaluations. This is available at the web ACL level and in each rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChallengeConfig {
     /// <p>Determines how long a challenge timestamp in the token remains valid after the client successfully responds to a challenge.</p>

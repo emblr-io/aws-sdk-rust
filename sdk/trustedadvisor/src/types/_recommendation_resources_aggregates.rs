@@ -2,6 +2,8 @@
 
 /// <p>Aggregation of Recommendation Resources</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationResourcesAggregates {
     /// <p>The number of AWS resources that were flagged to be OK according to the Trusted Advisor check</p>

@@ -2,6 +2,8 @@
 
 /// <p>The statistics for a field calculated in the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldStats {
     /// <p>The minimum value found in the specified field in the result set.</p>

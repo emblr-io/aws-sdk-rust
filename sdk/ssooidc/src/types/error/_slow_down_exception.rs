@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the client is making the request too frequently and is more than the service can handle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlowDownException {
     /// <p>Single error code. For this exception the value will be <code>slow_down</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the metadata of a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ResourceMetadata {
     /// <p>The type of resource.</p>

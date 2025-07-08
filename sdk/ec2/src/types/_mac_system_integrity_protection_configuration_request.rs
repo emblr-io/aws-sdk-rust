@@ -2,6 +2,8 @@
 
 /// <p>Describes a custom configuration for a System Integrity Protection (SIP) modification task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MacSystemIntegrityProtectionConfigurationRequest {
     /// <p>Enables or disables Apple Internal.</p>

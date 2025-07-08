@@ -2,6 +2,8 @@
 
 /// <p>The indexing rule configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IndexingRuleValue {
     /// <p>Indexing rule configuration that is used to probabilistically sample traceIds.</p>

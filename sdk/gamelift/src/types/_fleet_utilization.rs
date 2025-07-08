@@ -2,6 +2,8 @@
 
 /// <p>Current resource utilization statistics in a specified fleet or location. The location value might refer to a fleet's remote location or its home region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetUtilization {
     /// <p>A unique identifier for the fleet associated with the location.</p>

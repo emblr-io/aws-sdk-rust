@@ -2,6 +2,8 @@
 
 /// <p>The action type that specifies an Amazon Redshift API operation that is supported by the Amazon Redshift scheduler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledActionType {
     /// <p>An action that runs a <code>ResizeCluster</code> API operation.</p>

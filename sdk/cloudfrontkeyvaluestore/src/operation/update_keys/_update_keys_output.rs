@@ -2,6 +2,8 @@
 
 /// <p>Metadata information about a Key Value Store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateKeysOutput {
     /// <p>Number of key value pairs in the Key Value Store after the successful update.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The action you attempted is not allowed unless Service Access with Service Quotas is enabled in your organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsServiceAccessNotEnabledException {
     #[allow(missing_docs)] // documentation missing in model

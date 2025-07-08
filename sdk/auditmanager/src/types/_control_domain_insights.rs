@@ -3,6 +3,8 @@
 /// <p>A summary of the latest analytics data for a specific control domain.</p>
 /// <p>Control domain insights are grouped by control domain, and ranked by the highest total count of non-compliant evidence.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ControlDomainInsights {
     /// <p>The name of the control domain.</p>

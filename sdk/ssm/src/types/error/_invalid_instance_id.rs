@@ -12,6 +12,8 @@
 /// <p>The managed node isn't in a valid state. Valid states are: <code>Running</code>, <code>Pending</code>, <code>Stopped</code>, and <code>Stopping</code>. Invalid states are: <code>Shutting-down</code> and <code>Terminated</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidInstanceId {
     #[allow(missing_docs)] // documentation missing in model

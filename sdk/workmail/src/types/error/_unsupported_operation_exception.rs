@@ -2,6 +2,8 @@
 
 /// <p>You can't perform a write operation against a read-only directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedOperationException {
     #[allow(missing_docs)] // documentation missing in model

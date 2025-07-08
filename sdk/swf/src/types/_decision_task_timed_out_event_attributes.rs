@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>DecisionTaskTimedOut</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecisionTaskTimedOutEventAttributes {
     /// <p>The type of timeout that expired before the decision task could be completed.</p>

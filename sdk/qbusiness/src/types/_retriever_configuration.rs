@@ -2,6 +2,8 @@
 
 /// <p>Provides information on how the retriever used for your Amazon Q Business application is configured.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RetrieverConfiguration {
     /// <p>Provides information on how the Amazon Kendra index used as a retriever for your Amazon Q Business application is configured.</p>

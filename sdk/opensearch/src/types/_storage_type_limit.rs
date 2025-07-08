@@ -2,6 +2,8 @@
 
 /// <p>Limits that are applicable for the given Amazon OpenSearch Service storage type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageTypeLimit {
     /// <p>Name of storage limits that are applicable for the given storage type. If <code>StorageType</code> is <code>ebs</code>, the following options are available:</p>

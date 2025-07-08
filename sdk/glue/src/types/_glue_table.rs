@@ -2,6 +2,8 @@
 
 /// <p>The database and table in the Glue Data Catalog that is used for input or output data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueTable {
     /// <p>A database name in the Glue Data Catalog.</p>

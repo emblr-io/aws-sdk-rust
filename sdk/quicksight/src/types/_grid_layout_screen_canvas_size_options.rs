@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the sizing of the canvas used in a grid layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GridLayoutScreenCanvasSizeOptions {
     /// <p>This value determines the layout behavior when the viewport is resized.</p>

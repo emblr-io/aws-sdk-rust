@@ -2,6 +2,8 @@
 
 /// <p>The result of calling the operation. The operation returns one object for each document that is successfully processed by the operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDetectDominantLanguageItemResult {
     /// <p>The zero-based index of the document in the input list.</p>

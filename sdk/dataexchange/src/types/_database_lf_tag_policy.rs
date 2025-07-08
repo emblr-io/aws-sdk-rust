@@ -2,6 +2,8 @@
 
 /// <p>The LF-tag policy for database resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseLfTagPolicy {
     /// <p>A list of LF-tag conditions that apply to database resources.</p>

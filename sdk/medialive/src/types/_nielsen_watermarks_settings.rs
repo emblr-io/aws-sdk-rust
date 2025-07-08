@@ -2,6 +2,8 @@
 
 /// Nielsen Watermarks Settings
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NielsenWatermarksSettings {
     /// Complete these fields only if you want to insert watermarks of type Nielsen CBET

@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the public key is malformed or otherwise invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPublicKeyException {
     #[allow(missing_docs)] // documentation missing in model

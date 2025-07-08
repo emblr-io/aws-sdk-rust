@@ -2,6 +2,8 @@
 
 /// <p>Indicates that a request to authorize a client with an access user session token is pending.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationPendingException {
     /// <p>Single error code. For this exception the value will be <code>authorization_pending</code>.</p>

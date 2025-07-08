@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of manual snapshots for the directory has been reached. You can use the <code>GetSnapshotLimits</code> operation to determine the snapshot limits for a directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotLimitExceededException {
     /// <p>The descriptive message for the exception.</p>

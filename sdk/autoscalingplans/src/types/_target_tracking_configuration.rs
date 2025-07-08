@@ -2,6 +2,8 @@
 
 /// <p>Describes a target tracking configuration to use with AWS Auto Scaling. Used with <code>ScalingInstruction</code> and <code>ScalingPolicy</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetTrackingConfiguration {
     /// <p>A predefined metric. You can specify either a predefined metric or a customized metric.</p>

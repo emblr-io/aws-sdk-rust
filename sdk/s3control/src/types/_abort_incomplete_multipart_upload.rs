@@ -2,6 +2,8 @@
 
 /// <p>The container for abort incomplete multipart upload</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbortIncompleteMultipartUpload {
     /// <p>Specifies the number of days after which Amazon S3 aborts an incomplete multipart upload to the Outposts bucket.</p>

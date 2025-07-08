@@ -2,6 +2,8 @@
 
 /// <p>Represents a JDBC database output object which defines the output destination for a DataBrew recipe job to write into.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseOutput {
     /// <p>The Glue connection that stores the connection information for the target database.</p>

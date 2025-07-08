@@ -2,6 +2,8 @@
 
 /// <p>The configuration information of the Amazon Connect data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectConfiguration {
     /// <p>The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.</p>

@@ -4,6 +4,8 @@
 /// <p>The returned geometry will always match the geometry format used when the geofence was created.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListGeofenceCollectionsResponseEntry {
     /// <p>The name of the geofence collection.</p>

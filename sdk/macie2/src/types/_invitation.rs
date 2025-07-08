@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Amazon Macie membership invitation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Invitation {
     /// <p>The Amazon Web Services account ID for the account that sent the invitation.</p>

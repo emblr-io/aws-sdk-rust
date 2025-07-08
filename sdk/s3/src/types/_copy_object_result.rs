@@ -2,6 +2,8 @@
 
 /// <p>Container for all response elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CopyObjectResult {
     /// <p>Returns the ETag of the new object. The ETag reflects only changes to the contents of an object, not its metadata.</p>

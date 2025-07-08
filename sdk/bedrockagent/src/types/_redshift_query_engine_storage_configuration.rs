@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for Amazon Redshift data storage. Specify the data storage service to use in the <code>type</code> field and include the corresponding field. For more information, see <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-build-structured.html">Build a knowledge base by connecting to a structured data source</a> in the Amazon Bedrock User Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftQueryEngineStorageConfiguration {
     /// <p>The data storage service to use.</p>

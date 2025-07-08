@@ -2,6 +2,8 @@
 
 /// <p>Contains the results of the <code>CreateSnapshot</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSnapshotOutput {
     /// <p>The identifier of the snapshot that was created.</p>

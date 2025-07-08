@@ -2,6 +2,8 @@
 
 /// <p>An object representing the metadata and configuration settings of EKS Anywhere on the Snow Family device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksOnDeviceServiceConfiguration {
     /// <p>The Kubernetes version for EKS Anywhere on the Snow Family device.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the response information for the <code>AssociateVPCWithHostedZone</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociateVpcWithHostedZoneOutput {
     /// <p>A complex type that describes the changes made to your hosted zone.</p>

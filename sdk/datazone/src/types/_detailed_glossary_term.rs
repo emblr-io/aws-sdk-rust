@@ -2,6 +2,8 @@
 
 /// <p>Details of a glossary term attached to the inventory asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DetailedGlossaryTerm {
     /// <p>The name of a glossary term attached to the inventory asset.</p>

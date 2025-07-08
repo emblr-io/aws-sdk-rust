@@ -2,6 +2,8 @@
 
 /// <p>Details of the SAP HANA system replication for the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Resilience {
     /// <p>The tier of the component.</p>

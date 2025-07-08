@@ -2,6 +2,8 @@
 
 /// <p>The location of artifacts for an AutoML candidate job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CandidateArtifactLocations {
     /// <p>The Amazon S3 prefix to the explainability artifacts generated for the AutoML candidate.</p>

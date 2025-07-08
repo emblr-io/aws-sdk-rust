@@ -2,6 +2,8 @@
 
 /// <p>A filter used to return specific types of test cases. In order to pass the filter, the report must meet all of the filter properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestCaseFilter {
     /// <p>The status used to filter test cases. A <code>TestCaseFilter</code> can have one status. Valid values are:</p>

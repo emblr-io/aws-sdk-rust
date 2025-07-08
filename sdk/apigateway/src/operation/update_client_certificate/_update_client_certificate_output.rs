@@ -2,6 +2,8 @@
 
 /// <p>Represents a client certificate used to configure client-side SSL authentication while sending requests to the integration endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateClientCertificateOutput {
     /// <p>The identifier of the client certificate.</p>

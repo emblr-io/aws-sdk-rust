@@ -2,6 +2,8 @@
 
 /// <p>Contains the bucket name, file format, bucket owner (optional), and prefix (optional) where inventory results are published.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryS3BucketDestination {
     /// <p>The account ID that owns the destination S3 bucket. If no account ID is provided, the owner is not validated before exporting data.</p><note>

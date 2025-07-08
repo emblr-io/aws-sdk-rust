@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Chime SDK Voice Connector configuration, including outbound host name and encryption settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceConnector {
     /// <p>The Voice Connector's ID.</p>

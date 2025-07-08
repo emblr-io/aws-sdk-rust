@@ -2,6 +2,8 @@
 
 /// <p>Metadata describing a particular ephemeris.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EphemerisMetaData {
     /// <p>The <code>EphemerisSource</code> that generated a given ephemeris.</p>

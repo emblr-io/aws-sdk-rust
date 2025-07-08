@@ -5,6 +5,8 @@
 /// <p>If a file meets the last accessed time criteria, its file or directory path must also be specified with the <code>Paths</code> parameter of the operation in order for the file to be released.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReleaseConfiguration {
     /// <p>Defines the point-in-time since an exported file was last accessed, in order for that file to be eligible for release. Only files that were last accessed before this point-in-time are eligible to be released from the file system.</p>

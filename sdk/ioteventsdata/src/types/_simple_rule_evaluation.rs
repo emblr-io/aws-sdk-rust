@@ -2,6 +2,8 @@
 
 /// <p>Information needed to compare two values with a comparison operator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimpleRuleEvaluation {
     /// <p>The value of the input property, on the left side of the comparison operator.</p>

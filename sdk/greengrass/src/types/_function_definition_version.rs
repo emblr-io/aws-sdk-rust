@@ -2,6 +2,8 @@
 
 /// Information about a function definition version.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionDefinitionVersion {
     /// The default configuration that applies to all Lambda functions in this function definition version. Individual Lambda functions can override these settings.

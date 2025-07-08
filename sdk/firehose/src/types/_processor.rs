@@ -4,6 +4,8 @@
 /// <p>If you want to add a new line delimiter between records in objects that are delivered to Amazon S3, choose <code>AppendDelimiterToRecord</code> as a processor type. You don’t have to put a processor parameter when you select <code>AppendDelimiterToRecord</code>.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Processor {
     /// <p>The type of processor.</p>

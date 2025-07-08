@@ -2,6 +2,8 @@
 
 /// <p>The Amazon CloudWatch Logs configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogConfig {
     /// <p>The field logging level. Values can be NONE, ERROR, or ALL.</p>

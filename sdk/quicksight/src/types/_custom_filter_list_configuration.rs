@@ -2,6 +2,8 @@
 
 /// <p>A list of custom filter values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomFilterListConfiguration {
     /// <p>The match operator that is used to determine if a filter should be applied.</p>

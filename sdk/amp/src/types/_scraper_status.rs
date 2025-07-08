@@ -2,6 +2,8 @@
 
 /// <p>The <code>ScraperStatus</code> structure contains status information about the scraper.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScraperStatus {
     /// <p>The current status of the scraper.</p>

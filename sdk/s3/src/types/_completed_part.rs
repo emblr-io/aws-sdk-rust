@@ -2,6 +2,8 @@
 
 /// <p>Details of the parts that were uploaded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompletedPart {
     /// <p>Entity tag returned when the part was uploaded.</p>

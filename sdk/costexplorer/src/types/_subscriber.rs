@@ -2,6 +2,8 @@
 
 /// <p>The recipient of <code>AnomalySubscription</code> notifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Subscriber {
     /// <p>The email address or SNS Amazon Resource Name (ARN). This depends on the <code>Type</code>.</p>

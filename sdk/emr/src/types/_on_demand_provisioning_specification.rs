@@ -4,6 +4,8 @@
 /// <p>The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions. On-Demand Instances allocation strategy is available in Amazon EMR releases 5.12.1 and later.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnDemandProvisioningSpecification {
     /// <p>Specifies the strategy to use in launching On-Demand instance fleets. Available options are <code>lowest-price</code> and <code>prioritized</code>. <code>lowest-price</code> specifies to launch the instances with the lowest price first, and <code>prioritized</code> specifies that Amazon EMR should launch the instances with the highest priority first. The default is <code>lowest-price</code>.</p>

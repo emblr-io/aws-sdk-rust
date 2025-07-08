@@ -2,6 +2,8 @@
 
 /// <p>A request to delete an <code>XssMatchSet</code> from AWS WAF.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteXssMatchSetInput {
     /// <p>The <code>XssMatchSetId</code> of the <code>XssMatchSet</code> that you want to delete. <code>XssMatchSetId</code> is returned by <code>CreateXssMatchSet</code> and by <code>ListXssMatchSets</code>.</p>

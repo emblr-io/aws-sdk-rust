@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about one link attached to this monitoring account sink.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAttachedLinksItem {
     /// <p>The label that was assigned to this link at creation, with the variables resolved to their actual values.</p>

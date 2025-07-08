@@ -2,6 +2,8 @@
 
 /// <p>A summary of a field-level encryption item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldLevelEncryptionSummary {
     /// <p>The unique ID of a field-level encryption item.</p>

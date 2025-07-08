@@ -2,6 +2,8 @@
 
 /// <p>Response for GetSubscriptionAttributes action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSubscriptionAttributesOutput {
     /// <p>A map of the subscription's attributes. Attributes in this map include the following:</p>

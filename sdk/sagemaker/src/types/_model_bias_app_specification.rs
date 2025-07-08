@@ -2,6 +2,8 @@
 
 /// <p>Docker container image configuration object for the model bias job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelBiasAppSpecification {
     /// <p>The container image to be run by the model bias job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration information to connect to SharePoint as your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SharePointDataSourceConfiguration {
     /// <p>The endpoint information to connect to your SharePoint data source.</p>

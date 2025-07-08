@@ -2,6 +2,8 @@
 
 /// <p>End user feedback on an AI-generated web experience chat message usefulness.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageUsefulnessFeedback {
     /// <p>The usefulness value assigned by an end user to a message.</p>

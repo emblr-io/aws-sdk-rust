@@ -2,6 +2,8 @@
 
 /// <p>Represents the metadata of a device offering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Offering {
     /// <p>The ID that corresponds to a device offering.</p>

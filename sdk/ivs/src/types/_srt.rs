@@ -2,6 +2,8 @@
 
 /// <p>Specifies information needed to stream using the SRT protocol.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Srt {
     /// <p>The endpoint to be used when streaming with IVS using the SRT protocol.</p>

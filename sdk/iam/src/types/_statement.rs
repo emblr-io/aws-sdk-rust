@@ -3,6 +3,8 @@
 /// <p>Contains a reference to a <code>Statement</code> element in a policy document that determines the result of the simulation.</p>
 /// <p>This data type is used by the <code>MatchedStatements</code> member of the <code> <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_EvaluationResult.html">EvaluationResult</a> </code> type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Statement {
     /// <p>The identifier of the policy that was provided as an input.</p>

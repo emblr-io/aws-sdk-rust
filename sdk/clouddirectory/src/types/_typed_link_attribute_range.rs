@@ -2,6 +2,8 @@
 
 /// <p>Identifies the range of attributes that are used by a specified filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TypedLinkAttributeRange {
     /// <p>The unique name of the typed link attribute.</p>

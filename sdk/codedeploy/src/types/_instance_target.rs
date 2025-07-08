@@ -2,6 +2,8 @@
 
 /// <p>A target Amazon EC2 or on-premises instance during a deployment that uses the EC2/On-premises compute platform.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceTarget {
     /// <p>The unique ID of a deployment.</p>

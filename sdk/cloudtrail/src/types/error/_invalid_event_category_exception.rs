@@ -2,6 +2,8 @@
 
 /// <p>Occurs if an event category that is not valid is specified as a value of <code>EventCategory</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidEventCategoryException {
     /// <p>Brief description of the exception returned by the request.</p>

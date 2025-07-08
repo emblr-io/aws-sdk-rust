@@ -2,6 +2,8 @@
 
 /// <p>The requested resources was not found. The resource was either not created yet or deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotFoundException {
     #[allow(missing_docs)] // documentation missing in model

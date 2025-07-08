@@ -2,6 +2,8 @@
 
 /// <p>The display options for the visual tooltip.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooltipOptions {
     /// <p>Determines whether or not the tooltip is visible.</p>

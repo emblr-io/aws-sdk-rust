@@ -2,6 +2,8 @@
 
 /// <p>An analysis rule for a configured table association. This analysis rule specifies how data from the table can be used within its associated collaboration. In the console, the <code>ConfiguredTableAssociationAnalysisRule</code> is referred to as the <i>collaboration analysis rule</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTableAssociationAnalysisRule {
     /// <p>The membership identifier for the configured table association analysis rule.</p>

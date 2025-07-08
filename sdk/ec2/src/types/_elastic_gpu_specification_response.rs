@@ -4,6 +4,8 @@
 /// <p>Amazon Elastic Graphics reached end of life on January 8, 2024.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ElasticGpuSpecificationResponse {
     /// <p>Deprecated.</p><note>

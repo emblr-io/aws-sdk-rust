@@ -2,6 +2,8 @@
 
 /// <p>The option that determines the decimal places configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecimalPlacesConfiguration {
     /// <p>The values of the decimal places.</p>

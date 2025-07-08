@@ -2,6 +2,8 @@
 
 /// <p>A structure representing a screenshot that is used as a baseline during visual monitoring comparisons made by the canary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BaseScreenshot {
     /// <p>The name of the screenshot. This is generated the first time the canary is run after the <code>UpdateCanary</code> operation that specified for this canary to perform visual monitoring.</p>

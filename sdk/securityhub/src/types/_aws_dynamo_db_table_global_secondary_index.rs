@@ -2,6 +2,8 @@
 
 /// <p>Information abut a global secondary index for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsDynamoDbTableGlobalSecondaryIndex {
     /// <p>Whether the index is currently backfilling.</p>

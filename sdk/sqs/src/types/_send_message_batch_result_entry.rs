@@ -2,6 +2,8 @@
 
 /// <p>Encloses a <code>MessageId</code> for a successfully-enqueued message in a <code> <code>SendMessageBatch</code>.</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendMessageBatchResultEntry {
     /// <p>An identifier for the message in this batch.</p>

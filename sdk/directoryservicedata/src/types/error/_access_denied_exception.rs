@@ -3,6 +3,8 @@
 /// <p>You don't have permission to perform the request or access the directory. It can also occur when the <code>DirectoryId</code> doesn't exist or the user, member, or group might be outside of your organizational unit (OU).</p>
 /// <p>Make sure that you have the authentication and authorization to perform the action. Review the directory information in the request, and make sure that the object isn't outside of your OU.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     #[allow(missing_docs)] // documentation missing in model

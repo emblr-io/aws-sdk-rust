@@ -6,6 +6,8 @@
 /// </note>
 /// <p>Contains the identifier and the friendly name or description of the <code>Rule</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleSummary {
     /// <p>A unique identifier for a <code>Rule</code>. You use <code>RuleId</code> to get more information about a <code>Rule</code> (see <code>GetRule</code>), update a <code>Rule</code> (see <code>UpdateRule</code>), insert a <code>Rule</code> into a <code>WebACL</code> or delete one from a <code>WebACL</code> (see <code>UpdateWebACL</code>), or delete a <code>Rule</code> from AWS WAF (see <code>DeleteRule</code>).</p>

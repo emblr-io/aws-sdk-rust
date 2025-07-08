@@ -2,6 +2,8 @@
 
 /// <p>Options for configuring a data migration, including whether to enable CloudWatch logs, and the selection rules to use to include or exclude database objects from the migration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataMigrationSettings {
     /// <p>The number of parallel jobs that trigger parallel threads to unload the tables from the source, and then load them to the target.</p>

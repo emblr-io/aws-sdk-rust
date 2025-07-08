@@ -2,6 +2,8 @@
 
 /// <p>The vehicle License Plate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteMatrixVehicleLicensePlate {
     /// <p>The last character of the License Plate.</p>

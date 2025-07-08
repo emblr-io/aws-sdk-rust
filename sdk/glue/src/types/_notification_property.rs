@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration properties of a notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationProperty {
     /// <p>After a job run starts, the number of minutes to wait before sending a job run delay notification.</p>

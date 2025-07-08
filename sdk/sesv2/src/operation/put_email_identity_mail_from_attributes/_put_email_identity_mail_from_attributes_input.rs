@@ -2,6 +2,8 @@
 
 /// <p>A request to configure the custom MAIL FROM domain for a verified identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutEmailIdentityMailFromAttributesInput {
     /// <p>The verified email identity.</p>

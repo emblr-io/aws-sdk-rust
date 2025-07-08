@@ -3,6 +3,8 @@
 /// <p>A parameter declaration for the <code>Integer</code> data type.</p>
 /// <p>This is a union type structure. For this structure to be valid, only one of the attributes can be defined.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct IntegerValueWhenUnsetConfiguration {
     /// <p>The built-in options for default values. The value can be one of the following:</p>

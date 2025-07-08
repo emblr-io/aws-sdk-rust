@@ -2,6 +2,8 @@
 
 /// <p>The Identity and Access Management (IAM) configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamConfig {
     /// <p>The signing Amazon Web Services Region for IAM authorization.</p>

@@ -3,6 +3,8 @@
 /// <p>Describes a Sync configuration for a resolver.</p>
 /// <p>Specifies which Conflict Detection strategy and Resolution strategy to use when the resolver is invoked.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SyncConfig {
     /// <p>The Conflict Resolution strategy to perform in the event of a conflict.</p>

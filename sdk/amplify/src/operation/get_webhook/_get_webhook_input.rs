@@ -2,6 +2,8 @@
 
 /// <p>The request structure for the get webhook request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetWebhookInput {
     /// <p>The unique ID for a webhook.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The password policy settings for a user pool, including complexity, history, and length requirements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PasswordPolicyType {
     /// <p>The minimum length of the password in the policy that you have set. This value can't be less than 6.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the configuration of the Amazon Kendra index used for the <code>AMAZON.QnAIntent</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QnAKendraConfiguration {
     /// <p>The ARN of the Amazon Kendra index to use.</p>

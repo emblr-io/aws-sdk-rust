@@ -2,6 +2,8 @@
 
 /// <p>The location of the most recent parallel data input file that was successfully imported into Amazon Translate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParallelDataDataLocation {
     /// <p>Describes the repository that contains the parallel data input file.</p>

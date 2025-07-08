@@ -2,6 +2,8 @@
 
 /// <p>The activity details of the data source run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataSourceRunActivity {
     /// <p>The database included in the data source run activity.</p>

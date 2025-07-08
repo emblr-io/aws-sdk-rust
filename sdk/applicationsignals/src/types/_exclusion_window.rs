@@ -2,6 +2,8 @@
 
 /// <p>The core SLO time window exclusion object that includes Window, StartTime, RecurrenceRule, and Reason.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExclusionWindow {
     /// <p>The SLO time window exclusion .</p>

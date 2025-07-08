@@ -2,6 +2,8 @@
 
 /// <p>Raised when the rate of requests exceeds the maximum throughput. Requests can be retried after encountering this exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThrottlingException {
     /// <p>A detailed message describing the problem.</p>

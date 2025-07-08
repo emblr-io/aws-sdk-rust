@@ -2,6 +2,8 @@
 
 /// <p>The tooltip configuration for a sheet image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SheetImageTooltipConfiguration {
     /// <p>The text that appears in the tooltip.</p>

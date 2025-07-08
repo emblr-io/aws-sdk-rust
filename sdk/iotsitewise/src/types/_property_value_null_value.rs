@@ -2,6 +2,8 @@
 
 /// <p>The value type of null asset property data with BAD and UNCERTAIN qualities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertyValueNullValue {
     /// <p>The type of null asset property data.</p>

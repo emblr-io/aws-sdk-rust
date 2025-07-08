@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the type of user for the transaction was incorrect.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidUserTypeException {
     #[allow(missing_docs)] // documentation missing in model

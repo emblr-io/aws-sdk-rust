@@ -2,6 +2,8 @@
 
 /// <p>An object specifying metadata associated with a backup plan template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupPlanTemplatesListMember {
     /// <p>Uniquely identifies a stored backup plan template.</p>

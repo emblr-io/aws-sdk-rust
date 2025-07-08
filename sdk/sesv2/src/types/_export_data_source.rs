@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the data source of the export job. It can only contain one of <code>MetricsDataSource</code> or <code>MessageInsightsDataSource</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportDataSource {
     /// <p>An object that contains details about the data source for the metrics export.</p>

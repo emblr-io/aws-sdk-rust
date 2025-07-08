@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeSpotFleetInstances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSpotFleetInstancesOutput {
     /// <p>The running instances. This list is refreshed periodically and might be out of date.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Complex data type for field-level encryption profiles that includes the encryption key and field pattern specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionEntity {
     /// <p>The public key associated with a set of field-level encryption patterns, to be used when encrypting the fields that match the patterns.</p>

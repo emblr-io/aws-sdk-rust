@@ -2,6 +2,8 @@
 
 /// <p>Contains intermediate response for code interpreter if any files have been generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilePart {
     /// <p>Files containing intermediate response for the user.</p>

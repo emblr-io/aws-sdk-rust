@@ -2,6 +2,8 @@
 
 /// <p>Describes modifications to the load permissions of an Amazon FPGA image (AFI).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoadPermissionModifications {
     /// <p>The load permissions to add.</p>

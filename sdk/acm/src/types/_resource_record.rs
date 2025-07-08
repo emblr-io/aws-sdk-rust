@@ -2,6 +2,8 @@
 
 /// <p>Contains a DNS record value that you can use to validate ownership or control of a domain. This is used by the <code>DescribeCertificate</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceRecord {
     /// <p>The name of the DNS record to create in your domain. This is supplied by ACM.</p>

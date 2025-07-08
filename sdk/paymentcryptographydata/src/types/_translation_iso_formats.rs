@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required for translation between ISO9564 PIN block formats 0,1,3,4.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TranslationIsoFormats {
     /// <p>Parameters that are required for ISO9564 PIN format 0 tranlation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The ARN from an execution of the current pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SelectiveExecutionResult {
     /// <p>The ARN from an execution of the current pipeline.</p>

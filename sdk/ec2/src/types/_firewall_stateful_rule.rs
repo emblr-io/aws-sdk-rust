@@ -2,6 +2,8 @@
 
 /// <p>Describes a stateful rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallStatefulRule {
     /// <p>The ARN of the stateful rule group.</p>

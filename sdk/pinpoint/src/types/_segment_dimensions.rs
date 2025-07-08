@@ -2,6 +2,8 @@
 
 /// <p>Specifies the dimension settings for a segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentDimensions {
     /// <p>One or more custom attributes to use as criteria for the segment.</p>

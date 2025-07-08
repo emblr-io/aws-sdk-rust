@@ -2,6 +2,8 @@
 
 /// <p>The resource configuration for creating backend storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBackendStorageResourceConfig {
     /// <p>The name of the S3 bucket.</p>

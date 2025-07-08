@@ -2,6 +2,8 @@
 
 /// <p>The document ID and its fields/attributes that are used for a query suggestion, if document fields set to use for query suggestions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceDocument {
     /// <p>The identifier of the document used for a query suggestion.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The visual display options for the visual palette.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VisualPalette {
     /// <p>The chart color options for the visual palette.</p>

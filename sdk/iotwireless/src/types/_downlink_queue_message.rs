@@ -2,6 +2,8 @@
 
 /// <p>The message in the downlink queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DownlinkQueueMessage {
     /// <p>The message ID assigned by IoT Wireless to each downlink message, which helps identify the message.</p>

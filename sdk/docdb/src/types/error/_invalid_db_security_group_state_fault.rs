@@ -2,6 +2,8 @@
 
 /// <p>The state of the security group doesn't allow deletion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDbSecurityGroupStateFault {
     #[allow(missing_docs)] // documentation missing in model

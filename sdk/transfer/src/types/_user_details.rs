@@ -2,6 +2,8 @@
 
 /// <p>Specifies the user name, server ID, and session ID for a workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserDetails {
     /// <p>A unique string that identifies a Transfer Family user associated with a server.</p>

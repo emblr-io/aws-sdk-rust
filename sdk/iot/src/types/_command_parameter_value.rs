@@ -4,6 +4,8 @@
 /// <p>The <code>commandParameterValue</code> can only have one of the below fields listed.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandParameterValue {
     /// <p>An attribute of type String. For example:</p>

@@ -2,6 +2,8 @@
 
 /// <p>We encountered an unknown error. Try again in a few minutes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServiceErrorException {
     #[allow(missing_docs)] // documentation missing in model

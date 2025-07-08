@@ -3,6 +3,8 @@
 /// <p>Contains the name and values of a manual cluster snapshot attribute.</p>
 /// <p>Manual cluster snapshot attributes are used to authorize other Amazon Web Services accounts to restore a manual cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterSnapshotAttribute {
     /// <p>The name of the manual cluster snapshot attribute.</p>

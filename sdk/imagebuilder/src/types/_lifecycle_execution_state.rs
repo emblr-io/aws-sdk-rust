@@ -2,6 +2,8 @@
 
 /// <p>The current state of the runtime instance of the lifecycle policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExecutionState {
     /// <p>The runtime status of the lifecycle execution.</p>

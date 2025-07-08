@@ -2,6 +2,8 @@
 
 /// <p>Describes the automated branch creation configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AutoBranchCreationConfig {
     /// <p>Describes the current stage for the autocreated branch.</p>

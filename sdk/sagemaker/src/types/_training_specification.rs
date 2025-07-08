@@ -2,6 +2,8 @@
 
 /// <p>Defines how the algorithm is used for a training job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainingSpecification {
     /// <p>The Amazon ECR registry path of the Docker image that contains the training algorithm.</p>

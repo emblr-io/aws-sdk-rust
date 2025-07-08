@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>DescribeSchedulingPolicies</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSchedulingPoliciesInput {
     /// <p>A list of up to 100 scheduling policy Amazon Resource Name (ARN) entries.</p>

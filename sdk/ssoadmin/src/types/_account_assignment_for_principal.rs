@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes an assignment of an Amazon Web Services account to a principal and the permissions that principal has in the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountAssignmentForPrincipal {
     /// <p>The account ID number of the Amazon Web Services account.</p>

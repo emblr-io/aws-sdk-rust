@@ -2,6 +2,8 @@
 
 /// <p>Information about the metadata for a conflict in a merge operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictMetadata {
     /// <p>The path of the file that contains conflicts.</p>

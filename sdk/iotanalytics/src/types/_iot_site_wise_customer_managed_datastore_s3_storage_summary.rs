@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the data store that you manage, which stores data used by IoT SiteWise.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotSiteWiseCustomerManagedDatastoreS3StorageSummary {
     /// <p>The name of the Amazon S3 bucket where your data is stored.</p>

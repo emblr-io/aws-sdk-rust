@@ -2,6 +2,8 @@
 
 /// <p><b>\[Default policies only\]</b> Specifies a destination Region for cross-Region copy actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrossRegionCopyTarget {
     /// <p>The target Region, for example <code>us-east-1</code>.</p>

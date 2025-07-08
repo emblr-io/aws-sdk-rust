@@ -2,6 +2,8 @@
 
 /// <p>Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InventoryFilter {
     /// <p>The prefix that an object must have to be included in the inventory results.</p>

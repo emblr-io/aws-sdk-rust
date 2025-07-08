@@ -2,6 +2,8 @@
 
 /// <p>The Lambda function recommendation details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunction {
     /// <p>The Lambda function configuration used for recommendations.</p>

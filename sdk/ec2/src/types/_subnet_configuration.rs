@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of a subnet for a VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubnetConfiguration {
     /// <p>The ID of the subnet.</p>

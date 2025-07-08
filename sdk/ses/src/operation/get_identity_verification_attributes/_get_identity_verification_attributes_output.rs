@@ -2,6 +2,8 @@
 
 /// <p>The Amazon SES verification status of a list of identities. For domain identities, this response also contains the verification token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetIdentityVerificationAttributesOutput {
     /// <p>A map of Identities to IdentityVerificationAttributes objects.</p>

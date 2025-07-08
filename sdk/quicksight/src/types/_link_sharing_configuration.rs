@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the configuration of a shareable link to the dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LinkSharingConfiguration {
     /// <p>A structure that contains the permissions of a shareable link.</p>

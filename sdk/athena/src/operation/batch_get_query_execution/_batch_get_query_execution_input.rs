@@ -2,6 +2,8 @@
 
 /// <p>Contains an array of query execution IDs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetQueryExecutionInput {
     /// <p>An array of query execution IDs.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A media pipeline that streams call analytics data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MediaInsightsPipeline {
     /// <p>The ID of a media insights pipeline.</p>

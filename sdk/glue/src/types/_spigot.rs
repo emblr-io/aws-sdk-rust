@@ -2,6 +2,8 @@
 
 /// <p>Specifies a transform that writes samples of the data to an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Spigot {
     /// <p>The name of the transform node.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Properties that configure export from your build instance to a compatible file format for your VM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ExportConfiguration {
     /// <p>The name of the role that grants VM Import/Export permission to export images to your S3 bucket.</p>

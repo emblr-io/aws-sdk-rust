@@ -3,6 +3,8 @@
 /// <p>This is an optional array within a BackupRule.</p>
 /// <p>IndexAction consists of one ResourceTypes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndexAction {
     /// <p>0 or 1 index action will be accepted for each BackupRule.</p>

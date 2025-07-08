@@ -2,6 +2,8 @@
 
 /// <p>The error entry for Recommendation Resource exclusion. Each entry is a combination of Recommendation Resource ARN, error code and error message</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRecommendationResourceExclusionError {
     /// <p>The ARN of the Recommendation Resource</p>

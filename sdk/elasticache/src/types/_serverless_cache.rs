@@ -2,6 +2,8 @@
 
 /// <p>The resource representing a serverless cache.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerlessCache {
     /// <p>The unique identifier of the serverless cache.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input for <code>CreateStack</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateStackInput {
     /// <p>The name that's associated with the stack. The name must be unique in the Region in which you are creating the stack.</p><note>

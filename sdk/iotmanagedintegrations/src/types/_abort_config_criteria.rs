@@ -2,6 +2,8 @@
 
 /// <p>Structure representing one abort config criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbortConfigCriteria {
     /// <p>The action taken by the abort configuration.</p>

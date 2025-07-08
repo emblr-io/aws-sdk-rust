@@ -8,6 +8,8 @@
 /// <p>The validation of each domain name in the certificate, as it pertains to Certificate Manager managed renewal</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCertificateManagerCertificateDomainValidationOption {
     /// <p>A fully qualified domain name (FQDN) in the certificate.</p>

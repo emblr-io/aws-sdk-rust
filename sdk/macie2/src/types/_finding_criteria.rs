@@ -2,6 +2,8 @@
 
 /// <p>Specifies, as a map, one or more property-based conditions that filter the results of a query for findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingCriteria {
     /// <p>A condition that specifies the property, operator, and one or more values to use to filter the results.</p>

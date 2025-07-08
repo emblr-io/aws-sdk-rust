@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a get blob operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetBlobOutput {
     /// <p>The content of the blob, usually a file.</p>

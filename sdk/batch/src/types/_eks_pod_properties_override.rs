@@ -2,6 +2,8 @@
 
 /// <p>An object that contains overrides for the Kubernetes pod properties of a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksPodPropertiesOverride {
     /// <p>The overrides for the container that's used on the Amazon EKS pod.</p>

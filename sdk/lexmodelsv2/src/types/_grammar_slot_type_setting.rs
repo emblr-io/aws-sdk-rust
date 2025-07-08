@@ -2,6 +2,8 @@
 
 /// <p>Settings requried for a slot type based on a grammar that you provide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrammarSlotTypeSetting {
     /// <p>The source of the grammar used to create the slot type.</p>

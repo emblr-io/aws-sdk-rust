@@ -2,6 +2,8 @@
 
 /// <p>An access policy includes permissions that allow Amazon EKS to authorize an IAM principal to work with Kubernetes objects on your cluster. The policies are managed by Amazon EKS, but they're not IAM policies. You can't view the permissions in the policies using the API. The permissions for many of the policies are similar to the Kubernetes <code>cluster-admin</code>, <code>admin</code>, <code>edit</code>, and <code>view</code> cluster roles. For more information about these cluster roles, see <a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles">User-facing roles</a> in the Kubernetes documentation. To view the contents of the policies, see <a href="https://docs.aws.amazon.com/eks/latest/userguide/access-policies.html#access-policy-permissions">Access policy permissions</a> in the <i>Amazon EKS User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessPolicy {
     /// <p>The name of the access policy.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a change to a resource attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceChangeDetail {
     /// <p>Information about the resource attribute to be modified.</p>

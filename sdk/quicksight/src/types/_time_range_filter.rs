@@ -2,6 +2,8 @@
 
 /// <p>A <code>TimeRangeFilter</code> filters values that are between two specified values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeRangeFilter {
     /// <p>An identifier that uniquely identifies a filter within a dashboard, analysis, or template.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the actors involved in an attack sequence.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Actor {
     /// <p>ID of the threat actor.</p>

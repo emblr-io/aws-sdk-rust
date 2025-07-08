@@ -2,6 +2,8 @@
 
 /// <p>Represents the http/s proxy configuration that will be applied to a device during a run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceProxy {
     /// <p>Hostname or IPv4 address of the proxy.</p>

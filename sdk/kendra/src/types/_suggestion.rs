@@ -2,6 +2,8 @@
 
 /// <p>A single query suggestion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Suggestion {
     /// <p>The UUID (universally unique identifier) of a single query suggestion.</p>

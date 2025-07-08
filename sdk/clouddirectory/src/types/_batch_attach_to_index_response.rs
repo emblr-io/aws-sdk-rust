@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>AttachToIndex</code> response operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchAttachToIndexResponse {
     /// <p>The <code>ObjectIdentifier</code> of the object that was attached to the index.</p>

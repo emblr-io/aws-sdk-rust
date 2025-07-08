@@ -2,6 +2,8 @@
 
 /// <p>Consists of a Amazon Web Services Free Tier offer’s metadata and your data usage for the offer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FreeTierUsage {
     /// <p>The name of the Amazon Web Service providing the Free Tier offer. For example, this can be Amazon Elastic Compute Cloud.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An IPV6 CIDR block association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ipv6CidrBlockAssociation {
     /// <p>The association ID for the IPv6 CIDR block.</p>

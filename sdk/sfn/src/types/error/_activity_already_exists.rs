@@ -2,6 +2,8 @@
 
 /// <p>Activity already exists. <code>EncryptionConfiguration</code> may not be updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActivityAlreadyExists {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Describes an action that updates a CloudWatch alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudwatchAlarmAction {
     /// <p>The IAM role that allows access to the CloudWatch alarm.</p>

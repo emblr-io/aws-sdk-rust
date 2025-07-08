@@ -2,6 +2,8 @@
 
 /// <p>A string expression to evaluate an email attribute value against one or more string values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArchiveStringExpression {
     /// <p>The attribute of the email to evaluate.</p>

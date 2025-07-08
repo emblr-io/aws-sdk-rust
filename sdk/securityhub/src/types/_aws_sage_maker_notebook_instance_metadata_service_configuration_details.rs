@@ -2,6 +2,8 @@
 
 /// <p>Information on the instance metadata service (IMDS) configuration of the notebook instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetails {
     /// <p>Indicates the minimum IMDS version that the notebook instance supports.</p>

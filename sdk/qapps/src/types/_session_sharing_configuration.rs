@@ -2,6 +2,8 @@
 
 /// <p>The sharing configuration of an Amazon Q App data collection session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionSharingConfiguration {
     /// <p>Indicates whether an Q App session is shareable with other users.</p>

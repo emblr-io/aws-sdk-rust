@@ -2,6 +2,8 @@
 
 /// <p>Object to store union of different versions of layout content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum LayoutContent {
     /// <p>Content specific to <code>BasicLayout</code> type. It configures fields in the top panel and More Info tab of Cases user interface.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The structure for an IPv6 based condition matching on the incoming mail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IngressIpv6ToEvaluate {
     /// <p>An enum type representing the allowed attribute types for an IPv6 condition.</p>

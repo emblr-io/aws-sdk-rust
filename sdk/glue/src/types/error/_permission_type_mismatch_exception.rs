@@ -2,6 +2,8 @@
 
 /// <p>The operation timed out.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionTypeMismatchException {
     /// <p>There is a mismatch between the SupportedPermissionType used in the query request and the permissions defined on the target table.</p>

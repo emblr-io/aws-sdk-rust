@@ -2,6 +2,8 @@
 
 /// <p>Summary information about an intent returned by the <code>ListIntents</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentSummary {
     /// <p>The unique identifier assigned to the intent. Use this ID to get detailed information about the intent with the <code>DescribeIntent</code> operation.</p>

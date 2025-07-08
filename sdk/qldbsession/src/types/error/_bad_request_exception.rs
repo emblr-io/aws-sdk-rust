@@ -2,6 +2,8 @@
 
 /// <p>Returned if the request is malformed or contains an error such as an invalid parameter value or a missing required parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadRequestException {
     #[allow(missing_docs)] // documentation missing in model

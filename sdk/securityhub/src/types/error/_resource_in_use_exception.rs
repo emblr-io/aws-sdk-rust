@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it conflicts with the resource's availability. For example, you tried to update a security control that's currently in the <code>UPDATING</code> state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceInUseException {
     #[allow(missing_docs)] // documentation missing in model

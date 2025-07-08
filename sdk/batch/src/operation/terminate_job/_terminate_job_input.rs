@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for <code>TerminateJob</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TerminateJobInput {
     /// <p>The Batch job ID of the job to terminate.</p>

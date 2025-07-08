@@ -2,6 +2,8 @@
 
 /// <p>Information about the replicated destination stage for a participant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParticipantReplica {
     /// <p>ARN of the stage from which this participant is replicated.</p>

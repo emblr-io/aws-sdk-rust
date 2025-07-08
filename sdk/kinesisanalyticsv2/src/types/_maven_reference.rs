@@ -2,6 +2,8 @@
 
 /// <p>The information required to specify a Maven reference. You can use Maven references to specify dependency JAR files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MavenReference {
     /// <p>The group ID of the Maven reference.</p>

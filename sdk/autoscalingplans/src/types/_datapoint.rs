@@ -2,6 +2,8 @@
 
 /// <p>Represents a single value in the forecast data used for predictive scaling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Datapoint {
     /// <p>The time stamp for the data point in UTC format.</p>

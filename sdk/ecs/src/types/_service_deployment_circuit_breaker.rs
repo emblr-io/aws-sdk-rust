@@ -3,6 +3,8 @@
 /// <p>Information about the circuit breaker used to determine when a service deployment has failed.</p>
 /// <p>The deployment circuit breaker is the rolling update mechanism that determines if the tasks reach a steady state. The deployment circuit breaker has an option that will automatically roll back a failed deployment to the last cpompleted service revision. For more information, see <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html">How the Amazon ECS deployment circuit breaker detects failures</a> in the<i> Amazon ECS Developer Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDeploymentCircuitBreaker {
     /// <p>The circuit breaker status. Amazon ECS is not using the circuit breaker for service deployment failures when the status is <code>DISABLED</code>.</p>

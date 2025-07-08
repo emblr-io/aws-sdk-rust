@@ -2,6 +2,8 @@
 
 /// <p>Information about the association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationOverview {
     /// <p>The status of the association. Status can be: Pending, Success, or Failed.</p>

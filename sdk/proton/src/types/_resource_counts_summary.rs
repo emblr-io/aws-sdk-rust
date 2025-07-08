@@ -2,6 +2,8 @@
 
 /// <p>Summary counts of each Proton resource types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceCountsSummary {
     /// <p>The total number of resources of this type in the Amazon Web Services account.</p>

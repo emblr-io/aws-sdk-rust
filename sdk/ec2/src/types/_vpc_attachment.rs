@@ -2,6 +2,8 @@
 
 /// <p>Describes an attachment between a virtual private gateway and a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcAttachment {
     /// <p>The ID of the VPC.</p>

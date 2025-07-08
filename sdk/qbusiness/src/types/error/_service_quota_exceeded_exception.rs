@@ -2,6 +2,8 @@
 
 /// <p>You have exceeded the set limits for your Amazon Q Business service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceQuotaExceededException {
     /// <p>The message describing a <code>ServiceQuotaExceededException</code>.</p>

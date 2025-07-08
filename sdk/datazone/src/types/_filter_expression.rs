@@ -2,6 +2,8 @@
 
 /// <p>A filter expression in Amazon DataZone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterExpression {
     /// <p>The search filter explresison type.</p>

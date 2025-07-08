@@ -3,6 +3,8 @@
 /// <p>Describes the origin resource of an Amazon Lightsail content delivery network (CDN) distribution.</p>
 /// <p>An origin can be a Lightsail instance, bucket, container service, or load balancer. A distribution pulls content from an origin, caches it, and serves it to viewers via a worldwide network of edge servers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputOrigin {
     /// <p>The name of the origin resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the directory on the Amazon EFS file system that the access point exposes as the root directory to NFS clients using the access point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEfsAccessPointRootDirectoryDetails {
     /// <p>Specifies the POSIX IDs and permissions to apply to the access point's root directory.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The encryption-at-rest settings of the transform that apply to accessing user data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MlUserDataEncryption {
     /// <p>The encryption mode applied to user data. Valid values are:</p>

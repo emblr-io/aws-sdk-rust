@@ -2,6 +2,8 @@
 
 /// <p>Contains the time metric, interval, and method by which to bin the analytics data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsBinBySpecification {
     /// <p>Specifies the time metric by which to bin the analytics data.</p>

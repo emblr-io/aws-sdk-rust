@@ -2,6 +2,8 @@
 
 /// <p>An object which defines an incremental run type and has only <code>incrementalRunType</code> as a field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IncrementalRunConfig {
     /// <p>The type of incremental run. It takes only one value: <code>IMMEDIATE</code>.</p>

@@ -2,6 +2,8 @@
 
 /// Settings for one failover condition.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailoverConditionSettings {
     /// MediaLive will perform a failover if the specified audio selector is silent for the specified period.

@@ -2,6 +2,8 @@
 
 /// <p>The identifier that contains the Group ID and name of a group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupIdentifier {
     /// <p>Group ID that matched the group.</p>

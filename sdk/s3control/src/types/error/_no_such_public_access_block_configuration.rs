@@ -2,6 +2,8 @@
 
 /// <p>Amazon S3 throws this exception if you make a <code>GetPublicAccessBlock</code> request against an account that doesn't have a <code>PublicAccessBlockConfiguration</code> set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchPublicAccessBlockConfiguration {
     #[allow(missing_docs)] // documentation missing in model

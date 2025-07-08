@@ -2,6 +2,8 @@
 
 /// <p>Contains the batch request error details associated with the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchItemError {
     /// <p>The error code associated with the batch request error.</p>

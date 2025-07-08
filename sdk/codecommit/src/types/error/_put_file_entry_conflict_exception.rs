@@ -2,6 +2,8 @@
 
 /// <p>The commit cannot be created because one or more files specified in the commit reference both a file and a folder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutFileEntryConflictException {
     /// <p>Any message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An improvement summary of a lens review in a workload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImprovementSummary {
     /// <p>The ID of the question.</p>

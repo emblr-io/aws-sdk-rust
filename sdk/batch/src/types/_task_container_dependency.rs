@@ -2,6 +2,8 @@
 
 /// <p>A list of containers that this task depends on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskContainerDependency {
     /// <p>A unique identifier for the container.</p>

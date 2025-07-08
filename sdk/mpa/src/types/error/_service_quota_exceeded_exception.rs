@@ -2,6 +2,8 @@
 
 /// <p>The request exceeds the service quota for your account. Request a quota increase or reduce your request size.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceQuotaExceededException {
     /// <p>Message for the <code>ServiceQuotaExceededException</code> error.</p>

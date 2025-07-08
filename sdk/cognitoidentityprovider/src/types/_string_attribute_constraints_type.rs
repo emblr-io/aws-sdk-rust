@@ -2,6 +2,8 @@
 
 /// <p>The minimum and maximum length values of an attribute that is of the string type, for example <code>custom:department</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StringAttributeConstraintsType {
     /// <p>The minimum length of a string attribute value.</p>

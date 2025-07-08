@@ -2,6 +2,8 @@
 
 /// <p>DynamoDB rejected the request because you retried a request with a different payload but with an idempotent token that was already used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdempotentParameterMismatchException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Information about the pixels in an anomaly mask. For more information, see <code>Anomaly</code>. <code>PixelAnomaly</code> is only returned by image segmentation models.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PixelAnomaly {
     /// <p>The percentage area of the image that the anomaly type covers.</p>

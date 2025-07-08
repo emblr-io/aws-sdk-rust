@@ -2,6 +2,8 @@
 
 /// <p>A summary of a RAG source used for a Knowledge Base evaluation job where you provide your own inference response data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationPrecomputedRagSourceConfig {
     /// <p>A summary of a RAG source used for a retrieve-and-generate Knowledge Base evaluation job where you provide your own inference response data.</p>

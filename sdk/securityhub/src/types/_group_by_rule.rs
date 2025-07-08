@@ -2,6 +2,8 @@
 
 /// <p>Defines the how the finding attribute should be grouped.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupByRule {
     /// <p>The criteria used to select which security findings should be included in the grouping operation.</p>

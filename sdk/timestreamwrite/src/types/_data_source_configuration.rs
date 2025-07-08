@@ -2,6 +2,8 @@
 
 /// <p>Defines configuration details about the data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataSourceConfiguration {
     /// <p>Configuration of an S3 location for a file which contains data to load.</p>

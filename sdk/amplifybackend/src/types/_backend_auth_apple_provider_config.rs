@@ -2,6 +2,8 @@
 
 /// <p>Describes Apple social federation configurations for allowing your app users to sign in using OAuth.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BackendAuthAppleProviderConfig {
     /// <p>Describes the client_id (also called Services ID) that comes from Apple.</p>

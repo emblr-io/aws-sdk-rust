@@ -2,6 +2,8 @@
 
 /// <p>The asset for which metadata was generated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataGenerationRunTarget {
     /// <p>The type of the asset for which metadata was generated.</p>

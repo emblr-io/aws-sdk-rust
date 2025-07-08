@@ -2,6 +2,8 @@
 
 /// <p>A data structure with information about any primary and secondary clusters associated with a global cluster (Aurora global database).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalClusterMember {
     /// <p>The Amazon Resource Name (ARN) for each Aurora DB cluster in the global cluster.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Container for response parameters to the <code><code>DescribeVpcEndpoints</code></code> operation. Returns a list containing configuration details and status of the VPC Endpoints as well as a list containing error responses of the endpoints that could not be described</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeVpcEndpointsOutput {
     /// <p>Information about each requested VPC endpoint.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a candidate produced by an AutoML training job, including its status, steps, and other properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlCandidate {
     /// <p>The name of the candidate.</p>

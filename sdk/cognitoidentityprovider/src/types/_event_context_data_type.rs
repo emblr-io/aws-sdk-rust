@@ -2,6 +2,8 @@
 
 /// <p>The context data that your application submitted in an authentication request with threat protection, as displayed in an <code>AdminListUserAuthEvents</code> response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventContextDataType {
     /// <p>The source IP address of your user's device.</p>

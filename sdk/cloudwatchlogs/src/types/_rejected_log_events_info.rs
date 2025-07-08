@@ -2,6 +2,8 @@
 
 /// <p>Represents the rejected events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RejectedLogEventsInfo {
     /// <p>The index of the first log event that is too new. This field is inclusive.</p>

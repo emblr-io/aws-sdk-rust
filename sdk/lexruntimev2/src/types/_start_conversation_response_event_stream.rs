@@ -2,6 +2,8 @@
 
 /// <p>Represents a stream of events between Amazon Lex V2 and your application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum StartConversationResponseEventStream {
     /// <p>An event sent from Amazon Lex V2 to your client application containing audio to play to the user.</p>

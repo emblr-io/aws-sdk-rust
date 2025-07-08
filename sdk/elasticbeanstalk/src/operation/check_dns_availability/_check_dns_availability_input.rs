@@ -2,6 +2,8 @@
 
 /// <p>Results message indicating whether a CNAME is available.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CheckDnsAvailabilityInput {
     /// <p>The prefix used when this CNAME is reserved.</p>

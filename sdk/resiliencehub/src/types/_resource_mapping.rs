@@ -2,6 +2,8 @@
 
 /// <p>Defines a resource mapping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceMapping {
     /// <p>Name of the resource that this resource is mapped to when the <code>mappingType</code> is <code>Resource</code>.</p>

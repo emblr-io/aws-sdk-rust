@@ -2,6 +2,8 @@
 
 /// <p>A list of CloudFront origin access controls.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OriginAccessControlList {
     /// <p>The value of the <code>Marker</code> field that was provided in the request.</p>

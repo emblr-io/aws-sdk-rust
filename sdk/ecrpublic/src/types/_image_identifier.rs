@@ -2,6 +2,8 @@
 
 /// <p>An object with identifying information for an Amazon ECR image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageIdentifier {
     /// <p>The <code>sha256</code> digest of the image manifest.</p>

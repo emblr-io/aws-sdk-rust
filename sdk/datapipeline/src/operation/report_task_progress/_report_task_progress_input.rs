@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for ReportTaskProgress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportTaskProgressInput {
     /// <p>The ID of the task assigned to the task runner. This value is provided in the response for <code>PollForTask</code>.</p>

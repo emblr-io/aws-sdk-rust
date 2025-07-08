@@ -2,6 +2,8 @@
 
 /// <p>This structure specifies how often a canary is to make runs and the date and time when it should stop making runs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryScheduleInput {
     /// <p>A <code>rate</code> expression or a <code>cron</code> expression that defines how often the canary is to run.</p>

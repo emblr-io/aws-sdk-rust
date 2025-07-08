@@ -2,6 +2,8 @@
 
 /// <p>Removes the specified directory as a publisher to the specified Amazon SNS topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeregisterEventTopicInput {
     /// <p>The Directory ID to remove as a publisher. This directory will no longer send messages to the specified Amazon SNS topic.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the result of a deployment on an edge device that is registered with SageMaker Edge Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentResult {
     /// <p>The name and unique ID of the deployment.</p>

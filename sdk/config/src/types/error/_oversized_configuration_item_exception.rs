@@ -2,6 +2,8 @@
 
 /// <p>The configuration item size is outside the allowable range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OversizedConfigurationItemException {
     /// <p>Error executing the command</p>

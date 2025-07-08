@@ -2,6 +2,8 @@
 
 /// <p>Specifies the AWS Mainframe Modernization managed application step summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct M2ManagedApplicationStepSummary {
     /// <p>The step input of the AWS Mainframe Modernization managed application step summary.</p>

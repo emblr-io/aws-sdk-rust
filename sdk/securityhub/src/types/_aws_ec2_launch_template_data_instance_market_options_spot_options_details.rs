@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the market (purchasing) options for Spot Instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetails {
     /// <p>Deprecated.</p>

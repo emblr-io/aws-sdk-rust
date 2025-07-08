@@ -2,6 +2,8 @@
 
 /// <p>Retrieves a list of analyzers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAnalyzersInput {
     /// <p>A token used for pagination of results returned.</p>

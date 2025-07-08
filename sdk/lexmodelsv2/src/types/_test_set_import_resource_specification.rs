@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the test set that is imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetImportResourceSpecification {
     /// <p>The name of the test set.</p>

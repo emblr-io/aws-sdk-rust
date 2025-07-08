@@ -2,6 +2,8 @@
 
 /// <p>Request of DescribeSubscribersForNotification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeSubscribersForNotificationInput {
     /// <p>The <code>accountId</code> that is associated with the budget whose subscribers you want descriptions of.</p>

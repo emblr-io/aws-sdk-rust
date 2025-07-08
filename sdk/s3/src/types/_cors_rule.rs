@@ -2,6 +2,8 @@
 
 /// <p>Specifies a cross-origin access rule for an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CorsRule {
     /// <p>Unique identifier for the rule. The value cannot be longer than 255 characters.</p>

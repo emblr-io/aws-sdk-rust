@@ -2,6 +2,8 @@
 
 /// <p>Unable to roll back the stage. The cause might be if the pipeline version has changed since the target pipeline execution was deployed, the stage is currently running, or an incorrect target pipeline execution ID was provided.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnableToRollbackStageException {
     #[allow(missing_docs)] // documentation missing in model

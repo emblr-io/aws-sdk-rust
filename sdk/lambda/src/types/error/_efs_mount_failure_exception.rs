@@ -2,6 +2,8 @@
 
 /// <p>The Lambda function couldn't mount the configured file system due to a permission or configuration issue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EfsMountFailureException {
     #[allow(missing_docs)] // documentation missing in model

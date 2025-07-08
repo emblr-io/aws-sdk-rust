@@ -2,6 +2,8 @@
 
 /// <p>The input for the DynamoActionVS action that specifies the DynamoDB table to which the message data will be written.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutItemInput {
     /// <p>The table where the message data will be written.</p>

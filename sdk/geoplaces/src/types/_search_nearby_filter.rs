@@ -2,6 +2,8 @@
 
 /// <p>SearchNearby structure which contains a set of inclusion/exclusion properties that results must possess in order to be returned as a result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SearchNearbyFilter {
     /// <p>The bounding box enclosing the geometric shape (area or line) that an individual result covers.</p>

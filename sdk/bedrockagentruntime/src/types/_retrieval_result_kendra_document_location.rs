@@ -2,6 +2,8 @@
 
 /// <p>The location of a result in Amazon Kendra.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetrievalResultKendraDocumentLocation {
     /// <p>The document's uri.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the workers, which are the processes that run the connector logic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkerConfiguration {
     /// <p>The revision of the worker configuration.</p>

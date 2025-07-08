@@ -2,6 +2,8 @@
 
 /// <p>Specifies a cross-Region data aggregation configuration, including the aggregation Region and any linked Regions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregatorV2 {
     /// <p>The ARN of the aggregatorV2.</p>

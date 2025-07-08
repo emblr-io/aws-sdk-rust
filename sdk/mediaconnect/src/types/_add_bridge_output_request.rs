@@ -2,6 +2,8 @@
 
 /// <p>Add outputs to the specified bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddBridgeOutputRequest {
     /// <p>The network output of the bridge. A network output is delivered to your premises.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration settings for a user interface (UI) element for an Amplify app. A component is configured as a primary, stand-alone UI element. Use <code>ComponentChild</code> to configure an instance of a <code>Component</code>. A <code>ComponentChild</code> instance inherits the configuration of the main <code>Component</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Component {
     /// <p>The unique ID of the Amplify app associated with the component.</p>

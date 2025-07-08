@@ -2,6 +2,8 @@
 
 /// <p>A mapping between one or more workgroups and a capacity reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityAssignment {
     /// <p>The list of workgroup names for the capacity assignment.</p>

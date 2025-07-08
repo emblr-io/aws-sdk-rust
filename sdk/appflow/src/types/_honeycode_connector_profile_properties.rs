@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific properties required when using Amazon Honeycode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoneycodeConnectorProfileProperties {}
 impl HoneycodeConnectorProfileProperties {

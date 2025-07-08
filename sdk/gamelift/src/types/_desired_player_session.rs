@@ -2,6 +2,8 @@
 
 /// <p>Player information for use when creating player sessions using a game session placement request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DesiredPlayerSession {
     /// <p>A unique identifier for a player to associate with the player session.</p>

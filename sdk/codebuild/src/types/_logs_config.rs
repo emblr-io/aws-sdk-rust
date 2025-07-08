@@ -2,6 +2,8 @@
 
 /// <p>Information about logs for a build project. These can be logs in CloudWatch Logs, built in a specified S3 bucket, or both.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogsConfig {
     /// <p>Information about CloudWatch Logs for a build project. CloudWatch Logs are enabled by default.</p>

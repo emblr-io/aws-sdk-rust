@@ -5,6 +5,8 @@
 /// <p>This is used to indicate the web request component to inspect, in the <code>FieldToMatch</code> specification.</p>
 /// <p>Example JSON: <code>"SingleHeader": { "Name": "haystack" }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleHeader {
     /// <p>The name of the query header to inspect.</p>

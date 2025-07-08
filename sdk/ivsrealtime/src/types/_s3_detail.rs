@@ -2,6 +2,8 @@
 
 /// <p>Complex data type that defines S3Detail objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Detail {
     /// <p>The S3 bucket prefix under which the recording is stored.</p>

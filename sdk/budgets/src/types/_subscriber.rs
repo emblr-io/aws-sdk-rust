@@ -9,6 +9,8 @@
 /// <p>An <code>address</code> of <code>example@example.com</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Subscriber {
     /// <p>The type of notification that Amazon Web Services sends to a subscriber.</p>

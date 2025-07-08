@@ -2,6 +2,8 @@
 
 /// <p>An object that includes the requested dimension key values and aggregated metric values within a dimension group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionKeyDescription {
     /// <p>A map of name-value pairs for the dimensions in the group.</p>

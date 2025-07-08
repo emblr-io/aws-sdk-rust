@@ -2,6 +2,8 @@
 
 /// <p>The description of the scale-in policy for the connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScaleInPolicyDescription {
     /// <p>Specifies the CPU utilization percentage threshold at which you want connector scale in to be triggered.</p>

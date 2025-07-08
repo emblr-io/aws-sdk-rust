@@ -2,6 +2,8 @@
 
 /// <p>The certificate request is in process and the certificate in your account has not yet been issued.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestInProgressException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The identifier supplied for the user, group, or resource does not exist in your organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

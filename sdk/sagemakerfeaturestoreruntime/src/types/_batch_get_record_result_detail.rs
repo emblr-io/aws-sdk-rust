@@ -2,6 +2,8 @@
 
 /// <p>The output of records that have been retrieved in a batch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetRecordResultDetail {
     /// <p>The <code>FeatureGroupName</code> containing Records you retrieved in a batch.</p>

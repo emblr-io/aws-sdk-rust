@@ -2,6 +2,8 @@
 
 /// <p>Summary information for a foundation model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FoundationModelSummary {
     /// <p>The Amazon Resource Name (ARN) of the foundation model.</p>

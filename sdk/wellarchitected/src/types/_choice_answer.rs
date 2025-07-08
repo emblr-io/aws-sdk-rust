@@ -2,6 +2,8 @@
 
 /// <p>A choice that has been answered on a question in your workload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChoiceAnswer {
     /// <p>The ID of a choice.</p>

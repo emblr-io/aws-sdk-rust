@@ -2,6 +2,8 @@
 
 /// <p>Describes a security group rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisSecurityGroupRule {
     /// <p>The IPv4 address range, in CIDR notation.</p>

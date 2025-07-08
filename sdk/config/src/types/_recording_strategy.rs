@@ -2,6 +2,8 @@
 
 /// <p>Specifies the recording strategy of the configuration recorder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingStrategy {
     /// <p>The recording strategy for the configuration recorder.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Output values produced by an optimization job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptimizationOutput {
     /// <p>The image that SageMaker recommends that you use to host the optimized model that you created with an optimization job.</p>

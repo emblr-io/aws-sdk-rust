@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when using SAPOData as a flow destination</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SapoDataDestinationProperties {
     /// <p>The object path specified in the SAPOData flow destination.</p>

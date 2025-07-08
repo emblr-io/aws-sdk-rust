@@ -2,6 +2,8 @@
 
 /// <p>Sends information about the detector model instance and the event that triggered the action to an Amazon SQS queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqsAction {
     /// <p>The URL of the SQS queue where the data is written.</p>

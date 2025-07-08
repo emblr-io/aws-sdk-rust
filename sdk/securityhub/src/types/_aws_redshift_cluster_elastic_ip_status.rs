@@ -2,6 +2,8 @@
 
 /// <p>The status of the elastic IP (EIP) address for an Amazon Redshift cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRedshiftClusterElasticIpStatus {
     /// <p>The elastic IP address for the cluster.</p>

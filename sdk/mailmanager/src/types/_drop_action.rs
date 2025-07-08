@@ -2,6 +2,8 @@
 
 /// <p>This action causes processing to stop and the email to be dropped. If the action applies only to certain recipients, only those recipients are dropped, and processing continues for other recipients.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DropAction {}
 impl DropAction {

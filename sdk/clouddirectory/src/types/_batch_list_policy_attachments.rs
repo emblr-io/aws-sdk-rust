@@ -2,6 +2,8 @@
 
 /// <p>Returns all of the <code>ObjectIdentifiers</code> to which a given policy is attached inside a <code>BatchRead</code> operation. For more information, see <code>ListPolicyAttachments</code> and <code>BatchReadRequest$Operations</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListPolicyAttachments {
     /// <p>The reference that identifies the policy object.</p>

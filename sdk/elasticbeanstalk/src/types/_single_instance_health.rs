@@ -2,6 +2,8 @@
 
 /// <p>Detailed health information about an Amazon EC2 instance in your Elastic Beanstalk environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleInstanceHealth {
     /// <p>The ID of the Amazon EC2 instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an action to republish to another topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepublishAction {
     /// <p>The ARN of the IAM role that grants access.</p>

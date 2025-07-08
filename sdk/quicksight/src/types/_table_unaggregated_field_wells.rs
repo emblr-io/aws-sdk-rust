@@ -2,6 +2,8 @@
 
 /// <p>The unaggregated field well for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableUnaggregatedFieldWells {
     /// <p>The values field well for a pivot table. Values are unaggregated for an unaggregated table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure defines the metric to be returned, along with the statistics, period, and units.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricStat {
     /// <p>The metric to return, including the metric name, namespace, and dimensions.</p>

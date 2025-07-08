@@ -2,6 +2,8 @@
 
 /// <p>A user input field in an plugin action review payload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionReviewPayloadField {
     /// <p>The name of the field.</p>

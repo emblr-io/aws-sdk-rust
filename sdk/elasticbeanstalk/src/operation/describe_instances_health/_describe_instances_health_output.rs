@@ -2,6 +2,8 @@
 
 /// <p>Detailed health information about the Amazon EC2 instances in an AWS Elastic Beanstalk environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeInstancesHealthOutput {
     /// <p>Detailed health information about each instance.</p>

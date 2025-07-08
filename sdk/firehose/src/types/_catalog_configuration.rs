@@ -2,6 +2,8 @@
 
 /// <p>Describes the containers where the destination Apache Iceberg Tables are persisted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CatalogConfiguration {
     /// <p>Specifies the Glue catalog ARN identifier of the destination Apache Iceberg Tables. You must specify the ARN in the format <code>arn:aws:glue:region:account-id:catalog</code>.</p>

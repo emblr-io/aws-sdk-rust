@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information that's specific to the namespace type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NamespaceProperties {
     /// <p>A complex type that contains the ID for the Route&nbsp;53 hosted zone that Cloud Map creates when you create a namespace.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a dataset parameter that defines type and conditions for a parameter in the Amazon S3 path of the dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetParameter {
     /// <p>The name of the parameter that is used in the dataset's Amazon S3 path.</p>

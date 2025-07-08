@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair associated with a resource. Tags can help you organize and categorize your resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>A string that you can use to assign a value. The combination of tag keys and values can help you organize and categorize your resources.</p>

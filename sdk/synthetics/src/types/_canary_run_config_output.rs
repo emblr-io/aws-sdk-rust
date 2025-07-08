@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about a canary run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryRunConfigOutput {
     /// <p>How long the canary is allowed to run before it must stop.</p>

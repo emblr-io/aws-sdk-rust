@@ -2,6 +2,8 @@
 
 /// <p>The processing rules for when a registration can be associated with an origination identity and disassociated from an origination identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedAssociation {
     /// <p>Defines the behavior of when an origination identity and registration can be associated with each other.</p>

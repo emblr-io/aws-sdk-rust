@@ -2,6 +2,8 @@
 
 /// <p>Used for filtering by a specific topic preference.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicFilter {
     /// <p>The name of a topic on which you wish to apply the filter.</p>

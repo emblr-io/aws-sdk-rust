@@ -2,6 +2,8 @@
 
 /// <p>Identifies a version of code that App Runner refers to within a source code repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceCodeVersion {
     /// <p>The type of version identifier.</p>

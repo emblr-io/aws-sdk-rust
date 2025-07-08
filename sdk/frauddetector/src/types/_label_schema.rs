@@ -2,6 +2,8 @@
 
 /// <p>The label schema.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelSchema {
     /// <p>The label mapper maps the Amazon Fraud Detector supported model classification labels (<code>FRAUD</code>, <code>LEGIT</code>) to the appropriate event type labels. For example, if "<code>FRAUD</code>" and "<code>LEGIT</code>" are Amazon Fraud Detector supported labels, this mapper could be: <code>{"FRAUD" =&gt; \["0"\]</code>, <code>"LEGIT" =&gt; \["1"\]}</code> or <code>{"FRAUD" =&gt; \["false"\]</code>, <code>"LEGIT" =&gt; \["true"\]}</code> or <code>{"FRAUD" =&gt; \["fraud", "abuse"\]</code>, <code>"LEGIT" =&gt; \["legit", "safe"\]}</code>. The value part of the mapper is a list, because you may have multiple label variants from your event type for a single Amazon Fraud Detector label.</p>

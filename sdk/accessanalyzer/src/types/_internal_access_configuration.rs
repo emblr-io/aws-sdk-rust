@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration of an internal access analyzer for an Amazon Web Services organization or account. This configuration determines how the analyzer evaluates internal access within your Amazon Web Services environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalAccessConfiguration {
     /// <p>Contains information about analysis rules for the internal access analyzer. These rules determine which resources and access patterns will be analyzed.</p>

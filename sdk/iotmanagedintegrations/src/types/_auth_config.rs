@@ -2,6 +2,8 @@
 
 /// <p>The authentication configuration details for a connector destination, including OAuth settings and other authentication parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthConfig {
     /// <p>The OAuth configuration settings used for authentication with the third-party service.</p>

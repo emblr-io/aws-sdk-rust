@@ -2,6 +2,8 @@
 
 /// <p>Create a DASH manifest configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDashManifestConfiguration {
     /// <p>A short string that's appended to the endpoint URL. The child manifest name creates a unique path to this endpoint.</p>

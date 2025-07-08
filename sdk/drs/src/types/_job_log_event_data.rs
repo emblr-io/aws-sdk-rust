@@ -2,6 +2,8 @@
 
 /// <p>Metadata associated with a Job log.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobLogEventData {
     /// <p>The ID of a Source Server.</p>

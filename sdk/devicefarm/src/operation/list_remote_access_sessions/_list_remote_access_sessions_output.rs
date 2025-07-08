@@ -2,6 +2,8 @@
 
 /// <p>Represents the response from the server after AWS Device Farm makes a request to return information about the remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRemoteAccessSessionsOutput {
     /// <p>A container that represents the metadata from the service about each remote access session you are requesting.</p>

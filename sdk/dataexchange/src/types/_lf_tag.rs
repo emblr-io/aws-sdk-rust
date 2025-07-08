@@ -2,6 +2,8 @@
 
 /// <p>A structure that allows an LF-admin to grant permissions on certain conditions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LfTag {
     /// <p>The key name for the LF-tag.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Settings for using invocation logs to customize a model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvocationLogsConfig {
     /// <p>Whether to use the model's response for training, or just the prompt. The default value is <code>False</code>.</p>

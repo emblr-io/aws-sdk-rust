@@ -2,6 +2,8 @@
 
 /// <p>The dollar value of the root cause.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RootCauseImpact {
     /// <p>The dollar amount that this root cause contributed to the anomaly's TotalImpact.</p>

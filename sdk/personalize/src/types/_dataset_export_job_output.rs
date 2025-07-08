@@ -2,6 +2,8 @@
 
 /// <p>The output configuration parameters of a dataset export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetExportJobOutput {
     /// <p>The configuration details of an Amazon S3 input or output bucket.</p>

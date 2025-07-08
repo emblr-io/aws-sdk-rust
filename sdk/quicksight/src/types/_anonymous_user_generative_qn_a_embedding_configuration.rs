@@ -2,6 +2,8 @@
 
 /// <p>The settings that you want to use for the Generative Q&amp;A experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnonymousUserGenerativeQnAEmbeddingConfiguration {
     /// <p>The Amazon QuickSight Q topic ID of the new reader experience topic that you want the anonymous user to see first. This ID is included in the output URL. When the URL in response is accessed, Amazon QuickSight renders the Generative Q&amp;A experience with this new reader experience topic pre selected.</p>

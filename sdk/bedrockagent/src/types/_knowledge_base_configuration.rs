@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the vector embeddings configuration of the knowledge base.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KnowledgeBaseConfiguration {
     /// <p>The type of data that the data source is converted into for the knowledge base.</p>

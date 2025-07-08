@@ -2,6 +2,8 @@
 
 /// <p>Describes the share results of a resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ShareResult {
     /// <p>The ID of the principal.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the error that's returned when you cannot delete a launch template version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponseError {
     /// <p>The error code.</p>

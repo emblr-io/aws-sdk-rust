@@ -2,6 +2,8 @@
 
 /// <p>The summary of an ML Detect behavior model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BehaviorModelTrainingSummary {
     /// <p>The name of the security profile.</p>

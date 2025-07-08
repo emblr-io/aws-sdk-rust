@@ -2,6 +2,8 @@
 
 /// <p>An Active Directory error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActiveDirectoryError {
     /// <p>The directory ID of the directory that an error pertains to.</p>

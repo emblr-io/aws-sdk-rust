@@ -2,6 +2,8 @@
 
 /// <p>The budget action to add.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BudgetActionToAdd {
     /// <p>The type of budget action to add.</p>

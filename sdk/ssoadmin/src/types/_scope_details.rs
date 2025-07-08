@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes an IAM Identity Center access scope and its authorized targets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScopeDetails {
     /// <p>The name of the access scope.</p>

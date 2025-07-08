@@ -2,6 +2,8 @@
 
 /// <p>Information about a Docker image that is managed by CodeBuild.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentImage {
     /// <p>The name of the Docker image.</p>

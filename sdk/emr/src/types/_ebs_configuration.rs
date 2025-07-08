@@ -2,6 +2,8 @@
 
 /// <p>The Amazon EBS configuration of a cluster instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsConfiguration {
     /// <p>An array of Amazon EBS volume specifications attached to a cluster instance.</p>

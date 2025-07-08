@@ -2,6 +2,8 @@
 
 /// <p>The transport parameters that you want to associate with an incoming media stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputConfigurationRequest {
     /// <p>The port that you want the flow to listen on for an incoming media stream.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This type is used to map column(s) from the query result to a dimension in the destination table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionMapping {
     /// <p>Column name from query result.</p>

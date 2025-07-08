@@ -2,6 +2,8 @@
 
 /// <p>Card data parameters that are required to verify CVV (Card Verification Value) for the payment card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CardVerificationValue1 {
     /// <p>The expiry date of a payment card.</p>

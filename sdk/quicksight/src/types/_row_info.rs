@@ -2,6 +2,8 @@
 
 /// <p>Information about rows for a data set SPICE ingestion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RowInfo {
     /// <p>The number of rows that were ingested.</p>

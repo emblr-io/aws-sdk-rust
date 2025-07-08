@@ -2,6 +2,8 @@
 
 /// <p>The name and sampling percentage of a shadow variant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShadowModelVariantConfig {
     /// <p>The name of the shadow variant.</p>

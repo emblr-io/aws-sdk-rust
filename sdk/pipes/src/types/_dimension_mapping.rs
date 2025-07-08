@@ -3,6 +3,8 @@
 /// <p>Maps source data to a dimension in the target Timestream for LiveAnalytics table.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/timestream/latest/developerguide/concepts.html">Amazon Timestream for LiveAnalytics concepts</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionMapping {
     /// <p>Dynamic path to the dimension value in the source event.</p>

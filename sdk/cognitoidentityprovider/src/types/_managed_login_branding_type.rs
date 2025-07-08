@@ -2,6 +2,8 @@
 
 /// <p>A managed login branding style that's assigned to a user pool app client.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedLoginBrandingType {
     /// <p>The ID of the managed login branding style.</p>

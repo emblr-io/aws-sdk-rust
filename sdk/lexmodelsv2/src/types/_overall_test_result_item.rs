@@ -2,6 +2,8 @@
 
 /// <p>Information about the overall results for a test execution result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverallTestResultItem {
     /// <p>Indicates whether the conversation contains multiple turns or not.</p>

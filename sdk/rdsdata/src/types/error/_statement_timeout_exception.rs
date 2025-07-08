@@ -2,6 +2,8 @@
 
 /// <p>The execution of the SQL statement timed out.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatementTimeoutException {
     /// <p>The error message returned by this <code>StatementTimeoutException</code> error.</p>

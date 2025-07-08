@@ -2,6 +2,8 @@
 
 /// <p>The configuration that specifies an S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Configuration {
     /// <p>The bucket name of the customer S3 bucket.</p>

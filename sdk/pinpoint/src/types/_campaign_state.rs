@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the status of a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignState {
     /// <p>The current status of the campaign, or the current status of a treatment that belongs to an A/B test campaign.</p>

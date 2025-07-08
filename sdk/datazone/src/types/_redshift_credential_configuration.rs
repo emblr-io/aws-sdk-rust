@@ -2,6 +2,8 @@
 
 /// <p>The details of the credentials required to access an Amazon Redshift cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftCredentialConfiguration {
     /// <p>The ARN of a secret manager for an Amazon Redshift cluster.</p>

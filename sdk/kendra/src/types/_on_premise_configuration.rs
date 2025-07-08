@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to GitHub Enterprise Server (on premises).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OnPremiseConfiguration {
     /// <p>The GitHub host URL or API endpoint URL. For example, <i>https://on-prem-host-url/api/v3/</i></p>

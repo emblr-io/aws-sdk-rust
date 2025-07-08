@@ -2,6 +2,8 @@
 
 /// <p>Both an user ARN and an IAM session ARN were included in the request. Use only one ARN type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultipleIamArnsProvidedException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

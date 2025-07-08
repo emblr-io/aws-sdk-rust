@@ -2,6 +2,8 @@
 
 /// <p>The display options for margins around the outside edge of sheets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MarginStyle {
     /// <p>This Boolean value controls whether to display sheet margins.</p>

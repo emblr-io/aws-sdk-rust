@@ -2,6 +2,8 @@
 
 /// <p>The response containing search results from a completed archive search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveSearchResultsOutput {
     /// <p>The list of email result objects matching the search criteria.</p>

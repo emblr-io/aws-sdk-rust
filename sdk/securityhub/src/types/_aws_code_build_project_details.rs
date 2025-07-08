@@ -2,6 +2,8 @@
 
 /// <p>Information about an CodeBuild project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCodeBuildProjectDetails {
     /// <p>The KMS key used to encrypt the build output artifacts.</p>

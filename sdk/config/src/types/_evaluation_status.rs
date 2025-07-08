@@ -2,6 +2,8 @@
 
 /// <p>Returns status details of an evaluation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationStatus {
     /// <p>The status of an execution. The valid values are In_Progress, Succeeded or Failed.</p>

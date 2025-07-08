@@ -2,6 +2,8 @@
 
 /// <p>Provides information that describes an individual assessment from a premigration assessment run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationTaskIndividualAssessment {
     /// <p>Amazon Resource Name (ARN) of this individual assessment.</p>

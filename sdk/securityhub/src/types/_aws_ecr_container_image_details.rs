@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon ECR image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcrContainerImageDetails {
     /// <p>The Amazon Web Services account identifier that is associated with the registry that the image belongs to.</p>

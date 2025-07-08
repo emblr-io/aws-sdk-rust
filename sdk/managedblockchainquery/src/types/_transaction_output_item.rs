@@ -2,6 +2,8 @@
 
 /// <p>The container of the transaction output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransactionOutputItem {
     /// <p>The hash of a transaction. It is generated when a transaction is created.</p>

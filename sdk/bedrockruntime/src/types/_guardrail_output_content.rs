@@ -2,6 +2,8 @@
 
 /// <p>The output content produced by the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailOutputContent {
     /// <p>The specific text for the output content produced by the guardrail.</p>

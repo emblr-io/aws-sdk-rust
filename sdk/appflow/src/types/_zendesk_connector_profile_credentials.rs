@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile credentials required when using Zendesk.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ZendeskConnectorProfileCredentials {
     /// <p>The identifier for the desired client.</p>

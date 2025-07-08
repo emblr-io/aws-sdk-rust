@@ -2,6 +2,8 @@
 
 /// <p>A behavior graph in Detective.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Graph {
     /// <p>The ARN of the behavior graph.</p>

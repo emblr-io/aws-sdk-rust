@@ -2,6 +2,8 @@
 
 /// <p>A class for modeling different type of tasks. Task implementation varies based on the TaskType.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Task {
     /// <p>The operation to be performed on the provided source fields.</p>

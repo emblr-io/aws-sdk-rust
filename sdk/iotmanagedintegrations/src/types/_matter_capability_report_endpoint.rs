@@ -2,6 +2,8 @@
 
 /// <p>Matter endpoint used in capability report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MatterCapabilityReportEndpoint {
     /// <p>The id of the Amazon Web Services Matter capability report endpoint.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The parameters for S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Parameters {
     /// <p>Location of the Amazon S3 manifest file. This is NULL if the manifest file was uploaded into Amazon QuickSight.</p>

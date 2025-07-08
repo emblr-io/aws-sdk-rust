@@ -2,6 +2,8 @@
 
 /// <p>Additional rules to specify resources that should be exempt from ad-hoc lifecycle actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceStateUpdateExclusionRules {
     /// <p>Defines criteria for AMIs that are excluded from lifecycle actions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Selects whether or not the state machine's X-Ray tracing is enabled. Default is <code>false</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TracingConfiguration {
     /// <p>When set to <code>true</code>, X-Ray tracing is enabled.</p>

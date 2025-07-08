@@ -2,6 +2,8 @@
 
 /// <p>Information about the integration of DevOps Guru with another Amazon Web Services service, such as Amazon Web Services Systems Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceIntegrationConfig {
     /// <p>Information about whether DevOps Guru is configured to create an OpsItem in Amazon Web Services Systems Manager OpsCenter for each created insight.</p>

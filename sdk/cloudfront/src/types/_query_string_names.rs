@@ -2,6 +2,8 @@
 
 /// <p>Contains a list of query string names.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryStringNames {
     /// <p>The number of query string names in the <code>Items</code> list.</p>

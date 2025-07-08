@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to list all of the import jobs for a data destination within the specified maximum number of import jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListImportJobsInput {
     /// <p>The destination of the import job, which can be used to list import jobs that have a certain <code>ImportDestinationType</code>.</p>

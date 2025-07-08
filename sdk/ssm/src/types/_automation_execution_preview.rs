@@ -2,6 +2,8 @@
 
 /// <p>Information about the results of the execution preview.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutomationExecutionPreview {
     /// <p>Information about the type of impact a runbook step would have on a resource.</p>

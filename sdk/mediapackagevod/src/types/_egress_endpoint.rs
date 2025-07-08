@@ -2,6 +2,8 @@
 
 /// The endpoint URL used to access an Asset using one PackagingConfiguration.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EgressEndpoint {
     /// The ID of the PackagingConfiguration being applied to the Asset.

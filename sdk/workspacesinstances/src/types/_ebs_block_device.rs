@@ -2,6 +2,8 @@
 
 /// <p>Defines configuration for an Elastic Block Store volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EbsBlockDevice {
     /// <p>Type of EBS volume (e.g., gp2, io1).</p>

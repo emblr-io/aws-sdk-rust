@@ -2,6 +2,8 @@
 
 /// <p>A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParametricConfigurationOverrides {
     /// <p>The configurations for the application running by the job run.</p>

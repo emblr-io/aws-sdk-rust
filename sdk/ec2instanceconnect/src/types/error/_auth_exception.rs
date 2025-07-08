@@ -2,6 +2,8 @@
 
 /// <p>Either your AWS credentials are not valid or you do not have access to the EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthException {
     #[allow(missing_docs)] // documentation missing in model

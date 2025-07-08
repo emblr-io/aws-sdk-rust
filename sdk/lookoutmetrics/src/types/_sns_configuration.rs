@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the SNS topic to which you want to send your alerts and the IAM role that has access to that topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnsConfiguration {
     /// <p>The ARN of the IAM role that has access to the target SNS topic.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the basic structure and properties of a <code>ManagedNotificationConfiguration</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedNotificationConfigurationStructure {
     /// <p>The Amazon Resource Name (ARN) of the <code>ManagedNotificationConfiguration</code>.</p>

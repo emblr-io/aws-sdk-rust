@@ -2,6 +2,8 @@
 
 /// <p>Defines a prepaid pricing model where the customers are charged a fixed upfront amount.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FixedUpfrontPricingTerm {
     /// <p>Category of the term being updated.</p>

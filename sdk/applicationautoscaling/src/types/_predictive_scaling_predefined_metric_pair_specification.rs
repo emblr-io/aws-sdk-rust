@@ -23,6 +23,8 @@
 /// <p><code>TotalALBRequestCount</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictiveScalingPredefinedMetricPairSpecification {
     /// <p>Indicates which metrics to use. There are two different types of metrics for each metric type: one is a load metric and one is a scaling metric.</p>

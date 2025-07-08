@@ -2,6 +2,8 @@
 
 /// <p>The inferred state of the device, given the provided position, IP address, cellular signals, and Wi-Fi- access points.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InferredState {
     /// <p>The device position inferred by the provided position, IP address, cellular signals, and Wi-Fi- access points.</p>

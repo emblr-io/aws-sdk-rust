@@ -2,6 +2,8 @@
 
 /// <p>Parameters supported by the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterDefinition {
     /// <p>A regular expression that represents the patterns to allow for String types.</p>

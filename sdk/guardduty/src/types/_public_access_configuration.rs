@@ -3,6 +3,8 @@
 /// <p>Describes public access policies that apply to the Amazon S3 bucket.</p>
 /// <p>For information about each of the following settings, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html">Blocking public access to your Amazon S3 storage</a> in the <i>Amazon S3 User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicAccessConfiguration {
     /// <p>Indicates whether or not there is a setting that allows public access to the Amazon S3 buckets through access control lists (ACLs).</p>

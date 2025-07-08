@@ -2,6 +2,8 @@
 
 /// <p>InstanceLimits represents the list of instance related attributes that are available for given InstanceType.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceLimits {
     /// <p>InstanceCountLimits represents the limits on number of instances that be created in Amazon Elasticsearch for given InstanceType.</p>

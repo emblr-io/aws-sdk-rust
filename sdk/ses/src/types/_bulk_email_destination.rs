@@ -2,6 +2,8 @@
 
 /// <p>An array that contains one or more Destinations, as well as the tags and replacement data associated with each of those Destinations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BulkEmailDestination {
     /// <p>Represents the destination of the message, consisting of To:, CC:, and BCC: fields.</p><note>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes the options for the access portal associated with an application that can be updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateApplicationPortalOptions {
     /// <p>A structure that describes the sign-in options for an application portal.</p>

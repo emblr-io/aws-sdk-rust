@@ -3,6 +3,8 @@
 /// <p>A structure that contains the configuration of encryption-at-rest settings for canary artifacts that the canary uploads to Amazon S3.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_artifact_encryption.html">Encrypting canary artifacts</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3EncryptionConfig {
     /// <p>The encryption method to use for artifacts created by this canary. Specify <code>SSE_S3</code> to use server-side encryption (SSE) with an Amazon S3-managed key. Specify <code>SSE-KMS</code> to use server-side encryption with a customer-managed KMS key.</p>

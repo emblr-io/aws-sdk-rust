@@ -2,6 +2,8 @@
 
 /// <p>Represents information about an artifact to be worked on, such as a test or build artifact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputArtifact {
     /// <p>The name of the artifact to be worked on (for example, "My App").</p>

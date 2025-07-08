@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the Regions that are configured for multi-Region replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegionsInfo {
     /// <p>The Region where the Managed Microsoft AD directory was originally created.</p>

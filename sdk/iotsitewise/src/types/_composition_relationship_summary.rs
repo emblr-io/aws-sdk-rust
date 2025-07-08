@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of the components of the composite model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositionRelationshipSummary {
     /// <p>The ID of the asset model, in UUID format.</p>

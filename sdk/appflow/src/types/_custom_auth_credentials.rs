@@ -2,6 +2,8 @@
 
 /// <p>The custom credentials required for custom authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomAuthCredentials {
     /// <p>The custom authentication type that the connector uses.</p>

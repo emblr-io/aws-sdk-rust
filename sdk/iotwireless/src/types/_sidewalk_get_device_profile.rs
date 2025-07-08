@@ -2,6 +2,8 @@
 
 /// <p>Gets information about a Sidewalk device profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SidewalkGetDeviceProfile {
     /// <p>The Sidewalk application server public key.</p>

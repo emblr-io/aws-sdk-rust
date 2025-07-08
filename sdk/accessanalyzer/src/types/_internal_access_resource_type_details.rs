@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the total number of active, archived, and resolved findings for a resource type of an internal access analyzer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalAccessResourceTypeDetails {
     /// <p>The total number of active findings for the resource type in the internal access analyzer.</p>

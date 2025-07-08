@@ -2,6 +2,8 @@
 
 /// <p>The attributes of an <code>Endpoint</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EndpointAttributes {
     /// <p>The device token for the GCM, APNS, and APNS_SANDBOX endpoint types.</p>

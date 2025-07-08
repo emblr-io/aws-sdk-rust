@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an AuthorizeCacheSecurityGroupIngress operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizeCacheSecurityGroupIngressInput {
     /// <p>The cache security group that allows network ingress.</p>

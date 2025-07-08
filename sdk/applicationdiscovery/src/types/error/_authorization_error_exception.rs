@@ -2,6 +2,8 @@
 
 /// <p>The user does not have permission to perform the action. Check the IAM policy associated with this user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationErrorException {
     #[allow(missing_docs)] // documentation missing in model

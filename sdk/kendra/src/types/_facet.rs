@@ -4,6 +4,8 @@
 /// <p>For example, the document attribute or facet "Department" includes the values "HR", "Engineering", and "Accounting". You can display these values in the search results so that documents can be searched by department.</p>
 /// <p>You can display up to 10 facet values per facet for a query. If you want to increase this limit, contact <a href="http://aws.amazon.com/contact-us/">Support</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Facet {
     /// <p>The unique key for the document attribute.</p>

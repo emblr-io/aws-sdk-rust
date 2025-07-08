@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of the Amazon Web Services Glue data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueRunConfigurationOutput {
     /// <p>The Amazon Web Services account ID included in the configuration details of the Amazon Web Services Glue data source.</p>

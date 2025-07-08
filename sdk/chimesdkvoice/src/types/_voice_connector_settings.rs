@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Chime SDK Voice Connector settings. Includes any Amazon S3 buckets designated for storing call detail records.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceConnectorSettings {
     /// <p>The S3 bucket that stores the Voice Connector's call detail records.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about the Savings Plans purchase analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SavingsPlansPurchaseAnalysisDetails {
     /// <p>The currency code used for the analysis.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An internet service provider (ISP) or network (ASN) in Amazon CloudWatch Internet Monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Network {
     /// <p>The name of the internet service provider (ISP) or network (ASN).</p>

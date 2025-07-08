@@ -2,6 +2,8 @@
 
 /// <p>A name and value pair that is specific to the engine of the server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct EngineAttribute {
     /// <p>The name of the engine attribute.</p>

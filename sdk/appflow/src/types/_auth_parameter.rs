@@ -2,6 +2,8 @@
 
 /// <p>Information about required authentication parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthParameter {
     /// <p>The authentication key required to authenticate with the connector.</p>

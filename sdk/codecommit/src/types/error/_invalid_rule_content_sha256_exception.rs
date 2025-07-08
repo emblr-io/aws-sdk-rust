@@ -2,6 +2,8 @@
 
 /// <p>The SHA-256 hash signature for the rule content is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRuleContentSha256Exception {
     /// <p>Any message associated with the exception.</p>

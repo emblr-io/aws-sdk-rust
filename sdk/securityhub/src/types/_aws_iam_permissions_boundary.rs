@@ -2,6 +2,8 @@
 
 /// <p>Information about the policy used to set the permissions boundary for an IAM principal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamPermissionsBoundary {
     /// <p>The ARN of the policy used to set the permissions boundary.</p>

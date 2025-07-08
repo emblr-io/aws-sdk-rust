@@ -2,6 +2,8 @@
 
 /// <p>The target Amazon S3 location for the test set execution using a bot alias.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotAliasTestExecutionTarget {
     /// <p>The bot Id of the bot alias used in the test set execution.</p>

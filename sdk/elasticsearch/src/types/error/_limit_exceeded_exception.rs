@@ -2,6 +2,8 @@
 
 /// <p>An exception for trying to create more than allowed resources or sub-resources. Gives http status code of 409.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitExceededException {
     /// <p>A description of the error.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A previously completed or stopped hyperparameter tuning job to be used as a starting point for a new hyperparameter tuning job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParentHyperParameterTuningJob {
     /// <p>The name of the hyperparameter tuning job to be used as a starting point for a new hyperparameter tuning job.</p>

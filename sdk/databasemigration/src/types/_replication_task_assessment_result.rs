@@ -2,6 +2,8 @@
 
 /// <p>The task assessment report in JSON format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ReplicationTaskAssessmentResult {
     /// <p>The replication task identifier of the task on which the task assessment was run.</p>

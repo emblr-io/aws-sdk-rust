@@ -2,6 +2,8 @@
 
 /// <p>The QualificationRequest data structure represents a request a Worker has made for a Qualification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QualificationRequest {
     /// <p>The ID of the Qualification request, a unique identifier generated when the request was submitted.</p>

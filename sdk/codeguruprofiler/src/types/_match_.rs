@@ -2,6 +2,8 @@
 
 /// <p>The part of a profile that contains a recommendation found during analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Match {
     /// <p>The target frame that triggered a match.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an instance's time-based auto scaling configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeBasedAutoScalingConfiguration {
     /// <p>The instance ID.</p>

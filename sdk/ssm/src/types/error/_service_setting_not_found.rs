@@ -2,6 +2,8 @@
 
 /// <p>The specified service setting wasn't found. Either the service name or the setting hasn't been provisioned by the Amazon Web Services service team.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSettingNotFound {
     #[allow(missing_docs)] // documentation missing in model

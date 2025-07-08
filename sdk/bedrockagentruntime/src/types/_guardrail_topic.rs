@@ -2,6 +2,8 @@
 
 /// <p>The details for a specific topic defined in the Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailTopic {
     /// <p>The name details on a specific topic in the Guardrail.</p>

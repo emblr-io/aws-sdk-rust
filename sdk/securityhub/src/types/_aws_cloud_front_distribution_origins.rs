@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about origins and origin groups for this CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionOrigins {
     /// <p>A complex type that contains origins or origin groups for this distribution.</p>

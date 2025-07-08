@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the configureAgentResponse.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigureAgentOutput {
     /// <p>An <a href="https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AgentConfiguration.html"> <code>AgentConfiguration</code> </a> object that specifies if an agent profiles or not and for how long to return profiling data.</p>

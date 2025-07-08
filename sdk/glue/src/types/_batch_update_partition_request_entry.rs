@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the values and structure used to update a partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdatePartitionRequestEntry {
     /// <p>A list of values defining the partitions.</p>

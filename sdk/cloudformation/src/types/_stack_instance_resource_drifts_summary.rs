@@ -2,6 +2,8 @@
 
 /// <p>The structure containing summary information about resource drifts for a stack instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackInstanceResourceDriftsSummary {
     /// <p>The ID of the stack instance.</p>

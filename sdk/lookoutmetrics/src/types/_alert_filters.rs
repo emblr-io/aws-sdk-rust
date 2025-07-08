@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the alert filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlertFilters {
     /// <p>The list of measures that you want to get alerts for.</p>

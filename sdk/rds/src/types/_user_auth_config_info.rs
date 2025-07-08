@@ -2,6 +2,8 @@
 
 /// <p>Returns the details of authentication used by a proxy to log in as a specific database user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserAuthConfigInfo {
     /// <p>A user-specified description about the authentication used by a proxy to log in as a specific database user.</p>

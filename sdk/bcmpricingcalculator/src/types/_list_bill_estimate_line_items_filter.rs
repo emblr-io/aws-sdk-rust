@@ -2,6 +2,8 @@
 
 /// <p>Represents a filter for listing bill estimate line items.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListBillEstimateLineItemsFilter {
     /// <p>The name of the filter attribute.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The list of metric sources required to generate recommendations for commercial software licenses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricSource {
     /// <p>The name of the metric source provider.</p>

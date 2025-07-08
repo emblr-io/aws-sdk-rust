@@ -2,6 +2,8 @@
 
 /// <p>Contains credentials to use for federation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Credentials {
     /// <p>An access token generated for a federated user to access Amazon Connect.</p>

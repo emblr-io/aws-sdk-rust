@@ -2,6 +2,8 @@
 
 /// <p>The GET request to get the usage data of a usage plan in a specified time interval.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUsageInput {
     /// <p>The Id of the usage plan associated with the usage data.</p>

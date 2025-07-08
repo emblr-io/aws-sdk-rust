@@ -2,6 +2,8 @@
 
 /// <p>The condition that must be met in order to apply the routing rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsS3BucketWebsiteConfigurationRoutingRuleCondition {
     /// <p>Indicates to redirect the request if the HTTP error code matches this value.</p>

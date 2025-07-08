@@ -2,6 +2,8 @@
 
 /// <p>Contains error information from updating a batch of asset property values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPutAssetPropertyError {
     /// <p>The error code.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the error for the burstable performance instance whose credit option for CPU usage was not modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsuccessfulInstanceCreditSpecificationItemError {
     /// <p>The error code.</p>

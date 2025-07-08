@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the presentation of a line series in the visual</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LineChartSeriesSettings {
     /// <p>Line styles options for a line series in <code>LineChartVisual</code>.</p>

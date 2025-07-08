@@ -2,6 +2,8 @@
 
 /// <p>The response to a <code>GetXssMatchSet</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetXssMatchSetOutput {
     /// <p>Information about the <code>XssMatchSet</code> that you specified in the <code>GetXssMatchSet</code> request. For more information, see the following topics:</p>

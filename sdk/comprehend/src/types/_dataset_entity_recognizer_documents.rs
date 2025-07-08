@@ -2,6 +2,8 @@
 
 /// <p>Describes the documents submitted with a dataset for an entity recognizer model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetEntityRecognizerDocuments {
     /// <p>Specifies the Amazon S3 location where the documents for the dataset are located.</p>

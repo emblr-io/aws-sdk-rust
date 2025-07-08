@@ -2,6 +2,8 @@
 
 /// <p>An object that contains inbox placement data for an email provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlacementStatistics {
     /// <p>The percentage of emails that arrived in recipients' inboxes during the predictive inbox placement test.</p>

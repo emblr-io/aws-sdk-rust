@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Glue connection patch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueConnectionPatch {
     /// <p>The description of the Amazon Web Services Glue connection patch.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The certificate authority certificate you are importing does not comply with conditions specified in the certificate that signed it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateMismatchException {
     #[allow(missing_docs)] // documentation missing in model

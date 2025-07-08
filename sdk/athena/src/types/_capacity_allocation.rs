@@ -2,6 +2,8 @@
 
 /// <p>Contains the submission time of a single allocation request for a capacity reservation and the most recent status of the attempted allocation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityAllocation {
     /// <p>The status of the capacity allocation.</p>

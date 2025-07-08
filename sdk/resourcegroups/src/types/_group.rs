@@ -8,6 +8,8 @@
 /// <p><code>GroupConfiguration</code> - Use a service configuration to associate the group with an Amazon Web Services service. The configuration specifies which resource types can be included in the group.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Group {
     /// <p>The Amazon resource name (ARN) of the resource group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to list all export jobs with filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListExportJobsInput {
     /// <p>The pagination token returned from a previous call to <code>ListExportJobs</code> to indicate the position in the list of export jobs.</p>

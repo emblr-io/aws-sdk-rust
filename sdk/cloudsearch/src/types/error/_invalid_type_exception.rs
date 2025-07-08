@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it specified an invalid type definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTypeException {
     /// <p>A machine-parsable string error or warning code.</p>

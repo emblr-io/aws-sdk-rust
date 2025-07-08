@@ -2,6 +2,8 @@
 
 /// <p>An object representing the payment responsibilities accepted by the collaboration member.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MembershipPaymentConfiguration {
     /// <p>The payment responsibilities accepted by the collaboration member for query compute costs.</p>

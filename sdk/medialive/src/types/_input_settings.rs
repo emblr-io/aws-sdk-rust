@@ -2,6 +2,8 @@
 
 /// Live Event input parameters. There can be multiple inputs in a single Live Event.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputSettings {
     /// Used to select the audio stream to decode for inputs that have multiple available.

@@ -2,6 +2,8 @@
 
 /// <p>Describes a parameter used to set up an Amazon Elastic Block Store (Amazon EBS) volume in a block device mapping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EbsInstanceBlockDevice {
     /// <p>When the attachment was initiated.</p>

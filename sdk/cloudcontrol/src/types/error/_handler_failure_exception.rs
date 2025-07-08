@@ -2,6 +2,8 @@
 
 /// <p>The resource handler has failed without a returning a more specific error code. This can include timeouts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HandlerFailureException {
     #[allow(missing_docs)] // documentation missing in model

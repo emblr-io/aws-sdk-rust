@@ -2,6 +2,8 @@
 
 /// <p>Information about the nested item path and hash of the protected resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemPath {
     /// <p>The nested item path where the infected file was found.</p>

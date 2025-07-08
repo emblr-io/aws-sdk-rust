@@ -2,6 +2,8 @@
 
 /// <p>Specifies Lake Formation configuration settings for the crawler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LakeFormationConfiguration {
     /// <p>Specifies whether to use Lake Formation credentials for the crawler instead of the IAM role credentials.</p>

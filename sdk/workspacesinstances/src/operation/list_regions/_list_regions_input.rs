@@ -2,6 +2,8 @@
 
 /// <p>Defines input parameters for retrieving supported WorkSpaces Instances regions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ListRegionsInput {
     /// <p>Maximum number of regions to return in a single API call. Enables pagination of region results.</p>

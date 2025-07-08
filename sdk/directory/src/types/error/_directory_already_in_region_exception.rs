@@ -2,6 +2,8 @@
 
 /// <p>The Region you specified is the same Region where the Managed Microsoft AD directory was created. Specify a different Region and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectoryAlreadyInRegionException {
     /// <p>The descriptive message for the exception.</p>

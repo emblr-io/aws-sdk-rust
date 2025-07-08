@@ -2,6 +2,8 @@
 
 /// <p>Defines the rotation schedule for the secret.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsSecretsManagerSecretRotationRules {
     /// <p>The number of days after the previous rotation to rotate the secret.</p>

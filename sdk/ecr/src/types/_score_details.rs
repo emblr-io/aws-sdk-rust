@@ -2,6 +2,8 @@
 
 /// <p>Information about the Amazon Inspector score given to a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScoreDetails {
     /// <p>An object that contains details about the CVSS score given to a finding.</p>

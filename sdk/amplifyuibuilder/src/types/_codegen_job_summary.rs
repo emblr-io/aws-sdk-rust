@@ -2,6 +2,8 @@
 
 /// <p>A summary of the basic information about the code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodegenJobSummary {
     /// <p>The unique ID of the Amplify app associated with the code generation job.</p>

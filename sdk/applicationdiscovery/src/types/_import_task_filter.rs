@@ -4,6 +4,8 @@
 /// <p>When filtering by import status, all other filter values are ignored.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportTaskFilter {
     /// <p>The name, status, or import task ID for a specific import task.</p>

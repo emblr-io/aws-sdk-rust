@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>AddTags</code> operation. Specifies the tags to attach to the domain, data source, or application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddTagsInput {
     /// <p>Amazon Resource Name (ARN) for the OpenSearch Service domain, data source, or application to which you want to attach resource tags.</p>

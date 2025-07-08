@@ -2,6 +2,8 @@
 
 /// <p>The target resource that the Route 53 record points to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetResource {
     /// <p>The Network Load Balancer Resource.</p>

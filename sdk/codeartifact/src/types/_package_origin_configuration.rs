@@ -2,6 +2,8 @@
 
 /// <p>Details about the package origin configuration of a package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageOriginConfiguration {
     /// <p>A <code>PackageOriginRestrictions</code> object that contains information about the upstream and publish package origin configuration for the package.</p>

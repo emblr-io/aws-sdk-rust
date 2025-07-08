@@ -2,6 +2,8 @@
 
 /// <p>This object contains the information for one log event returned in a Live Tail stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LiveTailSessionLogEvent {
     /// <p>The name of the log stream that ingested this log event.</p>

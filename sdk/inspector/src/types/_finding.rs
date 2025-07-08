@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an Amazon Inspector finding. This data type is used as the response element in the <code>DescribeFindings</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Finding {
     /// <p>The ARN that specifies the finding.</p>

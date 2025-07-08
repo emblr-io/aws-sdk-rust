@@ -2,6 +2,8 @@
 
 /// <p>Specifies the overrides used in image set modification calls to <code>CopyImageSet</code> and <code>UpdateImageSetMetadata</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Overrides {
     /// <p>Providing this parameter will force completion of the <code>CopyImageSet</code> and <code>UpdateImageSetMetadata</code> actions, even if metadata is inconsistent at the Patient, Study, and/or Series levels.</p>

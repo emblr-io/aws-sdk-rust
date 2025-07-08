@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DeleteRuleGroupsNamespace</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteRuleGroupsNamespaceInput {
     /// <p>The ID of the workspace containing the rule groups namespace and definition to delete.</p>

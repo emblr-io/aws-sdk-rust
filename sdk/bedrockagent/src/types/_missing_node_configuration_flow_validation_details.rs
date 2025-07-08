@@ -2,6 +2,8 @@
 
 /// <p>Details about a node missing a required configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MissingNodeConfigurationFlowValidationDetails {
     /// <p>The name of the node missing a required configuration.</p>

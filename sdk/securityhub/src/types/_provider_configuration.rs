@@ -2,6 +2,8 @@
 
 /// <p>The initial configuration settings required to establish an integration between Security Hub and third-party provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProviderConfiguration {
     /// <p>The configuration settings required to establish an integration with Jira Cloud.</p>

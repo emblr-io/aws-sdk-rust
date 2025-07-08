@@ -2,6 +2,8 @@
 
 /// <p>The dataset used for testing. Optionally, if <code>AutoCreate</code> is set, Amazon Rekognition uses the training dataset to create a test dataset with a temporary split of the training dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestingData {
     /// <p>The assets used for testing.</p>

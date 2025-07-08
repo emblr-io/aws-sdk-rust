@@ -4,6 +4,8 @@
 /// <p>Filtering on the latest execution is available for executions run on or after February 08, 2024.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LatestInPipelineExecutionFilter {
     /// <p>The execution ID for the latest execution in the pipeline.</p>

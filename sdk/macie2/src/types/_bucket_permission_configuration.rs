@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the account-level and bucket-level permissions settings for an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BucketPermissionConfiguration {
     /// <p>The account-level permissions settings that apply to the bucket.</p>

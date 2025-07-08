@@ -2,6 +2,8 @@
 
 /// <p>When updating application input configuration, provides information about an Amazon Kinesis stream as the streaming source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisStreamsInputUpdate {
     /// <p>Amazon Resource Name (ARN) of the input Amazon Kinesis stream to read.</p>

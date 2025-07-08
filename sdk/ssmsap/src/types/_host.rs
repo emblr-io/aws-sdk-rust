@@ -2,6 +2,8 @@
 
 /// <p>Describes the properties of the Dedicated Host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Host {
     /// <p>The name of the Dedicated Host.</p>

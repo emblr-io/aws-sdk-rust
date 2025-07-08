@@ -2,6 +2,8 @@
 
 /// <p>Represents a test run on a set of devices with a given app package, test parameters, and so on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Run {
     /// <p>The run's ARN.</p>

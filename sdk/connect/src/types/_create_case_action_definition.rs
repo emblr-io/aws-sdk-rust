@@ -2,6 +2,8 @@
 
 /// <p>The <code>CreateCase</code> action definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCaseActionDefinition {
     /// <p>An array of objects with <code>Field ID</code> and <code>Value</code> data.</p>

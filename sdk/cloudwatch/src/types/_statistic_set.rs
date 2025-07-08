@@ -2,6 +2,8 @@
 
 /// <p>Represents a set of statistics that describes a specific metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatisticSet {
     /// <p>The number of samples used for the statistic set.</p>

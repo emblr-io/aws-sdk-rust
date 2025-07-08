@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about an event to which you have subscribed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventSubscription {
     /// <p>The Amazon Web Services customer account that is associated with the Amazon DocumentDB event notification subscription.</p>

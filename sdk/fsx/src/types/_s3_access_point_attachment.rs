@@ -2,6 +2,8 @@
 
 /// <p>An S3 access point attached to an Amazon FSx volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3AccessPointAttachment {
     /// <p>The lifecycle status of the S3 access point attachment. The lifecycle can have the following values:</p>

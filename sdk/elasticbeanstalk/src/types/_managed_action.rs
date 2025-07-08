@@ -2,6 +2,8 @@
 
 /// <p>The record of an upcoming or in-progress managed action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedAction {
     /// <p>A unique identifier for the managed action.</p>

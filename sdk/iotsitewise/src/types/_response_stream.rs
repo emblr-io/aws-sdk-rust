@@ -2,6 +2,8 @@
 
 /// <p>Contains the response, citation, and trace from the SiteWise Assistant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResponseStream {
     /// <p>Contains the SiteWise Assistant's response.</p>

@@ -2,6 +2,8 @@
 
 /// <p>In-app message configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignInAppMessage {
     /// <p>The message body of the notification, the email body or the text message.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about an unknown condition for a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnknownConnectionConditionFlowValidationDetails {
     /// <p>The name of the connection with the unknown condition.</p>

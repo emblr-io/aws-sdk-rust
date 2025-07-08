@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the allowed video and screen sharing capabilities for participants present over the call. For more information, see <a href="https://docs.aws.amazon.com/connect/latest/adminguide/inapp-calling.html">Set up in-app, web, video calling, and screen sharing capabilities</a> in the <i>Amazon Connect Administrator Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParticipantCapabilities {
     /// <p>The configuration having the video and screen sharing capabilities for participants over the call.</p>

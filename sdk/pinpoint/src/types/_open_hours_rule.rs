@@ -2,6 +2,8 @@
 
 /// <p>Specifies the start and end time for OpenHours.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenHoursRule {
     /// <p>The start of the scheduled time, in ISO 8601 format, when the channel can send messages.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of the what-if analysis properties used in the <code>ListWhatIfAnalyses</code> operation. To get the complete set of properties, call the <code>DescribeWhatIfAnalysis</code> operation, and provide the <code>WhatIfAnalysisArn</code> that is listed in the summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhatIfAnalysisSummary {
     /// <p>The Amazon Resource Name (ARN) of the what-if analysis.</p>

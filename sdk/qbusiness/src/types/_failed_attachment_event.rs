@@ -2,6 +2,8 @@
 
 /// <p>A failed file upload during web experience chat.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedAttachmentEvent {
     /// <p>The identifier of the conversation associated with the failed file upload.</p>

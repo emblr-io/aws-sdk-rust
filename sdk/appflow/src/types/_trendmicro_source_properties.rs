@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when using Trend Micro as a flow source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrendmicroSourceProperties {
     /// <p>The object specified in the Trend Micro flow source.</p>

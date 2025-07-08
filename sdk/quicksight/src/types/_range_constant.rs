@@ -2,6 +2,8 @@
 
 /// <p>A structure that represents a range constant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RangeConstant {
     /// <p>The minimum value for a range constant.</p>

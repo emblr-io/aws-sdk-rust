@@ -2,6 +2,8 @@
 
 /// <p>A criteria for when a button should be shown based on values in the notification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomActionAttachmentCriteria {
     /// <p>The operation to perform on the named variable.</p>

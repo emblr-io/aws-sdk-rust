@@ -2,6 +2,8 @@
 
 /// <p>Provides information about all the endpoints that are associated with a user ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointsResponse {
     /// <p>An array of responses, one for each endpoint that's associated with the user ID.</p>

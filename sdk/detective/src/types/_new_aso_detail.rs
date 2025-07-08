@@ -2,6 +2,8 @@
 
 /// <p>Details new Autonomous System Organizations (ASOs) used either at the resource or account level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NewAsoDetail {
     /// <p>Details about the new Autonomous System Organization (ASO).</p>

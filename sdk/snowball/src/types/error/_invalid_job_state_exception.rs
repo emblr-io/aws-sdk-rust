@@ -2,6 +2,8 @@
 
 /// <p>The action can't be performed because the job's current state doesn't allow that action to be performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidJobStateException {
     #[allow(missing_docs)] // documentation missing in model

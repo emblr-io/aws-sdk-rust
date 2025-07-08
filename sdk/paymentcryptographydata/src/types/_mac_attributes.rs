@@ -2,6 +2,8 @@
 
 /// <p>Parameters that are required for DUKPT, HMAC, or EMV MAC generation or verification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MacAttributes {
     /// <p>The encryption algorithm for MAC generation or verification.</p>

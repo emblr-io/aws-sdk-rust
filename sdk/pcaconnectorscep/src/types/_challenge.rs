@@ -2,6 +2,8 @@
 
 /// <p>For Connector for SCEP for general-purpose. An object containing information about the specified connector's SCEP challenge passwords.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Challenge {
     /// <p>The Amazon Resource Name (ARN) of the challenge.</p>

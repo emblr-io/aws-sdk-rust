@@ -2,6 +2,8 @@
 
 /// <p>The specified cluster snapshot is not in the <code>available</code> state, or other accounts are authorized to access the snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidClusterSnapshotStateFault {
     #[allow(missing_docs)] // documentation missing in model

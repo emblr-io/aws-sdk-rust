@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>DeliverConfigSnapshot</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeliverConfigSnapshotInput {
     /// <p>The name of the delivery channel through which the snapshot is delivered.</p>

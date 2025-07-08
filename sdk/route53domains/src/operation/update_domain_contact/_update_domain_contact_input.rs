@@ -2,6 +2,8 @@
 
 /// <p>The UpdateDomainContact request includes the following elements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdateDomainContactInput {
     /// <p>The name of the domain that you want to update contact information for.</p>

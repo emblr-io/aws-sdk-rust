@@ -2,6 +2,8 @@
 
 /// <p>Describes the data quality metric value according to the analysis of historical data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataQualityMetricValues {
     /// <p>The actual value of the data quality metric.</p>

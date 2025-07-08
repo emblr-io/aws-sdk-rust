@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for StartDeleteMonitorDeploymentResponse
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartDeleteMonitorDeploymentOutput {
     /// A signal map's ARN (Amazon Resource Name)

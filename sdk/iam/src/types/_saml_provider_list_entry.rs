@@ -2,6 +2,8 @@
 
 /// <p>Contains the list of SAML providers for this account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SamlProviderListEntry {
     /// <p>The Amazon Resource Name (ARN) of the SAML provider.</p>

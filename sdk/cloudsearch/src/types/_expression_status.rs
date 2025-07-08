@@ -2,6 +2,8 @@
 
 /// <p>The value of an <code>Expression</code> and its current status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpressionStatus {
     /// <p>The expression that is evaluated for sorting while processing a search request.</p>

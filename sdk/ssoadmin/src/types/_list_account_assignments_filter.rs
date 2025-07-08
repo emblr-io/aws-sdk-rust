@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes a filter for account assignments.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAccountAssignmentsFilter {
     /// <p>The ID number of an Amazon Web Services account that filters the results in the response.</p>

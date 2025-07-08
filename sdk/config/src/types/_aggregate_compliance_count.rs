@@ -2,6 +2,8 @@
 
 /// <p>Returns the number of compliant and noncompliant rules for one or more accounts and regions in an aggregator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateComplianceCount {
     /// <p>The 12-digit account ID or region based on the GroupByKey value.</p>

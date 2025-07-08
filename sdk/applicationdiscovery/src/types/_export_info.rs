@@ -2,6 +2,8 @@
 
 /// <p>Information regarding the export status of discovered data. The value is an array of objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportInfo {
     /// <p>A unique identifier used to query an export.</p>

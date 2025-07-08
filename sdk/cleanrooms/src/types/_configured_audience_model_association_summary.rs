@@ -2,6 +2,8 @@
 
 /// <p>A summary of the configured audience model association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredAudienceModelAssociationSummary {
     /// <p>A unique identifier of the membership that contains the configured audience model association.</p>

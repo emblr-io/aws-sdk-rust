@@ -2,6 +2,8 @@
 
 /// <p>There was an issue with a dependency due to a server issue. Retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadGatewayException {
     #[allow(missing_docs)] // documentation missing in model

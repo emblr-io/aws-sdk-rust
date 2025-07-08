@@ -2,6 +2,8 @@
 
 /// <p>Details of a step that is involved in a connector's operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorOperationStep {
     /// <p>The step type of the operation.</p>

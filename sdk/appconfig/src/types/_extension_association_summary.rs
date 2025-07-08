@@ -2,6 +2,8 @@
 
 /// <p>Information about an association between an extension and an AppConfig resource such as an application, environment, or configuration profile. Call <code>GetExtensionAssociation</code> to get more information about an association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExtensionAssociationSummary {
     /// <p>The extension association ID. This ID is used to call other <code>ExtensionAssociation</code> API actions such as <code>GetExtensionAssociation</code> or <code>DeleteExtensionAssociation</code>.</p>

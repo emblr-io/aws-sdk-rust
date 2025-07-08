@@ -2,6 +2,8 @@
 
 /// <p>The action that WAF takes when a web request matches all conditions in the rule, such as allow, block, or count the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRegionalWebAclRulesListActionDetails {
     /// <p>For actions that are associated with a rule, the action that WAF takes when a web request matches all conditions in a rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations for an output from a node.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlowNodeOutput {
     /// <p>A name for the output that you can reference.</p>

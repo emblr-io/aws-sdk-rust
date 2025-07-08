@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for ChannelEngineVersionRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelEngineVersionRequest {
     /// The build identifier of the engine version to use for this channel. Specify 'DEFAULT' to reset to the default version.

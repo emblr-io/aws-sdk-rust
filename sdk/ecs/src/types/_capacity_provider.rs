@@ -2,6 +2,8 @@
 
 /// <p>The details for a capacity provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityProvider {
     /// <p>The Amazon Resource Name (ARN) that identifies the capacity provider.</p>

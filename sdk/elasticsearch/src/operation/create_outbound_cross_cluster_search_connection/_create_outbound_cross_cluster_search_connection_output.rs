@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code><code>CreateOutboundCrossClusterSearchConnection</code></code> request. Contains the details of the newly created cross-cluster search connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateOutboundCrossClusterSearchConnectionOutput {
     /// <p>Specifies the <code><code>DomainInformation</code></code> for the source Elasticsearch domain.</p>

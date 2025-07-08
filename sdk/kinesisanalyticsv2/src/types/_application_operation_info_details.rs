@@ -2,6 +2,8 @@
 
 /// Provides a description of the operation, such as the operation-type and status
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationOperationInfoDetails {
     /// Type of operation performed on an application

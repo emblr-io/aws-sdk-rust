@@ -3,6 +3,8 @@
 /// <p>Limits for given InstanceType and for each of it's role. <br><br>
 /// Limits contains following <code> <code>StorageTypes,</code> </code> <code> <code>InstanceLimits</code> </code> and <code> <code>AdditionalLimits</code> </code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Limits {
     /// <p>StorageType represents the list of storage related types and attributes that are available for given InstanceType.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about alarm state changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SystemEvent {
     /// <p>The event type. If the value is <code>STATE_CHANGE</code>, the event contains information about alarm state changes.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an update to the code of an application. Not supported for Apache Zeppelin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeContentUpdate {
     /// <p>Describes an update to the text code for an application.</p>

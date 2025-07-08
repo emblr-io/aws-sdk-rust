@@ -7,6 +7,8 @@
 /// <p>For Application Load Balancer and AppSync, the limit is fixed at 8 KB (8,192 bytes).</p>
 /// <p>This is used in the <code>AssociationConfig</code> of the web ACL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestBodyAssociatedResourceTypeConfig {
     /// <p>Specifies the maximum size of the web request body component that an associated CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resource should send to WAF for inspection. This applies to statements in the web ACL that inspect the body or JSON body.</p>

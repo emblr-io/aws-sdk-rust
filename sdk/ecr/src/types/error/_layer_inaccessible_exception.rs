@@ -2,6 +2,8 @@
 
 /// <p>The specified layer is not available because it is not associated with an image. Unassociated image layers may be cleaned up at any time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayerInaccessibleException {
     /// <p>The error message associated with the exception.</p>

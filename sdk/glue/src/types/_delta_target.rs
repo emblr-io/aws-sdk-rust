@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Delta data store to crawl one or more Delta tables.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeltaTarget {
     /// <p>A list of the Amazon S3 paths to the Delta tables.</p>

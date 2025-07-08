@@ -2,6 +2,8 @@
 
 /// <p>A conflict with a previous successful update is detected. This typically occurs when the previous update did not have time to propagate before the next update was made. A retry (with appropriate backoff logic) is the recommended response to this exception.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictException {
     #[allow(missing_docs)] // documentation missing in model

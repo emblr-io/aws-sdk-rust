@@ -2,6 +2,8 @@
 
 /// <p>Contains the metric and the summary statistic you want to calculate, and the order in which to sort the results, for the intents in the bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsIntentMetric {
     /// <p>The metric for which you want to get intent summary statistics.</p>

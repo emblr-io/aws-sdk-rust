@@ -2,6 +2,8 @@
 
 /// <p>Configuration for enabling external data filtering for third-party applications to access data managed by Lake Formation .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalFilteringConfiguration {
     /// <p>Allows to enable or disable the third-party applications that are allowed to access data managed by Lake Formation.</p>

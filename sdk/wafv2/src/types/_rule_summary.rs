@@ -2,6 +2,8 @@
 
 /// <p>High-level information about a <code>Rule</code>, returned by operations like <code>DescribeManagedRuleGroup</code>. This provides information like the ID, that you can use to retrieve and manage a <code>RuleGroup</code>, and the ARN, that you provide to the <code>RuleGroupReferenceStatement</code> to use the rule group in a <code>Rule</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleSummary {
     /// <p>The name of the rule.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A list of email addresses that you have verified with Amazon SES under your Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVerifiedEmailAddressesOutput {
     /// <p>A list of email addresses that have been verified.</p>

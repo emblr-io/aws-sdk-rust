@@ -2,6 +2,8 @@
 
 /// <p>An object that provides information about the configuration of a Generative Q&amp;A experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisteredUserGenerativeQnAEmbeddingConfiguration {
     /// <p>The ID of the new Q reader experience topic that you want to make the starting topic in the Generative Q&amp;A experience. You can find a topic ID by navigating to the Topics pane in the Amazon QuickSight application and opening a topic. The ID is in the URL for the topic that you open.</p>

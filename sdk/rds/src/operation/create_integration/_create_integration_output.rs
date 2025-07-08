@@ -2,6 +2,8 @@
 
 /// <p>A zero-ETL integration with Amazon Redshift.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateIntegrationOutput {
     /// <p>The Amazon Resource Name (ARN) of the database used as the source for replication.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of information about job executions for a specific job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobExecutionSummaryForJob {
     /// <p>The ARN of the thing on which the job execution is running.</p>

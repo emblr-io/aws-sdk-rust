@@ -2,6 +2,8 @@
 
 /// <p>Response from Amazon Cognito for a signing certificate request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSigningCertificateOutput {
     /// <p>The x.509 certificate that signs SAML 2.0 authentication requests for your user pool.</p>

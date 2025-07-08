@@ -2,6 +2,8 @@
 
 /// <p>Filters applied to the technical cue or shot detection segments. For more information, see <code>StartSegmentDetection</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartSegmentDetectionFilters {
     /// <p>Filters that are specific to technical cues.</p>

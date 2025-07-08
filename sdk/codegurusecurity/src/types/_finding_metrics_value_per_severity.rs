@@ -2,6 +2,8 @@
 
 /// <p>A numeric value corresponding to the severity of a finding, such as the number of open findings or the average time it takes to close findings of a given severity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingMetricsValuePerSeverity {
     /// <p>A numeric value corresponding to an informational finding.</p>

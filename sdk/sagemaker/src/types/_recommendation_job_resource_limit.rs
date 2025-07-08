@@ -2,6 +2,8 @@
 
 /// <p>Specifies the maximum number of jobs that can run in parallel and the maximum number of jobs that can run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationJobResourceLimit {
     /// <p>Defines the maximum number of load tests.</p>

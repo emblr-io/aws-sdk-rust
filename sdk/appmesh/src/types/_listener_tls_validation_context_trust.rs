@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a listener's Transport Layer Security (TLS) validation context trust.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ListenerTlsValidationContextTrust {
     /// <p>An object that represents a Transport Layer Security (TLS) validation context trust for a local file.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about the configuration for the <code>Lambda</code> action engine, or executor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaExecutorConfiguration {
     /// <p>The ARN of the Lambda function used by the action engine.</p>

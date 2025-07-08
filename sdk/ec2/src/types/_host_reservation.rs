@@ -2,6 +2,8 @@
 
 /// <p>Details about the Dedicated Host Reservation and associated Dedicated Hosts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostReservation {
     /// <p>The number of Dedicated Hosts the reservation is associated with.</p>

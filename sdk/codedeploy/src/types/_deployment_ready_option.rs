@@ -2,6 +2,8 @@
 
 /// <p>Information about how traffic is rerouted to instances in a replacement environment in a blue/green deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentReadyOption {
     /// <p>Information about when to reroute traffic from an original environment to a replacement environment in a blue/green deployment.</p>

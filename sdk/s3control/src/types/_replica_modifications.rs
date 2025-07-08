@@ -5,6 +5,8 @@
 /// <p>You must enable replica modification sync on the source and destination buckets to replicate replica metadata changes between the source and the replicas.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicaModifications {
     /// <p>Specifies whether S3 on Outposts replicates modifications to object metadata on replicas.</p>

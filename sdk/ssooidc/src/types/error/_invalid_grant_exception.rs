@@ -2,6 +2,8 @@
 
 /// <p>Indicates that a request contains an invalid grant. This can occur if a client makes a <code>CreateToken</code> request with an invalid grant type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidGrantException {
     /// <p>Single error code. For this exception the value will be <code>invalid_grant</code>.</p>

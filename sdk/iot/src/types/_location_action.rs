@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Location rule action sends device location updates from an MQTT message to an Amazon Location tracker resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationAction {
     /// <p>The IAM role that grants permission to write to the Amazon Location resource.</p>

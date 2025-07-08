@@ -2,6 +2,8 @@
 
 /// <p>The <i>Amazon Web Services Signature Version 4</i> type of temporary credentials.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Credentials {
     /// <p>The token that applications inside the pods must pass to any service API to use the temporary credentials.</p>

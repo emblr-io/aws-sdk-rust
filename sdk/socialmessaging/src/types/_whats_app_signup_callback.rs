@@ -2,6 +2,8 @@
 
 /// <p>Contains the <code>accessToken</code> provided by Meta during signup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhatsAppSignupCallback {
     /// <p>The access token for your WhatsApp Business Account. The <code>accessToken</code> value is provided by Meta.</p>

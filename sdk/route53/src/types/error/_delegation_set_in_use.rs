@@ -2,6 +2,8 @@
 
 /// <p>The specified delegation contains associated hosted zones which must be deleted before the reusable delegation set can be deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DelegationSetInUse {
     /// <p></p>

@@ -2,6 +2,8 @@
 
 /// <p>Object that determines whether tracking should be used during a contact executed with this <code>Config</code> in the mission profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrackingConfig {
     /// <p>Current setting for autotrack.</p>

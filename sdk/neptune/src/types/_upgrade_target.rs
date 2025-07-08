@@ -2,6 +2,8 @@
 
 /// <p>The version of the database engine that a DB instance can be upgraded to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpgradeTarget {
     /// <p>The name of the upgrade target database engine.</p>

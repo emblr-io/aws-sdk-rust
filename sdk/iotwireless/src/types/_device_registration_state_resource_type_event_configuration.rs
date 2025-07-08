@@ -2,6 +2,8 @@
 
 /// <p>Device registration state resource type event configuration object for enabling or disabling topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeviceRegistrationStateResourceTypeEventConfiguration {
     /// <p>Device registration resource type state event configuration object for enabling or disabling Sidewalk related event topics.</p>

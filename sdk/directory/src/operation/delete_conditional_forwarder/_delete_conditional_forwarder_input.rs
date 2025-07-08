@@ -2,6 +2,8 @@
 
 /// <p>Deletes a conditional forwarder.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConditionalForwarderInput {
     /// <p>The directory ID for which you are deleting the conditional forwarder.</p>

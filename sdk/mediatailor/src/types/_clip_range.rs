@@ -2,6 +2,8 @@
 
 /// <p>Clip range configuration for the VOD source associated with the program.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClipRange {
     /// <p>The end offset of the clip range, in milliseconds, starting from the beginning of the VOD source associated with the program.</p>

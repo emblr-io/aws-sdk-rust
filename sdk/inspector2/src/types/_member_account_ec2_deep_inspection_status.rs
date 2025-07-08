@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the status of Amazon Inspector deep inspection for a member account in your organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MemberAccountEc2DeepInspectionStatus {
     /// <p>The unique identifier for the Amazon Web Services account of the organization member.</p>

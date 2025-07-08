@@ -2,6 +2,8 @@
 
 /// <p>You do not have sufficient access to perform this action. Check your permissions, and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessDeniedException {
     /// <p>Message for the <code>AccessDeniedException</code> error.</p>

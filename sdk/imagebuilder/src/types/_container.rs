@@ -2,6 +2,8 @@
 
 /// <p>A container encapsulates the runtime environment for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Container {
     /// <p>Containers and container images are Region-specific. This is the Region context for the container.</p>

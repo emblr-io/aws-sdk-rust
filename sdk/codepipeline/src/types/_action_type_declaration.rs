@@ -2,6 +2,8 @@
 
 /// <p>The parameters for the action type definition that are provided when the action type is created or updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionTypeDeclaration {
     /// <p>The description for the action type to be updated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A type of analysis rule that enables row-level analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisRuleList {
     /// <p>Columns that can be used to join a configured table with the table of the member who can query and other members' configured tables.</p>

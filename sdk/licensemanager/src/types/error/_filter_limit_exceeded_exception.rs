@@ -2,6 +2,8 @@
 
 /// <p>The request uses too many filters or too many filter values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

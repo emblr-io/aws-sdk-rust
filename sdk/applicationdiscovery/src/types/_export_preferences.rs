@@ -2,6 +2,8 @@
 
 /// <p>Indicates the type of data that is being exported. Only one <code>ExportPreferences</code> can be enabled for a <a href="https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_StartExportTask.html">StartExportTask</a> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ExportPreferences {
     /// <p>If enabled, exported data includes EC2 instance type matches for on-premises servers discovered through Amazon Web Services Application Discovery Service.</p>

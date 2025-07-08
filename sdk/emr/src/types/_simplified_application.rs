@@ -2,6 +2,8 @@
 
 /// <p>The returned release label application names or versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimplifiedApplication {
     /// <p>The returned release label application name. For example, <code>hadoop</code>.</p>

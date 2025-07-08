@@ -2,6 +2,8 @@
 
 /// <p>Describes the certificate extensions to be added to the certificate signing request (CSR).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsrExtensions {
     /// <p>Indicates the purpose of the certificate and of the key contained in the certificate.</p>

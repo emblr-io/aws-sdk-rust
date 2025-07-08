@@ -2,6 +2,8 @@
 
 /// <p>Additional settings that directly map to Slurm settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlurmCustomSetting {
     /// <p>Amazon Web Services PCS supports configuration of the following Slurm parameters:</p>

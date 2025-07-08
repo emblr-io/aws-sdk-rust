@@ -2,6 +2,8 @@
 
 /// <p>An EKS Anywhere license associated with a subscription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct License {
     /// <p>An id associated with an EKS Anywhere subscription license.</p>

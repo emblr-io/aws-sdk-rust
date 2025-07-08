@@ -2,6 +2,8 @@
 
 /// <p>Represents a change data capture stream for an Amazon Keyspaces table, which enables tracking and processing of data changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Stream {
     /// <p>The Amazon Resource Name (ARN) that uniquely identifies this stream.</p>

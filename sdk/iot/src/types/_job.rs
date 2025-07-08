@@ -2,6 +2,8 @@
 
 /// <p>The <code>Job</code> object contains details about a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Job {
     /// <p>An ARN identifying the job with format "arn:aws:iot:region:account:job/jobId".</p>

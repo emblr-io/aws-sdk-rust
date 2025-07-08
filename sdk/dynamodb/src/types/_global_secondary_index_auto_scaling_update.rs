@@ -2,6 +2,8 @@
 
 /// <p>Represents the auto scaling settings of a global secondary index for a global table that will be modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalSecondaryIndexAutoScalingUpdate {
     /// <p>The name of the global secondary index.</p>

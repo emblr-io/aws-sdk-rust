@@ -2,6 +2,8 @@
 
 /// <p>Describes an attachment between a resource and a transit gateway.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayAttachment {
     /// <p>The ID of the attachment.</p>

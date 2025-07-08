@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a baseline model explainability job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelExplainabilityBaselineConfig {
     /// <p>The name of the baseline model explainability job.</p>

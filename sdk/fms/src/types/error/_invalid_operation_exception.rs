@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because there was nothing to do or the operation wasn't possible. For example, you might have submitted an <code>AssociateAdminAccount</code> request for an account ID that was already set as the Firewall Manager administrator. Or you might have tried to access a Region that's disabled by default, and that you need to enable for the Firewall Manager administrator account and for Organizations before you can access it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidOperationException {
     #[allow(missing_docs)] // documentation missing in model

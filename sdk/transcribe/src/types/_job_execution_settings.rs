@@ -3,6 +3,8 @@
 /// <p>Makes it possible to control how your transcription job is processed. Currently, the only <code>JobExecutionSettings</code> modification you can choose is enabling job queueing using the <code>AllowDeferredExecution</code> sub-parameter.</p>
 /// <p>If you include <code>JobExecutionSettings</code> in your request, you must also include the sub-parameters: <code>AllowDeferredExecution</code> and <code>DataAccessRoleArn</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobExecutionSettings {
     /// <p>Makes it possible to enable job queuing when your concurrent request limit is exceeded. When <code>AllowDeferredExecution</code> is set to <code>true</code>, transcription job requests are placed in a queue until the number of jobs falls below the concurrent request limit. If <code>AllowDeferredExecution</code> is set to <code>false</code> and the number of transcription job requests exceed the concurrent request limit, you get a <code>LimitExceededException</code> error.</p>

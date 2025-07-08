@@ -2,6 +2,8 @@
 
 /// <p>Options to configure how your job will stop if your data quality evaluation fails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DqStopJobOnFailureOptions {
     /// <p>When to stop job if your data quality evaluation fails. Options are Immediate or AfterDataLoad.</p>

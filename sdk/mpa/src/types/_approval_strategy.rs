@@ -2,6 +2,8 @@
 
 /// <p>Strategy for how an approval team grants approval.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ApprovalStrategy {
     /// <p>Minimum number of approvals (M) required for a total number of approvers (N).</p>

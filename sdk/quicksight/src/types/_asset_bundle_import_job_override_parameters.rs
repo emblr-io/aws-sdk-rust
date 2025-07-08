@@ -2,6 +2,8 @@
 
 /// <p>A list of overrides that modify the asset bundle resource configuration before the resource is imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleImportJobOverrideParameters {
     /// <p>An optional structure that configures resource ID overrides to be applied within the import job.</p>

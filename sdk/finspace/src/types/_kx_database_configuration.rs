@@ -2,6 +2,8 @@
 
 /// <p>The configuration of data that is available for querying from this database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxDatabaseConfiguration {
     /// <p>The name of the kdb database. When this parameter is specified in the structure, S3 with the whole database is included by default.</p>

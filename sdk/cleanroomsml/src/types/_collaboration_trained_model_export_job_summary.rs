@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a trained model export job in a collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationTrainedModelExportJobSummary {
     /// <p>The time at which the trained model export job was created.</p>

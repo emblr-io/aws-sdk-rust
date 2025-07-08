@@ -2,6 +2,8 @@
 
 /// <p>Represents a file upload card. It can optionally receive a <code>filename</code> and <code>fileId</code> to set a default file. If not received, the user must provide the file when the Q App runs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FileUploadCardInput {
     /// <p>The title or label of the file upload card.</p>

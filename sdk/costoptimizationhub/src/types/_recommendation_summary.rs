@@ -2,6 +2,8 @@
 
 /// <p>The summary of rightsizing recommendations, including de-duped savings from all types of recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationSummary {
     /// <p>The grouping of recommendations.</p>

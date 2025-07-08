@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for an input field on a form. Use <code>FormInputValueProperty</code> to specify the values to render or bind by default.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormInputValueProperty {
     /// <p>The value to assign to the input field.</p>

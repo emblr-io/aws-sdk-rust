@@ -2,6 +2,8 @@
 
 /// <p>Attributes of Hyperledger Fabric for a network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFabricAttributes {
     /// <p>The endpoint of the ordering service for the network.</p>

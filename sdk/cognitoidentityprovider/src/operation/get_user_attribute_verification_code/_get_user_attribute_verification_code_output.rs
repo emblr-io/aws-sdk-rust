@@ -2,6 +2,8 @@
 
 /// <p>The verification code response returned by the server response to get the user attribute verification code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUserAttributeVerificationCodeOutput {
     /// <p>Information about the delivery destination of the user attribute verification code.</p>

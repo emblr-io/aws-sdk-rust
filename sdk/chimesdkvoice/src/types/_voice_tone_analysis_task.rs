@@ -2,6 +2,8 @@
 
 /// <p>A representation of an asynchronous request to perform voice tone analysis on a Voice Connector call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VoiceToneAnalysisTask {
     /// <p>The ID of the voice tone analysis task.</p>

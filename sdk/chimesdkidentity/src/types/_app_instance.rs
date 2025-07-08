@@ -2,6 +2,8 @@
 
 /// <p>The details of an <code>AppInstance</code>, an instance of an Amazon Chime SDK messaging application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AppInstance {
     /// <p>The ARN of the messaging instance.</p>

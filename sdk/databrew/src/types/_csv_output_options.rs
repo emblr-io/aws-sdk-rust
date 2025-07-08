@@ -2,6 +2,8 @@
 
 /// <p>Represents a set of options that define how DataBrew will write a comma-separated value (CSV) file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvOutputOptions {
     /// <p>A single character that specifies the delimiter used to create CSV job output.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure to hold multiple values of an output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum WorkflowStepOutputUnion {
     /// <p>The integer value.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>PollForThirdPartyJobs</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PollForThirdPartyJobsInput {
     /// <p>Represents information about an action type.</p>

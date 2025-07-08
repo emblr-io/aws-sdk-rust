@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for response generation based on retrieved text chunks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerationConfiguration {
     /// <p>Contains the template for the prompt that's sent to the model for response generation.</p>

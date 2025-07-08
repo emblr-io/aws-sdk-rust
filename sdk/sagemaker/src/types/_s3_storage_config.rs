@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Simple Storage (Amazon S3) location and security configuration for <code>OfflineStore</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3StorageConfig {
     /// <p>The S3 URI, or location in Amazon S3, of <code>OfflineStore</code>.</p>

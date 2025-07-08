@@ -2,6 +2,8 @@
 
 /// <p>Describes a security group and Amazon Web Services account ID pair.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserIdGroupPair {
     /// <p>A description for the security group rule that references this user ID group pair.</p>

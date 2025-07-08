@@ -2,6 +2,8 @@
 
 /// <p>A revision destination is the Amazon S3 bucket folder destination to where the export will be sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoExportRevisionDestinationEntry {
     /// <p>The Amazon S3 bucket that is the destination for the event action.</p>

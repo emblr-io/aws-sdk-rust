@@ -2,6 +2,8 @@
 
 /// <p>Describes the parameters for a resource type. Use parameters to determine which tasks are identified during target resolution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetResourceTypeParameter {
     /// <p>A description of the parameter.</p>

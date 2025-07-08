@@ -2,6 +2,8 @@
 
 /// <p>Request parameters to use when integrating with Amazon Cognito to authenticate users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthenticateCognitoActionConfig {
     /// <p>The Amazon Resource Name (ARN) of the Amazon Cognito user pool.</p>

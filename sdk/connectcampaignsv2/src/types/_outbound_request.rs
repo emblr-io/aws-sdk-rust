@@ -2,6 +2,8 @@
 
 /// An outbound request for a campaign.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutboundRequest {
     /// Client provided parameter used for idempotency. Its value must be unique for each request.

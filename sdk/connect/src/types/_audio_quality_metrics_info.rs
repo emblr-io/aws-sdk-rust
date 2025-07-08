@@ -2,6 +2,8 @@
 
 /// <p>Contains information for score and potential quality issues for Audio</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioQualityMetricsInfo {
     /// <p>Number measuring the estimated quality of the media connection.</p>

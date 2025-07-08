@@ -2,6 +2,8 @@
 
 /// <p>Describes a standby WorkSpace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StandbyWorkspace {
     /// <p>The identifier of the standby WorkSpace.</p>

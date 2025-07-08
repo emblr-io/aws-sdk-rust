@@ -2,6 +2,8 @@
 
 /// <p>The application associated to an entitlement. Access is controlled based on user attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntitledApplication {
     /// <p>The identifier of the application.</p>

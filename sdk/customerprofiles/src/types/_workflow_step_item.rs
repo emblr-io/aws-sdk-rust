@@ -2,6 +2,8 @@
 
 /// <p>List containing steps in workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowStepItem {
     /// <p>Workflow step information specific to <code>APPFLOW_INTEGRATION</code> workflow.</p>

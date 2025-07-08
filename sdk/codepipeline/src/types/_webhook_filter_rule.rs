@@ -2,6 +2,8 @@
 
 /// <p>The event criteria that specify when a webhook notification is sent to your URL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebhookFilterRule {
     /// <p>A JsonPath expression that is applied to the body/payload of the webhook. The value selected by the JsonPath expression must match the value specified in the <code>MatchEquals</code> field. Otherwise, the request is ignored. For more information, see <a href="https://github.com/json-path/JsonPath">Java JsonPath implementation</a> in GitHub.</p>

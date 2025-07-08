@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata like FaceId, UserID, and Reasons, for a face that was unsuccessfully associated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsuccessfulFaceAssociation {
     /// <p>A unique identifier assigned to the face.</p>

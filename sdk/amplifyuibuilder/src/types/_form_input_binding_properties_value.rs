@@ -2,6 +2,8 @@
 
 /// <p>Represents the data binding configuration for a form's input fields at runtime.You can use <code>FormInputBindingPropertiesValue</code> to add exposed properties to a form to allow different values to be entered when a form is reused in different places in an app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormInputBindingPropertiesValue {
     /// <p>The property type.</p>

@@ -2,6 +2,8 @@
 
 /// Audio Hls Rendition Selection
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioHlsRenditionSelection {
     /// Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.

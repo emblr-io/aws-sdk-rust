@@ -2,6 +2,8 @@
 
 /// <p>A collection of settings that configure the <code>RStudioServerPro</code> Domain-level app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RStudioServerProDomainSettings {
     /// <p>The ARN of the execution role for the <code>RStudioServerPro</code> Domain-level app.</p>

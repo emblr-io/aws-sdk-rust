@@ -2,6 +2,8 @@
 
 /// <p>Details about the criteria used for sorting investigations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SortCriteria {
     /// <p>Represents the <code>Field</code> attribute to sort investigations.</p>

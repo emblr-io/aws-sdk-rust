@@ -2,6 +2,8 @@
 
 /// <p>Provides information that describes a serverless replication created by the <code>CreateReplication</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Replication {
     /// <p>The identifier for the <code>ReplicationConfig</code> associated with the replication.</p>

@@ -2,6 +2,8 @@
 
 /// Required when you set Codec, under AudioDescriptions&gt;CodecSettings, to the value MP3.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Mp3Settings {
     /// Specify the average bitrate in bits per second.

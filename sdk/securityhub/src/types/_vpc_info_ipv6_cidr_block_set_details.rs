@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the IPv6 CIDR blocks for the VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcInfoIpv6CidrBlockSetDetails {
     /// <p>The IPv6 CIDR block for the VPC.</p>

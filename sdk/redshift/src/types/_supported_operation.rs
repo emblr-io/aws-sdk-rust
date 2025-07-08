@@ -2,6 +2,8 @@
 
 /// <p>Describes the operations that are allowed on a maintenance track.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedOperation {
     /// <p>A list of the supported operations.</p>

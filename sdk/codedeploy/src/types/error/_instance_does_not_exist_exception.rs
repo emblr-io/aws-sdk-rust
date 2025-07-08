@@ -3,6 +3,8 @@
 /// <p>The specified instance does not exist in the deployment group.</p>
 #[deprecated(note = "This exception is deprecated, use DeploymentTargetDoesNotExistException instead.")]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceDoesNotExistException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

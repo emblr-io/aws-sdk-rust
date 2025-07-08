@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the restore testing plan that Backup used to initiate the restore job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreJobCreator {
     /// <p>An Amazon Resource Name (ARN) that uniquely identifies a restore testing plan.</p>

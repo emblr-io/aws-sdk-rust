@@ -2,6 +2,8 @@
 
 /// <p>This data type contains information about progress of an operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Progress {
     /// <p>The current number of object bytes scanned.</p>

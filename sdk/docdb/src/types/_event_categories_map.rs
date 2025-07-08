@@ -2,6 +2,8 @@
 
 /// <p>An event source type, accompanied by one or more event category names.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventCategoriesMap {
     /// <p>The source type that the returned categories belong to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input configuration for a canary deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentCanarySettings {
     /// <p>The percentage (0.0-100.0) of traffic routed to the canary deployment.</p>

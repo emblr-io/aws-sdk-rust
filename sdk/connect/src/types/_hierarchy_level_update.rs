@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the hierarchy level to update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchyLevelUpdate {
     /// <p>The name of the user hierarchy level. Must not be more than 50 characters.</p>

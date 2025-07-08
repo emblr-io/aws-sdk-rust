@@ -2,6 +2,8 @@
 
 /// Information about a Greengrass core's connectivity.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectivityInfo {
     /// The endpoint for the Greengrass core. Can be an IP address or DNS.

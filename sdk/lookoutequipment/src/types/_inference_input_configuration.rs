@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration information for the input data for the inference, including Amazon S3 location of input data..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceInputConfiguration {
     /// <p>Specifies configuration information for the input data for the inference, including Amazon S3 location of input data.</p>

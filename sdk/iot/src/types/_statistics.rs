@@ -2,6 +2,8 @@
 
 /// <p>A map of key-value pairs for all supported statistics. For issues with missing or unexpected values for this API, consult <a href="https://docs.aws.amazon.com/iot/latest/developerguide/fleet-indexing-troubleshooting.html"> Fleet indexing troubleshooting guide</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Statistics {
     /// <p>The count of things that match the query string criteria and contain a valid aggregation field value.</p>

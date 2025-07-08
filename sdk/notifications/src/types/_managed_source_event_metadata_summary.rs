@@ -2,6 +2,8 @@
 
 /// <p>A short summary and metadata for a managed notification event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedSourceEventMetadataSummary {
     /// <p>The Region where the notification originated.</p>

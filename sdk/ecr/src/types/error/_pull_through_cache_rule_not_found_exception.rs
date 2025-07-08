@@ -2,6 +2,8 @@
 
 /// <p>The pull through cache rule was not found. Specify a valid pull through cache rule and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullThroughCacheRuleNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

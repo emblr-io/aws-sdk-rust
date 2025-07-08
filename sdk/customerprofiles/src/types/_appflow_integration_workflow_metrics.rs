@@ -2,6 +2,8 @@
 
 /// <p>Workflow specific execution metrics for <code>APPFLOW_INTEGRATION</code> workflow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppflowIntegrationWorkflowMetrics {
     /// <p>Number of records processed in <code>APPFLOW_INTEGRATION</code> workflow.</p>

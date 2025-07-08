@@ -2,6 +2,8 @@
 
 /// <p>A mount point for the data volumes in the container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetails {
     /// <p>The path on the container to mount the host volume at.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The current status and value of a card in an active Amazon Q App session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CardStatus {
     /// <p>The current state of the card.</p>

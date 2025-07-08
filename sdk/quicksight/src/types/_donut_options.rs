@@ -2,6 +2,8 @@
 
 /// <p>The options for configuring a donut chart or pie chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DonutOptions {
     /// <p>The option for define the arc of the chart shape. Valid values are as follows:</p>

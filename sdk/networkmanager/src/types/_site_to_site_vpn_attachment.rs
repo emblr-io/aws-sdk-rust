@@ -2,6 +2,8 @@
 
 /// <p>Creates a site-to-site VPN attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SiteToSiteVpnAttachment {
     /// <p>Provides details about a site-to-site VPN attachment.</p>

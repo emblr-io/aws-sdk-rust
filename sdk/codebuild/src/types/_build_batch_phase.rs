@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a stage for a batch build.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuildBatchPhase {
     /// <p>The name of the batch build phase. Valid values include:</p>

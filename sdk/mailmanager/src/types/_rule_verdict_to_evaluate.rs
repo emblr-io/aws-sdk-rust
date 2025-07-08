@@ -2,6 +2,8 @@
 
 /// <p>The verdict to evaluate in a verdict condition expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RuleVerdictToEvaluate {
     /// <p>The Add On ARN and its returned value to evaluate in a verdict condition expression.</p>

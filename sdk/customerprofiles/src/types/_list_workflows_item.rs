@@ -2,6 +2,8 @@
 
 /// <p>A workflow in list of workflows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListWorkflowsItem {
     /// <p>The type of workflow. The only supported value is APPFLOW_INTEGRATION.</p>

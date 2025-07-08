@@ -2,6 +2,8 @@
 
 /// <p>The information needed to configure a delta time session window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LateDataRuleConfiguration {
     /// <p>The information needed to configure a delta time session window.</p>

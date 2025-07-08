@@ -2,6 +2,8 @@
 
 /// <p>Interval of the driver work-rest schedule. Stops are added to fulfil the provided rest schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteDriverScheduleInterval {
     /// <p>Maximum allowed driving time before stopping to rest.</p>

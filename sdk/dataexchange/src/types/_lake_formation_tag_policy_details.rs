@@ -2,6 +2,8 @@
 
 /// <p>Extra details specific to the affected scope in this LF data set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LakeFormationTagPolicyDetails {
     /// <p>The underlying Glue database that the notification is referring to.</p>

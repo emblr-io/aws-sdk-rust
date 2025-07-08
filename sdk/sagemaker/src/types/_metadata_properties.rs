@@ -2,6 +2,8 @@
 
 /// <p>Metadata properties of the tracking entity, trial, or trial component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetadataProperties {
     /// <p>The commit ID.</p>

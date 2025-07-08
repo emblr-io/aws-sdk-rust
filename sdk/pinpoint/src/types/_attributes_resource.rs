@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the type and the names of attributes that were removed from all the endpoints that are associated with an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributesResource {
     /// <p>The unique identifier for the application.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The address domain associate with the tax information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Authority {
     /// <p>The country code for the country that the address is in.</p>

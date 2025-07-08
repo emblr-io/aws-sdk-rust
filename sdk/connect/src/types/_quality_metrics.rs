@@ -2,6 +2,8 @@
 
 /// <p>Information about the quality of the participant's media connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QualityMetrics {
     /// <p>Information about the quality of Agent media connection.</p>

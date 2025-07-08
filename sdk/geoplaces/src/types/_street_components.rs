@@ -2,6 +2,8 @@
 
 /// <p>Components of a street.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StreetComponents {
     /// <p>Base name part of the street name.</p>

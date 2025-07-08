@@ -2,6 +2,8 @@
 
 /// <p>Returns information about URLs for web pages that display to customers as links on the pipeline view, such as an external configuration page for the action type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionTypeUrls {
     /// <p>The URL returned to the CodePipeline console that contains a link to the page where customers can configure the external action.</p>

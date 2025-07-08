@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the status of the docker server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DockerServerStatus {
     /// <p>The status of the docker server.</p>

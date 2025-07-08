@@ -2,6 +2,8 @@
 
 /// <p>Describes the public SSH host keys or the RDP certificate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostKeyAttributes {
     /// <p>The SSH host key algorithm or the RDP certificate format.</p>

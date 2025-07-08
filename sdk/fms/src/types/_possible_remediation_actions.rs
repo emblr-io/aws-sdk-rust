@@ -2,6 +2,8 @@
 
 /// <p>A list of possible remediation action lists. Each individual possible remediation action is a list of individual remediation actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PossibleRemediationActions {
     /// <p>A description of the possible remediation actions list.</p>

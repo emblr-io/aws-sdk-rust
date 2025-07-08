@@ -2,6 +2,8 @@
 
 /// <p>Information about an event destination for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetConfigurationSetEventDestinationsOutput {
     /// <p>An array that includes all of the events destinations that have been configured for the configuration set.</p>

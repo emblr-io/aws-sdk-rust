@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration that App Runner uses to run an App Runner service using an image pulled from a source image repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ImageConfiguration {
     /// <p>Environment variables that are available to your running App Runner service. An array of key-value pairs.</p>

@@ -9,6 +9,8 @@
 /// </ul>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultRetention {
     /// <p>The default Object Lock retention mode you want to apply to new objects placed in the specified bucket. Must be used with either <code>Days</code> or <code>Years</code>.</p>

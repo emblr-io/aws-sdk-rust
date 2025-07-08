@@ -2,6 +2,8 @@
 
 /// <p>The latest status of a stream’s edge to cloud uploader job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastUploaderStatus {
     /// <p>A description of an uploader job’s latest status.</p>

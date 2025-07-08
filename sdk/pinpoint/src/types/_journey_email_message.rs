@@ -2,6 +2,8 @@
 
 /// <p>Specifies the "From" address for an email message that's sent to participants in a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneyEmailMessage {
     /// <p>The verified email address to send the email message from. The default address is the FromAddress specified for the email channel for the application.</p>

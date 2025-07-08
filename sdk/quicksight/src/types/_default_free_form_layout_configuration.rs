@@ -2,6 +2,8 @@
 
 /// <p>The options that determine the default settings of a free-form layout configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultFreeFormLayoutConfiguration {
     /// <p>Determines the screen canvas size options for a free-form layout.</p>

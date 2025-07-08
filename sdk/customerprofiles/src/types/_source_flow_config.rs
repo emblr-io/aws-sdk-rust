@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of the source connector used in the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceFlowConfig {
     /// <p>The name of the AppFlow connector profile. This name must be unique for each connector profile in the AWS account.</p>

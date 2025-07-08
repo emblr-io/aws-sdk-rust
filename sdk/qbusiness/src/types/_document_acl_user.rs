@@ -2,6 +2,8 @@
 
 /// <p>Represents a user in the document's ACL, used to define access permissions for individual users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentAclUser {
     /// <p>The unique identifier of the user in the document's ACL. This is used to identify the user when applying access rules.</p>

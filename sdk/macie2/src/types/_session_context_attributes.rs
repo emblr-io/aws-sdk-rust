@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the context in which temporary security credentials were issued to an entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionContextAttributes {
     /// <p>The date and time, in UTC and ISO 8601 format, when the credentials were issued.</p>

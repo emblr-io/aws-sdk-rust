@@ -2,6 +2,8 @@
 
 /// <p>The plugin visual configuration. This includes the field wells, sorting options, and persisted options of the plugin visual.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisualConfiguration {
     /// <p>The field wells configuration of the plugin visual.</p>

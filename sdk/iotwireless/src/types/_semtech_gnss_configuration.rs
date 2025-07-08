@@ -2,6 +2,8 @@
 
 /// <p>Information about the Semtech GNSS solver configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SemtechGnssConfiguration {
     /// <p>The status indicating whether the solver is enabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering on the visibility of the product in the AWS Marketplace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerProductVisibilityFilter {
     /// <p>A string array of unique visibility values to be filtered on.</p>

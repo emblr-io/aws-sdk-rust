@@ -2,6 +2,8 @@
 
 /// <p>CDMA local ID information, which corresponds to the local identification parameters of a CDMA cell.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CdmaLocalId {
     /// <p>Pseudo-noise offset, which is a characteristic of the signal from a cell on a radio tower.</p>

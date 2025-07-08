@@ -2,6 +2,8 @@
 
 /// <p>The details of the import of the metadata form type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Import {
     /// <p>The name of the import.</p>

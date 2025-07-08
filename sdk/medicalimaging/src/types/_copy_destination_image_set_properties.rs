@@ -2,6 +2,8 @@
 
 /// <p>Copy the image set properties of the destination image set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CopyDestinationImageSetProperties {
     /// <p>The image set identifier of the copied image set properties.</p>

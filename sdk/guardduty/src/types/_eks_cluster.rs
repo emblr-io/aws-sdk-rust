@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon EKS cluster involved in a GuardDuty finding, including cluster identification, status, and network configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksCluster {
     /// <p>The Amazon Resource Name (ARN) that uniquely identifies the Amazon EKS cluster involved in the finding.</p>

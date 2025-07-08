@@ -2,6 +2,8 @@
 
 /// <p>The details of the self granting status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueSelfGrantStatusOutput {
     /// <p>The details for the self granting status for a Glue data source.</p>

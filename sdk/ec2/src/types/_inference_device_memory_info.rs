@@ -5,6 +5,8 @@
 /// </note>
 /// <p>Describes the memory available to the inference accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceDeviceMemoryInfo {
     /// <p>The size of the memory available to the inference accelerator, in MiB.</p>

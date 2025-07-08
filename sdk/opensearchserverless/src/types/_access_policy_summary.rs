@@ -2,6 +2,8 @@
 
 /// <p>A summary of the data access policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessPolicySummary {
     /// <p>The type of access policy. Currently, the only available type is <code>data</code>.</p>

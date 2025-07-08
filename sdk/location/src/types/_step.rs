@@ -2,6 +2,8 @@
 
 /// <p>Represents an element of a leg within a route. A step contains instructions for how to move to the next step in the leg.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Step {
     /// <p>The starting position of a step. If the position is the first step in the leg, this position is the same as the start position of the leg.</p>

@@ -2,6 +2,8 @@
 
 /// Settings for a SCTE-35 return_to_network message.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Scte35ReturnToNetworkScheduleActionSettings {
     /// The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35.

@@ -2,6 +2,8 @@
 
 /// <p>The information for a phone number, in E.164 format, in an Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PhoneNumberInformation {
     /// <p>The Amazon Resource Name (ARN) associated with the phone number.</p>

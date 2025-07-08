@@ -2,6 +2,8 @@
 
 /// <p>Information about a policy for application-controlled session stickiness.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppCookieStickinessPolicy {
     /// <p>The mnemonic name for the policy being created. The name must be unique within a set of policies for this load balancer.</p>

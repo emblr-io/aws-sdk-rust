@@ -10,6 +10,8 @@
 /// <p>Windows platform version <code>1.0.0</code> or later.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsEnvironmentFile {
     /// <p>The file type to use. The only supported value is <code>s3</code>.</p>

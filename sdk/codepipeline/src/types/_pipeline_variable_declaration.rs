@@ -2,6 +2,8 @@
 
 /// <p>A variable declared at the pipeline level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineVariableDeclaration {
     /// <p>The name of a pipeline-level variable.</p>

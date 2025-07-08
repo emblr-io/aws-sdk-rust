@@ -2,6 +2,8 @@
 
 /// <p>An offer dictates usage terms for the model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Offer {
     /// <p>Offer Id for a model offer.</p>

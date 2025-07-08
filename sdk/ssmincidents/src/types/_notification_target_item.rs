@@ -2,6 +2,8 @@
 
 /// <p>The SNS targets that are notified when updates are made to an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum NotificationTargetItem {
     /// <p>The Amazon Resource Name (ARN) of the SNS topic.</p>

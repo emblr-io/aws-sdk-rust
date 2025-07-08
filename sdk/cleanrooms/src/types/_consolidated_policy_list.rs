@@ -2,6 +2,8 @@
 
 /// <p>Controls on the analysis specifications that can be run on a configured table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConsolidatedPolicyList {
     /// <p>The columns to join on.</p>

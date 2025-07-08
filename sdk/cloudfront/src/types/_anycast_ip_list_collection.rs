@@ -2,6 +2,8 @@
 
 /// <p>The Anycast static IP list collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnycastIpListCollection {
     /// <p>Items in the Anycast static IP list collection. Each item is of the <code>AnycastIpListSummary</code> structure type.</p>

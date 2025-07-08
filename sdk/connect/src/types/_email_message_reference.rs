@@ -2,6 +2,8 @@
 
 /// <p>Information about the reference when the referenceType is <code>EMAIL_MESSAGE</code>. Otherwise, null.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailMessageReference {
     /// <p>The name of the email message reference</p>

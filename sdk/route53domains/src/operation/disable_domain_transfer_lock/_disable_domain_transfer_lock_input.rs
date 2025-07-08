@@ -2,6 +2,8 @@
 
 /// <p>The DisableDomainTransferLock request includes the following element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisableDomainTransferLockInput {
     /// <p>The name of the domain that you want to remove the transfer lock for.</p>

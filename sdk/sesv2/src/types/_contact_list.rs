@@ -2,6 +2,8 @@
 
 /// <p>A list that contains contacts that have subscribed to a particular topic or topics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContactList {
     /// <p>The name of the contact list.</p>

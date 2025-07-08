@@ -2,6 +2,8 @@
 
 /// <p>Contains the details for an SFTP connector connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SftpConnectorConnectionDetails {
     /// <p>The SSH public key of the remote SFTP server. This is returned during the initial connection attempt when you call <code>TestConnection</code>. It allows you to retrieve the valid server host key to update the connector when you are unable to obtain it in advance.</p>

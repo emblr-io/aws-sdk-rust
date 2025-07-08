@@ -2,6 +2,8 @@
 
 /// <p>Result message containing a list of environment resource descriptions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentResourcesOutput {
     /// <p>A list of <code>EnvironmentResourceDescription</code>.</p>

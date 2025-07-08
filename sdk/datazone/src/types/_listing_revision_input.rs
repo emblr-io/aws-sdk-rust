@@ -2,6 +2,8 @@
 
 /// <p>A revision to be made to an asset published in a Amazon DataZone catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListingRevisionInput {
     /// <p>An identifier of revision to be made to an asset published in a Amazon DataZone catalog.</p>

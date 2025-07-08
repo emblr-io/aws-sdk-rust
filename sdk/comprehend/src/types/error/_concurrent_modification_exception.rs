@@ -2,6 +2,8 @@
 
 /// <p>Concurrent modification of the tags associated with an Amazon Comprehend resource is not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentModificationException {
     #[allow(missing_docs)] // documentation missing in model

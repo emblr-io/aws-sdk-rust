@@ -2,6 +2,8 @@
 
 /// <p>Amazon S3 logging configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Logs {
     /// <p>The S3 bucket in which to store the logs.</p>

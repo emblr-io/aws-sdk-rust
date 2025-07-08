@@ -2,6 +2,8 @@
 
 /// <p>Source configuration for a specified media pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceConfiguration {
     /// <p>The selected video streams for a specified media pipeline. The number of video streams can't exceed 25.</p>

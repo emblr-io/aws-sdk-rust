@@ -3,6 +3,8 @@
 /// <p>A grouping of individual filters. Filter groups are applied to the same group of visuals.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/quicksight/latest/user/add-a-compound-filter.html">Adding filter conditions (group filters) with AND and OR operators</a> in the <i>Amazon QuickSight User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterGroup {
     /// <p>The value that uniquely identifies a <code>FilterGroup</code> within a dashboard, template, or analysis.</p>

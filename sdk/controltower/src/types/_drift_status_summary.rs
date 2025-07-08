@@ -3,6 +3,8 @@
 /// <p>The drift summary of the enabled control.</p>
 /// <p>Amazon Web Services Control Tower expects the enabled control configuration to include all supported and governed Regions. If the enabled control differs from the expected configuration, it is defined to be in a state of drift. You can repair this drift by resetting the enabled control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DriftStatusSummary {
     /// <p>The drift status of the enabled control.</p>

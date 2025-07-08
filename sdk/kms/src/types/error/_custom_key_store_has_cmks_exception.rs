@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the custom key store contains KMS keys. After verifying that you do not need to use the KMS keys, use the <code>ScheduleKeyDeletion</code> operation to delete the KMS keys. After they are deleted, you can delete the custom key store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomKeyStoreHasCmKsException {
     #[allow(missing_docs)] // documentation missing in model

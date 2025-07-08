@@ -2,6 +2,8 @@
 
 /// <p>Aggregated details about the data quality metrics collected for the <code>AnomalyDetectorArn</code> provided in the <code>GetDataQualityMetrics</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyDetectorDataQualityMetric {
     /// <p>The start time for the data quality metrics collection.</p>

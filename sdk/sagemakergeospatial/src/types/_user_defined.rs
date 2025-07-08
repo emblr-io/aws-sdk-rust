@@ -2,6 +2,8 @@
 
 /// <p>The output resolution (in target georeferenced units) of the result of the operation</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserDefined {
     /// <p>The value for output resolution of the result.</p>

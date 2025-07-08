@@ -2,6 +2,8 @@
 
 /// <p>The values of StartJobRun API requests used in job runs started using the job template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobTemplateData {
     /// <p>The execution role ARN of the job run.</p>

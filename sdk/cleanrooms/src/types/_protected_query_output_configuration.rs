@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration details for protected query output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProtectedQueryOutputConfiguration {
     /// <p>Required configuration for a protected query with a <code>distribute</code> output type.</p>

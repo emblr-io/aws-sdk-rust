@@ -2,6 +2,8 @@
 
 /// <p>An attempt to download or examine log files didn't succeed because an Aurora Serverless v2 instance was paused.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbInstanceNotReadyFault {
     #[allow(missing_docs)] // documentation missing in model

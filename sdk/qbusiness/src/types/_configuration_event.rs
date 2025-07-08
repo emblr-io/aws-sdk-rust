@@ -2,6 +2,8 @@
 
 /// <p>A configuration event activated by an end user request to select a specific chat mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationEvent {
     /// <p>The chat modes available to an Amazon Q Business end user.</p>

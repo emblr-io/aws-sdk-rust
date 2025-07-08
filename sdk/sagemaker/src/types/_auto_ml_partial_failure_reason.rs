@@ -2,6 +2,8 @@
 
 /// <p>The reason for a partial failure of an AutoML job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlPartialFailureReason {
     /// <p>The message containing the reason for a partial failure of an AutoML job.</p>

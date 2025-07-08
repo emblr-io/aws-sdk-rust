@@ -2,6 +2,8 @@
 
 /// <p>Describes a database in a Fleet Advisor collector inventory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseShortInfoResponse {
     /// <p>The ID of a database in a Fleet Advisor collector inventory.</p>

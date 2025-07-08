@@ -2,6 +2,8 @@
 
 /// <p>Two or more incompatible parameters were specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidParameterCombinationException {
     /// <p>Two or more parameters that must not be used together were used together.</p>

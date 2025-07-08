@@ -2,6 +2,8 @@
 
 /// <p>Information about the domain price associated with a TLD.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainPrice {
     /// <p>The name of the TLD for which the prices apply.</p>

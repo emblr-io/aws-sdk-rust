@@ -2,6 +2,8 @@
 
 /// <p>Data returned from the <b>DescribePendingMaintenanceActions</b> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribePendingMaintenanceActionsOutput {
     /// <p>A list of the pending maintenance actions for the resource.</p>

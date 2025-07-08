@@ -2,6 +2,8 @@
 
 /// <p>Information about the number of open reactive and proactive insights that can be used to gauge the health of your system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsightHealth {
     /// <p>The number of open proactive insights.</p>

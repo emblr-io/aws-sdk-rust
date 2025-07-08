@@ -2,6 +2,8 @@
 
 /// <p>A section of the network that a network flow has traveled through.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TraversedComponent {
     /// <p>The identifier for the traversed component.</p>

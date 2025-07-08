@@ -2,6 +2,8 @@
 
 /// <p>Details about the remediation steps for a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Remediation {
     /// <p>A recommendation on the steps to take to remediate the issue identified by a finding.</p>

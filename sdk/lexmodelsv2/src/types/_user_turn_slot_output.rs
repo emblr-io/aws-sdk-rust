@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a slot output by the test set execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserTurnSlotOutput {
     /// <p>The value output by the slot recognition.</p>

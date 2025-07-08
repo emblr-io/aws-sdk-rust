@@ -2,6 +2,8 @@
 
 /// <p>Provides details on one or more IPv6 prefixes to be assigned to the network interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetails {
     /// <p>The IPv6 prefix.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the VPC resources, VPC endpoint services, Lattice services, or service networks associated with the VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcEndpointAssociation {
     /// <p>The ID of the VPC endpoint association.</p>

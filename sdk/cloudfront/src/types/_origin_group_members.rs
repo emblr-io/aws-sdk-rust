@@ -2,6 +2,8 @@
 
 /// <p>A complex data type for the origins included in an origin group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OriginGroupMembers {
     /// <p>The number of origins in an origin group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the authorization configuration for using an OpenID Connect compliant service with your AppSync GraphQL API endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAppSyncGraphQlApiOpenIdConnectConfigDetails {
     /// <p>The number of milliseconds that a token is valid after being authenticated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes a CIDR block for an address pool.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PoolCidrBlock {
     /// <p>The CIDR block.</p>

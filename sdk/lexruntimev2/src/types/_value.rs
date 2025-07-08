@@ -2,6 +2,8 @@
 
 /// <p>Information about the value provided for a slot and Amazon Lex V2's interpretation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Value {
     /// <p>The part of the user's response to the slot elicitation that Amazon Lex V2 determines is relevant to the slot value.</p>

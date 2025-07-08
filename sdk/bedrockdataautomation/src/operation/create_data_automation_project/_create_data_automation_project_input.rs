@@ -2,6 +2,8 @@
 
 /// Create DataAutomationProject Request
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateDataAutomationProjectInput {
     /// Name of the DataAutomationProject

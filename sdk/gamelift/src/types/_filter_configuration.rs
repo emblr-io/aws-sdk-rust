@@ -2,6 +2,8 @@
 
 /// <p>A list of fleet locations where a game session queue can place new game sessions. You can use a filter to temporarily exclude specific locations from receiving placements. For queues that have multi-location fleets, you can use a filter configuration allow placement with some, but not all, of a fleet's locations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FilterConfiguration {
     /// <p>A list of locations to allow game session placement in, in the form of Amazon Web Services Region codes such as <code>us-west-2</code>.</p>

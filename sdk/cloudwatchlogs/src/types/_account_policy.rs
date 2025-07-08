@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about one CloudWatch Logs account policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountPolicy {
     /// <p>The name of the account policy.</p>

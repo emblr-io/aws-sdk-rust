@@ -2,6 +2,8 @@
 
 /// <p>Describes the AWS resources in use by this environment. This data is live.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentResourceDescription {
     /// <p>The name of the environment.</p>

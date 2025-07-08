@@ -2,6 +2,8 @@
 
 /// <p>A partition key pair consisting of a name and a type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeySchemaElement {
     /// <p>The name of a partition key.</p>

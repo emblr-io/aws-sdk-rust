@@ -2,6 +2,8 @@
 
 /// <p>Contains configurations defining enrollment behavior for the batch job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnrollmentConfig {
     /// <p>The action to take when the specified speaker is already enrolled in the specified domain. The default value is <code>SKIP</code>, which skips the enrollment for the existing speaker. Setting the value to <code>OVERWRITE</code> replaces the existing voice prints and enrollment audio stored for that speaker with new data generated from the latest audio.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An error indicating that a particular service limit was exceeded. You can increase some service limits by contacting Amazon Web ServicesSupport.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLimitExceeded {
     /// <p>Enumeration of the service limit that was exceeded.</p>

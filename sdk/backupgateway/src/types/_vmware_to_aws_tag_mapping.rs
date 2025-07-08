@@ -2,6 +2,8 @@
 
 /// <p>This displays the mapping of on-premises VMware tags to the corresponding Amazon Web Services tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VmwareToAwsTagMapping {
     /// <p>The is the category of VMware.</p>

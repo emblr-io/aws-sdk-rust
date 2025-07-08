@@ -2,6 +2,8 @@
 
 /// <p>The named deployment group with the user or Amazon Web Services account does not exist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentGroupDoesNotExistException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

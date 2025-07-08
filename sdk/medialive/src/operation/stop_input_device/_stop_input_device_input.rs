@@ -2,6 +2,8 @@
 
 /// Placeholder documentation for StopInputDeviceRequest
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopInputDeviceInput {
     /// The unique ID of the input device to stop. For example, hd-123456789abcdef.

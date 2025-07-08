@@ -2,6 +2,8 @@
 
 /// <p>Details about an error returned for a <code>BatchGetIncidentFindings</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetIncidentFindingsError {
     /// <p>The ID of a specified finding for which an error was returned for a <code>BatchGetIncidentFindings</code> operation.</p>

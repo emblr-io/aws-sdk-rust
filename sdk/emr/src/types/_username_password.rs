@@ -2,6 +2,8 @@
 
 /// <p>The username and password that you use to connect to cluster endpoints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UsernamePassword {
     /// <p>The username associated with the temporary credentials that you use to connect to cluster endpoints.</p>

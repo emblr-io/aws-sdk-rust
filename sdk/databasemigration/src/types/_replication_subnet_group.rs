@@ -2,6 +2,8 @@
 
 /// <p>Describes a subnet group in response to a request by the <code>DescribeReplicationSubnetGroups</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationSubnetGroup {
     /// <p>The identifier of the replication instance subnet group.</p>

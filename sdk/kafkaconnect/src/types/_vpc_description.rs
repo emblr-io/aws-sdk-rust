@@ -2,6 +2,8 @@
 
 /// <p>The description of the VPC in which the connector resides.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcDescription {
     /// <p>The security groups for the connector.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A component for DNS/routing control readiness checks and architecture checks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DnsTargetResource {
     /// <p>The domain name that acts as an ingress point to a portion of the customer application.</p>

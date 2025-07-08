@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the session that the key was used for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsIamAccessKeySessionContext {
     /// <p>Attributes of the session that the key was used for.</p>

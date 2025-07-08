@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains the details of the IAM Identity Center used for your web app. Returned during a call to <code>DescribeWebApp</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribedIdentityCenterConfig {
     /// <p>The Amazon Resource Name (ARN) for the IAM Identity Center application: this value is set automatically when you create your web app.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Summary information for frequently asked questions and answers included in an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FaqSummary {
     /// <p>The identifier of the FAQ.</p>

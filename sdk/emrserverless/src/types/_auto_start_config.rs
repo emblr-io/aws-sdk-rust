@@ -2,6 +2,8 @@
 
 /// <p>The configuration for an application to automatically start on job submission.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoStartConfig {
     /// <p>Enables the application to automatically start on job submission. Defaults to true.</p>

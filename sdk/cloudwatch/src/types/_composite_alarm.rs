@@ -2,6 +2,8 @@
 
 /// <p>The details about a composite alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompositeAlarm {
     /// <p>Indicates whether actions should be executed during any changes to the alarm state.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The lookback window setup of an incremental refresh configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LookbackWindow {
     /// <p>The name of the lookback window column.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The cadence for Amazon Web Services to update the data export in your S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshCadence {
     /// <p>The frequency that data exports are updated. The export refreshes each time the source data updates, up to three times daily.</p>

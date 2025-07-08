@@ -2,6 +2,8 @@
 
 /// Settings to specify when an action should occur. Only one of the options must be selected.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleActionStartSettings {
     /// Option for specifying the start time for an action.

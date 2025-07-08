@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Identity and Access Management (IAM) role that is associated with a DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterRole {
     /// <p>The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.</p>

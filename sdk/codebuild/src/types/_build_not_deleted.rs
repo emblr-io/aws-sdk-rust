@@ -2,6 +2,8 @@
 
 /// <p>Information about a build that could not be successfully deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuildNotDeleted {
     /// <p>The ID of the build that could not be successfully deleted.</p>

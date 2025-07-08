@@ -2,6 +2,8 @@
 
 /// <p>The metadata of the form input card.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormInputCardMetadata {
     /// <p>The JSON schema that defines the shape of the response data.</p>

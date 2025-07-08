@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Aurora and RDS database recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsdbRecommendation {
     /// <p>The ARN of the current Amazon Aurora or RDS database.</p>

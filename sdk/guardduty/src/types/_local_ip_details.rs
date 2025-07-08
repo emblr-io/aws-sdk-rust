@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the local IP address of the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct LocalIpDetails {
     /// <p>The IPv4 local address of the connection.</p>

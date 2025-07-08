@@ -2,6 +2,8 @@
 
 /// <p>The definition for a gradient color.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GeospatialGradientColor {
     /// <p>A list of gradient step colors for the gradient.</p>

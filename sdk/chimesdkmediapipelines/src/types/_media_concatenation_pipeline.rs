@@ -2,6 +2,8 @@
 
 /// <p>Concatenates audio and video data from one or more data streams.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaConcatenationPipeline {
     /// <p>The ID of the media pipeline being concatenated.</p>

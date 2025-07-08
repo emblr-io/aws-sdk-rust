@@ -2,6 +2,8 @@
 
 /// <p>The request failed because a desired configuration was not found or an incompatible launch template (uses a Systems Manager parameter instead of an AMI ID) or launch template version (<code>$Latest</code> or <code>$Default</code>) is present on the Auto Scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IrreversibleInstanceRefreshFault {
     #[allow(missing_docs)] // documentation missing in model

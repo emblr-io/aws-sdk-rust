@@ -2,6 +2,8 @@
 
 /// <p>The response elements represent the output of a request to perform a rollback of a transaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RollbackTransactionOutput {
     /// <p>The status of the rollback operation.</p>

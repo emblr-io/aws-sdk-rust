@@ -2,6 +2,8 @@
 
 /// NextToken length limit is half of ddb accepted limit. Increase this limit if parameters in request increases.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListLinuxSubscriptionInstancesInput {
     /// <p>An array of structures that you can use to filter the results by your specified criteria. For example, you can specify <code>Region</code> in the <code>Name</code>, with the <code>contains</code> operator to list all subscriptions that match a partial string in the <code>Value</code>, such as <code>us-west</code>.</p>

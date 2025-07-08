@@ -2,6 +2,8 @@
 
 /// <p>The category that applies to a given label.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelCategory {
     /// <p>The name of a category that applies to a given label.</p>

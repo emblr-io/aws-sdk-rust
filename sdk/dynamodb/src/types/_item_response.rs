@@ -2,6 +2,8 @@
 
 /// <p>Details for the requested item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemResponse {
     /// <p>Map of attribute data consisting of the data type and attribute value.</p>

@@ -2,6 +2,8 @@
 
 /// An object that contains information about the configuration sets for your account in the current region.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListConfigurationSetsOutput {
     /// An object that contains a list of configuration sets for your account in the current region.

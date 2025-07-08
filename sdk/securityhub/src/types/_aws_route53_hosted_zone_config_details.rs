@@ -2,6 +2,8 @@
 
 /// <p>An object that contains an optional comment about your Amazon Route&nbsp;53 hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRoute53HostedZoneConfigDetails {
     /// <p>Any comments that you include about the hosted zone.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The amount of ephemeral storage to allocate for the deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentEphemeralStorage {
     /// <p>Specify an Key Management Service key ID to encrypt the ephemeral storage for deployment.</p>

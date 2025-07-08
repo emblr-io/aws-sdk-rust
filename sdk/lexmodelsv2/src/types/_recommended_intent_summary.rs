@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a summary of a recommended intent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendedIntentSummary {
     /// <p>The unique identifier of a recommended intent associated with the bot recommendation.</p>

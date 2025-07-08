@@ -2,6 +2,8 @@
 
 /// <p>Contains information about what CloudFront resources your connection groups are associated with.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionGroupAssociationFilter {
     /// <p>The ID of the Anycast static IP list.</p>

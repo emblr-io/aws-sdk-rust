@@ -2,6 +2,8 @@
 
 /// <p>Describes a dataset label. For more information, see <code>ListDatasetLabels</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetLabelDescription {
     /// <p>The name of the label.</p>

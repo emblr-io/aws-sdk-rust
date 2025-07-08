@@ -2,6 +2,8 @@
 
 /// <p>Defines the various metric parameters that can be customized, such as threshold and headroom.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomizableMetricParameters {
     /// <p>The threshold value used for the specified metric parameter.</p><note>

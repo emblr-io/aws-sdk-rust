@@ -2,6 +2,8 @@
 
 /// <p>Contains the details of an Aurora DB cluster storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuroraDbClusterStorage {
     /// <p>The Aurora DB cluster storage configuration used for recommendations.</p>

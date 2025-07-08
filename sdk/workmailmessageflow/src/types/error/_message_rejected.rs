@@ -2,6 +2,8 @@
 
 /// <p>The requested email could not be updated due to an error in the MIME content. Check the error message for more information about what caused the error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageRejected {
     #[allow(missing_docs)] // documentation missing in model

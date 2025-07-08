@@ -2,6 +2,8 @@
 
 /// <p>Provides details about the action to use in the place of the action that results from the rule group evaluation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsWafRegionalWebAclRulesListOverrideActionDetails {
     /// <p>Overrides the rule evaluation result in the rule group.</p>

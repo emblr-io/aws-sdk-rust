@@ -2,6 +2,8 @@
 
 /// <p>Provides configuration information for the <code>AMAZON.KendraSearchIntent</code> intent. When you use this intent, Amazon Lex searches the specified Amazon Kendra index and returns documents from the index that match the user's utterance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KendraConfiguration {
     /// <p>The Amazon Resource Name (ARN) of the Amazon Kendra index that you want the <code>AMAZON.KendraSearchIntent</code> intent to search. The index must be in the same account and Region as the Amazon Lex bot.</p>

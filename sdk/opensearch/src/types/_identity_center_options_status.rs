@@ -2,6 +2,8 @@
 
 /// <p>The status of IAM Identity Center configuration settings for a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityCenterOptionsStatus {
     /// <p>Configuration settings for IAM Identity Center integration.</p>

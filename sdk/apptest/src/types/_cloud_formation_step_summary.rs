@@ -2,6 +2,8 @@
 
 /// <p>Specifies the CloudFormation step summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CloudFormationStepSummary {
     /// <p>Creates the CloudFormation summary of the step.</p>

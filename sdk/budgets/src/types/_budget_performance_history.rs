@@ -2,6 +2,8 @@
 
 /// <p>A history of the state of a budget at the end of the budget's specified time period.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BudgetPerformanceHistory {
     /// <p>A string that represents the budget name. The ":" and "\" characters, and the "/action/" substring, aren't allowed.</p>

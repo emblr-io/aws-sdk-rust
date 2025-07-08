@@ -2,6 +2,8 @@
 
 /// <p>An object describing a Performance Insights metric and one or more dimensions for that metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponseResourceMetricKey {
     /// <p>The name of a Performance Insights metric to be measured.</p>

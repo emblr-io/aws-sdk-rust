@@ -5,6 +5,8 @@
 /// </note>
 /// <p>The data used to train a predictor. The data includes a dataset group and any supplementary features. You specify this object in the <code>CreatePredictor</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDataConfig {
     /// <p>The Amazon Resource Name (ARN) of the dataset group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Duration for InfluxDB parameters in Timestream for InfluxDB.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Duration {
     /// <p>The type of duration for InfluxDB parameters.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Returns properties of the host key that's specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListedHostKey {
     /// <p>The unique Amazon Resource Name (ARN) of the host key.</p>

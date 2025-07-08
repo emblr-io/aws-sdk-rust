@@ -3,6 +3,8 @@
 /// <p>Client Route Enforcement is a feature of Client VPN that helps enforce administrator defined routes on devices connected through the VPN. This feature helps improve your security posture by ensuring that network traffic originating from a connected client is not inadvertently sent outside the VPN tunnel.</p>
 /// <p>Client Route Enforcement works by monitoring the route table of a connected device for routing policy changes to the VPN connection. If the feature detects any VPN routing policy modifications, it will automatically force an update to the route table, reverting it back to the expected route configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientRouteEnforcementOptions {
     /// <p>Enable or disable Client Route Enforcement. The state can either be <code>true</code> (enabled) or <code>false</code> (disabled). The default is <code>false</code>.</p>

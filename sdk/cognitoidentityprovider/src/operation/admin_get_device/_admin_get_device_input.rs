@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to get the device, as an administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AdminGetDeviceInput {
     /// <p>The key of the device that you want to delete.</p>

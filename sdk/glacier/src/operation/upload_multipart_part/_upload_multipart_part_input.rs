@@ -2,6 +2,8 @@
 
 /// <p>Provides options to upload a part of an archive in a multipart upload operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::fmt::Debug)]
 pub struct UploadMultipartPartInput {
     /// <p>The <code>AccountId</code> value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '<code>-</code>' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID.</p>
@@ -15,6 +17,7 @@ pub struct UploadMultipartPartInput {
     /// <p>Identifies the range of bytes in the assembled archive that will be uploaded in this part. Amazon S3 Glacier uses this information to assemble the archive in the proper sequence. The format of this header follows RFC 2616. An example header is Content-Range:bytes 0-4194303/*.</p>
     pub range: ::std::option::Option<::std::string::String>,
     /// <p>The data to upload.</p>
+    #[cfg_attr(any(feature = "serde-serialize", feature = "serde-deserialize"), serde(skip))]
     pub body: ::aws_smithy_types::byte_stream::ByteStream,
 }
 impl UploadMultipartPartInput {

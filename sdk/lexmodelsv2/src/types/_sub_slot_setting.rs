@@ -2,6 +2,8 @@
 
 /// <p>Specifications for the constituent sub slots and the expression for the composite slot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubSlotSetting {
     /// <p>The expression text for defining the constituent sub slots in the composite slot using logical AND and OR operators.</p>

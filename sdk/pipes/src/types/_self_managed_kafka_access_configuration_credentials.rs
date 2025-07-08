@@ -2,6 +2,8 @@
 
 /// <p>The Secrets Manager secret that stores your stream credentials.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SelfManagedKafkaAccessConfigurationCredentials {
     /// <p>The ARN of the Secrets Manager secret.</p>

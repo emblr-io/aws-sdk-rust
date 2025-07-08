@@ -2,6 +2,8 @@
 
 /// <p>Defines a recommendation template created with the <code>CreateRecommendationTemplate</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RecommendationTemplate {
     /// <p>The file location of the template.</p>

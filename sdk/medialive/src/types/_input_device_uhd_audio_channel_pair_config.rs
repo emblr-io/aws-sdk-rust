@@ -2,6 +2,8 @@
 
 /// One audio configuration that specifies the format for one audio pair that the device produces as output.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputDeviceUhdAudioChannelPairConfig {
     /// The ID for one audio pair configuration, a value from 1 to 8.

@@ -2,6 +2,8 @@
 
 /// <p>The Lightsail resource that <code>SetupHistory</code> was ran on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetupHistoryResource {
     /// <p>The name of the Lightsail resource.</p>

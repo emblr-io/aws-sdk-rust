@@ -3,6 +3,8 @@
 /// <p>A success response (<code>202 Accepted</code>) indicates that the request is queued for invocation.</p>
 #[deprecated]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvokeAsyncOutput {
     /// <p>The status code.</p>

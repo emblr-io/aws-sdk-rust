@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the authentication information received from a third party authentication server in response to an authentication challenge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthChallengeResponse {
     /// <p>The mapping of key-value pairs in an authentication challenge response.</p>

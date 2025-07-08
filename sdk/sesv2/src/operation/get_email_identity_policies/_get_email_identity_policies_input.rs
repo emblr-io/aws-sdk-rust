@@ -2,6 +2,8 @@
 
 /// <p>A request to return the policies of an email identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetEmailIdentityPoliciesInput {
     /// <p>The email identity.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A complex type for the set of IP addresses for an accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpSet {
     /// <p>IpFamily is deprecated and has been replaced by IpAddressFamily.</p>

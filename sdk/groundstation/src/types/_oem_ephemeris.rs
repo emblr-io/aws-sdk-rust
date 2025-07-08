@@ -3,6 +3,8 @@
 /// <p>Ephemeris data in Orbit Ephemeris Message (OEM) format.</p>
 /// <p>AWS Ground Station processes OEM Customer Provided Ephemerides according to the <a href="https://public.ccsds.org/Pubs/502x0b3e1.pdf">CCSDS standard</a> with some extra restrictions. OEM files should be in KVN format. For more detail about the OEM format that AWS Ground Station supports, see <a href="https://docs.aws.amazon.com/ground-station/latest/ug/providing-custom-ephemeris-data.html#oem-ephemeris-format">OEM ephemeris format</a> in the AWS Ground Station user guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OemEphemeris {
     /// <p>Identifies the S3 object to be used as the ephemeris.</p>

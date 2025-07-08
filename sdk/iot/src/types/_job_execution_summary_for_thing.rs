@@ -2,6 +2,8 @@
 
 /// <p>The job execution summary for a thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobExecutionSummaryForThing {
     /// <p>The unique identifier you assigned to this job when it was created.</p>

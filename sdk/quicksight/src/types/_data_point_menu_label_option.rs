@@ -2,6 +2,8 @@
 
 /// <p>The data point menu options of a dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataPointMenuLabelOption {
     /// <p>The status of the data point menu options.</p>

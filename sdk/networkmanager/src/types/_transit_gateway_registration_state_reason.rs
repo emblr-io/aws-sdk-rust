@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a transit gateway registration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayRegistrationStateReason {
     /// <p>The code for the state reason.</p>

@@ -3,6 +3,8 @@
 /// <p>Information about how blocks are related to each other. A <code>Block</code> object contains 0 or more <code>Relation</code> objects in a list, <code>Relationships</code>. For more information, see <code>Block</code>.</p>
 /// <p>The <code>Type</code> element provides the type of the relationship for all blocks in the <code>IDs</code> array.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Relationship {
     /// <p>The type of relationship between the blocks in the IDs array and the current block. The following list describes the relationship types that can be returned.</p>

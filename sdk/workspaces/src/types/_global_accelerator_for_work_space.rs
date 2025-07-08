@@ -2,6 +2,8 @@
 
 /// <p>Describes the Global Accelerator for WorkSpaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalAcceleratorForWorkSpace {
     /// <p>Indicates if Global Accelerator for WorkSpaces is enabled, disabled, or the same mode as the associated directory.</p>

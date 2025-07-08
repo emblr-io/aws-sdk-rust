@@ -2,6 +2,8 @@
 
 /// <p>A request to update the provisioned capacity settings for querying data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedCapacityRequest {
     /// <p>The target compute capacity for querying data, specified in Timestream Compute Units (TCUs).</p>

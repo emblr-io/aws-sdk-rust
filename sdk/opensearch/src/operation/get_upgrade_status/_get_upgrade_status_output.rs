@@ -2,6 +2,8 @@
 
 /// <p>Container for the response returned by the <code>GetUpgradeStatus</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUpgradeStatusOutput {
     /// <p>One of three steps that an upgrade or upgrade eligibility check goes through.</p>

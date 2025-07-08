@@ -2,6 +2,8 @@
 
 /// <p>Exception error indicating platform application disabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlatformApplicationDisabledException {
     /// <p>Message for platform application disabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the request to stop the remote access session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopRemoteAccessSessionInput {
     /// <p>The Amazon Resource Name (ARN) of the remote access session to stop.</p>

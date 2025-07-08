@@ -2,6 +2,8 @@
 
 /// <p>Specifies a categorical hyperparameter and it's range of tunable values. This object is part of the <code>ParameterRanges</code> object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CategoricalParameterRange {
     /// <p>The name of the categorical hyperparameter to tune.</p>

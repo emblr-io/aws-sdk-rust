@@ -2,6 +2,8 @@
 
 /// <p>Details on termination recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TerminateRecommendationDetail {
     /// <p>The estimated savings that result from modification, on a monthly basis.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An EC2 instance configuration Amazon Web Services PCS uses to launch compute nodes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceConfig {
     /// <p>The EC2 instance type that Amazon Web Services PCS can provision in the compute node group.</p>

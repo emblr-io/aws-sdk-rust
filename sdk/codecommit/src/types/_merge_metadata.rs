@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a merge or potential merge between a source reference and a destination reference in a pull request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MergeMetadata {
     /// <p>A Boolean value indicating whether the merge has been made.</p>

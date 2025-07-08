@@ -2,6 +2,8 @@
 
 /// <p>An over-the-air update (OTA) job configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtaJobConfig {
     /// <p>The target version of the device software.</p>

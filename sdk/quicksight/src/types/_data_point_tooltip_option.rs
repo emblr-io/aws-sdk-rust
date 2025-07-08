@@ -2,6 +2,8 @@
 
 /// <p>The data point tooltip options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataPointTooltipOption {
     /// <p>The status of the data point tool tip options.</p>

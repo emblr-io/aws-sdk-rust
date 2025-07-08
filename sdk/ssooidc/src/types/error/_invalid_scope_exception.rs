@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the scope provided in the request is invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidScopeException {
     /// <p>Single error code. For this exception the value will be <code>invalid_scope</code>.</p>

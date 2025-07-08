@@ -2,6 +2,8 @@
 
 /// <p>The number of items to compare between the source or destination branches and the merge base has exceeded the maximum allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaximumItemsToCompareExceededException {
     /// <p>Any message associated with the exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request to set the attributes that control how bounce and complaint events are processed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PutEmailIdentityFeedbackAttributesInput {
     /// <p>The email identity.</p>

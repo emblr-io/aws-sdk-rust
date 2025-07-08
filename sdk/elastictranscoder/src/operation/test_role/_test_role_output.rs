@@ -3,6 +3,8 @@
 /// <p>The <code>TestRoleResponse</code> structure.</p>
 #[deprecated]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestRoleOutput {
     /// <p>If the operation is successful, this value is <code>true</code>; otherwise, the value is <code>false</code>.</p>

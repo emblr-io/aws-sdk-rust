@@ -2,6 +2,8 @@
 
 /// Agentless Dialer config
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentlessDialerConfig {
     /// Allocates dialing capacity for this campaign between multiple active campaigns

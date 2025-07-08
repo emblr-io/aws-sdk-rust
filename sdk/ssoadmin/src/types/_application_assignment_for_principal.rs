@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes an application to which a principal is assigned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationAssignmentForPrincipal {
     /// <p>The ARN of the application to which the specified principal is assigned.</p>

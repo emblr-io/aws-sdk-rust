@@ -2,6 +2,8 @@
 
 /// <p>Information about an origin group for the CloudFront distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsCloudFrontDistributionOriginGroup {
     /// <p>Provides the criteria for an origin group to fail over.</p>

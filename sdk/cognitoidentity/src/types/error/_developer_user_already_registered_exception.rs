@@ -2,6 +2,8 @@
 
 /// <p>The provided developer user identifier is already registered with Cognito under a different identity ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeveloperUserAlreadyRegisteredException {
     /// <p>This developer user identifier is already registered with Cognito.</p>

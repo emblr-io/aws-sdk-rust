@@ -2,6 +2,8 @@
 
 /// <p>The properties that can be applied to a field when the connector is being used as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceFieldProperties {
     /// <p>Indicates whether the field can be returned in a search result.</p>

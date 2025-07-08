@@ -2,6 +2,8 @@
 
 /// <p>A number that represents the monetary amount for an offering or transaction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonetaryAmount {
     /// <p>The numerical amount of an offering or transaction.</p>

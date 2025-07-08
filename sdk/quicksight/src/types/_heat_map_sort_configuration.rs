@@ -2,6 +2,8 @@
 
 /// <p>The sort configuration of a heat map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HeatMapSortConfiguration {
     /// <p>The field sort configuration of the rows fields.</p>

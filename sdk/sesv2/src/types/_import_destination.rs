@@ -2,6 +2,8 @@
 
 /// <p>An object that contains details about the resource destination the import job is going to target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportDestination {
     /// <p>An object that contains the action of the import job towards suppression list.</p>

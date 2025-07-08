@@ -2,6 +2,8 @@
 
 /// <p>There was an issue getting the upstream layer matching the pull through cache rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnableToGetUpstreamLayerException {
     #[allow(missing_docs)] // documentation missing in model

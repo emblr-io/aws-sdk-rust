@@ -2,6 +2,8 @@
 
 /// <p>Structure representing one retry config criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryConfigCriteria {
     /// <p>Over-the-air (OTA) retry criteria failure type.</p>

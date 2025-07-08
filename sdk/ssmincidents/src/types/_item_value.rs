@@ -2,6 +2,8 @@
 
 /// <p>Describes a related item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ItemValue {
     /// <p>The Amazon Resource Name (ARN) of the related item, if the related item is an Amazon resource.</p>

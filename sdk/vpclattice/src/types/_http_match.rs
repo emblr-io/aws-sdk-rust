@@ -2,6 +2,8 @@
 
 /// <p>Describes criteria that can be applied to incoming requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpMatch {
     /// <p>The HTTP method type.</p>

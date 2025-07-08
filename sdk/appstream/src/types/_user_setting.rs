@@ -2,6 +2,8 @@
 
 /// <p>Describes an action and whether the action is enabled or disabled for users during their streaming sessions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserSetting {
     /// <p>The action that is enabled or disabled.</p>

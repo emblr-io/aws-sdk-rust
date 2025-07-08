@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the authentication config that the connector supports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthenticationConfig {
     /// <p>Indicates whether basic authentication is supported by the connector.</p>

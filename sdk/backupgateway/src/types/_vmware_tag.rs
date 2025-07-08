@@ -3,6 +3,8 @@
 /// <p>A VMware tag is a tag attached to a specific virtual machine. A <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_Tag.html">tag</a> is a key-value pair you can use to manage, filter, and search for your resources.</p>
 /// <p>The content of VMware tags can be matched to Amazon Web Services tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VmwareTag {
     /// <p>The is the category of VMware.</p>

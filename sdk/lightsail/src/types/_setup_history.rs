@@ -3,6 +3,8 @@
 /// <p>Returns a list of the commands that were ran on the target resource.</p>
 /// <p>The status of each command is also returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetupHistory {
     /// <p>A GUID that's used to identify the operation.</p>

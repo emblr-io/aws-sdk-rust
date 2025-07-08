@@ -2,6 +2,8 @@
 
 /// <p>The configuration of adding parameters in action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SetParameterValueConfiguration {
     /// <p>The destination parameter name of the <code>SetParameterValueConfiguration</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration for downloading input data from Amazon S3 into the processing container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProcessingS3Input {
     /// <p>The URI of the Amazon S3 prefix Amazon SageMaker downloads data required to run a processing job.</p>

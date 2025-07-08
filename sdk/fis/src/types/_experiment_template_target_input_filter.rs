@@ -3,6 +3,8 @@
 /// <p>Specifies a filter used for the target resource input in an experiment template.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/fis/latest/userguide/targets.html#target-filters">Resource filters</a> in the <i>Fault Injection Service User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentTemplateTargetInputFilter {
     /// <p>The attribute path for the filter.</p>

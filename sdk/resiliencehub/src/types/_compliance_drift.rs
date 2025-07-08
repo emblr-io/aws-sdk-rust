@@ -2,6 +2,8 @@
 
 /// <p>Indicates the compliance drifts (recovery time objective (RTO) and recovery point objective (RPO)) that were detected for an assessed entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComplianceDrift {
     /// <p>Identifier of an entity in which drift was detected. For compliance drift, the entity ID can be either application ID or the AppComponent ID.</p>

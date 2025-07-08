@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the full name, description, and unit of a metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResponseResourceMetric {
     /// <p>The full name of the metric.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the properties of a witness Region in a MRSC global table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalTableWitnessDescription {
     /// <p>The name of the Amazon Web Services Region that serves as a witness for the MRSC global table.</p>

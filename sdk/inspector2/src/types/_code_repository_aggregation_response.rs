@@ -2,6 +2,8 @@
 
 /// <p>A response that contains the results of a finding aggregation by code repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeRepositoryAggregationResponse {
     /// <p>The names of the projects associated with the code repository.</p>

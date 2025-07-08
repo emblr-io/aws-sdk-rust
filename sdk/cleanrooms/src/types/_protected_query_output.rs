@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the protected query output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProtectedQueryOutput {
     /// <p>Contains output information for protected queries that use a <code>distribute</code> output type. This output type lets you send query results to multiple locations - either to S3 or to collaboration members.</p><note>

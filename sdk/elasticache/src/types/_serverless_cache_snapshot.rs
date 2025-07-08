@@ -2,6 +2,8 @@
 
 /// <p>The resource representing a serverless cache snapshot. Available for Valkey, Redis OSS and Serverless Memcached only.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerlessCacheSnapshot {
     /// <p>The identifier of a serverless cache snapshot. Available for Valkey, Redis OSS and Serverless Memcached only.</p>

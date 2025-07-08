@@ -2,6 +2,8 @@
 
 /// <p>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KafkaClusterClientVpcConfig {
     /// <p>The security groups to attach to the ENIs for the broker nodes.</p>

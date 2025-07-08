@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an AcknowledgeJob action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcknowledgeJobInput {
     /// <p>The unique system-generated ID of the job for which you want to confirm receipt.</p>

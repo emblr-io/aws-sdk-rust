@@ -56,6 +56,8 @@
 /// </ul>
 /// <p>For more information about how to send commands that target managed nodes using <code>Key,Value</code> parameters, see <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/send-commands-multiple.html#send-commands-targeting">Targeting multiple managed nodes</a> in the <i>Amazon Web Services Systems Manager User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Target {
     /// <p>User-defined criteria for sending commands that target managed nodes that meet the criteria.</p>

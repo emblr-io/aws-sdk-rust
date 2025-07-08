@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about a Resolver configuration for a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResolverConfig {
     /// <p>ID for the Resolver configuration.</p>

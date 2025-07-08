@@ -2,6 +2,8 @@
 
 /// <p>Determines how the image is scaled</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SheetImageScalingConfiguration {
     /// <p>The scaling option to use when fitting the image inside the container.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The operation failed to due an encryption key error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataEncryptionException {
     #[allow(missing_docs)] // documentation missing in model

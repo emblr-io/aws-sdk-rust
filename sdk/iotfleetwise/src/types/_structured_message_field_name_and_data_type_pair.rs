@@ -2,6 +2,8 @@
 
 /// <p>Represents a <code>StructureMessageName</code> to <code>DataType</code> map element.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StructuredMessageFieldNameAndDataTypePair {
     /// <p>The field name of the structured message. It determines how a data value is referenced in the target language.</p>

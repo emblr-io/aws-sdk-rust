@@ -2,6 +2,8 @@
 
 /// <p>The key-value pair that represents the attribute by which the <code>BillingGroupCostReportResults</code> are grouped. For example, if you want a service-level breakdown for Amazon Simple Storage Service (Amazon S3) of the billing group, the attribute will be a key-value pair of <code>"PRODUCT_NAME"</code> and <code>"S3"</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Attribute {
     /// <p>The key in a key-value pair that describes the margin summary.</p>

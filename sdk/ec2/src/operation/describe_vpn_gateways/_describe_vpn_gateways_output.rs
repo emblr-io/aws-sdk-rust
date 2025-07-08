@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeVpnGateways.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeVpnGatewaysOutput {
     /// <p>Information about one or more virtual private gateways.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified image has already been pushed, and there were no changes to the manifest or image tag after the last push.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

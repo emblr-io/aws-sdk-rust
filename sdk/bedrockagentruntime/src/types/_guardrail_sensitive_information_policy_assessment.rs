@@ -2,6 +2,8 @@
 
 /// <p>The details of the sensitive policy assessment used in the Guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailSensitiveInformationPolicyAssessment {
     /// <p>The details of the PII entities used in the sensitive policy assessment for the Guardrail.</p>

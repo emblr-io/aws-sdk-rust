@@ -5,6 +5,8 @@
 /// <p>You can only use the <code>DeploymentAlarms</code> method to detect failures when the <code>DeploymentController</code> is set to <code>ECS</code> (rolling update).</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html">Rolling update</a> in the <i> <i>Amazon Elastic Container Service Developer Guide</i> </i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentAlarms {
     /// <p>One or more CloudWatch alarm names. Use a "," to separate the alarms.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents information on how DataBrew can find data, in either the Glue Data Catalog or Amazon S3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Input {
     /// <p>The Amazon S3 location where the data is stored.</p>

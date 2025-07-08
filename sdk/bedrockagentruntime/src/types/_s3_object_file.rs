@@ -2,6 +2,8 @@
 
 /// <p>Contains details of the s3 object where the source file is located.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ObjectFile {
     /// <p>The uri of the s3 object.</p>

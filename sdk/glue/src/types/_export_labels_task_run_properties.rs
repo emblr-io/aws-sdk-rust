@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration properties for an exporting labels task run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportLabelsTaskRunProperties {
     /// <p>The Amazon Simple Storage Service (Amazon S3) path where you will export the labels.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that represents a job timeout configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobTimeout {
     /// <p>The job timeout time (in seconds) that's measured from the job attempt's <code>startedAt</code> timestamp. After this time passes, Batch terminates your jobs if they aren't finished. The minimum value for the timeout is 60 seconds.</p>

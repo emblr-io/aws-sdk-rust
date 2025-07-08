@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>GetSMSAttributes</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSmsAttributesInput {
     /// <p>A list of the individual attribute names, such as <code>MonthlySpendLimit</code>, for which you want values.</p>

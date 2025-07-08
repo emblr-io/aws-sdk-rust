@@ -3,6 +3,8 @@
 /// <p>Aggregated details about the measures contributing to the anomaly group, and the measures potentially impacted by the anomaly group.</p>
 /// <p></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InterMetricImpactDetails {
     /// <p>The name of the measure.</p>

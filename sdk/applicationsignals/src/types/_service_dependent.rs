@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about a service dependent that was discovered by Application Signals. A dependent is an entity that invoked the specified service during the provided time range. Dependents include other services, CloudWatch Synthetics canaries, and clients that are instrumented with CloudWatch RUM app monitors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDependent {
     /// <p>If the invoked entity is an operation on an entity, the name of that dependent operation is displayed here.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The output from the ListOutgoingCertificates operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListOutgoingCertificatesOutput {
     /// <p>The certificates that are being transferred but not yet accepted.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes an inventory database instance for a Fleet Advisor collector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseInstanceSoftwareDetailsResponse {
     /// <p>The database engine of a database in a Fleet Advisor collector inventory, for example <code>Microsoft SQL Server</code>.</p>

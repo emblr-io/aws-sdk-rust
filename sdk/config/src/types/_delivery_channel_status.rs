@@ -3,6 +3,8 @@
 /// <p>The status of a specified delivery channel.</p>
 /// <p>Valid values: <code>Success</code> | <code>Failure</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeliveryChannelStatus {
     /// <p>The name of the delivery channel.</p>

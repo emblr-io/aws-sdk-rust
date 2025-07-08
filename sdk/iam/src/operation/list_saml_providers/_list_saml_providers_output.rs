@@ -2,6 +2,8 @@
 
 /// <p>Contains the response to a successful <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListSAMLProviders.html">ListSAMLProviders</a> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSamlProvidersOutput {
     /// <p>The list of SAML provider resource objects defined in IAM for this Amazon Web Services account.</p>

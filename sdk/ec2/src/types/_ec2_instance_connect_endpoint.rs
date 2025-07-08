@@ -2,6 +2,8 @@
 
 /// <p>The EC2 Instance Connect Endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2InstanceConnectEndpoint {
     /// <p>The ID of the Amazon Web Services account that created the EC2 Instance Connect Endpoint.</p>

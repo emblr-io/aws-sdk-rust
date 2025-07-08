@@ -3,6 +3,8 @@
 /// <p>Specifies the S3 Intelligent-Tiering configuration for an Amazon S3 bucket.</p>
 /// <p>For information about the S3 Intelligent-Tiering storage class, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html#sc-dynamic-data-access">Storage class for automatically optimizing frequently and infrequently accessed objects</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntelligentTieringConfiguration {
     /// <p>The ID used to identify the S3 Intelligent-Tiering configuration.</p>

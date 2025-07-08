@@ -2,6 +2,8 @@
 
 /// <p>Summary of a Recommendation Resource</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationResourceSummary {
     /// <p>The ID of the Recommendation Resource</p>

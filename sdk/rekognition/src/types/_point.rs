@@ -3,6 +3,8 @@
 /// <p>The X and Y coordinates of a point on an image or video frame. The X and Y values are ratios of the overall image size or video resolution. For example, if an input image is 700x200 and the values are X=0.5 and Y=0.25, then the point is at the (350,50) pixel coordinate on the image.</p>
 /// <p>An array of <code>Point</code> objects makes up a <code>Polygon</code>. A <code>Polygon</code> is returned by <code>DetectText</code> and by <code>DetectCustomLabels</code> <code>Polygon</code> represents a fine-grained polygon around a detected item. For more information, see Geometry in the Amazon Rekognition Developer Guide.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Point {
     /// <p>The value of the X coordinate for a point on a <code>Polygon</code>.</p>

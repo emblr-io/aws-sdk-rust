@@ -3,6 +3,8 @@
 /// <p>A set of one or more port numbers that can be opened on the container, and the supported network protocol.</p>
 /// <p><b>Part of:</b> <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerPortConfiguration.html">ContainerPortConfiguration</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ContainerPortRange {
     /// <p>A starting value for the range of allowed port numbers.</p>

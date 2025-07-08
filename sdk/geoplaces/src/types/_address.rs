@@ -2,6 +2,8 @@
 
 /// <p>The place address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Address {
     /// <p>Assembled address value built out of the address components, according to the regional postal rules. This is the correctly formatted address.</p>

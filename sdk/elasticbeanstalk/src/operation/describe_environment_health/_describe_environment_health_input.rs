@@ -2,6 +2,8 @@
 
 /// <p>See the example below to learn how to create a request body.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentHealthInput {
     /// <p>Specify the environment by name.</p>

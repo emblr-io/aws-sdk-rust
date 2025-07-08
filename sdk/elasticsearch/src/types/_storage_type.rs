@@ -2,6 +2,8 @@
 
 /// <p>StorageTypes represents the list of storage related types and their attributes that are available for given InstanceType.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageType {
     /// <p>Type of the storage. List of available storage options:</p>

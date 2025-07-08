@@ -2,6 +2,8 @@
 
 /// <p>Describes the report configuration for the experiment. For more information, see <a href="https://docs.aws.amazon.com/fis/latest/userguide/experiment-report-configuration">Experiment report configurations for AWS FIS</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExperimentReportConfiguration {
     /// <p>The output destinations of the experiment report.</p>

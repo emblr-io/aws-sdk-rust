@@ -2,6 +2,8 @@
 
 /// <p>The reason for the current status of your subscription to the standard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StandardsStatusReason {
     /// <p>The reason code that represents the reason for the current status of a standard subscription.</p>

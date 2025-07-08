@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a data repository association that links an Amazon File Cache resource to an NFS data repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NfsDataRepositoryConfiguration {
     /// <p>The version of the NFS (Network File System) protocol of the NFS data repository. Currently, the only supported value is <code>NFS3</code>, which indicates that the data repository must support the NFSv3 protocol.</p>

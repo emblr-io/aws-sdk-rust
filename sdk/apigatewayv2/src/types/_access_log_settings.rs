@@ -2,6 +2,8 @@
 
 /// <p>Settings for logging access in a stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessLogSettings {
     /// <p>The ARN of the CloudWatch Logs log group to receive access logs.</p>

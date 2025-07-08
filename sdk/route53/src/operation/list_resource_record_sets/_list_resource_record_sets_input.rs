@@ -2,6 +2,8 @@
 
 /// <p>A request for the resource record sets that are associated with a specified hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListResourceRecordSetsInput {
     /// <p>The ID of the hosted zone that contains the resource record sets that you want to list.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A list of features which will be configured for the organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationFeatureConfigurationResult {
     /// <p>The name of the feature that is configured for the member accounts within the organization.</p>

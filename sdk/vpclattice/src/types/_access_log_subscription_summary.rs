@@ -2,6 +2,8 @@
 
 /// <p>Summary information about an access log subscription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccessLogSubscriptionSummary {
     /// <p>The ID of the access log subscription.</p>

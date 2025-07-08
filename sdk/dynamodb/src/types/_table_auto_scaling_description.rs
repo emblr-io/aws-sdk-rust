@@ -2,6 +2,8 @@
 
 /// <p>Represents the auto scaling configuration for a global table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableAutoScalingDescription {
     /// <p>The name of the table.</p>

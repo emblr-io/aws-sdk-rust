@@ -2,6 +2,8 @@
 
 /// <p>One or more aggregators for viewing counts of nodes using different dimensions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeAggregator {
     /// <p>The aggregator type for limiting a node summary. Currently, only <code>Count</code> is supported.</p>

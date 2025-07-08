@@ -2,6 +2,8 @@
 
 /// <p>This input determines how the ListClusters action filters the list of clusters that it returns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListClustersInput {
     /// <p>The creation date and time beginning value filter for listing clusters.</p>

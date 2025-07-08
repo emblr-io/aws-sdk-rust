@@ -2,6 +2,8 @@
 
 /// <p>Exception error indicating endpoint disabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointDisabledException {
     /// <p>Message for endpoint disabled.</p>

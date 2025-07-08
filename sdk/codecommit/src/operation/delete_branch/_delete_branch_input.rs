@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a delete branch operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteBranchInput {
     /// <p>The name of the repository that contains the branch to be deleted.</p>

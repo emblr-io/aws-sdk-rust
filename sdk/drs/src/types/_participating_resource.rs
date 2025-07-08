@@ -2,6 +2,8 @@
 
 /// <p>Represents a resource participating in an asynchronous Job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParticipatingResource {
     /// <p>The ID of a participating resource.</p>

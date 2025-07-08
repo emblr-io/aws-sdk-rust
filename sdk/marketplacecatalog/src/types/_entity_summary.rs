@@ -2,6 +2,8 @@
 
 /// <p>This object is a container for common summary information about the entity. The summary doesn't contain the whole entity structure, but it does contain information common across all entities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntitySummary {
     /// <p>The name for the entity. This value is not unique. It is defined by the seller.</p>

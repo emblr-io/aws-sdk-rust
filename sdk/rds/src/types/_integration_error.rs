@@ -2,6 +2,8 @@
 
 /// <p>An error associated with a zero-ETL integration with Amazon Redshift.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegrationError {
     /// <p>The error code associated with the integration.</p>

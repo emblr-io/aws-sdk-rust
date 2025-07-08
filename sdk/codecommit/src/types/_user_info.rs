@@ -2,6 +2,8 @@
 
 /// <p>Information about the user who made a specified commit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserInfo {
     /// <p>The name of the user who made the specified commit.</p>

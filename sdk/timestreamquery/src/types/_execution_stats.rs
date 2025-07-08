@@ -2,6 +2,8 @@
 
 /// <p>Statistics for a single scheduled query run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionStats {
     /// <p>Total time, measured in milliseconds, that was needed for the scheduled query run to complete.</p>

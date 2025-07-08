@@ -2,6 +2,8 @@
 
 /// <p>Information needed to acknowledge the alarm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcknowledgeAlarmActionRequest {
     /// <p>The request ID. Each ID must be unique within each batch.</p>

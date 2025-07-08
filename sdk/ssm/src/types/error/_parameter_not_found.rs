@@ -4,6 +4,8 @@
 /// <p>For the <code>DeleteParameter</code> and <code>GetParameter</code> actions, if the specified parameter doesn't exist, the <code>ParameterNotFound</code> exception is <i>not</i> recorded in CloudTrail event logs.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterNotFound {
     #[allow(missing_docs)] // documentation missing in model

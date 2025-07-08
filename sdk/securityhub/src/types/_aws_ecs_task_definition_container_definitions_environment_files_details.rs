@@ -2,6 +2,8 @@
 
 /// <p>A file that contain environment variables to pass to a container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetails {
     /// <p>The type of environment file. The valid value is <code>s3</code>.</p>

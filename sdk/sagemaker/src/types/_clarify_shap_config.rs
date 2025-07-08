@@ -2,6 +2,8 @@
 
 /// <p>The configuration for SHAP analysis using SageMaker Clarify Explainer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClarifyShapConfig {
     /// <p>The configuration for the SHAP baseline of the Kernal SHAP algorithm.</p>

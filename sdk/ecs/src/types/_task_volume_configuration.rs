@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for the task volume that was <code>configuredAtLaunch</code> that weren't set during <code>RegisterTaskDef</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskVolumeConfiguration {
     /// <p>The name of the volume. This value must match the volume name from the <code>Volume</code> object in the task definition.</p>

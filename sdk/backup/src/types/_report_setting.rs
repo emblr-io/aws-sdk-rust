@@ -2,6 +2,8 @@
 
 /// <p>Contains detailed information about a report setting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportSetting {
     /// <p>Identifies the report template for the report. Reports are built using a report template. The report templates are:</p>

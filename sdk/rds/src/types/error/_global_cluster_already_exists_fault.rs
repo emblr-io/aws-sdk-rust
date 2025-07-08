@@ -2,6 +2,8 @@
 
 /// <p>The <code>GlobalClusterIdentifier</code> already exists. Specify a new global database identifier (unique name) to create a new global database cluster or to rename an existing one.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalClusterAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

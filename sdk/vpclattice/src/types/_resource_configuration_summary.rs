@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a resource configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConfigurationSummary {
     /// <p>The ID of the resource configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The returned result of the corresponding request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateCloudFrontOriginAccessIdentityOutput {
     /// <p>The origin access identity's information.</p>

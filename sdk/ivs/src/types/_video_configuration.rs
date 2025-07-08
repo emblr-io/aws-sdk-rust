@@ -2,6 +2,8 @@
 
 /// <p>Object specifying a stream’s video configuration, as set up by the broadcaster (usually in an encoder). This is part of the <code>IngestConfigurations</code> object and the deprecated <code>IngestConfiguration</code> object. It is used for monitoring stream health.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VideoConfiguration {
     /// <p>Indicates to the decoder the requirements for decoding the stream. For definitions of the valid values, see the H.264 specification.</p>

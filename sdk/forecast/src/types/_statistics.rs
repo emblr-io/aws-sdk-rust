@@ -2,6 +2,8 @@
 
 /// <p>Provides statistics for each data field imported into to an Amazon Forecast dataset with the <a href="https://docs.aws.amazon.com/forecast/latest/dg/API_CreateDatasetImportJob.html">CreateDatasetImportJob</a> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Statistics {
     /// <p>The number of values in the field. If the response value is -1, refer to <code>CountLong</code>.</p>

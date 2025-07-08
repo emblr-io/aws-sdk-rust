@@ -2,6 +2,8 @@
 
 /// <p>Describes a session context that is activated when an intent is fulfilled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputContext {
     /// <p>The name of the output context.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Data source credentials. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataSourceCredentials {
     /// <p>Credential pair. For more information, see <code> <a href="https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CredentialPair.html">CredentialPair</a> </code>.</p>

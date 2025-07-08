@@ -2,6 +2,8 @@
 
 /// <p>The Liquid template for the worker user interface.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UiTemplate {
     /// <p>The content of the Liquid template for the worker user interface.</p>

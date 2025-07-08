@@ -2,6 +2,8 @@
 
 /// <p>Contains information on the adapter, including the adapter ID, Name, Creation time, and feature types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdapterOverview {
     /// <p>A unique identifier for the adapter resource.</p>

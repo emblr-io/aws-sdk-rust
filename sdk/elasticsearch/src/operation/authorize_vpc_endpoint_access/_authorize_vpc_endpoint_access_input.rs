@@ -2,6 +2,8 @@
 
 /// <p>Container for request parameters to the <code><code>AuthorizeVpcEndpointAccess</code></code> operation. Specifies the account to be permitted to manage VPC endpoints against the domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizeVpcEndpointAccessInput {
     /// <p>The name of the OpenSearch Service domain to provide access to.</p>

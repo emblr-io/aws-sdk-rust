@@ -2,6 +2,8 @@
 
 /// <p>Provides information on the option groups the DB instance is a member of.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OptionGroupMembership {
     /// <p>The name of the option group that the instance belongs to.</p>

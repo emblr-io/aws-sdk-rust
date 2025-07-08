@@ -2,6 +2,8 @@
 
 /// <p>Represents the data being transformed during an action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ViewFrame {
     /// <p>The starting index for the range of columns to return in the view frame.</p>

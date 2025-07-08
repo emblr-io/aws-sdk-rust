@@ -2,6 +2,8 @@
 
 /// <p>Contains the update operations to be applied to an existing Iceberg table in AWS Glue Data Catalog, defining the new state of the table metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateIcebergTableInput {
     /// <p>The list of table update operations that specify the changes to be made to the Iceberg table, including schema modifications, partition specifications, and table properties.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the results of a successful invocation of the <code>DescribeEventSubscriptions</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventSubscription {
     /// <p>The Amazon Web Services customer account associated with the RDS event notification subscription.</p>

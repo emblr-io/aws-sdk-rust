@@ -2,6 +2,8 @@
 
 /// <p>Complex data type for field-level encryption profiles that includes all of the encryption entities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionEntities {
     /// <p>Number of field pattern items in a field-level encryption content type-profile mapping.</p>

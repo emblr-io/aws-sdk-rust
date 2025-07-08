@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a SageMaker pipeline as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeTargetSageMakerPipelineParameters {
     /// <p>List of Parameter names and values for SageMaker Model Building Pipeline execution.</p>

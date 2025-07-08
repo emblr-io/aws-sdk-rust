@@ -2,6 +2,8 @@
 
 /// <p>The organization isn't empty. To delete an organization, you must first remove all accounts except the management account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationNotEmptyException {
     #[allow(missing_docs)] // documentation missing in model

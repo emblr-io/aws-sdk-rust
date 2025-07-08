@@ -2,6 +2,8 @@
 
 /// <p>Used as a response element in the <code>PreviewAgents</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentPreview {
     /// <p>The hostname of the EC2 instance on which the Amazon Inspector Agent is installed.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The <code>ReadPipelineRequest</code> structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReadPipelineInput {
     /// <p>The identifier of the pipeline to read.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information on a code snippet retrieved by Amazon Inspector from a code vulnerability finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeSnippetResult {
     /// <p>The ARN of a finding that the code snippet is associated with.</p>

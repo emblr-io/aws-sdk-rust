@@ -2,6 +2,8 @@
 
 /// <p>The configuration parameters required to create a new Iceberg table in the Glue Data Catalog, including table properties and metadata specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateIcebergTableInput {
     /// <p>The S3 location where the Iceberg table data will be stored.</p>

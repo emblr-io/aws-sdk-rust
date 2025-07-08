@@ -2,6 +2,8 @@
 
 /// <p>Describes whether Malware Protection for EC2 instances with findings will be enabled as a data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanEc2InstanceWithFindings {
     /// <p>Describes the configuration for scanning EBS volumes as data source.</p>

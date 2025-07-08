@@ -2,6 +2,8 @@
 
 /// <p>Layer parts must be at least 5 MiB in size.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LayerPartTooSmallException {
     /// <p>The error message associated with the exception.</p>

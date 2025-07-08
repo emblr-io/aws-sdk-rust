@@ -2,6 +2,8 @@
 
 /// <p>A signal that represents static information about the vehicle, such as engine type or manufacturing date.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Attribute {
     /// <p>The fully qualified name of the attribute. For example, the fully qualified name of an attribute might be <code>Vehicle.Body.Engine.Type</code>.</p>

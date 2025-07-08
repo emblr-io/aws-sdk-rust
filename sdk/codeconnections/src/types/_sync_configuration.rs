@@ -2,6 +2,8 @@
 
 /// <p>Information, such as repository, branch, provider, and resource names for a specific sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SyncConfiguration {
     /// <p>The branch associated with a specific sync configuration.</p>

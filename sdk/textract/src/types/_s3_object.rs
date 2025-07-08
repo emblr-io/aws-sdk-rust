@@ -4,6 +4,8 @@
 /// <p>The AWS Region for the S3 bucket that contains the document must match the Region that you use for Amazon Textract operations.</p>
 /// <p>For Amazon Textract to process a file in an S3 bucket, the user must have permission to access the S3 bucket and file.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Object {
     /// <p>The name of the S3 bucket. Note that the # character is not valid in the file name.</p>

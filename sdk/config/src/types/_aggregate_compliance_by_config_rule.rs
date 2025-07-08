@@ -3,6 +3,8 @@
 /// <p>Indicates whether an Config rule is compliant based on account ID, region, compliance, and rule name.</p>
 /// <p>A rule is compliant if all of the resources that the rule evaluated comply with it. It is noncompliant if any of these resources do not comply.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateComplianceByConfigRule {
     /// <p>The name of the Config rule.</p>

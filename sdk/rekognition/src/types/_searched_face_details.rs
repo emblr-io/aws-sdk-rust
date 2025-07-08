@@ -2,6 +2,8 @@
 
 /// <p>Contains data regarding the input face used for a search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchedFaceDetails {
     /// <p>Structure containing attributes of the face that the algorithm detected.</p>

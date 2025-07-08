@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>ListObjectChildren</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchListObjectChildren {
     /// <p>Reference of the object for which child objects are being listed.</p>

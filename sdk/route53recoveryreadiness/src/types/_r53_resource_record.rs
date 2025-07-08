@@ -2,6 +2,8 @@
 
 /// <p>The Route 53 resource that a DNS target resource record points to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct R53ResourceRecord {
     /// <p>The DNS target domain name.</p>

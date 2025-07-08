@@ -3,6 +3,8 @@
 /// <p><b>This data type is used with the Amazon GameLift Servers FleetIQ and game server groups.</b></p>
 /// <p>Filters which game servers may be claimed when calling <code>ClaimGameServer</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClaimFilterOption {
     /// <p>List of instance statuses that game servers may be claimed on. If provided, the list must contain the <code>ACTIVE</code> status.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon Web Services resource that emitted and event that is related to a recommendation in an insight.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationRelatedEventResource {
     /// <p>The name of the resource that emitted the event. This corresponds to the <code>Name</code> field in an <code>EventResource</code> object.</p>

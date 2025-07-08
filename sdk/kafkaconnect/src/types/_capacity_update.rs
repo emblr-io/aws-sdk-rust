@@ -2,6 +2,8 @@
 
 /// <p>The target capacity for the connector. The capacity can be auto scaled or provisioned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityUpdate {
     /// <p>The target auto scaling setting.</p>

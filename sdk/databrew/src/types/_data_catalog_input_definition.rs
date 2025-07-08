@@ -2,6 +2,8 @@
 
 /// <p>Represents how metadata stored in the Glue Data Catalog is defined in a DataBrew dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCatalogInputDefinition {
     /// <p>The unique identifier of the Amazon Web Services account that holds the Data Catalog that stores the data.</p>

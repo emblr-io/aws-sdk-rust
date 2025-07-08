@@ -2,6 +2,8 @@
 
 /// <p>Detective investigations triages indicators of compromises such as a finding and surfaces only the most critical and suspicious issues, so you can focus on high-level investigations. An <code>Indicator</code> lets you determine if an Amazon Web Services resource is involved in unusual activity that could indicate malicious behavior and its impact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Indicator {
     /// <p>The type of indicator.</p>

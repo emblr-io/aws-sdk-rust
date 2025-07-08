@@ -2,6 +2,8 @@
 
 /// <p>An object that described the state of Amazon Inspector scans for an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct State {
     /// <p>The status of Amazon Inspector for the account.</p>

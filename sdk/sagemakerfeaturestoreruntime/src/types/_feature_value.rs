@@ -2,6 +2,8 @@
 
 /// <p>The value associated with a feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FeatureValue {
     /// <p>The name of a feature that a feature value corresponds to.</p>

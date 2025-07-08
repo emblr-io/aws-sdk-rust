@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the identity provider (IdP) used to authenticate end users of an Amazon Q Business web experience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IdentityProviderConfiguration {
     /// <p>Information about the OIDC-compliant identity provider (IdP) used to authenticate end users of an Amazon Q Business web experience.</p>

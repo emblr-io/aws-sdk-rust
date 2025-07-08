@@ -11,6 +11,8 @@
 /// </ul>
 /// <p>When appropriate, wait for the ongoing update to complete and attempt the request again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceInUseException {
     /// <p>The resource which is being attempted to be changed is in use.</p>

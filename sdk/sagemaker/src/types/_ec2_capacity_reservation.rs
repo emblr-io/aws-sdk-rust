@@ -2,6 +2,8 @@
 
 /// <p>The EC2 capacity reservations that are shared to an ML capacity reservation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2CapacityReservation {
     /// <p>The unique identifier for an EC2 capacity reservation that's part of the ML capacity reservation.</p>

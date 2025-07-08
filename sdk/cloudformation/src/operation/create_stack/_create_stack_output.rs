@@ -2,6 +2,8 @@
 
 /// <p>The output for a <code>CreateStack</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateStackOutput {
     /// <p>Unique identifier of the stack.</p>

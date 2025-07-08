@@ -2,6 +2,8 @@
 
 /// <p>The ID for a subnet that's used in an association with a firewall. This is used in <code>CreateFirewall</code>, <code>AssociateSubnets</code>, and <code>CreateVpcEndpointAssociation</code>. Network Firewall creates an instance of the associated firewall in each subnet that you specify, to filter traffic in the subnet's Availability Zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubnetMapping {
     /// <p>The unique identifier for the subnet.</p>

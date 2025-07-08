@@ -2,6 +2,8 @@
 
 /// <p>Request would result in user exceeding the allowed number of DB subnet groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSubnetGroupQuotaExceededFault {
     /// <p>A message describing the details of the problem.</p>

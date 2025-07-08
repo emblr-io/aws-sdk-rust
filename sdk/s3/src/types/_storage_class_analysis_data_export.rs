@@ -2,6 +2,8 @@
 
 /// <p>Container for data related to the storage class analysis for an Amazon S3 bucket for export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageClassAnalysisDataExport {
     /// <p>The version of the output schema to use when exporting data. Must be <code>V_1</code>.</p>

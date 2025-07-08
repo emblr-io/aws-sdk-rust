@@ -2,6 +2,8 @@
 
 /// <p>Information about a created decoder manifest. You can use the API operation to return this information about multiple decoder manifests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DecoderManifestSummary {
     /// <p>The name of the decoder manifest.</p>

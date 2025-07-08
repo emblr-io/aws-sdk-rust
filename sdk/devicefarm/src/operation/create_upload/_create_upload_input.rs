@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the create upload operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateUploadInput {
     /// <p>The ARN of the project for the upload.</p>

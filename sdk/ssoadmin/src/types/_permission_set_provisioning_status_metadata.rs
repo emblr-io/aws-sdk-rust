@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the permission set provisioning status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionSetProvisioningStatusMetadata {
     /// <p>The status of the permission set provisioning process.</p>

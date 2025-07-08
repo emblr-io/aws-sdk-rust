@@ -2,6 +2,8 @@
 
 /// <p>The entitlements that you want to grant on a flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GrantEntitlementRequest {
     /// <p>Percentage from 0-100 of the data transfer cost to be billed to the subscriber.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The customer profile attributes that are used with the message template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CustomerProfileAttributes {
     /// <p>The unique identifier of a customer profile.</p>

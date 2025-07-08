@@ -2,6 +2,8 @@
 
 /// The location of the SDP file for one of the SMPTE 2110 streams in a receiver group.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputSdpLocation {
     /// The index of the media stream in the SDP file for one SMPTE 2110 stream.

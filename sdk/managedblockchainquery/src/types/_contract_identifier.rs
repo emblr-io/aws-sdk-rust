@@ -2,6 +2,8 @@
 
 /// <p>Container for the blockchain address and network information about a contract.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContractIdentifier {
     /// <p>The blockchain network of the contract.</p>

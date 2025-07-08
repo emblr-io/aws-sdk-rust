@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the ingress endpoint resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum IngressPointConfiguration {
     /// <p>The SecretsManager::Secret ARN of the ingress endpoint resource.</p>

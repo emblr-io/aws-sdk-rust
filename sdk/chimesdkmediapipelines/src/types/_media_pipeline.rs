@@ -2,6 +2,8 @@
 
 /// <p>A pipeline consisting of a media capture, media concatenation, or live-streaming pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaPipeline {
     /// <p>A pipeline that enables users to capture audio and video.</p>

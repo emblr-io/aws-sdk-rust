@@ -2,6 +2,8 @@
 
 /// <p>Stores information for generating Amplify DataStore queries. Use a <code>Predicate</code> to retrieve a subset of the data in a collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Predicate {
     /// <p>A list of predicates to combine logically.</p>

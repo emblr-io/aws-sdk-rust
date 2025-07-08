@@ -2,6 +2,8 @@
 
 /// <p>Provides details of the Redis OSS engine version</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EngineVersionInfo {
     /// <p>The name of the engine for which version information is provided.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Optionally configure a Snowflake role. Otherwise the default user role will be used.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SnowflakeRoleConfiguration {
     /// <p>Enable Snowflake role</p>

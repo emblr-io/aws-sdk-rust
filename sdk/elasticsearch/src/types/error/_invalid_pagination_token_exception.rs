@@ -2,6 +2,8 @@
 
 /// <p>The request processing has failed because of invalid pagination token provided by customer. Returns an HTTP status code of 400.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPaginationTokenException {
     /// <p>A description of the error.</p>

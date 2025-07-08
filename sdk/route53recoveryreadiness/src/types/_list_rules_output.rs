@@ -2,6 +2,8 @@
 
 /// <p>Readiness rule information, including the resource type, rule ID, and rule description.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRulesOutput {
     /// <p>The resource type that the readiness rule applies to.</p>

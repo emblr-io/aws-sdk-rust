@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateWorkspace</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateWorkspaceInput {
     /// <p>An alias that you assign to this workspace to help you identify it. It does not need to be unique.</p>

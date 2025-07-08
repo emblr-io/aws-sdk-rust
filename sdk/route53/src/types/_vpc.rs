@@ -3,6 +3,8 @@
 /// <p>(Private hosted zones only) A complex type that contains information about an Amazon VPC.</p>
 /// <p>If you associate a private hosted zone with an Amazon VPC when you make a <a href="https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateHostedZone.html">CreateHostedZone</a> request, the following parameters are also required.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Vpc {
     /// <p>(Private hosted zones only) The region that an Amazon VPC was created in.</p>

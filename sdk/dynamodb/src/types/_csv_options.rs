@@ -2,6 +2,8 @@
 
 /// <p>Processing options for the CSV file being imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CsvOptions {
     /// <p>The delimiter used for separating items in the CSV file being imported.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about an agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AgentAttributes {
     /// <p>The agent’s first name as entered in their Amazon Connect user account.</p>

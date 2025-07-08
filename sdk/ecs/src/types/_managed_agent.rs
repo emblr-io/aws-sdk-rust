@@ -2,6 +2,8 @@
 
 /// <p>Details about the managed agent status for the container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedAgent {
     /// <p>The Unix timestamp for the time when the managed agent was last started.</p>

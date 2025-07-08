@@ -2,6 +2,8 @@
 
 /// <p>Specifies the location of ML model data to deploy. If specified, you must specify one and only one of the available data sources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelDataSource {
     /// <p>Specifies the S3 location of ML model data to deploy.</p>

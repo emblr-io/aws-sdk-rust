@@ -4,6 +4,8 @@
 /// <p>This structure is returned when creating the token. It is important to store the <code>key</code> that is returned, as it is not retrievable at a later time.</p>
 /// <p>If you lose the key, you can delete and recreate the token, which will create a new key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServiceAccountTokenSummaryWithKey {
     /// <p>The unique ID of the service account token.</p>

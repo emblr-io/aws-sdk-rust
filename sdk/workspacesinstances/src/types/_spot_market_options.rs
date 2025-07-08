@@ -2,6 +2,8 @@
 
 /// <p>Defines configuration for spot instance deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpotMarketOptions {
     /// <p>Duration of spot instance block reservation.</p>

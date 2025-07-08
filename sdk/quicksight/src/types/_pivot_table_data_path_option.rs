@@ -2,6 +2,8 @@
 
 /// <p>The data path options for the pivot table field options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PivotTableDataPathOption {
     /// <p>The list of data path values for the data path options.</p>

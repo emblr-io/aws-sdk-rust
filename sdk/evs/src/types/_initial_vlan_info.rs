@@ -2,6 +2,8 @@
 
 /// <p>An object that represents an initial VLAN subnet for the environment. Amazon EVS creates initial VLAN subnets when you first create the environment. You must specify a non-overlapping CIDR block for each VLAN subnet. Amazon EVS creates the following 10 VLAN subnets: host management VLAN, vMotion VLAN, vSAN VLAN, VTEP VLAN, Edge VTEP VLAN, Management VM VLAN, HCX uplink VLAN, NSX uplink VLAN, expansion VLAN 1, expansion VLAN 2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InitialVlanInfo {
     /// <p>The CIDR block that you provide to create a VLAN subnet. VLAN CIDR blocks must not overlap with other subnets in the VPC.</p>

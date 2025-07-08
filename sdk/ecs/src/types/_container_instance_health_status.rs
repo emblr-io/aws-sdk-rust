@@ -2,6 +2,8 @@
 
 /// <p>An object representing the health status of the container instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerInstanceHealthStatus {
     /// <p>The overall health status of the container instance. This is an aggregate status of all container instance health checks.</p>

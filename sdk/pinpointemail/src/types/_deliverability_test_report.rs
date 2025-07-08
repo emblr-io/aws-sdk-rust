@@ -2,6 +2,8 @@
 
 /// <p>An object that contains metadata related to a predictive inbox placement test.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeliverabilityTestReport {
     /// <p>A unique string that identifies the predictive inbox placement test.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents information about free trial device minutes for an AWS account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrialMinutes {
     /// <p>The total number of free trial minutes that the account started with.</p>

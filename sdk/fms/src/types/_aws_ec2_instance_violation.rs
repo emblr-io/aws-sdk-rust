@@ -2,6 +2,8 @@
 
 /// <p>Violation detail for an EC2 instance resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsEc2InstanceViolation {
     /// <p>The resource ID of the EC2 instance.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the model or system-defined inference profile that is the source for an inference profile..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum InferenceProfileModelSource {
     /// <p>The ARN of the model or system-defined inference profile that is the source for the inference profile.</p>

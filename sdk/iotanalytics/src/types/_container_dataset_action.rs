@@ -2,6 +2,8 @@
 
 /// <p>Information required to run the <code>containerAction</code> to produce dataset contents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerDatasetAction {
     /// <p>The ARN of the Docker container stored in your account. The Docker container contains an application and required support libraries and is used to generate dataset contents.</p>

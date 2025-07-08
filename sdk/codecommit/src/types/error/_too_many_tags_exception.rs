@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of tags for an CodeCommit resource has been exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyTagsException {
     /// <p>Any message associated with the exception.</p>

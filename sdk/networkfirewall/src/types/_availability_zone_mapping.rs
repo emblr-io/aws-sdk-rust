@@ -3,6 +3,8 @@
 /// <p>Defines the mapping between an Availability Zone and a firewall endpoint for a transit gateway-attached firewall. Each mapping represents where the firewall can process traffic. You use these mappings when calling <code>CreateFirewall</code>, <code>AssociateAvailabilityZones</code>, and <code>DisassociateAvailabilityZones</code>.</p>
 /// <p>To retrieve the current Availability Zone mappings for a firewall, use <code>DescribeFirewall</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZoneMapping {
     /// <p>The ID of the Availability Zone where the firewall endpoint is located. For example, <code>us-east-2a</code>. The Availability Zone must be in the same Region as the transit gateway.</p>

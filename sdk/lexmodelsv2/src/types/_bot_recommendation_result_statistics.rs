@@ -2,6 +2,8 @@
 
 /// <p>A statistical summary of the bot recommendation results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotRecommendationResultStatistics {
     /// <p>Statistical information about about the intents associated with the bot recommendation results.</p>

@@ -2,6 +2,8 @@
 
 /// <p>For each message in the batch, the response contains a <code> <code>DeleteMessageBatchResultEntry</code> </code> tag if the message is deleted or a <code> <code>BatchResultErrorEntry</code> </code> tag if the message can't be deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteMessageBatchOutput {
     /// <p>A list of <code> <code>DeleteMessageBatchResultEntry</code> </code> items.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The custom script to run tests on source or target environments.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowStepAutomationConfiguration {
     /// <p>The Amazon S3 bucket where the script is located.</p>

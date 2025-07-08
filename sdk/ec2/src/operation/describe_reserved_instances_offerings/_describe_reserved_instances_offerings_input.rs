@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for DescribeReservedInstancesOfferings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeReservedInstancesOfferingsInput {
     /// <p>The Availability Zone in which the Reserved Instance can be used.</p>

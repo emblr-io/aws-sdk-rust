@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the user has made too many failed attempts for a given action, such as sign-in.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyFailedAttemptsException {
     /// <p>The message returned when Amazon Cognito returns a <code>TooManyFailedAttempts</code> exception.</p>

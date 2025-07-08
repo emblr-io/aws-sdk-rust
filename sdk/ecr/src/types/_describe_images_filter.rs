@@ -2,6 +2,8 @@
 
 /// <p>An object representing a filter on a <code>DescribeImages</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeImagesFilter {
     /// <p>The tag status with which to filter your <code>DescribeImages</code> results. You can filter results based on whether they are <code>TAGGED</code> or <code>UNTAGGED</code>.</p>

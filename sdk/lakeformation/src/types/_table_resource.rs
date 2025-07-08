@@ -2,6 +2,8 @@
 
 /// <p>A structure for the table object. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableResource {
     /// <p>The identifier for the Data Catalog. By default, it is the account ID of the caller.</p>

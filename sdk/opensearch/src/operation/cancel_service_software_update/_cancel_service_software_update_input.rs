@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to cancel a service software update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelServiceSoftwareUpdateInput {
     /// <p>Name of the OpenSearch Service domain that you want to cancel the service software update on.</p>

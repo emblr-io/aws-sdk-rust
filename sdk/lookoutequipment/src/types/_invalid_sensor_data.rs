@@ -2,6 +2,8 @@
 
 /// <p>Entity that comprises aggregated information on sensors having insufficient data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidSensorData {
     /// <p>Indicates the number of sensors that have at least some invalid values.</p>

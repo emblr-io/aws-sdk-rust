@@ -2,6 +2,8 @@
 
 /// <p>No origin exists with the specified <code>Origin Id</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchOrigin {
     #[allow(missing_docs)] // documentation missing in model

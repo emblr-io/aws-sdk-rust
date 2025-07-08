@@ -2,6 +2,8 @@
 
 /// <p>User already has a DB cluster with the given identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterAlreadyExistsFault {
     /// <p>A message describing the details of the problem.</p>

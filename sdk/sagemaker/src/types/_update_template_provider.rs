@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration details for updating an existing template provider in the project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateTemplateProvider {
     /// <p>The CloudFormation template provider configuration to update.</p>

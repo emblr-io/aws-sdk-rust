@@ -2,6 +2,8 @@
 
 /// <p>Describes a block device mapping entry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceBlockDeviceMappingSpecification {
     /// <p>The device name (for example, <code>/dev/sdh</code> or <code>xvdh</code>).</p>

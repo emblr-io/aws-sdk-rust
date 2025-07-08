@@ -2,6 +2,8 @@
 
 /// <p>Configuration information specific to Picture-in-Picture (PiP) layout, for <a href="https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html">server-side composition</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipConfiguration {
     /// <p>This attribute name identifies the featured slot. A participant with this attribute set to <code>"true"</code> (as a string value) in <code>ParticipantTokenConfiguration</code> is placed in the featured slot. Default: <code>""</code> (no featured participant).</p>

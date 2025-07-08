@@ -2,6 +2,8 @@
 
 /// <p>Information about the <code>CrossZoneLoadBalancing</code> attribute.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CrossZoneLoadBalancing {
     /// <p>Specifies whether cross-zone load balancing is enabled for the load balancer.</p>

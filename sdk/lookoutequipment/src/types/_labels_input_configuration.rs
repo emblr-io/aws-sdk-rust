@@ -2,6 +2,8 @@
 
 /// <p>Contains the configuration information for the S3 location being used to hold label data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelsInputConfiguration {
     /// <p>Contains location information for the S3 location being used for label data.</p>

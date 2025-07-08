@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services Lambda function metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionMetadata {
     /// <p>The resource tags on an Amazon Web Services Lambda function.</p>

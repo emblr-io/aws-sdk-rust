@@ -2,6 +2,8 @@
 
 /// <p>Used to create an S3 access point that accepts requests only from a virtual private cloud (VPC) to restrict data access to a private network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateAndAttachS3AccessPointS3Configuration {
     /// <p>If included, Amazon S3 restricts access to this S3 access point to requests made from the specified virtual private cloud (VPC).</p>

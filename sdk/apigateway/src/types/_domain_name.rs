@@ -2,6 +2,8 @@
 
 /// <p>Represents a custom domain name as a user-friendly host name of an API (RestApi).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainName {
     /// <p>The custom domain name as an API host name, for example, <code>my-api.example.com</code>.</p>

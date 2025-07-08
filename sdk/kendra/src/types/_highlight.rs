@@ -2,6 +2,8 @@
 
 /// <p>Provides information that you can use to highlight a search result so that your users can quickly identify terms in the response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Highlight {
     /// <p>The zero-based location in the response string where the highlight starts.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The status of the online resharding</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReshardingStatus {
     /// <p>The status of the online resharding slot migration</p>

@@ -2,6 +2,8 @@
 
 /// <p>The specified event data store was not found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDataStoreNotFoundException {
     /// <p>Brief description of the exception returned by the request.</p>

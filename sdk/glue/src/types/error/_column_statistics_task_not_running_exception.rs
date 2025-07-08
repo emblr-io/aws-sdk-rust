@@ -2,6 +2,8 @@
 
 /// <p>An exception thrown when you try to stop a task run when there is no task running.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnStatisticsTaskNotRunningException {
     /// <p>A message describing the problem.</p>

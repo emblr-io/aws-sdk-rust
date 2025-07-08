@@ -2,6 +2,8 @@
 
 /// <p>The capacity tasks that failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityTaskFailure {
     /// <p>The reason that the specified capacity task failed.</p>

@@ -3,6 +3,8 @@
 /// <p>Information about a resource that another resource is related to or depends on.</p>
 /// <p>For example, if a contact is a member of a rotation, the rotation is a dependent entity of the contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependentEntity {
     /// <p>The type of relationship between one resource and the other resource that it is related to or depends on.</p>

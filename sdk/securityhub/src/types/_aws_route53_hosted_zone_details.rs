@@ -2,6 +2,8 @@
 
 /// <p>Provides details about a specified Amazon Route&nbsp;53 hosted zone, including the four name servers assigned to the hosted zone. A hosted zone represents a collection of records that can be managed together, belonging to a single parent domain name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsRoute53HostedZoneDetails {
     /// <p>An object that contains information about the specified hosted zone.</p>

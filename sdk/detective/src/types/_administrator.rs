@@ -2,6 +2,8 @@
 
 /// <p>Information about the Detective administrator account for an organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Administrator {
     /// <p>The Amazon Web Services account identifier of the Detective administrator account for the organization.</p>

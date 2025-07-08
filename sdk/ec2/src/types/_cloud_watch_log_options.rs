@@ -2,6 +2,8 @@
 
 /// <p>Options for sending VPN tunnel logs to CloudWatch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogOptions {
     /// <p>Status of VPN tunnel logging feature. Default value is <code>False</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A deployment configuration with the specified name with the user or Amazon Web Services account already exists.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentConfigAlreadyExistsException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

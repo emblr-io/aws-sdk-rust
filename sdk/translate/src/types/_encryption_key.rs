@@ -2,6 +2,8 @@
 
 /// <p>The encryption key used to encrypt this object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionKey {
     /// <p>The type of encryption key used by Amazon Translate to encrypt this object.</p>

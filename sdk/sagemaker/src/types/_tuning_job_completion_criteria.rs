@@ -2,6 +2,8 @@
 
 /// <p>The job completion criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TuningJobCompletionCriteria {
     /// <p>The value of the objective metric.</p>

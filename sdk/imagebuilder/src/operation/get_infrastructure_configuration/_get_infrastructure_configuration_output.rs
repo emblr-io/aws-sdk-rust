@@ -2,6 +2,8 @@
 
 /// <p>GetInfrastructureConfiguration response object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetInfrastructureConfigurationOutput {
     /// <p>The request ID that uniquely identifies this request.</p>

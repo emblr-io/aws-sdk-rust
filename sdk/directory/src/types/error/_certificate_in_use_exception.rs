@@ -2,6 +2,8 @@
 
 /// <p>The certificate is being used for the LDAP security connection and cannot be removed without disabling LDAP security.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateInUseException {
     /// <p>The descriptive message for the exception.</p>

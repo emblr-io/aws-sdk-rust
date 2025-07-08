@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of an alarm model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlarmModelSummary {
     /// <p>The time the alarm model was created, in the Unix epoch format.</p>

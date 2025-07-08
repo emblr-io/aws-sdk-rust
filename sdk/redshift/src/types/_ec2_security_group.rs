@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon EC2 security group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2SecurityGroup {
     /// <p>The status of the EC2 security group.</p>

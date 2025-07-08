@@ -2,6 +2,8 @@
 
 /// <p>An object containing additional settings for your VDM configuration as applicable to the Guardian.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardianAttributes {
     /// <p>Specifies the status of your VDM optimized shared delivery. Can be one of the following:</p>

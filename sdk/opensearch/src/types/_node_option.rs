@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for defining the node type within a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeOption {
     /// <p>Defines the type of node, such as coordinating nodes.</p>

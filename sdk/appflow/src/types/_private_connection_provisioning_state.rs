@@ -2,6 +2,8 @@
 
 /// <p>Specifies the private connection provisioning state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateConnectionProvisioningState {
     /// <p>Specifies the private connection provisioning status.</p>

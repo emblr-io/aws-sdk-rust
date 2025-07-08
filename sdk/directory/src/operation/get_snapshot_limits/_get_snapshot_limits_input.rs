@@ -2,6 +2,8 @@
 
 /// <p>Contains the inputs for the <code>GetSnapshotLimits</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSnapshotLimitsInput {
     /// <p>Contains the identifier of the directory to obtain the limits for.</p>

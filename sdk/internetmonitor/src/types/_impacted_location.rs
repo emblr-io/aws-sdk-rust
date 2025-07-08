@@ -3,6 +3,8 @@
 /// <p>Information about a location impacted by a health event in Amazon CloudWatch Internet Monitor.</p>
 /// <p>Geographic regions are hierarchically categorized into country, subdivision, metro and city geographic granularities. The geographic region is identified based on the IP address used at the client locations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImpactedLocation {
     /// <p>The name of the internet service provider (ISP) or network (ASN).</p>

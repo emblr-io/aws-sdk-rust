@@ -2,6 +2,8 @@
 
 /// <p>MixedMeasureMappings are mappings that can be used to ingest data into a mixture of narrow and multi measures in the derived table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MixedMeasureMapping {
     /// <p>Refers to the value of measure_name in a result row. This field is required if MeasureNameColumn is provided.</p>

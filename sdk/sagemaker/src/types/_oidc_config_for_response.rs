@@ -2,6 +2,8 @@
 
 /// <p>Your OIDC IdP workforce configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OidcConfigForResponse {
     /// <p>The OIDC IdP client ID used to configure your private workforce.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A mapping of a query attached to a resource group that determines the Amazon Web Services resources that are members of the group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupQuery {
     /// <p>The name of the resource group that is associated with the specified resource query.</p>

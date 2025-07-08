@@ -2,6 +2,8 @@
 
 /// <p>Summary information about an evaluation form.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationFormSummary {
     /// <p>The unique identifier for the evaluation form.</p>

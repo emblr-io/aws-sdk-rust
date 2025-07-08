@@ -4,6 +4,8 @@
 /// <p>Video elements might be broken up into multiple artifacts as they grow in size during creation.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TestGridSessionArtifact {
     /// <p>The file name of the artifact.</p>

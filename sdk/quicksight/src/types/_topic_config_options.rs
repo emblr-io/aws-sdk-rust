@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for a <code>Topic</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicConfigOptions {
     /// <p>Enables Amazon Q Business Insights for a <code>Topic</code>.</p>

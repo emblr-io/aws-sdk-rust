@@ -2,6 +2,8 @@
 
 /// JobTemplateSettings contains all the transcode settings saved in the template that will be applied to jobs created from it.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobTemplateSettings {
     /// When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time.

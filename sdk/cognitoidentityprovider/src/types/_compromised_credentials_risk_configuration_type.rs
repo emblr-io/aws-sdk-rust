@@ -2,6 +2,8 @@
 
 /// <p>Settings for compromised-credentials actions and authentication-event sources with threat protection in full-function <code>ENFORCED</code> mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompromisedCredentialsRiskConfigurationType {
     /// <p>Settings for the sign-in activity where you want to configure compromised-credentials actions. Defaults to all events.</p>

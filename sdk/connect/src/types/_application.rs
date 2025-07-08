@@ -3,6 +3,8 @@
 /// <p>This API is in preview release for Amazon Connect and is subject to change.</p>
 /// <p>A third-party application's metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Application {
     /// <p>Namespace of the application that you want to give access to.</p>

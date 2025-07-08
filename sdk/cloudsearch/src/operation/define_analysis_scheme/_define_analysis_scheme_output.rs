@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code><code>DefineAnalysisScheme</code></code> request. Contains the status of the newly-configured analysis scheme.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefineAnalysisSchemeOutput {
     /// <p>The status and configuration of an <code>AnalysisScheme</code>.</p>

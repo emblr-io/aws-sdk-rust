@@ -2,6 +2,8 @@
 
 /// <p>Complex data type that defines destination-detail objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationDetail {
     /// <p>An S3 detail object to return information about the S3 destination.</p>

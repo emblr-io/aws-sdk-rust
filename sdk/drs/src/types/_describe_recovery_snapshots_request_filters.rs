@@ -2,6 +2,8 @@
 
 /// <p>A set of filters by which to return Recovery Snapshots.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeRecoverySnapshotsRequestFilters {
     /// <p>The start date in a date range query.</p>

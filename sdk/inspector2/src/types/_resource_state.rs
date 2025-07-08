@@ -2,6 +2,8 @@
 
 /// <p>Details the state of Amazon Inspector for each resource type Amazon Inspector scans.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceState {
     /// <p>An object detailing the state of Amazon Inspector scanning for Amazon EC2 resources.</p>

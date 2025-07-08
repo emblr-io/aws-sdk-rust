@@ -2,6 +2,8 @@
 
 /// <p>The minimum DB engine version required for each corresponding allowed value for an option setting.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MinimumEngineVersionPerAllowedValue {
     /// <p>The allowed value for an option setting.</p>

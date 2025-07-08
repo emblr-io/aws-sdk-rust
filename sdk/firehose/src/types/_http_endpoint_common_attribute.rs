@@ -2,6 +2,8 @@
 
 /// <p>Describes the metadata that's delivered to the specified HTTP endpoint destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct HttpEndpointCommonAttribute {
     /// <p>The name of the HTTP endpoint common attribute.</p>

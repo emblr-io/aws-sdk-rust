@@ -2,6 +2,8 @@
 
 /// <p>The source DB instance isn't supported for a blue/green deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceDatabaseNotSupportedFault {
     #[allow(missing_docs)] // documentation missing in model

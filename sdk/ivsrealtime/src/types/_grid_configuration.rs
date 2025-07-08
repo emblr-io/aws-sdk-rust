@@ -2,6 +2,8 @@
 
 /// <p>Configuration information specific to Grid layout, for server-side composition. See "Layouts" in <a href="https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html">Server-Side Composition</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GridConfiguration {
     /// <p>This attribute name identifies the featured slot. A participant with this attribute set to <code>"true"</code> (as a string value) in <code>ParticipantTokenConfiguration</code> is placed in the featured slot. Default: <code>""</code> (no featured participant).</p>

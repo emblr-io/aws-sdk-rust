@@ -2,6 +2,8 @@
 
 /// <p>The input for <code>DescribeStackResource</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeStackResourceInput {
     /// <p>The name or the unique stack ID that's associated with the stack, which aren't always interchangeable:</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request to initiate an export of emails from an archive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartArchiveExportInput {
     /// <p>The identifier of the archive to export emails from.</p>

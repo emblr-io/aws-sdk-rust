@@ -2,6 +2,8 @@
 
 /// <p>This represents a sections within a panel or tab of the page layout.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Section {
     /// <p>Consists of a group of fields and associated properties.</p>

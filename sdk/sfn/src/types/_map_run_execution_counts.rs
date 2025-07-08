@@ -2,6 +2,8 @@
 
 /// <p>Contains details about all of the child workflow executions started by a Map Run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MapRunExecutionCounts {
     /// <p>The total number of child workflow executions that were started by a Map Run, but haven't started executing yet.</p>

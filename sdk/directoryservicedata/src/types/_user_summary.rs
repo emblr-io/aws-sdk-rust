@@ -2,6 +2,8 @@
 
 /// <p>A structure containing a subset of the fields of a user object from a directory.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UserSummary {
     /// <p>The unique security identifier (SID) of the user.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the continuous backups and point in time recovery settings on the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousBackupsDescription {
     /// <p><code>ContinuousBackupsStatus</code> can be one of the following states: ENABLED, DISABLED</p>

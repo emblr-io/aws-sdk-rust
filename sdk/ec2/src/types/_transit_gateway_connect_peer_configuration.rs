@@ -2,6 +2,8 @@
 
 /// <p>Describes the Connect peer details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayConnectPeerConfiguration {
     /// <p>The Connect peer IP address on the transit gateway side of the tunnel.</p>

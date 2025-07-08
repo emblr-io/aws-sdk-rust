@@ -2,6 +2,8 @@
 
 /// <p><b>\[Custom snapshot policies only\]</b> Specifies a snapshot archiving rule for a schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArchiveRule {
     /// <p>Information about the retention period for the snapshot archiving rule.</p>

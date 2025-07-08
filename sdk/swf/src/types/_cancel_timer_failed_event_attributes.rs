@@ -2,6 +2,8 @@
 
 /// <p>Provides the details of the <code>CancelTimerFailed</code> event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CancelTimerFailedEventAttributes {
     /// <p>The timerId provided in the <code>CancelTimer</code> decision that failed.</p>

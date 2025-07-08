@@ -2,6 +2,8 @@
 
 /// <p>The warning code and message that explains a problem with a query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Warning {
     /// <p>The message that explains the problem with the query.</p>

@@ -3,6 +3,8 @@
 /// <p>The specified CIDR IP range or Amazon EC2 security group might not be authorized for the specified DB security group.</p>
 /// <p>Or, RDS might not be authorized to perform necessary actions using IAM on your behalf.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -4,6 +4,8 @@
 /// <p>This is used to indicate the web request component to inspect, in the <code>FieldToMatch</code> specification.</p>
 /// <p>Example JSON: <code>"SingleQueryArgument": { "Name": "myArgument" }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleQueryArgument {
     /// <p>The name of the query argument to inspect.</p>

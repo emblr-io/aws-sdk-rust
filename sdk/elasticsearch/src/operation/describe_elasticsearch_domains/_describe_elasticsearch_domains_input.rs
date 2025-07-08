@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code><code>DescribeElasticsearchDomains</code></code> operation. By default, the API returns the status of all Elasticsearch domains.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeElasticsearchDomainsInput {
     /// <p>The Elasticsearch domains for which you want information.</p>

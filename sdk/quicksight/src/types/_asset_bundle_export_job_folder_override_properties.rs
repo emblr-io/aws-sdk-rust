@@ -2,6 +2,8 @@
 
 /// <p>Controls how a specific <code>Folder</code> resource is parameterized in the returned CloudFormation template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetBundleExportJobFolderOverrideProperties {
     /// <p>The ARN of the specific <code>Folder</code> resource whose override properties are configured in this structure.</p>

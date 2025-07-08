@@ -2,6 +2,8 @@
 
 /// <p>Identifier for a single stateful rule group, used in a firewall policy to refer to a rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatefulRuleGroupReference {
     /// <p>The Amazon Resource Name (ARN) of the stateful rule group.</p>

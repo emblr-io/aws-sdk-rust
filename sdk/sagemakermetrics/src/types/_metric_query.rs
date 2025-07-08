@@ -2,6 +2,8 @@
 
 /// <p>Specifies a query to retrieve training metrics from SageMaker.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricQuery {
     /// <p>The name of the metric to retrieve.</p>

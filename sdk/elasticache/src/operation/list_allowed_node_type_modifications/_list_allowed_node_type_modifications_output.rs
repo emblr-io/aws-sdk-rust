@@ -2,6 +2,8 @@
 
 /// <p>Represents the allowed node types you can use to modify your cluster or replication group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAllowedNodeTypeModificationsOutput {
     /// <p>A string list, each element of which specifies a cache node type which you can use to scale your cluster or replication group.</p>

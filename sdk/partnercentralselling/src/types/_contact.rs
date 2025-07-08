@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a <code>Customer Partner</code>'s contact details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Contact {
     /// <p>The contact's email address associated with the <code>Opportunity</code>.</p>

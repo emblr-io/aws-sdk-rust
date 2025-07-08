@@ -2,6 +2,8 @@
 
 /// <p>A card in a Amazon Q App that generates a response based on the Amazon Q Business service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QQueryCard {
     /// <p>The unique identifier of the query card.</p>

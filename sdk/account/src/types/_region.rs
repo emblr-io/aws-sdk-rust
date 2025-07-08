@@ -2,6 +2,8 @@
 
 /// <p>This is a structure that expresses the Region for a given account, consisting of a name and opt-in status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Region {
     /// <p>The Region code of a given Region (for example, <code>us-east-1</code>).</p>

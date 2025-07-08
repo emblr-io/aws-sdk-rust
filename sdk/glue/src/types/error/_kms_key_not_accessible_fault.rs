@@ -2,6 +2,8 @@
 
 /// <p>The KMS key specified is not accessible.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsKeyNotAccessibleFault {
     /// <p>A message describing the problem.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Allows filtering on the entity id of an offer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OfferEntityIdFilter {
     /// <p>Allows filtering on entity id of an offer with list input.</p>

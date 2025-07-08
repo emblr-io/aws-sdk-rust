@@ -2,6 +2,8 @@
 
 /// <p>An object with the name of the retention configuration and the retention period in days. The object stores the configuration for data retention in Config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetentionConfiguration {
     /// <p>The name of the retention configuration object.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details related to problems with AWS TNB resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProblemDetails {
     /// <p>A human-readable explanation specific to this occurrence of the problem.</p>

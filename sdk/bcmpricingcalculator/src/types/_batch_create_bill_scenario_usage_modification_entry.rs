@@ -2,6 +2,8 @@
 
 /// <p>Represents an entry in a batch operation to create bill scenario usage modifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchCreateBillScenarioUsageModificationEntry {
     /// <p>The Amazon Web Services service code for this usage modification. This identifies the specific Amazon Web Services service to the customer as a unique short abbreviation. For example, <code>AmazonEC2</code> and <code>AWSKMS</code>.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The snapshot identifier does not refer to an existing cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSnapshotNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The violation details for a firewall subnet's VPC endpoint that's deleted or missing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallSubnetMissingVpcEndpointViolation {
     /// <p>The ID of the firewall that this VPC endpoint is associated with.</p>

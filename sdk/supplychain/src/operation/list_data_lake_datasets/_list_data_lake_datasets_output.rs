@@ -2,6 +2,8 @@
 
 /// <p>The response parameters of ListDataLakeDatasets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDataLakeDatasetsOutput {
     /// <p>The list of fetched dataset details.</p>

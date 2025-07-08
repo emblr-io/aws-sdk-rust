@@ -2,6 +2,8 @@
 
 /// <p>Represents the result of processing your metric data batch request</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetMetricDataOutput {
     /// <p>A list of successfully retrieved <code>MetricDataResult</code>.</p>

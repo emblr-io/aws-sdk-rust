@@ -2,6 +2,8 @@
 
 /// <p>One or more of the specified parameters are not valid. Verify that your parameters are valid and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidParameterValueException {
     /// <p>Error executing the command</p>

@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the document is locked for comments and user tries to create or delete a comment on that document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentLockedForCommentsException {
     #[allow(missing_docs)] // documentation missing in model

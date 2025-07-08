@@ -2,6 +2,8 @@
 
 /// <p>A structure specifying the dialect and dialect version used by the query engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedDialect {
     /// <p>The dialect of the query engine.</p>

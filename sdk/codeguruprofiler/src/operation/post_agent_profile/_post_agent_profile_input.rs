@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the postAgentProfileRequest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PostAgentProfileInput {
     /// <p>The name of the profiling group with the aggregated profile that receives the submitted profiling data.</p>

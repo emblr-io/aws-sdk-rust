@@ -6,6 +6,8 @@
 /// <p>This property is available only in the US East (N. Virginia) Region.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentRiskRecommendation {
     /// <p>Indicates the description of the potential risk identified in the application as part of the Resilience Hub assessment.</p><note>

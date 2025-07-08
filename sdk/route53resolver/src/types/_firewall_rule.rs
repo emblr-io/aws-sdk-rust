@@ -2,6 +2,8 @@
 
 /// <p>A single firewall rule in a rule group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirewallRule {
     /// <p>The unique identifier of the Firewall rule group of the rule.</p>

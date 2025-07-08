@@ -2,6 +2,8 @@
 
 /// <p>Describes a resource group to which a Capacity Reservation has been added.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityReservationGroup {
     /// <p>The ARN of the resource group.</p>

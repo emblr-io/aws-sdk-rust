@@ -2,6 +2,8 @@
 
 /// <p>The destinations used for data exports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationConfigurations {
     /// <p>An object that describes the destination of the data exports file.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The user details of a project member.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserDetails {
     /// <p>The identifier of the Amazon DataZone user.</p>

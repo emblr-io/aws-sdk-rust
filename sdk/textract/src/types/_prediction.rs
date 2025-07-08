@@ -2,6 +2,8 @@
 
 /// <p>Contains information regarding predicted values returned by Amazon Textract operations, including the predicted value and the confidence in the predicted value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Prediction {
     /// <p>The predicted value of a detected object.</p>

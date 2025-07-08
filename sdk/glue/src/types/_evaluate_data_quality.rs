@@ -2,6 +2,8 @@
 
 /// <p>Specifies your data quality evaluation criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluateDataQuality {
     /// <p>The name of the data quality evaluation.</p>

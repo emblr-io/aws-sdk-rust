@@ -2,6 +2,8 @@
 
 /// <p>This structure contains Amazon Web Services-specific parameter extensions for the token endpoint responses and includes the identity context.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsAdditionalDetails {
     /// <p>STS context assertion that carries a user identifier to the Amazon Web Services service that it calls and can be used to obtain an identity-enhanced IAM role session. This value corresponds to the <code>sts:identity_context</code> claim in the ID token.</p>

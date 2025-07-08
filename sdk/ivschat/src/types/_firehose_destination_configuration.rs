@@ -2,6 +2,8 @@
 
 /// <p>Specifies a Kinesis Firehose location where chat logs will be stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FirehoseDestinationConfiguration {
     /// <p>Name of the Amazon Kinesis Firehose delivery stream where chat activity will be logged.</p>

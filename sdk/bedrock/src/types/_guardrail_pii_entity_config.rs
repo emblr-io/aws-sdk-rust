@@ -2,6 +2,8 @@
 
 /// <p>The PII entity to configure for the guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailPiiEntityConfig {
     /// <p>Configure guardrail type when the PII entity is detected.</p>

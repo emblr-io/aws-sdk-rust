@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the unusual anomalies.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnomalyObject {
     /// <p>The type of behavior of the profile.</p>

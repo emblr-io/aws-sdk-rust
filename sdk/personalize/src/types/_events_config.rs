@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration of events, which are used in solution creation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventsConfig {
     /// <p>A list of event parameters, which includes event types and their event value thresholds and weights.</p>

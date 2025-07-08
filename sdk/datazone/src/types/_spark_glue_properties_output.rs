@@ -2,6 +2,8 @@
 
 /// <p>The Spark Amazon Web Services Glue properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SparkGluePropertiesOutput {
     /// <p>The additional args in the Spark Amazon Web Services Glue properties.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A flexible visualization type that allows engineers to create new custom charts in Amazon QuickSight.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PluginVisual {
     /// <p>The ID of the visual that you want to use.</p>

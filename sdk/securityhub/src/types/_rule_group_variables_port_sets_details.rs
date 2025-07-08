@@ -2,6 +2,8 @@
 
 /// <p>A list of port ranges.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleGroupVariablesPortSetsDetails {
     /// <p>The list of port ranges.</p>

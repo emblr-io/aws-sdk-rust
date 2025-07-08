@@ -2,6 +2,8 @@
 
 /// <p>Settings of an inline collaborator agent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CollaboratorConfiguration {
     /// <p>Name of the inline collaborator agent which must be the same name as specified for <code>agentName</code>.</p>

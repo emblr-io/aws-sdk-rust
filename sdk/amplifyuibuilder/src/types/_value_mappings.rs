@@ -2,6 +2,8 @@
 
 /// <p>Represents the data binding configuration for a value map.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValueMappings {
     /// <p>The value and display value pairs.</p>

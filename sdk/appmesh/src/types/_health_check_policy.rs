@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the health check policy for a virtual node's listener.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HealthCheckPolicy {
     /// <p>The amount of time to wait when receiving a response from the health check, in milliseconds.</p>

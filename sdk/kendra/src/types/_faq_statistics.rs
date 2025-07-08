@@ -2,6 +2,8 @@
 
 /// <p>Provides statistical information about the FAQ questions and answers for an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FaqStatistics {
     /// <p>The total number of FAQ questions and answers for an index.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The media stream that is associated with the output, and the parameters for that association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaStreamOutputConfiguration {
     /// <p>The transport parameters that are associated with each outbound media stream.</p>

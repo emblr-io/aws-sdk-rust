@@ -2,6 +2,8 @@
 
 /// <p>Represents a directional edge in a directed acyclic graph (DAG).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeGenEdge {
     /// <p>The ID of the node at which the edge starts.</p>

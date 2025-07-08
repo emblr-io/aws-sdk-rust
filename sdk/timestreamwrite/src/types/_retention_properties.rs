@@ -2,6 +2,8 @@
 
 /// <p>Retention properties contain the duration for which your time-series data must be stored in the magnetic store and the memory store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetentionProperties {
     /// <p>The duration for which data must be stored in the memory store.</p>

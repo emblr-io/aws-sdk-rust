@@ -2,6 +2,8 @@
 
 /// <p>The information about the agent turn in a test set execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentTurnResult {
     /// <p>The expected agent prompt for the agent turn in a test set execution.</p>

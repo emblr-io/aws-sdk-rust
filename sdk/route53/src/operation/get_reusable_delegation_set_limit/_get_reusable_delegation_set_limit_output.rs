@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the requested limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetReusableDelegationSetLimitOutput {
     /// <p>The current setting for the limit on hosted zones that you can associate with the specified reusable delegation set.</p>

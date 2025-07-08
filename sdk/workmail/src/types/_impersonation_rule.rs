@@ -2,6 +2,8 @@
 
 /// <p>The rules for the given impersonation role.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImpersonationRule {
     /// <p>The identifier of the rule.</p>

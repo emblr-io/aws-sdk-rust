@@ -2,6 +2,8 @@
 
 /// <p>A pull through cache rule with these settings already exists for the private registry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PullThroughCacheRuleAlreadyExistsException {
     #[allow(missing_docs)] // documentation missing in model

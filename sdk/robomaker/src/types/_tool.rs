@@ -2,6 +2,8 @@
 
 /// <p>Information about a tool. Tools are used in a simulation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tool {
     /// <p>Boolean indicating whether a streaming session will be configured for the tool. If <code>True</code>, AWS RoboMaker will configure a connection so you can interact with the tool as it is running in the simulation. It must have a graphical user interface. The default is <code>False</code>.</p>

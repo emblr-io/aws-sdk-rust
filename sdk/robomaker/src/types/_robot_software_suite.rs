@@ -2,6 +2,8 @@
 
 /// <p>Information about a robot software suite.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RobotSoftwareSuite {
     /// <p>The name of the robot software suite. <code>General</code> is the only supported value.</p>

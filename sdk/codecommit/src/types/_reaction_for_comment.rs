@@ -2,6 +2,8 @@
 
 /// <p>Information about the reaction values provided by users on a comment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReactionForComment {
     /// <p>The reaction for a specified comment.</p>

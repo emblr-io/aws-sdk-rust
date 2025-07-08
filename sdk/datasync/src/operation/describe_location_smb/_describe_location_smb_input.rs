@@ -2,6 +2,8 @@
 
 /// <p>DescribeLocationSmbRequest</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLocationSmbInput {
     /// <p>Specifies the Amazon Resource Name (ARN) of the SMB location that you want information about.</p>

@@ -4,6 +4,8 @@
 /// <p>Autoshifts are temporary. When the Availability Zone recovers, Amazon Web Services ends the autoshift, and traffic for the resource is no longer directed to the other Availability Zones in the Region.</p>
 /// <p>You can stop an autoshift for a resource by disabling zonal autoshift.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoshiftSummary {
     /// <p>The Availability Zone (for example, <code>use1-az1</code>) that traffic is shifted away from for a resource when Amazon Web Services starts an autoshift. Until the autoshift ends, traffic for the resource is instead directed to other Availability Zones in the Amazon Web Services Region. An autoshift can end for a resource, for example, when Amazon Web Services ends the autoshift for the Availability Zone or when you disable zonal autoshift for the resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Event sent from Amazon Lex V2 to your client application that contains a transcript of voice audio.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TranscriptEvent {
     /// <p>The transcript of the voice audio from the user.</p>

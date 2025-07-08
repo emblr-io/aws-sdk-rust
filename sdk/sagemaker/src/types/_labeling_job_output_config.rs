@@ -2,6 +2,8 @@
 
 /// <p>Output configuration information for a labeling job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelingJobOutputConfig {
     /// <p>The Amazon S3 location to write output data.</p>

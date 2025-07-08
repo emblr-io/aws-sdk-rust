@@ -2,6 +2,8 @@
 
 /// <p>Specifies the infrastructure update policy for the Amazon EC2 compute environment. For more information about infrastructure updates, see <a href="https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html">Updating compute environments</a> in the <i>Batch User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePolicy {
     /// <p>Specifies whether jobs are automatically terminated when the compute environment infrastructure is updated. The default value is <code>false</code>.</p>

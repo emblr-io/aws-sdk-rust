@@ -2,6 +2,8 @@
 
 /// <p>The message returned when a user's new password matches a previous password and doesn't comply with the password-history policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PasswordHistoryPolicyViolationException {
     #[allow(missing_docs)] // documentation missing in model

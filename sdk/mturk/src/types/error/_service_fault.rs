@@ -2,6 +2,8 @@
 
 /// <p>Amazon Mechanical Turk is temporarily unable to process your request. Try your call again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceFault {
     #[allow(missing_docs)] // documentation missing in model

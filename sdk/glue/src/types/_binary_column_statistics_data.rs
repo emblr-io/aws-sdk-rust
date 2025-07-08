@@ -2,6 +2,8 @@
 
 /// <p>Defines column statistics supported for bit sequence data values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BinaryColumnStatisticsData {
     /// <p>The size of the longest bit sequence in the column.</p>

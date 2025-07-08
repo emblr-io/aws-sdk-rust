@@ -2,6 +2,8 @@
 
 /// <p>The cost allocation tag backfill request structure that contains metadata and details of a certain backfill.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostAllocationTagBackfillRequest {
     /// <p>The date the backfill starts from.</p>

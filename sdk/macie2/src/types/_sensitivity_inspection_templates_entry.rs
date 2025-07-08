@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the sensitivity inspection template for an Amazon Macie account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SensitivityInspectionTemplatesEntry {
     /// <p>The unique identifier for the sensitivity inspection template.</p>

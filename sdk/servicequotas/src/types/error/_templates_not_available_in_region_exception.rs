@@ -2,6 +2,8 @@
 
 /// <p>The Service Quotas template is not available in this Amazon Web Services Region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplatesNotAvailableInRegionException {
     #[allow(missing_docs)] // documentation missing in model

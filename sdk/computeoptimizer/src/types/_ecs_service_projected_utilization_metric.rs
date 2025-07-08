@@ -3,6 +3,8 @@
 /// <p>Describes the projected utilization metrics of an Amazon ECS service recommendation option.</p>
 /// <p>To determine the performance difference between your current Amazon ECS service and the recommended option, compare the utilization metric data of your service against its projected utilization metric data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsServiceProjectedUtilizationMetric {
     /// <p>The name of the projected utilization metric.</p>

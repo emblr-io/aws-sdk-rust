@@ -2,6 +2,8 @@
 
 /// <p>The domain unit principal to whom the policy is granted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainUnitPolicyGrantPrincipal {
     /// <p>Specifes the designation of the domain unit users.</p>

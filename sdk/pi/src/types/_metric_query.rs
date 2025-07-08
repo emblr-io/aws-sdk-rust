@@ -2,6 +2,8 @@
 
 /// <p>A single query to be processed. You must provide the metric to query and append an aggregate function to the metric. For example, to find the average for the metric <code>db.load</code> you must use <code>db.load.avg</code>. Valid values for aggregate functions include <code>.avg</code>, <code>.min</code>, <code>.max</code>, and <code>.sum</code>. If no other parameters are specified, Performance Insights returns all data points for the specified metric. Optionally, you can request that the data points be aggregated by dimension group (<code>GroupBy</code>), and return only those data points that match your criteria (<code>Filter</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricQuery {
     /// <p>The name of a Performance Insights metric to be measured.</p>

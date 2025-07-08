@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of an update default branch operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDefaultBranchInput {
     /// <p>The name of the repository for which you want to set or change the default branch.</p>

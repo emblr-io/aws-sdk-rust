@@ -3,6 +3,8 @@
 /// <p>Sets the autocommit period of files in an FSx for ONTAP SnapLock volume, which determines how long the files must remain unmodified before they're automatically transitioned to the write once, read many (WORM) state.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/worm-state.html#worm-state-autocommit">Autocommit</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutocommitPeriod {
     /// <p>Defines the type of time for the autocommit period of a file in an FSx for ONTAP SnapLock volume. Setting this value to <code>NONE</code> disables autocommit. The default value is <code>NONE</code>.</p>

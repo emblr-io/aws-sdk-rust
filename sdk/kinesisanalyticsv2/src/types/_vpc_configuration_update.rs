@@ -2,6 +2,8 @@
 
 /// <p>Describes updates to the VPC configuration used by the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConfigurationUpdate {
     /// <p>Describes an update to the ID of the VPC configuration.</p>

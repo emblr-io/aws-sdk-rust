@@ -2,6 +2,8 @@
 
 /// <p>Two-line element set (TLE) data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TleData {
     /// <p>First line of two-line element set (TLE) data.</p>

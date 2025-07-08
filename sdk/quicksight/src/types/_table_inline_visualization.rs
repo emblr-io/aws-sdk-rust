@@ -2,6 +2,8 @@
 
 /// <p>The inline visualization of a specific type to display within a chart.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableInlineVisualization {
     /// <p>The configuration of the inline visualization of the data bars within a chart.</p>

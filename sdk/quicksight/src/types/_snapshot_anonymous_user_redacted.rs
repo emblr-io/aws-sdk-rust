@@ -2,6 +2,8 @@
 
 /// <p>Use this structure to redact sensitive information that you provide about an anonymous user from the snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotAnonymousUserRedacted {
     /// <p>The tag keys for the <code>RowLevelPermissionTags</code>.</p>

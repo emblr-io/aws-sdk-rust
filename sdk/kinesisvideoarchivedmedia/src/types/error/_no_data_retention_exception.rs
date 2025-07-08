@@ -2,6 +2,8 @@
 
 /// <p><code>GetImages</code> was requested for a stream that does not retain data (that is, has a <code>DataRetentionInHours</code> of 0).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoDataRetentionException {
     #[allow(missing_docs)] // documentation missing in model

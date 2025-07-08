@@ -2,6 +2,8 @@
 
 /// <p>Describes the association between a service network and a VPC endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceNetworkEndpointAssociation {
     /// <p>The ID of the VPC endpoint associated with the service network.</p>

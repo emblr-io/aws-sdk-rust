@@ -4,6 +4,8 @@
 /// <p>Each option has a default value. Unless you need to, you don't have to configure any option before calling <a href="https://docs.aws.amazon.com/datasync/latest/userguide/API_StartTaskExecution.html">StartTaskExecution</a>.</p>
 /// <p>You also can override your task options for each task execution. For example, you might want to adjust the <code>LogLevel</code> for an individual execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Options {
     /// <p>Specifies if and how DataSync checks the integrity of your data at the end of your transfer.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The status that operation results are filtered by.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperationResultFilter {
     /// <p>The type of filter to apply.</p>

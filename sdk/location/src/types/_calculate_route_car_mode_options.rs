@@ -2,6 +2,8 @@
 
 /// <p>Contains details about additional route preferences for requests that specify <code>TravelMode</code> as <code>Car</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CalculateRouteCarModeOptions {
     /// <p>Avoids ferries when calculating routes.</p>

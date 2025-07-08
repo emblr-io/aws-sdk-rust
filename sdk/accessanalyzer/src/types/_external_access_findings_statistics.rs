@@ -2,6 +2,8 @@
 
 /// <p>Provides aggregate statistics about the findings for the specified external access analyzer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExternalAccessFindingsStatistics {
     /// <p>The total number of active cross-account and public findings for each resource type of the specified external access analyzer.</p>

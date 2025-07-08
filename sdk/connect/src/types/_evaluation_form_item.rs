@@ -2,6 +2,8 @@
 
 /// <p>Information about an item from an evaluation form. The item must be either a section or a question.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationFormItem {
     /// <p>The information of the question.</p>

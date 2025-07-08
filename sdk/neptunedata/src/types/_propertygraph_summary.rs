@@ -2,6 +2,8 @@
 
 /// <p>The graph summary API returns a read-only list of node and edge labels and property keys, along with counts of nodes, edges, and properties. See <a href="https://docs.aws.amazon.com/neptune/latest/userguide/neptune-graph-summary.html#neptune-graph-summary-pg-response">Graph summary response for a property graph (PG)</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropertygraphSummary {
     /// <p>The number of nodes in the graph.</p>

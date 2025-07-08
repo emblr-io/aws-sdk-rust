@@ -2,6 +2,8 @@
 
 /// <p>You've exceeded the Amazon Web ServicesSupport case creation limit for your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CaseCreationLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

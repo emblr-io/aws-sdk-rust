@@ -2,6 +2,8 @@
 
 /// <p>Contains the names of the fields to which to map information about the vector store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsFieldMapping {
     /// <p>The name of the field in which Amazon Bedrock stores the ID for each entry.</p>

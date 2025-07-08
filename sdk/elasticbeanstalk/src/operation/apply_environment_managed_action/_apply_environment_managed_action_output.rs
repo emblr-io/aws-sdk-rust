@@ -2,6 +2,8 @@
 
 /// <p>The result message containing information about the managed action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplyEnvironmentManagedActionOutput {
     /// <p>The action ID of the managed action.</p>

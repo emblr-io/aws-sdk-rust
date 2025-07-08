@@ -2,6 +2,8 @@
 
 /// <p>Details on the Amazon EC2 Resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2ResourceDetails {
     /// <p>The hourly public On-Demand rate for the instance type.</p>
