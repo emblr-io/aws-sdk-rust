@@ -2,6 +2,8 @@
 
 /// <p>Contains the (pre-calculated) aggregate values for an asset property.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Aggregates {
     /// <p>The average (mean) value of the time series over a time interval window.</p>

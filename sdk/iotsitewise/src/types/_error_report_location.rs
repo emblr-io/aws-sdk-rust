@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 destination where errors associated with the job creation request are saved.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorReportLocation {
     /// <p>The name of the Amazon S3 bucket to which errors associated with the bulk import job are sent.</p>

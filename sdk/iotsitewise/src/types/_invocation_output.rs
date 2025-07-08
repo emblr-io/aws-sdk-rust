@@ -2,6 +2,8 @@
 
 /// <p>This contains the SiteWise Assistant's response and the corresponding citation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvocationOutput {
     /// <p>The text message of the SiteWise Assistant's response.</p>

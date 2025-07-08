@@ -2,6 +2,8 @@
 
 /// <p>The data source for the dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Source {
     /// <p>Contains the ARN of the dataset. If the source is Kendra, it's the ARN of the Kendra index.</p>

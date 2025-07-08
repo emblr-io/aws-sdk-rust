@@ -2,6 +2,8 @@
 
 /// <p>Contains details for a SiteWise Edge gateway that runs on a Siemens Industrial Edge Device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SiemensIe {
     /// <p>The name of the IoT Thing for your SiteWise Edge gateway.</p>

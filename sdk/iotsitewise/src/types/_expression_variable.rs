@@ -2,6 +2,8 @@
 
 /// <p>Contains expression variable information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpressionVariable {
     /// <p>The friendly name of the variable to be used in the expression.</p>
