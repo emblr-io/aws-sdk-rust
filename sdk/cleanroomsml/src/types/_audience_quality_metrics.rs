@@ -2,6 +2,8 @@
 
 /// <p>Metrics that describe the quality of the generated audience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudienceQualityMetrics {
     /// <p>The relevance scores of the generated audience.</p>

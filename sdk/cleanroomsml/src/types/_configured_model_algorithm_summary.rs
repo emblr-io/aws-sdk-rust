@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a configured model algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredModelAlgorithmSummary {
     /// <p>The time at which the configured model algorithm was created.</p>

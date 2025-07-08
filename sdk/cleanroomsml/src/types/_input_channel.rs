@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the data source that is used to create an ML input channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputChannel {
     /// <p>The data source that is used to create the ML input channel.</p>

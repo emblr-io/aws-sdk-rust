@@ -2,6 +2,8 @@
 
 /// <p>Provides information necessary to perform the protected query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ProtectedQueryInputParameters {
     /// <p>The parameters for the SQL type Protected Query.</p>

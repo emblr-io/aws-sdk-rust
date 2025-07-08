@@ -2,6 +2,8 @@
 
 /// <p>Configuration information about how the exported model artifacts are stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MlOutputConfiguration {
     /// <p>The Amazon S3 location where exported model artifacts are stored.</p>

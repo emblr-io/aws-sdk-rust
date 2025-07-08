@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a trained model in a collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationTrainedModelSummary {
     /// <p>The time at which the trained model was created.</p>

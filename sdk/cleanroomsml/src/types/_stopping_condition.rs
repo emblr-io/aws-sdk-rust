@@ -2,6 +2,8 @@
 
 /// <p>The criteria used to stop model training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StoppingCondition {
     /// <p>The maximum amount of time, in seconds, that model training can run before it is terminated.</p>

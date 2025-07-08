@@ -2,6 +2,8 @@
 
 /// <p>Provides execution parameters for the inference container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceContainerExecutionParameters {
     /// <p>The maximum size of the inference container payload, specified in MB.</p>

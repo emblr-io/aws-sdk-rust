@@ -2,6 +2,8 @@
 
 /// <p>Information about the model training data channel. A training data channel is a named data source that the training algorithms can consume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelTrainingDataChannel {
     /// <p>The Amazon Resource Name (ARN) of the ML input channel for this model training data channel.</p>

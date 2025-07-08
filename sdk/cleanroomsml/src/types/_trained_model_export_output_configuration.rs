@@ -2,6 +2,8 @@
 
 /// <p>Information about the output of the trained model export job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrainedModelExportOutputConfiguration {
     /// <p>The members that will received the exported trained model output.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Configuration information necessary for the configure audience model output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredAudienceModelOutputConfig {
     /// <p>Defines the Amazon S3 bucket where the configured audience is stored.</p>

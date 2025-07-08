@@ -2,6 +2,8 @@
 
 /// <p>Configuration information about how the inference output is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceOutputConfiguration {
     /// <p>The MIME type used to specify the output data.</p>

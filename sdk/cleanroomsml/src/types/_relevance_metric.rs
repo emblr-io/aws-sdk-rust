@@ -2,6 +2,8 @@
 
 /// <p>The relevance score of a generated audience.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelevanceMetric {
     /// <p>The size of the generated audience. Must match one of the sizes in the configured audience model.</p>

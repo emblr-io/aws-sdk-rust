@@ -2,6 +2,8 @@
 
 /// <p>Defines who will receive inference results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceReceiverMember {
     /// <p>The account ID of the member that can receive inference results.</p>
