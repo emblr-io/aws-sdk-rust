@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration information for the output results from for the inference, including KMS key ID and output S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceOutputConfiguration {
     /// <p>Specifies configuration information for the output results from for the inference, output S3 location.</p>

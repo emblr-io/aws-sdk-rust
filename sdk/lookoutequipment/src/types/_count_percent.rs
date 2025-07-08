@@ -2,6 +2,8 @@
 
 /// <p>Entity that comprises information of count and percentage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CountPercent {
     /// <p>Indicates the count of occurences of the given statistic.</p>

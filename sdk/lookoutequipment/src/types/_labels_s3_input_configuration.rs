@@ -2,6 +2,8 @@
 
 /// <p>The location information (prefix and bucket name) for the s3 location being used for label data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelsS3InputConfiguration {
     /// <p>The name of the S3 bucket holding the label data.</p>

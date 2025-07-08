@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the data schema used with the given dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetSchema {
     /// <p>The data schema used within the given dataset.</p>

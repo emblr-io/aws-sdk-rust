@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the specified retraining scheduler, including model name, status, start date, frequency, and lookback window.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetrainingSchedulerSummary {
     /// <p>The name of the model that the retraining scheduler is attached to.</p>
