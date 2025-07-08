@@ -2,6 +2,8 @@
 
 /// <p>Describes the performance configuration for compute services such as Amazon EC2, Lambda, and ECS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeConfiguration {
     /// <p>The number of vCPU cores in the resource.</p>

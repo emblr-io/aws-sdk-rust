@@ -2,6 +2,8 @@
 
 /// <p>Contains detailed information about the specified resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ResourceDetails {
     /// <p>The Aurora DB cluster storage recommendation details.</p>

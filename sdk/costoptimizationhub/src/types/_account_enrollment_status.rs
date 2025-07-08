@@ -2,6 +2,8 @@
 
 /// <p>Describes the enrollment status of an organization's member accounts in Cost Optimization Hub.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountEnrollmentStatus {
     /// <p>The Amazon Web Services account ID.</p>

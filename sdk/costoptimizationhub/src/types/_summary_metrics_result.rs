@@ -2,6 +2,8 @@
 
 /// <p>The results or descriptions for the additional metrics, based on whether the metrics were or were not requested.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SummaryMetricsResult {
     /// <p>The savings percentage based on your Amazon Web Services spend over the past 30 days.</p><note>

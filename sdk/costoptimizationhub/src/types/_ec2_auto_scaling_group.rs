@@ -2,6 +2,8 @@
 
 /// <p>The EC2 Auto Scaling group recommendation details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2AutoScalingGroup {
     /// <p>The EC2 Auto Scaling group configuration used for recommendations.</p>

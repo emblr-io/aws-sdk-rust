@@ -2,6 +2,8 @@
 
 /// <p>Describes a filter that returns a more specific list of recommendations. Filters recommendations by different dimensions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Filter {
     /// <p>Whether or not implementing the recommendation requires a restart.</p>
