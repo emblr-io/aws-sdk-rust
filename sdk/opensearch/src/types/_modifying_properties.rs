@@ -2,6 +2,8 @@
 
 /// <p>Information about the domain properties that are currently being modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyingProperties {
     /// <p>The name of the property that is currently being modified.</p>

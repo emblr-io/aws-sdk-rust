@@ -2,6 +2,8 @@
 
 /// <p>Configuration details for a Security Lake data source that can be used for direct queries.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityLakeDirectQueryDataSource {
     /// <p>The unique identifier of the IAM role that grants OpenSearch Service permission to access the specified data source.</p>

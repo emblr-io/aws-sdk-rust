@@ -2,6 +2,8 @@
 
 /// <p>Container for the parameters to the <code>ListTags</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTagsInput {
     /// <p>Amazon Resource Name (ARN) for the domain, data source, or application to view tags for.</p>

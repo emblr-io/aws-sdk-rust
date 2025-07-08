@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>DescribeDomainChangeProgress</code> request. Contains progress information for the requested domain change.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainChangeProgressOutput {
     /// <p>Container for information about the stages of a configuration change happening on a domain.</p>

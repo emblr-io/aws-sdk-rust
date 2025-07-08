@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to the <code>AssociatePackage</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatePackageInput {
     /// <p>Internal ID of the package to associate with a domain. Use <code>DescribePackages</code> to find this value.</p>

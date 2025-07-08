@@ -2,6 +2,8 @@
 
 /// <p>The configuration parameters to enable access to the key store required by the package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyStoreAccessOption {
     /// <p>Role ARN to access the KeyStore Key</p>

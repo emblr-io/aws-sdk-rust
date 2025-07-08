@@ -2,6 +2,8 @@
 
 /// <p>A filter to apply to the <code>DescribePackage</code> response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribePackagesFilter {
     /// <p>Any field from <code>PackageDetails</code>.</p>

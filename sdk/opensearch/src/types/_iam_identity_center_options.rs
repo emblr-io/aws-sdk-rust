@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for IAM Identity Center in an OpenSearch Application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamIdentityCenterOptions {
     /// <p>Indicates whether IAM Identity Center is enabled for the OpenSearch Application.</p>

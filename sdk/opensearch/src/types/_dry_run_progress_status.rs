@@ -2,6 +2,8 @@
 
 /// <p>Information about the progress of a pre-upgrade dry run analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DryRunProgressStatus {
     /// <p>The unique identifier of the dry run.</p>

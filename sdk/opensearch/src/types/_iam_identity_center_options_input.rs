@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for enabling and managing IAM Identity Center.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamIdentityCenterOptionsInput {
     /// <p>Specifies whether IAM Identity Center is enabled or disabled.</p>

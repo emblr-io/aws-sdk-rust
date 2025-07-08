@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>DescribeDomainNodes</code> request. Contains information about the nodes on the requested domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDomainNodesOutput {
     /// <p>Contains nodes information list <code>DomainNodesStatusList</code> with details about the all nodes on the requested domain.</p>

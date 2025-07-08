@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for a data source that can be directly queried.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DirectQueryDataSource {
     /// <p>A unique, user-defined label to identify the data source within your OpenSearch Service environment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A tag (key-value pair) for an Amazon OpenSearch Service resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tag {
     /// <p>The tag key. Tag keys must be unique for the domain to which they are attached.</p>

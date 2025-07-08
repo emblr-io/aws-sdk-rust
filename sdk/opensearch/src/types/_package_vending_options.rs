@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for determining whether a package can be made available for use by other users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageVendingOptions {
     /// <p>Indicates whether the package vending feature is enabled, allowing the package to be used by other users.</p>

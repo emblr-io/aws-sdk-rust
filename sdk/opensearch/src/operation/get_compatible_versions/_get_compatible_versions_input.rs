@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to <code>GetCompatibleVersions</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetCompatibleVersionsInput {
     /// <p>The name of an existing domain. Provide this parameter to limit the results to a single domain.</p>

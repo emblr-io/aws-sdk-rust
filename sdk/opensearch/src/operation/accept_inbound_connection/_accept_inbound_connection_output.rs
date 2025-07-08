@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the accepted inbound connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceptInboundConnectionOutput {
     /// <p>Information about the accepted inbound connection.</p>

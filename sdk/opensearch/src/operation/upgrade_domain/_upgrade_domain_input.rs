@@ -2,6 +2,8 @@
 
 /// <p>Container for the request parameters to the <code>UpgradeDomain</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpgradeDomainInput {
     /// <p>Name of the OpenSearch Service domain that you want to upgrade.</p>

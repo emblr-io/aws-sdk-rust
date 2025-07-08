@@ -2,6 +2,8 @@
 
 /// <p>The configuration for associating a package with a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageAssociationConfiguration {
     /// <p>The configuration parameters to enable accessing the key store required by the package.</p>

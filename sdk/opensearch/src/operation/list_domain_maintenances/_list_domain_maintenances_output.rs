@@ -2,6 +2,8 @@
 
 /// <p>The result of a <code>ListDomainMaintenances</code> request that contains information about the requested actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDomainMaintenancesOutput {
     /// <p>A list of the submitted maintenance actions.</p>

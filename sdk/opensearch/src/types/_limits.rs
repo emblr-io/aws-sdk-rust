@@ -2,6 +2,8 @@
 
 /// <p>Limits for a given instance type and for each of its roles.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Limits {
     /// <p>Storage-related attributes that are available for a given instance type.</p>
