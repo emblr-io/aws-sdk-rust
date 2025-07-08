@@ -2,6 +2,8 @@
 
 /// <p>Represents a single searchable property to search on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Property {
     /// <p>The structure representing EoCloudCover property filter containing a lower bound and upper bound.</p>

@@ -2,6 +2,8 @@
 
 /// <p>It contains configs such as ReverseGeocodingConfig and MapMatchingConfig.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum VectorEnrichmentJobConfig {
     /// <p>The input structure for Map Matching operation type.</p>

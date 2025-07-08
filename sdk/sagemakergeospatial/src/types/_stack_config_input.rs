@@ -2,6 +2,8 @@
 
 /// <p>The input structure for Stacking Operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StackConfigInput {
     /// <p>The structure representing output resolution (in target georeferenced units) of the result of stacking operation.</p>

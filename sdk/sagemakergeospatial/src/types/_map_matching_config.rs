@@ -2,6 +2,8 @@
 
 /// <p>The input structure for Map Matching operation type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MapMatchingConfig {
     /// <p>The field name for the data that describes the identifier representing a collection of GPS points belonging to an individual trace.</p>

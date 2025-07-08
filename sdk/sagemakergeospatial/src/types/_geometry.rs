@@ -2,6 +2,8 @@
 
 /// <p>The structure representing a Geometry in terms of Type and Coordinates as per GeoJson spec.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Geometry {
     /// <p>GeoJson Geometry types like Polygon and MultiPolygon.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input structure for the InputConfig in a VectorEnrichmentJob.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VectorEnrichmentJobInputConfig {
     /// <p>The input structure that defines the data source file type.</p>

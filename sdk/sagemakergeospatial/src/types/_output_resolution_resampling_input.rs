@@ -2,6 +2,8 @@
 
 /// <p>OutputResolution Configuration indicating the target resolution for the output of Resampling operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputResolutionResamplingInput {
     /// <p>User Defined Resolution for the output of Resampling operation defined by value and unit.</p>
