@@ -2,6 +2,8 @@
 
 /// <p>The instance type that you specify determines the combination of CPU, memory, storage, and networking capacity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceTypeCapacity {
     /// <p>The instance type of the hosts.</p>
