@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the provided source S3 bucket is not valid for import.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidImportSourceException {
     /// <p>Brief description of the exception returned by the request.</p>

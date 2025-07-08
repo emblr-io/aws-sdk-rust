@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when there is an issue with the specified KMS key and the trail or event data store can't be updated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsException {
     /// <p>Brief description of the exception returned by the request.</p>

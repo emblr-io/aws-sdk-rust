@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the resouce-based policy has syntax errors, or contains a principal that is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePolicyNotValidException {
     /// <p>Brief description of the exception returned by the request.</p>

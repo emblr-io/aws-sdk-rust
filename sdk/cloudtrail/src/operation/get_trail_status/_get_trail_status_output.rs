@@ -2,6 +2,8 @@
 
 /// <p>Returns the objects or data listed below if successful. Otherwise, returns an error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetTrailStatusOutput {
     /// <p>Whether the CloudTrail trail is currently logging Amazon Web Services API calls.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Your account has used the maximum number of event data stores.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDataStoreMaxLimitExceededException {
     /// <p>Brief description of the exception returned by the request.</p>

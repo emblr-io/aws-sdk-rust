@@ -2,6 +2,8 @@
 
 /// <p>A table showing information about the most recent successful and failed attempts to ingest events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestionStatus {
     /// <p>The time stamp of the most recent successful ingestion of events for the channel.</p>

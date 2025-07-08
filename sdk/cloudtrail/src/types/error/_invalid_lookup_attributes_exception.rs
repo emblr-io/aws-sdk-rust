@@ -2,6 +2,8 @@
 
 /// <p>Occurs when a lookup attribute is specified that is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidLookupAttributesException {
     /// <p>Brief description of the exception returned by the request.</p>

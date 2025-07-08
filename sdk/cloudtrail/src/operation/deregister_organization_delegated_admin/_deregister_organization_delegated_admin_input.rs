@@ -2,6 +2,8 @@
 
 /// <p>Removes CloudTrail delegated administrator permissions from a specified member account in an organization that is currently designated as a delegated administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeregisterOrganizationDelegatedAdminInput {
     /// <p>A delegated administrator account ID. This is a member account in an organization that is currently designated as a delegated administrator.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an import that was returned by a lookup request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportsListItem {
     /// <p>The ID of the import.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The schedule for a dashboard refresh.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RefreshSchedule {
     /// <p>The frequency at which you want the dashboard refreshed.</p>

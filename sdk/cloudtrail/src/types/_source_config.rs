@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration information about the channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceConfig {
     /// <p>Specifies whether the channel applies to a single Region or to all Regions.</p>

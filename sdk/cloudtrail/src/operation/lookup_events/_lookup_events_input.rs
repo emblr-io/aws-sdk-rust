@@ -2,6 +2,8 @@
 
 /// <p>Contains a request for LookupEvents.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LookupEventsInput {
     /// <p>Contains a list of lookup attributes. Currently the list can contain only one item.</p>

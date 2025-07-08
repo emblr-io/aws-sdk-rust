@@ -2,6 +2,8 @@
 
 /// <p>Specifies the tags to add to a trail, event data store, dashboard, or channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddTagsInput {
     /// <p>Specifies the ARN of the trail, event data store, dashboard, or channel to which one or more tags will be added.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The query ID does not exist or does not map to a query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryIdNotFoundException {
     /// <p>Brief description of the exception returned by the request.</p>

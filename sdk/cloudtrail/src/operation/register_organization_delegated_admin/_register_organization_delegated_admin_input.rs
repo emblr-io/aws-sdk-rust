@@ -2,6 +2,8 @@
 
 /// <p>Specifies an organization member account ID as a CloudTrail delegated administrator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RegisterOrganizationDelegatedAdminInput {
     /// <p>An organization member account ID that you want to designate as a delegated administrator.</p>

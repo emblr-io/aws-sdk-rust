@@ -2,6 +2,8 @@
 
 /// <p>An object that contains information types to be included in CloudTrail enriched events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContextKeySelector {
     /// <p>Specifies the type of the event record field in ContextKeySelector. Valid values include RequestContext, TagContext.</p>

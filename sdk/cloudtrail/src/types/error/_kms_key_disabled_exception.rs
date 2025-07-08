@@ -3,6 +3,8 @@
 /// <p>This exception is no longer in use.</p>
 #[deprecated]
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsKeyDisabledException {
     /// <p>Brief description of the exception returned by the request.</p>

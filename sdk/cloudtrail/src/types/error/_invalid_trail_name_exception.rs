@@ -14,6 +14,8 @@
 /// <p>Not be in IP address format (for example, 192.168.5.4)</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTrailNameException {
     /// <p>Brief description of the exception returned by the request.</p>

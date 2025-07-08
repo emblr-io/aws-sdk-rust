@@ -2,6 +2,8 @@
 
 /// <p>The settings for a trail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Trail {
     /// <p>Name of the trail set by calling <code>CreateTrail</code>. The maximum length is 128 characters.</p>

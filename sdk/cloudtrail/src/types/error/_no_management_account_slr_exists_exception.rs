@@ -2,6 +2,8 @@
 
 /// <p>This exception is thrown when the management account does not have a service-linked role.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoManagementAccountSlrExistsException {
     /// <p>Brief description of the exception returned by the request.</p>

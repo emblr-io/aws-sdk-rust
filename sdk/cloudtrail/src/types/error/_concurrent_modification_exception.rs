@@ -2,6 +2,8 @@
 
 /// <p>You are trying to update a resource when another request is in progress. Allow sufficient wait time for the previous request to complete, then retry your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConcurrentModificationException {
     /// <p>Brief description of the exception returned by the request.</p>
