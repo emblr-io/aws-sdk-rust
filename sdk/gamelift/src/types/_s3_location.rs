@@ -2,6 +2,8 @@
 
 /// <p>The location in Amazon S3 where build or script files are stored for access by Amazon GameLift Servers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3Location {
     /// <p>An Amazon S3 bucket identifier. Thename of the S3 bucket.</p><note>

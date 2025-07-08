@@ -8,6 +8,8 @@
 /// <p>For Anywhere fleets, a compute is a computing resource that you provide and is registered to the fleet.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Compute {
     /// <p>A unique identifier for the fleet that the compute belongs to.</p>

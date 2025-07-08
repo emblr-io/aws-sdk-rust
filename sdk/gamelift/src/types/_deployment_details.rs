@@ -2,6 +2,8 @@
 
 /// <p>Information about the most recent deployment for the container fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeploymentDetails {
     /// <p>A unique identifier for a fleet deployment.</p>

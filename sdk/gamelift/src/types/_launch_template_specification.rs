@@ -3,6 +3,8 @@
 /// <p><b>This data type is used with the Amazon GameLift Servers FleetIQ and game server groups.</b></p>
 /// <p>An Amazon Elastic Compute Cloud launch template that contains configuration settings and game server code to be deployed to all instances in a game server group. The launch template is specified when creating a new game server group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LaunchTemplateSpecification {
     /// <p>A unique identifier for an existing Amazon EC2 launch template.</p>

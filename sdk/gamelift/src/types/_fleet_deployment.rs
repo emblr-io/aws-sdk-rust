@@ -2,6 +2,8 @@
 
 /// <p>Describes a container fleet deployment with updates to the fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetDeployment {
     /// <p>A unique identifier for the deployment.</p>

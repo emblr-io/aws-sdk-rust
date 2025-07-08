@@ -2,6 +2,8 @@
 
 /// <p>Represents a virtual computing instance that runs game server processes and hosts game sessions. In Amazon GameLift Servers, one or more instances make up a managed EC2 fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Instance {
     /// <p>A unique identifier for the fleet that the instance belongs to.</p>

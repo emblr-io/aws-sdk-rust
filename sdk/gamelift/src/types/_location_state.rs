@@ -18,6 +18,8 @@
 /// <p><b>NOT_FOUND</b> -- The fleet location was not found. This could be because the custom location was removed or not created.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LocationState {
     /// <p>The fleet location, expressed as an Amazon Web Services Region code such as <code>us-west-2</code>.</p>

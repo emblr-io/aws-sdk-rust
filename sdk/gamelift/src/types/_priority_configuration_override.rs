@@ -4,6 +4,8 @@
 /// <p>A priority configuration override list does not override a queue's FilterConfiguration setting, if the queue has one. Filter configurations are used to limit placements to a subset of the locations in a queue's destinations. If the override list includes a location that's not on in the <code>FilterConfiguration</code> allowed list, Amazon GameLift Servers won't attempt to place a game session there.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PriorityConfigurationOverride {
     /// <p>Instructions for how to proceed if placement fails in every location on the priority override list. Valid strategies include:</p>

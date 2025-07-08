@@ -3,6 +3,8 @@
 /// <p>Describes the configuration for a container that runs your game server executable. This definition includes container configuration, resources, and start instructions. Use this data type when creating or updating a game server container group definition. For properties of a deployed container, see <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameServerContainerDefinition.html">GameServerContainerDefinition</a>. A game server container is automatically considered essential; if an essential container fails, the entire container group restarts.</p>
 /// <p><b>Use with: </b> <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html">CreateContainerGroupDefinition</a>, <a href="https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateContainerGroupDefinition.html">UpdateContainerGroupDefinition</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GameServerContainerDefinitionInput {
     /// <p>A string that uniquely identifies the container definition within a container group.</p>
