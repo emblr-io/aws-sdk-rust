@@ -2,6 +2,8 @@
 
 /// <p>Request of CreateNotification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateNotificationInput {
     /// <p>The <code>accountId</code> that is associated with the budget that you want to create a notification for.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Request of UpdateBudget</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBudgetInput {
     /// <p>The <code>accountId</code> that is associated with the budget that you want to update.</p>

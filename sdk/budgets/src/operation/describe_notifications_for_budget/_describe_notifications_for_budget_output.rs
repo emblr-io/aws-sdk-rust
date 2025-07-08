@@ -2,6 +2,8 @@
 
 /// <p>Response of GetNotificationsForBudget</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeNotificationsForBudgetOutput {
     /// <p>A list of notifications that are associated with a budget.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Request of DeleteNotification</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteNotificationInput {
     /// <p>The <code>accountId</code> that is associated with the budget whose notification you want to delete.</p>
