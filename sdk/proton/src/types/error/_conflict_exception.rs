@@ -2,6 +2,8 @@
 
 /// <p>The request <i>couldn't</i> be made due to a conflicting operation or resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ConflictException {
     #[allow(missing_docs)] // documentation missing in model

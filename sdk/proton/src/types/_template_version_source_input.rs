@@ -2,6 +2,8 @@
 
 /// <p>Template version source data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TemplateVersionSourceInput {
     /// <p>An S3 source object that includes the template bundle S3 path and name for a template minor version.</p>

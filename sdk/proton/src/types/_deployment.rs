@@ -2,6 +2,8 @@
 
 /// <p>The detailed information about a deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Deployment {
     /// <p>The ID of the deployment.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The detailed data about the current state of the service pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServicePipelineState {
     /// <p>The service spec that was used to create the service pipeline.</p>

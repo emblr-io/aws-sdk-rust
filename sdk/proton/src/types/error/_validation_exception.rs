@@ -2,6 +2,8 @@
 
 /// <p>The input is invalid or an out-of-range value was supplied for the input parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ValidationException {
     #[allow(missing_docs)] // documentation missing in model

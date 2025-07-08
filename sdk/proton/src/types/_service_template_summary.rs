@@ -2,6 +2,8 @@
 
 /// <p>Summary data of an Proton service template resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ServiceTemplateSummary {
     /// <p>The name of the service template.</p>

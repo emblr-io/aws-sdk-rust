@@ -2,6 +2,8 @@
 
 /// <p>Revision detail data for a commit and push that activates a sync attempt</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Revision {
     /// <p>The repository name.</p>
