@@ -2,6 +2,8 @@
 
 /// <p>The summary of the Savings Plans recommendation generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerationSummary {
     /// <p>Indicates the ID for this specific recommendation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a group when you specify a group by criteria or in the response to a query with a specific grouping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupDefinition {
     /// <p>The string that represents the type of group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The list of processing statuses for Cost Management products for a specific cost category.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostCategoryProcessingStatus {
     /// <p>The Cost Management product name of the applied status.</p>

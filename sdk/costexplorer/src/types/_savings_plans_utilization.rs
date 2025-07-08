@@ -2,6 +2,8 @@
 
 /// <p>The measurement of how well you're using your existing Savings Plans.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SavingsPlansUtilization {
     /// <p>The total amount of Savings Plans commitment that's been purchased in an account (or set of accounts).</p>

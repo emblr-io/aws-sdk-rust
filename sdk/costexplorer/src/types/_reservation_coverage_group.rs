@@ -2,6 +2,8 @@
 
 /// <p>A group of reservations that share a set of attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservationCoverageGroup {
     /// <p>The attributes for this group of reservations.</p>

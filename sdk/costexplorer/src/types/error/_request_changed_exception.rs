@@ -2,6 +2,8 @@
 
 /// <p>Your request parameters changed between pages. Try again with the old parameters or without a pagination token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestChangedException {
     #[allow(missing_docs)] // documentation missing in model

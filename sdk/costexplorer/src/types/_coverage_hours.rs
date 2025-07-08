@@ -2,6 +2,8 @@
 
 /// <p>How long a running instance either used a reservation or was On-Demand.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoverageHours {
     /// <p>The number of instance running hours that On-Demand Instances covered.</p>

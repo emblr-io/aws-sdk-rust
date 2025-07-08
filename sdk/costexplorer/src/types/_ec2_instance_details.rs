@@ -2,6 +2,8 @@
 
 /// <p>Details about the Amazon EC2 reservations that Amazon Web Services recommends that you purchase.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2InstanceDetails {
     /// <p>The instance family of the recommended reservation.</p>

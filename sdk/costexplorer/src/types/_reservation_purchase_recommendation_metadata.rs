@@ -2,6 +2,8 @@
 
 /// <p>Information about a recommendation, such as the timestamp for when Amazon Web Services made a specific recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservationPurchaseRecommendationMetadata {
     /// <p>The ID for the recommendation.</p>

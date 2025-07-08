@@ -2,6 +2,8 @@
 
 /// <p>Contains cost or usage metric values for comparing two time periods. Each value includes amounts for the baseline and comparison time periods, their difference, and the unit of measurement.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComparisonMetricValue {
     /// <p>The numeric value for the baseline time period measurement.</p>

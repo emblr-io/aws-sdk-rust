@@ -2,6 +2,8 @@
 
 /// <p>A request to generate a recommendation or analysis is already in progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerationExistsException {
     #[allow(missing_docs)] // documentation missing in model

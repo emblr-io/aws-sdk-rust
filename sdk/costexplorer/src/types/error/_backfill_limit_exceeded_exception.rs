@@ -2,6 +2,8 @@
 
 /// <p>A request to backfill is already in progress. Once the previous request is complete, you can create another request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackfillLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

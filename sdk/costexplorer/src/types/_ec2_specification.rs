@@ -2,6 +2,8 @@
 
 /// <p>The Amazon EC2 hardware specifications that you want Amazon Web Services to provide recommendations for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2Specification {
     /// <p>Indicates whether you want a recommendation for standard or convertible reservations.</p>

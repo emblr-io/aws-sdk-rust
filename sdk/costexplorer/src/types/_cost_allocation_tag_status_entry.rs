@@ -2,6 +2,8 @@
 
 /// <p>The cost allocation tag status. The status of a key can either be active or inactive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CostAllocationTagStatusEntry {
     /// <p>The key for the cost allocation tag.</p>
