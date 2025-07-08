@@ -16,6 +16,8 @@
 /// </ul>
 /// <p>Operation event examples include StartApplication or StopApplication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperationEvent {
     /// <p>A description of the operation event. For example, "Stop the EC2 instance i-abcdefgh987654321".</p>

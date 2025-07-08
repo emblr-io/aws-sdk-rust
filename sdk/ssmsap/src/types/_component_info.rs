@@ -2,6 +2,8 @@
 
 /// <p>This is information about the component of your SAP application, such as Web Dispatcher.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentInfo {
     /// <p>This string is the type of the component.</p>
