@@ -2,6 +2,8 @@
 
 /// <p>Defines the structure for multi-Region cluster configurations, containing the witness region and linked cluster settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultiRegionProperties {
     /// <p>The that serves as the witness region for a multi-Region cluster. The witness region helps maintain cluster consistency and quorum.</p>
