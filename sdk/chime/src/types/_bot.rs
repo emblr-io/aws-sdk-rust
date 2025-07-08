@@ -2,6 +2,8 @@
 
 /// <p>A resource that allows Enterprise account administrators to configure an interface to receive events from Amazon Chime.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Bot {
     /// <p>The bot ID.</p>

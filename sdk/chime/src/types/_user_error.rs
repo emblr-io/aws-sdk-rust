@@ -2,6 +2,8 @@
 
 /// <p>The list of errors returned when errors are encountered during the <code>BatchSuspendUser</code>, <code>BatchUnsuspendUser</code>, or <code>BatchUpdateUser</code> actions. This includes user IDs, error codes, and error messages.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserError {
     /// <p>The user ID for which the action failed.</p>

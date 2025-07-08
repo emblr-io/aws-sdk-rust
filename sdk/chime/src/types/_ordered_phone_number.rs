@@ -2,6 +2,8 @@
 
 /// <p>A phone number for which an order has been placed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OrderedPhoneNumber {
     /// <p>The phone number, in E.164 format.</p>
