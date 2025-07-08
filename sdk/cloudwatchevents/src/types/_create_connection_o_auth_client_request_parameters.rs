@@ -2,6 +2,8 @@
 
 /// <p>Contains the Basic authorization parameters to use for the connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CreateConnectionOAuthClientRequestParameters {
     /// <p>The client ID to use for OAuth authorization for the connection.</p>

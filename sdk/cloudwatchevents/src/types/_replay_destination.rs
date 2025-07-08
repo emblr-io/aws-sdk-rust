@@ -2,6 +2,8 @@
 
 /// <p>A <code>ReplayDestination</code> object that contains details about a replay.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplayDestination {
     /// <p>The ARN of the event bus to replay event to. You can replay events only to the event bus specified to create the archive.</p>

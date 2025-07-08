@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Web Services account that a partner event source has been offered to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PartnerEventSourceAccount {
     /// <p>The Amazon Web Services account ID that the partner event source was offered to.</p>
