@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to Quip as your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuipConfiguration {
     /// <p>The Quip site domain. For example, <i>https://quip-company.quipdomain.com/browse</i>. The domain in this example is "quipdomain".</p>

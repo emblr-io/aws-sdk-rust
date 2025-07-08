@@ -2,6 +2,8 @@
 
 /// <p>Summary information on the processing of <code>PUT</code> and <code>DELETE</code> actions for mapping users to their groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupOrderingIdSummary {
     /// <p>The current processing status of actions for mapping users to their groups. The status can be either <code>PROCESSING</code>, <code>SUCCEEDED</code>, <code>DELETING</code>, <code>DELETED</code>, or <code>FAILED</code>.</p>

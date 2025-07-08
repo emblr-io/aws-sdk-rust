@@ -4,6 +4,8 @@
 /// <p>Support for <code>AlfrescoConfiguration</code> ended May 2023. We recommend migrating to or using the Alfresco data source template schema / <a href="https://docs.aws.amazon.com/kendra/latest/APIReference/API_TemplateConfiguration.html">TemplateConfiguration</a> API.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AlfrescoConfiguration {
     /// <p>The URL of the Alfresco site. For example, <i>https://hostname:8080</i>.</p>

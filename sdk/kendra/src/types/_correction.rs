@@ -2,6 +2,8 @@
 
 /// <p>A corrected misspelled word in a query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Correction {
     /// <p>The zero-based location in the response string or text where the corrected word starts.</p>

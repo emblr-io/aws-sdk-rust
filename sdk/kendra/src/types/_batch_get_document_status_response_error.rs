@@ -2,6 +2,8 @@
 
 /// <p>Provides a response when the status of a document could not be retrieved.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetDocumentStatusResponseError {
     /// <p>The identifier of the document whose status could not be retrieved.</p>

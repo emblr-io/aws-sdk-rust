@@ -3,6 +3,8 @@
 /// <p>A single query result.</p>
 /// <p>A query result contains information about a document returned by the query. This includes the original location of the document, a list of attributes assigned to the document, and relevant text from the document that satisfies the query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryResultItem {
     /// <p>The unique identifier for the query result item id (<code>Id</code>) and the query result item document id (<code>DocumentId</code>) combined. The value of this field changes with every request, even when you have the same documents.</p>

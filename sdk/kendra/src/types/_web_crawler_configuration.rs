@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information required for Amazon Kendra Web Crawler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebCrawlerConfiguration {
     /// <p>Specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl.</p>

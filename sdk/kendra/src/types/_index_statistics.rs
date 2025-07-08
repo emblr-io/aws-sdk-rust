@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the number of documents and the number of questions and answers in an index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IndexStatistics {
     /// <p>The number of question and answer topics in the index.</p>

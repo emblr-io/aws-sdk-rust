@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information for the JWT token type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JwtTokenTypeConfiguration {
     /// <p>The location of the key.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the configuration information to connect to Jira as your data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JiraConfiguration {
     /// <p>The URL of the Jira account. For example, <i>company.atlassian.net</i>.</p>

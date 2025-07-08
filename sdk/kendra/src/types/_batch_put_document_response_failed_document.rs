@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a document that could not be indexed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPutDocumentResponseFailedDocument {
     /// <p>The identifier of the document.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the status of documents submitted for indexing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Status {
     /// <p>The identifier of the document.</p>

@@ -14,6 +14,8 @@
 /// <p>Amazon Kendra Gen AI Enterprise Edition indices don't support token based document filtering. If you're using an Amazon Kendra Gen AI Enterprise Edition index, Amazon Kendra returns a <code>ValidationException</code> error if the <code>Token</code> field has a non-null value.</p>
 /// </important>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserContext {
     /// <p>The user context token for filtering search results for a user. It must be a JWT or a JSON token.</p>
