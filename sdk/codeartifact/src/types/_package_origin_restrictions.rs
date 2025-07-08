@@ -2,6 +2,8 @@
 
 /// <p>Details about the origin restrictions set on the package. The package origin restrictions determine how new versions of a package can be added to a specific repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageOriginRestrictions {
     /// <p>The package origin configuration that determines if new versions of the package can be published directly to the repository.</p>

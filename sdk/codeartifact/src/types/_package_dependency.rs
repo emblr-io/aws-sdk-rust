@@ -2,6 +2,8 @@
 
 /// <p>Details about a package dependency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageDependency {
     /// <p>The namespace of the package that this package depends on. The package component that specifies its namespace depends on its type. For example:</p>

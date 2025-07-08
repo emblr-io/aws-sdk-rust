@@ -2,6 +2,8 @@
 
 /// <p>Details about an allowed repository for a package group, including its name and origin configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageGroupAllowedRepository {
     /// <p>The name of the allowed repository.</p>

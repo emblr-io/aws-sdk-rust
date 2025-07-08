@@ -2,6 +2,8 @@
 
 /// <p>l An error associated with package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PackageVersionError {
     /// <p>The error code associated with the error. Valid error codes are:</p>
