@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a cluster while it is in the process of resizing with an incremental resize.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataTransferProgress {
     /// <p>Describes the status of the cluster. While the transfer is in progress the status is <code>transferringdata</code>.</p>

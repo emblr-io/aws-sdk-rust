@@ -2,6 +2,8 @@
 
 /// <p>Describes an Amazon Web Services account authorized to restore a snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountWithRestoreAccess {
     /// <p>The identifier of an Amazon Web Services account authorized to restore a snapshot.</p>

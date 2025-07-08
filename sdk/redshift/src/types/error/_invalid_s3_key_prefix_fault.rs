@@ -2,6 +2,8 @@
 
 /// <p>The string specified for the logging S3 key prefix does not comply with the documented constraints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidS3KeyPrefixFault {
     #[allow(missing_docs)] // documentation missing in model

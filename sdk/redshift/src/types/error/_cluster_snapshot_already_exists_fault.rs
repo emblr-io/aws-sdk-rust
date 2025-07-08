@@ -2,6 +2,8 @@
 
 /// <p>The value specified as a snapshot identifier is already used by an existing snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSnapshotAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

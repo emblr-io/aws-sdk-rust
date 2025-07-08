@@ -2,6 +2,8 @@
 
 /// <p>The Lake Formation scope.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LakeFormationQuery {
     /// <p>Determines whether the query scope is enabled or disabled.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of a <code>RestoreTableFromClusterSnapshot</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableRestoreStatus {
     /// <p>The unique identifier for the table restore request.</p>

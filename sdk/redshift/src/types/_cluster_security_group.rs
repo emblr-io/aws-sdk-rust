@@ -2,6 +2,8 @@
 
 /// <p>Describes a security group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterSecurityGroup {
     /// <p>The name of the cluster security group to which the operation was applied.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The number of tables in the cluster exceeds the limit for the requested new cluster node type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableLimitExceededFault {
     #[allow(missing_docs)] // documentation missing in model

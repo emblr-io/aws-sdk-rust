@@ -2,6 +2,8 @@
 
 /// <p>The identifier of a node in a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterNode {
     /// <p>Whether the node is a leader node or a compute node.</p>

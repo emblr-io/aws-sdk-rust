@@ -2,6 +2,8 @@
 
 /// <p>A cluster ID and custom domain name tied to a specific certificate. These are typically returned in a list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CertificateAssociation {
     /// <p>The custom domain name for the certificate association.</p>

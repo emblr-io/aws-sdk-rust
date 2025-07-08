@@ -2,6 +2,8 @@
 
 /// <p>Object to store union of values for a provisioned cluster or serverless namespace’s identifier.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum NamespaceIdentifierUnion {
     /// <p>The identifier for a provisioned cluster.</p>
