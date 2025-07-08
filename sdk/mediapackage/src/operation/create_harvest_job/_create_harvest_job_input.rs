@@ -2,6 +2,8 @@
 
 /// Configuration parameters used to create a new HarvestJob.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateHarvestJobInput {
     /// The end of the time-window which will be harvested

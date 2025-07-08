@@ -2,6 +2,8 @@
 
 /// Configuration parameters used to update an existing OriginEndpoint.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateOriginEndpointInput {
     /// CDN Authorization credentials
