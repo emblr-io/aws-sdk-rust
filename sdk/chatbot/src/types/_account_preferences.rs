@@ -2,6 +2,8 @@
 
 /// <p>Preferences related to AWS Chatbot usage in the calling AWS account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountPreferences {
     /// <p>Enables use of a user role requirement in your chat configuration.</p>

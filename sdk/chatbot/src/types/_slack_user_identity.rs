@@ -2,6 +2,8 @@
 
 /// <p>Identifes a user level permission for a channel configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlackUserIdentity {
     /// <p>A user-defined role that AWS Chatbot assumes. This is not the service-linked role.</p>
