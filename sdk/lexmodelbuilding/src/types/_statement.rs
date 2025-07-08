@@ -2,6 +2,8 @@
 
 /// <p>A collection of messages that convey information to the user. At runtime, Amazon Lex selects the message to convey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Statement {
     /// <p>A collection of message objects.</p>

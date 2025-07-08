@@ -2,6 +2,8 @@
 
 /// <p>Provides information about migrating a bot from Amazon Lex V1 to Amazon Lex V2.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MigrationSummary {
     /// <p>The unique identifier that Amazon Lex assigned to the migration.</p>
