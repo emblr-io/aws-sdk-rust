@@ -2,6 +2,8 @@
 
 /// <p>A configured table association links a configured table to a collaboration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTableAssociation {
     /// <p>The unique ARN for the configured table association.</p>

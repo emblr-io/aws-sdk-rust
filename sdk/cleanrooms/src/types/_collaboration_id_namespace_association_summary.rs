@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about the collaboration ID namespace association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationIdNamespaceAssociationSummary {
     /// <p>The Amazon Resource Name (ARN) of the collaboration ID namespace association.</p>

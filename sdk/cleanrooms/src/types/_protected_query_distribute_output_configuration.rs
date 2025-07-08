@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for distributing protected query results to multiple receivers, including S3 and collaboration members.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedQueryDistributeOutputConfiguration {
     /// <p>A list of locations where you want to distribute the protected query results. Each location must specify either an S3 destination or a collaboration member destination.</p><important>

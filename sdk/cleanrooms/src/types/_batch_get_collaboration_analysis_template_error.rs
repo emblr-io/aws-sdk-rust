@@ -2,6 +2,8 @@
 
 /// <p>Details of errors thrown by the call to retrieve multiple analysis templates within a collaboration by their identifiers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetCollaborationAnalysisTemplateError {
     /// <p>The Amazon Resource Name (ARN) of the analysis template.</p>

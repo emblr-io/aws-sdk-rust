@@ -2,6 +2,8 @@
 
 /// <p>Contains statistics about the execution of the protected job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedJobStatistics {
     /// <p>The duration of the protected job, from creation until job completion, in milliseconds.</p>

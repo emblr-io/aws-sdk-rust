@@ -2,6 +2,8 @@
 
 /// <p>An empty response that indicates a successful delete.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConfiguredTableAnalysisRuleOutput {
     _request_id: Option<String>,

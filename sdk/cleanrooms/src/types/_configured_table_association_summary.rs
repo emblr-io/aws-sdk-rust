@@ -2,6 +2,8 @@
 
 /// <p>The configured table association summary for the objects listed by the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfiguredTableAssociationSummary {
     /// <p>The unique configured table ID that this configured table association refers to.</p>

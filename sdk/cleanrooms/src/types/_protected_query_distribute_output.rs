@@ -3,6 +3,8 @@
 /// <p>Contains the output information for a protected query with a distribute output configuration.</p>
 /// <p>This output type allows query results to be distributed to multiple receivers, including S3 and collaboration members. It is only available for queries using the Spark analytics engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedQueryDistributeOutput {
     /// <p>Contains output information for protected queries with an S3 output type.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines details for the analysis rule ID mapping table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisRuleIdMappingTable {
     /// <p>The columns that query runners are allowed to use in an INNER JOIN statement.</p>

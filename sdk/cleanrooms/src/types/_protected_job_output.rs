@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the protected job output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProtectedJobOutput {
     /// <p>The list of member Amazon Web Services account(s) that received the results of the job.</p>

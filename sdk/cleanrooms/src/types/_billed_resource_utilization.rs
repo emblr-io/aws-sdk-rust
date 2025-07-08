@@ -2,6 +2,8 @@
 
 /// <p>Information related to the utilization of resources that have been billed or charged for in a given context, such as a protected query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BilledResourceUtilization {
     /// <p>The number of Clean Rooms Processing Unit (CRPU) hours that have been billed.</p>

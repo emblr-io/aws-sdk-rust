@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the compute resources for workers running an analysis with the Clean Rooms SQL analytics engine.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkerComputeConfiguration {
     /// <p>The worker compute configuration type.</p>

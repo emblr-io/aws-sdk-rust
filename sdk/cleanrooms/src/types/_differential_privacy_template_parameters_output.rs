@@ -2,6 +2,8 @@
 
 /// <p>The epsilon and noise parameter values that were used for the differential privacy template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DifferentialPrivacyTemplateParametersOutput {
     /// <p>The epsilon value that you specified.</p>

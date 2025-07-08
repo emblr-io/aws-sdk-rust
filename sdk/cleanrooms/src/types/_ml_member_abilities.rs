@@ -2,6 +2,8 @@
 
 /// <p>The ML member abilities for a collaboration member.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MlMemberAbilities {
     /// <p>The custom ML member abilities for a collaboration member.</p>

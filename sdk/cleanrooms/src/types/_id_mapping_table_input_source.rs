@@ -2,6 +2,8 @@
 
 /// <p>The input source of the ID mapping table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingTableInputSource {
     /// <p>The unique identifier of the ID namespace association.</p>

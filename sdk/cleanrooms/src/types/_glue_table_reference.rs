@@ -2,6 +2,8 @@
 
 /// <p>A reference to a table within an Glue data catalog.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlueTableReference {
     /// <p>The name of the Glue table.</p>

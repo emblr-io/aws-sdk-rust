@@ -2,6 +2,8 @@
 
 /// <p>The protected query summary for the objects listed by the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedQuerySummary {
     /// <p>The unique ID of the protected query.</p>

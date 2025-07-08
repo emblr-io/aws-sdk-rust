@@ -2,6 +2,8 @@
 
 /// <p>A type of analysis rule that enables the table owner to approve custom SQL queries on their configured tables. It supports differential privacy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalysisRuleCustom {
     /// <p>The ARN of the analysis templates that are allowed by the custom analysis rule.</p>

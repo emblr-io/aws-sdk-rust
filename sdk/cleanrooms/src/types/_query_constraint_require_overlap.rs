@@ -2,6 +2,8 @@
 
 /// <p>Provides the name of the columns that are required to overlap.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryConstraintRequireOverlap {
     /// <p>The columns that are required to overlap.</p>

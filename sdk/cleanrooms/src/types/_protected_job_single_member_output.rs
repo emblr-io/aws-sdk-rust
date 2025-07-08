@@ -2,6 +2,8 @@
 
 /// <p>Details about the member who received the job result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectedJobSingleMemberOutput {
     /// <p>The Amazon Web Services account ID of the member in the collaboration who can receive results from analyses.</p>

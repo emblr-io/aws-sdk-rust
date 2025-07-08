@@ -2,6 +2,8 @@
 
 /// <p>An error that describes why a schema could not be fetched.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetSchemaAnalysisRuleError {
     /// <p>An error name for the error.</p>

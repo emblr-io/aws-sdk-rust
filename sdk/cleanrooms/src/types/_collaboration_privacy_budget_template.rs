@@ -2,6 +2,8 @@
 
 /// <p>An array that specifies the information for a collaboration's privacy budget template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CollaborationPrivacyBudgetTemplate {
     /// <p>The unique identifier of the collaboration privacy budget template.</p>

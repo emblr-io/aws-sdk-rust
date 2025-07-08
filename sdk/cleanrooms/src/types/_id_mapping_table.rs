@@ -2,6 +2,8 @@
 
 /// <p>Describes information about the ID mapping table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdMappingTable {
     /// <p>The unique identifier of the ID mapping table.</p>
