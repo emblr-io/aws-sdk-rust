@@ -2,6 +2,8 @@
 
 /// <p>The point-in-time recovery status of the specified table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PointInTimeRecoverySummary {
     /// <p>Shows if point-in-time recovery is enabled or disabled for the specified table.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The optional auto scaling capacity settings for a table in provisioned capacity mode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingSpecification {
     /// <p>The auto scaling settings for the table's write capacity.</p>

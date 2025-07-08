@@ -2,6 +2,8 @@
 
 /// <p>The optional clustering column portion of your primary key determines how the data is clustered and sorted within each partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusteringKey {
     /// <p>The name(s) of the clustering column(s).</p>

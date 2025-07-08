@@ -2,6 +2,8 @@
 
 /// <p>This shows the summary status of the keyspace after a new Amazon Web Services Region was added.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationGroupStatus {
     /// <p>The name of the Region that was added to the keyspace.</p>
