@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an Identity and Access Management (IAM) user who performed an action on an affected resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamUser {
     /// <p>The unique identifier for the Amazon Web Services account that's associated with the IAM user who performed the action.</p>

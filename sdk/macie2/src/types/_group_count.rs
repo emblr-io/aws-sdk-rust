@@ -2,6 +2,8 @@
 
 /// <p>Provides a group of results for a query that retrieved aggregated statistical data about findings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupCount {
     /// <p>The total number of findings in the group of query results.</p>

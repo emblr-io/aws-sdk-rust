@@ -2,6 +2,8 @@
 
 /// <p>Specifies criteria for sorting the results of a query for Amazon Macie account quotas and usage data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UsageStatisticsSortBy {
     /// <p>The field to sort the results by.</p>

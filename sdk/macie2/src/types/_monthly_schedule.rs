@@ -2,6 +2,8 @@
 
 /// <p>Specifies a monthly recurrence pattern for running a classification job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonthlySchedule {
     /// <p>The numeric day of the month when Amazon Macie runs the job. This value can be an integer from 1 through 31.</p>

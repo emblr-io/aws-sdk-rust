@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the delegated Amazon Macie administrator account for an organization in Organizations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdminAccount {
     /// <p>The Amazon Web Services account ID for the account.</p>

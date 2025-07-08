@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the registered owner of an IP address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpOwner {
     /// <p>The autonomous system number (ASN) for the autonomous system that included the IP address.</p>

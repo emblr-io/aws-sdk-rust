@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the account-level permissions settings that apply to an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountLevelPermissions {
     /// <p>The block public access settings for the Amazon Web Services account that owns the bucket.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the IP address of the device that an entity used to perform an action on an affected resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpAddressDetails {
     /// <p>The Internet Protocol version 4 (IPv4) address of the device.</p>

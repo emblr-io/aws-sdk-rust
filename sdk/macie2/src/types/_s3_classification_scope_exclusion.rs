@@ -2,6 +2,8 @@
 
 /// <p>Specifies the names of the S3 buckets that are excluded from automated sensitive data discovery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ClassificationScopeExclusion {
     /// <p>An array of strings, one for each S3 bucket that is excluded. Each string is the full name of an excluded bucket.</p>

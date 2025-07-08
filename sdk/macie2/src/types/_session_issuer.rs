@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the source and type of temporary security credentials that were issued to an entity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SessionIssuer {
     /// <p>The unique identifier for the Amazon Web Services account that owns the entity that was used to get the credentials.</p>

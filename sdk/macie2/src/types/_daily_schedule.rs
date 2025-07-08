@@ -2,6 +2,8 @@
 
 /// <p>Specifies that a classification job runs once a day, every day. This is an empty object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DailySchedule {}
 impl DailySchedule {

@@ -2,6 +2,8 @@
 
 /// <p>Specifies 1-10 occurrences of a specific type of sensitive data reported by a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectedDataDetails {
     /// <p>An occurrence of the specified type of sensitive data. Each occurrence contains 1-128 characters.</p>

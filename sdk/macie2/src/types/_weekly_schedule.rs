@@ -2,6 +2,8 @@
 
 /// <p>Specifies a weekly recurrence pattern for running a classification job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WeeklySchedule {
     /// <p>The day of the week when Amazon Macie runs the job.</p>

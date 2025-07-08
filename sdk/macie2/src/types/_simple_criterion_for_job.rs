@@ -2,6 +2,8 @@
 
 /// <p>Specifies a property-based condition that determines whether an S3 bucket is included or excluded from a classification job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimpleCriterionForJob {
     /// <p>The operator to use in the condition. Valid values are EQ (equals) and NE (not equals).</p>

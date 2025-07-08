@@ -2,6 +2,8 @@
 
 /// <p>Specifies a property-based filter condition that determines which Amazon Web Services resources are included or excluded from the query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchResourcesSimpleCriterion {
     /// <p>The operator to use in the condition. Valid values are EQ (equals) and NE (not equals).</p>
