@@ -2,6 +2,8 @@
 
 /// <p>The configuration that defines how MediaTailor performs recurring prefetch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecurringPrefetchConfiguration {
     /// <p>The start time for the window that MediaTailor prefetches and inserts ads in a live event.</p>

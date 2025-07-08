@@ -2,6 +2,8 @@
 
 /// <p>The configuration for HLS content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HlsConfiguration {
     /// <p>The URL that is used to initiate a playback session for devices that support Apple HLS. The session uses server-side reporting.</p>

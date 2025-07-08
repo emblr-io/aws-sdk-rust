@@ -2,6 +2,8 @@
 
 /// <p>Program transition configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateProgramTransition {
     /// <p>The date and time that the program is scheduled to start, in epoch milliseconds.</p>
