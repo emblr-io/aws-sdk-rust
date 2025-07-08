@@ -2,6 +2,8 @@
 
 /// <p>Place that is related to the result item.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RelatedPlace {
     /// <p>The <code>PlaceId</code> of the place result.</p>

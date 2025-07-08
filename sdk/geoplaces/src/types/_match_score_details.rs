@@ -2,6 +2,8 @@
 
 /// <p>Details related to the match score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MatchScoreDetails {
     /// <p>Indicates how well the entire input matches the returned. It is equal to 1 if all input tokens are recognized and matched.</p>

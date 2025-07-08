@@ -2,6 +2,8 @@
 
 /// <p>Indicates the starting and ending index of the country in the text query that match the found title.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CountryHighlights {
     /// <p>Indicates the starting and ending index of the country code in the text query that match the found title.</p>

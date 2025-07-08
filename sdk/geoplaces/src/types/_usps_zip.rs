@@ -2,6 +2,8 @@
 
 /// <p>The USPS zip code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UspsZip {
     /// <p>The ZIP Classification Code, or in other words what type of postal code is it.</p>

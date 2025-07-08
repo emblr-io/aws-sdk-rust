@@ -2,6 +2,8 @@
 
 /// <p>A list of potential contact methods for the result/place.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Contacts {
     /// <p>List of phone numbers for the results contact.</p>

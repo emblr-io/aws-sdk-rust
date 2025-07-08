@@ -2,6 +2,8 @@
 
 /// <p>A businesschain is a chain of businesses that belong to the same brand. For example <code>7-11</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BusinessChain {
     /// <p>The business chain name.</p>

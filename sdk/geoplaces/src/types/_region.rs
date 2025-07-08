@@ -3,6 +3,8 @@
 /// <p>The region or state results should be to be present in.</p>
 /// <p>Example: <code>North Rhine-Westphalia</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Region {
     /// <p>Abbreviated code for a the state, province or region of the country.</p>

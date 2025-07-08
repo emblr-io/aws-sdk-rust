@@ -2,6 +2,8 @@
 
 /// <p>A structured free text query allows you to search for places by the name or text representation of specific properties of the place.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GeocodeQueryComponents {
     /// <p>The alpha-2 or alpha-3 character code for the country that the results will be present in.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Indicates if the access location is restricted. Index correlates to that of an access point and indicates if access through this point has some form of restriction.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AccessRestriction {
     /// <p>The restriction.</p>
