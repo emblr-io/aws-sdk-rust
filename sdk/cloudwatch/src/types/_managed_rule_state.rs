@@ -2,6 +2,8 @@
 
 /// <p>The status of a managed Contributor Insights rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedRuleState {
     /// <p>The name of the Contributor Insights rule that contains data for the specified Amazon Web Services resource.</p>

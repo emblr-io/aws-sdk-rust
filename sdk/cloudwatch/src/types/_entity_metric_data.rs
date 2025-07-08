@@ -2,6 +2,8 @@
 
 /// <p>A set of metrics that are associated with an entity, such as a specific service or resource. Contains the entity and the list of metric data associated with it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityMetricData {
     /// <p>The entity associated with the metrics.</p>
