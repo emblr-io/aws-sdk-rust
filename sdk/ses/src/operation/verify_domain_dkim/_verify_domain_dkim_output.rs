@@ -2,6 +2,8 @@
 
 /// <p>Returns CNAME records that you must publish to the DNS server of your domain to set up Easy DKIM with Amazon SES.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VerifyDomainDkimOutput {
     /// <p>A set of character strings that represent the domain's identity. If the identity is an email address, the tokens represent the domain of that address.</p>

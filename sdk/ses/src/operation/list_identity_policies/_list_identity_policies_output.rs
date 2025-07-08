@@ -2,6 +2,8 @@
 
 /// <p>A list of names of sending authorization policies that apply to an identity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListIdentityPoliciesOutput {
     /// <p>A list of names of policies that apply to the specified identity.</p>

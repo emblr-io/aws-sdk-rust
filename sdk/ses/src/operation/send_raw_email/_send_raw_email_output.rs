@@ -2,6 +2,8 @@
 
 /// <p>Represents a unique message ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendRawEmailOutput {
     /// <p>The unique message identifier returned from the <code>SendRawEmail</code> action.</p>

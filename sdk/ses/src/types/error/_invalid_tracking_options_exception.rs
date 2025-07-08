@@ -8,6 +8,8 @@
 /// <p>When the tracking domain you specified is not a valid domain or subdomain.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidTrackingOptionsException {
     #[allow(missing_docs)] // documentation missing in model

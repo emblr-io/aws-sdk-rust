@@ -2,6 +2,8 @@
 
 /// <p>Indicates that the provided policy is invalid. Check the error stack for more information about what caused the error.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidPolicyException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to return a list of all identities (email addresses and domains) that you have attempted to verify under your Amazon Web Services account, regardless of verification status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListIdentitiesInput {
     /// <p>The type of the identities to list. Possible values are "EmailAddress" and "Domain". If this parameter is omitted, then all identities are listed.</p>

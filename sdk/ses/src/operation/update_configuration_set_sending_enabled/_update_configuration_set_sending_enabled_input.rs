@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to enable or disable the email sending capabilities for a specific configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateConfigurationSetSendingEnabledInput {
     /// <p>The name of the configuration set to update.</p>

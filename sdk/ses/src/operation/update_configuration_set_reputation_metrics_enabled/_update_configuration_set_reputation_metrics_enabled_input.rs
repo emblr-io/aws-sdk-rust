@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to modify the reputation metric publishing settings for a configuration set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateConfigurationSetReputationMetricsEnabledInput {
     /// <p>The name of the configuration set to update.</p>

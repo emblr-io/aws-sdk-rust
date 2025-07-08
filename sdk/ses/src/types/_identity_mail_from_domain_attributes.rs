@@ -2,6 +2,8 @@
 
 /// <p>Represents the custom MAIL FROM domain attributes of a verified identity (email address or domain).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IdentityMailFromDomainAttributes {
     /// <p>The custom MAIL FROM domain that the identity is configured to use.</p>

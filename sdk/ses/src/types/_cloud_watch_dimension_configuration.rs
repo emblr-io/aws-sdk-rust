@@ -3,6 +3,8 @@
 /// <p>Contains the dimension configuration to use when you publish email sending events to Amazon CloudWatch.</p>
 /// <p>For information about publishing email sending events to Amazon CloudWatch, see the <a href="https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity.html">Amazon SES Developer Guide</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchDimensionConfiguration {
     /// <p>The name of an Amazon CloudWatch dimension associated with an email sending metric. The name must meet the following requirements:</p>
