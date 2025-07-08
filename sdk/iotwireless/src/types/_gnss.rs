@@ -2,6 +2,8 @@
 
 /// <p>Global navigation satellite system (GNSS) object used for positioning.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Gnss {
     /// <p>Payload that contains the GNSS scan result, or NAV message, in hexadecimal notation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The summary metric query object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SummaryMetricQuery {
     /// <p>The id of the summary metric query.</p>

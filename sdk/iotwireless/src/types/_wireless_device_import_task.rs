@@ -2,6 +2,8 @@
 
 /// <p>Information about an import task for wireless devices.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WirelessDeviceImportTask {
     /// <p>The ID of the wireless device import task.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The aggregated values of the metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricQueryValue {
     /// <p>The minimum of the values of all data points collected during the aggregation period.</p>

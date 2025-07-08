@@ -2,6 +2,8 @@
 
 /// <p>WCDMA local identification (local ID) information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WcdmaLocalId {
     /// <p>WCDMA UTRA Absolute RF Channel Number downlink.</p>

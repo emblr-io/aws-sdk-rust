@@ -2,6 +2,8 @@
 
 /// <p>The cell towers that were used to perform the measurements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CellTowers {
     /// <p>GSM object information.</p>

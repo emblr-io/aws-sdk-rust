@@ -2,6 +2,8 @@
 
 /// <p>The device attestation key (DAK) information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DakCertificateMetadata {
     /// <p>The certificate ID for the DAK.</p>

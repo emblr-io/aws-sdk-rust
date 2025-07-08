@@ -2,6 +2,8 @@
 
 /// <p>ABP device object for LoRaWAN specification v1.0.x</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AbpV10X {
     /// <p>The DevAddr value.</p>

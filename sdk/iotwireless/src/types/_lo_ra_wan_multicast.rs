@@ -2,6 +2,8 @@
 
 /// <p>The LoRaWAN information that is to be used with the multicast group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoRaWanMulticast {
     /// <p>Supported RfRegions</p>

@@ -2,6 +2,8 @@
 
 /// <p>Sidewalk object information for updating an import task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SidewalkUpdateImportInfo {
     /// <p>The CSV file contained in an S3 bucket that's used for appending devices to an existing import task.</p>

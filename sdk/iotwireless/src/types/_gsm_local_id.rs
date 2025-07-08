@@ -2,6 +2,8 @@
 
 /// <p>GSM local ID information, which corresponds to the local identification parameters of a GSM cell.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GsmLocalId {
     /// <p>GSM base station identity code (BSIC).</p>

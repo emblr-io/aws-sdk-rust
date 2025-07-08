@@ -2,6 +2,8 @@
 
 /// <p>Beaconing parameters for configuring the wireless gateways.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Beaconing {
     /// <p>The data rate for gateways that are sending the beacons.</p>
