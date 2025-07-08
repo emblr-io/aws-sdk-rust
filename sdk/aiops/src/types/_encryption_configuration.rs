@@ -2,6 +2,8 @@
 
 /// <p>Use this structure to specify a customer managed KMS key to use to encrypt investigation data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EncryptionConfiguration {
     /// <p>Displays whether investigation data is encrypted by a customer managed key or an Amazon Web Services owned kay.</p>

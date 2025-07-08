@@ -2,6 +2,8 @@
 
 /// <p>Access id denied for this operation, or this operation is not valid for the specified resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForbiddenException {
     #[allow(missing_docs)] // documentation missing in model
