@@ -2,6 +2,8 @@
 
 /// <p>Defines the resource configuration when updating an authentication resource in your Amplify project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBackendAuthResourceConfig {
     /// <p>Defines the service name to use when configuring an authentication resource in your Amplify project.</p>

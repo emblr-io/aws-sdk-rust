@@ -2,6 +2,8 @@
 
 /// <p>The resource configuration for updating backend storage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBackendStorageResourceConfig {
     /// <p>The authorization configuration for the storage S3 bucket.</p>

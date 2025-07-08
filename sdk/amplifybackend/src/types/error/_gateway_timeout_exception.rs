@@ -2,6 +2,8 @@
 
 /// <p>An error returned if there's a temporary issue with the service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GatewayTimeoutException {
     /// <p>An error message to inform that the request failed.</p>
