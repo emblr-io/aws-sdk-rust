@@ -2,6 +2,8 @@
 
 /// <p>How long, in seconds, for the canary to continue making regular runs according to the schedule in the <code>Expression</code> value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryScheduleOutput {
     /// <p>A <code>rate</code> expression or a <code>cron</code> expression that defines how often the canary is to run.</p>

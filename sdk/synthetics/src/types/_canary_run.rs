@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the details about one run of one canary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryRun {
     /// <p>A unique ID that identifies this canary run.</p>

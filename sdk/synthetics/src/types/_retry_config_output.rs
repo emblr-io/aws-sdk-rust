@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about the canary's retry configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RetryConfigOutput {
     /// <p>The maximum number of retries. The value must be less than or equal to 2.</p>

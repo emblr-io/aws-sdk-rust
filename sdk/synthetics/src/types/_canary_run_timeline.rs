@@ -2,6 +2,8 @@
 
 /// <p>This structure contains the start and end times of a single canary run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CanaryRunTimeline {
     /// <p>The start time of the run.</p>
