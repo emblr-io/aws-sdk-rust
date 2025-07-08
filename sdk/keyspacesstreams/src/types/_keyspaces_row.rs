@@ -2,6 +2,8 @@
 
 /// <p>Represents a row in an Amazon Keyspaces table, containing regular column values, static column values, and row-level metadata.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyspacesRow {
     /// <p>A map of regular (non-static) column cells in the row, where keys are column names and values are the corresponding cells.</p>

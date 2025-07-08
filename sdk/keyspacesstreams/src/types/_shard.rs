@@ -2,6 +2,8 @@
 
 /// <p>Represents a uniquely identified group of change records within a change data capture stream for Amazon Keyspaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Shard {
     /// <p>A unique identifier for this shard within the stream.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines a range of sequence numbers within a change data capture stream's shard for Amazon Keyspaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SequenceNumberRange {
     /// <p>The starting sequence number of the range.</p>
