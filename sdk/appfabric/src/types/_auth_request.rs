@@ -2,6 +2,8 @@
 
 /// <p>Contains authorization request information, which is required for Amazon Web Services AppFabric to get the OAuth2 access token for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AuthRequest {
     /// <p>The redirect URL that is specified in the AuthURL and the application client.</p>

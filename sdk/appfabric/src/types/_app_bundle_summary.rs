@@ -2,6 +2,8 @@
 
 /// <p>Contains a summary of an app bundle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppBundleSummary {
     /// <p>The Amazon Resource Name (ARN) of the app bundle.</p>

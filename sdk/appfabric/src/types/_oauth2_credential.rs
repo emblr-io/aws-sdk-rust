@@ -2,6 +2,8 @@
 
 /// <p>Contains OAuth2 client credential information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Oauth2Credential {
     /// <p>The client ID of the client application.</p>
