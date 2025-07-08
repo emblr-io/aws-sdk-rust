@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair you set that identifies a property of the authenticating instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceProperty {
     /// <p>The ISO-8601 time stamp of when the certificate was last used in a temporary credential request.</p>

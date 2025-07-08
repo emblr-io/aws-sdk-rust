@@ -2,6 +2,8 @@
 
 /// <p>A single mapping entry for each supported specifier or sub-field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MappingRule {
     /// <p>Specifier within a certificate field, such as CN, OU, or UID from the Subject field.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A notification setting key to reset. A notification setting key includes the event and the channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationSettingKey {
     /// <p>The notification setting event to reset.</p>
