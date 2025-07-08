@@ -2,6 +2,8 @@
 
 /// <p>Describes a recommendation option for an Lambda function.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionMemoryRecommendationOption {
     /// <p>The rank of the function recommendation option.</p>

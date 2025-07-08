@@ -2,6 +2,8 @@
 
 /// <p>Describes a projected utilization metric of an Lambda function recommendation option.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaFunctionMemoryProjectedMetric {
     /// <p>The name of the projected utilization metric.</p>

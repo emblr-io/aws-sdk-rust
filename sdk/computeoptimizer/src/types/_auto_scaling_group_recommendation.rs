@@ -2,6 +2,8 @@
 
 /// <p>Describes an Auto Scaling group recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingGroupRecommendation {
     /// <p>The Amazon Web Services account ID of the Auto Scaling group.</p>

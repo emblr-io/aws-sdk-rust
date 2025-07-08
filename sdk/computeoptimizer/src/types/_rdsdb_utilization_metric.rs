@@ -3,6 +3,8 @@
 /// <p>Describes the utilization metric of an Amazon Aurora and RDS database.</p>
 /// <p>To determine the performance difference between your current DB instance and the recommended option, compare the utilization metric data of your service against its projected utilization metric data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsdbUtilizationMetric {
     /// <p>The name of the utilization metric.</p>

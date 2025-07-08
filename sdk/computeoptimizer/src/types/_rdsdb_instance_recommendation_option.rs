@@ -2,6 +2,8 @@
 
 /// <p>Describes the recommendation options for a DB instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsdbInstanceRecommendationOption {
     /// <p>Describes the DB instance class recommendation option for your Amazon Aurora or RDS database.</p>

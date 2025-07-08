@@ -2,6 +2,8 @@
 
 /// <p>Describes a license recommendation for an EC2 instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LicenseRecommendation {
     /// <p>The ARN that identifies the Amazon EC2 instance.</p>

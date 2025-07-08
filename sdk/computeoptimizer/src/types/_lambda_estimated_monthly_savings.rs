@@ -2,6 +2,8 @@
 
 /// <p>Describes the estimated monthly savings possible for Lambda functions by adopting Compute Optimizer recommendations. This is based on Lambda functions pricing after applying Savings Plans discounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaEstimatedMonthlySavings {
     /// <p>The currency of the estimated monthly savings.</p>

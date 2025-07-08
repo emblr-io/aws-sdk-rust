@@ -2,6 +2,8 @@
 
 /// <p>Describes a recommendation option for an Amazon Elastic Block Store (Amazon EBS) instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VolumeRecommendationOption {
     /// <p>An array of objects that describe a volume configuration.</p>

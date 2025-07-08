@@ -2,6 +2,8 @@
 
 /// <p>Describes a recommendation option for an Auto Scaling group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScalingGroupRecommendationOption {
     /// <p>An array of objects that describe an Auto Scaling group configuration.</p>

@@ -4,6 +4,8 @@
 /// <p>This preference is only available for the Amazon EC2 instance resource type.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtilizationPreference {
     /// <p>The name of the resource utilization metric name to customize.</p>

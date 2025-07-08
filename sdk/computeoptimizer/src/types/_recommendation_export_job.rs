@@ -4,6 +4,8 @@
 /// <p>Use the <code>DescribeRecommendationExportJobs</code> action to view your recommendation export jobs.</p>
 /// <p>Use the <code>ExportAutoScalingGroupRecommendations</code> or <code>ExportEC2InstanceRecommendations</code> actions to request an export of your recommendations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationExportJob {
     /// <p>The identification number of the export job.</p>

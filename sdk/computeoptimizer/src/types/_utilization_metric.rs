@@ -3,6 +3,8 @@
 /// <p>Describes a utilization metric of a resource, such as an Amazon EC2 instance.</p>
 /// <p>Compare the utilization metric data of your resource against its projected utilization metric data to determine the performance difference between your current resource and the recommended option.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtilizationMetric {
     /// <p>The name of the utilization metric.</p>

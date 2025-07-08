@@ -3,6 +3,8 @@
 /// <p>Describes the savings opportunity for DB instance recommendations after applying Savings Plans discounts.</p>
 /// <p>Savings opportunity represents the estimated monthly savings after applying Savings Plans discounts. You can achieve this by implementing a given Compute Optimizer recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsInstanceSavingsOpportunityAfterDiscounts {
     /// <p>The estimated monthly savings possible as a percentage of monthly cost by adopting Compute Optimizer’s DB instance recommendations. This includes any applicable Savings Plans discounts.</p>
