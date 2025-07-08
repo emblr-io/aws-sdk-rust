@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about the attributes that are associated with a cluster snapshot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterSnapshotAttributesResult {
     /// <p>The identifier of the cluster snapshot that the attributes apply to.</p>

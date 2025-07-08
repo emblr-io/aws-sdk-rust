@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an instance that is part of a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterMember {
     /// <p>Specifies the instance identifier for this member of the cluster.</p>

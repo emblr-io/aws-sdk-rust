@@ -3,6 +3,8 @@
 /// <p>The specified CIDR IP or Amazon EC2 security group isn't authorized for the specified security group.</p>
 /// <p>Amazon DocumentDB also might not be authorized to perform necessary actions on your behalf using IAM.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizationNotFoundFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The subnet group can't be deleted because it's in use.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDbSubnetGroupStateFault {
     #[allow(missing_docs)] // documentation missing in model

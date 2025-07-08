@@ -2,6 +2,8 @@
 
 /// <p>Detailed information about a cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbCluster {
     /// <p>Provides the list of Amazon EC2 Availability Zones that instances in the cluster can be created in.</p>

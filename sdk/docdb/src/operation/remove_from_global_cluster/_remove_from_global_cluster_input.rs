@@ -2,6 +2,8 @@
 
 /// <p>Represents the input to <code>RemoveFromGlobalCluster</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RemoveFromGlobalClusterInput {
     /// <p>The cluster identifier to detach from the Amazon DocumentDB global cluster.</p>

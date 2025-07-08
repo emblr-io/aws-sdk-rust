@@ -2,6 +2,8 @@
 
 /// <p>This request would cause you to exceed the allowed number of parameter groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbParameterGroupQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model
