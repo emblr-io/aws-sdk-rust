@@ -2,6 +2,8 @@
 
 /// <p>Additional options related to the Slurm scheduler.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeNodeGroupSlurmConfigurationRequest {
     /// <p>Additional Slurm-specific configuration that directly maps to Slurm settings.</p>
