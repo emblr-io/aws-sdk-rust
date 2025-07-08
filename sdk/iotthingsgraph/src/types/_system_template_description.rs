@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a system's definition document and summary information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SystemTemplateDescription {
     /// <p>An object that contains summary information about a system.</p>

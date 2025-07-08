@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a system instance definition and summary information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SystemInstanceDescription {
     /// <p>An object that contains summary information about a system instance.</p>

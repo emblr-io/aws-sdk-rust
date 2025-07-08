@@ -2,6 +2,8 @@
 
 /// <p>An object that contains the ID and revision number of a workflow or system that is part of a deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependencyRevision {
     /// <p>The ID of the workflow or system.</p>
