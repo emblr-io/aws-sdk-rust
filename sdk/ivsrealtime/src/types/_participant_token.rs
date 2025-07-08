@@ -3,6 +3,8 @@
 /// <p>Object specifying a participant token in a stage.</p>
 /// <p><b>Important</b>: Treat tokens as opaque; i.e., do not build functionality based on token contents. The format of tokens could change in the future.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ParticipantToken {
     /// <p>Unique identifier for this participant token, assigned by IVS.</p>
