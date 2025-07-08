@@ -2,6 +2,8 @@
 
 /// <p>Resource selection criteria for the lifecycle policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyResourceSelection {
     /// <p>A list of recipes that are used as selection criteria for the output images that the lifecycle policy applies to.</p>

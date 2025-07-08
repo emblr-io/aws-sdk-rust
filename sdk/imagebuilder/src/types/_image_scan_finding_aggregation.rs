@@ -2,6 +2,8 @@
 
 /// <p>This returns exactly one type of aggregation, based on the filter that Image Builder applies in its API action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageScanFindingAggregation {
     /// <p>Returns an object that contains severity counts based on an account ID.</p>

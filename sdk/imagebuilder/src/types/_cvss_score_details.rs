@@ -2,6 +2,8 @@
 
 /// <p>Details about the source of the score, and the factors that determined the adjustments to create the final score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CvssScoreDetails {
     /// <p>The source for the CVSS score.</p>

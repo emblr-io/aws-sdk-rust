@@ -2,6 +2,8 @@
 
 /// <p>Specifies an Image Builder recipe that the lifecycle policy uses for resource selection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecyclePolicyResourceSelectionRecipe {
     /// <p>The name of an Image Builder recipe that the lifecycle policy uses for resource selection.</p>

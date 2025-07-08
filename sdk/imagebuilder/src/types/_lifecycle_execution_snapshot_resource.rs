@@ -2,6 +2,8 @@
 
 /// <p>Contains the state of an impacted snapshot resource that the runtime instance of the lifecycle policy identified for action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LifecycleExecutionSnapshotResource {
     /// <p>Identifies the impacted snapshot resource.</p>

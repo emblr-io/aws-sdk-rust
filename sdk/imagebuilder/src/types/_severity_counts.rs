@@ -2,6 +2,8 @@
 
 /// <p>Includes counts by severity level for medium severity and higher level findings, plus a total for all of the findings for the specified filter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SeverityCounts {
     /// <p>The total number of findings across all severity levels for the specified filter.</p>

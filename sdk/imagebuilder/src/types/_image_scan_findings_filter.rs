@@ -2,6 +2,8 @@
 
 /// <p>A name value pair that Image Builder applies to streamline results from the vulnerability scan findings list action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageScanFindingsFilter {
     /// <p>The name of the image scan finding filter. Filter names are case-sensitive.</p>

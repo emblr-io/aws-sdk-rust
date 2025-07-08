@@ -2,6 +2,8 @@
 
 /// <p>Details of an Amazon EC2 AMI.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ami {
     /// <p>The Amazon Web Services Region of the Amazon EC2 AMI.</p>

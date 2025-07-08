@@ -2,6 +2,8 @@
 
 /// <p>Contains runtime details for an instance of a workflow that ran for the associated image build version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkflowStepExecution {
     /// <p>Uniquely identifies the workflow step that ran for the associated image build version.</p>

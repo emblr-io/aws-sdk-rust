@@ -2,6 +2,8 @@
 
 /// <p>The defining characteristics of a specific version of an Image Builder image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageVersion {
     /// <p>The Amazon Resource Name (ARN) of a specific version of an Image Builder image.</p><note>

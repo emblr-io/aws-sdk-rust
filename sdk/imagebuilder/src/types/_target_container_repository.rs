@@ -2,6 +2,8 @@
 
 /// <p>The container repository where the output container image is stored.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetContainerRepository {
     /// <p>Specifies the service in which this image was registered.</p>

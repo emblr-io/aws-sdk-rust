@@ -2,6 +2,8 @@
 
 /// <p>Define and configure the output AMIs of the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmiDistributionConfiguration {
     /// <p>The name of the output AMI.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about an adjustment that Amazon Inspector made to the CVSS score for a finding.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CvssScoreAdjustment {
     /// <p>The metric that Amazon Inspector used to adjust the CVSS score.</p>

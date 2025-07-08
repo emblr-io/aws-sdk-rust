@@ -2,6 +2,8 @@
 
 /// <p>The resources produced by this image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputResources {
     /// <p>The Amazon EC2 AMIs created by this image.</p>
