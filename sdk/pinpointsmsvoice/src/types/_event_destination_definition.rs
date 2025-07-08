@@ -2,6 +2,8 @@
 
 /// An object that defines a single event destination.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventDestinationDefinition {
     /// An object that contains information about an event destination that sends data to Amazon CloudWatch Logs.

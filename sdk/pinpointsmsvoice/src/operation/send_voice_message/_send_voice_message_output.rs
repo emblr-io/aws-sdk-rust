@@ -2,6 +2,8 @@
 
 /// An object that that contains the Message ID of a Voice message that was sent successfully.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SendVoiceMessageOutput {
     /// A unique identifier for the voice message.

@@ -2,6 +2,8 @@
 
 /// An object that contains information about an event destination.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetConfigurationSetEventDestinationsOutput {
     /// An array of EventDestination objects. Each EventDestination object includes ARNs and other information that define an event destination.

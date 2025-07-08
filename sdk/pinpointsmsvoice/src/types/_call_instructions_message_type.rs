@@ -2,6 +2,8 @@
 
 /// An object that defines a message that contains text formatted using Amazon Pinpoint Voice Instructions markup.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallInstructionsMessageType {
     /// The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
