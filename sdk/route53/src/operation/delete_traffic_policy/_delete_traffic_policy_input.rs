@@ -2,6 +2,8 @@
 
 /// <p>A request to delete a specified traffic policy version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteTrafficPolicyInput {
     /// <p>The ID of the traffic policy that you want to delete.</p>

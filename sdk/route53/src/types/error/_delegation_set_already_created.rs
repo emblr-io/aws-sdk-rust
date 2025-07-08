@@ -2,6 +2,8 @@
 
 /// <p>A delegation set with the same owner and caller reference combination has already been created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DelegationSetAlreadyCreated {
     /// <p></p>

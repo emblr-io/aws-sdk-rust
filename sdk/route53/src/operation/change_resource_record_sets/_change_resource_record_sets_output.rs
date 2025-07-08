@@ -2,6 +2,8 @@
 
 /// <p>A complex type containing the response for the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeResourceRecordSetsOutput {
     /// <p>A complex type that contains information about changes made to your hosted zone.</p>

@@ -3,6 +3,8 @@
 /// <p>The object that is specified in resource record set object when you are linking a resource record set to a CIDR location.</p>
 /// <p>A <code>LocationName</code> with an asterisk “*” can be used to create a default CIDR record. <code>CollectionId</code> is still required for default record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CidrRoutingConfig {
     /// <p>The CIDR collection ID.</p>

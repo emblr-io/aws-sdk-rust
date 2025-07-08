@@ -2,6 +2,8 @@
 
 /// <p>The CIDR collection location doesn't match any locations in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoSuchCidrLocationException {
     #[allow(missing_docs)] // documentation missing in model

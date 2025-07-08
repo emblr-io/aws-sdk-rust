@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the information about the request to list your traffic policies.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTrafficPolicyVersionsInput {
     /// <p>Specify the value of <code>Id</code> of the traffic policy for which you want to list all versions.</p>

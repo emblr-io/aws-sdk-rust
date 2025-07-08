@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about the VPC that you want to disassociate from a specified private hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisassociateVpcFromHostedZoneInput {
     /// <p>The ID of the private hosted zone that you want to disassociate a VPC from.</p>

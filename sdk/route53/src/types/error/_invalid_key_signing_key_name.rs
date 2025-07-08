@@ -2,6 +2,8 @@
 
 /// <p>The key-signing key (KSK) name that you specified isn't a valid name.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidKeySigningKeyName {
     #[allow(missing_docs)] // documentation missing in model

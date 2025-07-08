@@ -2,6 +2,8 @@
 
 /// <p>The CIDR collection version you provided, doesn't match the one in the <code>ListCidrCollections</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CidrCollectionVersionMismatchException {
     #[allow(missing_docs)] // documentation missing in model

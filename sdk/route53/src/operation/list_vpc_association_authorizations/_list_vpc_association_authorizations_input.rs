@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about that can be associated with your hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListVpcAssociationAuthorizationsInput {
     /// <p>The ID of the hosted zone for which you want a list of VPCs that can be associated with the hosted zone.</p>

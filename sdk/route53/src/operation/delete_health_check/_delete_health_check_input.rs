@@ -2,6 +2,8 @@
 
 /// <p>This action deletes a health check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteHealthCheckInput {
     /// <p>The ID of the health check that you want to delete.</p>

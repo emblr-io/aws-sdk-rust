@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the status that one Amazon Route 53 health checker reports and the time of the health check.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatusReport {
     /// <p>A description of the status of the health check endpoint as reported by one of the Amazon Route 53 health checkers.</p>

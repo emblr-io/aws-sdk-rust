@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains the response to a <code>DeleteHostedZone</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteHostedZoneOutput {
     /// <p>A complex type that contains the ID, the status, and the date and time of a request to delete a hosted zone.</p>

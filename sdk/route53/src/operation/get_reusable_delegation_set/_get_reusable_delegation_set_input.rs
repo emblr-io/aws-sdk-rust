@@ -2,6 +2,8 @@
 
 /// <p>A request to get information about a specified reusable delegation set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetReusableDelegationSetInput {
     /// <p>The ID of the reusable delegation set that you want to get a list of name servers for.</p>

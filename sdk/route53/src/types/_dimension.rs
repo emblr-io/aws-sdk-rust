@@ -2,6 +2,8 @@
 
 /// <p>For the metric that the CloudWatch alarm is associated with, a complex type that contains information about one dimension.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Dimension {
     /// <p>For the metric that the CloudWatch alarm is associated with, the name of one dimension.</p>

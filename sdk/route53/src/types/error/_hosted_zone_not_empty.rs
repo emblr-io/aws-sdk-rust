@@ -2,6 +2,8 @@
 
 /// <p>The hosted zone contains resource records that are not SOA or NS records.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HostedZoneNotEmpty {
     /// <p></p>

@@ -2,6 +2,8 @@
 
 /// <p>Request to get the number of traffic policy instances that are associated with the current Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetTrafficPolicyInstanceCountInput {}
 impl GetTrafficPolicyInstanceCountInput {

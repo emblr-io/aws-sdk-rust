@@ -2,6 +2,8 @@
 
 /// <p>A complex type that lists the coordinates for a geoproximity resource record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Coordinates {
     /// <p>Specifies a coordinate of the north–south position of a geographic point on the surface of the Earth (-90 - 90).</p>

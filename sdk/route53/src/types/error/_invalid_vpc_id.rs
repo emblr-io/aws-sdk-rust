@@ -2,6 +2,8 @@
 
 /// <p>The VPC ID that you specified either isn't a valid ID or the current account is not authorized to access this VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidVpcId {
     /// <p></p>

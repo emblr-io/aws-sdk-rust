@@ -2,6 +2,8 @@
 
 /// <p>A request for the traffic policy instances that you created in a specified hosted zone.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTrafficPolicyInstancesByHostedZoneInput {
     /// <p>The ID of the hosted zone that you want to list traffic policy instances for.</p>
