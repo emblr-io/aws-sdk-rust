@@ -2,6 +2,8 @@
 
 /// <p>Information about the queue for the specified quantum task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QuantumTaskQueueInfo {
     /// <p>The name of the queue.</p>
