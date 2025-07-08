@@ -2,6 +2,8 @@
 
 /// <p>Information about an environment member for an Cloud9 development environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentMember {
     /// <p>The type of environment member permissions associated with this environment member. Available values include:</p>
