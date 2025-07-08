@@ -2,6 +2,8 @@
 
 /// <p>Some or all of the configuration is incomplete, missing, or not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationException {
     #[allow(missing_docs)] // documentation missing in model
