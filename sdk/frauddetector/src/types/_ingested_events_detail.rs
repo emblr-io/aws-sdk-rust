@@ -2,6 +2,8 @@
 
 /// <p>The details of the ingested event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestedEventsDetail {
     /// <p>The start and stop time of the ingested events.</p>

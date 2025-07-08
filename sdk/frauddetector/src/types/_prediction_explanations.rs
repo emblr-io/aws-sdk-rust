@@ -2,6 +2,8 @@
 
 /// <p>The prediction explanations that provide insight into how each event variable impacted the model version's fraud prediction score.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictionExplanations {
     /// <p>The details of the event variable's impact on the prediction score.</p>

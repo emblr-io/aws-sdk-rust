@@ -2,6 +2,8 @@
 
 /// <p>A variable in the list of variables for the batch create variable request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VariableEntry {
     /// <p>The name of the variable.</p>
