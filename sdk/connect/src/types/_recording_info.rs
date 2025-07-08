@@ -2,6 +2,8 @@
 
 /// <p>Information about a voice recording, chat transcript, or screen recording.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingInfo {
     /// <p>Where the recording/transcript is stored.</p>

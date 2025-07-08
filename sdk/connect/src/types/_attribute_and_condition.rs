@@ -2,6 +2,8 @@
 
 /// <p>A list of conditions which would be applied together with an <code>AND</code> condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeAndCondition {
     /// <p>A leaf node condition which can be used to specify a tag condition.</p>

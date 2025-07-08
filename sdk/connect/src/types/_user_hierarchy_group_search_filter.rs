@@ -2,6 +2,8 @@
 
 /// <p>Filters to be applied to search results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserHierarchyGroupSearchFilter {
     /// <p>An object that can be used to specify Tag conditions inside the SearchFilter. This accepts an OR or AND (List of List) input where:</p>

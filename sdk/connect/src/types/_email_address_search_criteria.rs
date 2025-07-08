@@ -2,6 +2,8 @@
 
 /// <p>The search criteria to be used to return email addresses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailAddressSearchCriteria {
     /// <p>A list of conditions which would be applied together with an OR condition.</p>

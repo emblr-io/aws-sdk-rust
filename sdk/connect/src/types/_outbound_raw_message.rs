@@ -2,6 +2,8 @@
 
 /// <p>Information about the raw email body content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OutboundRawMessage {
     /// <p>The email subject.</p>

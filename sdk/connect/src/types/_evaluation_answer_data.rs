@@ -2,6 +2,8 @@
 
 /// <p>Information about answer data for a contact evaluation. Answer data must be either string, numeric, or not applicable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationAnswerData {
     /// <p>The flag to mark the question as not applicable.</p>

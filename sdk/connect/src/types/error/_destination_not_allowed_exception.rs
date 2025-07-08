@@ -2,6 +2,8 @@
 
 /// <p>Outbound calls to the destination number are not allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationNotAllowedException {
     /// <p>The message about the outbound calls.</p>

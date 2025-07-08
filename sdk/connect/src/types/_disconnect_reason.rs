@@ -2,6 +2,8 @@
 
 /// <p>Contains details about why a contact was disconnected. Only Amazon Connect outbound campaigns can provide this field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisconnectReason {
     /// <p>A code that indicates how the contact was terminated.</p>

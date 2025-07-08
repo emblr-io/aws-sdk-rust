@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about hours of operation for a contact center.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HoursOfOperationSummary {
     /// <p>The identifier of the hours of operation.</p>

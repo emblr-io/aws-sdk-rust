@@ -2,6 +2,8 @@
 
 /// <p>Step signifies the criteria to be used for routing to an agent</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Step {
     /// <p>An object to specify the expiration of a routing step.</p>

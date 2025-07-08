@@ -2,6 +2,8 @@
 
 /// <p>Information about the submit automated evaluation action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubmitAutoEvaluationActionDefinition {
     /// <p>The identifier of the auto-evaluation enabled form.</p>

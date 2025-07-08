@@ -2,6 +2,8 @@
 
 /// <p>The flow is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidContactFlowException {
     /// <p>The problems with the flow. Please fix before trying again.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Maximum number (1000) of tags have been returned with current request. Consider changing request parameters to get more tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaximumResultReturnedException {
     #[allow(missing_docs)] // documentation missing in model

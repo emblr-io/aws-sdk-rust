@@ -2,6 +2,8 @@
 
 /// <p>An analyzed segment for a real-time analysis session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RealtimeContactAnalysisSegment {
     /// <p>The analyzed attachments.</p>

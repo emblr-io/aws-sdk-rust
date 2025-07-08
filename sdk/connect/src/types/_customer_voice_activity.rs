@@ -2,6 +2,8 @@
 
 /// <p>Information about customer’s voice activity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerVoiceActivity {
     /// <p>Timestamp that measures the beginning of the customer greeting from an outbound voice call.</p>

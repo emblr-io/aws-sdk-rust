@@ -2,6 +2,8 @@
 
 /// <p>A structure that defines search criteria based on user-defined contact attributes that are configured for contact search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchableContactAttributes {
     /// <p>The list of criteria based on user-defined contact attributes that are configured for contact search.</p>

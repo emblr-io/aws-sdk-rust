@@ -2,6 +2,8 @@
 
 /// <p>Contains summary information about the custom vocabulary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VocabularySummary {
     /// <p>A unique name of the custom vocabulary.</p>

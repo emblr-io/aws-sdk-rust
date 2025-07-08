@@ -2,6 +2,8 @@
 
 /// <p>Information about the automation option of a single select question.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum EvaluationFormSingleSelectQuestionAutomationOption {
     /// <p>The automation option based on a rule category for the single select question.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A tag set contains tag key and tag value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagSet {
     /// <p>The tag key in the TagSet.</p>

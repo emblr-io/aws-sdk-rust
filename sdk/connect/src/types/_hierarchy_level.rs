@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a hierarchy level.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HierarchyLevel {
     /// <p>The identifier of the hierarchy level.</p>

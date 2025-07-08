@@ -2,6 +2,8 @@
 
 /// <p>Can be used to define a list of preferred agents to target the contact to within the queue.  Note that agents must have the queue in their routing profile in order to be offered the  contact.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AgentsCriteria {
     /// <p>An object to specify a list of agents, by user ID.</p>

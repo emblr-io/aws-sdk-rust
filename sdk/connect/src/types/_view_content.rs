@@ -2,6 +2,8 @@
 
 /// <p>View content containing all content necessary to render a view except for runtime input data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ViewContent {
     /// <p>The data schema matching data that the view template must be provided to render.</p>

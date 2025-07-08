@@ -2,6 +2,8 @@
 
 /// <p>Configuration information of an Amazon Lex or Amazon Lex V2 bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LexBotConfig {
     /// <p>Configuration information of an Amazon Lex bot.</p>

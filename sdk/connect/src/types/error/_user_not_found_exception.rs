@@ -2,6 +2,8 @@
 
 /// <p>No user with the specified credentials was found in the Amazon Connect instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserNotFoundException {
     #[allow(missing_docs)] // documentation missing in model

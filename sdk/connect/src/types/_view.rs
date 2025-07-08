@@ -2,6 +2,8 @@
 
 /// <p>A view resource object. Contains metadata and content necessary to render the view.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct View {
     /// <p>The identifier of the view.</p>

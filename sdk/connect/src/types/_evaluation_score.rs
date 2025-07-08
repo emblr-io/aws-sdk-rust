@@ -2,6 +2,8 @@
 
 /// <p>Information about scores of a contact evaluation item (section or question).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationScore {
     /// <p>The score percentage for an item in a contact evaluation.</p>
