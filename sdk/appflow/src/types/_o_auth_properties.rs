@@ -2,6 +2,8 @@
 
 /// <p>The OAuth properties required for OAuth type authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OAuthProperties {
     /// <p>The token url required to fetch access/refresh tokens using authorization code and also to refresh expired access token using refresh token.</p>

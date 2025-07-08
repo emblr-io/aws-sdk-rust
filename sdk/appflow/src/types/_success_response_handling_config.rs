@@ -3,6 +3,8 @@
 /// <p>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data.</p>
 /// <p>For example, this setting would determine where to write the response from the destination connector upon a successful insert operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuccessResponseHandlingConfig {
     /// <p>The Amazon S3 bucket prefix.</p>

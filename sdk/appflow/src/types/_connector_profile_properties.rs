@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific profile properties required by each connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectorProfileProperties {
     /// <p>The connector-specific properties required by Amplitude.</p>

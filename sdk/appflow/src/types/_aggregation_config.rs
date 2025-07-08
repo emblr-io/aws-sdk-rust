@@ -2,6 +2,8 @@
 
 /// <p>The aggregation settings that you can use to customize the output format of your flow data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationConfig {
     /// <p>Specifies whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated.</p>

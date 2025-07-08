@@ -2,6 +2,8 @@
 
 /// <p>The properties that Amazon AppFlow applies when you use Marketo as a flow destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MarketoDestinationProperties {
     /// <p>The object specified in the Marketo flow destination.</p>

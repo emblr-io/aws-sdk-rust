@@ -2,6 +2,8 @@
 
 /// <p>Contains details regarding all the supported <code>FieldTypes</code> and their corresponding <code>filterOperators</code> and <code>supportedValues</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedFieldTypeDetails {
     /// <p>The initial supported version for <code>fieldType</code>. If this is later changed to a different version, v2 will be introduced.</p>

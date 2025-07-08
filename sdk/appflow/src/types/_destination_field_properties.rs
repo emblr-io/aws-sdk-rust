@@ -2,6 +2,8 @@
 
 /// <p>The properties that can be applied to a field when connector is being used as a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DestinationFieldProperties {
     /// <p>Specifies if the destination field can be created by the current user.</p>

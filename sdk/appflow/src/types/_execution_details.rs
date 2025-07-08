@@ -2,6 +2,8 @@
 
 /// <p>Describes the details of the flow run, including the timestamp, status, and message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExecutionDetails {
     /// <p>Describes the details of the most recent flow run.</p>

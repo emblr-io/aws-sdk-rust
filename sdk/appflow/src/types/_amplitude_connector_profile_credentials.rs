@@ -2,6 +2,8 @@
 
 /// <p>The connector-specific credentials required when using Amplitude.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AmplitudeConnectorProfileCredentials {
     /// <p>A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API.</p>

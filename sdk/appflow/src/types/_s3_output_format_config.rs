@@ -2,6 +2,8 @@
 
 /// <p>The configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3OutputFormatConfig {
     /// <p>Indicates the file type that Amazon AppFlow places in the Amazon S3 bucket.</p>

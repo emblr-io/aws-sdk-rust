@@ -2,6 +2,8 @@
 
 /// <p>The properties that are applied when Marketo is being used as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MarketoSourceProperties {
     /// <p>The object specified in the Marketo flow source.</p>

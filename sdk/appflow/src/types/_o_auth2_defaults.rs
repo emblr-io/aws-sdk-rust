@@ -2,6 +2,8 @@
 
 /// <p>Contains the default values required for OAuth 2.0 authentication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OAuth2Defaults {
     /// <p>OAuth 2.0 scopes that the connector supports.</p>
