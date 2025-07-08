@@ -2,6 +2,8 @@
 
 /// <p>Specifies the device configuration for an Snowcone job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnowconeDeviceConfiguration {
     /// <p>Configures the wireless connection for the Snowcone device.</p>

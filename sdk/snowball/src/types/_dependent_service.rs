@@ -2,6 +2,8 @@
 
 /// <p>The name and version of the service dependant on the requested service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DependentService {
     /// <p>The name of the dependent service.</p>

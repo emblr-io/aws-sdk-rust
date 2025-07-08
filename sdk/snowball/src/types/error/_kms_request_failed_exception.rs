@@ -2,6 +2,8 @@
 
 /// <p>The provided Key Management Service key lacks the permissions to perform the specified <code>CreateJob</code> or <code>UpdateJob</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsRequestFailedException {
     #[allow(missing_docs)] // documentation missing in model
