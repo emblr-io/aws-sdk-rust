@@ -2,6 +2,8 @@
 
 /// <p>A container for outbound EDI options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum OutboundEdiOptions {
     /// <p>A structure that contains an X12 envelope structure.</p>

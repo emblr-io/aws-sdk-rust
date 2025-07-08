@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains advanced options for EDI processing. Currently, only X12 advanced options are supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdvancedOptions {
     /// <p>A structure that contains X12-specific advanced options, such as split options for processing X12 EDI files.</p>

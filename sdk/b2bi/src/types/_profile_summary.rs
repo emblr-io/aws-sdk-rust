@@ -2,6 +2,8 @@
 
 /// <p>Contains the details for a profile. A profile is the mechanism used to create the concept of a private network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfileSummary {
     /// <p>Returns the unique, system-generated identifier for the profile.</p>
