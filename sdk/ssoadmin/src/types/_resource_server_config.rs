@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes the configuration of a resource server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceServerConfig {
     /// <p>A list of the IAM Identity Center access scopes that are associated with this resource server.</p>

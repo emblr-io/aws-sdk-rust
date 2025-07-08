@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes how the portal represents an application provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisplayData {
     /// <p>The name of the application provider that appears in the portal.</p>

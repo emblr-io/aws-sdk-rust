@@ -2,6 +2,8 @@
 
 /// <p>Filters the operation status list based on the passed attribute value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OperationStatusFilter {
     /// <p>Filters the list operations result based on the status attribute.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes details for an IAM Identity Center access scope that is associated with a resource server.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceServerScopeDetails {
     /// <p>The description of an access scope for a resource server.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The status of the creation or deletion operation of an assignment that a principal needs to access an account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountAssignmentOperationStatus {
     /// <p>The status of the permission set provisioning process.</p>

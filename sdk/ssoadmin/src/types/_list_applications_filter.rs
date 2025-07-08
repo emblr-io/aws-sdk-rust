@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes a filter for applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListApplicationsFilter {
     /// <p>An Amazon Web Services account ID number that filters the results in the response.</p>

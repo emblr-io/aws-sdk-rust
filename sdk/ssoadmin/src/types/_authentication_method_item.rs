@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes an authentication method and its type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthenticationMethodItem {
     /// <p>The type of authentication that is used by this method.</p>

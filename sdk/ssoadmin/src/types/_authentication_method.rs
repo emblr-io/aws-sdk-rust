@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes an authentication method that can be used by an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum AuthenticationMethod {
     /// <p>A structure that describes details for IAM authentication.</p>

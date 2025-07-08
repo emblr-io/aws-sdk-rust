@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes the configuration of a trusted token issuer. The structure and available settings are determined by the type of the trusted token issuer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TrustedTokenIssuerConfiguration {
     /// <p>A structure that describes the settings for a trusted token issuer that works with OpenID Connect (OIDC) by using JSON Web Tokens (JWT).</p>
