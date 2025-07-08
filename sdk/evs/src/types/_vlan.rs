@@ -2,6 +2,8 @@
 
 /// <p>The VLANs that Amazon EVS creates during environment creation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Vlan {
     /// <p>The unique ID of the VLAN.</p>

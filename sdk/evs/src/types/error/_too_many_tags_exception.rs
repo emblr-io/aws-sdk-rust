@@ -2,6 +2,8 @@
 
 /// <p>A service resource associated with the request has more than 200 tags.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyTagsException {
     /// <p>Describes the error encountered.</p>
