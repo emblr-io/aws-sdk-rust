@@ -2,6 +2,8 @@
 
 /// <p>The resource handler has returned that the credentials provided by the user are invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidCredentialsException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The filter criteria to use in determining the requests returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceRequestStatusFilter {
     /// <p>The operation types to include in the filter.</p>
