@@ -2,6 +2,8 @@
 
 /// <p>Includes all of the AppRegistry settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppRegistryConfiguration {
     /// <p>Includes the definition of a <code>tagQuery</code>.</p>
