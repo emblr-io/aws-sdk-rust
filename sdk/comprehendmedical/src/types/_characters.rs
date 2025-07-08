@@ -2,6 +2,8 @@
 
 /// <p>The number of characters in the input text to be analyzed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Characters {
     /// <p>The number of characters present in the input text document as processed by Amazon Comprehend Medical.</p>
