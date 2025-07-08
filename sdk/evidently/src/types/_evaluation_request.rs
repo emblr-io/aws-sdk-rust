@@ -2,6 +2,8 @@
 
 /// <p>This structure assigns a feature variation to one user session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EvaluationRequest {
     /// <p>The name of the feature being evaluated.</p>
