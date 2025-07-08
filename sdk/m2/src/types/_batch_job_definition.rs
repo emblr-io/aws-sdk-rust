@@ -2,6 +2,8 @@
 
 /// <p>Defines the details of a batch job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum BatchJobDefinition {
     /// <p>Specifies a file containing a batch job definition.</p>

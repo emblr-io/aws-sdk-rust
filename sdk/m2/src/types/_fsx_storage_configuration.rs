@@ -2,6 +2,8 @@
 
 /// <p>Defines the storage configuration for an Amazon FSx file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FsxStorageConfiguration {
     /// <p>The file system identifier.</p>

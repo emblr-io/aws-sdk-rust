@@ -2,6 +2,8 @@
 
 /// <p>A batch job identifier in which the batch jobs to run are identified by an Amazon S3 location.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3BatchJobIdentifier {
     /// <p>The Amazon S3 bucket that contains the batch job definitions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides step/procedure step information for a restart batch job operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobStepRestartMarker {
     /// <p>The step name that a batch job was restarted from.</p>

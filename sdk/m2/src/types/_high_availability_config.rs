@@ -2,6 +2,8 @@
 
 /// <p>Defines the details of a high availability configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HighAvailabilityConfig {
     /// <p>The number of instances in a high availability configuration. The minimum possible value is 1 and the maximum is 100.</p>
