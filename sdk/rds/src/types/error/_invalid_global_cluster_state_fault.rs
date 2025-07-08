@@ -2,6 +2,8 @@
 
 /// <p>The global cluster is in an invalid state and can't perform the requested operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidGlobalClusterStateFault {
     #[allow(missing_docs)] // documentation missing in model

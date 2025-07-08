@@ -2,6 +2,8 @@
 
 /// <p>The IAM role requires additional permissions to export to an Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamRoleMissingPermissionsFault {
     #[allow(missing_docs)] // documentation missing in model

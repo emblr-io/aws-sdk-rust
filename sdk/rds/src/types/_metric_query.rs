@@ -2,6 +2,8 @@
 
 /// <p>The query to retrieve metric data points.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MetricQuery {
     /// <p>The Performance Insights query that you can use to retrieve Performance Insights metric data points.</p>

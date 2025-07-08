@@ -4,6 +4,8 @@
 /// <p>You can use the information that this data type returns to plan for upgrades.</p>
 /// <p>This data type only returns information for the open source engines Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for PostgreSQL, Aurora MySQL, and Aurora PostgreSQL.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SupportedEngineLifecycle {
     /// <p>The type of lifecycle support that the engine version is in.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The automated backup is in an invalid state. For example, this automated backup is associated with an active instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidDbInstanceAutomatedBackupStateFault {
     #[allow(missing_docs)] // documentation missing in model

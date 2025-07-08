@@ -2,6 +2,8 @@
 
 /// <p>The proxy is already associated with the specified RDS DB instance or Aurora DB cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbProxyTargetAlreadyRegisteredFault {
     #[allow(missing_docs)] // documentation missing in model

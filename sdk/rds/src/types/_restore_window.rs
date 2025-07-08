@@ -2,6 +2,8 @@
 
 /// <p>Earliest and latest time an instance can be restored to:</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RestoreWindow {
     /// <p>The earliest time you can restore an instance to.</p>

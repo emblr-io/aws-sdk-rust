@@ -2,6 +2,8 @@
 
 /// <p>This error can occur if someone else is modifying a subscription. You should retry the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidEventSubscriptionStateFault {
     #[allow(missing_docs)] // documentation missing in model

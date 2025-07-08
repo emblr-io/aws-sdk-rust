@@ -3,6 +3,8 @@
 /// <p>Contains the details for an RDS Proxy target. It represents an RDS DB instance or Aurora DB cluster that the proxy can connect to. One or more targets are associated with an RDS Proxy target group.</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBProxyTargets</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbProxyTarget {
     /// <p>The Amazon Resource Name (ARN) for the RDS DB instance or Aurora DB cluster.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains status information for a DB cluster option group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbClusterOptionGroupStatus {
     /// <p>Specifies the name of the DB cluster option group.</p>

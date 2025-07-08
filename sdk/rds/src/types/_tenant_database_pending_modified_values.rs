@@ -2,6 +2,8 @@
 
 /// <p>A response element in the <code>ModifyTenantDatabase</code> operation that describes changes that will be applied. Specific changes are identified by subelements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TenantDatabasePendingModifiedValues {
     /// <p>The master password for the tenant database.</p>

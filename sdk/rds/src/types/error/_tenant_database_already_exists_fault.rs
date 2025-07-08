@@ -2,6 +2,8 @@
 
 /// <p>You attempted to either create a tenant database that already exists or modify a tenant database to use the name of an existing tenant database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TenantDatabaseAlreadyExistsFault {
     #[allow(missing_docs)] // documentation missing in model

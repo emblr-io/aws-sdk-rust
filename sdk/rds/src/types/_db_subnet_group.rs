@@ -3,6 +3,8 @@
 /// <p>Contains the details of an Amazon RDS DB subnet group.</p>
 /// <p>This data type is used as a response element in the <code>DescribeDBSubnetGroups</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DbSubnetGroup {
     /// <p>The name of the DB subnet group.</p>

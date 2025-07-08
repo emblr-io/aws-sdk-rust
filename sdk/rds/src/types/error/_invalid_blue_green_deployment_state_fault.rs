@@ -2,6 +2,8 @@
 
 /// <p>The blue/green deployment can't be switched over or deleted because there is an invalid configuration in the green environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidBlueGreenDeploymentStateFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The number of global database clusters for this account is already at the maximum allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalClusterQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

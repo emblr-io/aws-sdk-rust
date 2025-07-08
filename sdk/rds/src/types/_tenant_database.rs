@@ -2,6 +2,8 @@
 
 /// <p>A tenant database in the DB instance. This data type is an element in the response to the <code>DescribeTenantDatabases</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TenantDatabase {
     /// <p>The creation time of the tenant database.</p>

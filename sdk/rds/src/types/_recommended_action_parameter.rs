@@ -2,6 +2,8 @@
 
 /// <p>A single parameter to use with the <code>RecommendedAction</code> API operation to apply the action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendedActionParameter {
     /// <p>The key of the parameter to use with the <code>RecommendedAction</code> API operation.</p>

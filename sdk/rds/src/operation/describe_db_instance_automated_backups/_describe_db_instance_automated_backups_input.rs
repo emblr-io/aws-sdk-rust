@@ -2,6 +2,8 @@
 
 /// <p>Parameter input for DescribeDBInstanceAutomatedBackups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDbInstanceAutomatedBackupsInput {
     /// <p>The resource ID of the DB instance that is the source of the automated backup. This parameter isn't case-sensitive.</p>

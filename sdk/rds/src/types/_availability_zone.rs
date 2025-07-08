@@ -3,6 +3,8 @@
 /// <p>Contains Availability Zone information.</p>
 /// <p>This data type is used as an element in the <code>OrderableDBInstanceOption</code> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AvailabilityZone {
     /// <p>The name of the Availability Zone.</p>

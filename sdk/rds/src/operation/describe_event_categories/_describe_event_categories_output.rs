@@ -2,6 +2,8 @@
 
 /// <p>Data returned from the <code>DescribeEventCategories</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEventCategoriesOutput {
     /// <p>A list of <code>EventCategoriesMap</code> data types.</p>
