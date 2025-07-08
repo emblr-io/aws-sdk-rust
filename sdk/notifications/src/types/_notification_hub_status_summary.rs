@@ -2,6 +2,8 @@
 
 /// <p>Provides additional information about the current <code>NotificationHub</code> status.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationHubStatusSummary {
     /// <p>Status information about the <code>NotificationHub</code>.</p>

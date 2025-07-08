@@ -2,6 +2,8 @@
 
 /// <p>Describes a short summary of a <code>NotificationEvent</code>. This is only used when listing notification events.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationEventOverview {
     /// <p>The Amazon Resource Name (ARN) of the resource.</p>

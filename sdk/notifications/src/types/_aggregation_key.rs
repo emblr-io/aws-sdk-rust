@@ -2,6 +2,8 @@
 
 /// <p>Key-value collection that indicate how notifications are grouped.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregationKey {
     /// <p>Indicates the type of aggregation key.</p>

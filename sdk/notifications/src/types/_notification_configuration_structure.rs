@@ -2,6 +2,8 @@
 
 /// <p>Contains the complete list of fields for a NotificationConfiguration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationConfigurationStructure {
     /// <p>The Amazon Resource Name (ARN) of the <code>NotificationConfiguration</code> resource.</p>
