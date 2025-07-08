@@ -2,6 +2,8 @@
 
 /// <p>A key pair used to sign and validate a playback authorization token.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlaybackKeyPair {
     /// <p>Key-pair ARN.</p>

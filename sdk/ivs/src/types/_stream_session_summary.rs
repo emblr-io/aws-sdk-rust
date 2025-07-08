@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a stream session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamSessionSummary {
     /// <p>Unique identifier for a live or previously live stream in the specified channel.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object representing a configuration to record a channel stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecordingConfiguration {
     /// <p>Recording-configuration ARN.</p>
