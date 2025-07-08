@@ -2,6 +2,8 @@
 
 /// <p>List item for key value pair to put.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PutKeyRequestListItem {
     /// <p>The key of the key value pair list item to put.</p>
