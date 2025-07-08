@@ -2,6 +2,8 @@
 
 /// <p>The result of a successful Rule request, with status for an individual rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleResult {
     /// <p>The time the resource was last checked for readiness, in ISO-8601 format, UTC.</p>

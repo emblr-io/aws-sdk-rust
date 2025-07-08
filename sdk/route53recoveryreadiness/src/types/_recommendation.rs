@@ -2,6 +2,8 @@
 
 /// <p>Recommendations that are provided to make an application more recovery resilient.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Recommendation {
     /// <p>Text of the recommendations that are provided to make an application more recovery resilient.</p>

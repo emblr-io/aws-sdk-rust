@@ -2,6 +2,8 @@
 
 /// <p>Name of a recovery group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRecoveryGroupInput {
     /// <p>A list of cell Amazon Resource Names (ARNs). This list completely replaces the previous list.</p>

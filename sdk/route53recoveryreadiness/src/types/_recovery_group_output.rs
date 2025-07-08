@@ -2,6 +2,8 @@
 
 /// <p>A representation of the application, typically containing multiple cells.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecoveryGroupOutput {
     /// <p>A list of a cell's Amazon Resource Names (ARNs).</p>
