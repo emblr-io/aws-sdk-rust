@@ -2,6 +2,8 @@
 
 /// <p>The union type representing the allowed types of operands for a boolean condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IngressBooleanToEvaluate {
     /// <p>The structure type for a boolean condition stating the Add On ARN and its returned value.</p>

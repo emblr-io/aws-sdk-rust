@@ -2,6 +2,8 @@
 
 /// <p>The union type representing the allowed types for the left hand side of a TLS condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum IngressTlsProtocolToEvaluate {
     /// <p>The enum type representing the allowed attribute types for the TLS condition.</p>

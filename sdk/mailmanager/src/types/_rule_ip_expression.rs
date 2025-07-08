@@ -2,6 +2,8 @@
 
 /// <p>An IP address expression matching certain IP addresses within a given range of IP addresses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleIpExpression {
     /// <p>The IP address to evaluate in this condition.</p>

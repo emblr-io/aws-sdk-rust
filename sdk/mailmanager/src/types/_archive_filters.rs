@@ -2,6 +2,8 @@
 
 /// <p>A set of filter conditions to include and/or exclude emails.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArchiveFilters {
     /// <p>The filter conditions for emails to include.</p>

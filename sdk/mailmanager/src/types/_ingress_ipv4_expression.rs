@@ -2,6 +2,8 @@
 
 /// <p>The union type representing the allowed types for the left hand side of an IP condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressIpv4Expression {
     /// <p>The left hand side argument of an IP condition expression.</p>

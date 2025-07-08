@@ -2,6 +2,8 @@
 
 /// <p>Specifies the network configuration for the private ingress point.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateNetworkConfiguration {
     /// <p>The identifier of the VPC endpoint to associate with this private ingress point.</p>

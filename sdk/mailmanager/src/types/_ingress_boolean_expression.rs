@@ -2,6 +2,8 @@
 
 /// <p>The structure for a boolean condition matching on the incoming mail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressBooleanExpression {
     /// <p>The operand on which to perform a boolean condition operation.</p>

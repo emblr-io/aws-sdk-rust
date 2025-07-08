@@ -2,6 +2,8 @@
 
 /// <p>The response from initiating an archive export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartArchiveExportOutput {
     /// <p>The unique identifier for the initiated export job.</p>

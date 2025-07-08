@@ -2,6 +2,8 @@
 
 /// <p>The request to list archive search jobs in your account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListArchiveSearchesInput {
     /// <p>The identifier of the archive.</p>

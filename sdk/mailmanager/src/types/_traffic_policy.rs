@@ -2,6 +2,8 @@
 
 /// <p>The structure of a traffic policy resource which is a container for policy statements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TrafficPolicy {
     /// <p>A user-friendly name of the traffic policy resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A number expression to match numeric conditions with integers from the incoming email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleNumberExpression {
     /// <p>The number to evaluate in a numeric condition expression.</p>

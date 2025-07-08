@@ -2,6 +2,8 @@
 
 /// <p>The request to create a new email archive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateArchiveInput {
     /// <p>A unique token Amazon SES uses to recognize retries of this request.</p>

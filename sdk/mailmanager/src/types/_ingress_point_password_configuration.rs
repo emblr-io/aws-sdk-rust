@@ -2,6 +2,8 @@
 
 /// <p>The password configuration of the ingress endpoint resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressPointPasswordConfiguration {
     /// <p>The current password expiry timestamp of the ingress endpoint resource.</p>

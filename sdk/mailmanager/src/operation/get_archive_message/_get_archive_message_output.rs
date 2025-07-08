@@ -2,6 +2,8 @@
 
 /// <p>The response containing details about the requested archived email message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArchiveMessageOutput {
     /// <p>A pre-signed URL to temporarily download the full message content.</p>

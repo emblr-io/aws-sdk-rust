@@ -2,6 +2,8 @@
 
 /// <p>The structure for a TLS related condition matching on the incoming mail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngressTlsProtocolExpression {
     /// <p>The left hand side argument of a TLS condition expression.</p>

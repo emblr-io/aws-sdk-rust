@@ -2,6 +2,8 @@
 
 /// <p>A string expression is evaluated against strings or substrings of the email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleStringExpression {
     /// <p>The string to evaluate in a string condition expression.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The SMTP envelope information of the email.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Envelope {
     /// <p>The HELO used by the host from which the email was received.</p>
