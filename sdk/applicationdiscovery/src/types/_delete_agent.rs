@@ -2,6 +2,8 @@
 
 /// <p>An object representing the agent or data collector to be deleted along with the optional configurations for error handling.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteAgent {
     /// <p>The ID of the agent or data collector to delete.</p>

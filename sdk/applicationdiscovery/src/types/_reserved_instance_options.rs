@@ -2,6 +2,8 @@
 
 /// <p>Used to provide Reserved Instance preferences for the recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedInstanceOptions {
     /// <p>The payment plan to use for your Reserved Instance.</p>

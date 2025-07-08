@@ -2,6 +2,8 @@
 
 /// <p>The inventory data for installed Agentless Collector collectors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerAgentlessCollectorInfo {
     /// <p>The number of active Agentless Collector collectors.</p>

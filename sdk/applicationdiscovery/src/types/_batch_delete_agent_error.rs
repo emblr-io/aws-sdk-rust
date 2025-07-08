@@ -2,6 +2,8 @@
 
 /// <p>An object representing the agent or data collector that failed to delete, each containing agentId, errorMessage, and errorCode.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDeleteAgentError {
     /// <p>The ID of the agent or data collector to delete.</p>
