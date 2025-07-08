@@ -2,6 +2,8 @@
 
 /// <p>The full name of the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Name {
     /// <p>A string containing a formatted version of the name for display.</p>

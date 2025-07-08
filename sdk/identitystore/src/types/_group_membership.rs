@@ -2,6 +2,8 @@
 
 /// <p>Contains the identifiers for a group, a group member, and a <code>GroupMembership</code> object in the identity store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupMembership {
     /// <p>The globally unique identifier for the identity store.</p>

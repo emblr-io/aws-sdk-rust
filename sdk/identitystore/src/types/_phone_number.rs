@@ -2,6 +2,8 @@
 
 /// <p>The phone number associated with the user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PhoneNumber {
     /// <p>A string containing a phone number. For example, "8675309" or "+1 (800) 123-4567".</p>

@@ -2,6 +2,8 @@
 
 /// <p>The identifier issued to this resource by an external identity provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ExternalId {
     /// <p>The issuer for an external identifier.</p>
