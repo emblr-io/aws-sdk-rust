@@ -2,6 +2,8 @@
 
 /// <p>The output data configuration that was supplied when the export job was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum OutputDataConfig {
     /// <p>The output data configuration that was supplied when the export job was created.</p>

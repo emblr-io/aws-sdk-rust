@@ -2,6 +2,8 @@
 
 /// <p>The progress report of an import job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobProgressReport {
     /// <p>The number of files scanned from input S3 bucket.</p>
