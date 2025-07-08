@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a container in which Lambda functions run on Greengrass core devices.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LambdaContainerParams {
     /// <p>The memory size of the container, expressed in kilobytes.</p>

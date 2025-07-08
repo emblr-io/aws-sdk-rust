@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a platform that a component supports.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentPlatform {
     /// <p>The friendly name of the platform. This name helps you identify the platform.</p>

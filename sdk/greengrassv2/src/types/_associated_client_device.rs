@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a client device that is associated to a core device for cloud discovery.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociatedClientDevice {
     /// <p>The name of the IoT thing that represents the associated client device.</p>
