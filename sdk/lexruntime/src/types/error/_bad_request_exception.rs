@@ -2,6 +2,8 @@
 
 /// <p>Request validation failed, there is no usable message in the context, or the bot build failed, is still in progress, or contains unbuilt changes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadRequestException {
     #[allow(missing_docs)] // documentation missing in model

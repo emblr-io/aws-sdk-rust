@@ -2,6 +2,8 @@
 
 /// <p>The resource (such as the Amazon Lex bot or an alias) that is referred to is not found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotFoundException {
     #[allow(missing_docs)] // documentation missing in model

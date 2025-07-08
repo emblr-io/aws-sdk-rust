@@ -2,6 +2,8 @@
 
 /// <p>Represents an option to be shown on the client platform (Facebook, Slack, etc.)</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Button {
     /// <p>Text that is visible to the user on the button.</p>

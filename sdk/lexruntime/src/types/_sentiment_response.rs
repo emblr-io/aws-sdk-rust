@@ -3,6 +3,8 @@
 /// <p>The sentiment expressed in an utterance.</p>
 /// <p>When the bot is configured to send utterances to Amazon Comprehend for sentiment analysis, this field structure contains the result of the analysis.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SentimentResponse {
     /// <p>The inferred sentiment that Amazon Comprehend has the highest confidence in.</p>

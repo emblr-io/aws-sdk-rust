@@ -2,6 +2,8 @@
 
 /// <p>The Content-Type header (<code>PostContent</code> API) has an invalid value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedMediaTypeException {
     #[allow(missing_docs)] // documentation missing in model

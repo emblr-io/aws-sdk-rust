@@ -2,6 +2,8 @@
 
 /// <p>Represents an option rendered to the user when a prompt is shown. It could be an image, a button, a link, or text.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenericAttachment {
     /// <p>The title of the option.</p>
