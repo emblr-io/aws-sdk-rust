@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the signing configurations and parameters that are used to perform a code-signing job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SigningPlatform {
     /// <p>The ID of a signing platform.</p>

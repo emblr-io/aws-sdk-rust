@@ -2,6 +2,8 @@
 
 /// <p>A signing configuration that overrides the default encryption or hash algorithm of a signing job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SigningConfigurationOverrides {
     /// <p>A specified override of the default encryption algorithm that is used in a code-signing job.</p>
