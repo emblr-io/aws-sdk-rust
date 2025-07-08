@@ -2,6 +2,8 @@
 
 /// <p>Contains details about maintenance settings for the table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum TableMaintenanceSettings {
     /// <p>Contains details about the Iceberg compaction settings for the table.</p>

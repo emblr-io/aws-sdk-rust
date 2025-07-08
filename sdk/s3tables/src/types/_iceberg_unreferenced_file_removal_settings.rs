@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the unreferenced file removal settings for an Iceberg table bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IcebergUnreferencedFileRemovalSettings {
     /// <p>The number of days an object has to be unreferenced before it is marked as non-current.</p>
