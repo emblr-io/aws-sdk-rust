@@ -11,6 +11,8 @@
 /// <p>UPDATED</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitPullRequestFilter {
     /// <p>The field that specifies which pull request events to filter on (OPEN, UPDATED, CLOSED) for the trigger configuration.</p>

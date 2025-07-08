@@ -4,6 +4,8 @@
 /// <p>You can specify the Git configuration trigger type for all third-party Git-based source actions that are supported by the <code>CodeStarSourceConnection</code> action type.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitConfiguration {
     /// <p>The name of the pipeline source action where the trigger configuration, such as Git tags, is specified. The trigger configuration will start the pipeline upon the specified change only.</p><note>

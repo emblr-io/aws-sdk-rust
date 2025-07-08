@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>CreateCustomActionType</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCustomActionTypeOutput {
     /// <p>Returns information about the details of an action type.</p>

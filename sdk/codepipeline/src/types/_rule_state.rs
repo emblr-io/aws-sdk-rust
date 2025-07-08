@@ -4,6 +4,8 @@
 /// <p>Values returned in the <code>revisionId</code> field indicate the rule revision information, such as the commit ID, for the current state.</p>
 /// </note>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleState {
     /// <p>The name of the rule.</p>

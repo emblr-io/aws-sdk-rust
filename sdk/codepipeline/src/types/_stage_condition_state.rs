@@ -2,6 +2,8 @@
 
 /// <p>The state of a run of a condition for a stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StageConditionState {
     /// <p>Represents information about the latest run of a condition for a stage.</p>

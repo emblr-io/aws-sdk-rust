@@ -2,6 +2,8 @@
 
 /// <p>The pipeline execution to filter on.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineExecutionFilter {
     /// <p>Filter for pipeline executions where the stage was successful in the current pipeline version.</p>

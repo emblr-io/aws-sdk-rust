@@ -2,6 +2,8 @@
 
 /// <p>Details identifying the users with permissions to use the action type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionTypePermissions {
     /// <p>A list of Amazon Web Services account IDs with access to use the action type in their pipelines.</p>

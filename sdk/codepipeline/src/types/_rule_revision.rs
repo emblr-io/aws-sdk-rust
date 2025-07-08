@@ -2,6 +2,8 @@
 
 /// <p>The change to a rule that creates a revision of the rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleRevision {
     /// <p>The system-generated unique ID that identifies the revision number of the rule.</p>

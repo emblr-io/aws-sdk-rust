@@ -2,6 +2,8 @@
 
 /// <p>The details of the runs for a rule and the results produced on an artifact as it passes through stages in the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleExecutionDetail {
     /// <p>The ID of the pipeline execution in the stage where the rule was run. Use the <code>GetPipelineState</code> action to retrieve the current pipelineExecutionId of the stage.</p>

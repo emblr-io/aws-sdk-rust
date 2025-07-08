@@ -2,6 +2,8 @@
 
 /// <p>Summary information about a pipeline execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipelineExecutionSummary {
     /// <p>The ID of the pipeline execution.</p>

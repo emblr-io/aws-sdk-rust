@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a CreateCustomActionType operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCustomActionTypeInput {
     /// <p>The category of the custom action, such as a build action or a test action.</p>

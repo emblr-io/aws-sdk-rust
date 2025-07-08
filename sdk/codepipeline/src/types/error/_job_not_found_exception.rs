@@ -2,6 +2,8 @@
 
 /// <p>The job was specified in an invalid format or cannot be found.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobNotFoundException {
     /// <p>The message provided to the user in the event of an exception.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents information about each property specified in the action configuration, such as the description and key name that display for the customer using the action type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionTypeProperty {
     /// <p>The property name that is displayed to users.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents other information about a job required for a job worker to complete the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct JobData {
     /// <p>Represents information about an action type.</p>

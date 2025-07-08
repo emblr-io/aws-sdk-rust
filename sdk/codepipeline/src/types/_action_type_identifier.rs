@@ -2,6 +2,8 @@
 
 /// <p>Specifies the category, owner, provider, and version of the action type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ActionTypeIdentifier {
     /// <p>Defines what kind of action can be taken in the stage, one of the following:</p>

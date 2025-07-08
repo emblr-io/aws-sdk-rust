@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DisableStageTransition</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisableStageTransitionInput {
     /// <p>The name of the pipeline in which you want to disable the flow of artifacts from one stage to another.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Git repository branches specified as filter criteria to start the pipeline.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitBranchFilterCriteria {
     /// <p>The list of patterns of Git branches that, when a commit is pushed, are to be included as criteria that starts the pipeline.</p>
