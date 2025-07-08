@@ -2,6 +2,8 @@
 
 /// <p>Input for CreatePlatformEndpoint action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreatePlatformEndpointInput {
     /// <p><code>PlatformApplicationArn</code> returned from CreatePlatformApplication is used to create a an endpoint.</p>

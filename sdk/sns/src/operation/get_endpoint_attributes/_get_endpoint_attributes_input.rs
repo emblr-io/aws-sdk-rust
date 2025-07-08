@@ -2,6 +2,8 @@
 
 /// <p>Input for <code>GetEndpointAttributes</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetEndpointAttributesInput {
     /// <p><code>EndpointArn</code> for <code>GetEndpointAttributes</code> input.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request doesn't comply with the IAM tag policy. Correct your request and then retry it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagPolicyException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>CheckIfPhoneNumberIsOptedOut</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct CheckIfPhoneNumberIsOptedOutInput {
     /// <p>The phone number for which you want to check the opt out status.</p>

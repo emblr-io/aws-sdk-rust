@@ -2,6 +2,8 @@
 
 /// <p>Input for ListSubscriptions action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListSubscriptionsInput {
     /// <p>Token returned by the previous <code>ListSubscriptions</code> request.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Input for GetSubscriptionAttributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetSubscriptionAttributesInput {
     /// <p>The ARN of the subscription whose properties you want to get.</p>
