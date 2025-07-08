@@ -2,6 +2,8 @@
 
 /// <p>The properties of the Accessor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Accessor {
     /// <p>The unique identifier of the accessor.</p>

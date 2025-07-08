@@ -3,6 +3,8 @@
 /// <p>The actions to carry out if a proposal is <code>APPROVED</code>.</p>
 /// <p>Applies only to Hyperledger Fabric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProposalActions {
     /// <p>The actions to perform for an <code>APPROVED</code> proposal to invite an Amazon Web Services account to create a member and join the network.</p>

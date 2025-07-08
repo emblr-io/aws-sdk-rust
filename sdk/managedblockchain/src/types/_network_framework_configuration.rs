@@ -2,6 +2,8 @@
 
 /// <p>Configuration properties relevant to the network for the blockchain framework that the network uses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkFrameworkConfiguration {
     /// <p>Hyperledger Fabric configuration properties for a Managed Blockchain network that uses Hyperledger Fabric.</p>
