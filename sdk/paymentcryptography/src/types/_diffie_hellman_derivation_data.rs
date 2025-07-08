@@ -2,6 +2,8 @@
 
 /// <p>The shared information used when deriving a key using ECDH.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DiffieHellmanDerivationData {
     /// <p>A string containing information that binds the ECDH derived key to the two parties involved or to the context of the key.</p>

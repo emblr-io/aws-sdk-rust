@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an alias.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Alias {
     /// <p>A friendly name that you can use to refer to a key. The value must begin with <code>alias/</code>.</p><important>
