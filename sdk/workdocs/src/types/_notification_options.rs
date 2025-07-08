@@ -2,6 +2,8 @@
 
 /// <p>Set of options which defines notification preferences of given action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct NotificationOptions {
     /// <p>Boolean value to indicate an email notification should be sent to the recipients.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The limit has been reached on the number of custom properties for the specified resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomMetadataLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

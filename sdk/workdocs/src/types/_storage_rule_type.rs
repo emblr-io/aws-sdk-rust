@@ -2,6 +2,8 @@
 
 /// <p>Describes the storage for a user.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StorageRuleType {
     /// <p>The amount of storage allocated, in bytes.</p>

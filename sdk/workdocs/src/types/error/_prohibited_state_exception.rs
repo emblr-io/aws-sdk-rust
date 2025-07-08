@@ -2,6 +2,8 @@
 
 /// <p>The specified document version is not in the INITIALIZED state.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProhibitedStateException {
     #[allow(missing_docs)] // documentation missing in model

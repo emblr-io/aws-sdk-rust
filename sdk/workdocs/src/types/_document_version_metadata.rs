@@ -2,6 +2,8 @@
 
 /// <p>Describes a version of a document.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DocumentVersionMetadata {
     /// <p>The ID of the version.</p>
