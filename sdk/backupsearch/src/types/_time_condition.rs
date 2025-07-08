@@ -2,6 +2,8 @@
 
 /// <p>A time condition denotes a creation time, last modification time, or other time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeCondition {
     /// <p>This is the timestamp value of the time condition.</p>

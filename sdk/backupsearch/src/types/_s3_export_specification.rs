@@ -2,6 +2,8 @@
 
 /// <p>This specification contains a required string of the destination bucket; optionally, you can include the destination prefix.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ExportSpecification {
     /// <p>This specifies the destination Amazon S3 bucket for the export job.</p>

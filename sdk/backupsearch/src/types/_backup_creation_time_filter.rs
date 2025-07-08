@@ -2,6 +2,8 @@
 
 /// <p>This filters by recovery points within the CreatedAfter and CreatedBefore timestamps.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BackupCreationTimeFilter {
     /// <p>This timestamp includes recovery points only created after the specified time.</p>

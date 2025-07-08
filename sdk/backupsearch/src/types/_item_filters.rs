@@ -3,6 +3,8 @@
 /// <p>Item Filters represent all input item properties specified when the search was created.</p>
 /// <p>Contains either EBSItemFilters or S3ItemFilters</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemFilters {
     /// <p>This array can contain CreationTimes, ETags, ObjectKeys, Sizes, or VersionIds objects.</p>

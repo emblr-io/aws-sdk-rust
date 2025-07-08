@@ -2,6 +2,8 @@
 
 /// <p>This is information pertaining to a search job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchJobSummary {
     /// <p>The unique string that specifies the search job.</p>
