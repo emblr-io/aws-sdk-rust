@@ -2,6 +2,8 @@
 
 /// <p>Contains all the information about a watchlist.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Watchlist {
     /// <p>The identifier of the domain that contains the watchlist.</p>
