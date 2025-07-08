@@ -2,6 +2,8 @@
 
 /// <p>Details about what caused the incident to be created in Incident Manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TriggerDetails {
     /// <p>Identifies the service that sourced the event. All events sourced from within Amazon Web Services begin with "<code>aws.</code>" Customer-generated events can have any value here, as long as it doesn't begin with "<code>aws.</code>" We recommend the use of Java package-name style reverse domain-name strings.</p>

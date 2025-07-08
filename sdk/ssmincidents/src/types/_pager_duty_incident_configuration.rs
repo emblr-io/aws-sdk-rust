@@ -2,6 +2,8 @@
 
 /// <p>Details about the PagerDuty service where the response plan creates an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PagerDutyIncidentConfiguration {
     /// <p>The ID of the PagerDuty service that the response plan associates with an incident when it launches.</p>

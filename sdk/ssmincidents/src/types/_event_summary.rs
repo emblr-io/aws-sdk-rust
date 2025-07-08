@@ -2,6 +2,8 @@
 
 /// <p>Details about a timeline event during an incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventSummary {
     /// <p>The Amazon Resource Name (ARN) of the incident that the event happened during.</p>

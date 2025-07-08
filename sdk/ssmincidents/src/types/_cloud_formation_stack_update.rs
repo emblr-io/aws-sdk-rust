@@ -2,6 +2,8 @@
 
 /// <p>Information about an CloudFormation stack creation or update that occurred around the time of an incident and could be a potential cause of the incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudFormationStackUpdate {
     /// <p>The timestamp for when the CloudFormation stack creation or update began.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about a specific CodeDeploy deployment or CloudFormation stack creation or update that occurred around the time of a reported incident. These activities can be investigated as a potential cause of the incident.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Finding {
     /// <p>The ID assigned to the finding.</p>

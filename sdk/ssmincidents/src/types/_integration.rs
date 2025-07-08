@@ -2,6 +2,8 @@
 
 /// <p>Information about third-party services integrated into a response plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Integration {
     /// <p>Information about the PagerDuty service where the response plan creates an incident.</p>
