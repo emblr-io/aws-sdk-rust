@@ -2,6 +2,8 @@
 
 /// <p>Contains metadata related to a message.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageMetadata {
     /// <p>The identifier of the message that contains the metadata information.</p>
