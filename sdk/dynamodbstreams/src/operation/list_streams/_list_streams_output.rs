@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>ListStreams</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListStreamsOutput {
     /// <p>A list of stream descriptors associated with the current account and endpoint.</p>

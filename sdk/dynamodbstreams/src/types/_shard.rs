@@ -2,6 +2,8 @@
 
 /// <p>A uniquely identified group of stream records within a stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Shard {
     /// <p>The system-generated identifier for this shard.</p>
