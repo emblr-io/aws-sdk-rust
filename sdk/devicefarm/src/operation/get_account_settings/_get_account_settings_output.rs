@@ -2,6 +2,8 @@
 
 /// <p>Represents the account settings return values from the <code>GetAccountSettings</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetAccountSettingsOutput {
     /// <p>The account settings.</p>

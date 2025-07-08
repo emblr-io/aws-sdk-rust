@@ -2,6 +2,8 @@
 
 /// <p>A <code>TestGridSession</code> is a single instance of a browser launched from the URL provided by a call to <code>CreateTestGridUrl</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestGridSession {
     /// <p>The ARN of the session.</p>

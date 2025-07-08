@@ -2,6 +2,8 @@
 
 /// <p>A collection of one or more problems, grouped by their result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UniqueProblem {
     /// <p>A message about the unique problems' result.</p>

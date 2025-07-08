@@ -2,6 +2,8 @@
 
 /// <p>There was an error with the update request, or you do not have sufficient permissions to update this VPC endpoint configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidOperationException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Represents the result of a get device pool request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDevicePoolOutput {
     /// <p>An object that contains information about the requested device pool.</p>

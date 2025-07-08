@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the list uploads operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListUploadsInput {
     /// <p>The Amazon Resource Name (ARN) of the project for which you want to list uploads.</p>

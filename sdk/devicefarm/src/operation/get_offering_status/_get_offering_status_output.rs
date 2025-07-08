@@ -2,6 +2,8 @@
 
 /// <p>Returns the status result for a device offering.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetOfferingStatusOutput {
     /// <p>When specified, gets the offering status for the current period.</p>

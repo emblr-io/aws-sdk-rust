@@ -2,6 +2,8 @@
 
 /// <p>Represents the results of your stop run attempt.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StopRunOutput {
     /// <p>The run that was stopped.</p>

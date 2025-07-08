@@ -2,6 +2,8 @@
 
 /// <p>Represents a request to the list artifacts operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListArtifactsInput {
     /// <p>The run, job, suite, or test ARN.</p>

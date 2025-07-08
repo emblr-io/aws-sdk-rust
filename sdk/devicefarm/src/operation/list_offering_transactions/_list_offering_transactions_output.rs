@@ -2,6 +2,8 @@
 
 /// <p>Returns the transaction log of the specified offerings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListOfferingTransactionsOutput {
     /// <p>The audit log of subscriptions you have purchased and modified through AWS Device Farm.</p>

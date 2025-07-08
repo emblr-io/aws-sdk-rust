@@ -2,6 +2,8 @@
 
 /// <p>An array of settings that describes characteristics of a network profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NetworkProfile {
     /// <p>The Amazon Resource Name (ARN) of the network profile.</p>

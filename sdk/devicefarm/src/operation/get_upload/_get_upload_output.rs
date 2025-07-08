@@ -2,6 +2,8 @@
 
 /// <p>Represents the result of a get upload request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetUploadOutput {
     /// <p>An app or a set of one or more tests to upload or that have been uploaded.</p>

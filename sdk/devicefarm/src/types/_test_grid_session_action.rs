@@ -2,6 +2,8 @@
 
 /// <p>An action taken by a <code>TestGridSession</code> browser instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestGridSessionAction {
     /// <p>The action taken by the session.</p>

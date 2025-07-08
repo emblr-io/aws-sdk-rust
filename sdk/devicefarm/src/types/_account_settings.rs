@@ -2,6 +2,8 @@
 
 /// <p>A container for account-level settings in AWS Device Farm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountSettings {
     /// <p>The AWS account number specified in the <code>AccountSettings</code> container.</p>
