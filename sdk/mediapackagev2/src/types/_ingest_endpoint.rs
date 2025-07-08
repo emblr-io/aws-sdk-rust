@@ -2,6 +2,8 @@
 
 /// <p>The ingest domain URL where the source stream should be sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IngestEndpoint {
     /// <p>The system-generated unique identifier for the IngestEndpoint.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the schedule configuration for a harvest job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HarvesterScheduleConfiguration {
     /// <p>The start time for the harvest job.</p>
