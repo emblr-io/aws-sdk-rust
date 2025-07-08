@@ -2,6 +2,8 @@
 
 /// <p>Provides a description of a mount target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MountTargetDescription {
     /// <p>Amazon Web Services account ID that owns the resource.</p>

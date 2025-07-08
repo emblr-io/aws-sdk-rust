@@ -2,6 +2,8 @@
 
 /// <p>Describes the protection on a file system.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateFileSystemProtectionOutput {
     /// <p>The status of the file system's replication overwrite protection.</p>
