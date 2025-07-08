@@ -2,6 +2,8 @@
 
 /// <p>Contains information about a pipeline task that is assigned to a task runner.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskObject {
     /// <p>An internal identifier for the task. This ID is passed to the <code>SetTaskStatus</code> and <code>ReportTaskProgress</code> actions.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of DescribeObjects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeObjectsOutput {
     /// <p>An array of object definitions.</p>

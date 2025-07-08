@@ -2,6 +2,8 @@
 
 /// <p>Contains the output of ReportTaskRunnerHeartbeat.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportTaskRunnerHeartbeatOutput {
     /// <p>Indicates whether the calling task runner should terminate.</p>

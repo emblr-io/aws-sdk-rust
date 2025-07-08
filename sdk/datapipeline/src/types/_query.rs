@@ -2,6 +2,8 @@
 
 /// <p>Defines the query to run against an object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Query {
     /// <p>List of selectors that define the query. An object must satisfy all of the selectors to match the query.</p>
