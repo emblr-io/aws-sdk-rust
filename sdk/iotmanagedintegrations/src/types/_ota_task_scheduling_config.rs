@@ -2,6 +2,8 @@
 
 /// <p>Over-the-air (OTA) task scheduling config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtaTaskSchedulingConfig {
     /// <p>Specifies the end behavior for all task executions after a task reaches the selected <code>endTime</code>. If <code>endTime</code> is not selected when creating the task, then <code>endBehavior</code> does not apply.</p>

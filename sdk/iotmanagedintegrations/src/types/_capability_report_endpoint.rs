@@ -2,6 +2,8 @@
 
 /// <p>The endpoint used in the capability report.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapabilityReportEndpoint {
     /// <p>The id of the endpoint used in the capability report.</p>

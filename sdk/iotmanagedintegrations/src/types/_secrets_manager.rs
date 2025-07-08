@@ -2,6 +2,8 @@
 
 /// <p>Configuration for AWS Secrets Manager, used to securely store and manage sensitive information for connector destinations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecretsManager {
     /// <p>The Amazon Resource Name (ARN) of the AWS Secrets Manager secret.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about the over-the-air (OTA) task process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskProcessingDetails {
     /// <p>The number of canceled things in an over-the-air (OTA) task.</p>

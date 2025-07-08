@@ -2,6 +2,8 @@
 
 /// <p>Provides the status of the default encryption configuration for an Amazon Web Services account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationStatus {
     /// <p>The error details describing a failed default encryption configuration update.</p>

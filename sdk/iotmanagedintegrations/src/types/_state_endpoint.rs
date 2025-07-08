@@ -2,6 +2,8 @@
 
 /// <p>Describe the endpoint with an Id, a name, and the relevant capabilities for reporting state</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StateEndpoint {
     /// <p>Numeric identifier of the endpoint</p>

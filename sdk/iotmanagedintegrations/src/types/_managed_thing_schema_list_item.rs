@@ -2,6 +2,8 @@
 
 /// <p>Structure representing one schema item associated with a managed thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedThingSchemaListItem {
     /// <p>The id of the endpoint for a managed thing.</p>

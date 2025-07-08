@@ -2,6 +2,8 @@
 
 /// <p>State capabilities added for the managed thing.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StateCapability {
     /// <p>The id of the managed thing in the capability report.</p>

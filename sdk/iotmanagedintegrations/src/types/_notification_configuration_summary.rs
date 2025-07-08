@@ -2,6 +2,8 @@
 
 /// <p>Structure describing a notification configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotificationConfigurationSummary {
     /// <p>The type of event triggering a device notification to the customer-managed destination.</p>

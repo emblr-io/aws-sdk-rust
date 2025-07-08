@@ -2,6 +2,8 @@
 
 /// <p>Structure containing updated OAuth configuration settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OAuthUpdate {
     /// <p>The updated URL where users are redirected after completing the OAuth authorization process.</p>

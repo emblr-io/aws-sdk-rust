@@ -2,6 +2,8 @@
 
 /// <p>The configuration details for an endpoint, which defines how to connect to and communicate with external services.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointConfig {
     /// <p>The Lambda function configuration for the endpoint, used when the endpoint communicates through an AWS Lambda function.</p>

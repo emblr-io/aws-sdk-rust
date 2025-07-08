@@ -2,6 +2,8 @@
 
 /// <p>Provides the default encryption configuration error update details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationError {
     /// <p>The error code returned when the default encryption configuration update fails.</p>

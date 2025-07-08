@@ -2,6 +2,8 @@
 
 /// <p>Over-the-air (OTA) task rollout config.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OtaTaskExecutionRolloutConfig {
     /// <p>Structure representing exponential rate of rollout for an over-the-air (OTA) task.</p>
