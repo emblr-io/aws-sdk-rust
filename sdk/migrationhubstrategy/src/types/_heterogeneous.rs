@@ -2,6 +2,8 @@
 
 /// <p>The object containing details about heterogeneous database preferences.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Heterogeneous {
     /// <p>The target database engine for heterogeneous database migration preference.</p>

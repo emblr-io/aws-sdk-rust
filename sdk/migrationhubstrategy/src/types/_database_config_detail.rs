@@ -2,6 +2,8 @@
 
 /// <p>Configuration information used for assessing databases.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseConfigDetail {
     /// <p>AWS Secrets Manager key that holds the credentials that you use to connect to a database.</p>

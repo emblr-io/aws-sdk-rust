@@ -2,6 +2,8 @@
 
 /// <p>Information about the import file tasks you request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImportFileTaskInformation {
     /// <p>The ID of the import file task.</p>

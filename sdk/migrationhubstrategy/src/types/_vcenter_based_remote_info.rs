@@ -2,6 +2,8 @@
 
 /// <p>Details about the server in vCenter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VcenterBasedRemoteInfo {
     /// <p>The time when the remote server based on vCenter was last configured.</p>

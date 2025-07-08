@@ -2,6 +2,8 @@
 
 /// <p>Object containing the choice of application destination that you specify.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsManagedResources {
     /// <p>The choice of application destination that you specify.</p>

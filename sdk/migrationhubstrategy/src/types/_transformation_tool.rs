@@ -2,6 +2,8 @@
 
 /// <p>Information of the transformation tool that can be used to migrate and modernize the application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformationTool {
     /// <p>Name of the tool.</p>

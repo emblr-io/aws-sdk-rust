@@ -2,6 +2,8 @@
 
 /// <p>The object containing details about database migration preferences, when you have no particular preference.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NoDatabaseMigrationPreference {
     /// <p>The target database engine for database migration preference that you specify.</p>
