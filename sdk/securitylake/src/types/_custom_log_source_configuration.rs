@@ -2,6 +2,8 @@
 
 /// <p>The configuration used for the third-party custom source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomLogSourceConfiguration {
     /// <p>The configuration used for the Glue Crawler for a third-party custom source.</p>

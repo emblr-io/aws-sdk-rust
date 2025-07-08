@@ -2,6 +2,8 @@
 
 /// <p>Amazon Security Lake can collect logs and events from natively-supported Amazon Web Services services and custom sources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogSource {
     /// <p>Specify the account from which you want to collect logs.</p>

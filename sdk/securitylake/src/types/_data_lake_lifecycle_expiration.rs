@@ -2,6 +2,8 @@
 
 /// <p>Provide expiration lifecycle details of Amazon Security Lake object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataLakeLifecycleExpiration {
     /// <p>Number of days before data expires in the Amazon Security Lake object.</p>

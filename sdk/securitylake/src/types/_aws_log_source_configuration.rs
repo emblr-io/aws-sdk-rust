@@ -2,6 +2,8 @@
 
 /// <p>To add a natively-supported Amazon Web Services service as a log source, use these parameters to specify the configuration settings for the log source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsLogSourceConfiguration {
     /// <p>Specify the Amazon Web Services account information where you want to enable Security Lake.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configurations used for HTTPS subscriber notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpsNotificationConfiguration {
     /// <p>The subscription endpoint in Security Lake. If you prefer notification with an HTTPs endpoint, populate this field.</p>
