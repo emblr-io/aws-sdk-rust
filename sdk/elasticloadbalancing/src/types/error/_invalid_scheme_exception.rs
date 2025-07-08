@@ -2,6 +2,8 @@
 
 /// <p>The specified value for the schema is not valid. You can only specify a scheme for load balancers in a VPC.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidSchemeException {
     #[allow(missing_docs)] // documentation missing in model

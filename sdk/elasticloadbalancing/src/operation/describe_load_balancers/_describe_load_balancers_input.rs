@@ -2,6 +2,8 @@
 
 /// <p>Contains the parameters for DescribeLoadBalancers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeLoadBalancersInput {
     /// <p>The names of the load balancers.</p>
