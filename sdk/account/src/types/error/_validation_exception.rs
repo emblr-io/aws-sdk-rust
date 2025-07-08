@@ -2,6 +2,8 @@
 
 /// <p>The operation failed because one of the input parameters was invalid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ValidationException {
     /// <p>The message that informs you about what was invalid about the request.</p>
