@@ -2,6 +2,8 @@
 
 /// <p>Settings that control the interval after which a channel is deleted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExpirationSettings {
     /// <p>The period in days after which the system automatically deletes a channel.</p>

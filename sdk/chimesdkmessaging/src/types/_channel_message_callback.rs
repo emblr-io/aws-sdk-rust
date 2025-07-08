@@ -2,6 +2,8 @@
 
 /// <p>Stores information about a callback.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ChannelMessageCallback {
     /// <p>The message ID.</p>

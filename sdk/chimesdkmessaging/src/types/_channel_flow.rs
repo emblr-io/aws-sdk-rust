@@ -2,6 +2,8 @@
 
 /// <p>The details of a channel flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct ChannelFlow {
     /// <p>The ARN of the channel flow.</p>
