@@ -2,6 +2,8 @@
 
 /// <p>Summary of the deployment configuration of a model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelVariantConfigSummary {
     /// <p>The name of the Amazon SageMaker Model entity.</p>

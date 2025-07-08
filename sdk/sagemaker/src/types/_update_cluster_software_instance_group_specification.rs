@@ -2,6 +2,8 @@
 
 /// <p>The configuration that describes specifications of the instance groups to update.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateClusterSoftwareInstanceGroupSpecification {
     /// <p>The name of the instance group to update.</p>

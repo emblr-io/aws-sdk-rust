@@ -2,6 +2,8 @@
 
 /// <p>The configuration for the infrastructure that the model will be deployed to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelInfrastructureConfig {
     /// <p>The inference option to which to deploy your model. Possible values are the following:</p>

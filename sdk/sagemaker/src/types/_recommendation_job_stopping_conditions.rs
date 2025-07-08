@@ -2,6 +2,8 @@
 
 /// <p>Specifies conditions for stopping a job. When a job reaches a stopping condition limit, SageMaker ends the job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationJobStoppingConditions {
     /// <p>The maximum number of requests per minute expected for the endpoint.</p>

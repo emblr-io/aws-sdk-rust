@@ -2,6 +2,8 @@
 
 /// <p>The performance results from running an Inference Recommender job on an existing endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointPerformance {
     /// <p>The metrics for an existing endpoint.</p>

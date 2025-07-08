@@ -2,6 +2,8 @@
 
 /// <p>Identifies a Amazon Cognito user group. A user group can be used in on or more work teams.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CognitoMemberDefinition {
     /// <p>An identifier for a user pool. The user pool must be in the same region as the service that you are calling.</p>

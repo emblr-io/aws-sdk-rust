@@ -2,6 +2,8 @@
 
 /// <p>A summary of a model compilation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompilationJobSummary {
     /// <p>The name of the model compilation job that you want a summary for.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies details about how containers in a multi-container endpoint are run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceExecutionConfig {
     /// <p>How containers in a multi-container are run. The following values are valid.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The settings for assigning a custom Amazon FSx for Lustre file system to a user profile or space for an Amazon SageMaker Domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FSxLustreFileSystemConfig {
     /// <p>The globally unique, 17-digit, ID of the file system, assigned by Amazon FSx for Lustre.</p>

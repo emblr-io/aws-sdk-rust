@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information for a work team.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelingJobForWorkteamSummary {
     /// <p>The name of the labeling job that the work team is assigned to.</p>

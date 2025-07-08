@@ -2,6 +2,8 @@
 
 /// <p>Defines the model configuration. Includes the specification name and environment parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelConfiguration {
     /// <p>The inference specification name in the model package version.</p>

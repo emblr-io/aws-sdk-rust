@@ -2,6 +2,8 @@
 
 /// <p>An object containing a recommended scaling policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ScalingPolicy {
     /// <p>A target tracking scaling policy. Includes support for predefined or customized metrics.</p>

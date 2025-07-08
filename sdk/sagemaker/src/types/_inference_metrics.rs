@@ -2,6 +2,8 @@
 
 /// <p>The metrics for an existing endpoint compared in an Inference Recommender job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceMetrics {
     /// <p>The expected maximum number of requests per minute for the instance.</p>

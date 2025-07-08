@@ -2,6 +2,8 @@
 
 /// <p>Information about the status of the rule evaluation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProfilerRuleEvaluationStatus {
     /// <p>The name of the rule configuration.</p>

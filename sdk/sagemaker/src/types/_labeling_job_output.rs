@@ -2,6 +2,8 @@
 
 /// <p>Specifies the location of the output produced by the labeling job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelingJobOutput {
     /// <p>The Amazon S3 bucket location of the manifest file for labeled data.</p>

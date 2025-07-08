@@ -2,6 +2,8 @@
 
 /// <p>A data source used for training or inference that is in addition to the input dataset or model data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AdditionalS3DataSource {
     /// <p>The data type of the additional data source that you specify for use in inference or training.</p>

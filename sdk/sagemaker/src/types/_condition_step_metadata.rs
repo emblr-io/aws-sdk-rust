@@ -2,6 +2,8 @@
 
 /// <p>Metadata for a Condition step.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConditionStepMetadata {
     /// <p>The outcome of the Condition step evaluation.</p>

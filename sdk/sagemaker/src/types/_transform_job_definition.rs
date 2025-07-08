@@ -2,6 +2,8 @@
 
 /// <p>Defines the input needed to run a transform job using the inference specification specified in the algorithm.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransformJobDefinition {
     /// <p>The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1.</p>

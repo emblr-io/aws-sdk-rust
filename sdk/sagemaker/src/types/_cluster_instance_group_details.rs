@@ -2,6 +2,8 @@
 
 /// <p>Details of an instance group in a SageMaker HyperPod cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterInstanceGroupDetails {
     /// <p>The number of instances that are currently in the instance group of a SageMaker HyperPod cluster.</p>

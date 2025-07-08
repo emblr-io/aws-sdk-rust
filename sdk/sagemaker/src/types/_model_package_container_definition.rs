@@ -2,6 +2,8 @@
 
 /// <p>Describes the Docker container for the model package.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPackageContainerDefinition {
     /// <p>The DNS host name for the Docker container.</p>

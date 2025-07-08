@@ -2,6 +2,8 @@
 
 /// <p>A collection of default EBS storage settings that apply to spaces created within a domain or user profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DefaultEbsStorageSettings {
     /// <p>The default size of the EBS storage volume for a space.</p>

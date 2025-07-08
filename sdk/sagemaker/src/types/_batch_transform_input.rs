@@ -2,6 +2,8 @@
 
 /// <p>Input object for the batch transform job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchTransformInput {
     /// <p>The Amazon S3 location being used to capture the data.</p>

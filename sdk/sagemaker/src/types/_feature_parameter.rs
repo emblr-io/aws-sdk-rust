@@ -2,6 +2,8 @@
 
 /// <p>A key-value pair that you specify to describe the feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FeatureParameter {
     /// <p>A key that must contain a value to describe the feature.</p>

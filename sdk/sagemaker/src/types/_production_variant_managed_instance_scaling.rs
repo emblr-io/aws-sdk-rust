@@ -2,6 +2,8 @@
 
 /// <p>Settings that control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionVariantManagedInstanceScaling {
     /// <p>Indicates whether managed instance scaling is enabled.</p>

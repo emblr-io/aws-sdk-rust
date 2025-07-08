@@ -2,6 +2,8 @@
 
 /// <p>The target entity to allocate compute resources to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeQuotaTarget {
     /// <p>Name of the team to allocate compute resources to.</p>

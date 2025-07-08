@@ -2,6 +2,8 @@
 
 /// <p>A monitoring schedule for a model displayed in the Amazon SageMaker Model Dashboard.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelDashboardMonitoringSchedule {
     /// <p>The Amazon Resource Name (ARN) of a monitoring schedule.</p>

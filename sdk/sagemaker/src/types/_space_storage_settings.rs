@@ -2,6 +2,8 @@
 
 /// <p>The storage settings for a space.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SpaceStorageSettings {
     /// <p>A collection of EBS storage settings for a space.</p>

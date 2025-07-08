@@ -2,6 +2,8 @@
 
 /// <p>A time limit for how long the monitoring job is allowed to run before stopping.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringStoppingCondition {
     /// <p>The maximum runtime allowed in seconds.</p><note>

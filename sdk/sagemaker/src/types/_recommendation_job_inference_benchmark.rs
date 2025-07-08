@@ -2,6 +2,8 @@
 
 /// <p>The details for a specific benchmark from an Inference Recommender job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationJobInferenceBenchmark {
     /// <p>The metrics of recommendations.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The configuration object of the schedule that SageMaker follows when updating the AMI.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduledUpdateConfig {
     /// <p>A cron expression that specifies the schedule that SageMaker follows when updating the AMI.</p>

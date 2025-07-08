@@ -2,6 +2,8 @@
 
 /// <p>A structure describing the current state of the model in its life cycle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelLifeCycle {
     /// <p>The current stage in the model life cycle.</p>

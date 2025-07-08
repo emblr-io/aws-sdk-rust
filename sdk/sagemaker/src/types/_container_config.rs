@@ -2,6 +2,8 @@
 
 /// <p>The configuration used to run the application image container.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerConfig {
     /// <p>The arguments for the container when you're running the application.</p>

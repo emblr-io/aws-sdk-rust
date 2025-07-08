@@ -2,6 +2,8 @@
 
 /// <p>Represents the dataset format used when running a monitoring job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringDatasetFormat {
     /// <p>The CSV dataset used in the monitoring job.</p>

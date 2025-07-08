@@ -2,6 +2,8 @@
 
 /// <p>The endpoint configuration made by Inference Recommender during a recommendation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointOutputConfiguration {
     /// <p>The name of the endpoint made during a recommendation job.</p>

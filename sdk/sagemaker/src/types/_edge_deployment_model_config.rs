@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the configuration of a model in a deployment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdgeDeploymentModelConfig {
     /// <p>The name the device application uses to reference this model.</p>

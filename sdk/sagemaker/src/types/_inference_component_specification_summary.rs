@@ -2,6 +2,8 @@
 
 /// <p>Details about the resources that are deployed with this inference component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceComponentSpecificationSummary {
     /// <p>The name of the SageMaker AI model object that is deployed with the inference component.</p>

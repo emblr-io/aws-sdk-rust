@@ -2,6 +2,8 @@
 
 /// <p>A lineage entity connected to the starting entity(ies).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Vertex {
     /// <p>The Amazon Resource Name (ARN) of the lineage entity resource.</p>

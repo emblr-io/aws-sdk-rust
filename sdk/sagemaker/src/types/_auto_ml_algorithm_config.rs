@@ -2,6 +2,8 @@
 
 /// <p>The selection of algorithms trained on your dataset to generate the model candidates for an Autopilot job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoMlAlgorithmConfig {
     /// <p>The selection of algorithms trained on your dataset to generate the model candidates for an Autopilot job.</p>

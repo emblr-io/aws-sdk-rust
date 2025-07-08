@@ -2,6 +2,8 @@
 
 /// <p>Details about an Amazon SageMaker AI app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AppDetails {
     /// <p>The domain ID.</p>

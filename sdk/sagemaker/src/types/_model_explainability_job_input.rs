@@ -2,6 +2,8 @@
 
 /// <p>Inputs for the model explainability job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelExplainabilityJobInput {
     /// <p>Input object for the endpoint</p>

@@ -2,6 +2,8 @@
 
 /// <p>A version of a SageMaker AI <code>Image</code>. A version represents an existing container image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ImageVersion {
     /// <p>When the version was created.</p>

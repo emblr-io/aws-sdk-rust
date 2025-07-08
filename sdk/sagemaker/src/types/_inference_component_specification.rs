@@ -2,6 +2,8 @@
 
 /// <p>Details about the resources to deploy with this inference component, including the model, container, and compute resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InferenceComponentSpecification {
     /// <p>The name of an existing SageMaker AI model object in your account that you want to deploy with the inference component.</p>

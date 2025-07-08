@@ -2,6 +2,8 @@
 
 /// <p>Configuration details about the monitoring schedule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScheduleConfig {
     /// <p>A cron expression that describes details about the monitoring schedule.</p>

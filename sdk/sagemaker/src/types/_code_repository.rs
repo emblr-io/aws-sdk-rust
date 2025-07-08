@@ -2,6 +2,8 @@
 
 /// <p>A Git repository that SageMaker AI automatically displays to users for cloning in the JupyterServer application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeRepository {
     /// <p>The URL of the Git repository.</p>

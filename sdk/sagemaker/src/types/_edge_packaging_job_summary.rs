@@ -2,6 +2,8 @@
 
 /// <p>Summary of edge packaging job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EdgePackagingJobSummary {
     /// <p>The Amazon Resource Name (ARN) of the edge packaging job.</p>

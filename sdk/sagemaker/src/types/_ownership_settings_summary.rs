@@ -2,6 +2,8 @@
 
 /// <p>Specifies summary information about the ownership settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OwnershipSettingsSummary {
     /// <p>The user profile who is the owner of the space.</p>

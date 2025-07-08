@@ -2,6 +2,8 @@
 
 /// <p>Configuration of the resources used for the compute allocation definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComputeQuotaResourceConfig {
     /// <p>The instance type of the instance group for the cluster.</p>

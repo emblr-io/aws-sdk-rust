@@ -2,6 +2,8 @@
 
 /// <p>For a hyperparameter of the integer type, specifies the range that a hyperparameter tuning job searches.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntegerParameterRange {
     /// <p>The name of the hyperparameter to search.</p>

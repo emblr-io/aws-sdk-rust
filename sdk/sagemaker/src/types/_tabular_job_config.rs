@@ -2,6 +2,8 @@
 
 /// <p>The collection of settings used by an AutoML job V2 for the tabular problem type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TabularJobConfig {
     /// <p>The configuration information of how model candidates are generated.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Defines the possible values for a continuous hyperparameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousParameterRangeSpecification {
     /// <p>The minimum floating-point value allowed.</p>

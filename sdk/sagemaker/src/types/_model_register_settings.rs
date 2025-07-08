@@ -2,6 +2,8 @@
 
 /// <p>The model registry settings for the SageMaker Canvas application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelRegisterSettings {
     /// <p>Describes whether the integration to the model registry is enabled or disabled in the Canvas application.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the CSV dataset format used when running a monitoring job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringCsvDatasetFormat {
     /// <p>Indicates if the CSV data has a header.</p>
