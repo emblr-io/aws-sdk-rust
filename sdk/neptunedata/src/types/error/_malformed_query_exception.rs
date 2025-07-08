@@ -2,6 +2,8 @@
 
 /// <p>Raised when a query is submitted that is syntactically incorrect or does not pass additional validation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MalformedQueryException {
     /// <p>A detailed message describing the problem.</p>

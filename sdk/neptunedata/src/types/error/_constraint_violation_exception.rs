@@ -2,6 +2,8 @@
 
 /// <p>Raised when a value in a request field did not satisfy required constraints.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConstraintViolationException {
     /// <p>A detailed message describing the problem.</p>

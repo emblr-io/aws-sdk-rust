@@ -2,6 +2,8 @@
 
 /// <p>Raised when a request attempts to initiate an operation that is not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedOperationException {
     /// <p>A detailed message describing the problem.</p>

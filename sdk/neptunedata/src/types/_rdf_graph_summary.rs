@@ -2,6 +2,8 @@
 
 /// <p>The RDF graph summary API returns a read-only list of classes and predicate keys, along with counts of quads, subjects, and predicates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdfGraphSummary {
     /// <p>The number of distinct subjects in the graph.</p>
