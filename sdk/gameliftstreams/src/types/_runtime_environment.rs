@@ -21,6 +21,8 @@
 /// </ul></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuntimeEnvironment {
     /// <p>The operating system and other drivers. For Proton, this also includes the Proton compatibility layer.</p>
