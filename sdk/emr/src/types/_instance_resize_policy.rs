@@ -2,6 +2,8 @@
 
 /// <p>Custom policy for requesting termination protection or termination of specific instances when shrinking an instance group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceResizePolicy {
     /// <p>Specific list of instances to be terminated when shrinking an instance group.</p>

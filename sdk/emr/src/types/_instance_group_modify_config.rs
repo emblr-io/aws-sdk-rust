@@ -2,6 +2,8 @@
 
 /// <p>Modify the size or configurations of an instance group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceGroupModifyConfig {
     /// <p>Unique ID of the instance group to modify.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Change the size of some instance groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModifyInstanceGroupsInput {
     /// <p>The ID of the cluster to which the instance group belongs.</p>

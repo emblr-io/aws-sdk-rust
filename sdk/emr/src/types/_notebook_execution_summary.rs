@@ -2,6 +2,8 @@
 
 /// <p>Details for a notebook execution. The details include information such as the unique ID and status of the notebook execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotebookExecutionSummary {
     /// <p>The unique identifier of the notebook execution.</p>

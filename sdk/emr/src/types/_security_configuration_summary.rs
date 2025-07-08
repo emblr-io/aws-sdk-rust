@@ -2,6 +2,8 @@
 
 /// <p>The creation date and time, and name, of a security configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SecurityConfigurationSummary {
     /// <p>The name of the security configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 location that stores the notebook execution output.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OutputNotebookS3LocationFromInput {
     /// <p>The Amazon S3 bucket that stores the notebook execution output.</p>

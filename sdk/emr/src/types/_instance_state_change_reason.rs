@@ -2,6 +2,8 @@
 
 /// <p>The details of the status change reason for the instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceStateChangeReason {
     /// <p>The programmable code for the state change reason.</p>
