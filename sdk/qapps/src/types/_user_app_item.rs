@@ -2,6 +2,8 @@
 
 /// <p>An Amazon Q App associated with a user, either owned by the user or favorited.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserAppItem {
     /// <p>The unique identifier of the Q App.</p>

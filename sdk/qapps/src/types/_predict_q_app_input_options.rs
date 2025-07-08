@@ -2,6 +2,8 @@
 
 /// <p>The input options for generating an Q App definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum PredictQAppInputOptions {
     /// <p>A conversation to use as input for generating the Q App definition.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The value or result associated with a card in a Amazon Q App session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CardValue {
     /// <p>The unique identifier of the card.</p>

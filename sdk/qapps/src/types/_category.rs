@@ -2,6 +2,8 @@
 
 /// <p>A category used to classify and filter library items for Amazon Q Apps.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Category {
     /// <p>The unique identifier of the category.</p>
