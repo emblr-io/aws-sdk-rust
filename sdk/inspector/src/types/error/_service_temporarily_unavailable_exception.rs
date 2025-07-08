@@ -2,6 +2,8 @@
 
 /// <p>The serice is temporary unavailable.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceTemporarilyUnavailableException {
     /// <p>Details of the exception error.</p>

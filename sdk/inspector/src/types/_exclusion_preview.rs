@@ -2,6 +2,8 @@
 
 /// <p>Contains information about what is excluded from an assessment run given the current state of the assessment template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExclusionPreview {
     /// <p>The name of the exclusion preview.</p>

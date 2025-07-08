@@ -2,6 +2,8 @@
 
 /// <p>You cannot perform a specified action if an assessment run is currently in progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentRunInProgressException {
     /// <p>Details of the exception error.</p>

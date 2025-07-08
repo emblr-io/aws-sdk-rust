@@ -2,6 +2,8 @@
 
 /// <p>Contains information about an Amazon Inspector agent. This data type is used as a response element in the <code>ListAssessmentRunAgents</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssessmentRunAgent {
     /// <p>The AWS account of the EC2 instance where the agent is installed.</p>
