@@ -2,6 +2,8 @@
 
 /// <p>The managed log persistence configuration for a job run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ManagedPersistenceMonitoringConfiguration {
     /// <p>Enables managed logging and defaults to true. If set to false, managed logging will be turned off.</p>

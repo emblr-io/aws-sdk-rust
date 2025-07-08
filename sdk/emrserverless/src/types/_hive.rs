@@ -2,6 +2,8 @@
 
 /// <p>The configurations for the Hive job driver.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Hive {
     /// <p>The query for the Hive job run.</p>

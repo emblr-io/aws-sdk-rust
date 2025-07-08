@@ -2,6 +2,8 @@
 
 /// <p>The cumulative configuration requirements for every worker instance of the worker type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkerResourceConfig {
     /// <p>The CPU requirements for every worker instance of the worker type.</p>

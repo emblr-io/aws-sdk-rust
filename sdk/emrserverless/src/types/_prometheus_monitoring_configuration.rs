@@ -2,6 +2,8 @@
 
 /// <p>The monitoring configuration object you can configure to send metrics to Amazon Managed Service for Prometheus for a job run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrometheusMonitoringConfiguration {
     /// <p>The remote write URL in the Amazon Managed Service for Prometheus workspace to send metrics to.</p>
