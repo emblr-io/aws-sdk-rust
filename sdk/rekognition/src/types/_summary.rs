@@ -3,6 +3,8 @@
 /// <p>The S3 bucket that contains the training summary. The training summary includes aggregated evaluation metrics for the entire testing dataset and metrics for each individual label.</p>
 /// <p>You get the training summary S3 bucket location by calling <code>DescribeProjectVersions</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Summary {
     /// <p>Provides the S3 bucket name and object name.</p>

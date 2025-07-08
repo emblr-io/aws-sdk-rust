@@ -2,6 +2,8 @@
 
 /// <p>A potential alias of for a given label.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LabelAlias {
     /// <p>The name of an alias for a given label.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides face metadata. In addition, it also provides the confidence in the match of this face with the input face.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FaceMatch {
     /// <p>Confidence in the match of this face with the input face.</p>

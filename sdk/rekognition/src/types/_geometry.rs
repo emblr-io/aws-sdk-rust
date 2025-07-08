@@ -2,6 +2,8 @@
 
 /// <p>Information about where an object (<code>DetectCustomLabels</code>) or text (<code>DetectText</code>) is located on an image.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Geometry {
     /// <p>An axis-aligned coarse representation of the detected item's location on the image.</p>

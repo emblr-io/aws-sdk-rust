@@ -2,6 +2,8 @@
 
 /// <p>Summary that provides statistics on input manifest and errors identified in the input manifest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaAnalysisManifestSummary {
     /// <p>Provides the S3 bucket name and object name.</p>

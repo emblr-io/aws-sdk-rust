@@ -2,6 +2,8 @@
 
 /// <p>Output configuration provided in the job creation request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaAnalysisOutputConfig {
     /// <p>Specifies the Amazon S3 bucket to contain the output of the media analysis job.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Assets are the images that you use to train and evaluate a model version. Assets can also contain validation information that you use to debug a failed model training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Asset {
     /// <p>The S3 bucket that contains an Amazon Sagemaker Ground Truth format manifest file.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object that recognizes faces or labels in a streaming video. An Amazon Rekognition stream processor is created by a call to <code>CreateStreamProcessor</code>. The request parameters for <code>CreateStreamProcessor</code> describe the Kinesis video stream source for the streaming video, face recognition parameters, and where to stream the analysis resullts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamProcessor {
     /// <p>Name of the Amazon Rekognition stream processor.</p>

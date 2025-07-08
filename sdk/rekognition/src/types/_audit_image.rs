@@ -2,6 +2,8 @@
 
 /// <p>An image that is picked from the Face Liveness video and returned for audit trail purposes, returned as Base64-encoded bytes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct AuditImage {
     /// <p>The Base64-encoded bytes representing an image selected from the Face Liveness video and returned for audit purposes.</p>

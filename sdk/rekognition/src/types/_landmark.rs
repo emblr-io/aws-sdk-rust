@@ -2,6 +2,8 @@
 
 /// <p>Indicates the location of the landmark on the face.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Landmark {
     /// <p>Type of landmark.</p>

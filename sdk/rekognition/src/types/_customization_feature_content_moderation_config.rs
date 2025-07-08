@@ -2,6 +2,8 @@
 
 /// <p>Configuration options for Content Moderation training.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomizationFeatureContentModerationConfig {
     /// <p>The confidence level you plan to use to identify if unsafe content is present during inference.</p>

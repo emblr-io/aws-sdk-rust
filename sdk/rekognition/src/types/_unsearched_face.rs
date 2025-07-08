@@ -2,6 +2,8 @@
 
 /// <p>Face details inferred from the image but not used for search. The response attribute contains reasons for why a face wasn't used for Search.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsearchedFace {
     /// <p>Structure containing attributes of the face that the algorithm detected.</p>

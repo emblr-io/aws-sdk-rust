@@ -2,6 +2,8 @@
 
 /// <p>Information about a person whose face matches a face(s) in an Amazon Rekognition collection. Includes information about the faces in the Amazon Rekognition collection (<code>FaceMatch</code>), information about the person (<code>PersonDetail</code>), and the time stamp for when the person was detected in a video. An array of <code>PersonMatch</code> objects is returned by <code>GetFaceSearch</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PersonMatch {
     /// <p>The time, in milliseconds from the beginning of the video, that the person was matched in the video.</p>

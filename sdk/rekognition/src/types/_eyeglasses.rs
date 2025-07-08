@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether or not the face is wearing eye glasses, and the confidence level in the determination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Eyeglasses {
     /// <p>Boolean value that indicates whether the face is wearing eye glasses or not.</p>

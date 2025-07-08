@@ -2,6 +2,8 @@
 
 /// <p>Information about a technical cue segment. For more information, see <code>SegmentDetection</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TechnicalCueSegment {
     /// <p>The type of the technical cue.</p>

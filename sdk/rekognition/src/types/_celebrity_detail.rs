@@ -2,6 +2,8 @@
 
 /// <p>Information about a recognized celebrity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CelebrityDetail {
     /// <p>An array of URLs pointing to additional celebrity information.</p>

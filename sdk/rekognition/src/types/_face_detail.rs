@@ -13,6 +13,8 @@
 /// </ul>
 /// <p>The Amazon Rekognition Image <code>DetectFaces</code> and <code>IndexFaces</code> operations can return all facial attributes. To specify which attributes to return, use the <code>Attributes</code> input parameter for <code>DetectFaces</code>. For <code>IndexFaces</code>, use the <code>DetectAttributes</code> input parameter.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FaceDetail {
     /// <p>Bounding box of the face. Default attribute.</p>

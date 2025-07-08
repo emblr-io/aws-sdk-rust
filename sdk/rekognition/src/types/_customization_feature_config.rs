@@ -2,6 +2,8 @@
 
 /// <p>Feature specific configuration for the training job. Configuration provided for the job must match the feature type parameter associated with project. If configuration and feature type do not match an InvalidParameterException is returned.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomizationFeatureConfig {
     /// <p>Configuration options for Custom Moderation training.</p>

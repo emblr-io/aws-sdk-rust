@@ -2,6 +2,8 @@
 
 /// <p>Summary information for an Amazon Rekognition Custom Labels dataset. For more information, see <code>ProjectDescription</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetMetadata {
     /// <p>The Unix timestamp for the date and time that the dataset was created.</p>
