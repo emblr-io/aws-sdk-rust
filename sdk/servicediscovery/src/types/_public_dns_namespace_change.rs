@@ -2,6 +2,8 @@
 
 /// <p>Updated properties for the public DNS namespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PublicDnsNamespaceChange {
     /// <p>An updated description for the public DNS namespace.</p>

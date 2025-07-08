@@ -2,6 +2,8 @@
 
 /// <p>The attribute can't be added to the service because you've exceeded the quota for the number of attributes you can add to a service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceAttributesLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model
