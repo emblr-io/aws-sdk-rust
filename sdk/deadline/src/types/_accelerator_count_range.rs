@@ -2,6 +2,8 @@
 
 /// <p>Defines the maximum and minimum number of GPU accelerators required for a worker instance..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceleratorCountRange {
     /// <p>The minimum number of GPU accelerators in the worker host.</p>

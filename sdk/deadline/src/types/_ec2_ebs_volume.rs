@@ -2,6 +2,8 @@
 
 /// <p>Specifies the EBS volume.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Ec2EbsVolume {
     /// <p>The EBS volume size in GiB.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Amazon EC2 instance capabilities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceManagedEc2InstanceCapabilities {
     /// <p>The amount of vCPU to require for instances in this fleet.</p>

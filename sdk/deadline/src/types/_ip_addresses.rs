@@ -2,6 +2,8 @@
 
 /// <p>The IP addresses for a host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IpAddresses {
     /// <p>The IpV4 address of the network.</p>

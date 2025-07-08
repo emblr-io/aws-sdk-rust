@@ -2,6 +2,8 @@
 
 /// <p>The assigned starting environment for a worker during session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssignedEnvironmentEnterSessionActionDefinition {
     /// <p>The environment ID of the assigned environment at the start of a session.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The environment ID to use to enter a session action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentEnterSessionActionDefinition {
     /// <p>The environment ID.</p>

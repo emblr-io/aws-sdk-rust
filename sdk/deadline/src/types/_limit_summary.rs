@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a specific limit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LimitSummary {
     /// <p>The name of the limit used in lists to identify the limit.</p><important>

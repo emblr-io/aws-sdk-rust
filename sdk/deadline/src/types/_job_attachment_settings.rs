@@ -2,6 +2,8 @@
 
 /// <p>The job attachment settings. These are the Amazon S3 bucket name and the Amazon S3 prefix.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobAttachmentSettings {
     /// <p>The Amazon S3 bucket name.</p>

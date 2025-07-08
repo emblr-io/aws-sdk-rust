@@ -2,6 +2,8 @@
 
 /// <p>The job attachment in a session action to sync.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SyncInputJobAttachmentsSessionActionDefinition {
     /// <p>The step ID for the step in the job attachment.</p>

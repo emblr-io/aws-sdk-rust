@@ -2,6 +2,8 @@
 
 /// <p>The details of required step capabilities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StepRequiredCapabilities {
     /// <p>The capability attributes that the step requires.</p>

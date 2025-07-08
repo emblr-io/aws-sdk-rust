@@ -2,6 +2,8 @@
 
 /// <p>Organizes parameters according to your specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParameterSortExpression {
     /// <p>The sort order for the parameter.</p>

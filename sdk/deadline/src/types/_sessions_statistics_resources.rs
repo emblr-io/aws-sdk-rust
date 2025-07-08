@@ -2,6 +2,8 @@
 
 /// <p>Specifies the fleet IDs or queue IDs to return statistics. You can specify only fleet IDs or queue IDS, not both.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SessionsStatisticsResources {
     /// <p>One to 10 fleet IDs that specify the fleets to return statistics for. If you specify the <code>fleetIds</code> field, you can't specify the <code>queueIds</code> field.</p>

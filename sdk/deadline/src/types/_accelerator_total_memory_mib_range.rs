@@ -2,6 +2,8 @@
 
 /// <p>Defines the maximum and minimum amount of memory, in MiB, to use for the accelerator.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceleratorTotalMemoryMiBRange {
     /// <p>The minimum amount of memory to use for the accelerator, measured in MiB.</p>

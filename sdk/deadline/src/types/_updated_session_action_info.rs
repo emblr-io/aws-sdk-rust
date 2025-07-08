@@ -2,6 +2,8 @@
 
 /// <p>The updated session action information as it relates to completion and progress of the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UpdatedSessionActionInfo {
     /// <p>The status of the session upon completion.</p>

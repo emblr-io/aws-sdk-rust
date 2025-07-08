@@ -2,6 +2,8 @@
 
 /// <p>Identifies the user for a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobRunAsUser {
     /// <p>The user and group that the jobs in the queue run as.</p>

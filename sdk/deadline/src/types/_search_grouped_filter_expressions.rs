@@ -2,6 +2,8 @@
 
 /// <p>The filter expression, <code>AND</code> or <code>OR</code>, to use when searching among a group of search strings in a resource. You can use two groupings per search each within parenthesis <code>()</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchGroupedFilterExpressions {
     /// <p>The filters to use for the search.</p>

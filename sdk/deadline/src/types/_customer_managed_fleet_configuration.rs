@@ -2,6 +2,8 @@
 
 /// <p>The details of a customer managed fleet configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomerManagedFleetConfiguration {
     /// <p>The Auto Scaling mode for the customer managed fleet configuration.</p>

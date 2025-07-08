@@ -2,6 +2,8 @@
 
 /// <p>The details of job parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum JobParameter {
     /// <p>A double precision IEEE-754 floating point number represented as a string.</p>
