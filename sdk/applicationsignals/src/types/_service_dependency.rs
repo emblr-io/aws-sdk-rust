@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about one dependency of this service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceDependency {
     /// <p>The name of the operation in this service that calls the dependency.</p>

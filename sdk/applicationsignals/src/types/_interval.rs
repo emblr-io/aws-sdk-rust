@@ -2,6 +2,8 @@
 
 /// <p>The time period used to evaluate the SLO. It can be either a calendar interval or rolling interval.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Interval {
     /// <p>If the interval is a calendar interval, this structure contains the interval specifications.</p>

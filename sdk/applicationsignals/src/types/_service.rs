@@ -2,6 +2,8 @@
 
 /// <p>This structure contains information about one of your services that was discovered by Application Signals.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Service {
     /// <p>This is a string-to-string map. It can include the following fields.</p>

@@ -5,6 +5,8 @@
 /// <p><i>burn rate = error rate over the look-back window / (100% - attainment goal percentage)</i></p>
 /// <p>For more information about burn rates, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-ServiceLevelObjectives.html#CloudWatch-ServiceLevelObjectives-burn">Calculate burn rates</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BurnRateConfiguration {
     /// <p>The number of minutes to use as the look-back window.</p>

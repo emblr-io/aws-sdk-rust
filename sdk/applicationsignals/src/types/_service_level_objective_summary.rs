@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about one service level objective (SLO) created in Application Signals.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceLevelObjectiveSummary {
     /// <p>The ARN of this service level objective.</p>

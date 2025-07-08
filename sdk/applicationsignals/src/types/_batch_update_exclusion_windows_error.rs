@@ -2,6 +2,8 @@
 
 /// <p>An array of structures, where each structure includes an error indicating that one of the requests in the array was not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchUpdateExclusionWindowsError {
     /// <p>The SLO ID in the error.</p>

@@ -2,6 +2,8 @@
 
 /// <p>This structure specifies the information about the service and the performance metric that a request-based SLO is to monitor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestBasedServiceLevelIndicatorConfig {
     /// <p>Use this structure to specify the metric to be used for the SLO.</p>
