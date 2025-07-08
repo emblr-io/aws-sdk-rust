@@ -2,6 +2,8 @@
 
 /// <p>A cross-account attachment in Global Accelerator. A cross-account attachment specifies the <i>principals</i> who have permission to work with <i>resources</i> in your account, which you also list in the attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Attachment {
     /// <p>The Amazon Resource Name (ARN) of the cross-account attachment.</p>
