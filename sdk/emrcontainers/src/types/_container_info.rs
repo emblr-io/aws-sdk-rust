@@ -2,6 +2,8 @@
 
 /// <p>The information about the container used for a job run or a managed endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ContainerInfo {
     /// <p>The information about the Amazon EKS cluster.</p>

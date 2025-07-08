@@ -2,6 +2,8 @@
 
 /// <p>The information about the container provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerProvider {
     /// <p>The type of the container provider. Amazon EKS is the only supported type as of now.</p>

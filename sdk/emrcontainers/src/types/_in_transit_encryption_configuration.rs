@@ -2,6 +2,8 @@
 
 /// <p>Configurations related to in-transit encryption for the security configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InTransitEncryptionConfiguration {
     /// <p>TLS certificate-related configuration input for the security configuration.</p>

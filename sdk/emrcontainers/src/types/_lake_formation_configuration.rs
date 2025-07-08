@@ -2,6 +2,8 @@
 
 /// <p>Lake Formation related configuration inputs for the security configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LakeFormationConfiguration {
     /// <p>The session tag to authorize Amazon EMR on EKS for API calls to Lake Formation.</p>

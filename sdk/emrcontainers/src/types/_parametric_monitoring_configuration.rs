@@ -2,6 +2,8 @@
 
 /// <p>Configuration setting for monitoring. This data type allows job template parameters to be specified within.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParametricMonitoringConfiguration {
     /// <p>Monitoring configurations for the persistent application UI.</p>

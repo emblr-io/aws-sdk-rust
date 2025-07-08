@@ -2,6 +2,8 @@
 
 /// <p>The information about the Amazon EKS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EksInfo {
     /// <p>The namespaces of the Amazon EKS cluster.</p>

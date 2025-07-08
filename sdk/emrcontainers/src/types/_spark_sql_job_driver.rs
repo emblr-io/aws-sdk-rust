@@ -2,6 +2,8 @@
 
 /// <p>The job driver for job type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SparkSqlJobDriver {
     /// <p>The SQL file to be executed.</p>
