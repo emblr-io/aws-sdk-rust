@@ -2,6 +2,8 @@
 
 /// <p>The request is not valid, for example, the input is incomplete or incorrect. See the accompanying error message for details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BadRequestException {
     /// <p>Describes the error encountered.</p>

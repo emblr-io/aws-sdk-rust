@@ -2,6 +2,8 @@
 
 /// <p>Represents a MatchHeaders condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutingRuleMatchHeaders {
     /// <p>The header name and header value glob to be matched. The matchHeaders condition is matched if any of the header name and header value globs are matched.</p>

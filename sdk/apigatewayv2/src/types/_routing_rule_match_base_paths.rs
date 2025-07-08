@@ -2,6 +2,8 @@
 
 /// <p>Represents a MatchBasePaths condition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutingRuleMatchBasePaths {
     /// The string of the case sensitive base path to be matched.

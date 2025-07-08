@@ -2,6 +2,8 @@
 
 /// <p>Creates a new Stage resource to represent a stage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateStageInput {
     /// <p>Settings for logging access in this stage.</p>

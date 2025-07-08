@@ -2,6 +2,8 @@
 
 /// <p>Represents a route response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteResponse {
     /// <p>Represents the model selection expression of a route response. Supported only for WebSocket APIs.</p>
