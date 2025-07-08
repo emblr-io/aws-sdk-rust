@@ -2,6 +2,8 @@
 
 /// <p>Information about the revision for a specific sync event, such as the branch, owner ID, and name of the repository.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Revision {
     /// <p>The branch name for a specific revision.</p>

@@ -57,7 +57,7 @@
 //! ```toml
 //! [dependencies]
 //! aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-//! aws-sdk-codestarconnections = "1.76.0"
+//! aws-sdk-codestarconnections = "0.0.0-local"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!

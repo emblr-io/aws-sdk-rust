@@ -2,6 +2,8 @@
 
 /// <p>The VPC configuration provisioned for the host.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConfiguration {
     /// <p>The ID of the Amazon VPC connected to the infrastructure where your provider type is installed.</p>
