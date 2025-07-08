@@ -2,6 +2,8 @@
 
 /// <p>Gets suite run configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SuiteRunConfiguration {
     /// <p>Sets the primary device for the test suite run. This requires a thing ARN or a certificate ARN.</p>
