@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines an IBM Db2 LUW endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct IbmDb2Settings {
     /// <p>Database name for the endpoint.</p>

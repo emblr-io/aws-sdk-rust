@@ -2,6 +2,8 @@
 
 /// <p>Provides information about an IBM DB2 LUW data provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IbmDb2LuwDataProviderSettings {
     /// <p>The name of the DB2 LUW server.</p>

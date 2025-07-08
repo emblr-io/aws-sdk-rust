@@ -2,6 +2,8 @@
 
 /// <p>Provides information about a schema conversion action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaConversionRequest {
     /// <p>The schema conversion action status.</p>

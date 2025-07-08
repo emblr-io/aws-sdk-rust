@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines an Amazon Timestream endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestreamSettings {
     /// <p>Database name for the endpoint.</p>

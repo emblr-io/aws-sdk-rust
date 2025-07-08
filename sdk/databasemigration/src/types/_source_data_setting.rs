@@ -2,6 +2,8 @@
 
 /// <p>Defines settings for a source data provider for a data migration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceDataSetting {
     /// <p>The change data capture (CDC) start position for the source data provider.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about the data migration run, including start and stop time, latency, and migration progress.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataMigrationStatistics {
     /// <p>The number of tables loaded in the current data migration run.</p>

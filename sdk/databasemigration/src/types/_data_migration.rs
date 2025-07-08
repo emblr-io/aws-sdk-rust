@@ -2,6 +2,8 @@
 
 /// <p>This object provides information about a DMS data migration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataMigration {
     /// <p>The user-friendly name for the data migration.</p>

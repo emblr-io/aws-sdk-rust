@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the source database to analyze and provide target recommendations according to the specified requirements.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StartRecommendationsRequestEntry {
     /// <p>The identifier of the source database.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides the name of the schema and table to be reloaded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableToReload {
     /// <p>The schema name of the table to be reloaded.</p>

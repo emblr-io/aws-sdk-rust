@@ -2,6 +2,8 @@
 
 /// <p>This object provides a collection of statistics about a serverless replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationStats {
     /// <p>The percent complete for the full load serverless replication.</p>

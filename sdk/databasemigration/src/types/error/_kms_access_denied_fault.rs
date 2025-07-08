@@ -2,6 +2,8 @@
 
 /// <p>The ciphertext references a key that doesn't exist or that the DMS account doesn't have access to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KmsAccessDeniedFault {
     #[allow(missing_docs)] // documentation missing in model

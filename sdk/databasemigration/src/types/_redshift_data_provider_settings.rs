@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines an Amazon Redshift data provider.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RedshiftDataProviderSettings {
     /// <p>The name of the Amazon Redshift server.</p>

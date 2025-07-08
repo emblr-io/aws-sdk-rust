@@ -2,6 +2,8 @@
 
 /// <p>Provides information that defines a schema conversion application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScApplicationAttributes {
     /// <p>The path for the Amazon S3 bucket that the application uses for exporting assessment reports.</p>

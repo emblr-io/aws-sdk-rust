@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings required for kerberos authentication when creating the replication instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KerberosAuthenticationSettings {
     /// <p>Specifies the ID of the secret that stores the key cache file required for kerberos authentication.</p>

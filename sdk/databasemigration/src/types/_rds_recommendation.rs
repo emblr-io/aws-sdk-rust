@@ -2,6 +2,8 @@
 
 /// <p>Provides information that describes a recommendation of a target engine on Amazon RDS.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RdsRecommendation {
     /// <p>Supplemental information about the requirements to the recommended target database on Amazon RDS.</p>

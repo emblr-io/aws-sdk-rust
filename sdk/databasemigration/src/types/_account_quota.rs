@@ -2,6 +2,8 @@
 
 /// <p>Describes a quota for an Amazon Web Services account, for example the number of replication instances allowed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountQuota {
     /// <p>The name of the DMS quota for this Amazon Web Services account.</p>
