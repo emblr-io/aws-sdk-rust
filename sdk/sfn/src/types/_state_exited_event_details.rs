@@ -2,6 +2,8 @@
 
 /// <p>Contains details about an exit from a state during an execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct StateExitedEventDetails {
     /// <p>The name of the state.</p>

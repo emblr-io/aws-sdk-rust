@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of state machines has been reached. Existing state machines must be deleted before a new state machine can be created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StateMachineLimitExceeded {
     #[allow(missing_docs)] // documentation missing in model

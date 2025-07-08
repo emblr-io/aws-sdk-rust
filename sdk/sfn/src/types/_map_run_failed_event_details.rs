@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a Map Run failure event that occurred during a state machine execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MapRunFailedEventDetails {
     /// <p>The error code of the Map Run failure.</p>

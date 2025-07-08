@@ -2,6 +2,8 @@
 
 /// <p>Contains additional details about the state's execution, including its input and output data processing flow, and HTTP request and response information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InspectionData {
     /// <p>The raw state input.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the credentials that Step Functions uses for a task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskCredentials {
     /// <p>The ARN of an IAM role that Step Functions assumes for the task. The role can allow cross-account access to resources.</p>

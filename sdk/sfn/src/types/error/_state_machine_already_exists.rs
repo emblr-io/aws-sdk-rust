@@ -2,6 +2,8 @@
 
 /// <p>A state machine with the same name but a different definition or role ARN already exists.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StateMachineAlreadyExists {
     #[allow(missing_docs)] // documentation missing in model

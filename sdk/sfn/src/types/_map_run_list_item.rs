@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a specific Map Run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MapRunListItem {
     /// <p>The <code>executionArn</code> of the execution from which the Map Run was started.</p>

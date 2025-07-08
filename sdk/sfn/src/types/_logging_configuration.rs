@@ -2,6 +2,8 @@
 
 /// <p>The <code>LoggingConfiguration</code> data type is used to set CloudWatch Logs options.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LoggingConfiguration {
     /// <p>Defines which category of execution history events are logged.</p>
