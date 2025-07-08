@@ -2,6 +2,8 @@
 
 /// <p>The stream processing failed because of an unknown error, exception or failure. Try your request again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalStreamFailure {
     #[allow(missing_docs)] // documentation missing in model

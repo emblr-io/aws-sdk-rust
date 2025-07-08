@@ -2,6 +2,8 @@
 
 /// <p>Model (owned by the customer in the container) returned 4xx or 5xx error code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelError {
     #[allow(missing_docs)] // documentation missing in model
