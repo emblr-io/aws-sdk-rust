@@ -2,6 +2,8 @@
 
 /// Use these settings to insert a DVB Network Information Table (NIT) in the transport stream of this output.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DvbNitSettings {
     /// The numeric value placed in the Network Information Table (NIT).

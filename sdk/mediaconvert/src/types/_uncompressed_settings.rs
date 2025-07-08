@@ -2,6 +2,8 @@
 
 /// Required when you set Codec, under VideoDescription&gt;CodecSettings to the value UNCOMPRESSED.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UncompressedSettings {
     /// The four character code for the uncompressed video.

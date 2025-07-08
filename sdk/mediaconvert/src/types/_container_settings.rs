@@ -2,6 +2,8 @@
 
 /// Container specific settings.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerSettings {
     /// These settings relate to the fragmented MP4 container for the segments in your CMAF outputs.

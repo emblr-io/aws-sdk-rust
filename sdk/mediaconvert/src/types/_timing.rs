@@ -2,6 +2,8 @@
 
 /// Information about when jobs are submitted, started, and finished is specified in Unix epoch format in seconds.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Timing {
     /// The time, in Unix epoch format, that the transcoding job finished

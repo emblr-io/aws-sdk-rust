@@ -2,6 +2,8 @@
 
 /// The input file that needs to be analyzed.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProbeInputFile {
     /// Specify the S3, HTTP, or HTTPS URL for your media file.

@@ -2,6 +2,8 @@
 
 /// A job template is a pre-made set of encoding instructions that you can use to quickly create a job.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobTemplate {
     /// Accelerated transcoding can significantly speed up jobs with long, visually complex content.

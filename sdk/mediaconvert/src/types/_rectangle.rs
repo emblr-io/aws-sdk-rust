@@ -2,6 +2,8 @@
 
 /// Use Rectangle to identify a specific area of the video frame.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Rectangle {
     /// Height of rectangle in pixels. Specify only even numbers.
