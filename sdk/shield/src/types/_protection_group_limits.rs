@@ -2,6 +2,8 @@
 
 /// <p>Limits settings on protection groups for your subscription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProtectionGroupLimits {
     /// <p>The maximum number of protection groups that you can have at one time.</p>
