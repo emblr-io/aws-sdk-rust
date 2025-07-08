@@ -2,6 +2,8 @@
 
 /// <p>A request to configure the sharding properties of a cluster</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShardConfigurationRequest {
     /// <p>The number of shards in the cluster</p>
