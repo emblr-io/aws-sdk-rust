@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of field patterns for field-level encryption have been created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyFieldLevelEncryptionFieldPatterns {
     #[allow(missing_docs)] // documentation missing in model

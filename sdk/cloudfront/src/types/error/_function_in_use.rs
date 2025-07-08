@@ -2,6 +2,8 @@
 
 /// <p>Cannot delete the function because it's attached to one or more cache behaviors.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FunctionInUse {
     #[allow(missing_docs)] // documentation missing in model

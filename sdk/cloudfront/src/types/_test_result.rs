@@ -2,6 +2,8 @@
 
 /// <p>Contains the result of testing a CloudFront function with <code>TestFunction</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct TestResult {
     /// <p>Contains configuration information and metadata about the CloudFront function that was tested.</p>

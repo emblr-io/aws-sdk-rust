@@ -2,6 +2,8 @@
 
 /// <p>A streaming distribution Configuration and a list of tags to be associated with the streaming distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingDistributionConfigWithTags {
     /// <p>A streaming distribution Configuration.</p>

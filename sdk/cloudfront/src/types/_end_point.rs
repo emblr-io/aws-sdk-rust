@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon Kinesis data stream where you're sending real-time log data in a real-time log configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndPoint {
     /// <p>The type of data stream where you are sending real-time log data. The only valid value is <code>Kinesis</code>.</p>

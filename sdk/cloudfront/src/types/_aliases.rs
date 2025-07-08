@@ -2,6 +2,8 @@
 
 /// <p>A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Aliases {
     /// <p>The number of CNAME aliases, if any, that you want to associate with this distribution.</p>

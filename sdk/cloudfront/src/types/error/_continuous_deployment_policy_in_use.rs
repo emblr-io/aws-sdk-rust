@@ -2,6 +2,8 @@
 
 /// <p>You cannot delete a continuous deployment policy that is associated with a primary distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContinuousDeploymentPolicyInUse {
     #[allow(missing_docs)] // documentation missing in model

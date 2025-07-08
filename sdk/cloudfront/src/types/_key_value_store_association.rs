@@ -2,6 +2,8 @@
 
 /// <p>The key value store association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeyValueStoreAssociation {
     /// <p>The Amazon Resource Name (ARN) of the key value store association.</p>

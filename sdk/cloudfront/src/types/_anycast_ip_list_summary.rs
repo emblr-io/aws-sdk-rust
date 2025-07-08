@@ -2,6 +2,8 @@
 
 /// <p>An abbreviated version of the <code>AnycastIpList</code> structure. Omits the allocated static IP addresses (<code>AnycastIpList$AnycastIps</code>).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnycastIpListSummary {
     /// <p>The ID of the Anycast static IP list.</p>

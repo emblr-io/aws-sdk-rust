@@ -2,6 +2,8 @@
 
 /// <p>The Amazon S3 origin server specified does not refer to a valid Amazon S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidOrigin {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Your request contains more CNAMEs than are allowed per distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TooManyStreamingDistributionCnamEs {
     #[allow(missing_docs)] // documentation missing in model

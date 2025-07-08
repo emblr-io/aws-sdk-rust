@@ -2,6 +2,8 @@
 
 /// <p>A list of real-time log configurations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RealtimeLogConfigs {
     /// <p>The maximum number of real-time log configurations requested.</p>

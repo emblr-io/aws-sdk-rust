@@ -2,6 +2,8 @@
 
 /// <p>The request to get a distribution configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetDistributionConfigInput {
     /// <p>The distribution's ID. If the ID is empty, an empty distribution configuration is returned.</p>

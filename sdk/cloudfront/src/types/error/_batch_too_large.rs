@@ -2,6 +2,8 @@
 
 /// <p>Invalidation batch specified is too large.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchTooLarge {
     #[allow(missing_docs)] // documentation missing in model

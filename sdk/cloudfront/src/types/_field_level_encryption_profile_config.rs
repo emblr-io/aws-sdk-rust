@@ -2,6 +2,8 @@
 
 /// <p>A complex data type of profiles for the field-level encryption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldLevelEncryptionProfileConfig {
     /// <p>Profile name for the field-level encryption profile.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A summary of the information for a CloudFront streaming distribution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StreamingDistributionSummary {
     /// <p>The identifier for the distribution, for example, <code>EDFDVBD632BHDS5</code>.</p>

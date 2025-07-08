@@ -2,6 +2,8 @@
 
 /// <p>The value of <code>Quantity</code> and the size of <code>Items</code> don't match.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InconsistentQuantities {
     #[allow(missing_docs)] // documentation missing in model

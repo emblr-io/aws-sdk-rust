@@ -2,6 +2,8 @@
 
 /// <p>A list of distribution IDs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributionIdList {
     /// <p>The value provided in the <code>Marker</code> request field.</p>

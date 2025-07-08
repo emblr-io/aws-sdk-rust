@@ -2,6 +2,8 @@
 
 /// <p>The specified CloudFront distribution is not disabled. You must disable the distribution before you can delete it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DistributionNotDisabled {
     #[allow(missing_docs)] // documentation missing in model

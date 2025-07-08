@@ -2,6 +2,8 @@
 
 /// <p>A summary that contains details about your connection groups.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionGroupSummary {
     /// <p>The ID of the connection group.</p>

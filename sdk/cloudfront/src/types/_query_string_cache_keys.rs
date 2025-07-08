@@ -5,6 +5,8 @@
 /// <p>If you want to send query strings to the origin but not include them in the cache key, use <code>QueryStringsConfig</code> in an origin request policy. See <code>OriginRequestPolicy</code>.</p>
 /// <p>A complex type that contains information about the query string parameters that you want CloudFront to use for caching for a cache behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryStringCacheKeys {
     /// <p>The number of <code>whitelisted</code> query string parameters for a cache behavior.</p>
