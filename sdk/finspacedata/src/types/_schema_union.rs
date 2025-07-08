@@ -2,6 +2,8 @@
 
 /// <p>A union of schema types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SchemaUnion {
     /// <p>The configuration for a schema on a tabular Dataset.</p>

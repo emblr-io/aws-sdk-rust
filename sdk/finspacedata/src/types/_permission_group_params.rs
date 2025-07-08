@@ -4,6 +4,8 @@
 /// <p>Here is an example of how you could specify the <code>PermissionGroupParams</code>:</p>
 /// <p><code>{ "permissionGroupId": "0r6fCRtSTUk4XPfXQe3M0g", "datasetPermissions": \[ {"permission": "ViewDatasetDetails"}, {"permission": "AddDatasetData"}, {"permission": "EditDatasetMetadata"}, {"permission": "DeleteDataset"} \] }</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PermissionGroupParams {
     /// <p>The unique identifier for the <code>PermissionGroup</code>.</p>

@@ -2,6 +2,8 @@
 
 /// Response for creating a data view.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDataViewOutput {
     /// <p>The unique identifier of the Dataset used for the Dataview.</p>
