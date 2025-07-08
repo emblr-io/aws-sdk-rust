@@ -2,6 +2,8 @@
 
 /// <p>The details of an Amazon Chime SDK Voice Connector call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallDetails {
     /// <p>The Voice Connector ID.</p>

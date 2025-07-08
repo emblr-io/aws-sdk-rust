@@ -2,6 +2,8 @@
 
 /// <p>The configuration for a call analytics task.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct MediaInsightsConfiguration {
     /// <p>Denotes the configuration as enabled or disabled.</p>

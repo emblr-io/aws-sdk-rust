@@ -2,6 +2,8 @@
 
 /// <p>The proxy configuration for an Amazon Chime SDK Voice Connector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Proxy {
     /// <p>The default number of minutes allowed for proxy sessions.</p>

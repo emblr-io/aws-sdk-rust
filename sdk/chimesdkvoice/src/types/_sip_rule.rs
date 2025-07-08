@@ -2,6 +2,8 @@
 
 /// <p>The details of a SIP rule, including name, triggers, and target applications. An AWS account can have multiple SIP rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SipRule {
     /// <p>A SIP rule's ID.</p>
