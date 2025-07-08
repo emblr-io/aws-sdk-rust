@@ -2,6 +2,8 @@
 
 /// <p>The reference details for a given export.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ExportReference {
     /// <p>The Amazon Resource Name (ARN) for this export.</p>
