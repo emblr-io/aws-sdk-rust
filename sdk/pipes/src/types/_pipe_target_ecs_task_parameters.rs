@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using an Amazon ECS task as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PipeTargetEcsTaskParameters {
     /// <p>The ARN of the task definition to use if the event target is an Amazon ECS task.</p>

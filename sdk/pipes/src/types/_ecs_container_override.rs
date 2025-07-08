@@ -2,6 +2,8 @@
 
 /// <p>The overrides that are sent to a container. An empty container override can be passed in. An example of an empty container override is <code>{"containerOverrides": \[ \] }</code>. If a non-empty container override is specified, the <code>name</code> parameter must be included.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EcsContainerOverride {
     /// <p>The command to send to the container that overrides the default command from the Docker image or the task definition. You must also specify a container name.</p>

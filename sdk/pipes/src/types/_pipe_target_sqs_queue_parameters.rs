@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Amazon SQS stream as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct PipeTargetSqsQueueParameters {
     /// <p>The FIFO message group ID to use as the target.</p>

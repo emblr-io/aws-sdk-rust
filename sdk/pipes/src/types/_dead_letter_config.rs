@@ -2,6 +2,8 @@
 
 /// <p>A <code>DeadLetterConfig</code> object that contains information about a dead-letter queue configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeadLetterConfig {
     /// <p>The ARN of the specified target for the dead-letter queue.</p>

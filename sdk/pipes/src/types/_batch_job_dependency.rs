@@ -2,6 +2,8 @@
 
 /// <p>An object that represents an Batch job dependency.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchJobDependency {
     /// <p>The job ID of the Batch job that's associated with this dependency.</p>

@@ -3,6 +3,8 @@
 /// <p>Maps a single source data field to a single record in the specified Timestream for LiveAnalytics table.</p>
 /// <p>For more information, see <a href="https://docs.aws.amazon.com/timestream/latest/developerguide/concepts.html">Amazon Timestream for LiveAnalytics concepts</a></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SingleMeasureMapping {
     /// <p>Dynamic path of the source field to map to the measure in the record.</p>

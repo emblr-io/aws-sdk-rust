@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using a Kinesis stream as a source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdatePipeSourceKinesisStreamParameters {
     /// <p>The maximum number of records to include in each batch.</p>

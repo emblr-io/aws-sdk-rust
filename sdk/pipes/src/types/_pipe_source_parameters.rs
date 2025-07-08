@@ -2,6 +2,8 @@
 
 /// <p>The parameters required to set up a source for your pipe.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeSourceParameters {
     /// <p>The collection of event patterns used to filter events.</p>

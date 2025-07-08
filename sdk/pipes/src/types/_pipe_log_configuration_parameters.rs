@@ -5,6 +5,8 @@
 /// <p>For example, suppose when you created the pipe you specified a Firehose stream log destination. You then update the pipe to add an Amazon S3 log destination. In addition to specifying the <code>S3LogDestinationParameters</code> for the new log destination, you must also specify the fields in the <code>FirehoseLogDestinationParameters</code> object in order to retain the Firehose stream log destination.</p>
 /// <p>For more information on generating pipe log records, see <a href="eventbridge/latest/userguide/eb-pipes-logs.html">Log EventBridge Pipes</a> in the <i>Amazon EventBridge User Guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeLogConfigurationParameters {
     /// <p>The Amazon S3 logging configuration settings for the pipe.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The parameters for using an CloudWatch Logs log stream as a target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PipeTargetCloudWatchLogsParameters {
     /// <p>The name of the log stream.</p>
