@@ -4,6 +4,8 @@
 /// <p><code>DataAccessRoleArn</code> and <code>OutputLocation</code> are required fields.</p>
 /// <p><code>PostCallAnalyticsSettings</code> provides you with the same insights as a Call Analytics post-call transcription. Refer to <a href="https://docs.aws.amazon.com/transcribe/latest/dg/tca-post-call.html">Post-call analytics</a> for more information on this feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PostCallAnalyticsSettings {
     /// <p>The Amazon S3 location where you want your Call Analytics post-call transcription output stored. You can use any of the following formats to specify the output location:</p>

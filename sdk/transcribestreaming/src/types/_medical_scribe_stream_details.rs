@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a Amazon Web Services HealthScribe streaming session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeStreamDetails {
     /// <p>The identifier of the HealthScribe streaming session.</p>

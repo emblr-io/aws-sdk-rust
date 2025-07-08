@@ -2,6 +2,8 @@
 
 /// <p>Lists the issues that were identified in your audio segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IssueDetected {
     /// <p>Provides the timestamps that identify when in an audio segment the specified issue occurs.</p>

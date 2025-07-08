@@ -3,6 +3,8 @@
 /// <p>The event associated with <code>MedicalScribeResultStream</code>.</p>
 /// <p>Contains <code>MedicalScribeTranscriptSegment</code>, which contains segment related information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeTranscriptEvent {
     /// <p>The <code>TranscriptSegment</code> associated with a <code>MedicalScribeTranscriptEvent</code>.</p>

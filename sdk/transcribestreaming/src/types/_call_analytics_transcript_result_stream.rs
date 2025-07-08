@@ -2,6 +2,8 @@
 
 /// <p>Contains detailed information about your real-time Call Analytics session. These details are provided in the <code>UtteranceEvent</code> and <code>CategoryEvent</code> objects.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CallAnalyticsTranscriptResultStream {
     /// <p>Provides information on matched categories that were used to generate real-time supervisor alerts.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details for clinical note generation, including status, and output locations for clinical note and aggregated transcript if the analytics completed, or failure reason if the analytics failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClinicalNoteGenerationResult {
     /// <p>Holds the Amazon S3 URI for the output Clinical Note.</p>

@@ -4,6 +4,8 @@
 /// <p>By default, Amazon Web Services HealthScribe provides encryption at rest to protect sensitive customer data using Amazon S3-managed keys. HealthScribe uses the KMS key you specify as a second layer of encryption.</p>
 /// <p>Your <code>ResourceAccessRoleArn</code> must permission to use your KMS key. For more information, see <a href="https://docs.aws.amazon.com/transcribe/latest/dg/health-scribe-encryption.html">Data Encryption at rest for Amazon Web Services HealthScribe</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeEncryptionSettings {
     /// <p>A map of plain text, non-secret key:value pairs, known as encryption context pairs, that provide an added layer of security for your data. For more information, see <a href="https://docs.aws.amazon.com/transcribe/latest/dg/key-management.html#kms-context">KMSencryption context </a> and <a href="https://docs.aws.amazon.com/transcribe/latest/dg/symmetric-asymmetric.html">Asymmetric keys in KMS </a>.</p>

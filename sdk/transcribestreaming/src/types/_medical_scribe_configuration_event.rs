@@ -3,6 +3,8 @@
 /// <p>Specify details to configure the streaming session, including channel definitions, encryption settings, post-stream analytics settings, resource access role ARN and vocabulary settings.</p>
 /// <p>Whether you are starting a new session or resuming an existing session, your first event must be a <code>MedicalScribeConfigurationEvent</code>. If you are resuming a session, then this event must have the same configurations that you provided to start the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MedicalScribeConfigurationEvent {
     /// <p>Specify the name of the custom vocabulary you want to use for your streaming session. Custom vocabulary names are case-sensitive.</p>

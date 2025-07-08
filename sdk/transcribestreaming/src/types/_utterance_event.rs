@@ -2,6 +2,8 @@
 
 /// <p>Contains set of transcription results from one or more audio segments, along with additional information about the parameters included in your request. For example, channel definitions, partial result stabilization, sentiment, and issue detection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceEvent {
     /// <p>The unique identifier that is associated with the specified <code>UtteranceEvent</code>.</p>
