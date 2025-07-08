@@ -2,6 +2,8 @@
 
 /// <p>A group object that contains identifying information and attributes for a specified group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Group {
     /// <p>The unique security identifier (SID) of the group.</p>
