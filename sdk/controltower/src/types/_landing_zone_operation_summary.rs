@@ -2,6 +2,8 @@
 
 /// <p>Returns a summary of information about a landing zone operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LandingZoneOperationSummary {
     /// <p>The type of the landing zone operation.</p>

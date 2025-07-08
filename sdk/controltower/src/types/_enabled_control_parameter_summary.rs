@@ -2,6 +2,8 @@
 
 /// <p>Returns a summary of information about the parameters of an enabled control.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnabledControlParameterSummary {
     /// <p>The key of a key/value pair.</p>

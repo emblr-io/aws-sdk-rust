@@ -2,6 +2,8 @@
 
 /// <p>A structure that returns a set of control identifiers, the control status for each control in the set, and the drift status for each control in the set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnabledControlFilter {
     /// <p>The set of <code>controlIdentifier</code> returned by the filter.</p>
