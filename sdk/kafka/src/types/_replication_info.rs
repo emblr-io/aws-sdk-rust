@@ -2,6 +2,8 @@
 
 /// <p>Specifies configuration for replication between a source and target Kafka cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicationInfo {
     /// <p>Configuration relating to consumer group replication.</p>

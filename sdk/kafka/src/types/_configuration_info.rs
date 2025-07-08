@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration to use for the brokers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationInfo {
     /// <p>ARN of the configuration to use.</p>

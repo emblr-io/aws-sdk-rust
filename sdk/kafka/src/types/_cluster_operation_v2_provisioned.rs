@@ -2,6 +2,8 @@
 
 /// <p>Returns information about a provisioned cluster operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterOperationV2Provisioned {
     /// <p>Steps completed during the operation.</p>

@@ -2,6 +2,8 @@
 
 /// Description of the VPC connection.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConnectionInfoServerless {
     /// <p>The time when Amazon MSK creates the VPC Connnection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Details about consumer group replication.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConsumerGroupReplication {
     /// <p>List of regular expression patterns indicating the consumer groups that should not be replicated.</p>

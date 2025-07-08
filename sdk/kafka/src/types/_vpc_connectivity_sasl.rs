@@ -2,6 +2,8 @@
 
 /// <p>Details for SASL client authentication for VPC connectivity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcConnectivitySasl {
     /// <p>Details for SASL/SCRAM client authentication for VPC connectivity.</p>
