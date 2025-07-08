@@ -2,6 +2,8 @@
 
 /// <p>An object representing an issue with an Amazon EKS resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Issue {
     /// <p>A brief description of the error.</p>

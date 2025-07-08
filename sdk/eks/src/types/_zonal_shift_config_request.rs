@@ -2,6 +2,8 @@
 
 /// <p>The configuration for zonal shift for the cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZonalShiftConfigRequest {
     /// <p>If zonal shift is enabled, Amazon Web Services configures zonal autoshift for the cluster.</p>

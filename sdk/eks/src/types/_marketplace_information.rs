@@ -2,6 +2,8 @@
 
 /// <p>Information about an Amazon EKS add-on from the Amazon Web Services Marketplace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MarketplaceInformation {
     /// <p>The product ID from the Amazon Web Services Marketplace.</p>

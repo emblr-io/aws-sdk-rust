@@ -2,6 +2,8 @@
 
 /// <p>Contains details about a specific EKS cluster version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterVersionInformation {
     /// <p>The Kubernetes version for the cluster.</p>

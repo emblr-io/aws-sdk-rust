@@ -2,6 +2,8 @@
 
 /// <p>Details about clients using the deprecated resources.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientStat {
     /// <p>The user agent of the Kubernetes client using the deprecated resource.</p>

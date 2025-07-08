@@ -2,6 +2,8 @@
 
 /// <p>Returns information about the resource being evaluated.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsightResourceDetail {
     /// <p>An object containing more detail on the status of the insight resource.</p>

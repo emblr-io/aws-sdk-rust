@@ -2,6 +2,8 @@
 
 /// <p>An object representing an Fargate profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FargateProfile {
     /// <p>The name of the Fargate profile.</p>

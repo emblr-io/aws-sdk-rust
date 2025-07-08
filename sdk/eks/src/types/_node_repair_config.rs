@@ -2,6 +2,8 @@
 
 /// <p>The node auto repair configuration for the node group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeRepairConfig {
     /// <p>Specifies whether to enable node auto repair for the node group. Node auto repair is disabled by default.</p>

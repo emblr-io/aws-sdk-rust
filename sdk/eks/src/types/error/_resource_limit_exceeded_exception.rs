@@ -2,6 +2,8 @@
 
 /// <p>You have encountered a service limit on the specified resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLimitExceededException {
     /// <p>The Amazon EKS cluster associated with the exception.</p>

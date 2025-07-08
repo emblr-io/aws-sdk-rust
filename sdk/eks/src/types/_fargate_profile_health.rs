@@ -2,6 +2,8 @@
 
 /// <p>The health status of the Fargate profile. If there are issues with your Fargate profile's health, they are listed here.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FargateProfileHealth {
     /// <p>Any issues that are associated with the Fargate profile.</p>

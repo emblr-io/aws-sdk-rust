@@ -2,6 +2,8 @@
 
 /// <p>A check that provides recommendations to remedy potential upgrade-impacting issues.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Insight {
     /// <p>The ID of the insight.</p>

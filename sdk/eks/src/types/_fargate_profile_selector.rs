@@ -2,6 +2,8 @@
 
 /// <p>An object representing an Fargate profile selector.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FargateProfileSelector {
     /// <p>The Kubernetes <code>namespace</code> that the selector should match.</p>

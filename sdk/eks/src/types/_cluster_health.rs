@@ -2,6 +2,8 @@
 
 /// <p>An object representing the health of your Amazon EKS cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterHealth {
     /// <p>An object representing the health issues of your Amazon EKS cluster.</p>

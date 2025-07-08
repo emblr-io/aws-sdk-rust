@@ -2,6 +2,8 @@
 
 /// <p>The criteria to use for the insights.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsightsFilter {
     /// <p>The categories to use to filter insights. The following lists the available categories:</p>

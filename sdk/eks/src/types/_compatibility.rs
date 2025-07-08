@@ -2,6 +2,8 @@
 
 /// <p>Compatibility information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Compatibility {
     /// <p>The supported Kubernetes version of the cluster.</p>

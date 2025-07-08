@@ -2,6 +2,8 @@
 
 /// <p>Required resources (such as service-linked roles) were created and are still propagating. Retry later.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourcePropagationDelayException {
     /// <p>Required resources (such as service-linked roles) were created and are still propagating. Retry later.</p>
