@@ -2,6 +2,8 @@
 
 /// <p>The specified user ARN is already registered with an on-premises instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IamUserArnAlreadyRegisteredException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

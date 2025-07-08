@@ -2,6 +2,8 @@
 
 /// <p>The bucket name either doesn't exist or was specified in an invalid format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidBucketNameFilterException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

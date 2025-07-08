@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of allowed on-premises instances in a single call was exceeded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InstanceLimitExceededException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

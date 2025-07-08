@@ -2,6 +2,8 @@
 
 /// <p>The number of tag groups included in the tag set list exceeded the maximum allowed limit of 3.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TagSetListLimitExceededException {
     /// <p>The message that corresponds to the exception thrown by CodeDeploy.</p>

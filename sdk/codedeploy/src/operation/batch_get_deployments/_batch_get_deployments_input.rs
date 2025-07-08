@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>BatchGetDeployments</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetDeploymentsInput {
     /// <p>A list of deployment IDs, separated by spaces. The maximum number of deployment IDs you can specify is 25.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>BatchGetApplicationRevisions</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetApplicationRevisionsInput {
     /// <p>The name of an CodeDeploy application about which to get revision information.</p>

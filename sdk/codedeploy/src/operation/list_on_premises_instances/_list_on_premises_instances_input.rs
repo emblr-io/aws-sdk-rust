@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>ListOnPremisesInstances</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListOnPremisesInstancesInput {
     /// <p>The registration status of the on-premises instances:</p>

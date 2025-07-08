@@ -2,6 +2,8 @@
 
 /// <p>Information about two target groups and how traffic is routed during an Amazon ECS deployment. An optional test traffic route can be specified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetGroupPairInfo {
     /// <p>One pair of target groups. One is associated with the original task set. The second is associated with the task set that serves traffic after the deployment is complete.</p>
