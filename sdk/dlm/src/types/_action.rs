@@ -2,6 +2,8 @@
 
 /// <p><b>\[Event-based policies only\]</b> Specifies an action for an event-based policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Action {
     /// <p>A descriptive name for the action.</p>

@@ -2,6 +2,8 @@
 
 /// <p><b>\[Custom snapshot and AMI policies only\]</b> Specifies a schedule for a snapshot or AMI lifecycle policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Schedule {
     /// <p>The name of the schedule.</p>

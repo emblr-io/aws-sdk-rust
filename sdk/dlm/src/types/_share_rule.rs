@@ -2,6 +2,8 @@
 
 /// <p><b>\[Custom snapshot policies only\]</b> Specifies a rule for sharing snapshots across Amazon Web Services accounts.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShareRule {
     /// <p>The IDs of the Amazon Web Services accounts with which to share the snapshots.</p>
