@@ -2,6 +2,8 @@
 
 /// <p>Information about the evaluation performance of a trained model.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ModelPerformance {
     /// <p>The overall F1 score metric for the trained model.</p>

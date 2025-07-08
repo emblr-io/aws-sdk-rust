@@ -2,6 +2,8 @@
 
 /// <p>Location information about a manifest file. You can use a manifest file to create a dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatasetGroundTruthManifest {
     /// <p>The S3 bucket location for the manifest file.</p>
