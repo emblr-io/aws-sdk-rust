@@ -19,6 +19,8 @@
 /// <p>The corresponding <code>Expression</code> appears like the following: <code>{ "And": \[ {"Or": \[ {"Dimensions": { "Key": "REGION", "Values": \[ "us-east-1", "us-west-1" \], "MatchOptions": \["EQUALS"\] }}, {"Dimensions": { "Key": "SERVICE", "Values": \["AWSLambda"\], "MatchOptions": \["CONTAINS"\] } } \]}, {"Not": {"Dimensions": { "Key": "USAGE_TYPE", "Values": \["DataTransfer"\], "MatchOptions": \["CONTAINS"\] }}} \] }</code></p>
 /// <p>In the following <b>Contents</b>, you must specify exactly one of the following root operators.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Expression {
     /// <p>Return results that match any of the <code>Expressions</code> that you specified. in the array.</p>

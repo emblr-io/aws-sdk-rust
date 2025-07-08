@@ -2,6 +2,8 @@
 
 /// <p>Contains the specifications for the filters to use for your request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DimensionValues {
     /// <p>The name of the dimension that you want to filter on.</p>
