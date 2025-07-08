@@ -3,6 +3,8 @@
 /// <p>Information about a vehicle.</p>
 /// <p>To return this information about vehicles in your account, you can use the API operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VehicleSummary {
     /// <p>The unique ID of the vehicle.</p>

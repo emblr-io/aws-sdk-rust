@@ -2,6 +2,8 @@
 
 /// <p>Information about the number of nodes and node types in a vehicle network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeCounts {
     /// <p>The total number of nodes in a vehicle network.</p>

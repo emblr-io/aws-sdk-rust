@@ -2,6 +2,8 @@
 
 /// <p>Information about signal messages using the on-board diagnostics (OBD) II protocol in a vehicle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ObdSignal {
     /// <p>The length of the requested data.</p>

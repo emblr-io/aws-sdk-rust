@@ -2,6 +2,8 @@
 
 /// <p>Size, time, and location options for the data partition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataPartitionStorageOptions {
     /// <p>The maximum storage size of the data stored in the data partition.</p><note>

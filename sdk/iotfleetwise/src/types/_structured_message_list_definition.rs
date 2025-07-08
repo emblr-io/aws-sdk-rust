@@ -2,6 +2,8 @@
 
 /// <p>Represents a list type node of the complex data structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StructuredMessageListDefinition {
     /// <p>The name of the structured message list definition.</p>

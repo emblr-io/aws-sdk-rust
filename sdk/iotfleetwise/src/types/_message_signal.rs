@@ -2,6 +2,8 @@
 
 /// <p>The decoding information for a specific message which support higher order data types.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageSignal {
     /// <p>The topic name for the message signal. It corresponds to topics in ROS 2.</p>

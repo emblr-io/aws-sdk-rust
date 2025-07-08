@@ -2,6 +2,8 @@
 
 /// <p>Used to configure a frequency-based vehicle signal fetch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeBasedSignalFetchConfig {
     /// <p>The frequency with which the signal fetch will be executed.</p>

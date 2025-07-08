@@ -2,6 +2,8 @@
 
 /// <p>A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum Node {
     /// <p>Information about a node specified as an actuator.</p><note>

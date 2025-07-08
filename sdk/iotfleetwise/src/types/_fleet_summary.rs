@@ -3,6 +3,8 @@
 /// <p>Information about a fleet.</p>
 /// <p>You can use the API operation to return this information about multiple fleets.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetSummary {
     /// <p>The unique ID of the fleet.</p>

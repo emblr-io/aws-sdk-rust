@@ -2,6 +2,8 @@
 
 /// <p>Information about a campaign associated with a vehicle.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VehicleStatus {
     /// <p>The name of a campaign.</p>
