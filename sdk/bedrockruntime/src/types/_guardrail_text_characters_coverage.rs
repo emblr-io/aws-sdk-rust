@@ -2,6 +2,8 @@
 
 /// <p>The guardrail coverage for the text characters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailTextCharactersCoverage {
     /// <p>The text characters that were guarded by the guardrail coverage.</p>

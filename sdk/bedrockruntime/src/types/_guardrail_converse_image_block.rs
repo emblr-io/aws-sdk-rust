@@ -2,6 +2,8 @@
 
 /// <p>An image block that contains images that you want to assess with a guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailConverseImageBlock {
     /// <p>The format details for the image type of the guardrail converse image block.</p>

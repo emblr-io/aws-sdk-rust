@@ -2,6 +2,8 @@
 
 /// <p>Contains the actual text content from a source document that is being cited or referenced in the model's response.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum CitationSourceContent {
     /// <p>The text content from the source document that is being cited.</p>

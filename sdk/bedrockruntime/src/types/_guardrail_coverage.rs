@@ -2,6 +2,8 @@
 
 /// <p>The action of the guardrail coverage details.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailCoverage {
     /// <p>The text characters of the guardrail coverage details.</p>

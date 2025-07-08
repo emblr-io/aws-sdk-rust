@@ -2,6 +2,8 @@
 
 /// <p>Contain an image which user wants guarded. This block is accepted by the guardrails independent API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GuardrailImageBlock {
     /// <p>The format details for the file type of the image blocked by the guardrail.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A Personally Identifiable Information (PII) entity configured in a guardrail.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailPiiEntityFilter {
     /// <p>The PII entity filter match.</p>

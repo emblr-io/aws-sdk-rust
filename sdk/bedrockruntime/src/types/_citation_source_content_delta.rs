@@ -2,6 +2,8 @@
 
 /// <p>Contains incremental updates to the source content text during streaming responses, allowing clients to build up the cited content progressively.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CitationSourceContentDelta {
     /// <p>An incremental update to the text content from the source document that is being cited.</p>

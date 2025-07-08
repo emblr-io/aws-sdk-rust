@@ -2,6 +2,8 @@
 
 /// <p>The details of the guardrail image coverage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GuardrailImageCoverage {
     /// <p>The count (integer) of images guardrails guarded.</p>

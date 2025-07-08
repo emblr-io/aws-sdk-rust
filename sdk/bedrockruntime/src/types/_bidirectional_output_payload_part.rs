@@ -2,6 +2,8 @@
 
 /// <p>Output from the bidirectional stream. The output is speech and a text transcription.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BidirectionalOutputPayloadPart {
     /// <p>The speech output of the bidirectional stream.</p>

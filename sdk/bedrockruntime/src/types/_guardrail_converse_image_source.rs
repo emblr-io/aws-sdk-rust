@@ -2,6 +2,8 @@
 
 /// <p>The image source (image bytes) of the guardrail converse image source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum GuardrailConverseImageSource {
     /// <p>The raw image bytes for the image.</p>
