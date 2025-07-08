@@ -2,6 +2,8 @@
 
 /// <p>Compares the database CDC summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompareDatabaseCdcSummary {
     /// <p>The step input of the compare database CDC summary.</p>

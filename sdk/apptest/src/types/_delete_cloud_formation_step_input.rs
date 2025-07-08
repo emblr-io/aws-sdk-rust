@@ -2,6 +2,8 @@
 
 /// <p>Deletes the CloudFormation step input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteCloudFormationStepInput {
     /// <p>The stack ID of the deleted CloudFormation step input.</p>

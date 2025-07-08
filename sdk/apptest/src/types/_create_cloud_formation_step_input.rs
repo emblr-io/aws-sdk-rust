@@ -2,6 +2,8 @@
 
 /// <p>Creates the CloudFormation step input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCloudFormationStepInput {
     /// <p>The template location of the CloudFormation step input.</p>

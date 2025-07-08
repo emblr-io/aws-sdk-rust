@@ -2,6 +2,8 @@
 
 /// <p>Specifies the mainframe resource summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MainframeResourceSummary {
     /// <p>The AWS Mainframe Modernization managed application in the mainframe resource summary.</p>

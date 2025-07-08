@@ -2,6 +2,8 @@
 
 /// <p>Specifies a TN3270 step input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Tn3270StepInput {
     /// <p>The resource of the TN3270 step input.</p>

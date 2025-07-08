@@ -2,6 +2,8 @@
 
 /// <p>Compares the database Change Data Capture (CDC) step input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CompareDatabaseCdcStepInput {
     /// <p>The source location of the compare database CDC step input.</p>
