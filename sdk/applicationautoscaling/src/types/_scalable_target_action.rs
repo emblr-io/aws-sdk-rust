@@ -2,6 +2,8 @@
 
 /// <p>Represents the minimum and maximum capacity for a scheduled action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalableTargetAction {
     /// <p>The minimum capacity.</p>

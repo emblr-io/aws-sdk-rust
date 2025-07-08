@@ -2,6 +2,8 @@
 
 /// <p>Represents a CloudWatch metric of your choosing for a predictive scaling policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictiveScalingCustomizedMetricSpecification {
     /// <p>One or more metric data queries to provide data points for a metric specification.</p>

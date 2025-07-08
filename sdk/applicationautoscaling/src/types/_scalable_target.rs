@@ -2,6 +2,8 @@
 
 /// <p>Represents a scalable target.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScalableTarget {
     /// <p>The namespace of the Amazon Web Services service that provides the resource, or a <code>custom-resource</code>.</p>
