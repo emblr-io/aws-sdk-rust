@@ -2,6 +2,8 @@
 
 /// <p>An object containing information about the error, along with identifying information about the self-service action and its associations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedServiceActionAssociation {
     /// <p>The self-service action identifier. For example, <code>act-fs7abcd89wxyz</code>.</p>

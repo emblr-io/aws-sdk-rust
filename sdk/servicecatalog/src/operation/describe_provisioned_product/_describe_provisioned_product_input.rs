@@ -2,6 +2,8 @@
 
 /// DescribeProvisionedProductAPI input structure. AcceptLanguage - \[Optional\] The language code for localization. Id - \[Optional\] The provisioned product identifier. Name - \[Optional\] Another provisioned product identifier. Customers must provide either Id or Name.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeProvisionedProductInput {
     /// <p>The language code.</p>

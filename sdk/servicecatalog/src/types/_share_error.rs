@@ -2,6 +2,8 @@
 
 /// <p>Errors that occurred during the portfolio share operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ShareError {
     /// <p>List of accounts impacted by the error.</p>

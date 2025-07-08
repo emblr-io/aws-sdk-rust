@@ -2,6 +2,8 @@
 
 /// <p>The parameter key-value pair used to update a provisioned product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateProvisioningParameter {
     /// <p>The parameter key.</p>

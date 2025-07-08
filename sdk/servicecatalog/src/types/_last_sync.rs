@@ -14,6 +14,8 @@
 /// <p><code>LastSuccessfulSyncProvisioningArtifactID</code></p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastSync {
     /// <p>The time of the last attempted sync from the repository to the Service Catalog product.</p>
