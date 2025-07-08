@@ -2,6 +2,8 @@
 
 /// <p>A list that contains the status of the delivery of the configuration stream notification to the Amazon SNS topic.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigStreamDeliveryInfo {
     /// <p>Status of the last attempted delivery.</p>

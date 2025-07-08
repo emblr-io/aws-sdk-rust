@@ -2,6 +2,8 @@
 
 /// <p>The number of conformance packs that are compliant and noncompliant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateConformancePackComplianceCount {
     /// <p>Number of compliant conformance packs.</p>

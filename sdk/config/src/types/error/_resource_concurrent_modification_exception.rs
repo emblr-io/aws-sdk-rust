@@ -2,6 +2,8 @@
 
 /// <p>Two users are trying to modify the same query at the same time. Wait for a moment and try again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceConcurrentModificationException {
     #[allow(missing_docs)] // documentation missing in model

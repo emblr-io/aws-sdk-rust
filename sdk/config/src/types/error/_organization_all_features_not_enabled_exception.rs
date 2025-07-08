@@ -2,6 +2,8 @@
 
 /// <p>Config resource cannot be created because your organization does not have all features enabled.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationAllFeaturesNotEnabledException {
     /// <p>Error executing the command</p>

@@ -18,6 +18,8 @@
 /// <p>You have provided resource types or a recording strategy that are not valid.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRecordingGroupException {
     /// <p>Error executing the command</p>

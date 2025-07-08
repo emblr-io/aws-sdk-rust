@@ -2,6 +2,8 @@
 
 /// <p>The number of Amazon Web Services resources of a specific type that are compliant or noncompliant, up to a maximum of 100 for each.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComplianceSummaryByResourceType {
     /// <p>The type of Amazon Web Services resource.</p>

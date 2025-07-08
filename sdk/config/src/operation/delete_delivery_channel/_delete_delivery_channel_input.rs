@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>DeleteDeliveryChannel</code> action. The action accepts the following data, in JSON format.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteDeliveryChannelInput {
     /// <p>The name of the delivery channel that you want to delete.</p>

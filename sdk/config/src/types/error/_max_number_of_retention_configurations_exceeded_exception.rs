@@ -2,6 +2,8 @@
 
 /// <p>Failed to add the retention configuration because a retention configuration with that name already exists.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MaxNumberOfRetentionConfigurationsExceededException {
     /// <p>Error executing the command</p>

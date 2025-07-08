@@ -2,6 +2,8 @@
 
 /// <p>Status filter object to filter results based on specific member account ID or status type for an organization Config rule.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatusDetailFilters {
     /// <p>The 12-digit account ID of the member account within an organization.</p>

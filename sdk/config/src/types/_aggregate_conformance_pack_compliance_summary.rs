@@ -2,6 +2,8 @@
 
 /// <p>Provides a summary of compliance based on either account ID or region.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AggregateConformancePackComplianceSummary {
     /// <p>Returns an <code>AggregateConformancePackComplianceCount</code> object.</p>

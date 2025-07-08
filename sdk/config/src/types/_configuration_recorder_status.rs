@@ -3,6 +3,8 @@
 /// <p>The current status of the configuration recorder.</p>
 /// <p>For a detailed status of recording events over time, add your Config events to CloudWatch metrics and use CloudWatch metrics.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationRecorderStatus {
     /// <p>The Amazon Resource Name (ARN) of the configuration recorder.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You have specified a resource that is either unknown or has not been discovered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotDiscoveredException {
     /// <p>Error executing the command</p>

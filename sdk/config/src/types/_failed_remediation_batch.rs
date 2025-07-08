@@ -2,6 +2,8 @@
 
 /// <p>List of each of the failed remediations with specific reasons.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedRemediationBatch {
     /// <p>Returns a failure message. For example, the resource is already compliant.</p>

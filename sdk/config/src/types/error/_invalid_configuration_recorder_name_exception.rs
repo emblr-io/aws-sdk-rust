@@ -2,6 +2,8 @@
 
 /// <p>You have provided a name for the customer managed configuration recorder that is not valid.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidConfigurationRecorderNameException {
     /// <p>Error executing the command</p>

@@ -2,6 +2,8 @@
 
 /// <p>The input for the <code>DescribeDeliveryChannels</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeDeliveryChannelsInput {
     /// <p>A list of delivery channel names.</p>

@@ -2,6 +2,8 @@
 
 /// <p>List of each of the failed delete remediation exceptions with specific reasons.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedDeleteRemediationExceptionsBatch {
     /// <p>Returns a failure message for delete remediation exception. For example, Config creates an exception due to an internal error.</p>
