@@ -2,6 +2,8 @@
 
 /// <p>Creates a new grouping recommendation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GroupingRecommendation {
     /// <p>Indicates all the reasons available for rejecting a grouping recommendation.</p>

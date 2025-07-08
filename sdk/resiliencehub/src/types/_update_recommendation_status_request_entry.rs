@@ -2,6 +2,8 @@
 
 /// <p>Defines the operational recommendation item that is to be included or excluded.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateRecommendationStatusRequestEntry {
     /// <p>An identifier for an entry in this batch that is used to communicate the result.</p><note>

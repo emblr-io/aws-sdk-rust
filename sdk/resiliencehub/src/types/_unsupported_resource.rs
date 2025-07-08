@@ -2,6 +2,8 @@
 
 /// <p>Defines a resource that is not supported by Resilience Hub.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UnsupportedResource {
     /// <p>Logical resource identifier for the unsupported resource.</p>

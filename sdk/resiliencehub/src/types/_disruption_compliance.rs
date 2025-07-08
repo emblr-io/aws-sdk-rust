@@ -2,6 +2,8 @@
 
 /// <p>Defines the compliance against the resiliency policy for a disruption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DisruptionCompliance {
     /// <p>The Recovery Time Objective (RTO) that is achievable, in seconds</p>

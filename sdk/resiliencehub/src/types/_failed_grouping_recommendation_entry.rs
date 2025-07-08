@@ -2,6 +2,8 @@
 
 /// <p>Indicates the accepted grouping recommendation whose implementation failed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedGroupingRecommendationEntry {
     /// <p>Indicates the identifier of the grouping recommendation.</p>
