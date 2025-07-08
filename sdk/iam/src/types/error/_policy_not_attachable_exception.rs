@@ -2,6 +2,8 @@
 
 /// <p>The request failed because Amazon Web Services service role policies can only be attached to the service-linked role for that service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PolicyNotAttachableException {
     #[allow(missing_docs)] // documentation missing in model

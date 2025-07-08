@@ -3,6 +3,8 @@
 /// <p>Contains the result of the simulation of a single API operation call on a single resource.</p>
 /// <p>This data type is used by a member of the <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_EvaluationResult.html">EvaluationResult</a> data type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceSpecificResult {
     /// <p>The name of the simulated resource, in Amazon Resource Name (ARN) format.</p>

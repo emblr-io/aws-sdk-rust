@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because the same certificate is associated with an IAM user in the account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DuplicateCertificateException {
     #[allow(missing_docs)] // documentation missing in model

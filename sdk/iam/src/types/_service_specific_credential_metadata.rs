@@ -2,6 +2,8 @@
 
 /// <p>Contains additional details about a service-specific credential.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSpecificCredentialMetadata {
     /// <p>The name of the IAM user associated with the service-specific credential.</p>

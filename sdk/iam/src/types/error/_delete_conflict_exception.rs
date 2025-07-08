@@ -2,6 +2,8 @@
 
 /// <p>The request was rejected because it attempted to delete a resource that has attached subordinate entities. The error message describes these entities.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteConflictException {
     #[allow(missing_docs)] // documentation missing in model
