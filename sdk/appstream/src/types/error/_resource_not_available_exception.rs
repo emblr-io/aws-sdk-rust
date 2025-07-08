@@ -2,6 +2,8 @@
 
 /// <p>The specified resource exists and is not in use, but isn't available.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceNotAvailableException {
     /// <p>The error message in the exception.</p>

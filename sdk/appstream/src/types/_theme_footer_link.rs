@@ -2,6 +2,8 @@
 
 /// <p>The website links that display in the catalog page footer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThemeFooterLink {
     /// <p>The name of the websites that display in the catalog page footer.</p>

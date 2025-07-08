@@ -2,6 +2,8 @@
 
 /// <p>Describes a user in the user pool and the associated stack.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct UserStackAssociation {
     /// <p>The name of the stack that is associated with the user.</p>
