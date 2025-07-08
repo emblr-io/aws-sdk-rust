@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the general settings and status of a channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChannelResponse {
     /// <p>The unique identifier for the application.</p>

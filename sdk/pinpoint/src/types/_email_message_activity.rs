@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for an email activity in a journey. This type of activity sends an email message to participants.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailMessageActivity {
     /// <p>Specifies the sender address for an email message that's sent to participants in the journey.</p>

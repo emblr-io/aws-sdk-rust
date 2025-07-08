@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for a push notification activity in a journey. This type of activity sends a push notification to participants.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PushMessageActivity {
     /// <p>Specifies the time to live (TTL) value for push notifications that are sent to participants in a journey.</p>

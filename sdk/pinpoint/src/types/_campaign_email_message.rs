@@ -2,6 +2,8 @@
 
 /// <p>Specifies the content and "From" address for an email message that's sent to recipients of a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignEmailMessage {
     /// <p>The body of the email for recipients whose email clients don't render HTML content.</p>

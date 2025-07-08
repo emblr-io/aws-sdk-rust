@@ -2,6 +2,8 @@
 
 /// <p>Specifies GPS-based criteria for including or excluding endpoints from a segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GpsPointDimension {
     /// <p>The GPS coordinates to measure distance from.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the status, configuration, and other settings for all the journeys that are associated with an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneysResponse {
     /// <p>An array of responses, one for each journey that's associated with the application.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the content and settings for a message template that can be used in text messages that are sent through the SMS channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsTemplateRequest {
     /// <p>The message body to use in text messages that are based on the message template.</p>

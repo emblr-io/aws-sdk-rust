@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default settings and content for a one-time email message that's sent directly to an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EmailMessage {
     /// <p>The body of the email message.</p>

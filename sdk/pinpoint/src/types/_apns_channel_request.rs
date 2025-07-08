@@ -2,6 +2,8 @@
 
 /// <p>Specifies the status and settings of the APNs (Apple Push Notification service) channel for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApnsChannelRequest {
     /// <p>The bundle identifier that's assigned to your iOS app. This identifier is used for APNs tokens.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Get in-app messages response object.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InAppMessagesResponse {
     /// <p>List of targeted in-app message campaigns.</p>

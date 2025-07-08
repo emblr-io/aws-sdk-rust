@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for a path in a random split activity in a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RandomSplitEntry {
     /// <p>The unique identifier for the next activity to perform, after completing the activity for the path.</p>

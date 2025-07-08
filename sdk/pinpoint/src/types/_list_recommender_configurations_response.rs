@@ -2,6 +2,8 @@
 
 /// <p>Provides information about all the recommender model configurations that are associated with your Amazon Pinpoint account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListRecommenderConfigurationsResponse {
     /// <p>An array of responses, one for each recommender model configuration that's associated with your Amazon Pinpoint account.</p>

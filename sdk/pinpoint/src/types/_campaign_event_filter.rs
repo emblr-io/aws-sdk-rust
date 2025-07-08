@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for events that cause a campaign to be sent.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignEventFilter {
     /// <p>The dimension settings of the event filter for the campaign.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings that define the relationships between segment groups for a segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentGroupList {
     /// <p>An array that defines the set of segment criteria to evaluate when handling segment groups for the segment.</p>

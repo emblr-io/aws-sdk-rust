@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the results of a request to create or update an endpoint that's associated with an event.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ItemResponse {
     /// <p>The response that was received after the endpoint data was accepted.</p>

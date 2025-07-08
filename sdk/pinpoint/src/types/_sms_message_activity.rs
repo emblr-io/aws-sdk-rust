@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for an SMS activity in a journey. This type of activity sends a text message to participants.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsMessageActivity {
     /// <p>Specifies the sender ID and message type for an SMS message that's sent to participants in a journey.</p>

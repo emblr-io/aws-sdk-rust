@@ -2,6 +2,8 @@
 
 /// <p>Specifies the message content for a custom channel message that's sent to participants in a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JourneyCustomMessage {
     /// <p>The message content that's passed to an AWS Lambda function or to a web hook.</p>

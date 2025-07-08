@@ -2,6 +2,8 @@
 
 /// <p>Specifies the settings for an event that causes a journey activity to start.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventStartCondition {
     /// <p>Specifies the settings for an event that causes a campaign to be sent or a journey activity to be performed.</p>

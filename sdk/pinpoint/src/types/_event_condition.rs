@@ -2,6 +2,8 @@
 
 /// <p>Specifies the conditions to evaluate for an event that applies to an activity in a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventCondition {
     /// <p>The dimensions for the event filter to use for the activity.</p>

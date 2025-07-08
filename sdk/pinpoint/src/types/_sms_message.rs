@@ -2,6 +2,8 @@
 
 /// <p>Specifies the default settings for a one-time SMS message that's sent directly to an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SmsMessage {
     /// <p>The body of the SMS message.</p>

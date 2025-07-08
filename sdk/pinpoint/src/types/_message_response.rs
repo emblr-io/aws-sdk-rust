@@ -2,6 +2,8 @@
 
 /// <p>Provides information about the results of a request to send a message to an endpoint address.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageResponse {
     /// <p>The unique identifier for the application that was used to send the message.</p>

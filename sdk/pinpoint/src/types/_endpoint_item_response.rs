@@ -2,6 +2,8 @@
 
 /// <p>Provides the status code and message that result from processing data for an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointItemResponse {
     /// <p>The custom message that's returned in the response as a result of processing the endpoint data.</p>

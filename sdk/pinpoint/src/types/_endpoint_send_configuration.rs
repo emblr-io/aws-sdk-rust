@@ -2,6 +2,8 @@
 
 /// <p>Specifies the content, including message variables and attributes, to use in a message that's sent directly to an endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EndpointSendConfiguration {
     /// <p>The body of the message. If specified, this value overrides the default message body.</p>

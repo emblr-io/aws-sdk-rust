@@ -2,6 +2,8 @@
 
 /// <p>Specifies attribute-based criteria for including or excluding endpoints from a segment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributeDimension {
     /// <p>The type of segment dimension to use. Valid values are:</p>

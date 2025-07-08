@@ -2,6 +2,8 @@
 
 /// <p>Provides information about all the versions of a specific message template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateVersionsResponse {
     /// <p>An array of responses, one for each version of the message template.</p>

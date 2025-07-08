@@ -2,6 +2,8 @@
 
 /// <p>Specifies the contents of a message that's sent through a custom channel to recipients of a campaign.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CampaignCustomMessage {
     /// <p>The raw, JSON-formatted string to use as the payload for the message. The maximum size is 5 KB.</p>

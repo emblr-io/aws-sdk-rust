@@ -2,6 +2,8 @@
 
 /// <p>Specifies dimension settings for including or excluding endpoints from a segment based on how recently an endpoint was active.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SegmentBehaviors {
     /// <p>The dimension settings that are based on how recently an endpoint was active.</p>

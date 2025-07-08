@@ -2,6 +2,8 @@
 
 /// <p>Specifies a condition to evaluate for an activity in a journey.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SimpleCondition {
     /// <p>The dimension settings for the event that's associated with the activity.</p>
