@@ -2,6 +2,8 @@
 
 /// <p>Represents a parameter value that is applicable to a particular node type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeTypeSpecificValue {
     /// <p>A node type to which the parameter value applies.</p>
