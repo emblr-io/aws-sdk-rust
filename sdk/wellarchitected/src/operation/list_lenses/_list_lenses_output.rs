@@ -2,6 +2,8 @@
 
 /// <p>Output of a list lenses call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListLensesOutput {
     /// <p>List of lens summaries of available lenses.</p>

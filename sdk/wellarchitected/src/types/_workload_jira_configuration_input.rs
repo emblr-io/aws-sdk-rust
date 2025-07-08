@@ -2,6 +2,8 @@
 
 /// <p>Workload-level: Input for the Jira configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkloadJiraConfigurationInput {
     /// <p>Workload-level: Jira issue management status.</p>

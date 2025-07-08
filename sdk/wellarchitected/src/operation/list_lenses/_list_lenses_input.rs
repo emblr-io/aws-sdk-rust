@@ -2,6 +2,8 @@
 
 /// <p>Input to list lenses.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListLensesInput {
     /// <p>The token to use to retrieve the next set of results.</p>

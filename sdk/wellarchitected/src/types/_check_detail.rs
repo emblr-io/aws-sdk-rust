@@ -2,6 +2,8 @@
 
 /// <p>Account details for a Well-Architected best practice in relation to Trusted Advisor checks.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CheckDetail {
     /// <p>Trusted Advisor check ID.</p>

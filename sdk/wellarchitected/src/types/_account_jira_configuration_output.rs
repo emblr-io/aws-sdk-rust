@@ -2,6 +2,8 @@
 
 /// <p>Account-level: Output configuration of the Jira integration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AccountJiraConfigurationOutput {
     /// <p>Account-level: Configuration status of the Jira integration.</p>
