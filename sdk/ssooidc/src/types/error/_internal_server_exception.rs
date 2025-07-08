@@ -2,6 +2,8 @@
 
 /// <p>Indicates that an error from the service occurred while trying to process a request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalServerException {
     /// <p>Single error code. For this exception the value will be <code>server_error</code>.</p>
