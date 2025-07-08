@@ -2,6 +2,8 @@
 
 /// <p>Represents action metadata added to an Action dataset using the <code>PutActions</code> API. For more information see <a href="https://docs.aws.amazon.com/personalize/latest/dg/importing-actions.html">Importing actions individually</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct Action {
     /// <p>The ID associated with the action.</p>
