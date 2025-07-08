@@ -2,6 +2,8 @@
 
 /// <p>The result structure for the list backend environments result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListBackendEnvironmentsOutput {
     /// <p>The list of backend environments for an Amplify app.</p>

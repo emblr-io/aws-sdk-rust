@@ -2,6 +2,8 @@
 
 /// <p>Returns the result structure for the get artifact request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetArtifactUrlOutput {
     /// <p>The unique ID for an artifact.</p>

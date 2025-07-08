@@ -2,6 +2,8 @@
 
 /// <p>The result structure for create branch request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBranchOutput {
     /// <p>Describes the branch for an Amplify app, which maps to a third-party repository branch.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the information about a production branch for an Amplify app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProductionBranch {
     /// <p>The last deploy time of the production branch.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The result structure for the delete job request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteJobOutput {
     /// <p>Describes the summary for an execution job for an Amplify app.</p>

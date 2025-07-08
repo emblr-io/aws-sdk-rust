@@ -3,6 +3,8 @@
 /// <p>Describes the cache configuration for an Amplify app.</p>
 /// <p>For more information about how Amplify applies an optimal cache configuration for your app based on the type of content that is being served, see <a href="https://docs.aws.amazon.com/amplify/latest/userguide/managing-cache-configuration">Managing cache configuration</a> in the <i>Amplify User guide</i>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheConfig {
     /// <p>The type of cache configuration to use for an Amplify app.</p>

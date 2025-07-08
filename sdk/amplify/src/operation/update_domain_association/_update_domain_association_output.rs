@@ -2,6 +2,8 @@
 
 /// <p>The result structure for the update domain association request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDomainAssociationOutput {
     /// <p>Describes a domain association, which associates a custom domain with an Amplify app.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request structure for the generate access logs request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerateAccessLogsInput {
     /// <p>The time at which the logs should start. The time range specified is inclusive of the start time.</p>

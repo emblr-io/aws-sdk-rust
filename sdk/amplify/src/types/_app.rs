@@ -2,6 +2,8 @@
 
 /// <p>Represents the different branches of a repository for building, deploying, and hosting an Amplify app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct App {
     /// <p>The unique ID of the Amplify app.</p>

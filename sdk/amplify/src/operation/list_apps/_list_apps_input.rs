@@ -2,6 +2,8 @@
 
 /// <p>The request structure for the list apps request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAppsInput {
     /// <p>A pagination token. If non-null, the pagination token is returned in a result. Pass its value in another request to retrieve more entries.</p>

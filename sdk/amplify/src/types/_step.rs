@@ -2,6 +2,8 @@
 
 /// <p>Describes an execution step, for an execution job, for an Amplify app.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Step {
     /// <p>The name of the execution step.</p>
