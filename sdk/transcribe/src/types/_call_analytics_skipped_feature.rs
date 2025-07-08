@@ -5,6 +5,8 @@
 /// <p>The <code>Message</code> field contains additional information or a message explaining why the analytics feature was skipped.</p>
 /// <p>The <code>ReasonCode</code> field provides a code indicating the reason why the analytics feature was skipped.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CallAnalyticsSkippedFeature {
     /// <p>Indicates the type of analytics feature that was skipped during the analysis of a call analytics job.</p>

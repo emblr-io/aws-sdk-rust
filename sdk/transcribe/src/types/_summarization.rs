@@ -2,6 +2,8 @@
 
 /// <p>Contains <code>GenerateAbstractiveSummary</code>, which is a required parameter if you want to enable Generative call summarization in your Call Analytics request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Summarization {
     /// <p>Enables Generative call summarization in your Call Analytics request</p>
