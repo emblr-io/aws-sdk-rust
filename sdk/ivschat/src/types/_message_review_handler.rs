@@ -2,6 +2,8 @@
 
 /// <p>Configuration information for optional message review.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MessageReviewHandler {
     /// <p>Identifier of the message review handler. Currently this must be an ARN of a lambda function.</p>
