@@ -2,6 +2,8 @@
 
 /// <p>The specified combination of HTTP verb and URI is not supported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MethodNotAllowedException {
     /// <p>The message for the exception.</p>
