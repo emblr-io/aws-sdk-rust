@@ -2,6 +2,8 @@
 
 /// <p>A structure that describes certain columns on certain rows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataCellsFilter {
     /// <p>The ID of the catalog to which the table belongs.</p>

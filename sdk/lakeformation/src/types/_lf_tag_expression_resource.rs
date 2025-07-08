@@ -2,6 +2,8 @@
 
 /// <p>A structure containing a LF-Tag expression (keys and values).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LfTagExpressionResource {
     /// <p>The identifier for the Data Catalog. By default, the account ID.</p>

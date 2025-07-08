@@ -2,6 +2,8 @@
 
 /// <p>A structure consists LF-Tag expression name and catalog ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LfTagExpression {
     /// <p>The name for saved the LF-Tag expression.</p>

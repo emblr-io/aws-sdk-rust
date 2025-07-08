@@ -2,6 +2,8 @@
 
 /// <p>A structure containing an error related to a <code>TagResource</code> or <code>UnTagResource</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LfTagError {
     /// <p>The key-name of the LF-tag.</p>

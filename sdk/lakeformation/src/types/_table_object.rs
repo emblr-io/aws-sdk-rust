@@ -2,6 +2,8 @@
 
 /// <p>Specifies the details of a governed table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableObject {
     /// <p>The Amazon S3 location of the object.</p>

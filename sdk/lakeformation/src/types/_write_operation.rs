@@ -2,6 +2,8 @@
 
 /// <p>Defines an object to add to or delete from a governed table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WriteOperation {
     /// <p>A new object to add to the governed table.</p>

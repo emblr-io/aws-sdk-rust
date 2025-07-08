@@ -2,6 +2,8 @@
 
 /// <p>Defines the valid range of work unit IDs for querying the execution service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkUnitRange {
     /// <p>Defines the maximum work unit ID in the range. The maximum value is inclusive.</p>

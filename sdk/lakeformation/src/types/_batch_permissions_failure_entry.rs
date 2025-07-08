@@ -2,6 +2,8 @@
 
 /// <p>A list of failures when performing a batch grant or batch revoke operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchPermissionsFailureEntry {
     /// <p>An identifier for an entry of the batch request.</p>
