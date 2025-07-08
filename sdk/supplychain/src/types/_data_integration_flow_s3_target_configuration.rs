@@ -2,6 +2,8 @@
 
 /// <p>The S3 DataIntegrationFlow target configuration parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationFlowS3TargetConfiguration {
     /// <p>The bucketName of the S3 target objects.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The SQL DataIntegrationFlow transformation configuration parameters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct DataIntegrationFlowSqlTransformationConfiguration {
     /// <p>The transformation SQL query body based on SparkSQL.</p>

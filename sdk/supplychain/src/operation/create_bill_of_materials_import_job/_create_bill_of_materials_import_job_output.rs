@@ -2,6 +2,8 @@
 
 /// <p>The response parameters of CreateBillOfMaterialsImportJob.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateBillOfMaterialsImportJobOutput {
     /// <p>The new BillOfMaterialsImportJob identifier.</p>

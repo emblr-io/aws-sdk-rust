@@ -2,6 +2,8 @@
 
 /// <p>The request parameters of UpdateDataLakeNamespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDataLakeNamespaceInput {
     /// <p>The Amazon Web Services Chain instance identifier.</p>

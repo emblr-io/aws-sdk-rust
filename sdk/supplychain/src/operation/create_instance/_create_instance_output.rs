@@ -2,6 +2,8 @@
 
 /// <p>The response parameters for CreateInstance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateInstanceOutput {
     /// <p>The AWS Supply Chain instance resource data details.</p>

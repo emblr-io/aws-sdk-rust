@@ -2,6 +2,8 @@
 
 /// <p>The request parameters for CreateDataLakeNamespace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateDataLakeNamespaceInput {
     /// <p>The Amazon Web Services Supply Chain instance identifier.</p>

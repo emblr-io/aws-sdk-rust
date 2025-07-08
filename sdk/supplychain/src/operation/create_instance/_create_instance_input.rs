@@ -2,6 +2,8 @@
 
 /// <p>The request parameters for CreateInstance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateInstanceInput {
     /// <p>The AWS Supply Chain instance name.</p>

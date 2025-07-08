@@ -2,6 +2,8 @@
 
 /// <p>The response parameters for ListDataIntegrationFlows.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListDataIntegrationFlowsOutput {
     /// <p>The response parameters for ListDataIntegrationFlows.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The target dataset configuration for a DATASET event type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataIntegrationEventDatasetTargetConfiguration {
     /// <p>The datalake dataset ARN identifier.</p>
