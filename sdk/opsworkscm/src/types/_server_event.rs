@@ -2,6 +2,8 @@
 
 /// <p>An event that is related to the server, such as the start of maintenance or backup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerEvent {
     /// <p>The time when the event occurred.</p>
