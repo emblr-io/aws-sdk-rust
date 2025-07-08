@@ -2,6 +2,8 @@
 
 /// <p>Provides information for filtering a list of event detection jobs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EventsDetectionJobFilter {
     /// <p>Filters on the name of the events detection job.</p>

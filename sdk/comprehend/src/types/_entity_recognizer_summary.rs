@@ -2,6 +2,8 @@
 
 /// <p>Describes the information about an entity recognizer and its versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityRecognizerSummary {
     /// <p>The name that you assigned the entity recognizer.</p>

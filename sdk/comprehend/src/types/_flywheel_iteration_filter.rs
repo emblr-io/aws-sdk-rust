@@ -2,6 +2,8 @@
 
 /// <p>Filter the flywheel iterations based on creation time.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FlywheelIterationFilter {
     /// <p>Filter the flywheel iterations to include iterations created after the specified time.</p>

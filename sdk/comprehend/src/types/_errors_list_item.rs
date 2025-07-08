@@ -15,6 +15,8 @@
 /// <p>INTERNAL_SERVER_ERROR - The request encountered a service issue. Try the API request again.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorsListItem {
     /// <p>Page number where the error occurred.</p>

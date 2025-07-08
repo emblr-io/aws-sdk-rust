@@ -2,6 +2,8 @@
 
 /// <p>Describes the entity list submitted with an entity recognizer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EntityRecognizerEntityList {
     /// <p>Specifies the Amazon S3 location where the entity list is located. The URI must be in the same Region as the API endpoint that you are calling.</p>

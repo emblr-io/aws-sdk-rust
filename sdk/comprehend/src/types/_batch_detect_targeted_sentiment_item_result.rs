@@ -2,6 +2,8 @@
 
 /// <p>Analysis results for one of the documents in the batch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchDetectTargetedSentimentItemResult {
     /// <p>The zero-based index of this result in the input list.</p>

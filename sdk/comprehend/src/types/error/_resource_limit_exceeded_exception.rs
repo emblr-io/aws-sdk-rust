@@ -2,6 +2,8 @@
 
 /// <p>The maximum number of resources per account has been exceeded. Review the resources, and then try your request again.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

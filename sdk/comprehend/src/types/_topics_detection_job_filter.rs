@@ -2,6 +2,8 @@
 
 /// <p>Provides information for filtering topic detection jobs. For more information, see .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TopicsDetectionJobFilter {
     /// <p></p>
