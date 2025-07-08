@@ -2,6 +2,8 @@
 
 /// <p>Thrown when the service encounters an error during processing the request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InternalErrorException {
     /// <p>The message returned by an InternalErrorException.</p>
