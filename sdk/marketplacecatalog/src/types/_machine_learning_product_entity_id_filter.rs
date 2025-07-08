@@ -2,6 +2,8 @@
 
 /// <p>The filter for machine learning product entity IDs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MachineLearningProductEntityIdFilter {
     /// <p>A list of entity IDs to filter by. The operation returns machine learning products with entity IDs that match the values in this list.</p>

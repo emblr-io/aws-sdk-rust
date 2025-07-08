@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering on product title.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AmiProductTitleFilter {
     /// <p>A string array of unique product title values to be filtered on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering on entity id of a container product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContainerProductEntityIdFilter {
     /// <p>A string array of unique entity id values to be filtered on.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Object that allows filtering based on the last modified date of data products.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProductLastModifiedDateFilter {
     /// <p>Dates between which the data product was last modified.</p>

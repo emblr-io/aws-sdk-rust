@@ -2,6 +2,8 @@
 
 /// <p>Allows filtering on the <code>BuyerAccounts</code> of an offer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OfferBuyerAccountsFilter {
     /// <p>Allows filtering on the <code>BuyerAccounts</code> of an offer with wild card input.</p>

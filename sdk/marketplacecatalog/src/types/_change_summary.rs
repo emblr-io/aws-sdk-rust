@@ -2,6 +2,8 @@
 
 /// <p>This object is a container for common summary information about the change. The summary doesn't contain the whole change structure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ChangeSummary {
     /// <p>The type of the change.</p>

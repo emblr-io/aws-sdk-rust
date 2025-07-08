@@ -2,6 +2,8 @@
 
 /// <p>Allows filtering on the <code>ReleaseDate</code> of an offer with date range as input.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OfferReleaseDateFilterDateRange {
     /// <p>Allows filtering on the <code>ReleaseDate</code> of offers after a date.</p>
