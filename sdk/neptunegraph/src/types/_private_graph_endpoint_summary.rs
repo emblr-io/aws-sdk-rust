@@ -2,6 +2,8 @@
 
 /// <p>Details about a private graph endpoint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateGraphEndpointSummary {
     /// <p>The ID of the VPC in which the private graph endpoint is located.</p>
