@@ -2,6 +2,8 @@
 
 /// <p>Add a network output to an existing bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddBridgeNetworkOutputRequest {
     /// <p>The network output IP Address.</p>

@@ -40,7 +40,7 @@
 //! ```toml
 //! [dependencies]
 //! aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-//! aws-sdk-mediaconnect = "1.79.0"
+//! aws-sdk-mediaconnect = "0.0.0-local"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!

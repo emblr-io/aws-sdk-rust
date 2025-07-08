@@ -2,6 +2,8 @@
 
 /// <p>Messages that provide the state of the flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Messages {
     /// <p>A list of errors that might have been generated from processes on this flow.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Update the network source of the bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateBridgeNetworkSourceRequest {
     /// <p>The network source multicast IP.</p>

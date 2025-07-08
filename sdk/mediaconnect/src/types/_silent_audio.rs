@@ -2,6 +2,8 @@
 
 /// <p>Configures settings for the <code>SilentAudio</code> metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SilentAudio {
     /// <p>Indicates whether the <code>SilentAudio</code> metric is enabled or disabled.</p>

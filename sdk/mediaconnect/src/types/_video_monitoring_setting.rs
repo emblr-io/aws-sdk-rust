@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for video stream metrics monitoring.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VideoMonitoringSetting {
     /// <p>Detects video frames that are black.</p>

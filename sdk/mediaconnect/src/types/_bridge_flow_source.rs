@@ -2,6 +2,8 @@
 
 /// <p>The source of the bridge. A flow source originates in MediaConnect as an existing cloud flow.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BridgeFlowSource {
     /// <p>The ARN of the cloud flow used as a source of this bridge.</p>

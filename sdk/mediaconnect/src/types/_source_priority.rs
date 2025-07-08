@@ -2,6 +2,8 @@
 
 /// <p>The priority you want to assign to a source. You can have a primary stream and a backup stream or two equally prioritized streams.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourcePriority {
     /// <p>The name of the source you choose as the primary source for this flow.</p>

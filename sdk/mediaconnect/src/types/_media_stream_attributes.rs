@@ -2,6 +2,8 @@
 
 /// <p>Attributes that are related to the media stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MediaStreamAttributes {
     /// <p>The settings that you want to use to define the media stream.</p>

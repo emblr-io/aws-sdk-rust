@@ -2,6 +2,8 @@
 
 /// <p>Specifies the configuration for audio stream metrics monitoring.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AudioMonitoringSetting {
     /// <p>Detects periods of silence.</p>

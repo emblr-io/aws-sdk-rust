@@ -2,6 +2,8 @@
 
 /// <p>The source configuration for cloud flows receiving a stream from a bridge.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateGatewayBridgeSourceRequest {
     /// <p>The ARN of the bridge feeding this flow.</p>
