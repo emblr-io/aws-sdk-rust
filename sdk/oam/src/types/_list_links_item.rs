@@ -2,6 +2,8 @@
 
 /// <p>A structure that contains information about one of this source account's links to a monitoring account.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListLinksItem {
     /// <p>The ARN of the link.</p>
