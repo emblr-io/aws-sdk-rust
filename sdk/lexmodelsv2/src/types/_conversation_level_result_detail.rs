@@ -2,6 +2,8 @@
 
 /// <p>The conversation level details of the conversation used in the test set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelResultDetail {
     /// <p>The success or failure of the streaming of the conversation.</p>

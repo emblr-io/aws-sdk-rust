@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the method by which to sort the instances of test executions you have carried out.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestExecutionSortBy {
     /// <p>Specifies whether to sort the test set executions by the date and time at which the test sets were created.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifications for the current state of the dialog between the user and the bot in the test set.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputSessionStateSpecification {
     /// <p>Session attributes for the session state.</p>

@@ -2,6 +2,8 @@
 
 /// <p>An object containing the intent that the bot mapped the utterance to.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsUtteranceAttributeResult {
     /// <p>The intent that the bot mapped the utterance to.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the attribute and method by which to sort the generation request information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GenerationSortBy {
     /// <p>The attribute by which to sort the generation request information. You can sort by the following attributes.</p>

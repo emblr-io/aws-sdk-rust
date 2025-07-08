@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the Amazon S3 location from which the test set is imported.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TestSetImportInputLocation {
     /// <p>The name of the Amazon S3 bucket.</p>

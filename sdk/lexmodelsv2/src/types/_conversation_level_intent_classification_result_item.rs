@@ -2,6 +2,8 @@
 
 /// <p>The item listing the evaluation of intent level success or failure.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationLevelIntentClassificationResultItem {
     /// <p>The intent name used in the evaluation of intent level success or failure.</p>

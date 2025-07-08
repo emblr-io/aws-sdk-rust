@@ -2,6 +2,8 @@
 
 /// <p>A bot that is a member of a network of bots.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BotMember {
     /// <p>The unique ID of a bot that is a member of this network of bots.</p>

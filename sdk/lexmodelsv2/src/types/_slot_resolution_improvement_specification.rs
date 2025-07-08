@@ -2,6 +2,8 @@
 
 /// <p>Contains specifications for the assisted slot resolution feature.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotResolutionImprovementSpecification {
     /// <p>Specifies whether assisted slot resolution is turned on or off.</p>

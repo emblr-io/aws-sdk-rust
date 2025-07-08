@@ -2,6 +2,8 @@
 
 /// <p>Specifies the DTMF input specifications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DtmfSpecification {
     /// <p>The maximum number of DTMF digits allowed in an utterance.</p>

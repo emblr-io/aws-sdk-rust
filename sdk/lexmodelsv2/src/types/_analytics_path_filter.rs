@@ -21,6 +21,8 @@
 /// <p><code>Channel</code> – <code>EQ</code>.</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsPathFilter {
     /// <p>The category by which to filter the intent paths. The descriptions for each option are as follows:</p>

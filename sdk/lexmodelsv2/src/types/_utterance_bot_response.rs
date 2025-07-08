@@ -2,6 +2,8 @@
 
 /// <p>An object that contains a response to the utterance from the bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceBotResponse {
     /// <p>The text of the response to the utterance from the bot.</p>

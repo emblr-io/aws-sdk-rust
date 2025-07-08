@@ -2,6 +2,8 @@
 
 /// <p>Provides summary information about a slot type.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotTypeSummary {
     /// <p>The unique identifier assigned to the slot type.</p>

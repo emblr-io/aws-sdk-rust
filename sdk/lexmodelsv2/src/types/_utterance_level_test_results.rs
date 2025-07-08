@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the utterances in the results of the test set execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceLevelTestResults {
     /// <p>Contains information about an utterance in the results of the test set execution.</p>

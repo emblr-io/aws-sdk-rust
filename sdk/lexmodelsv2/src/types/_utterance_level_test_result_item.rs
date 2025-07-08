@@ -2,6 +2,8 @@
 
 /// <p>Contains information about multiple utterances in the results of a test set execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceLevelTestResultItem {
     /// <p>The record number of the result.</p>

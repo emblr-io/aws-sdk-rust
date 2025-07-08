@@ -2,6 +2,8 @@
 
 /// <p>The unique custom vocabulary item from the custom vocabulary list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomVocabularyItem {
     /// <p>The unique item identifer for the custom vocabulary item from the custom vocabulary list.</p>

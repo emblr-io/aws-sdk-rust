@@ -2,6 +2,8 @@
 
 /// <p>Information about intent-level slot resolution in a test result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IntentLevelSlotResolutionTestResultItem {
     /// <p>The name of the intent that was recognized.</p>

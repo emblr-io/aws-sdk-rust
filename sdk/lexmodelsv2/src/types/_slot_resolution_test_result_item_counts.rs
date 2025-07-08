@@ -2,6 +2,8 @@
 
 /// <p>Information about the counts for a slot resolution in the results of a test execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SlotResolutionTestResultItemCounts {
     /// <p>The total number of results.</p>

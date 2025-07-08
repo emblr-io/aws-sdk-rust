@@ -2,6 +2,8 @@
 
 /// <p>The new custom vocabulary item from the custom vocabulary list.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NewCustomVocabularyItem {
     /// <p>The unique phrase for the new custom vocabulary item from the custom vocabulary list.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains the results for the user turn by the test execution.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UserTurnResult {
     /// <p>Contains information about the user messages in the turn in the input.</p>

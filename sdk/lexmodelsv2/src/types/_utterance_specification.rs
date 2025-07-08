@@ -2,6 +2,8 @@
 
 /// <p>An object containing information about a specific utterance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UtteranceSpecification {
     /// <p>The identifier of the alias of the bot that the utterance was made to.</p>

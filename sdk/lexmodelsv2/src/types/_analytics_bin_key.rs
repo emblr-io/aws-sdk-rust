@@ -2,6 +2,8 @@
 
 /// <p>An object containing the criterion by which to bin the results and the value that defines that bin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsBinKey {
     /// <p>The criterion by which to bin the results.</p>

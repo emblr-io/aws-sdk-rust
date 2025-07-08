@@ -2,6 +2,8 @@
 
 /// <p>Contains the category by which the intent stage analytics and the values for that category were grouped.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AnalyticsIntentStageGroupByKey {
     /// <p>A category by which the intent stage analytics were grouped.</p>

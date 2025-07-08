@@ -2,6 +2,8 @@
 
 /// <p>A context that must be active for an intent to be selected by Amazon Lex.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputContext {
     /// <p>The name of the context.</p>

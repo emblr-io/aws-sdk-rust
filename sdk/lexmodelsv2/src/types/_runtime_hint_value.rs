@@ -2,6 +2,8 @@
 
 /// <p>Provides the phrase that Amazon Lex should look for in the user's input to the bot.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuntimeHintValue {
     /// <p>The phrase that Amazon Lex should look for in the user's input to the bot.</p>
