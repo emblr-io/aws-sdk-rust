@@ -2,6 +2,8 @@
 
 /// <p>Launch Status of the Job Post Launch Actions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobPostLaunchActionsLaunchStatus {
     /// <p>AWS Systems Manager's Document of the of the Job Post Launch Actions.</p>

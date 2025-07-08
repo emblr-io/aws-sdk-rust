@@ -2,6 +2,8 @@
 
 /// <p>Source server post migration custom action filters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SourceServerActionsRequestFilters {
     /// <p>Action IDs to filter source server post migration custom actions by.</p>
