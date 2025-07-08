@@ -2,6 +2,8 @@
 
 /// <p>A filter used to determine which webhooks trigger a build.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WebhookFilter {
     /// <p>The type of webhook filter. There are 11 webhook filter types: <code>EVENT</code>, <code>ACTOR_ACCOUNT_ID</code>, <code>HEAD_REF</code>, <code>BASE_REF</code>, <code>FILE_PATH</code>, <code>COMMIT_MESSAGE</code>, <code>TAG_NAME</code>, <code>RELEASE_NAME</code>, <code>REPOSITORY_NAME</code>, <code>ORGANIZATION_NAME</code>, and <code>WORKFLOW_NAME</code>.</p>

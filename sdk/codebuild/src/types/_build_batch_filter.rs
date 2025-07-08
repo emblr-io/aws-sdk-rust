@@ -2,6 +2,8 @@
 
 /// <p>Specifies filters when retrieving batch builds.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BuildBatchFilter {
     /// <p>The status of the batch builds to retrieve. Only batch builds that have this status will be retrieved.</p>

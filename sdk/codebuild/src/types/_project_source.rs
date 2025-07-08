@@ -2,6 +2,8 @@
 
 /// <p>Information about the build input source code for the build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectSource {
     /// <p>The type of repository that contains the source code to be built. Valid values include:</p>

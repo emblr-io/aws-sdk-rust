@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the sandbox phase.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SandboxSessionPhase {
     /// <p>The name of the sandbox phase.</p>

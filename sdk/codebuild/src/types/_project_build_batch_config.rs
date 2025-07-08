@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration information about a batch build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProjectBuildBatchConfig {
     /// <p>Specifies the service role ARN for the batch build project.</p>

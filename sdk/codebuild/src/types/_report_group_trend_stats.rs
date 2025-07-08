@@ -2,6 +2,8 @@
 
 /// <p>Contains trend statistics for a set of reports. The actual values depend on the type of trend being collected. For more information, see .</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReportGroupTrendStats {
     /// <p>Contains the average of all values analyzed.</p>

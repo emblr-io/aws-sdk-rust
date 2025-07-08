@@ -2,6 +2,8 @@
 
 /// <p>Information about the Git submodules configuration for an CodeBuild build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GitSubmodulesConfig {
     /// <p>Set to true to fetch Git submodules for your CodeBuild build project.</p>

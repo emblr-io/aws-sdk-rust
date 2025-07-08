@@ -2,6 +2,8 @@
 
 /// <p>Defines when a new instance is auto-scaled into the compute fleet.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TargetTrackingScalingConfiguration {
     /// <p>The metric type to determine auto-scaling.</p>

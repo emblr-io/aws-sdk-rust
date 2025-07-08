@@ -2,6 +2,8 @@
 
 /// <p>Information about a webhook that connects repository events to a build project in CodeBuild.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Webhook {
     /// <p>The URL to the webhook.</p>

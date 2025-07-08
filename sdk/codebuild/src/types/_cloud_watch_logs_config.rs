@@ -2,6 +2,8 @@
 
 /// <p>Information about CloudWatch Logs for a build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsConfig {
     /// <p>The current status of the logs in CloudWatch Logs for a build project. Valid values are:</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about build logs in CloudWatch Logs.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LogsLocation {
     /// <p>The name of the CloudWatch Logs group for the build logs.</p>

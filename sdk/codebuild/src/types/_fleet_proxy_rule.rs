@@ -2,6 +2,8 @@
 
 /// <p>Information about the proxy rule for your reserved capacity instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetProxyRule {
     /// <p>The type of proxy rule.</p>

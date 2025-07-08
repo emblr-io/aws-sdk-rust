@@ -2,6 +2,8 @@
 
 /// <p>Information about S3 logs for a build project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3LogsConfig {
     /// <p>The current status of the S3 build logs. Valid values are:</p>
