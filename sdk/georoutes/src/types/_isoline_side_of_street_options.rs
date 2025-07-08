@@ -2,6 +2,8 @@
 
 /// <p>Options to configure matching the provided position to a side of the street.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct IsolineSideOfStreetOptions {
     /// <p>Position defined as <code>\[longitude, latitude\]</code>.</p>

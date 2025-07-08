@@ -2,6 +2,8 @@
 
 /// <p>If the waypoint should be treated as a stop. If yes, the route is split up into different legs around the stop.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePassThroughWaypoint {
     /// <p>Offset in the leg geometry corresponding to the start of this step.</p>

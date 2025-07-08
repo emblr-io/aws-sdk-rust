@@ -2,6 +2,8 @@
 
 /// <p>Price range with a minimum and maximum value, if a range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteTollPriceValueRange {
     /// <p>Minimum price.</p>

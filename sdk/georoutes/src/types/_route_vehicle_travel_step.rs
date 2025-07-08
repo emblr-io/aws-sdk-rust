@@ -2,6 +2,8 @@
 
 /// <p>Steps of a leg that correspond to the travel portion of the leg.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteVehicleTravelStep {
     /// <p>Details that are specific to a Continue Highway step.</p>

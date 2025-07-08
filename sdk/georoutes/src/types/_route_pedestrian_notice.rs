@@ -2,6 +2,8 @@
 
 /// <p>Notices are additional information returned that indicate issues that occurred during route calculation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RoutePedestrianNotice {
     /// <p>Code corresponding to the issue.</p>

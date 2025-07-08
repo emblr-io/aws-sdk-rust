@@ -2,6 +2,8 @@
 
 /// <p>The place where the waypoint is passed through and not treated as a stop.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RoutePassThroughPlace {
     /// <p>Position provided in the request.</p>

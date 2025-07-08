@@ -2,6 +2,8 @@
 
 /// <p>Waypoint between the Origin and Destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct WaypointOptimizationWaypoint {
     /// <p>Access hours corresponding to when a waypoint can be visited.</p>

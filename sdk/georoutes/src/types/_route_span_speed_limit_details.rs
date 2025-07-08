@@ -3,6 +3,8 @@
 /// <p>Details about the speed limit corresponding to the span.</p>
 /// <p><b>Unit</b>: <code>KilometersPerHour</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteSpanSpeedLimitDetails {
     /// <p>Maximum speed.</p>
