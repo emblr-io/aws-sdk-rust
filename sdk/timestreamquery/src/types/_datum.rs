@@ -2,6 +2,8 @@
 
 /// <p>Datum represents a single data point in a query result.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Datum {
     /// <p>Indicates if the data point is a scalar value such as integer, string, double, or Boolean.</p>

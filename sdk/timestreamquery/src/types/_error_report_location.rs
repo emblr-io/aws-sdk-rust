@@ -2,6 +2,8 @@
 
 /// <p>This contains the location of the error report for a single scheduled query call.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorReportLocation {
     /// <p>The S3 location where error reports are written.</p>

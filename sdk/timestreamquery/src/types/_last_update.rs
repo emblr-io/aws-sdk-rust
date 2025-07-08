@@ -2,6 +2,8 @@
 
 /// <p>Configuration object that contains the most recent account settings update, visible only if settings have been updated previously.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastUpdate {
     /// <p>The number of TimeStream Compute Units (TCUs) requested in the last account settings update.</p>

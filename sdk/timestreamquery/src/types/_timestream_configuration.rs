@@ -2,6 +2,8 @@
 
 /// <p>Configuration to write data into Timestream database and table. This configuration allows the user to map the query result select columns into the destination table columns.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestreamConfiguration {
     /// <p>Name of Timestream database to which the query result will be written.</p>

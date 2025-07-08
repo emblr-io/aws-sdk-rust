@@ -2,6 +2,8 @@
 
 /// <p>Contains the metadata for query results such as the column names, data types, and other attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnInfo {
     /// <p>The name of the result set column. The name of the result set is available for columns of all data types except for arrays.</p>

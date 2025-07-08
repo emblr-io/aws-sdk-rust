@@ -2,6 +2,8 @@
 
 /// <p>Details on SNS that are required to send the notification.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnsConfiguration {
     /// <p>SNS topic ARN that the scheduled query status notifications will be sent to.</p>
