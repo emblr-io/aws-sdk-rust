@@ -2,6 +2,8 @@
 
 /// <p>Sends message data to an IoT Analytics channel.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotAnalyticsAction {
     /// <p>(deprecated) The ARN of the IoT Analytics channel to which message data will be sent.</p>

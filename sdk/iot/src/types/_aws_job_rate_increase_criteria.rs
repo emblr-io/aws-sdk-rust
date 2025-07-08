@@ -2,6 +2,8 @@
 
 /// <p>The criteria to initiate the increase in rate of rollout for a job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsJobRateIncreaseCriteria {
     /// <p>When this number of things have been notified, it will initiate an increase in the rollout rate.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Metadata attributes of the time series that are written in each measure record.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimestreamDimension {
     /// <p>The metadata dimension name. This is the name of the column in the Amazon Timestream database table record.</p>

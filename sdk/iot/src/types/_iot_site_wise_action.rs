@@ -2,6 +2,8 @@
 
 /// <p>Describes an action to send data from an MQTT message that triggered the rule to IoT SiteWise asset properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct IotSiteWiseAction {
     /// <p>A list of asset property value entries.</p>

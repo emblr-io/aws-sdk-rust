@@ -2,6 +2,8 @@
 
 /// <p>A conflicting resource update exception. This exception is thrown when two pending updates cause a conflict.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConflictingResourceUpdateException {
     /// <p>The message for the exception.</p>

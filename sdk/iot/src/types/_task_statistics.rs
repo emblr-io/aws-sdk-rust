@@ -2,6 +2,8 @@
 
 /// <p>Statistics for the checks performed during the audit.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TaskStatistics {
     /// <p>The number of checks in this audit.</p>

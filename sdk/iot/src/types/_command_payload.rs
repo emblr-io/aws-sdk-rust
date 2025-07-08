@@ -2,6 +2,8 @@
 
 /// <p>The command payload object that contains the instructions for the device to process.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CommandPayload {
     /// <p>The static payload file for the command.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Used in MitigationActionParams, this information identifies the target findings to which the mitigation actions are applied. Only one entry appears.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuditMitigationActionsTaskTarget {
     /// <p>If the task will apply a mitigation action to findings from a specific audit, this value uniquely identifies the audit.</p>

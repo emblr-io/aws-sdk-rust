@@ -2,6 +2,8 @@
 
 /// <p>Describes which mitigation actions should be executed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectMitigationActionExecution {
     /// <p>The unique identifier of the task.</p>

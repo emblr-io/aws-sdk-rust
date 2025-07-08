@@ -2,6 +2,8 @@
 
 /// <p>HTTP URL destination properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HttpUrlDestinationProperties {
     /// <p>The URL used to confirm the HTTP topic rule destination URL.</p>

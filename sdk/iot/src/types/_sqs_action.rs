@@ -2,6 +2,8 @@
 
 /// <p>Describes an action to publish data to an Amazon SQS queue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqsAction {
     /// <p>The ARN of the IAM role that grants access.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information that identifies the noncompliant resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResourceIdentifier {
     /// <p>The ID of the certificate attached to the resource.</p>

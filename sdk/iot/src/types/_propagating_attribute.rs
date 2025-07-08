@@ -2,6 +2,8 @@
 
 /// <p>An object that represents the connection attribute, thing attribute, and the user property key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PropagatingAttribute {
     /// <p>The key of the user property key-value pair.</p>

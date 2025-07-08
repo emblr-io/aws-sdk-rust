@@ -2,6 +2,8 @@
 
 /// <p>The name and ARN of a fleet metric.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FleetMetricNameAndArn {
     /// <p>The fleet metric name.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A collection of authorization information.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthInfo {
     /// <p>The type of action for which the principal is being authorized.</p>

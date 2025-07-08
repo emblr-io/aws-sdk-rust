@@ -2,6 +2,8 @@
 
 /// <p>The properties of the thing, including thing name, thing type name, and a list of thing attributes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThingAttribute {
     /// <p>The name of the thing.</p>

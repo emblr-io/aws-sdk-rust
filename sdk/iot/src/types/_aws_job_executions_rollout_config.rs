@@ -2,6 +2,8 @@
 
 /// <p>Configuration for the rollout of OTA updates.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AwsJobExecutionsRolloutConfig {
     /// <p>The maximum number of OTA update job executions started per minute.</p>

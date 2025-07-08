@@ -2,6 +2,8 @@
 
 /// <p>The configuration information for a virtual private cloud (VPC) destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VpcDestinationConfiguration {
     /// <p>The subnet IDs of the VPC destination.</p>

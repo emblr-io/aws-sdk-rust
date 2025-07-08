@@ -2,6 +2,8 @@
 
 /// <p>An object that speciﬁes the client certificate conﬁguration for a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClientCertificateConfig {
     /// <p>The ARN of the Lambda function that IoT invokes after mutual TLS authentication during the connection.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The job execution object represents the execution of a job on a particular device.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct JobExecution {
     /// <p>The unique identifier you assigned to the job when it was created.</p>

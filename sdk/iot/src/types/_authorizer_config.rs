@@ -2,6 +2,8 @@
 
 /// <p>An object that specifies the authorization service for a domain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AuthorizerConfig {
     /// <p>The name of the authorization service for a domain configuration.</p>

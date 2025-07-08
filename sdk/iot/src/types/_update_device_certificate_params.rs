@@ -2,6 +2,8 @@
 
 /// <p>Parameters to define a mitigation action that changes the state of the device certificate to inactive.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateDeviceCertificateParams {
     /// <p>The action that you want to apply to the device certificate. The only supported value is <code>DEACTIVATE</code>.</p>

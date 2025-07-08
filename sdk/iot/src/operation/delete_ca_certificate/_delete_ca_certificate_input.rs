@@ -2,6 +2,8 @@
 
 /// <p>Input for the DeleteCACertificate operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteCaCertificateInput {
     /// <p>The ID of the certificate to delete. (The last part of the certificate ARN contains the certificate ID.)</p>

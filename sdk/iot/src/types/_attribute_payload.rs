@@ -2,6 +2,8 @@
 
 /// <p>The attribute payload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AttributePayload {
     /// <p>A JSON string containing up to three key-value pair in JSON format. For example:</p>

@@ -2,6 +2,8 @@
 
 /// <p>A count of documents that meets a specific aggregation criteria.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Bucket {
     /// <p>The value counted for the particular bucket.</p>

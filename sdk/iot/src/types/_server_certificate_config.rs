@@ -2,6 +2,8 @@
 
 /// <p>The server certificate configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerCertificateConfig {
     /// <p>A Boolean value that indicates whether Online Certificate Status Protocol (OCSP) server certificate check is enabled or not.</p>

@@ -10,6 +10,8 @@
 /// <p>CredentialProvider</p></li>
 /// </ul>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DomainConfigurationSummary {
     /// <p>The name of the domain configuration. This value must be unique to a region.</p>

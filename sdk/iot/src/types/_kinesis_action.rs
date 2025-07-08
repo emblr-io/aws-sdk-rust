@@ -2,6 +2,8 @@
 
 /// <p>Describes an action to write data to an Amazon Kinesis stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisAction {
     /// <p>The ARN of the IAM role that grants access to the Amazon Kinesis stream.</p>

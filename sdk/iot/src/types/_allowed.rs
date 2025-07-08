@@ -2,6 +2,8 @@
 
 /// <p>Contains information that allowed the authorization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Allowed {
     /// <p>A list of policies that allowed the authentication.</p>
