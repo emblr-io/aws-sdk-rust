@@ -2,6 +2,8 @@
 
 /// <p>The configuration of the business name generation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BusinessNameGenerationConfiguration {
     /// <p>Specifies whether the business name generation is enabled.</p>

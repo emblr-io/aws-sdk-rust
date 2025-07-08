@@ -2,6 +2,8 @@
 
 /// <p>The additional attributes of an inventory asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetItemAdditionalAttributes {
     /// <p>The forms included in the additional attributes of an inventory asset.</p>

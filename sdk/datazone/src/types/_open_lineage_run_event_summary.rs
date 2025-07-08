@@ -2,6 +2,8 @@
 
 /// <p>The open lineage run event summary.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpenLineageRunEventSummary {
     /// <p>The event type of the open lineage run event summary.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The Amazon Redshift properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RedshiftPropertiesOutput {
     /// <p>The storage in the Amazon Redshift properties.</p>

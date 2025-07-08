@@ -2,6 +2,8 @@
 
 /// <p>The revision of an inventory asset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssetRevision {
     /// <p>The Amazon DataZone user who created the inventory asset.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies the rule and the threshold under which a prediction can be accepted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AcceptRule {
     /// <p>Specifies whether you want to accept the top prediction for all targets or none.</p>

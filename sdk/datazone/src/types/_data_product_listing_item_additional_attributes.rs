@@ -2,6 +2,8 @@
 
 /// <p>The additional attributes of the asset of the data product.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DataProductListingItemAdditionalAttributes {
     /// <p>The metadata forms of the asset of the data product.</p>

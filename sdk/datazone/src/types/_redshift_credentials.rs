@@ -2,6 +2,8 @@
 
 /// <p>Amazon Redshift credentials of a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum RedshiftCredentials {
     /// <p>The secret ARN of the Amazon Redshift credentials of a connection.</p>

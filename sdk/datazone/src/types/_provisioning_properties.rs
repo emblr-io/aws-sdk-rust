@@ -2,6 +2,8 @@
 
 /// <p>The provisioning properties of an environment blueprint.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ProvisioningProperties {
     /// <p>The cloud formation properties included as part of the provisioning properties of an environment blueprint.</p>

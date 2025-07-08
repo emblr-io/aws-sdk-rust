@@ -2,6 +2,8 @@
 
 /// <p>The connection properties patch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ConnectionPropertiesPatch {
     /// <p>The Amazon Athena properties of a connection properties patch.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The details of the subscription target configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SubscriptionTargetForm {
     /// <p>The form name included in the subscription target configuration.</p>

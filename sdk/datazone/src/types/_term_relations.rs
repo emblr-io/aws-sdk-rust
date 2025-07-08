@@ -2,6 +2,8 @@
 
 /// <p>The details of the term relations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TermRelations {
     /// <p>The <code>isA</code> property of the term relations.</p>

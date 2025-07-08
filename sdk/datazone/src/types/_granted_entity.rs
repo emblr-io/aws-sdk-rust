@@ -2,6 +2,8 @@
 
 /// <p>The details of a listing for which a subscription is granted.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum GrantedEntity {
     /// <p>The listing for which a subscription is granted.</p>

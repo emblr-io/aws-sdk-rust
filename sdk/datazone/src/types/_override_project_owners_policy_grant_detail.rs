@@ -2,6 +2,8 @@
 
 /// <p>The details of the override project owners policy grant.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OverrideProjectOwnersPolicyGrantDetail {
     /// <p>Specifies whether the policy is inherited by child domain units.</p>

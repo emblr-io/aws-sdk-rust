@@ -2,6 +2,8 @@
 
 /// <p>The details of the results of the <code>SearchTypes</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SearchTypesResultItem {
     /// <p>The asset type included in the results of the <code>SearchTypes</code> action.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The ID of the domain unit owners group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum OwnerPropertiesOutput {
     /// <p>Specifies that the domain unit owner is a group.</p>

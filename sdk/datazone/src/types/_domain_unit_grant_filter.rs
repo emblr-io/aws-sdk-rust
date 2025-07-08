@@ -2,6 +2,8 @@
 
 /// <p>The grant filter for the domain unit. In the current release of Amazon DataZone, the only supported filter is the <code>allDomainUnitsGrantFilter</code>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum DomainUnitGrantFilter {
     /// <p>Specifies a grant filter containing all domain units.</p>

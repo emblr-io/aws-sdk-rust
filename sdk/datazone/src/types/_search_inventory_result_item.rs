@@ -2,6 +2,8 @@
 
 /// <p>The details of the search results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SearchInventoryResultItem {
     /// <p>The asset item included in the search results.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The hyper pod properties of a Amazon Web Services Glue properties patch.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HyperPodPropertiesOutput {
     /// <p>The cluster name the hyper pod properties.</p>

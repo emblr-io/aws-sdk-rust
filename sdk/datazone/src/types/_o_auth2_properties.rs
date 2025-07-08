@@ -2,6 +2,8 @@
 
 /// <p>The OAuth2 properties.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct OAuth2Properties {
     /// <p>The OAuth2 grant type of the OAuth2 properties.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The single sign-on details of the user profile.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct SsoUserProfileDetails {
     /// <p>The username included in the single sign-on details of the user profile.</p>

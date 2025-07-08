@@ -2,6 +2,8 @@
 
 /// <p>The recommendation to be updated as part of the <code>UpdateDataSource</code> action.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecommendationConfiguration {
     /// <p>Specifies whether automatic business name generation is to be enabled or not as part of the recommendation configuration.</p>

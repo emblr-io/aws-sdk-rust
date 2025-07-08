@@ -2,6 +2,8 @@
 
 /// <p>Specifies that a value is not equal to the expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NotEqualToExpression {
     /// <p>The name of the column.</p>

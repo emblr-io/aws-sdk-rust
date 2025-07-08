@@ -2,6 +2,8 @@
 
 /// <p>The model of the API.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub enum Model {
     /// <p>Indicates the smithy model of the API.</p>

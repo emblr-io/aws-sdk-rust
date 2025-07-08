@@ -2,6 +2,8 @@
 
 /// <p>The details of a listing (aka asset published in a Amazon DataZone catalog).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ListingItem {
     /// <p>An asset published in an Amazon DataZone catalog.</p>

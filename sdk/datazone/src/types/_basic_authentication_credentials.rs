@@ -2,6 +2,8 @@
 
 /// <p>The basic authentication credentials of a connection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct BasicAuthenticationCredentials {
     /// <p>The user name for the connecion.</p>

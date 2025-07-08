@@ -2,6 +2,8 @@
 
 /// <p>The relational filter configuration for the data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RelationalFilterConfiguration {
     /// <p>The database name specified in the relational filter configuration for the data source.</p>

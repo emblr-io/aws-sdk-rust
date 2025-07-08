@@ -2,6 +2,8 @@
 
 /// <p>The details of the Amazon Redshift storage as part of the configuration of an Amazon Redshift data source run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum RedshiftStorage {
     /// <p>The details of the Amazon Redshift cluster source.</p>
