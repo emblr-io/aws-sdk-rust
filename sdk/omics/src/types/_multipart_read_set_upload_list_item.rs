@@ -2,6 +2,8 @@
 
 /// <p>Part of the response to ListMultipartReadSetUploads, excluding completed and aborted multipart uploads.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MultipartReadSetUploadListItem {
     /// <p>The sequence store ID used for the multipart upload.</p>

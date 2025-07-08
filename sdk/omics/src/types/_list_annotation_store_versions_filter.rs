@@ -2,6 +2,8 @@
 
 /// <p>Use filters to focus the returned annotation store versions on a specific parameter, such as the status of the annotation store.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListAnnotationStoreVersionsFilter {
     /// <p>The status of an annotation store version.</p>
