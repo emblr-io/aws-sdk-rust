@@ -2,6 +2,8 @@
 
 /// <p>Details for a Quick Setup configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationSummary {
     /// <p>A service generated identifier for the configuration.</p>

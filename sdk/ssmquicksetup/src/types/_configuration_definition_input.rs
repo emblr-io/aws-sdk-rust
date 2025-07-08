@@ -2,6 +2,8 @@
 
 /// <p>Defines the preferences and options for a configuration definition.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationDefinitionInput {
     /// <p>The type of the Quick Setup configuration.</p>

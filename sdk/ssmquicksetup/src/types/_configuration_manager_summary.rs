@@ -2,6 +2,8 @@
 
 /// <p>A summary of a Quick Setup configuration manager.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConfigurationManagerSummary {
     /// <p>The ARN of the Quick Setup configuration.</p>

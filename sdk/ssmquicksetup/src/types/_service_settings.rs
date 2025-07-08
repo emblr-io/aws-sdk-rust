@@ -2,6 +2,8 @@
 
 /// <p>Settings configured for Quick Setup.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceSettings {
     /// <p>The IAM role used to enable Explorer.</p>
