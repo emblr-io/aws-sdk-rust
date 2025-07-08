@@ -2,6 +2,8 @@
 
 /// <p>v4 template schema that can use either Legacy Cryptographic Providers or Key Storage Providers.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateV4 {
     /// <p>Certificate validity describes the validity and renewal periods of a certificate.</p>

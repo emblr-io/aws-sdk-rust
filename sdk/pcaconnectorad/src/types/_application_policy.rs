@@ -2,6 +2,8 @@
 
 /// <p>Application policies describe what the certificate can be used for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ApplicationPolicy {
     /// <p>The object identifier (OID) of an application policy.</p>

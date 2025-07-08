@@ -2,6 +2,8 @@
 
 /// <p>The revision version of the template. Template updates will increment the minor revision. Re-enrolling all certificate holders will increment the major revision.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TemplateRevision {
     /// <p>The revision version of the template. Re-enrolling all certificate holders will increment the major revision.</p>

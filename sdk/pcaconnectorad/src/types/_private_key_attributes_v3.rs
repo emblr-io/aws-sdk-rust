@@ -2,6 +2,8 @@
 
 /// <p>Defines the attributes of the private key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PrivateKeyAttributesV3 {
     /// <p>Set the minimum key length of the private key.</p>
