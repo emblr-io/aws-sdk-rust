@@ -2,6 +2,8 @@
 
 /// <p>Metadata generated from the segment documents in a trace.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TraceSummary {
     /// <p>The unique identifier for the request that generated the trace's segments and subsegments.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You have reached the maximum number of sampling rules.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RuleLimitExceededException {
     #[allow(missing_docs)] // documentation missing in model

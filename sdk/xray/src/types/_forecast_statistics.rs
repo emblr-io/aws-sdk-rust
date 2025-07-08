@@ -2,6 +2,8 @@
 
 /// <p>The predicted high and low fault count. This is used to determine if a service has become anomalous and if an insight should be created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ForecastStatistics {
     /// <p>The upper limit of fault counts for a service.</p>

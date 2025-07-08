@@ -2,6 +2,8 @@
 
 /// <p>When fault rates go outside of the expected range, X-Ray creates an insight. Insights tracks emergent issues within your applications.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Insight {
     /// <p>The insights unique identifier.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Information about requests that failed with a 4xx Client Error status code.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ErrorStatistics {
     /// <p>The number of requests that failed with a 429 throttling status code.</p>

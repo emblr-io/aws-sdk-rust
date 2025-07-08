@@ -2,6 +2,8 @@
 
 /// <p>A span from a trace that has been ingested by the X-Ray service. A span represents a unit of work or an operation performed by a service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Span {
     /// <p>The span ID.</p>

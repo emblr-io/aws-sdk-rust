@@ -2,6 +2,8 @@
 
 /// <p>Statistics that describe how the incident has impacted a service.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RequestImpactStatistics {
     /// <p>The number of requests that have resulted in a fault,</p>
