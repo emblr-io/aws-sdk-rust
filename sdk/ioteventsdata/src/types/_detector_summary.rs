@@ -2,6 +2,8 @@
 
 /// <p>Information about the detector (instance).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DetectorSummary {
     /// <p>The name of the detector model that created this detector (instance).</p>
