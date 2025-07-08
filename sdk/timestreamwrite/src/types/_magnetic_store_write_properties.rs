@@ -2,6 +2,8 @@
 
 /// <p>The set of properties on a table for configuring magnetic store writes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MagneticStoreWriteProperties {
     /// <p>A flag to enable magnetic store writes.</p>
