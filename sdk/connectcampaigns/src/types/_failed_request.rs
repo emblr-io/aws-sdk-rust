@@ -2,6 +2,8 @@
 
 /// A failed request identified by the unique client token.
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FailedRequest {
     /// Client provided parameter used for idempotency. Its value must be unique for each request.
