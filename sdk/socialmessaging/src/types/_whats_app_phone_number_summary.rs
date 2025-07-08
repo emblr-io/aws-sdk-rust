@@ -2,6 +2,8 @@
 
 /// <p>The details of a linked phone number.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WhatsAppPhoneNumberSummary {
     /// <p>The full Amazon Resource Name (ARN) for the phone number.</p>

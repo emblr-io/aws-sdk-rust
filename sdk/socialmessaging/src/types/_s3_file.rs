@@ -2,6 +2,8 @@
 
 /// <p>Contains information for the S3 bucket that contains media files.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct S3File {
     /// <p>The bucket name.</p>
