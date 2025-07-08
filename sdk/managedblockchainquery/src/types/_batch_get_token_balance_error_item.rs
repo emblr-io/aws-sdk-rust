@@ -2,6 +2,8 @@
 
 /// <p>Error generated from a failed <code>BatchGetTokenBalance</code> request.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetTokenBalanceErrorItem {
     /// <p>The container for the identifier for the token including the unique token ID and its blockchain network.</p><note>

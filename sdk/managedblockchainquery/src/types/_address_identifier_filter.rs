@@ -2,6 +2,8 @@
 
 /// <p>This is the container for the unique public address on the blockchain.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AddressIdentifierFilter {
     /// <p>The container for the recipient address of the transaction.</p>
