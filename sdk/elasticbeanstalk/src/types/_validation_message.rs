@@ -2,6 +2,8 @@
 
 /// <p>An error or warning for a desired configuration option value.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ValidationMessage {
     /// <p>A message describing the error or warning.</p>

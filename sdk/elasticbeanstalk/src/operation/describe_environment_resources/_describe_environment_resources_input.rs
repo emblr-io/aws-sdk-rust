@@ -2,6 +2,8 @@
 
 /// <p>Request to describe the resources in an environment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEnvironmentResourcesInput {
     /// <p>The ID of the environment to retrieve AWS resource usage data.</p>

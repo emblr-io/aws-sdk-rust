@@ -2,6 +2,8 @@
 
 /// <p>Result message containing all of the configuration settings for a specified solution stack or configuration template.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeConfigurationSettingsInput {
     /// <p>The application for the environment or configuration template.</p>

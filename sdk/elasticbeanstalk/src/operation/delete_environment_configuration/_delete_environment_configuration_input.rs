@@ -2,6 +2,8 @@
 
 /// <p>Request to delete a draft environment configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteEnvironmentConfigurationInput {
     /// <p>The name of the application the environment is associated with.</p>

@@ -2,6 +2,8 @@
 
 /// <p>You cannot delete the platform version because there are still environments running on it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PlatformVersionStillReferencedException {
     /// <p>The exception error message.</p>

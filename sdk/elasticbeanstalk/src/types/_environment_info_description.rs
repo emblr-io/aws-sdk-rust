@@ -2,6 +2,8 @@
 
 /// <p>The information retrieved from the Amazon EC2 instances.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentInfoDescription {
     /// <p>The type of information retrieved.</p>
