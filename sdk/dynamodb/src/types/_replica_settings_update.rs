@@ -2,6 +2,8 @@
 
 /// <p>Represents the settings for a global table in a Region that will be modified.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReplicaSettingsUpdate {
     /// <p>The Region of the replica to be added.</p>

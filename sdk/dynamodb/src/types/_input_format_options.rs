@@ -2,6 +2,8 @@
 
 /// <p>The format options for the data that was imported into the target table. There is one value, CsvOption.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputFormatOptions {
     /// <p>The options for imported source files in CSV format. The values are Delimiter and HeaderList.</p>

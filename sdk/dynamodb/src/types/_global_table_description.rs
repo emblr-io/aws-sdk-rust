@@ -2,6 +2,8 @@
 
 /// <p>Contains details about the global table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalTableDescription {
     /// <p>The Regions where the global table has replicas.</p>

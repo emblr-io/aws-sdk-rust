@@ -2,6 +2,8 @@
 
 /// <p>Represents a Contributor Insights summary entry.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ContributorInsightsSummary {
     /// <p>Name of the table associated with the summary.</p>

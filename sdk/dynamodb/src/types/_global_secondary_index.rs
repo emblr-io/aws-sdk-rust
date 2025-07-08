@@ -2,6 +2,8 @@
 
 /// <p>Represents the properties of a global secondary index.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GlobalSecondaryIndex {
     /// <p>The name of the global secondary index. The name must be unique among all other indexes on this table.</p>

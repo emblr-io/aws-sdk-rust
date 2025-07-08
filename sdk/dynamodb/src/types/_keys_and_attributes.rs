@@ -3,6 +3,8 @@
 /// <p>Represents a set of primary keys and, for each key, the attributes to retrieve from the table.</p>
 /// <p>For each primary key, you must provide <i>all</i> of the key attributes. For example, with a simple primary key, you only need to provide the partition key. For a composite primary key, you must provide <i>both</i> the partition key and the sort key.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KeysAndAttributes {
     /// <p>The primary key attribute values that define the items and the attributes associated with the items.</p>

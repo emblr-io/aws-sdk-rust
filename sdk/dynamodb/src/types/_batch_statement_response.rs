@@ -2,6 +2,8 @@
 
 /// <p>A PartiQL batch statement response..</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchStatementResponse {
     /// <p>The error associated with a failed PartiQL batch statement.</p>

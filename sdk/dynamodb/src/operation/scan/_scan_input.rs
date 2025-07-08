@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>Scan</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScanInput {
     /// <p>The name of the table containing the requested items or if you provide <code>IndexName</code>, the name of the table to which that index belongs.</p>

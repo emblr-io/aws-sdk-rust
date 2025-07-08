@@ -2,6 +2,8 @@
 
 /// <p>Represents a global secondary index to be deleted from an existing table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteGlobalSecondaryIndexAction {
     /// <p>The name of the global secondary index to be deleted.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Point in time recovery has not yet been enabled for this source table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PointInTimeRecoveryUnavailableException {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>The parameters for the table created as part of the import operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TableCreationParameters {
     /// <p>The name of the table created as part of the import operation.</p>

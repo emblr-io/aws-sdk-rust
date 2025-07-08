@@ -2,6 +2,8 @@
 
 /// <p>Replica-specific provisioned throughput settings. If not specified, uses the source table's provisioned throughput settings.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProvisionedThroughputOverride {
     /// <p>Replica-specific read capacity units. If not specified, uses the source table's read capacity settings.</p>

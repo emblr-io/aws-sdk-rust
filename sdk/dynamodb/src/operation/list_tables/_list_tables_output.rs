@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>ListTables</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListTablesOutput {
     /// <p>The names of the tables associated with the current account at the current endpoint. The maximum size of this array is 100.</p>

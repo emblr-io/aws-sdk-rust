@@ -2,6 +2,8 @@
 
 /// <p>Represents the settings used to enable or disable Time to Live (TTL) for the specified table.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeToLiveSpecification {
     /// <p>Indicates whether TTL is to be enabled (true) or disabled (false) on the table.</p>

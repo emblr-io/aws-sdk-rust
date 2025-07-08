@@ -2,6 +2,8 @@
 
 /// <p>Contains details of a table archival operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ArchivalSummary {
     /// <p>The date and time when table archival was initiated by DynamoDB, in UNIX epoch time format.</p>
