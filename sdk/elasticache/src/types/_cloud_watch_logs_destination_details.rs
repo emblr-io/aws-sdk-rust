@@ -2,6 +2,8 @@
 
 /// <p>The configuration details of the CloudWatch Logs destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLogsDestinationDetails {
     /// <p>The name of the CloudWatch Logs log group.</p>

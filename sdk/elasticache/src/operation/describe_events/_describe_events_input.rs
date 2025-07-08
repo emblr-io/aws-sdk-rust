@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DescribeEvents</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeEventsInput {
     /// <p>The identifier of the event source for which events are returned. If not specified, all sources are included in the response.</p>

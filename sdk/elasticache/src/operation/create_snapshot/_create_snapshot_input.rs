@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateSnapshot</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateSnapshotInput {
     /// <p>The identifier of an existing replication group. The snapshot is created from this replication group.</p>

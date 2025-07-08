@@ -2,6 +2,8 @@
 
 /// <p>Configuration settings for horizontal or vertical scaling operations on Memcached clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ScaleConfig {
     /// <p>The percentage by which to scale the Memcached cluster, either horizontally by adding nodes or vertically by increasing resources.</p>

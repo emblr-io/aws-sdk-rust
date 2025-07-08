@@ -2,6 +2,8 @@
 
 /// <p>The request cannot be processed because it would exceed the allowed number of clusters per customer.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ClusterQuotaForCustomerExceededFault {
     #[allow(missing_docs)] // documentation missing in model

@@ -2,6 +2,8 @@
 
 /// <p>Contains all of the attributes of a specific cluster.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheCluster {
     /// <p>The user-supplied identifier of the cluster. This identifier is a unique key that identifies a cluster.</p>

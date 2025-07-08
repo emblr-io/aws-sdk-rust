@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>DescribeCacheParameters</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeCacheParametersInput {
     /// <p>The name of a specific cache parameter group to return details for.</p>

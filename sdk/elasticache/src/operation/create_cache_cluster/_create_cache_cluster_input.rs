@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a CreateCacheCluster operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCacheClusterInput {
     /// <p>The node group (shard) identifier. This parameter is stored as a lowercase string.</p>

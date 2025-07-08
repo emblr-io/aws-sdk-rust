@@ -2,6 +2,8 @@
 
 /// <p>Filters update actions from the service updates that are in available status during the time range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TimeRangeFilter {
     /// <p>The start time of the time range filter</p>

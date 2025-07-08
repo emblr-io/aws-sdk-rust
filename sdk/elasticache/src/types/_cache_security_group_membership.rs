@@ -2,6 +2,8 @@
 
 /// <p>Represents a cluster's status within a particular cache security group.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheSecurityGroupMembership {
     /// <p>The name of the cache security group.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The request cannot be processed because it would exceed the maximum number of snapshots.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SnapshotQuotaExceededFault {
     #[allow(missing_docs)] // documentation missing in model

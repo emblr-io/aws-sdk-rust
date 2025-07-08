@@ -2,6 +2,8 @@
 
 /// <p>The usage limits for storage and ElastiCache Processing Units for the cache.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CacheUsageLimits {
     /// <p>The maximum data storage limit in the cache, expressed in Gigabytes.</p>

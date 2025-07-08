@@ -2,6 +2,8 @@
 
 /// <p>Represents a single node within a node group (shard).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct NodeGroupMember {
     /// <p>The ID of the cluster to which the node belongs.</p>

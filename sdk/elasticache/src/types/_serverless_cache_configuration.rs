@@ -2,6 +2,8 @@
 
 /// <p>The configuration settings for a specific serverless cache.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServerlessCacheConfiguration {
     /// <p>The identifier of a serverless cache.</p>

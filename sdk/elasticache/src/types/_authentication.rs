@@ -2,6 +2,8 @@
 
 /// <p>Indicates whether the user requires a password to authenticate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Authentication {
     /// <p>Indicates whether the user requires a password to authenticate.</p>

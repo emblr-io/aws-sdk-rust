@@ -2,6 +2,8 @@
 
 /// <p>Represents the output of a <code>PurchaseReservedCacheNodesOffering</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReservedCacheNode {
     /// <p>The unique identifier for the reservation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents the input of a <code>CreateCacheSubnetGroup</code> operation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateCacheSubnetGroupInput {
     /// <p>A name for the cache subnet group. This value is stored as a lowercase string.</p>
