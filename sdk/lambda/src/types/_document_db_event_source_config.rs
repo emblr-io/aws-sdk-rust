@@ -2,6 +2,8 @@
 
 /// <p>Specific configuration settings for a DocumentDB event source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DocumentDbEventSourceConfig {
     /// <p>The name of the database to consume within the DocumentDB cluster.</p>

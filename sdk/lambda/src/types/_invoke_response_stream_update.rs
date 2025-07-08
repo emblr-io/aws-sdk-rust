@@ -2,6 +2,8 @@
 
 /// <p>A chunk of the streamed response payload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct InvokeResponseStreamUpdate {
     /// <p>Data returned by your Lambda function.</p>
