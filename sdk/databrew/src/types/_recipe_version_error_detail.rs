@@ -2,6 +2,8 @@
 
 /// <p>Represents any errors encountered when attempting to delete multiple recipe versions.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecipeVersionErrorDetail {
     /// <p>The HTTP status code for the error.</p>

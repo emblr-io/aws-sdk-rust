@@ -2,6 +2,8 @@
 
 /// <p>Selector of a column from a dataset for profile job configuration. One selector includes either a column name or a regular expression.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ColumnSelector {
     /// <p>A regular expression for selecting a column from a dataset.</p>

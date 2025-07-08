@@ -2,6 +2,8 @@
 
 /// <p>Configuration of evaluations for a profile job. This configuration can be used to select evaluations and override the parameters of selected evaluations.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct StatisticsConfiguration {
     /// <p>List of included evaluations. When the list is undefined, all supported evaluations will be included.</p>

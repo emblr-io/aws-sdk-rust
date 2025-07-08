@@ -2,6 +2,8 @@
 
 /// <p>Connection information for dataset input files stored in a database.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DatabaseInputDefinition {
     /// <p>The Glue Connection that stores the connection information for the target database.</p>

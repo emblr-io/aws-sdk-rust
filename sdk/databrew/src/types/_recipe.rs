@@ -2,6 +2,8 @@
 
 /// <p>Represents one or more actions to be performed on a DataBrew dataset.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Recipe {
     /// <p>The Amazon Resource Name (ARN) of the user who created the recipe.</p>

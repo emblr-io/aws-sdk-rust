@@ -2,6 +2,8 @@
 
 /// <p>Represents a single step from a DataBrew recipe to be performed.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RecipeStep {
     /// <p>The particular action to be performed in the recipe step.</p>
