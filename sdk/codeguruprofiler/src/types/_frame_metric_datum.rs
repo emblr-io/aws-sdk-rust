@@ -2,6 +2,8 @@
 
 /// <p>Information about a frame metric and its values.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrameMetricDatum {
     /// <p>The frame name, metric type, and thread states. These are used to derive the value of the metric for the frame.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The frame name, metric type, and thread states. These are used to derive the value of the metric for the frame.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FrameMetric {
     /// <p>Name of the method common across the multiple occurrences of a frame in an application profile.</p>

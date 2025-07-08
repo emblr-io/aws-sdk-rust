@@ -2,6 +2,8 @@
 
 /// <p>Information about potential recommendations that might be created from the analysis of profiling data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FindingsReportSummary {
     /// <p>The universally unique identifier (UUID) of the recommendation report.</p>

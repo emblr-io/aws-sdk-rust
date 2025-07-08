@@ -2,6 +2,8 @@
 
 /// <p>The structure representing the BatchGetFrameMetricDataRequest.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct BatchGetFrameMetricDataInput {
     /// <p>The name of the profiling group associated with the the frame metrics used to return the time series values.</p>
