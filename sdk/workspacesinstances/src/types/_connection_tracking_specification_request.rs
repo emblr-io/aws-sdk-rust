@@ -2,6 +2,8 @@
 
 /// <p>Defines connection tracking parameters for network interfaces.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConnectionTrackingSpecificationRequest {
     /// <p>Timeout for established TCP connections.</p>

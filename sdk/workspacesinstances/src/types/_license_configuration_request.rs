@@ -2,6 +2,8 @@
 
 /// <p>Specifies license configuration for WorkSpace Instance.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LicenseConfigurationRequest {
     /// <p>ARN of the license configuration for the WorkSpace Instance.</p>

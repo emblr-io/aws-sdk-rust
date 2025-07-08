@@ -2,6 +2,8 @@
 
 /// <p>Identifies the WorkSpaces Instance to retrieve detailed information for.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetWorkspaceInstanceInput {
     /// <p>Unique identifier of the WorkSpace Instance to retrieve.</p>

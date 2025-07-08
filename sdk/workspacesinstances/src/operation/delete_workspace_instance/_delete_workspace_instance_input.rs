@@ -2,6 +2,8 @@
 
 /// <p>The WorkSpace to delete</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteWorkspaceInstanceInput {
     /// <p>Unique identifier of the WorkSpaces Instance targeted for deletion.</p>
