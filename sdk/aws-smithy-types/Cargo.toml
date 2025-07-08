@@ -28,8 +28,8 @@ http-body-1-x = ["dep:http-body-1-0", "dep:http-body-util", "dep:http-body-0-4",
 hyper-0-14-x = ["dep:hyper-0-14"]
 rt-tokio = ["dep:http-body-0-4", "dep:tokio-util", "dep:tokio", "tokio?/rt", "tokio?/fs", "tokio?/io-util", "tokio-util?/io", "dep:futures-core", "dep:http"]
 test-util = []
-serde-serialize = ["dep:serde"]
-serde-deserialize = ["dep:serde"]
+serde-serialize = []
+serde-deserialize = []
 
 [dependencies]
 base64-simd = "0.8"
