@@ -2,6 +2,8 @@
 
 /// <p>Contains configuration information for the calculation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CalculationConfiguration {
     /// <p>A string that contains the code for the calculation.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The summary information for the workgroup, which includes its name, state, description, and the date and time it was created.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct WorkGroupSummary {
     /// <p>The name of the workgroup.</p>

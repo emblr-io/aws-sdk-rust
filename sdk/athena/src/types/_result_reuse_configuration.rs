@@ -2,6 +2,8 @@
 
 /// <p>Specifies the query result reuse behavior for the query.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ResultReuseConfiguration {
     /// <p>Specifies whether previous query results are reused, and if so, their maximum age.</p>

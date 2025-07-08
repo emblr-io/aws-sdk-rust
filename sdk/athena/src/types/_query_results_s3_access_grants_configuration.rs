@@ -2,6 +2,8 @@
 
 /// <p>Specifies whether Amazon S3 access grants are enabled for query results.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct QueryResultsS3AccessGrantsConfiguration {
     /// <p>Specifies whether Amazon S3 access grants are enabled for query results.</p>

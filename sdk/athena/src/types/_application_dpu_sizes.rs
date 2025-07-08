@@ -2,6 +2,8 @@
 
 /// <p>Contains the application runtime IDs and their supported DPU sizes.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApplicationDpuSizes {
     /// <p>The name of the supported application runtime (for example, <code>Athena notebook version 1</code>).</p>

@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the status of a notebook calculation.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CalculationStatus {
     /// <p>The date and time the calculation was submitted for processing.</p>

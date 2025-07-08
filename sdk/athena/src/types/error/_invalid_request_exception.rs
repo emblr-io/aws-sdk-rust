@@ -2,6 +2,8 @@
 
 /// <p>Indicates that something is wrong with the input to the request. For example, a required parameter may be missing or out of range.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InvalidRequestException {
     /// <p>The error code returned when the query execution failed to process, or when the processing request for the named query failed.</p>
