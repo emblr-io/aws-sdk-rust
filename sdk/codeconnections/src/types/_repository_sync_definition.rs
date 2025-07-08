@@ -2,6 +2,8 @@
 
 /// <p>The definition for a repository with a sync configuration.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RepositorySyncDefinition {
     /// <p>The branch specified for a repository sync definition.</p>
