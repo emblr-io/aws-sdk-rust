@@ -2,6 +2,8 @@
 
 /// Video asset processing configuration
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct VideoAssetProcessingConfiguration {
     /// Delimits the segment of the input that will be processed
