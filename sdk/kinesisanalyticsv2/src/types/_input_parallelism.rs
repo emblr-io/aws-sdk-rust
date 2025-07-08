@@ -2,6 +2,8 @@
 
 /// <p>For a SQL-based Kinesis Data Analytics application, describes the number of in-application streams to create for a given streaming source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputParallelism {
     /// <p>The number of in-application streams to create.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Provides a description of Amazon CloudWatch logging options, including the log stream Amazon Resource Name (ARN).</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchLoggingOption {
     /// <p>The ARN of the CloudWatch log to receive application messages.</p>

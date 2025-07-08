@@ -2,6 +2,8 @@
 
 /// <p>For a SQL-based Kinesis Data Analytics application, represents an update to the <code>InputLambdaProcessor</code> that is used to preprocess the records in the stream.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InputLambdaProcessorUpdate {
     /// <p>The Amazon Resource Name (ARN) of the new Amazon Lambda function that is used to preprocess the records in the stream.</p><note>

@@ -2,6 +2,8 @@
 
 /// <p>Specifies either the application code, or the location of the application code, for a Managed Service for Apache Flink application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodeContent {
     /// <p>The text-format code for a Managed Service for Apache Flink application.</p>

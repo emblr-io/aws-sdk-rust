@@ -2,6 +2,8 @@
 
 /// <p>Describes configuration parameters for CloudWatch logging for an application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MonitoringConfigurationDescription {
     /// <p>Describes whether to use the default CloudWatch logging configuration for an application.</p>

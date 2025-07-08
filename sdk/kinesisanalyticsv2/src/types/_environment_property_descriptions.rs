@@ -2,6 +2,8 @@
 
 /// <p>Describes the execution properties for an Apache Flink runtime.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct EnvironmentPropertyDescriptions {
     /// <p>Describes the execution property groups.</p>

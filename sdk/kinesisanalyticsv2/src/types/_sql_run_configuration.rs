@@ -2,6 +2,8 @@
 
 /// <p>Describes the starting parameters for a SQL-based Kinesis Data Analytics application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SqlRunConfiguration {
     /// <p>The input source ID. You can get this ID by calling the <code>DescribeApplication</code> operation.</p>

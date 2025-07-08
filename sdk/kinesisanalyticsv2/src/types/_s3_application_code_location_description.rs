@@ -2,6 +2,8 @@
 
 /// <p>Describes the location of an application's code stored in an S3 bucket.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct S3ApplicationCodeLocationDescription {
     /// <p>The Amazon Resource Name (ARN) for the S3 bucket containing the application code.</p>

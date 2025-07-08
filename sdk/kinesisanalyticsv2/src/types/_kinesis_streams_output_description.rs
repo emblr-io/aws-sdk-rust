@@ -2,6 +2,8 @@
 
 /// <p>For an SQL-based Kinesis Data Analytics application's output, describes the Kinesis data stream that is configured as its destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KinesisStreamsOutputDescription {
     /// <p>The Amazon Resource Name (ARN) of the Kinesis data stream.</p>

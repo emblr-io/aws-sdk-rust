@@ -2,6 +2,8 @@
 
 /// <p>Describes parameters for how a Managed Service for Apache Flink application executes multiple tasks simultaneously. For more information about parallelism, see <a href="https://nightlies.apache.org/flink/flink-docs-release-1.19/dev/parallel.html">Parallel Execution</a> in the <a href="https://nightlies.apache.org/flink/flink-docs-release-1.19/">Apache Flink Documentation</a>.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ParallelismConfiguration {
     /// <p>Describes whether the application uses the default parallelism for the Managed Service for Apache Flink service. You must set this property to <code>CUSTOM</code> in order to change your application's <code>AutoScalingEnabled</code>, <code>Parallelism</code>, or <code>ParallelismPerKPU</code> properties.</p>

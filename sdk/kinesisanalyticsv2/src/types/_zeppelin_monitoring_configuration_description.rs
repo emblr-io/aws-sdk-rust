@@ -2,6 +2,8 @@
 
 /// <p>The monitoring configuration for Apache Zeppelin within a Managed Service for Apache Flink Studio notebook.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ZeppelinMonitoringConfigurationDescription {
     /// <p>Describes the verbosity of the CloudWatch Logs for an application.</p>

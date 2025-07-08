@@ -2,6 +2,8 @@
 
 /// Provides details of the operation corresponding to the operation-ID on a Managed Service for Apache Flink application
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DescribeApplicationOperationOutput {
     /// Provides a description of the operation, such as the operation-type and status
