@@ -2,6 +2,8 @@
 
 /// <p>The structure that stores the configuration details of a dataview.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxDataviewConfiguration {
     /// <p>The unique identifier of the dataview.</p>

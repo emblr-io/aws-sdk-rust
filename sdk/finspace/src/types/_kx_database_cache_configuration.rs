@@ -2,6 +2,8 @@
 
 /// <p>The structure of database cache configuration that is used for mapping database paths to cache types in clusters.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct KxDatabaseCacheConfiguration {
     /// <p>The type of disk cache. This parameter is used to map the database path to cache storage. The valid values are:</p>
