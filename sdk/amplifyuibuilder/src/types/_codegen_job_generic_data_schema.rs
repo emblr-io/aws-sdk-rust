@@ -2,6 +2,8 @@
 
 /// <p>Describes the data schema for a code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodegenJobGenericDataSchema {
     /// <p>The type of the data source for the schema. Currently, the only valid value is an Amplify <code>DataStore</code>.</p>

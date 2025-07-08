@@ -2,6 +2,8 @@
 
 /// <p>Describes the validation configuration for a field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldValidationConfiguration {
     /// <p>The validation to perform on an object type.<code></code></p>

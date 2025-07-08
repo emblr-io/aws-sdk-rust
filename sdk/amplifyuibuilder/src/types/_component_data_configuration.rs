@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for binding a component's properties to data.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ComponentDataConfiguration {
     /// <p>The name of the data model to use to bind data to a component.</p>

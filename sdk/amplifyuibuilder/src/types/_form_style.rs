@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for the form's style.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FormStyle {
     /// <p>The spacing for the horizontal gap.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Updates and saves all of the information about a component, based on component ID.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct UpdateComponentData {
     /// <p>The unique ID of the component to update.</p>

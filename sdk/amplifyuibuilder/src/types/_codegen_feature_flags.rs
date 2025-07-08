@@ -2,6 +2,8 @@
 
 /// <p>Describes the feature flags that you can specify for a code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodegenFeatureFlags {
     /// <p>Specifes whether a code generation job supports data relationships.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Describes the API configuration for a code generation job.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum ApiConfiguration {
     /// <p>The configuration for an application using DataStore APIs.</p>

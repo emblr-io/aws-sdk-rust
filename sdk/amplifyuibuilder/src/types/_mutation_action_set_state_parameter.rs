@@ -2,6 +2,8 @@
 
 /// <p>Represents the state configuration when an action modifies a property of another element within the same component.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct MutationActionSetStateParameter {
     /// <p>The name of the component that is being modified.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Dependency package that may be required for the project code to run.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CodegenDependency {
     /// <p>Name of the dependency package.</p>

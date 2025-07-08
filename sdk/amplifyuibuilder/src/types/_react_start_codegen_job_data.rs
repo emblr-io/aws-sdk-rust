@@ -2,6 +2,8 @@
 
 /// <p>Describes the code generation job configuration for a React project.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ReactStartCodegenJobData {
     /// <p>The JavaScript module type.</p>

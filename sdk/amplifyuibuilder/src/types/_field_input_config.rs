@@ -2,6 +2,8 @@
 
 /// <p>Describes the configuration for the default input values to display for a field.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct FieldInputConfig {
     /// <p>The input type for the field.</p>

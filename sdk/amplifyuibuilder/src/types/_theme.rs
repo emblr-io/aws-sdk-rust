@@ -2,6 +2,8 @@
 
 /// <p>A theme is a collection of style settings that apply globally to the components associated with an Amplify application.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct Theme {
     /// <p>The unique ID for the Amplify app associated with the theme.</p>
