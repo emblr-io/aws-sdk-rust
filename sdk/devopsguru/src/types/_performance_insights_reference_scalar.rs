@@ -2,6 +2,8 @@
 
 /// <p>A reference value to compare Performance Insights metrics against to determine if the metrics demonstrate anomalous behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceInsightsReferenceScalar {
     /// <p>The reference value.</p>

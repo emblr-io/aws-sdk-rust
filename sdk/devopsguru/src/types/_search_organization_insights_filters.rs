@@ -2,6 +2,8 @@
 
 /// <p>Filters you can use to specify which events are returned when <code>ListEvents</code> is called.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SearchOrganizationInsightsFilters {
     /// <p>An array of severity values used to search for insights.</p>

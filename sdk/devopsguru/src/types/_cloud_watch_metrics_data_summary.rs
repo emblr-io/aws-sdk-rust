@@ -2,6 +2,8 @@
 
 /// <p>Contains information about the analyzed metrics that displayed anomalous behavior.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CloudWatchMetricsDataSummary {
     /// <p>This is a list of Amazon CloudWatch metric values at given timestamp.</p>

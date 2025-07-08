@@ -2,6 +2,8 @@
 
 /// <p>Reference data used to evaluate Performance Insights to determine if its performance is anomalous or not.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PerformanceInsightsReferenceData {
     /// <p>The name of the reference data.</p>

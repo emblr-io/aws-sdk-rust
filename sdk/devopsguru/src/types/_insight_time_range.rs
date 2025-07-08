@@ -2,6 +2,8 @@
 
 /// <p>A time ranged that specifies when the observed behavior in an insight started and ended.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct InsightTimeRange {
     /// <p>The time when the behavior described in an insight started.</p>

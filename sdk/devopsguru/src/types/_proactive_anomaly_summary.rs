@@ -2,6 +2,8 @@
 
 /// <p>Details about a proactive anomaly. This object is returned by <code>DescribeAnomaly.</code></p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ProactiveAnomalySummary {
     /// <p>The ID of the anomaly.</p>

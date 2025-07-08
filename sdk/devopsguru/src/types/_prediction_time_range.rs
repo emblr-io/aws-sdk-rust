@@ -2,6 +2,8 @@
 
 /// <p>The time range during which anomalous behavior in a proactive anomaly or an insight is expected to occur.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct PredictionTimeRange {
     /// <p>The time range during which a metric limit is expected to be exceeded. This applies to proactive insights only.</p>

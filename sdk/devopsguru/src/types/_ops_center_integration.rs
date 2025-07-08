@@ -2,6 +2,8 @@
 
 /// <p>Information about whether DevOps Guru is configured to create an OpsItem in Amazon Web Services Systems Manager OpsCenter for each created insight.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OpsCenterIntegration {
     /// <p>Specifies if DevOps Guru is enabled to create an Amazon Web Services Systems Manager OpsItem for each created insight.</p>

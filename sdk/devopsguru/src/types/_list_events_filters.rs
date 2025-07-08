@@ -2,6 +2,8 @@
 
 /// <p>Filters you can use to specify which events are returned when <code>ListEvents</code> is called.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ListEventsFilters {
     /// <p>An ID of an insight that is related to the events you want to filter for.</p>
