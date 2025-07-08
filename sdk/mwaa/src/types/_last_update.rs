@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of the last update on the environment, and any errors that were encountered.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct LastUpdate {
     /// <p>The status of the last update on the environment.</p>
