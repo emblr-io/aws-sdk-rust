@@ -2,6 +2,8 @@
 
 /// <p>The container of message template content.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum MessageTemplateContentProvider {
     /// <p>The content of the message template that applies to the email channel subtype.</p>

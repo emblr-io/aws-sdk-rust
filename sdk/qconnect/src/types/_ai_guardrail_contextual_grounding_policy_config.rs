@@ -2,6 +2,8 @@
 
 /// <p>The policy configuration details for the AI Guardrail's contextual grounding policy.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AiGuardrailContextualGroundingPolicyConfig {
     /// <p>The filter configuration details for the AI Guardrails contextual grounding policy.</p>

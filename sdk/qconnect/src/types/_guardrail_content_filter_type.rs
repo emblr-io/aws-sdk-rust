@@ -42,6 +42,8 @@
 ///
 /// Type of text to text filter in content policy
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::Eq, ::std::cmp::Ord, ::std::cmp::PartialEq, ::std::cmp::PartialOrd, ::std::hash::Hash)]
 pub enum GuardrailContentFilterType {
     #[allow(missing_docs)] // documentation missing in model

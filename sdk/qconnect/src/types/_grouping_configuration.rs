@@ -2,6 +2,8 @@
 
 /// <p>The configuration information of the grouping of Amazon Q in Connect users.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct GroupingConfiguration {
     /// <p>The criteria used for grouping Amazon Q in Connect users.</p>

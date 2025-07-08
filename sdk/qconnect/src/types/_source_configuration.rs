@@ -2,6 +2,8 @@
 
 /// <p>Configuration information about the external data source.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub enum SourceConfiguration {
     /// <p>Configuration information for Amazon AppIntegrations to automatically ingest content.</p>

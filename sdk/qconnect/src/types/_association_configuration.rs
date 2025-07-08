@@ -2,6 +2,8 @@
 
 /// <p>The configuration for an Amazon Q in Connect Assistant Association.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AssociationConfiguration {
     /// <p>The identifier of the association for this Association Configuration.</p>

@@ -2,6 +2,8 @@
 
 /// <p>The summary of the AI Prompt version.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AiPromptVersionSummary {
     /// <p>The date for the summary of the AI Prompt version.</p>

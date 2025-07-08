@@ -2,6 +2,8 @@
 
 /// <p>The list of key-value pairs that are stored on the session.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq)]
 pub struct RuntimeSessionData {
     /// <p>The key of the data stored on the session.</p>

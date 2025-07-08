@@ -2,6 +2,8 @@
 
 /// <p>The conversation context to include in SendMessage.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ConversationContext {
     /// <p>The self service conversation history before the Amazon Q in Connect session.</p>
