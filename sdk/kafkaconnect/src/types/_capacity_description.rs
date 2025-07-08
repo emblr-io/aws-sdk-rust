@@ -2,6 +2,8 @@
 
 /// <p>A description of the connector's capacity.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CapacityDescription {
     /// <p>Describes the connector's auto scaling capacity.</p>

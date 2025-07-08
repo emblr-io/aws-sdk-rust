@@ -2,6 +2,8 @@
 
 /// <p>Details about the revision of a custom plugin.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CustomPluginRevisionSummary {
     /// <p>The format of the plugin file.</p>

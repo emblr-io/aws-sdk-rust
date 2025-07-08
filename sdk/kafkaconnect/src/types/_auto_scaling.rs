@@ -2,6 +2,8 @@
 
 /// <p>Specifies how the connector scales.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct AutoScaling {
     /// <p>The maximum number of workers allocated to the connector.</p>
