@@ -2,6 +2,8 @@
 
 /// <p>The home region is not set. Set the home region to continue.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct HomeRegionNotSetException {
     #[allow(missing_docs)] // documentation missing in model
