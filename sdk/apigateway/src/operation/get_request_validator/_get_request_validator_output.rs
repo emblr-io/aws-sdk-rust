@@ -2,6 +2,8 @@
 
 /// <p>A set of validation rules for incoming Method requests.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetRequestValidatorOutput {
     /// <p>The identifier of this RequestValidator.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Request to delete the specified API from your collection.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteRestApiInput {
     /// <p>The string identifier of the associated RestApi.</p>

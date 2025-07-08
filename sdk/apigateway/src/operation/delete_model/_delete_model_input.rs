@@ -2,6 +2,8 @@
 
 /// <p>Request to delete an existing model in an existing RestApi resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct DeleteModelInput {
     /// <p>The string identifier of the associated RestApi.</p>

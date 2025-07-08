@@ -2,6 +2,8 @@
 
 /// <p>The API request rate limits.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ThrottleSettings {
     /// <p>The API target request burst rate limit. This allows more requests through for a period of time than the target rate limit.</p>

@@ -2,6 +2,8 @@
 
 /// <p>Represents a mapping template used to transform a payload.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetModelTemplateOutput {
     /// <p>The Apache Velocity Template Language (VTL) template content used for the template resource.</p>

@@ -2,6 +2,8 @@
 
 /// <p>A request to get information about the current ApiKey resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct GetApiKeyInput {
     /// <p>The identifier of the ApiKey resource.</p>

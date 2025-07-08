@@ -2,6 +2,8 @@
 
 /// <p>API stage name of the associated API stage in a usage plan.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ApiStage {
     /// <p>API Id of the associated API stage in a usage plan.</p>

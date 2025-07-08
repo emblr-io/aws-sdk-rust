@@ -2,6 +2,8 @@
 
 /// <p>Creates a RequestValidator of a given RestApi.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateRequestValidatorInput {
     /// <p>The string identifier of the associated RestApi.</p>

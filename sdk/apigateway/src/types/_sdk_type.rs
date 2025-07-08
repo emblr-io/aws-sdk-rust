@@ -2,6 +2,8 @@
 
 /// <p>A type of SDK that API Gateway can generate.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct SdkType {
     /// <p>The identifier of an SdkType instance.</p>

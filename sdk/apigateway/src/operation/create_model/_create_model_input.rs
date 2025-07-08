@@ -2,6 +2,8 @@
 
 /// <p>Request to add a new Model to an existing RestApi resource.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CreateModelInput {
     /// <p>The RestApi identifier under which the Model will be created.</p>
