@@ -2,6 +2,8 @@
 
 /// <p>Describes the status of an analysis at completion.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteAnalysisCompletion {
     /// <p>The result of the analysis. If the status is <code>NOT_CONNECTED</code>, check the reason code.</p>

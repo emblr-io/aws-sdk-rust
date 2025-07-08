@@ -2,6 +2,8 @@
 
 /// <p>Describes the action that the service insertion will take for any segments associated with it.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct ServiceInsertionAction {
     /// <p>The action the service insertion takes for traffic. <code>send-via</code> sends east-west traffic between attachments. <code>send-to</code> sends north-south traffic to the security appliance, and then from that to either the Internet or to an on-premesis location.</p>

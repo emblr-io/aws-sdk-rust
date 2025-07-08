@@ -2,6 +2,8 @@
 
 /// <p>Describes the registration of a transit gateway to a global network.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayRegistration {
     /// <p>The ID of the global network.</p>

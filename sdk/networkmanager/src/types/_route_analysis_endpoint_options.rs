@@ -2,6 +2,8 @@
 
 /// <p>Describes a source or a destination.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct RouteAnalysisEndpointOptions {
     /// <p>The ARN of the transit gateway attachment.</p>

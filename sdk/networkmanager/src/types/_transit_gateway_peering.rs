@@ -2,6 +2,8 @@
 
 /// <p>Describes a transit gateway peering attachment.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct TransitGatewayPeering {
     /// <p>Describes a transit gateway peer connection.</p>

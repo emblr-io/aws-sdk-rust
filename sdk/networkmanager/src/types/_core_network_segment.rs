@@ -2,6 +2,8 @@
 
 /// <p>Describes a core network segment, which are dedicated routes. Only attachments within this segment can communicate with each other.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct CoreNetworkSegment {
     /// <p>The name of a core network segment.</p>

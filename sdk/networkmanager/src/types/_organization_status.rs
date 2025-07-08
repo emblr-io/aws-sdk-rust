@@ -2,6 +2,8 @@
 
 /// <p>The status of an Amazon Web Services Organization and the accounts within that organization.</p>
 #[non_exhaustive]
+#[cfg_attr(feature = "serde-serialize", derive(::serde::Serialize))]
+#[cfg_attr(feature = "serde-deserialize", derive(::serde::Deserialize))]
 #[derive(::std::clone::Clone, ::std::cmp::PartialEq, ::std::fmt::Debug)]
 pub struct OrganizationStatus {
     /// <p>The ID of an Amazon Web Services Organization.</p>
